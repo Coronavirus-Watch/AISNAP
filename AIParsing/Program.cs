@@ -10,7 +10,7 @@ namespace AIParsing
     {
         static void Main(string[] args)
         {
-            string filepath = "routes.dat.txt";
+            string filepath = "../../../Resources/routes.txt";
             var info = new System.IO.FileInfo(filepath);
             if (info.Length == 0)
             {
@@ -50,7 +50,7 @@ namespace AIParsing
                 }
 
 
-                System.IO.File.WriteAllLines("routesOutput.txt", outputList.ToArray());
+                System.IO.File.WriteAllLines("../../../Resources/routesOutput.txt", outputList.ToArray());
 
                 Console.WriteLine("Anyways, the Mercedes SLS");
             }
