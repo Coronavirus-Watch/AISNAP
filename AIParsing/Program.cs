@@ -10,7 +10,7 @@ namespace AIParsing
     {
         static void Main(string[] args)
         {
-            string filepath = "../../../Resources/routes.txt";
+            string filepath = "../../../Resources/airports.txt";
             var info = new System.IO.FileInfo(filepath);
             if (info.Length == 0)
             {
@@ -23,7 +23,7 @@ namespace AIParsing
                 List<string[]> inputList = new List<string[]>();
                 for (int i = 0; i < lines.Length; i++)
                 {
-                    string[] line = new string[9];
+                    string[] line = new string[7];
                     line = lines[i].Split(',');
                     inputList.Add(line);
                 }
@@ -45,12 +45,12 @@ namespace AIParsing
 
                 for (int i = 0; i < inputList.Count(); i++)
                 {
-                    string temp = inputList[i][2] + "," + inputList[i][4];
+                    string temp = inputList[i][3] + "," + inputList[i][4] + "," + inputList[i][5];
                     outputList.Add(temp);
                 }
 
 
-                System.IO.File.WriteAllLines("../../../Resources/routesOutput.txt", outputList.ToArray());
+                System.IO.File.WriteAllLines("../../../Resources/airportsOutput.txt", outputList.ToArray());
 
                 Console.WriteLine("Anyways, the Mercedes SLS");
             }
