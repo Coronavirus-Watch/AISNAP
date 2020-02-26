@@ -4,6 +4,7 @@ mapboxgl.accessToken =
 var map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/mapbox/light-v10",
-  zoom: 4.5,
-  center: [-4.2, 57.2]
+  // Displays the world
+  zoom: -0.3,
+  center: [10, 50]
 });
