@@ -4,17 +4,16 @@
 */
 
 // Access Token for mapbox
-mapboxgl.accessToken =
-	'pk.eyJ1IjoibWF4d2lsbGtlbGx5IiwiYSI6ImNrNjhsOWdlZTA0M2Yza21mMG9icjBwdmIifQ.OTaUkNePX-6XE3Vgcy9v6A';
+mapboxgl.accessToken = 'pk.eyJ1IjoibWF4d2lsbGtlbGx5IiwiYSI6ImNrNjhsOWdlZTA0M2Yza21mMG9icjBwdmIifQ.OTaUkNePX-6XE3Vgcy9v6A';
+// Stores the countries
 let countries = [];
 // Fetches Location Data of Countries
-const output = fetch('js/countries.txt')
-	.then(res => res.text())
-	.then(res => {
-		countries = parse(res);
-		displayMap(countries);
-	});
+const output = fetch('js/countries.txt').then(res => res.text()).then(res => {
+	countries = parse(res);
+	displayMap(countries);
+});
 
+// 
 function parse(text) {
 	let countries = [];
 	const lines = text.split('\n');
@@ -29,9 +28,9 @@ function parse(text) {
 	return countries;
 }
 
+// Displays the map to the user
 function displayMap(countries) {
-  // Creates a map and sets basic properties
-  
+	// Creates a map and sets basic properties
 	var map = new mapboxgl.Map({
 		container: 'map',
 		// Sets the map style
@@ -46,14 +45,14 @@ function displayMap(countries) {
 	for (let i = 0; i < countries.length; i++) {
 		// create a HTML element for each feature
 		var el = document.createElement('div');
-    el.className = 'marker';
-       
+		el.className = 'marker';
+
 		// make a marker for each feature and add to the map
-    let array = [countries[i].lon, countries[i].lat];
-    
+		let array = [countries[i].lon, countries[i].lat];
+
 		// Runs when a country is clicked on
-		map.on('click', 'countries', function(mapElement) {
-      let popup = new mapboxgl.Marker(el).setLngLat(array).addTo(map);
+		map.on('click', 'countries', function (mapElement) {
+			let popup = new mapboxgl.Marker(el).setLngLat(array).addTo(map);
 		});
 	}
 
