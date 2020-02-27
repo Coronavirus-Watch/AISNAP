@@ -1,0 +1,19 @@
+{
+  "name": "aisnap",
+  "version": "1.0.0",
+  "description": "Project for Algortihms and Artificial Intelligence Module for Year 2, Sememster 2 at Univeristy of Dundee",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxwillkelly/AISNAP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxwillkelly/AISNAP/issues"
+  },
+  "homepage": "https://github.com/maxwillkelly/AISNAP#readme"
+}

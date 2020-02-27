@@ -5,9 +5,20 @@
 
 /* Map Size */
 #map {
-    height: 500px;
-    width: 800px;
+    height: 600px;
+    width: 100%;
 }
+
+.marker {
+  /* background-image: url('../img/cat.jpg'); */
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: lightsalmon;
+}
+
 
 
 
