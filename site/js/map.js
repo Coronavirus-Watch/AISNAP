@@ -4,8 +4,8 @@
 */
 
 // Access Token for mapbox
-mapboxgl.accessToken =
-	'pk.eyJ1IjoibWF4d2lsbGtlbGx5IiwiYSI6ImNrNjhsOWdlZTA0M2Yza21mMG9icjBwdmIifQ.OTaUkNePX-6XE3Vgcy9v6A';
+mapboxgl.accessToken = 'pk.eyJ1IjoibWF4d2lsbGtlbGx5IiwiYSI6ImNrNjhsOWdlZTA0M2Yza21mMG9icjBwdmIifQ.OTaUkNePX-6XE3Vgcy9v6A';
+// Stores the countries
 let countries = [];
 // Fetches Location Data of Countries
 const output = fetch('js/countries.txt').then(res => res.text()).then(res => {
@@ -13,6 +13,7 @@ const output = fetch('js/countries.txt').then(res => res.text()).then(res => {
 	displayMap(countries);
 });
 
+// 
 function parse(text) {
 	let countries = [];
 	const lines = text.split('\n');
@@ -27,9 +28,9 @@ function parse(text) {
 	return countries;
 }
 
+// Displays the map to the user
 function displayMap(countries) {
 	// Creates a map and sets basic properties
-
 	var map = new mapboxgl.Map({
 		container: 'map',
 		// Sets the map style
