@@ -1,3 +1,13 @@
+/* Sets fonts */
 * {
     font-family: 'Quicksand', sans-serif;
 }
+
+/* Map Size */
+#map {
+    height: 500px;
+    width: 800px;
+}
+
+
+
