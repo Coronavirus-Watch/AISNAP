@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-"Papua New Guinea","GKA","AYGA"
+﻿"Papua New Guinea","GKA","AYGA"
 "Papua New Guinea","MAG","AYMD"
 "Papua New Guinea","HGU","AYMH"
 "Papua New Guinea","LAE","AYNZ"
@@ -15396,4 +15395,3 @@ Russia,\N,XIUW
 Russia,\N,ULLK
 Chile,CPO,SCAT
 Ukraine,\N,UKDM
->>>>>>> bedits
