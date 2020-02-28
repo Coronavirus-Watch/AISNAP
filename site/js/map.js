@@ -5,15 +5,39 @@
 
 // Access Token for mapbox
 mapboxgl.accessToken = 'pk.eyJ1IjoibWF4d2lsbGtlbGx5IiwiYSI6ImNrNjhsOWdlZTA0M2Yza21mMG9icjBwdmIifQ.OTaUkNePX-6XE3Vgcy9v6A';
+let map = new mapboxgl.Map({
+	container: 'map',
+	// Sets the map style
+	style: 'mapbox://styles/maxwillkelly/ck74w75df0dtf1imcwnew4m6b',
+	// Displays the world
+	zoom: 3,
+	center: [15, 50],
+});
 // Stores the countries
 let countries = [];
 // Fetches Location Data of Countries
-const output = fetch('js/countries.txt').then(res => res.text()).then(res => {
+fetch('js/countries.txt').then(res => res.text()).then(res => {
 	// Parses the text
 	countries = parse(res);
 	// Displays the map
 	displayMap(countries);
+	drawRoutes(countries);
 });
+
+function drawRoutes(countries) {
+	fetch('js/parsedDomesticsOutput.txt').then(res => res.text()).then(res => {
+		let parsedRoutes = {};
+		const lines = res.split("\n");
+		for (let i = 0; i < lines.length; i++) {
+			parsedRoutes[line[1]] = {
+				
+			}
+		}
+	});
+}
+
+
+
 
 // Parses the text
 function parse(text) {
@@ -39,30 +63,23 @@ function parse(text) {
 // Displays the map
 function displayMap(countries) {
 	// Creates a map and sets basic properties
-	var map = new mapboxgl.Map({
-		container: 'map',
-		// Sets the map style
-		style: 'mapbox://styles/maxwillkelly/ck74w75df0dtf1imcwnew4m6b',
-		// Displays the world
-		zoom: 1.1,
-		center: [10, 25]
-	});
+	
 	// Adds full screen control
 	map.addControl(new mapboxgl.FullscreenControl());
+			
 
-	for (let i = 0; i < countries.length; i++) {
-		// create a HTML element for each feature
-		var el = document.createElement('div');
-		el.className = 'marker';
 
-		// make a marker for each feature and add to the map
-		let array = [countries[i].lon, countries[i].lat];
+	countries.map((country) => {
+		let array = [country.lon, country.lat];
+		let popup = new mapboxgl.Popup({ offset: 25 }).setText(
+			country.name
+			);
 
-		// Runs when a country is clicked on
-		map.on('click', 'countries', function (mapElement) {
-			let popup = new mapboxgl.Marker(el).setLngLat(array).addTo(map);
-		});
-	}
+			let marker = new mapboxgl.Marker().setLngLat(array).setPopup(popup);
+			marker.className = "marker";
+			marker.addTo(map);
+			// create a line between UK and America
+	})
 
 	// Prevents map from looking stupid
 	map.resize();
