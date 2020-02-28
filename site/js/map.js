@@ -9,17 +9,25 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWF4d2lsbGtlbGx5IiwiYSI6ImNrNjhsOWdlZTA0M2Yza
 let countries = [];
 // Fetches Location Data of Countries
 const output = fetch('js/countries.txt').then(res => res.text()).then(res => {
+	// Parses the text
 	countries = parse(res);
+	// Displays the map
 	displayMap(countries);
 });
 
-// 
+// Parses the text
 function parse(text) {
+	// Stores the individual countries
 	let countries = [];
+	// Seperating each lines
 	const lines = text.split('\n');
+	// Loops through each line
 	for (let i = 0; i < lines.length; i++) {
+		// Extracts each line
 		const countryLine = lines[i].split(',');
+		// Adds the countries array
 		countries.push({
+			// Extracts each parameter
 			name: countryLine[3],
 			lat: parseFloat(countryLine[1].trim()),
 			lon: parseFloat(countryLine[2].trim())
@@ -28,7 +36,7 @@ function parse(text) {
 	return countries;
 }
 
-// Displays the map to the user
+// Displays the map
 function displayMap(countries) {
 	// Creates a map and sets basic properties
 	var map = new mapboxgl.Map({
@@ -36,8 +44,8 @@ function displayMap(countries) {
 		// Sets the map style
 		style: 'mapbox://styles/maxwillkelly/ck74w75df0dtf1imcwnew4m6b',
 		// Displays the world
-		zoom: 0,
-		center: [10, 50]
+		zoom: 1.1,
+		center: [10, 25]
 	});
 	// Adds full screen control
 	map.addControl(new mapboxgl.FullscreenControl());
