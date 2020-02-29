@@ -3,15 +3,18 @@
 #include <iostream>
 #include <list>
 #include <string>
-#include <functional>
+#include <tr1/functional>
 #include <fstream>
-#include <map>
+// #include <map>
 #include <sstream>
 #include <network.h>
 #include <vector>
+// #include <hash.h>
 
 using namespace std;
 
+
+typedef TInt TEdgeData;
 
 typedef struct route
 {
@@ -23,9 +26,9 @@ typedef struct route
 
 PNGraph genRandomGraph(PNGraph G, int nodes, int edges);
 int plotGraph(TNodeEDatNet<TNodeData, TEdgeData> &G);
-int traverseNodes(PNGraph G);
-int traverseEdges(PNGraph G);
-int traverseGraph(TNodeEDatNet<TNodeData, TEdgeData> G);
+int traverseNodes(TNodeEDatNet<TNodeData, TEdgeData> &G);
+int traverseEdges(TNodeEDatNet<TNodeData, TEdgeData> &G);
+int traverseGraph(TNodeEDatNet<TNodeData, TEdgeData> &G);
 PNGraph getNodes(PNGraph G,vector<Route> list);
 PNGraph getEdges(PNGraph G,vector<Route> list);
 vector<Route> getInput();
@@ -40,7 +43,7 @@ int main(int argc, char* argv[])
   vector<Route> list =  getInput();
   addRoute(variableGraph,list);
   plotGraph(variableGraph);
-  // traverseGraph(variableGraph);
+  traverseGraph(variableGraph);
   
   
 
@@ -118,36 +121,44 @@ vector<Route> getInput()
 
 int addRoute(TNodeEDatNet<TNodeData, TEdgeData> &graph, std::vector<Route> list)
 {
-	for (size_t i = 0; i < 20; i++)
+	for (size_t i = 0; i < list.size(); i++)
 	{
     int idSource = hashFunction(list[i].sourceCountry);
     int idDestination = hashFunction(list[i].destinationCountry);
 		// Adds country to graph if they aren't already added
     TNodeData *source = new TNodeData(idSource, list[i].sourceCountry);
 		TNodeData *destination = new TNodeData(idDestination, list[i].destinationCountry);
-  
-    graph.AddNode(idSource, *source);
-    graph.AddNode(idDestination, *destination);
+
+    if (!graph.IsNode(idSource)) {
+      graph.AddNode(idSource, *source);
+    }
+    if (!graph.IsNode(idDestination)) {
+      graph.AddNode(idDestination, *destination);
+    }
   
 		// Checks if the edge we are adding exists
 		if (graph.IsEdge(idSource,idDestination))
 		{
 			// Increment edge number
 			TEdgeData flight = graph.GetEDat(idSource,idDestination);
-      flight.incrementFlights();
+      // flight.incrementFlights();
+      flight++;
 			graph.SetEDat(idSource,idDestination, flight);
 		}
 		else
 		{
 			// Adds edge to graph
-			graph.AddEdge(idSource,idDestination);
+      TEdgeData flight = 1;
+			graph.AddEdge(idSource,idDestination, flight);
 		}
 	}
 	return 0;
 }
 
+
 int hashFunction(string str) {
-  hash<string> hashObj;
+  tr1::hash<string> hashObj;
+  // cout << (int)hashObj(str) <<endl;
   return (int) hashObj(str);
 }
 
@@ -179,30 +190,20 @@ int traverseNodes(TNodeEDatNet<TNodeData, TEdgeData> &G)
   int counter =0;
   for (TNodeEDatNet<TNodeData, TEdgeData>::TNodeI NI = G.BegNI(); NI < G.EndNI(); NI++) 
     {
-      cout << "Node id: " << NI.GetId() << " with out-degree " << NI.GetOutDeg() << " and in-degree " << NI.GetInDeg();
-      if (counter < 2)
-      {
-        cout << " | ";
-        counter++;
-      }
-      else
-      {
-        cout << endl;
-        counter = 0;
-      }
+      cout << "Node id: " << NI.GetId() << " Name: " << NI.GetDat().country << " In: " << NI.GetInDeg() << " Out: " << NI.GetOutDeg() << endl;
     }
     cout << endl;
     return 0;
 }
 
 //From http://snap.stanford.edu/snap/quick.html#input
-int traverseEdges(TNodeEDatNet<TNodeData, TEdgeData> G)
+int traverseEdges(TNodeEDatNet<TNodeData, TEdgeData> &G)
 {
   int counter = 0;
    for (TNodeEDatNet<TNodeData, TEdgeData>::TEdgeI EI = G.BegEI(); EI < G.EndEI(); EI++) 
     {
-      cout << "Edge: " << EI.GetSrcNId() << "," << EI.GetDstNId();
-      if (counter < 4)
+      cout << "Edge: " << EI.GetSrcNDat().country << "->" << EI.GetDstNDat().country << " has " << EI.GetDat();
+      if (counter < 1)
       {
         cout << " | ";
         counter++;
@@ -219,7 +220,7 @@ int traverseEdges(TNodeEDatNet<TNodeData, TEdgeData> G)
 
 int saveGraph(TNodeEDatNet<TNodeData, TEdgeData> &G)
 {
-   TSnap::SaveEdgeList(G, "graphTextOut.txt", "Tab-separated list of edges");
+  //  TSnap::SaveEdgeList(G, "graphTextOut.txt", "Tab-separated list of edges");
    return 0;
 }
 
@@ -235,7 +236,7 @@ int plotGraph(TNodeEDatNet<TNodeData, TEdgeData> &G)
  
   
 
-  TSnap::DrawGViz<TNodeEDatNet<TNodeData, TEdgeData>>(G, gvlCirco ,"gviz_plot.png", "", Name);
+  // TSnap::DrawGViz<TNodeEDatNet<TNodeData, TEdgeData> >(G, gvlCirco ,"gviz_plot.png", "", Name);
   cout << "Done" << endl;
   return 0;
 }

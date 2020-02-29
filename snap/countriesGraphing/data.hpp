@@ -8,25 +8,41 @@ class TNodeData
         int id;
         std::string country;
         
-        TNodeData(int id, std::string country = "") {
-            this->id = id;
-            this->country = country;
+        TNodeData(int INid = 0, std::string INcountry = "") {
+            this->id = INid;
+            this->country = INcountry;
         }
 
-        TNodeData(size_t id, std::string country = "") {
-            this->id = (int) id;
-            this->country = country;
+        TNodeData(size_t INid, std::string INcountry = "") {
+            this->id = (int) INid;
+            this->country = INcountry;
         }
+
+        TNodeData(TSIn& SIn) { }
+        void Save(TSOut& SOut) const { }
 };
 
 
-class TEdgeData 
-{
-    public:
-        int flights = 1;
+// class TEdgeData 
+// {
+//     public:
+//         int flights;
 
-        void incrementFlights()
-        {
-            flights++;
-        }
-};
+//         TEdgeData(int flights = 1)
+//         {
+//             this->flights = flights;
+//         }
+
+//         void incrementFlights()
+//         {
+//             flights++;
+//         }
+
+//         TEdgeData(TSIn& SIn) { }
+//         void Save(TSOut& SOut) const { }
+
+//         bool operator<(const TEdgeData& e) 
+//         {
+//             return flights < e.flights;
+//         }
+// };
