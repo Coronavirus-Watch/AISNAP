@@ -1,0 +1,10 @@
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Sat Feb 29 23:23:50 2020
+Execution stopped: !IsNode(NId) [Reason:'NodeId 1375445708 already exists'], file ../../snap-core/network.h, line 772
+--------
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Sat Feb 29 23:29:21 2020
+Execution stopped: IsNode(SrcNId) && IsNode(DstNId) [Reason:'1498028028 or 1375445708 not a node.'], file ../../snap-core/network.h, line 820
+--------

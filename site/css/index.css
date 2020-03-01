@@ -5,9 +5,18 @@
 
 /* Map Size */
 #map {
-    height: 500px;
-    width: 800px;
+    height: 600px;
+    width: 100%;
 }
+
+.mapboxgl-marker {
+  background-image: none;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
 
 
 
