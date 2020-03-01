@@ -10,7 +10,7 @@ namespace AIParsing
     {
         static void Main(string[] args)
         {
-            parseFile();
+           // parseFile();
             clearDomestic();
             
         }
