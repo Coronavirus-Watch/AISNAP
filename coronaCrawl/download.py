@@ -47,7 +47,7 @@ def merge_diamond_princess(row_elements):
             # Runs through all but the first element
             while i < len(row_elements):
                 # Adds each cell to the value of held row
-                row_hold[i] += row_elements[i]
+                row_elements[i] += row_hold[i]
                 i += 1
         else:
             # Copies the elements to be held for the next iteration
@@ -64,7 +64,7 @@ def remove_total(row_elements):
 
 def special_rows(row_elements):
     # Checks if the row shouldn't be added to the file
-    if remove_total(row_elements) and merge_diamond_princess(row_elements):
+    if remove_total(row_elements) or merge_diamond_princess(row_elements):
         pass
     else:
         print(row_elements)
@@ -85,8 +85,12 @@ with open('coronaCountries', 'w', newline='') as file:
     for element in col:
         # Gets and processes text from element on table
         text = extract_text(element)
-        # Appends text to list
-        row_elements.append(text)
+        if counter == 0:
+            # Appends text to list
+            row_elements.append(text)
+        else:
+            # Appends text to list
+            row_elements.append(int(text))
         # Checks if we've reached the end of the row
         if counter == 7:
             # 
