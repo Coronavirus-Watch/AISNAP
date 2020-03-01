@@ -1,0 +1,2627 @@
+Size = 35542
+Done
+Nodes
+_____________
+Node id: 1498028028 Name: Azerbaijan In: 22 Out: 22
+Node id: 1375445708 Name: Russia In: 72 Out: 72
+Node id: -545558109 Name: Cote d'Ivoire In: 18 Out: 19
+Node id: 2091500810 Name: Burkina Faso In: 13 Out: 14
+Node id: 895060196 Name: Ghana In: 22 Out: 24
+Node id: -803803148 Name: Mali In: 15 Out: 15
+Node id: 37139044 Name: Senegal In: 24 Out: 25
+Node id: -76526251 Name: Benin In: 16 Out: 15
+Node id: 972816546 Name: Togo In: 13 Out: 13
+Node id: -1119217330 Name: Niger In: 9 Out: 8
+Node id: -1741415921 Name: Colombia In: 23 Out: 23
+Node id: -233228792 Name: Ecuador In: 14 Out: 14
+Node id: -1400110804 Name: Italy In: 81 Out: 80
+Node id: 1512810818 Name: Switzerland In: 60 Out: 61
+Node id: -781321414 Name: France In: 116 Out: 119
+Node id: 2126434339 Name: United Kingdom In: 102 Out: 102
+Node id: 611196462 Name: Spain In: 79 Out: 79
+Node id: 2035422099 Name: Cyprus In: 31 Out: 31
+Node id: 905351688 Name: Egypt In: 47 Out: 47
+Node id: -1737340403 Name: Sweden In: 43 Out: 44
+Node id: 1192732067 Name: Finland In: 38 Out: 38
+Node id: 575777953 Name: Sandefjord In: 15 Out: 15
+Node id: 303496119 Name: Norway In: 46 Out: 46
+Node id: -1011365460 Name: United States In: 92 Out: 94
+Node id: -2078137563 Name:  In: 48 Out: 48
+Node id: 1113602398 Name: United Arab Emirates In: 91 Out: 92
+Node id: 1847743564 Name: Philippines In: 24 Out: 24
+Node id: 930702380 Name: Nigeria In: 31 Out: 32
+Node id: -86797195 Name: Liberia In: 6 Out: 6
+Node id: 1405006028 Name: Gambia In: 6 Out: 6
+Node id: 1762152654 Name: Sierra Leone In: 9 Out: 9
+Node id: -173561196 Name: Guinea In: 8 Out: 8
+Node id: 1199795486 Name: Guinea-Bissau In: 5 Out: 5
+Node id: 215076549 Name: Cameroon In: 17 Out: 17
+Node id: -1217645589 Name: Djibouti In: 8 Out: 9
+Node id: 964650207 Name: Saudi Arabia In: 43 Out: 43
+Node id: 530875053 Name: Somalia In: 6 Out: 6
+Node id: 861944579 Name: Kenya In: 44 Out: 45
+Node id: -230630154 Name: Thailand In: 55 Out: 55
+Node id: 248244801 Name: Singapore In: 40 Out: 40
+Node id: 2083896329 Name: Australia In: 34 Out: 35
+Node id: -1759898992 Name: China In: 63 Out: 64
+Node id: -1854148300 Name: Hong Kong In: 43 Out: 43
+Node id: -1414931781 Name: Japan In: 41 Out: 41
+Node id: 616988921 Name: Taiwan In: 25 Out: 25
+Node id: -264799902 Name: Malaysia In: 39 Out: 39
+Node id: 675868955 Name: Cambodia In: 11 Out: 11
+Node id: -1709305648 Name: Burma In: 13 Out: 13
+Node id: -1108123669 Name: Vietnam In: 22 Out: 22
+Node id: -1309226082 Name: Germany In: 100 Out: 98
+Node id: 686866078 Name: Croatia In: 27 Out: 27
+Node id: -474449136 Name: Austria In: 59 Out: 58
+Node id: -80795254 Name: Bahamas In: 9 Out: 8
+Node id: 556752555 Name: Netherlands In: 83 Out: 82
+Node id: -1279584967 Name: Morocco In: 49 Out: 49
+Node id: -1777628106 Name: Belgium In: 59 Out: 59
+Node id: -1144209169 Name: Turkey In: 97 Out: 92
+Node id: -1454309980 Name: Aruba In: 9 Out: 9
+Node id: -1859582180 Name: Venezuela In: 23 Out: 23
+Node id: -81583931 Name: Netherlands Antilles In: 23 Out: 24
+Node id: 1254699227 Name: Uzbekistan In: 22 Out: 22
+Node id: -519400285 Name: Montenegro In: 11 Out: 11
+Node id: 274110806 Name: Antigua and Barbuda In: 15 Out: 16
+Node id: 403967530 Name: Guadeloupe In: 10 Out: 10
+Node id: 918754372 Name: French Guiana In: 4 Out: 4
+Node id: 365619314 Name: Martinique In: 9 Out: 10
+Node id: 512468593 Name: Dominican Republic In: 28 Out: 27
+Node id: 1798398435 Name: Dominica In: 8 Out: 8
+Node id: -887812852 Name: Saint Lucia In: 10 Out: 10
+Node id: -1925415094 Name: Northern Mariana Islands In: 4 Out: 4
+Node id: -162665432 Name: South Korea In: 45 Out: 45
+Node id: 449883707 Name: Canada In: 63 Out: 66
+Node id: 457386597 Name: Israel In: 40 Out: 40
+Node id: -10892156 Name: Bangladesh In: 19 Out: 19
+Node id: 42614444 Name: India In: 50 Out: 50
+Node id: 2050622210 Name: Oman In: 25 Out: 25
+Node id: -1192028375 Name: Nepal In: 14 Out: 14
+Node id: -1943082802 Name: Argentina In: 20 Out: 21
+Node id: 751599446 Name: Mexico In: 25 Out: 25
+Node id: 579892578 Name: Guatemala In: 10 Out: 9
+Node id: -1373350100 Name: Cuba In: 22 Out: 23
+Node id: 732984104 Name: Costa Rica In: 13 Out: 13
+Node id: 775353057 Name: Afghanistan In: 7 Out: 8
+Node id: -1152015230 Name: Pakistan In: 24 Out: 23
+Node id: -303620817 Name: Serbia In: 30 Out: 30
+Node id: 815991826 Name: Macedonia In: 14 Out: 14
+Node id: 2093251076 Name: Algeria In: 29 Out: 29
+Node id: -324447078 Name: Greece In: 43 Out: 43
+Node id: 2910977 Name: Hungary In: 33 Out: 33
+Node id: -1642139844 Name: Ireland In: 35 Out: 35
+Node id: 922211943 Name: Portugal In: 39 Out: 39
+Node id: 1746044064 Name: Czech Republic In: 38 Out: 38
+Node id: -1986850264 Name: Bosnia and Herzegovina In: 11 Out: 11
+Node id: 1690041626 Name: Tunisia In: 32 Out: 31
+Node id: 1721713125 Name: Poland In: 43 Out: 43
+Node id: -72368387 Name: Panama In: 31 Out: 31
+Node id: 943202488 Name: Nicaragua In: 5 Out: 5
+Node id: -1032217311 Name: South Sudan In: 8 Out: 7
+Node id: -1765576021 Name: Tanzania In: 16 Out: 17
+Node id: -1413866948 Name: Brunei In: 10 Out: 10
+Node id: -1643463735 Name: Indonesia In: 21 Out: 21
+Node id: -1656653574 Name: Macau In: 9 Out: 9
+Node id: -291940793 Name: Saint Kitts and Nevis In: 6 Out: 6
+Node id: -265948347 Name: Tromso In: 7 Out: 7
+Node id: 1420557863 Name: Uruguay In: 8 Out: 8
+Node id: -1394930387 Name: Paraguay In: 8 Out: 8
+Node id: -270142825 Name: Brazil In: 34 Out: 34
+Node id: -1760303542 Name: Chile In: 20 Out: 19
+Node id: -1491624170 Name: Belize In: 6 Out: 6
+Node id: -1598703859 Name: Honduras In: 8 Out: 8
+Node id: -2103478296 Name: South Africa In: 44 Out: 43
+Node id: -1560367377 Name: Georgia In: 19 Out: 19
+Node id: 815889880 Name: Armenia In: 13 Out: 13
+Node id: -1871212794 Name: Latvia In: 34 Out: 34
+Node id: 1045167311 Name: Guam In: 10 Out: 10
+Node id: 1024301065 Name: Jamaica In: 15 Out: 15
+Node id: 1113650719 Name: Suriname In: 7 Out: 7
+Node id: -1881142819 Name: Trinidad and Tobago In: 15 Out: 14
+Node id: -1678578590 Name: Haiti In: 8 Out: 7
+Node id: -1321017969 Name: Tajikistan In: 10 Out: 9
+Node id: 1433953811 Name: Kazakhstan In: 25 Out: 25
+Node id: 1346183233 Name: Kyrgyzstan In: 8 Out: 8
+Node id: -1222832683 Name: Iran In: 30 Out: 30
+Node id: 22213910 Name: Ukraine In: 34 Out: 34
+Node id: 126769775 Name: Jordan In: 35 Out: 35
+Node id: 824741738 Name: Libya In: 13 Out: 13
+Node id: 214680475 Name: Chad In: 7 Out: 6
+Node id: 2089325088 Name: Anguilla In: 4 Out: 4
+Node id: 1564126007 Name: Puerto Rico In: 18 Out: 18
+Node id: -8476745 Name: British Virgin Islands In: 4 Out: 5
+Node id: 762581002 Name: Virgin Islands In: 9 Out: 9
+Node id: 1894236483 Name: Moldova In: 15 Out: 15
+Node id: 230241856 Name: Romania In: 28 Out: 28
+Node id: -1586135144 Name: Kuwait In: 26 Out: 26
+Node id: -465034782 Name: Bahrain In: 23 Out: 23
+Node id: -350994700 Name: Sri Lanka In: 24 Out: 24
+Node id: -561341058 Name: Qatar In: 62 Out: 62
+Node id: -510383204 Name: Bulgaria In: 24 Out: 24
+Node id: 244538507 Name: Albania In: 7 Out: 7
+Node id: -1416895043 Name: Denmark In: 47 Out: 47
+Node id: -246475435 Name: Uganda In: 13 Out: 17
+Node id: 1290640288 Name: New Zealand In: 20 Out: 17
+Node id: -332168489 Name: French Polynesia In: 7 Out: 7
+Node id: -2051180277 Name: Bermuda In: 3 Out: 3
+Node id: 531611615 Name: Barbados In: 14 Out: 15
+Node id: 18209942 Name: Cayman Islands In: 6 Out: 6
+Node id: -1108831611 Name: Turks and Caicos Islands In: 7 Out: 7
+Node id: -662653885 Name: Peru In: 20 Out: 20
+Node id: -469034250 Name: El Salvador In: 13 Out: 14
+Node id: -378176169 Name: Gibraltar In: 1 Out: 1
+Node id: -1490908975 Name: Grenada In: 7 Out: 7
+Node id: -290358491 Name: Fiji In: 14 Out: 14
+Node id: 1463214345 Name: Luxembourg In: 20 Out: 20
+Node id: 148975643 Name: Bolivia In: 9 Out: 9
+Node id: -1938175701 Name: Guernsey In: 5 Out: 5
+Node id: 536570189 Name: Jersey In: 8 Out: 8
+Node id: -1767086154 Name: Malta In: 28 Out: 27
+Node id: -1683807218 Name: Ethiopia In: 49 Out: 47
+Node id: -328229458 Name: Burundi In: 4 Out: 3
+Node id: -1804925814 Name: Rwanda In: 14 Out: 13
+Node id: -1696665589 Name: Angola In: 20 Out: 20
+Node id: 1155565132 Name: Lithuania In: 29 Out: 29
+Node id: -1746710012 Name: Congo (Kinshasa) In: 12 Out: 9
+Node id: -429992532 Name: Zimbabwe In: 10 Out: 8
+Node id: 1799015978 Name: Lebanon In: 30 Out: 30
+Node id: -387465386 Name: Central African Republic In: 2 Out: 2
+Node id: -1494129104 Name: Laos In: 7 Out: 7
+Node id: -296003448 Name: Congo (Brazzaville) In: 11 Out: 11
+Node id: -1922540080 Name: Gabon In: 13 Out: 14
+Node id: 1017806874 Name: Slovenia In: 18 Out: 18
+Node id: -743709200 Name: Mauritius In: 16 Out: 16
+Node id: -985695564 Name: Mauritania In: 7 Out: 7
+Node id: -975864299 Name: Madagascar In: 8 Out: 8
+Node id: -1774416371 Name: Equatorial Guinea In: 7 Out: 7
+Node id: 1015827674 Name: Mayotte In: 6 Out: 4
+Node id: 1652143829 Name: Comoros In: 6 Out: 6
+Node id: 635516677 Name: Zambia In: 10 Out: 12
+Node id: 1653410024 Name: Malawi In: 6 Out: 6
+Node id: -474641641 Name: Reunion In: 7 Out: 7
+Node id: -1185066508 Name: Palau In: 6 Out: 6
+Node id: -2095479588 Name: Maldives In: 15 Out: 16
+Node id: 805656673 Name: Western Sahara In: 2 Out: 2
+Node id: -1150475730 Name:  Santiago Island In: 12 Out: 12
+Node id: 1801048485 Name: Iceland In: 15 Out: 15
+Node id: 1321180687 Name: Belarus In: 28 Out: 28
+Node id: -1846726128 Name: Estonia In: 20 Out: 20
+Node id: -1147840680 Name: Sudan In: 13 Out: 13
+Node id: -39487250 Name: Seychelles In: 7 Out: 7
+Node id: -2112523730 Name: Turkmenistan In: 9 Out: 9
+Node id: -1011194057 Name: Isle of Man In: 2 Out: 2
+Node id: 611345894 Name: Namibia In: 7 Out: 7
+Node id: 466133841 Name:  Sheffield In: 4 Out: 4
+Node id: 2139354930 Name: Harstad/Narvik In: 3 Out: 3
+Node id: 44263602 Name: Botswana In: 5 Out: 5
+Node id: -524530878 Name: Guyana In: 7 Out: 7
+Node id: 1879622166 Name: North Korea In: 3 Out: 3
+Node id: -788899349 Name: Mongolia In: 7 Out: 7
+Node id: 839123215 Name: Papua New Guinea In: 9 Out: 9
+Node id: -1693103447 Name: Slovakia In: 9 Out: 9
+Node id: -1862235178 Name: Sao Tome and Principe In: 3 Out: 3
+Node id: -1623613043 Name: Rygge In: 14 Out: 14
+Node id: 1940203758 Name: Svalbard In: 2 Out: 2
+Node id: -1222839208 Name: Iraq In: 14 Out: 14
+Node id: 1398498665 Name: Yemen In: 16 Out: 16
+Node id: -149268849 Name: Mozambique In: 6 Out: 6
+Node id: -94114888 Name: Samoa In: 4 Out: 3
+Node id: 1759790358 Name: Kiribati In: 4 Out: 4
+Node id: 1457326476 Name: Tuvalu In: 1 Out: 1
+Node id: 1655410346 Name: Solomon Islands In: 5 Out: 5
+Node id: 2120744951 Name: Vanuatu In: 5 Out: 5
+Node id: -1438601394 Name: Tonga In: 3 Out: 3
+Node id: -2031632066 Name: Ambon In: 1 Out: 1
+Node id: -1107875767 Name: Greenland In: 3 Out: 3
+Node id: 679528803 Name: Cook Islands In: 4 Out: 4
+Node id: 1089195664 Name: American Samoa In: 1 Out: 1
+Node id: 196830956 Name: Cape Verde In: 7 Out: 7
+Node id: -1514301935 Name: Eritrea In: 6 Out: 6
+Node id: -167081759 Name: Bhutan In: 3 Out: 3
+Node id: -811447890 Name: Falkland Islands In: 1 Out: 1
+Node id: 838457649 Name: Saint Vincent and the Grenadines In: 5 Out: 4
+Node id: 1450782383 Name: East Timor In: 3 Out: 3
+Node id: 1529219495 Name: New Caledonia In: 7 Out: 7
+Node id: -462042873 Name: Norfolk Island In: 1 Out: 2
+Node id: -1234082042 Name: Niue In: 0 Out: 1
+Node id: -304182874 Name: Nauru In: 3 Out: 3
+Node id: 377562401 Name: Marshall Islands In: 4 Out: 4
+Node id: 1465185122 Name: Saint Pierre and Miquelon In: 1 Out: 1
+Node id: -770689216 Name: Faroe Islands In: 2 Out: 2
+Node id: -1925911571 Name: Lesotho In: 1 Out: 1
+Node id: 1757462870 Name: Swaziland In: 1 Out: 1
+Node id: 811701991 Name: Wallis and Futuna In: 2 Out: 2
+Node id: -937897023 Name: Micronesia In: 3 Out: 3
+Node id: -691240422 Name: Cocos (Keeling) Islands In: 1 Out: 1
+Node id: 649056784 Name: Christmas Island In: 2 Out: 2
+Node id: -1636068037 Name:  Fogo Island In: 1 Out: 1
+Node id: 969807429 Name: Orsta-Volda In: 1 Out: 1
+Node id: -1892620963 Name: Vardø In: 1 Out: 1
+Node id: 690096654 Name: Mo i Rana In: 2 Out: 2
+Node id: -68557150 Name: Rørvik In: 2 Out: 2
+
+-------------
+
+Edges
+_____________
+Edge: Azerbaijan->Turkmenistan has 2 | Edge: Azerbaijan->Latvia has 2
+Edge: Azerbaijan->China has 2 | Edge: Azerbaijan->Georgia has 2
+Edge: Azerbaijan->Italy has 4 | Edge: Azerbaijan->Germany has 3
+Edge: Azerbaijan->Iran has 3 | Edge: Azerbaijan->Turkey has 6
+Edge: Azerbaijan->France has 2 | Edge: Azerbaijan->Qatar has 2
+Edge: Azerbaijan->Austria has 2 | Edge: Azerbaijan->Hungary has 1
+Edge: Azerbaijan->Ukraine has 3 | Edge: Azerbaijan->Israel has 1
+Edge: Azerbaijan->Afghanistan has 1 | Edge: Azerbaijan->United Arab Emirates has 2
+Edge: Azerbaijan->Uzbekistan has 1 | Edge: Azerbaijan->Belarus has 1
+Edge: Azerbaijan->Russia has 21 | Edge: Azerbaijan->Kazakhstan has 4
+Edge: Azerbaijan->Czech Republic has 2 | Edge: Azerbaijan->United Kingdom has 2
+Edge: Russia->Turkmenistan has 2 | Edge: Russia->Maldives has 2
+Edge: Russia-> has 4 | Edge: Russia->Latvia has 8
+Edge: Russia->Hong Kong has 9 | Edge: Russia->Estonia has 3
+Edge: Russia->Belgium has 2 | Edge: Russia->Malta has 4
+Edge: Russia->China has 48 | Edge: Russia->Sweden has 4
+Edge: Russia->Georgia has 5 | Edge: Russia->Denmark has 3
+Edge: Russia->Japan has 9 | Edge: Russia->Italy has 34
+Edge: Russia->Cuba has 3 | Edge: Russia->Tajikistan has 77
+Edge: Russia->Germany has 47 | Edge: Russia->Morocco has 2
+Edge: Russia->Iran has 2 | Edge: Russia->Turkey has 32
+Edge: Russia->Vietnam has 6 | Edge: Russia->United States has 13
+Edge: Russia->Mongolia has 2 | Edge: Russia->France has 11
+Edge: Russia->Mauritius has 1 | Edge: Russia->Qatar has 1
+Edge: Russia->Montenegro has 7 | Edge: Russia->Bulgaria has 8
+Edge: Russia->Austria has 13 | Edge: Russia->Sri Lanka has 1
+Edge: Russia->Greece has 28 | Edge: Russia->Serbia has 2
+Edge: Russia->Tromso has 1 | Edge: Russia->Thailand has 11
+Edge: Russia->South Korea has 13 | Edge: Russia->Seychelles has 1
+Edge: Russia->Hungary has 4 | Edge: Russia->Ukraine has 38
+Edge: Russia->India has 2 | Edge: Russia->Jordan has 2
+Edge: Russia->Romania has 2 | Edge: Russia->Singapore has 2
+Edge: Russia->Norway has 3 | Edge: Russia->Canada has 2
+Edge: Russia->Israel has 10 | Edge: Russia->Dominican Republic has 4
+Edge: Russia->Netherlands has 4 | Edge: Russia->Spain has 28
+Edge: Russia->Croatia has 2 | Edge: Russia->Mexico has 1
+Edge: Russia->Armenia has 27 | Edge: Russia->Egypt has 11
+Edge: Russia->Portugal has 2 | Edge: Russia->Slovenia has 2
+Edge: Russia->United Arab Emirates has 35 | Edge: Russia->Lithuania has 4
+Edge: Russia->Finland has 9 | Edge: Russia->Uzbekistan has 81
+Edge: Russia->Belarus has 12 | Edge: Russia->Kyrgyzstan has 49
+Edge: Russia->Kazakhstan has 35 | Edge: Russia->Azerbaijan has 21
+Edge: Russia->Switzerland has 6 | Edge: Russia->Tunisia has 6
+Edge: Russia->Poland has 4 | Edge: Russia->Czech Republic has 24
+Edge: Russia->Lebanon has 2 | Edge: Russia->North Korea has 1
+Edge: Russia->Moldova has 5 | Edge: Russia->Cyprus has 11
+Edge: Russia->Algeria has 1 | Edge: Russia->United Kingdom has 8
+Edge: Cote d'Ivoire->Gabon has 1 | Edge: Cote d'Ivoire->Belgium has 4
+Edge: Cote d'Ivoire->Morocco has 1 | Edge: Cote d'Ivoire->Turkey has 1
+Edge: Cote d'Ivoire->Mali has 2 | Edge: Cote d'Ivoire->France has 3
+Edge: Cote d'Ivoire->Guinea has 2 | Edge: Cote d'Ivoire->Liberia has 1
+Edge: Cote d'Ivoire->Benin has 3 | Edge: Cote d'Ivoire->Senegal has 3
+Edge: Cote d'Ivoire->Cameroon has 1 | Edge: Cote d'Ivoire->Kenya has 1
+Edge: Cote d'Ivoire->Ghana has 7 | Edge: Cote d'Ivoire->Nigeria has 4
+Edge: Cote d'Ivoire->Togo has 5 | Edge: Cote d'Ivoire->Tunisia has 1
+Edge: Cote d'Ivoire->Sierra Leone has 1 | Edge: Cote d'Ivoire->Burkina Faso has 8
+Edge: Cote d'Ivoire->Algeria has 1 | Edge: Burkina Faso->Belgium has 4
+Edge: Burkina Faso->Ethiopia has 1 | Edge: Burkina Faso->Morocco has 1
+Edge: Burkina Faso->Turkey has 1 | Edge: Burkina Faso->Niger has 7
+Edge: Burkina Faso->Mali has 3 | Edge: Burkina Faso->France has 1
+Edge: Burkina Faso->Cote d'Ivoire has 8 | Edge: Burkina Faso->Benin has 1
+Edge: Burkina Faso->Senegal has 1 | Edge: Burkina Faso->Ghana has 1
+Edge: Burkina Faso->Togo has 2 | Edge: Burkina Faso->Tunisia has 1
+Edge: Burkina Faso->Algeria has 1 | Edge: Ghana->South Africa has 1
+Edge: Ghana->Ethiopia has 1 | Edge: Ghana->Italy has 1
+Edge: Ghana->Germany has 1 | Edge: Ghana->Morocco has 1
+Edge: Ghana->Turkey has 1 | Edge: Ghana->United States has 1
+Edge: Ghana->Cote d'Ivoire has 8 | Edge: Ghana->Liberia has 5
+Edge: Ghana->Benin has 1 | Edge: Ghana->Senegal has 3
+Edge: Ghana->Netherlands has 1 | Edge: Ghana->Spain has 1
+Edge: Ghana->Namibia has 1 | Edge: Ghana->Kenya has 1
+Edge: Ghana->Egypt has 1 | Edge: Ghana->Portugal has 1
+Edge: Ghana->Nigeria has 5 | Edge: Ghana->Togo has 1
+Edge: Ghana->United Arab Emirates has 1 | Edge: Ghana->Sierra Leone has 3
+Edge: Ghana->Lebanon has 1 | Edge: Ghana->Burkina Faso has 1
+Edge: Ghana->United Kingdom has 2 | Edge: Mali->Ethiopia has 2
+Edge: Mali->Morocco has 1 | Edge: Mali->Mauritania has 1
+Edge: Mali->France has 2 | Edge: Mali->Cote d'Ivoire has 3
+Edge: Mali->Guinea has 2 | Edge: Mali->Benin has 3
+Edge: Mali->Senegal has 5 | Edge: Mali->Kenya has 1
+Edge: Mali->Portugal has 1 | Edge: Mali->Nigeria has 1
+Edge: Mali->Togo has 1 | Edge: Mali->Tunisia has 1
+Edge: Mali->Burkina Faso has 3 | Edge: Mali->Algeria has 1
+Edge: Senegal->South Africa has 3 | Edge: Senegal->Belgium has 5
+Edge: Senegal->Italy has 1 | Edge: Senegal->Morocco has 1
+Edge: Senegal-> Santiago Island has 2 | Edge: Senegal->Turkey has 1
+Edge: Senegal->United States has 4 | Edge: Senegal->Mauritania has 2
+Edge: Senegal->Mali has 5 | Edge: Senegal->France has 3
+Edge: Senegal->Cote d'Ivoire has 3 | Edge: Senegal->Guinea has 8
+Edge: Senegal->Benin has 2 | Edge: Senegal->Cameroon has 1
+Edge: Senegal->Spain has 8 | Edge: Senegal->Ghana has 3
+Edge: Senegal->Portugal has 1 | Edge: Senegal->Nigeria has 1
+Edge: Senegal->United Arab Emirates has 1 | Edge: Senegal->Guinea-Bissau has 2
+Edge: Senegal->Gambia has 4 | Edge: Senegal->Tunisia has 1
+Edge: Senegal->Sierra Leone has 2 | Edge: Senegal->Burkina Faso has 1
+Edge: Senegal->Algeria has 1 | Edge: Benin->Gabon has 3
+Edge: Benin->Equatorial Guinea has 2 | Edge: Benin->Ethiopia has 1
+Edge: Benin->Niger has 1 | Edge: Benin->Mali has 3
+Edge: Benin->France has 1 | Edge: Benin->Cote d'Ivoire has 8
+Edge: Benin->Congo (Brazzaville) has 7 | Edge: Benin->Senegal has 2
+Edge: Benin->Cameroon has 4 | Edge: Benin->Kenya has 1
+Edge: Benin->Ghana has 1 | Edge: Benin->Nigeria has 3
+Edge: Benin->Togo has 3 | Edge: Benin->Burkina Faso has 1
+Edge: Togo->Gabon has 1 | Edge: Togo->Belgium has 3
+Edge: Togo->Ethiopia has 1 | Edge: Togo->Mali has 1
+Edge: Togo->France has 1 | Edge: Togo->Cote d'Ivoire has 2
+Edge: Togo->Brazil has 1 | Edge: Togo->Guinea has 1
+Edge: Togo->Benin has 2 | Edge: Togo->Cameroon has 1
+Edge: Togo->Ghana has 2 | Edge: Togo->Nigeria has 2
+Edge: Togo->Burkina Faso has 2 | Edge: Niger->Ethiopia has 1
+Edge: Niger->Morocco has 1 | Edge: Niger->France has 3
+Edge: Niger->Benin has 1 | Edge: Niger->Chad has 1
+Edge: Niger->Nigeria has 1 | Edge: Niger->Burkina Faso has 8
+Edge: Niger->Algeria has 1 | Edge: Colombia-> has 4
+Edge: Colombia->Argentina has 2 | Edge: Colombia->Venezuela has 5
+Edge: Colombia->Chile has 2 | Edge: Colombia->Aruba has 2
+Edge: Colombia->Cuba has 3 | Edge: Colombia->Germany has 2
+Edge: Colombia->United States has 49 | Edge: Colombia->France has 1
+Edge: Colombia->Peru has 4 | Edge: Colombia->El Salvador has 3
+Edge: Colombia->Brazil has 4 | Edge: Colombia->Ecuador has 11
+Edge: Colombia->Netherlands Antilles has 2 | Edge: Colombia->Panama has 10
+Edge: Colombia->Bolivia has 1 | Edge: Colombia->Canada has 2
+Edge: Colombia->Dominican Republic has 3 | Edge: Colombia->Guatemala has 1
+Edge: Colombia->Spain has 5 | Edge: Colombia->Costa Rica has 1
+Edge: Colombia->Mexico has 6 | Edge: Colombia->Puerto Rico has 1
+Edge: Ecuador-> has 1 | Edge: Ecuador->Argentina has 1
+Edge: Ecuador->Venezuela has 1 | Edge: Ecuador->Chile has 1
+Edge: Ecuador->Colombia has 11 | Edge: Ecuador->Cuba has 1
+Edge: Ecuador->United States has 8 | Edge: Ecuador->Peru has 5
+Edge: Ecuador->El Salvador has 2 | Edge: Ecuador->Brazil has 1
+Edge: Ecuador->Panama has 3 | Edge: Ecuador->Netherlands has 2
+Edge: Ecuador->Spain has 4 | Edge: Ecuador->Mexico has 1
+Edge: Italy->Bosnia and Herzegovina has 1 | Edge: Italy->Argentina has 2
+Edge: Italy->Latvia has 9 | Edge: Italy->Venezuela has 1
+Edge: Italy->Hong Kong has 2 | Edge: Italy->Estonia has 1
+Edge: Italy->Belgium has 45 | Edge: Italy->Malta has 16
+Edge: Italy->China has 5 | Edge: Italy->Sweden has 19
+Edge: Italy->Slovakia has 4 | Edge: Italy->Ethiopia has 1
+Edge: Italy->Ireland has 16 | Edge: Italy->Rygge has 4
+Edge: Italy->Kuwait has 2 | Edge: Italy->Georgia has 1
+Edge: Italy->Denmark has 21 | Edge: Italy->Japan has 4
+Edge: Italy->Cuba has 3 | Edge: Italy->Germany has 221
+Edge: Italy->Morocco has 17 | Edge: Italy->Iran has 3
+Edge: Italy->Pakistan has 1 | Edge: Italy->Turkey has 12
+Edge: Italy->United States has 53 | Edge: Italy->France has 148
+Edge: Italy->Mauritius has 1 | Edge: Italy->Qatar has 4
+Edge: Italy->Montenegro has 2 | Edge: Italy->Bulgaria has 7
+Edge: Italy->Austria has 28 | Edge: Italy->Sri Lanka has 3
+Edge: Italy->Greece has 25 | Edge: Italy->Serbia has 6
+Edge: Italy->Brazil has 4 | Edge: Italy->Thailand has 2
+Edge: Italy->South Korea has 2 | Edge: Italy->Bangladesh has 1
+Edge: Italy->Hungary has 11 | Edge: Italy->Ukraine has 10
+Edge: Italy->Senegal has 1 | Edge: Italy->India has 2
+Edge: Italy->Jordan has 3 | Edge: Italy->Romania has 34
+Edge: Italy->Albania has 27 | Edge: Italy->Singapore has 2
+Edge: Italy->Norway has 8 | Edge: Italy->Canada has 8
+Edge: Italy->Israel has 9 | Edge: Italy->Dominican Republic has 3
+Edge: Italy->Netherlands has 41 | Edge: Italy->Sandefjord has 2
+Edge: Italy->Spain has 120 | Edge: Italy->Croatia has 5
+Edge: Italy->Mexico has 1 | Edge: Italy->Armenia has 1
+Edge: Italy->Macedonia has 3 | Edge: Italy->Libya has 2
+Edge: Italy->Egypt has 6 | Edge: Italy->Portugal has 20
+Edge: Italy->Nigeria has 1 | Edge: Italy->Saudi Arabia has 8
+Edge: Italy->United Arab Emirates has 8 | Edge: Italy->Lithuania has 7
+Edge: Italy->Finland has 5 | Edge: Italy->Uzbekistan has 2
+Edge: Italy->Belarus has 2 | Edge: Italy->Russia has 34
+Edge: Italy->Luxembourg has 7 | Edge: Italy->Azerbaijan has 4
+Edge: Italy->Switzerland has 38 | Edge: Italy->Tunisia has 8
+Edge: Italy->Poland has 29 | Edge: Italy->Czech Republic has 19
+Edge: Italy->Lebanon has 4 | Edge: Italy->Moldova has 12
+Edge: Italy->Cyprus has 1 | Edge: Italy->Oman has 1
+Edge: Italy->Algeria has 4 | Edge: Italy->United Kingdom has 141
+Edge: Switzerland->South Africa has 2 | Edge: Switzerland->Bosnia and Herzegovina has 1
+Edge: Switzerland->Latvia has 1 | Edge: Switzerland->Hong Kong has 1
+Edge: Switzerland->Belgium has 6 | Edge: Switzerland->Malta has 3
+Edge: Switzerland->China has 3 | Edge: Switzerland->Sweden has 6
+Edge: Switzerland->Ireland has 3 | Edge: Switzerland->Denmark has 7
+Edge: Switzerland->Japan has 2 | Edge: Switzerland->Italy has 38
+Edge: Switzerland->Cuba has 1 | Edge: Switzerland->Germany has 42
+Edge: Switzerland->Morocco has 5 | Edge: Switzerland->Turkey has 11
+Edge: Switzerland->United States has 29 | Edge: Switzerland->France has 21
+Edge: Switzerland->Qatar has 3 | Edge: Switzerland->Montenegro has 1
+Edge: Switzerland->Bulgaria has 1 | Edge: Switzerland->Austria has 11
+Edge: Switzerland->Greece has 9 | Edge: Switzerland->Serbia has 9
+Edge: Switzerland->Brazil has 1 | Edge: Switzerland->Thailand has 2
+Edge: Switzerland->South Korea has 1 | Edge: Switzerland->Hungary has 2
+Edge: Switzerland->Ukraine has 3 | Edge: Switzerland->India has 4
+Edge: Switzerland->Jordan has 2 | Edge: Switzerland->Romania has 3
+Edge: Switzerland->Singapore has 3 | Edge: Switzerland->Norway has 3
+Edge: Switzerland->Canada has 8 | Edge: Switzerland->Israel has 5
+Edge: Switzerland->Dominican Republic has 1 | Edge: Switzerland->Jersey has 2
+Edge: Switzerland->Netherlands has 5 | Edge: Switzerland->Spain has 42
+Edge: Switzerland->Croatia has 8 | Edge: Switzerland->Macedonia has 2
+Edge: Switzerland->Kenya has 3 | Edge: Switzerland->Egypt has 10
+Edge: Switzerland->Portugal has 21 | Edge: Switzerland->Saudi Arabia has 2
+Edge: Switzerland->Slovenia has 2 | Edge: Switzerland->United Arab Emirates has 7
+Edge: Switzerland->Finland has 3 | Edge: Switzerland->Belarus has 1
+Edge: Switzerland->Russia has 6 | Edge: Switzerland->Luxembourg has 2
+Edge: Switzerland->Tunisia has 6 | Edge: Switzerland->Poland has 7
+Edge: Switzerland->Czech Republic has 4 | Edge: Switzerland->Lebanon has 1
+Edge: Switzerland->Iceland has 1 | Edge: Switzerland->Cyprus has 3
+Edge: Switzerland->Oman has 2 | Edge: Switzerland->Algeria has 1
+Edge: Switzerland->United Kingdom has 24 | Edge: France->South Africa has 2
+Edge: France-> has 4 | Edge: France->Argentina has 2
+Edge: France->Guernsey has 1 | Edge: France->Gabon has 1
+Edge: France->Latvia has 3 | Edge: France->Venezuela has 1
+Edge: France->Hong Kong has 3 | Edge: France->Estonia has 1
+Edge: France->Belgium has 36 | Edge: France->Malta has 11
+Edge: France->Chile has 2 | Edge: France->China has 10
+Edge: France->Congo (Kinshasa) has 1 | Edge: France->Colombia has 1
+Edge: France->Sweden has 18 | Edge: France->Angola has 1
+Edge: France->Slovakia has 1 | Edge: France->Ethiopia has 1
+Edge: France->Haiti has 1 | Edge: France->Ireland has 23
+Edge: France->Rygge has 2 | Edge: France->Georgia has 2
+Edge: France->Denmark has 12 | Edge: France->Japan has 7
+Edge: France->Italy has 149 | Edge: France->Cuba has 2
+Edge: France->Germany has 84 | Edge: France->Morocco has 79
+Edge: France->Iran has 1 | Edge: France->Djibouti has 1
+Edge: France->Pakistan has 2 | Edge: France-> Santiago Island has 1
+Edge: France->Turkey has 26 | Edge: France->Niger has 3
+Edge: France->Vietnam has 6 | Edge: France->United States has 91
+Edge: France->Mauritania has 1 | Edge: France->Madagascar has 3
+Edge: France->Mali has 2 | Edge: France->Mauritius has 2
+Edge: France->Peru has 2 | Edge: France->Qatar has 1
+Edge: France->Cote d'Ivoire has 3 | Edge: France->Montenegro has 2
+Edge: France->Bulgaria has 3 | Edge: France->Reunion has 5
+Edge: France->Austria has 13 | Edge: France->Bahrain has 1
+Edge: France->Central African Republic has 1 | Edge: France->Sri Lanka has 1
+Edge: France->Greece has 32 | Edge: France->Serbia has 4
+Edge: France->Congo (Brazzaville) has 4 | Edge: France->Brazil has 4
+Edge: France->Malaysia has 3 | Edge: France->Thailand has 3
+Edge: France->Guinea has 1 | Edge: France->South Korea has 3
+Edge: France->Liberia has 2 | Edge: France->Netherlands Antilles has 8
+Edge: France->Benin has 1 | Edge: France->Panama has 1
+Edge: France->Hungary has 5 | Edge: France->Ukraine has 3
+Edge: France->Senegal has 3 | Edge: France->India has 4
+Edge: France->Jordan has 2 | Edge: France->Cape Verde has 3
+Edge: France->Chad has 1 | Edge: France->Cameroon has 4
+Edge: France->Romania has 7 | Edge: France->Singapore has 2
+Edge: France->Antigua and Barbuda has 2 | Edge: France->Norway has 12
+Edge: France->Martinique has 4 | Edge: France->Guadeloupe has 7
+Edge: France->Canada has 19 | Edge: France->Israel has 9
+Edge: France->Dominican Republic has 5 | Edge: France->Jersey has 1
+Edge: France->Netherlands has 33 | Edge: France->Sandefjord has 1
+Edge: France->Spain has 149 | Edge: France->Taiwan has 1
+Edge: France->Croatia has 12 | Edge: France->Mexico has 4
+Edge: France->Virgin Islands has 1 | Edge: France->Armenia has 3
+Edge: France->Kenya has 2 | Edge: France->Egypt has 5
+Edge: France->French Guiana has 3 | Edge: France->Portugal has 53
+Edge: France->Nigeria has 4 | Edge: France->Saudi Arabia has 4
+Edge: France->Togo has 1 | Edge: France->Mayotte has 3
+Edge: France->Slovenia has 2 | Edge: France->United Arab Emirates has 7
+Edge: France->Lithuania has 3 | Edge: France->Finland has 6
+Edge: France->Uzbekistan has 2 | Edge: France->Belarus has 2
+Edge: France->Russia has 11 | Edge: France->Luxembourg has 7
+Edge: France->Azerbaijan has 2 | Edge: France->Switzerland has 21
+Edge: France->Puerto Rico has 1 | Edge: France->Tunisia has 45
+Edge: France->Poland has 15 | Edge: France->Czech Republic has 16
+Edge: France->Lebanon has 2 | Edge: France->Iceland has 4
+Edge: France->Moldova has 1 | Edge: France->Cyprus has 3
+Edge: France->Oman has 1 | Edge: France->Burkina Faso has 1
+Edge: France->Algeria has 68 | Edge: France->United Kingdom has 157
+Edge: United Kingdom->Turkmenistan has 2 | Edge: United Kingdom->South Africa has 8
+Edge: United Kingdom->Maldives has 1 | Edge: United Kingdom->Bermuda has 2
+Edge: United Kingdom->Argentina has 1 | Edge: United Kingdom->Guernsey has 11
+Edge: United Kingdom->Trinidad and Tobago has 1 | Edge: United Kingdom->Latvia has 7
+Edge: United Kingdom->Hong Kong has 3 | Edge: United Kingdom->Estonia has 3
+Edge: United Kingdom->Belgium has 17 | Edge: United Kingdom->Malta has 28
+Edge: United Kingdom->China has 11 | Edge: United Kingdom->Sweden has 27
+Edge: United Kingdom->Angola has 1 | Edge: United Kingdom->Slovakia has 6
+Edge: United Kingdom->Ethiopia has 1 | Edge: United Kingdom->Ireland has 63
+Edge: United Kingdom->Rygge has 3 | Edge: United Kingdom->Kuwait has 3
+Edge: United Kingdom->Denmark has 22 | Edge: United Kingdom->Japan has 8
+Edge: United Kingdom->Italy has 141 | Edge: United Kingdom->Cuba has 2
+Edge: United Kingdom->Germany has 103 | Edge: United Kingdom->Morocco has 26
+Edge: United Kingdom->Iran has 1 | Edge: United Kingdom->Pakistan has 7
+Edge: United Kingdom->Turkey has 91 | Edge: United Kingdom->United States has 203
+Edge: United Kingdom->Isle of Man has 10 | Edge: United Kingdom->Saint Lucia has 4
+Edge: United Kingdom->France has 158 | Edge: United Kingdom->Mauritius has 4
+Edge: United Kingdom->Qatar has 4 | Edge: United Kingdom->Montenegro has 2
+Edge: United Kingdom->Bulgaria has 10 | Edge: United Kingdom->Austria has 11
+Edge: United Kingdom->Bahrain has 4 | Edge: United Kingdom->Gibraltar has 6
+Edge: United Kingdom->Sri Lanka has 1 | Edge: United Kingdom->Greece has 105
+Edge: United Kingdom->Serbia has 3 | Edge: United Kingdom->Brazil has 3
+Edge: United Kingdom->Tromso has 1 | Edge: United Kingdom->Malaysia has 2
+Edge: United Kingdom->Uganda has 2 | Edge: United Kingdom->Thailand has 4
+Edge: United Kingdom->South Korea has 3 | Edge: United Kingdom->Bahamas has 1
+Edge: United Kingdom->Bangladesh has 2 | Edge: United Kingdom->Hungary has 15
+Edge: United Kingdom->Ukraine has 3 | Edge: United Kingdom->India has 17
+Edge: United Kingdom->Jordan has 2 | Edge: United Kingdom->Cape Verde has 9
+Edge: United Kingdom->Romania has 11 | Edge: United Kingdom->Albania has 1
+Edge: United Kingdom->Singapore has 4 | Edge: United Kingdom->Antigua and Barbuda has 3
+Edge: United Kingdom->Norway has 35 | Edge: United Kingdom->Canada has 42
+Edge: United Kingdom->Israel has 6 | Edge: United Kingdom->Dominican Republic has 3
+Edge: United Kingdom->Barbados has 4 | Edge: United Kingdom->Jersey has 24
+Edge: United Kingdom->Netherlands has 53 | Edge: United Kingdom->Sandefjord has 3
+Edge: United Kingdom->Spain has 516 | Edge: United Kingdom->Croatia has 35
+Edge: United Kingdom->Mexico has 14 | Edge: United Kingdom->Macedonia has 1
+Edge: United Kingdom->Libya has 3 | Edge: United Kingdom->Kenya has 3
+Edge: United Kingdom->Ghana has 2 | Edge: United Kingdom->Egypt has 33
+Edge: United Kingdom->Portugal has 84 | Edge: United Kingdom->Nigeria has 4
+Edge: United Kingdom->Saudi Arabia has 8 | Edge: United Kingdom->Slovenia has 2
+Edge: United Kingdom->Jamaica has 4 | Edge: United Kingdom->United Arab Emirates has 21
+Edge: United Kingdom->Lithuania has 9 | Edge: United Kingdom->Finland has 9
+Edge: United Kingdom->Uzbekistan has 1 | Edge: United Kingdom->Belarus has 1
+Edge: United Kingdom->Russia has 8 | Edge: United Kingdom->Kazakhstan has 3
+Edge: United Kingdom->Luxembourg has 4 | Edge: United Kingdom->Azerbaijan has 2
+Edge: United Kingdom->Switzerland has 24 | Edge: United Kingdom->Tunisia has 22
+Edge: United Kingdom->Poland has 62 | Edge: United Kingdom->Czech Republic has 16
+Edge: United Kingdom->Sierra Leone has 2 | Edge: United Kingdom->Lebanon has 3
+Edge: United Kingdom->Iceland has 10 | Edge: United Kingdom->Philippines has 1
+Edge: United Kingdom->Moldova has 1 | Edge: United Kingdom->Cyprus has 55
+Edge: United Kingdom->Oman has 1 | Edge: United Kingdom->Algeria has 3
+Edge: Spain-> has 1 | Edge: Spain->Argentina has 4
+Edge: Spain->Latvia has 3 | Edge: Spain->Venezuela has 4
+Edge: Spain->Estonia has 1 | Edge: Spain->Belgium has 60
+Edge: Spain->Equatorial Guinea has 1 | Edge: Spain->Malta has 4
+Edge: Spain->Chile has 2 | Edge: Spain->China has 2
+Edge: Spain->Colombia has 5 | Edge: Spain->Sweden has 34
+Edge: Spain->Angola has 1 | Edge: Spain->Slovakia has 3
+Edge: Spain->Ireland has 53 | Edge: Spain->Rygge has 7
+Edge: Spain->Denmark has 31 | Edge: Spain->Italy has 120
+Edge: Spain->Cuba has 3 | Edge: Spain->Germany has 353
+Edge: Spain->Morocco has 39 | Edge: Spain->Pakistan has 2
+Edge: Spain-> Santiago Island has 1 | Edge: Spain->Turkey has 7
+Edge: Spain->United States has 57 | Edge: Spain->Mauritania has 3
+Edge: Spain->France has 151 | Edge: Spain->Peru has 3
+Edge: Spain->Qatar has 5 | Edge: Spain->Bulgaria has 8
+Edge: Spain->Austria has 40 | Edge: Spain->Greece has 7
+Edge: Spain->Brazil has 8 | Edge: Spain->Tromso has 1
+Edge: Spain->Ecuador has 4 | Edge: Spain->Thailand has 1
+Edge: Spain->South Korea has 1 | Edge: Spain->Panama has 1
+Edge: Spain->Hungary has 5 | Edge: Spain->Ukraine has 11
+Edge: Spain->Senegal has 7 | Edge: Spain->Jordan has 4
+Edge: Spain->Bolivia has 2 | Edge: Spain->Romania has 17
+Edge: Spain->Singapore has 1 | Edge: Spain->Norway has 36
+Edge: Spain->Canada has 4 | Edge: Spain->Israel has 6
+Edge: Spain-> Sheffield has 2 | Edge: Spain->Dominican Republic has 5
+Edge: Spain->Netherlands has 68 | Edge: Spain->Sandefjord has 7
+Edge: Spain->Guatemala has 1 | Edge: Spain->Croatia has 5
+Edge: Spain->Costa Rica has 1 | Edge: Spain->Mexico has 8
+Edge: Spain->Western Sahara has 3 | Edge: Spain->Libya has 1
+Edge: Spain->Ghana has 1 | Edge: Spain->Egypt has 2
+Edge: Spain->Portugal has 43 | Edge: Spain->Nigeria has 1
+Edge: Spain->Saudi Arabia has 2 | Edge: Spain->United Arab Emirates has 2
+Edge: Spain->Lithuania has 4 | Edge: Spain->Finland has 16
+Edge: Spain->Belarus has 1 | Edge: Spain->Russia has 28
+Edge: Spain->Gambia has 4 | Edge: Spain->Uruguay has 1
+Edge: Spain->Luxembourg has 12 | Edge: Spain->Switzerland has 42
+Edge: Spain->Tunisia has 3 | Edge: Spain->Poland has 22
+Edge: Spain->Czech Republic has 16 | Edge: Spain->Iceland has 2
+Edge: Spain->Algeria has 14 | Edge: Spain->United Kingdom has 510
+Edge: Spain->Harstad/Narvik has 1 | Edge: Cyprus->Latvia has 1
+Edge: Cyprus->Belgium has 2 | Edge: Cyprus->Malta has 2
+Edge: Cyprus->Sweden has 2 | Edge: Cyprus->Italy has 1
+Edge: Cyprus->Germany has 8 | Edge: Cyprus->Turkey has 14
+Edge: Cyprus->France has 3 | Edge: Cyprus->Qatar has 1
+Edge: Cyprus->Bulgaria has 4 | Edge: Cyprus->Austria has 3
+Edge: Cyprus->Bahrain has 1 | Edge: Cyprus->Greece has 12
+Edge: Cyprus->Serbia has 2 | Edge: Cyprus->Hungary has 1
+Edge: Cyprus->Ukraine has 5 | Edge: Cyprus->Jordan has 1
+Edge: Cyprus->Romania has 3 | Edge: Cyprus->Norway has 1
+Edge: Cyprus->Israel has 3 | Edge: Cyprus->Netherlands has 3
+Edge: Cyprus->Egypt has 2 | Edge: Cyprus->United Arab Emirates has 3
+Edge: Cyprus->Lithuania has 1 | Edge: Cyprus->Belarus has 1
+Edge: Cyprus->Russia has 11 | Edge: Cyprus->Switzerland has 3
+Edge: Cyprus->Poland has 2 | Edge: Cyprus->Lebanon has 2
+Edge: Cyprus->Moldova has 1 | Edge: Cyprus->United Kingdom has 50
+Edge: Egypt->South Africa has 2 | Edge: Egypt-> has 2
+Edge: Egypt->Belgium has 2 | Edge: Egypt->Tanzania has 1
+Edge: Egypt->China has 4 | Edge: Egypt->Ethiopia has 2
+Edge: Egypt->Indonesia has 1 | Edge: Egypt->Kuwait has 16
+Edge: Egypt->Eritrea has 1 | Edge: Egypt->Denmark has 2
+Edge: Egypt->Italy has 5 | Edge: Egypt->Germany has 18
+Edge: Egypt->Morocco has 2 | Edge: Egypt->Iraq has 2
+Edge: Egypt->Sudan has 3 | Edge: Egypt->Turkey has 8
+Edge: Egypt->South Sudan has 2 | Edge: Egypt->United States has 2
+Edge: Egypt->France has 5 | Edge: Egypt->Qatar has 4
+Edge: Egypt->Austria has 6 | Edge: Egypt->Bahrain has 2
+Edge: Egypt->Greece has 4 | Edge: Egypt->Uganda has 1
+Edge: Egypt->Thailand has 3 | Edge: Egypt->Hungary has 1
+Edge: Egypt->India has 2 | Edge: Egypt->Jordan has 5
+Edge: Egypt->Canada has 1 | Edge: Egypt->Israel has 1
+Edge: Egypt->Netherlands has 2 | Edge: Egypt->Spain has 2
+Edge: Egypt->Libya has 10 | Edge: Egypt->Kenya has 1
+Edge: Egypt->Ghana has 1 | Edge: Egypt->Nigeria has 3
+Edge: Egypt->Saudi Arabia has 57 | Edge: Egypt->United Arab Emirates has 11
+Edge: Egypt->Russia has 11 | Edge: Egypt->Yemen has 5
+Edge: Egypt->Switzerland has 10 | Edge: Egypt->Tunisia has 2
+Edge: Egypt->Lebanon has 3 | Edge: Egypt->Cyprus has 2
+Edge: Egypt->Oman has 2 | Edge: Egypt->Algeria has 2
+Edge: Egypt->United Kingdom has 34 | Edge: Sweden->Bosnia and Herzegovina has 3
+Edge: Sweden->Latvia has 4 | Edge: Sweden->Estonia has 4
+Edge: Sweden->Belgium has 6 | Edge: Sweden->Malta has 3
+Edge: Sweden->China has 2 | Edge: Sweden->Ethiopia has 2
+Edge: Sweden->Ireland has 2 | Edge: Sweden->Denmark has 9
+Edge: Sweden->Italy has 19 | Edge: Sweden->Germany has 29
+Edge: Sweden->Morocco has 1 | Edge: Sweden->Iraq has 7
+Edge: Sweden->Iran has 3 | Edge: Sweden->Turkey has 6
+Edge: Sweden->United States has 7 | Edge: Sweden->France has 17
+Edge: Sweden->Qatar has 1 | Edge: Sweden->Austria has 4
+Edge: Sweden->Greece has 10 | Edge: Sweden->Serbia has 6
+Edge: Sweden->Tromso has 1 | Edge: Sweden->Thailand has 3
+Edge: Sweden->Hungary has 4 | Edge: Sweden->Norway has 11
+Edge: Sweden->Israel has 1 | Edge: Sweden->Netherlands has 7
+Edge: Sweden->Sandefjord has 1 | Edge: Sweden->Spain has 34
+Edge: Sweden->Croatia has 9 | Edge: Sweden->Macedonia has 3
+Edge: Sweden->Portugal has 3 | Edge: Sweden->United Arab Emirates has 2
+Edge: Sweden->Lithuania has 2 | Edge: Sweden->Finland has 22
+Edge: Sweden->Belarus has 1 | Edge: Sweden->Russia has 4
+Edge: Sweden->Luxembourg has 1 | Edge: Sweden->Switzerland has 6
+Edge: Sweden->Poland has 13 | Edge: Sweden->Czech Republic has 4
+Edge: Sweden->Iceland has 1 | Edge: Sweden->Cyprus has 2
+Edge: Sweden->United Kingdom has 27 | Edge: Finland->Latvia has 3
+Edge: Finland->Hong Kong has 1 | Edge: Finland->Estonia has 3
+Edge: Finland->Belgium has 1 | Edge: Finland->China has 6
+Edge: Finland->Sweden has 22 | Edge: Finland->Ireland has 1
+Edge: Finland->Denmark has 4 | Edge: Finland->Japan has 6
+Edge: Finland->Italy has 5 | Edge: Finland->Germany has 19
+Edge: Finland->Turkey has 5 | Edge: Finland->United States has 4
+Edge: Finland->France has 6 | Edge: Finland->Bulgaria has 1
+Edge: Finland->Austria has 2 | Edge: Finland->Greece has 2
+Edge: Finland->Thailand has 1 | Edge: Finland->South Korea has 1
+Edge: Finland->Hungary has 3 | Edge: Finland->Ukraine has 1
+Edge: Finland->India has 1 | Edge: Finland->Singapore has 1
+Edge: Finland->Norway has 3 | Edge: Finland->Israel has 1
+Edge: Finland->Netherlands has 3 | Edge: Finland->Spain has 16
+Edge: Finland->Croatia has 3 | Edge: Finland->Portugal has 2
+Edge: Finland->Slovenia has 1 | Edge: Finland->Lithuania has 2
+Edge: Finland->Belarus has 2 | Edge: Finland->Russia has 9
+Edge: Finland->Switzerland has 3 | Edge: Finland->Poland has 5
+Edge: Finland->Czech Republic has 3 | Edge: Finland->Iceland has 2
+Edge: Finland->United Kingdom has 9 | Edge: Sandefjord->Latvia has 1
+Edge: Sandefjord->Sweden has 1 | Edge: Sandefjord->Denmark has 2
+Edge: Sandefjord->Italy has 2 | Edge: Sandefjord->Turkey has 1
+Edge: Sandefjord->France has 1 | Edge: Sandefjord->Serbia has 1
+Edge: Sandefjord->Romania has 1 | Edge: Sandefjord->Norway has 6
+Edge: Sandefjord->Netherlands has 2 | Edge: Sandefjord->Spain has 7
+Edge: Sandefjord->Croatia has 1 | Edge: Sandefjord->Lithuania has 1
+Edge: Sandefjord->Poland has 7 | Edge: Sandefjord->United Kingdom has 3
+Edge: Norway-> has 3 | Edge: Norway->Vardø has 3
+Edge: Norway->Latvia has 8 | Edge: Norway->Estonia has 5
+Edge: Norway->Belgium has 2 | Edge: Norway->Malta has 1
+Edge: Norway->Sweden has 11 | Edge: Norway->Slovakia has 1
+Edge: Norway->Ireland has 2 | Edge: Norway->Denmark has 27
+Edge: Norway->Italy has 8 | Edge: Norway->Germany has 25
+Edge: Norway->Morocco has 1 | Edge: Norway->Pakistan has 1
+Edge: Norway->Turkey has 6 | Edge: Norway->United States has 5
+Edge: Norway->France has 12 | Edge: Norway->Faroe Islands has 2
+Edge: Norway->Qatar has 1 | Edge: Norway->Bulgaria has 1
+Edge: Norway->Austria has 2 | Edge: Norway->Greece has 6
+Edge: Norway->Serbia has 1 | Edge: Norway->Tromso has 20
+Edge: Norway->Thailand has 3 | Edge: Norway->Rørvik has 2
+Edge: Norway->Hungary has 1 | Edge: Norway->Ukraine has 1
+Edge: Norway->Netherlands has 13 | Edge: Norway->Sandefjord has 6
+Edge: Norway->Spain has 36 | Edge: Norway->Croatia has 6
+Edge: Norway->Mo i Rana has 4 | Edge: Norway->Portugal has 3
+Edge: Norway->Orsta-Volda has 4 | Edge: Norway->Lithuania has 5
+Edge: Norway->Finland has 3 | Edge: Norway->Russia has 3
+Edge: Norway->Switzerland has 3 | Edge: Norway->Poland has 18
+Edge: Norway->Czech Republic has 3 | Edge: Norway->Iceland has 6
+Edge: Norway->Svalbard has 2 | Edge: Norway->Cyprus has 1
+Edge: Norway->United Kingdom has 35 | Edge: Norway->Harstad/Narvik has 7
+Edge: United States->South Africa has 5 | Edge: United States-> has 79
+Edge: United States->Bermuda has 11 | Edge: United States->Argentina has 10
+Edge: United States->Trinidad and Tobago has 11 | Edge: United States->Latvia has 1
+Edge: United States->Venezuela has 9 | Edge: United States->Hong Kong has 16
+Edge: United States->Belgium has 21 | Edge: United States->Chile has 10
+Edge: United States->China has 59 | Edge: United States->Colombia has 49
+Edge: United States->Sweden has 7 | Edge: United States->Ethiopia has 1
+Edge: United States->Haiti has 13 | Edge: United States->Ireland has 35
+Edge: United States->Honduras has 19 | Edge: United States->Kuwait has 2
+Edge: United States->Belize has 10 | Edge: United States->Grenada has 4
+Edge: United States->Aruba has 21 | Edge: United States->Denmark has 7
+Edge: United States->Japan has 80 | Edge: United States->Italy has 53
+Edge: United States->Paraguay has 2 | Edge: United States->Germany has 114
+Edge: United States->Morocco has 1 | Edge: United States->Pakistan has 1
+Edge: United States-> Santiago Island has 1 | Edge: United States->Turkey has 10
+Edge: United States->Turks and Caicos Islands has 14 | Edge: United States->Saint Lucia has 7
+Edge: United States->France has 89 | Edge: United States->Peru has 21
+Edge: United States->Qatar has 11 | Edge: United States->Guyana has 2
+Edge: United States->Austria has 6 | Edge: United States->El Salvador has 28
+Edge: United States->French Polynesia has 7 | Edge: United States->Greece has 3
+Edge: United States->Saint Kitts and Nevis has 3 | Edge: United States->Fiji has 6
+Edge: United States->Brazil has 57 | Edge: United States->Ecuador has 8
+Edge: United States->South Korea has 39 | Edge: United States->Samoa has 1
+Edge: United States->Netherlands Antilles has 24 | Edge: United States->Bahamas has 72
+Edge: United States->Panama has 29 | Edge: United States->Cayman Islands has 17
+Edge: United States->Ukraine has 1 | Edge: United States->Senegal has 4
+Edge: United States->India has 5 | Edge: United States->Jordan has 6
+Edge: United States->Bolivia has 2 | Edge: United States->Antigua and Barbuda has 7
+Edge: United States->Norway has 5 | Edge: United States->Martinique has 2
+Edge: United States->Marshall Islands has 1 | Edge: United States->Guadeloupe has 2
+Edge: United States->Canada has 364 | Edge: United States->Israel has 7
+Edge: United States->Dominican Republic has 61 | Edge: United States->Barbados has 3
+Edge: United States->Netherlands has 39 | Edge: United States->Guatemala has 17
+Edge: United States->Spain has 57 | Edge: United States->Taiwan has 14
+Edge: United States->Cook Islands has 2 | Edge: United States->Costa Rica has 34
+Edge: United States->Mexico has 369 | Edge: United States->Virgin Islands has 19
+Edge: United States->Ghana has 1 | Edge: United States->Egypt has 2
+Edge: United States->Portugal has 14 | Edge: United States->Nigeria has 3
+Edge: United States->Nicaragua has 6 | Edge: United States->Saudi Arabia has 5
+Edge: United States->Jamaica has 40 | Edge: United States->Guam has 1
+Edge: United States->American Samoa has 1 | Edge: United States->United Arab Emirates has 24
+Edge: United States->Finland has 4 | Edge: United States->New Zealand has 10
+Edge: United States->Russia has 13 | Edge: United States->Uruguay has 2
+Edge: United States->Switzerland has 29 | Edge: United States->Puerto Rico has 53
+Edge: United States->Poland has 2 | Edge: United States->Kiribati has 2
+Edge: United States->Iceland has 7 | Edge: United States->Philippines has 3
+Edge: United States->Australia has 26 | Edge: United States->United Kingdom has 207
+Edge: ->South Africa has 1 | Edge: ->Maldives has 1
+Edge: ->Bosnia and Herzegovina has 1 | Edge: ->Venezuela has 1
+Edge: ->Hong Kong has 1 | Edge: ->China has 90
+Edge: ->Colombia has 4 | Edge: ->Ethiopia has 3
+Edge: ->Indonesia has 4 | Edge: ->Belize has 18
+Edge: ->Japan has 5 | Edge: ->Morocco has 1
+Edge: ->Iran has 6 | Edge: ->Turkey has 2
+Edge: ->Vietnam has 1 | Edge: ->Greenland has 23
+Edge: ->United States has 77 | Edge: ->France has 4
+Edge: ->Sri Lanka has 1 | Edge: ->French Polynesia has 2
+Edge: ->Serbia has 1 | Edge: ->Brazil has 3
+Edge: ->Malaysia has 2 | Edge: ->Uganda has 1
+Edge: ->Ecuador has 1 | Edge: ->South Korea has 2
+Edge: ->Panama has 5 | Edge: ->India has 1
+Edge: ->Jordan has 1 | Edge: ->Norway has 2
+Edge: ->Canada has 3 | Edge: ->Spain has 1
+Edge: ->Taiwan has 3 | Edge: ->Zambia has 2
+Edge: ->Costa Rica has 4 | Edge: ->Virgin Islands has 1
+Edge: ->Macedonia has 1 | Edge: ->Libya has 3
+Edge: ->Papua New Guinea has 5 | Edge: ->Egypt has 2
+Edge: ->United Arab Emirates has 3 | Edge: ->Russia has 4
+Edge: ->Kazakhstan has 1 | Edge: ->Solomon Islands has 3
+Edge: ->Tunisia has 5 | Edge: ->Iceland has 1
+Edge: ->Australia has 1 | Edge: ->Algeria has 5
+Edge: United Arab Emirates->Turkmenistan has 2 | Edge: United Arab Emirates->South Africa has 10
+Edge: United Arab Emirates->Maldives has 4 | Edge: United Arab Emirates-> has 3
+Edge: United Arab Emirates->Hong Kong has 4 | Edge: United Arab Emirates->Rwanda has 1
+Edge: United Arab Emirates->Belgium has 3 | Edge: United Arab Emirates->Malta has 1
+Edge: United Arab Emirates->Tanzania has 1 | Edge: United Arab Emirates->China has 16
+Edge: United Arab Emirates->Sweden has 2 | Edge: United Arab Emirates->Angola has 2
+Edge: United Arab Emirates->Ethiopia has 3 | Edge: United Arab Emirates->Indonesia has 5
+Edge: United Arab Emirates->Ireland has 4 | Edge: United Arab Emirates->Kuwait has 12
+Edge: United Arab Emirates->Georgia has 1 | Edge: United Arab Emirates->Denmark has 2
+Edge: United Arab Emirates->Japan has 8 | Edge: United Arab Emirates->Brunei has 1
+Edge: United Arab Emirates->Italy has 8 | Edge: United Arab Emirates->Tajikistan has 3
+Edge: United Arab Emirates->Germany has 23 | Edge: United Arab Emirates->Morocco has 4
+Edge: United Arab Emirates->Iraq has 15 | Edge: United Arab Emirates->Iran has 24
+Edge: United Arab Emirates->Djibouti has 1 | Edge: United Arab Emirates->Nepal has 4
+Edge: United Arab Emirates->Pakistan has 51 | Edge: United Arab Emirates->Sudan has 10
+Edge: United Arab Emirates->Turkey has 8 | Edge: United Arab Emirates->Vietnam has 3
+Edge: United Arab Emirates->South Sudan has 1 | Edge: United Arab Emirates->United States has 24
+Edge: United Arab Emirates->France has 7 | Edge: United Arab Emirates->Mauritius has 2
+Edge: United Arab Emirates->Qatar has 10 | Edge: United Arab Emirates->Bulgaria has 1
+Edge: United Arab Emirates->Austria has 2 | Edge: United Arab Emirates->Bahrain has 15
+Edge: United Arab Emirates->Sri Lanka has 12 | Edge: United Arab Emirates->Greece has 3
+Edge: United Arab Emirates->Serbia has 3 | Edge: United Arab Emirates->Brazil has 3
+Edge: United Arab Emirates->Malaysia has 8 | Edge: United Arab Emirates->Uganda has 1
+Edge: United Arab Emirates->Thailand has 9 | Edge: United Arab Emirates->South Korea has 5
+Edge: United Arab Emirates->Seychelles has 4 | Edge: United Arab Emirates->Bangladesh has 10
+Edge: United Arab Emirates->Hungary has 1 | Edge: United Arab Emirates->Ukraine has 10
+Edge: United Arab Emirates->Senegal has 1 | Edge: United Arab Emirates->India has 88
+Edge: United Arab Emirates->Jordan has 9 | Edge: United Arab Emirates->Romania has 3
+Edge: United Arab Emirates->Singapore has 11 | Edge: United Arab Emirates->Canada has 3
+Edge: United Arab Emirates->Somalia has 5 | Edge: United Arab Emirates->Netherlands has 10
+Edge: United Arab Emirates->Spain has 2 | Edge: United Arab Emirates->Taiwan has 1
+Edge: United Arab Emirates->Zambia has 1 | Edge: United Arab Emirates->Afghanistan has 7
+Edge: United Arab Emirates->Armenia has 2 | Edge: United Arab Emirates->Macedonia has 1
+Edge: United Arab Emirates->Libya has 1 | Edge: United Arab Emirates->Kenya has 9
+Edge: United Arab Emirates->Ghana has 1 | Edge: United Arab Emirates->Egypt has 11
+Edge: United Arab Emirates->Portugal has 2 | Edge: United Arab Emirates->Nigeria has 2
+Edge: United Arab Emirates->Saudi Arabia has 47 | Edge: United Arab Emirates->Uzbekistan has 2
+Edge: United Arab Emirates->Belarus has 2 | Edge: United Arab Emirates->Kyrgyzstan has 1
+Edge: United Arab Emirates->Russia has 39 | Edge: United Arab Emirates->Yemen has 11
+Edge: United Arab Emirates->Kazakhstan has 7 | Edge: United Arab Emirates->Azerbaijan has 2
+Edge: United Arab Emirates->Switzerland has 7 | Edge: United Arab Emirates->Tunisia has 2
+Edge: United Arab Emirates->Poland has 2 | Edge: United Arab Emirates->Czech Republic has 2
+Edge: United Arab Emirates->Lebanon has 6 | Edge: United Arab Emirates->Philippines has 7
+Edge: United Arab Emirates->Moldova has 1 | Edge: United Arab Emirates->Cyprus has 3
+Edge: United Arab Emirates->Oman has 21 | Edge: United Arab Emirates->Australia has 16
+Edge: United Arab Emirates->Algeria has 2 | Edge: United Arab Emirates->United Kingdom has 22
+Edge: Philippines->Hong Kong has 11 | Edge: Philippines->China has 13
+Edge: Philippines->Macau has 5 | Edge: Philippines->Indonesia has 5
+Edge: Philippines->Japan has 15 | Edge: Philippines->Brunei has 2
+Edge: Philippines->Palau has 1 | Edge: Philippines->Vietnam has 4
+Edge: Philippines->United States has 3 | Edge: Philippines->Qatar has 3
+Edge: Philippines->Bahrain has 2 | Edge: Philippines->Malaysia has 9
+Edge: Philippines->Thailand has 6 | Edge: Philippines->South Korea has 27
+Edge: Philippines->Singapore has 17 | Edge: Philippines->Canada has 1
+Edge: Philippines->Taiwan has 9 | Edge: Philippines->Cambodia has 1
+Edge: Philippines->Papua New Guinea has 2 | Edge: Philippines->Saudi Arabia has 5
+Edge: Philippines->Guam has 2 | Edge: Philippines->United Arab Emirates has 7
+Edge: Philippines->Australia has 4 | Edge: Philippines->United Kingdom has 1
+Edge: Nigeria->South Africa has 2 | Edge: Nigeria->Gabon has 1
+Edge: Nigeria->Rwanda has 1 | Edge: Nigeria->Equatorial Guinea has 2
+Edge: Nigeria->Ethiopia has 3 | Edge: Nigeria->Germany has 4
+Edge: Nigeria->Morocco has 1 | Edge: Nigeria->Sudan has 1
+Edge: Nigeria->Turkey has 1 | Edge: Nigeria->Niger has 1
+Edge: Nigeria->United States has 3 | Edge: Nigeria->Mali has 1
+Edge: Nigeria->France has 4 | Edge: Nigeria->Qatar has 1
+Edge: Nigeria->Cote d'Ivoire has 4 | Edge: Nigeria->Liberia has 1
+Edge: Nigeria->Benin has 3 | Edge: Nigeria->Senegal has 1
+Edge: Nigeria->Jordan has 1 | Edge: Nigeria->Chad has 2
+Edge: Nigeria->Cameroon has 2 | Edge: Nigeria->Netherlands has 1
+Edge: Nigeria->Spain has 1 | Edge: Nigeria->Kenya has 1
+Edge: Nigeria->Ghana has 6 | Edge: Nigeria->Egypt has 3
+Edge: Nigeria->Saudi Arabia has 1 | Edge: Nigeria->Togo has 2
+Edge: Nigeria->United Arab Emirates has 2 | Edge: Nigeria->Sierra Leone has 1
+Edge: Nigeria->Lebanon has 2 | Edge: Nigeria->United Kingdom has 4
+Edge: Liberia->Belgium has 3 | Edge: Liberia->Morocco has 1
+Edge: Liberia->Cote d'Ivoire has 1 | Edge: Liberia->Ghana has 5
+Edge: Liberia->Nigeria has 1 | Edge: Liberia->Sierra Leone has 7
+Edge: Gambia->Morocco has 1 | Edge: Gambia-> Santiago Island has 1
+Edge: Gambia->Senegal has 4 | Edge: Gambia->Spain has 4
+Edge: Gambia->Guinea-Bissau has 1 | Edge: Gambia->Sierra Leone has 2
+Edge: Sierra Leone->Morocco has 1 | Edge: Sierra Leone->France has 2
+Edge: Sierra Leone->Cote d'Ivoire has 1 | Edge: Sierra Leone->Liberia has 8
+Edge: Sierra Leone->Senegal has 2 | Edge: Sierra Leone->Ghana has 3
+Edge: Sierra Leone->Nigeria has 1 | Edge: Sierra Leone->Gambia has 2
+Edge: Sierra Leone->United Kingdom has 2 | Edge: Guinea->Morocco has 1
+Edge: Guinea->Mauritania has 1 | Edge: Guinea->Mali has 2
+Edge: Guinea->France has 1 | Edge: Guinea->Cote d'Ivoire has 2
+Edge: Guinea->Senegal has 8 | Edge: Guinea->Togo has 1
+Edge: Guinea->Guinea-Bissau has 2 | Edge: Guinea-Bissau->Morocco has 1
+Edge: Guinea-Bissau-> Santiago Island has 1 | Edge: Guinea-Bissau->Guinea has 2
+Edge: Guinea-Bissau->Senegal has 2 | Edge: Guinea-Bissau->Gambia has 1
+Edge: Cameroon->Gabon has 5 | Edge: Cameroon->Belgium has 9
+Edge: Cameroon->Equatorial Guinea has 5 | Edge: Cameroon->Congo (Kinshasa) has 4
+Edge: Cameroon->Ethiopia has 2 | Edge: Cameroon->Morocco has 2
+Edge: Cameroon->Turkey has 1 | Edge: Cameroon->France has 4
+Edge: Cameroon->Cote d'Ivoire has 1 | Edge: Cameroon->Central African Republic has 2
+Edge: Cameroon->Congo (Brazzaville) has 5 | Edge: Cameroon->Benin has 4
+Edge: Cameroon->Senegal has 1 | Edge: Cameroon->Chad has 3
+Edge: Cameroon->Kenya has 2 | Edge: Cameroon->Nigeria has 2
+Edge: Cameroon->Togo has 1 | Edge: Djibouti->Ethiopia has 5
+Edge: Djibouti->Turkey has 1 | Edge: Djibouti->France has 1
+Edge: Djibouti->Somalia has 5 | Edge: Djibouti->Kenya has 2
+Edge: Djibouti->Saudi Arabia has 1 | Edge: Djibouti->United Arab Emirates has 4
+Edge: Djibouti->Yemen has 3 | Edge: Djibouti->Comoros has 1
+Edge: Saudi Arabia->South Africa has 1 | Edge: Saudi Arabia->Hong Kong has 1
+Edge: Saudi Arabia->China has 2 | Edge: Saudi Arabia->Ethiopia has 9
+Edge: Saudi Arabia->Indonesia has 6 | Edge: Saudi Arabia->Kuwait has 17
+Edge: Saudi Arabia->Eritrea has 1 | Edge: Saudi Arabia->Brunei has 1
+Edge: Saudi Arabia->Italy has 8 | Edge: Saudi Arabia->Germany has 10
+Edge: Saudi Arabia->Morocco has 4 | Edge: Saudi Arabia->Iran has 12
+Edge: Saudi Arabia->Pakistan has 40 | Edge: Saudi Arabia->Sudan has 8
+Edge: Saudi Arabia->Turkey has 20 | Edge: Saudi Arabia->United States has 5
+Edge: Saudi Arabia->France has 4 | Edge: Saudi Arabia->Qatar has 9
+Edge: Saudi Arabia->Bahrain has 8 | Edge: Saudi Arabia->Sri Lanka has 9
+Edge: Saudi Arabia->Malaysia has 5 | Edge: Saudi Arabia->South Korea has 1
+Edge: Saudi Arabia->Bangladesh has 7 | Edge: Saudi Arabia->India has 38
+Edge: Saudi Arabia->Jordan has 10 | Edge: Saudi Arabia->Chad has 1
+Edge: Saudi Arabia->Singapore has 3 | Edge: Saudi Arabia->Canada has 1
+Edge: Saudi Arabia->Netherlands has 3 | Edge: Saudi Arabia->Spain has 2
+Edge: Saudi Arabia->Libya has 2 | Edge: Saudi Arabia->Kenya has 2
+Edge: Saudi Arabia->Egypt has 54 | Edge: Saudi Arabia->Nigeria has 1
+Edge: Saudi Arabia->United Arab Emirates has 46 | Edge: Saudi Arabia->Yemen has 15
+Edge: Saudi Arabia->Switzerland has 2 | Edge: Saudi Arabia->Tunisia has 3
+Edge: Saudi Arabia->Lebanon has 5 | Edge: Saudi Arabia->Philippines has 5
+Edge: Saudi Arabia->Oman has 7 | Edge: Saudi Arabia->Algeria has 2
+Edge: Saudi Arabia->United Kingdom has 7 | Edge: Somalia->Ethiopia has 1
+Edge: Somalia->Djibouti has 4 | Edge: Somalia->Uganda has 1
+Edge: Somalia->Kenya has 6 | Edge: Somalia->United Arab Emirates has 2
+Edge: Somalia->Yemen has 1 | Edge: Kenya->South Africa has 2
+Edge: Kenya->Rwanda has 5 | Edge: Kenya->Belgium has 4
+Edge: Kenya->Tanzania has 17 | Edge: Kenya->China has 2
+Edge: Kenya->Congo (Kinshasa) has 4 | Edge: Kenya->Angola has 1
+Edge: Kenya->Ethiopia has 6 | Edge: Kenya->Eritrea has 1
+Edge: Kenya->Germany has 1 | Edge: Kenya->Djibouti has 2
+Edge: Kenya->Sudan has 1 | Edge: Kenya->Turkey has 3
+Edge: Kenya->South Sudan has 2 | Edge: Kenya->Madagascar has 1
+Edge: Kenya->Mali has 1 | Edge: Kenya->France has 2
+Edge: Kenya->Mauritius has 2 | Edge: Kenya->Qatar has 1
+Edge: Kenya->Cote d'Ivoire has 1 | Edge: Kenya->Zimbabwe has 3
+Edge: Kenya->Burundi has 2 | Edge: Kenya->Congo (Brazzaville) has 2
+Edge: Kenya->Uganda has 3 | Edge: Kenya->Thailand has 3
+Edge: Kenya->South Korea has 2 | Edge: Kenya->Mozambique has 4
+Edge: Kenya->Seychelles has 1 | Edge: Kenya->India has 3
+Edge: Kenya->Botswana has 1 | Edge: Kenya->Cameroon has 2
+Edge: Kenya->Somalia has 7 | Edge: Kenya->Netherlands has 3
+Edge: Kenya->Zambia has 9 | Edge: Kenya->Ghana has 1
+Edge: Kenya->Egypt has 1 | Edge: Kenya->Nigeria has 1
+Edge: Kenya->Saudi Arabia has 2 | Edge: Kenya->Mayotte has 3
+Edge: Kenya->United Arab Emirates has 9 | Edge: Kenya->Yemen has 1
+Edge: Kenya->Switzerland has 3 | Edge: Kenya->Comoros has 1
+Edge: Kenya->Malawi has 4 | Edge: Kenya->United Kingdom has 3
+Edge: Thailand->South Africa has 2 | Edge: Thailand->Maldives has 1
+Edge: Thailand->Hong Kong has 24 | Edge: Thailand->Belgium has 2
+Edge: Thailand->China has 72 | Edge: Thailand->Sweden has 3
+Edge: Thailand->Burma has 12 | Edge: Thailand->Ethiopia has 2
+Edge: Thailand->Macau has 4 | Edge: Thailand->Indonesia has 8
+Edge: Thailand->Kuwait has 1 | Edge: Thailand->Laos has 10
+Edge: Thailand->Denmark has 2 | Edge: Thailand->Japan has 21
+Edge: Thailand->Brunei has 2 | Edge: Thailand->Italy has 2
+Edge: Thailand->Germany has 4 | Edge: Thailand->Iran has 1
+Edge: Thailand->Nepal has 2 | Edge: Thailand->Pakistan has 4
+Edge: Thailand->Turkey has 2 | Edge: Thailand->Vietnam has 10
+Edge: Thailand->Madagascar has 2 | Edge: Thailand->Mongolia has 1
+Edge: Thailand->France has 3 | Edge: Thailand->Qatar has 1
+Edge: Thailand->Austria has 3 | Edge: Thailand->Bahrain has 3
+Edge: Thailand->Sri Lanka has 4 | Edge: Thailand->Malaysia has 33
+Edge: Thailand->South Korea has 21 | Edge: Thailand->Bangladesh has 7
+Edge: Thailand->Ukraine has 1 | Edge: Thailand->India has 18
+Edge: Thailand->Jordan has 2 | Edge: Thailand->Singapore has 28
+Edge: Thailand->Norway has 3 | Edge: Thailand->Israel has 2
+Edge: Thailand->Netherlands has 3 | Edge: Thailand->Spain has 1
+Edge: Thailand->Taiwan has 8 | Edge: Thailand->Cambodia has 8
+Edge: Thailand->Kenya has 3 | Edge: Thailand->Egypt has 3
+Edge: Thailand->United Arab Emirates has 9 | Edge: Thailand->Finland has 1
+Edge: Thailand->Uzbekistan has 1 | Edge: Thailand->New Zealand has 2
+Edge: Thailand->Russia has 13 | Edge: Thailand->Kazakhstan has 1
+Edge: Thailand->Switzerland has 2 | Edge: Thailand->Philippines has 6
+Edge: Thailand->Oman has 1 | Edge: Thailand->Australia has 14
+Edge: Thailand->United Kingdom has 4 | Edge: Singapore->South Africa has 4
+Edge: Singapore->Maldives has 2 | Edge: Singapore->Hong Kong has 8
+Edge: Singapore->China has 44 | Edge: Singapore->Burma has 6
+Edge: Singapore->Macau has 1 | Edge: Singapore->Indonesia has 62
+Edge: Singapore->Laos has 1 | Edge: Singapore->Denmark has 2
+Edge: Singapore->Japan has 18 | Edge: Singapore->Brunei has 2
+Edge: Singapore->Italy has 2 | Edge: Singapore->Germany has 7
+Edge: Singapore->Nepal has 2 | Edge: Singapore->Turkey has 3
+Edge: Singapore->Vietnam has 12 | Edge: Singapore->France has 2
+Edge: Singapore->Qatar has 1 | Edge: Singapore->Sri Lanka has 5
+Edge: Singapore->Malaysia has 39 | Edge: Singapore->Thailand has 27
+Edge: Singapore->South Korea has 5 | Edge: Singapore->Bangladesh has 4
+Edge: Singapore->India has 37 | Edge: Singapore->Netherlands has 3
+Edge: Singapore->Spain has 1 | Edge: Singapore->Taiwan has 8
+Edge: Singapore->Cambodia has 8 | Edge: Singapore->Papua New Guinea has 1
+Edge: Singapore->Saudi Arabia has 3 | Edge: Singapore->United Arab Emirates has 11
+Edge: Singapore->Finland has 1 | Edge: Singapore->Uzbekistan has 2
+Edge: Singapore->New Zealand has 5 | Edge: Singapore->Russia has 2
+Edge: Singapore->East Timor has 1 | Edge: Singapore->Switzerland has 3
+Edge: Singapore->Philippines has 17 | Edge: Singapore->Australia has 42
+Edge: Singapore->United Kingdom has 4 | Edge: Australia->South Africa has 4
+Edge: Australia-> has 1 | Edge: Australia->Hong Kong has 16
+Edge: Australia->Chile has 2 | Edge: Australia->China has 17
+Edge: Australia->Indonesia has 26 | Edge: Australia->Tonga has 1
+Edge: Australia->Japan has 15 | Edge: Australia->Brunei has 1
+Edge: Australia->Vietnam has 4 | Edge: Australia->United States has 26
+Edge: Australia->Mauritius has 1 | Edge: Australia->Qatar has 2
+Edge: Australia->Norfolk Island has 2 | Edge: Australia->Nauru has 1
+Edge: Australia->Fiji has 11 | Edge: Australia->Malaysia has 14
+Edge: Australia->Thailand has 14 | Edge: Australia->South Korea has 5
+Edge: Australia->Samoa has 2 | Edge: Australia->India has 2
+Edge: Australia->Singapore has 42 | Edge: Australia->Canada has 1
+Edge: Australia->Taiwan has 3 | Edge: Australia->Christmas Island has 1
+Edge: Australia->Cook Islands has 1 | Edge: Australia->Papua New Guinea has 9
+Edge: Australia->Guam has 1 | Edge: Australia->United Arab Emirates has 16
+Edge: Australia->New Zealand has 77 | Edge: Australia->East Timor has 2
+Edge: Australia->New Caledonia has 4 | Edge: Australia->Solomon Islands has 2
+Edge: Australia->Philippines has 4 | Edge: Australia->Vanuatu has 7
+Edge: China->Turkmenistan has 1 | Edge: China->South Africa has 2
+Edge: China->Maldives has 4 | Edge: China-> has 91
+Edge: China->Northern Mariana Islands has 3 | Edge: China->Hong Kong has 117
+Edge: China->Belgium has 2 | Edge: China->Sweden has 2
+Edge: China->Burma has 8 | Edge: China->Angola has 1
+Edge: China->Ethiopia has 6 | Edge: China->Macau has 46
+Edge: China->Indonesia has 13 | Edge: China->Georgia has 1
+Edge: China->Laos has 5 | Edge: China->Denmark has 3
+Edge: China->Japan has 140 | Edge: China->Brunei has 1
+Edge: China->Italy has 5 | Edge: China->Tajikistan has 4
+Edge: China->Germany has 19 | Edge: China->Iran has 4
+Edge: China->Nepal has 4 | Edge: China->Pakistan has 4
+Edge: China->Turkey has 7 | Edge: China->Vietnam has 23
+Edge: China->United States has 58 | Edge: China->Mongolia has 4
+Edge: China->France has 10 | Edge: China->Mauritius has 2
+Edge: China->Qatar has 6 | Edge: China->Austria has 2
+Edge: China->Sri Lanka has 3 | Edge: China->Malaysia has 29
+Edge: China->Thailand has 73 | Edge: China->South Korea has 152
+Edge: China->Bangladesh has 2 | Edge: China->India has 6
+Edge: China->Singapore has 45 | Edge: China->Canada has 12
+Edge: China->Israel has 2 | Edge: China->Netherlands has 13
+Edge: China->Spain has 2 | Edge: China->Taiwan has 189
+Edge: China->Cambodia has 11 | Edge: China->Mexico has 1
+Edge: China->Kenya has 2 | Edge: China->Egypt has 4
+Edge: China->Saudi Arabia has 2 | Edge: China->United Arab Emirates has 14
+Edge: China->Finland has 6 | Edge: China->Uzbekistan has 4
+Edge: China->New Zealand has 3 | Edge: China->Kyrgyzstan has 5
+Edge: China->Russia has 46 | Edge: China->Kazakhstan has 7
+Edge: China->Azerbaijan has 2 | Edge: China->Switzerland has 3
+Edge: China->Poland has 2 | Edge: China->Philippines has 13
+Edge: China->North Korea has 3 | Edge: China->Australia has 17
+Edge: China->Algeria has 1 | Edge: China->United Kingdom has 11
+Edge: Hong Kong->South Africa has 2 | Edge: Hong Kong->Maldives has 2
+Edge: Hong Kong-> has 1 | Edge: Hong Kong->China has 116
+Edge: Hong Kong->Burma has 1 | Edge: Hong Kong->Ethiopia has 1
+Edge: Hong Kong->Indonesia has 10 | Edge: Hong Kong->Japan has 27
+Edge: Hong Kong->Brunei has 2 | Edge: Hong Kong->Italy has 2
+Edge: Hong Kong->Germany has 3 | Edge: Hong Kong->Nepal has 1
+Edge: Hong Kong->Turkey has 1 | Edge: Hong Kong->Vietnam has 10
+Edge: Hong Kong->United States has 16 | Edge: Hong Kong->Mongolia has 2
+Edge: Hong Kong->France has 3 | Edge: Hong Kong->Mauritius has 1
+Edge: Hong Kong->Qatar has 2 | Edge: Hong Kong->Fiji has 2
+Edge: Hong Kong->Malaysia has 11 | Edge: Hong Kong->Thailand has 24
+Edge: Hong Kong->South Korea has 16 | Edge: Hong Kong->Bangladesh has 3
+Edge: Hong Kong->India has 14 | Edge: Hong Kong->Singapore has 8
+Edge: Hong Kong->Canada has 4 | Edge: Hong Kong->Israel has 1
+Edge: Hong Kong->Netherlands has 2 | Edge: Hong Kong->Taiwan has 13
+Edge: Hong Kong->Cambodia has 2 | Edge: Hong Kong->Papua New Guinea has 1
+Edge: Hong Kong->Saudi Arabia has 1 | Edge: Hong Kong->Guam has 1
+Edge: Hong Kong->United Arab Emirates has 5 | Edge: Hong Kong->Finland has 1
+Edge: Hong Kong->New Zealand has 3 | Edge: Hong Kong->Russia has 9
+Edge: Hong Kong->Kazakhstan has 1 | Edge: Hong Kong->Switzerland has 1
+Edge: Hong Kong->Philippines has 11 | Edge: Hong Kong->Australia has 15
+Edge: Hong Kong->United Kingdom has 3 | Edge: Japan-> has 5
+Edge: Japan->Northern Mariana Islands has 3 | Edge: Japan->Hong Kong has 27
+Edge: Japan->China has 140 | Edge: Japan->Burma has 1
+Edge: Japan->Macau has 6 | Edge: Japan->Indonesia has 13
+Edge: Japan->Denmark has 1 | Edge: Japan->Italy has 4
+Edge: Japan->Germany has 11 | Edge: Japan->Palau has 2
+Edge: Japan->Turkey has 4 | Edge: Japan->Vietnam has 20
+Edge: Japan->United States has 78 | Edge: Japan->Mongolia has 1
+Edge: Japan->France has 7 | Edge: Japan->Qatar has 6
+Edge: Japan->Austria has 2 | Edge: Japan->Sri Lanka has 1
+Edge: Japan->French Polynesia has 2 | Edge: Japan->Malaysia has 10
+Edge: Japan->Thailand has 22 | Edge: Japan->South Korea has 104
+Edge: Japan->India has 5 | Edge: Japan->Singapore has 18
+Edge: Japan->Canada has 10 | Edge: Japan->Netherlands has 3
+Edge: Japan->Taiwan has 67 | Edge: Japan->Mexico has 1
+Edge: Japan->Papua New Guinea has 1 | Edge: Japan->Guam has 19
+Edge: Japan->United Arab Emirates has 8 | Edge: Japan->Finland has 6
+Edge: Japan->Uzbekistan has 1 | Edge: Japan->New Zealand has 3
+Edge: Japan->Russia has 9 | Edge: Japan->Switzerland has 2
+Edge: Japan->New Caledonia has 2 | Edge: Japan->Philippines has 15
+Edge: Japan->Australia has 15 | Edge: Japan->United Kingdom has 8
+Edge: Taiwan-> has 3 | Edge: Taiwan->Hong Kong has 13
+Edge: Taiwan->China has 189 | Edge: Taiwan->Burma has 1
+Edge: Taiwan->Macau has 8 | Edge: Taiwan->Indonesia has 7
+Edge: Taiwan->Japan has 68 | Edge: Taiwan->Germany has 1
+Edge: Taiwan->Palau has 2 | Edge: Taiwan->Vietnam has 13
+Edge: Taiwan->United States has 14 | Edge: Taiwan->France has 1
+Edge: Taiwan->Austria has 1 | Edge: Taiwan->Malaysia has 7
+Edge: Taiwan->Thailand has 8 | Edge: Taiwan->South Korea has 18
+Edge: Taiwan->India has 2 | Edge: Taiwan->Singapore has 9
+Edge: Taiwan->Canada has 3 | Edge: Taiwan->Netherlands has 2
+Edge: Taiwan->Cambodia has 3 | Edge: Taiwan->Guam has 2
+Edge: Taiwan->United Arab Emirates has 1 | Edge: Taiwan->Philippines has 9
+Edge: Taiwan->Australia has 3 | Edge: Malaysia->Maldives has 1
+Edge: Malaysia-> has 2 | Edge: Malaysia->Hong Kong has 11
+Edge: Malaysia->China has 29 | Edge: Malaysia->Burma has 3
+Edge: Malaysia->Macau has 1 | Edge: Malaysia->Indonesia has 46
+Edge: Malaysia->Kuwait has 1 | Edge: Malaysia->Laos has 1
+Edge: Malaysia->Japan has 10 | Edge: Malaysia->Brunei has 7
+Edge: Malaysia->Germany has 3 | Edge: Malaysia->Iran has 2
+Edge: Malaysia->Nepal has 3 | Edge: Malaysia->Pakistan has 3
+Edge: Malaysia->Turkey has 2 | Edge: Malaysia->Vietnam has 6
+Edge: Malaysia->France has 3 | Edge: Malaysia->Mauritius has 2
+Edge: Malaysia->Qatar has 2 | Edge: Malaysia->Sri Lanka has 4
+Edge: Malaysia->Thailand has 33 | Edge: Malaysia->South Korea has 8
+Edge: Malaysia->Bangladesh has 6 | Edge: Malaysia->India has 22
+Edge: Malaysia->Singapore has 39 | Edge: Malaysia->Netherlands has 3
+Edge: Malaysia->Taiwan has 7 | Edge: Malaysia->Cambodia has 4
+Edge: Malaysia->Saudi Arabia has 6 | Edge: Malaysia->United Arab Emirates has 7
+Edge: Malaysia->Uzbekistan has 2 | Edge: Malaysia->New Zealand has 1
+Edge: Malaysia->Kazakhstan has 1 | Edge: Malaysia->Philippines has 9
+Edge: Malaysia->North Korea has 1 | Edge: Malaysia->Oman has 2
+Edge: Malaysia->Australia has 14 | Edge: Malaysia->United Kingdom has 2
+Edge: Cambodia->Hong Kong has 2 | Edge: Cambodia->China has 10
+Edge: Cambodia->Burma has 1 | Edge: Cambodia->Laos has 5
+Edge: Cambodia->Vietnam has 14 | Edge: Cambodia->Malaysia has 4
+Edge: Cambodia->Thailand has 8 | Edge: Cambodia->South Korea has 8
+Edge: Cambodia->Singapore has 9 | Edge: Cambodia->Taiwan has 3
+Edge: Cambodia->Philippines has 1 | Edge: Burma->Hong Kong has 1
+Edge: Burma->China has 8 | Edge: Burma->Japan has 1
+Edge: Burma->Vietnam has 2 | Edge: Burma->Qatar has 1
+Edge: Burma->Malaysia has 3 | Edge: Burma->Thailand has 12
+Edge: Burma->South Korea has 3 | Edge: Burma->Bangladesh has 1
+Edge: Burma->India has 1 | Edge: Burma->Singapore has 6
+Edge: Burma->Taiwan has 1 | Edge: Burma->Cambodia has 1
+Edge: Vietnam-> has 1 | Edge: Vietnam->Hong Kong has 10
+Edge: Vietnam->China has 23 | Edge: Vietnam->Burma has 2
+Edge: Vietnam->Macau has 2 | Edge: Vietnam->Indonesia has 1
+Edge: Vietnam->Laos has 6 | Edge: Vietnam->Japan has 20
+Edge: Vietnam->Germany has 4 | Edge: Vietnam->France has 6
+Edge: Vietnam->Qatar has 1 | Edge: Vietnam->Malaysia has 6
+Edge: Vietnam->Thailand has 10 | Edge: Vietnam->South Korea has 13
+Edge: Vietnam->Singapore has 12 | Edge: Vietnam->Taiwan has 13
+Edge: Vietnam->Cambodia has 14 | Edge: Vietnam->United Arab Emirates has 3
+Edge: Vietnam->Russia has 6 | Edge: Vietnam->Kazakhstan has 1
+Edge: Vietnam->Philippines has 4 | Edge: Vietnam->Australia has 4
+Edge: Germany->Turkmenistan has 1 | Edge: Germany->South Africa has 6
+Edge: Germany->Maldives has 1 | Edge: Germany->Bosnia and Herzegovina has 4
+Edge: Germany->Argentina has 1 | Edge: Germany->Guernsey has 2
+Edge: Germany->Trinidad and Tobago has 1 | Edge: Germany->Latvia has 14
+Edge: Germany->Venezuela has 1 | Edge: Germany->Hong Kong has 3
+Edge: Germany->Estonia has 2 | Edge: Germany->Belgium has 15
+Edge: Germany->Malta has 8 | Edge: Germany->China has 19
+Edge: Germany->Colombia has 2 | Edge: Germany->Sweden has 29
+Edge: Germany->Angola has 1 | Edge: Germany->Ethiopia has 2
+Edge: Germany->Ireland has 19 | Edge: Germany->Rygge has 1
+Edge: Germany->Kuwait has 2 | Edge: Germany->Georgia has 1
+Edge: Germany->Denmark has 27 | Edge: Germany->Japan has 11
+Edge: Germany->Italy has 221 | Edge: Germany->Cuba has 4
+Edge: Germany->Tajikistan has 1 | Edge: Germany->Morocco has 20
+Edge: Germany->Iraq has 5 | Edge: Germany->Iran has 5
+Edge: Germany->Turkey has 128 | Edge: Germany->Vietnam has 4
+Edge: Germany->United States has 115 | Edge: Germany->France has 84
+Edge: Germany->Mauritius has 1 | Edge: Germany->Qatar has 9
+Edge: Germany->Montenegro has 2 | Edge: Germany->Bulgaria has 11
+Edge: Germany->Austria has 67 | Edge: Germany->Bahrain has 1
+Edge: Germany->Sri Lanka has 1 | Edge: Germany->Greece has 176
+Edge: Germany->Serbia has 25 | Edge: Germany->Brazil has 8
+Edge: Germany->Malaysia has 3 | Edge: Germany->Thailand has 4
+Edge: Germany->South Korea has 4 | Edge: Germany->Netherlands Antilles has 1
+Edge: Germany->Seychelles has 1 | Edge: Germany->Hungary has 11
+Edge: Germany->Ukraine has 12 | Edge: Germany->India has 14
+Edge: Germany->Jordan has 7 | Edge: Germany->Cape Verde has 5
+Edge: Germany->Romania has 15 | Edge: Germany->Albania has 2
+Edge: Germany->Singapore has 7 | Edge: Germany->Norway has 25
+Edge: Germany->Canada has 19 | Edge: Germany->Israel has 12
+Edge: Germany->Dominican Republic has 7 | Edge: Germany->Jersey has 3
+Edge: Germany->Netherlands has 27 | Edge: Germany->Spain has 354
+Edge: Germany->Namibia has 1 | Edge: Germany->Taiwan has 1
+Edge: Germany->Croatia has 57 | Edge: Germany->Mexico has 4
+Edge: Germany->Macedonia has 5 | Edge: Germany->Kenya has 2
+Edge: Germany->Ghana has 1 | Edge: Germany->Egypt has 18
+Edge: Germany->Portugal has 64 | Edge: Germany->Nigeria has 4
+Edge: Germany->Saudi Arabia has 10 | Edge: Germany->Slovenia has 4
+Edge: Germany->Jamaica has 1 | Edge: Germany->United Arab Emirates has 23
+Edge: Germany->Lithuania has 7 | Edge: Germany->Finland has 19
+Edge: Germany->Uzbekistan has 1 | Edge: Germany->Belarus has 4
+Edge: Germany->Russia has 46 | Edge: Germany->Kazakhstan has 4
+Edge: Germany->Luxembourg has 9 | Edge: Germany->Azerbaijan has 3
+Edge: Germany->Switzerland has 42 | Edge: Germany->Puerto Rico has 1
+Edge: Germany->Tunisia has 32 | Edge: Germany->Poland has 44
+Edge: Germany->Czech Republic has 14 | Edge: Germany->Lebanon has 3
+Edge: Germany->Iceland has 4 | Edge: Germany->Moldova has 2
+Edge: Germany->Cyprus has 8 | Edge: Germany->Oman has 2
+Edge: Germany->Algeria has 3 | Edge: Germany->United Kingdom has 103
+Edge: Croatia->Bosnia and Herzegovina has 1 | Edge: Croatia->Estonia has 1
+Edge: Croatia->Belgium has 5 | Edge: Croatia->Sweden has 9
+Edge: Croatia->Ireland has 3 | Edge: Croatia->Rygge has 2
+Edge: Croatia->Denmark has 6 | Edge: Croatia->Italy has 5
+Edge: Croatia->Germany has 55 | Edge: Croatia->Turkey has 2
+Edge: Croatia->France has 12 | Edge: Croatia->Austria has 6
+Edge: Croatia->Greece has 2 | Edge: Croatia->Serbia has 2
+Edge: Croatia->Hungary has 1 | Edge: Croatia->Norway has 6
+Edge: Croatia->Netherlands has 3 | Edge: Croatia->Sandefjord has 1
+Edge: Croatia->Spain has 5 | Edge: Croatia->Macedonia has 1
+Edge: Croatia->Finland has 3 | Edge: Croatia->Russia has 2
+Edge: Croatia->Luxembourg has 1 | Edge: Croatia->Switzerland has 8
+Edge: Croatia->Poland has 3 | Edge: Croatia->Czech Republic has 2
+Edge: Croatia->United Kingdom has 35 | Edge: Austria->Bosnia and Herzegovina has 1
+Edge: Austria->Latvia has 2 | Edge: Austria->Belgium has 2
+Edge: Austria->Malta has 4 | Edge: Austria->China has 2
+Edge: Austria->Sweden has 4 | Edge: Austria->Slovakia has 1
+Edge: Austria->Ireland has 1 | Edge: Austria->Georgia has 2
+Edge: Austria->Denmark has 5 | Edge: Austria->Japan has 2
+Edge: Austria->Italy has 28 | Edge: Austria->Germany has 67
+Edge: Austria->Iraq has 1 | Edge: Austria->Iran has 2
+Edge: Austria->Turkey has 19 | Edge: Austria->United States has 6
+Edge: Austria->France has 13 | Edge: Austria->Qatar has 1
+Edge: Austria->Montenegro has 2 | Edge: Austria->Bulgaria has 3
+Edge: Austria->Greece has 36 | Edge: Austria->Serbia has 3
+Edge: Austria->Thailand has 3 | Edge: Austria->Hungary has 1
+Edge: Austria->Ukraine has 10 | Edge: Austria->India has 2
+Edge: Austria->Jordan has 3 | Edge: Austria->Romania has 8
+Edge: Austria->Albania has 1 | Edge: Austria->Norway has 2
+Edge: Austria->Canada has 3 | Edge: Austria->Israel has 3
+Edge: Austria->Netherlands has 5 | Edge: Austria->Spain has 40
+Edge: Austria->Taiwan has 1 | Edge: Austria->Croatia has 6
+Edge: Austria->Armenia has 3 | Edge: Austria->Macedonia has 1
+Edge: Austria->Egypt has 6 | Edge: Austria->Portugal has 6
+Edge: Austria->Slovenia has 2 | Edge: Austria->United Arab Emirates has 2
+Edge: Austria->Lithuania has 1 | Edge: Austria->Finland has 2
+Edge: Austria->Belarus has 2 | Edge: Austria->Russia has 13
+Edge: Austria->Kazakhstan has 2 | Edge: Austria->Luxembourg has 2
+Edge: Austria->Azerbaijan has 2 | Edge: Austria->Switzerland has 12
+Edge: Austria->Tunisia has 1 | Edge: Austria->Poland has 4
+Edge: Austria->Czech Republic has 1 | Edge: Austria->Moldova has 1
+Edge: Austria->Cyprus has 3 | Edge: Austria->Algeria has 1
+Edge: Austria->United Kingdom has 11 | Edge: Bahamas->Cuba has 2
+Edge: Bahamas->Turks and Caicos Islands has 4 | Edge: Bahamas->United States has 72
+Edge: Bahamas->Panama has 1 | Edge: Bahamas->Cayman Islands has 1
+Edge: Bahamas->Canada has 3 | Edge: Bahamas->Jamaica has 1
+Edge: Bahamas->United Kingdom has 1 | Edge: Netherlands->South Africa has 3
+Edge: Netherlands->Argentina has 1 | Edge: Netherlands->Guernsey has 1
+Edge: Netherlands->Latvia has 3 | Edge: Netherlands->Hong Kong has 2
+Edge: Netherlands->Estonia has 2 | Edge: Netherlands->Rwanda has 3
+Edge: Netherlands->Belgium has 1 | Edge: Netherlands->Malta has 3
+Edge: Netherlands->Tanzania has 3 | Edge: Netherlands->China has 13
+Edge: Netherlands->Sweden has 7 | Edge: Netherlands->Angola has 1
+Edge: Netherlands->Ireland has 4 | Edge: Netherlands->Kuwait has 3
+Edge: Netherlands->Georgia has 2 | Edge: Netherlands->Aruba has 2
+Edge: Netherlands->Denmark has 11 | Edge: Netherlands->Japan has 3
+Edge: Netherlands->Italy has 42 | Edge: Netherlands->Cuba has 3
+Edge: Netherlands->Germany has 25 | Edge: Netherlands->Morocco has 10
+Edge: Netherlands->Iraq has 1 | Edge: Netherlands->Iran has 1
+Edge: Netherlands->Turkey has 24 | Edge: Netherlands->United States has 39
+Edge: Netherlands->France has 34 | Edge: Netherlands->Peru has 2
+Edge: Netherlands->Qatar has 3 | Edge: Netherlands->Bulgaria has 2
+Edge: Netherlands->Austria has 5 | Edge: Netherlands->Zimbabwe has 3
+Edge: Netherlands->Greece has 21 | Edge: Netherlands->Serbia has 3
+Edge: Netherlands->Brazil has 2 | Edge: Netherlands->Malaysia has 3
+Edge: Netherlands->Ecuador has 2 | Edge: Netherlands->Thailand has 3
+Edge: Netherlands->South Korea has 2 | Edge: Netherlands->Netherlands Antilles has 4
+Edge: Netherlands->Panama has 2 | Edge: Netherlands->Hungary has 4
+Edge: Netherlands->Ukraine has 2 | Edge: Netherlands->India has 3
+Edge: Netherlands->Jordan has 1 | Edge: Netherlands->Cape Verde has 1
+Edge: Netherlands->Romania has 4 | Edge: Netherlands->Singapore has 2
+Edge: Netherlands->Norway has 13 | Edge: Netherlands->Canada has 10
+Edge: Netherlands->Israel has 4 | Edge: Netherlands->Dominican Republic has 2
+Edge: Netherlands->Jersey has 1 | Edge: Netherlands->Sandefjord has 2
+Edge: Netherlands->Spain has 68 | Edge: Netherlands->Taiwan has 2
+Edge: Netherlands->Croatia has 3 | Edge: Netherlands->Mexico has 1
+Edge: Netherlands->Macedonia has 1 | Edge: Netherlands->Kenya has 3
+Edge: Netherlands->Ghana has 1 | Edge: Netherlands->Egypt has 2
+Edge: Netherlands->Portugal has 23 | Edge: Netherlands->Nigeria has 1
+Edge: Netherlands->Saudi Arabia has 3 | Edge: Netherlands->Slovenia has 1
+Edge: Netherlands->United Arab Emirates has 10 | Edge: Netherlands->Suriname has 2
+Edge: Netherlands->Lithuania has 1 | Edge: Netherlands->Finland has 4
+Edge: Netherlands->Belarus has 1 | Edge: Netherlands->Russia has 4
+Edge: Netherlands->Kazakhstan has 2 | Edge: Netherlands->Luxembourg has 1
+Edge: Netherlands->Switzerland has 6 | Edge: Netherlands->Tunisia has 1
+Edge: Netherlands->Poland has 9 | Edge: Netherlands->Czech Republic has 5
+Edge: Netherlands->Iceland has 1 | Edge: Netherlands->Cyprus has 3
+Edge: Netherlands->United Kingdom has 54 | Edge: Morocco-> has 1
+Edge: Morocco->Gabon has 1 | Edge: Morocco->Belgium has 21
+Edge: Morocco->Equatorial Guinea has 1 | Edge: Morocco->Congo (Kinshasa) has 1
+Edge: Morocco->Sweden has 1 | Edge: Morocco->Angola has 1
+Edge: Morocco->Ireland has 1 | Edge: Morocco->Denmark has 1
+Edge: Morocco->Italy has 17 | Edge: Morocco->Germany has 21
+Edge: Morocco-> Santiago Island has 1 | Edge: Morocco->Turkey has 3
+Edge: Morocco->Niger has 1 | Edge: Morocco->United States has 1
+Edge: Morocco->Mauritania has 3 | Edge: Morocco->Mali has 1
+Edge: Morocco->France has 80 | Edge: Morocco->Qatar has 1
+Edge: Morocco->Cote d'Ivoire has 1 | Edge: Morocco->Congo (Brazzaville) has 2
+Edge: Morocco->Brazil has 1 | Edge: Morocco->Guinea has 1
+Edge: Morocco->Liberia has 1 | Edge: Morocco->Benin has 1
+Edge: Morocco->Senegal has 1 | Edge: Morocco->Cameroon has 2
+Edge: Morocco->Norway has 1 | Edge: Morocco->Canada has 1
+Edge: Morocco->Netherlands has 11 | Edge: Morocco->Spain has 39
+Edge: Morocco->Western Sahara has 4 | Edge: Morocco->Libya has 5
+Edge: Morocco->Egypt has 2 | Edge: Morocco->Portugal has 4
+Edge: Morocco->Saudi Arabia has 4 | Edge: Morocco->Togo has 1
+Edge: Morocco->United Arab Emirates has 4 | Edge: Morocco->Guinea-Bissau has 1
+Edge: Morocco->Russia has 2 | Edge: Morocco->Gambia has 1
+Edge: Morocco->Luxembourg has 2 | Edge: Morocco->Switzerland has 5
+Edge: Morocco->Tunisia has 2 | Edge: Morocco->Sierra Leone has 1
+Edge: Morocco->Lebanon has 1 | Edge: Morocco->Burkina Faso has 1
+Edge: Morocco->Algeria has 3 | Edge: Morocco->United Kingdom has 26
+Edge: Belgium->Latvia has 2 | Edge: Belgium->Estonia has 2
+Edge: Belgium->Rwanda has 5 | Edge: Belgium->Malta has 2
+Edge: Belgium->China has 2 | Edge: Belgium->Congo (Kinshasa) has 1
+Edge: Belgium->Sweden has 7 | Edge: Belgium->Angola has 4
+Edge: Belgium->Slovakia has 1 | Edge: Belgium->Ireland has 3
+Edge: Belgium->Rygge has 1 | Edge: Belgium->Denmark has 5
+Edge: Belgium->Italy has 44 | Edge: Belgium->Germany has 15
+Edge: Belgium->Morocco has 22 | Edge: Belgium->Turkey has 8
+Edge: Belgium->United States has 21 | Edge: Belgium->France has 37
+Edge: Belgium->Qatar has 1 | Edge: Belgium->Cote d'Ivoire has 3
+Edge: Belgium->Montenegro has 2 | Edge: Belgium->Bulgaria has 4
+Edge: Belgium->Austria has 2 | Edge: Belgium->Burundi has 4
+Edge: Belgium->Greece has 20 | Edge: Belgium->Serbia has 2
+Edge: Belgium->Thailand has 2 | Edge: Belgium->Benin has 4
+Edge: Belgium->Hungary has 3 | Edge: Belgium->Ukraine has 2
+Edge: Belgium->Senegal has 5 | Edge: Belgium->India has 4
+Edge: Belgium->Cameroon has 9 | Edge: Belgium->Romania has 4
+Edge: Belgium->Norway has 2 | Edge: Belgium->Canada has 7
+Edge: Belgium->Israel has 2 | Edge: Belgium->Netherlands has 1
+Edge: Belgium->Spain has 57 | Edge: Belgium->Croatia has 5
+Edge: Belgium->Macedonia has 1 | Edge: Belgium->Egypt has 2
+Edge: Belgium->Portugal has 18 | Edge: Belgium->Slovenia has 3
+Edge: Belgium->United Arab Emirates has 3 | Edge: Belgium->Lithuania has 5
+Edge: Belgium->Finland has 1 | Edge: Belgium->Russia has 2
+Edge: Belgium->Switzerland has 6 | Edge: Belgium->Tunisia has 4
+Edge: Belgium->Poland has 6 | Edge: Belgium->Czech Republic has 4
+Edge: Belgium->Sierra Leone has 3 | Edge: Belgium->Lebanon has 1
+Edge: Belgium->Iceland has 1 | Edge: Belgium->Cyprus has 2
+Edge: Belgium->Burkina Faso has 4 | Edge: Belgium->Algeria has 1
+Edge: Belgium->United Kingdom has 17 | Edge: Turkey->Turkmenistan has 2
+Edge: Turkey->South Africa has 1 | Edge: Turkey->Maldives has 1
+Edge: Turkey-> has 2 | Edge: Turkey->Bosnia and Herzegovina has 4
+Edge: Turkey->Latvia has 2 | Edge: Turkey->Hong Kong has 1
+Edge: Turkey->Estonia has 1 | Edge: Turkey->Rwanda has 2
+Edge: Turkey->Belgium has 8 | Edge: Turkey->Malta has 4
+Edge: Turkey->Tanzania has 2 | Edge: Turkey->China has 7
+Edge: Turkey->Congo (Kinshasa) has 1 | Edge: Turkey->Sweden has 6
+Edge: Turkey->Ethiopia has 1 | Edge: Turkey->Ireland has 2
+Edge: Turkey->Kuwait has 6 | Edge: Turkey->Georgia has 5
+Edge: Turkey->Denmark has 10 | Edge: Turkey->Japan has 4
+Edge: Turkey->Italy has 12 | Edge: Turkey->Tajikistan has 3
+Edge: Turkey->Germany has 128 | Edge: Turkey->Morocco has 3
+Edge: Turkey->Iraq has 16 | Edge: Turkey->Iran has 14
+Edge: Turkey->Djibouti has 1 | Edge: Turkey->Nepal has 1
+Edge: Turkey->Pakistan has 3 | Edge: Turkey->Sudan has 1
+Edge: Turkey->Niger has 1 | Edge: Turkey->United States has 10
+Edge: Turkey->France has 26 | Edge: Turkey->Qatar has 4
+Edge: Turkey->Montenegro has 1 | Edge: Turkey->Bulgaria has 1
+Edge: Turkey->Austria has 19 | Edge: Turkey->Bahrain has 2
+Edge: Turkey->Greece has 6 | Edge: Turkey->Serbia has 6
+Edge: Turkey->Brazil has 1 | Edge: Turkey->Malaysia has 2
+Edge: Turkey->Thailand has 2 | Edge: Turkey->South Korea has 3
+Edge: Turkey->Bangladesh has 1 | Edge: Turkey->Hungary has 2
+Edge: Turkey->Ukraine has 20 | Edge: Turkey->India has 4
+Edge: Turkey->Jordan has 3 | Edge: Turkey->Cameroon has 2
+Edge: Turkey->Romania has 4 | Edge: Turkey->Albania has 2
+Edge: Turkey->Singapore has 3 | Edge: Turkey->Norway has 6
+Edge: Turkey->Canada has 2 | Edge: Turkey->Israel has 3
+Edge: Turkey->Netherlands has 22 | Edge: Turkey->Sandefjord has 1
+Edge: Turkey->Spain has 7 | Edge: Turkey->Croatia has 2
+Edge: Turkey->Afghanistan has 2 | Edge: Turkey->Macedonia has 2
+Edge: Turkey->Libya has 6 | Edge: Turkey->Kenya has 2
+Edge: Turkey->Ghana has 1 | Edge: Turkey->Egypt has 8
+Edge: Turkey->Portugal has 2 | Edge: Turkey->Nigeria has 2
+Edge: Turkey->Saudi Arabia has 18 | Edge: Turkey->Slovenia has 2
+Edge: Turkey->United Arab Emirates has 8 | Edge: Turkey->Lithuania has 1
+Edge: Turkey->Finland has 5 | Edge: Turkey->Uzbekistan has 2
+Edge: Turkey->Belarus has 2 | Edge: Turkey->Kyrgyzstan has 5
+Edge: Turkey->Russia has 31 | Edge: Turkey->Yemen has 1
+Edge: Turkey->Kazakhstan has 7 | Edge: Turkey->Luxembourg has 3
+Edge: Turkey->Azerbaijan has 7 | Edge: Turkey->Switzerland has 11
+Edge: Turkey->Tunisia has 2 | Edge: Turkey->Poland has 2
+Edge: Turkey->Czech Republic has 2 | Edge: Turkey->Lebanon has 3
+Edge: Turkey->Moldova has 2 | Edge: Turkey->Cyprus has 14
+Edge: Turkey->Oman has 2 | Edge: Turkey->Algeria has 6
+Edge: Turkey->United Kingdom has 89 | Edge: Aruba->Venezuela has 11
+Edge: Aruba->Colombia has 2 | Edge: Aruba->United States has 21
+Edge: Aruba->Netherlands Antilles has 3 | Edge: Aruba->Panama has 1
+Edge: Aruba->Canada has 2 | Edge: Aruba->Dominican Republic has 2
+Edge: Aruba->Netherlands has 1 | Edge: Aruba->Suriname has 1
+Edge: Venezuela-> has 1 | Edge: Venezuela->Argentina has 2
+Edge: Venezuela->Trinidad and Tobago has 2 | Edge: Venezuela->Chile has 1
+Edge: Venezuela->Colombia has 5 | Edge: Venezuela->Grenada has 1
+Edge: Venezuela->Aruba has 11 | Edge: Venezuela->Italy has 1
+Edge: Venezuela->Cuba has 3 | Edge: Venezuela->Germany has 1
+Edge: Venezuela->United States has 9 | Edge: Venezuela->France has 1
+Edge: Venezuela->Peru has 2 | Edge: Venezuela->Guyana has 1
+Edge: Venezuela->Brazil has 3 | Edge: Venezuela->Ecuador has 1
+Edge: Venezuela->Netherlands Antilles has 6 | Edge: Venezuela->Panama has 6
+Edge: Venezuela->Dominican Republic has 1 | Edge: Venezuela->Spain has 4
+Edge: Venezuela->Mexico has 1 | Edge: Venezuela->Portugal has 3
+Edge: Venezuela->Puerto Rico has 1 | Edge: Netherlands Antilles->Trinidad and Tobago has 3
+Edge: Netherlands Antilles->Venezuela has 6 | Edge: Netherlands Antilles->Colombia has 2
+Edge: Netherlands Antilles->Haiti has 1 | Edge: Netherlands Antilles->Aruba has 4
+Edge: Netherlands Antilles->Germany has 1 | Edge: Netherlands Antilles->United States has 23
+Edge: Netherlands Antilles->Saint Lucia has 1 | Edge: Netherlands Antilles->France has 7
+Edge: Netherlands Antilles->Saint Kitts and Nevis has 3 | Edge: Netherlands Antilles->Panama has 2
+Edge: Netherlands Antilles->British Virgin Islands has 4 | Edge: Netherlands Antilles->Antigua and Barbuda has 1
+Edge: Netherlands Antilles->Guadeloupe has 1 | Edge: Netherlands Antilles->Canada has 1
+Edge: Netherlands Antilles->Dominican Republic has 6 | Edge: Netherlands Antilles->Barbados has 1
+Edge: Netherlands Antilles->Netherlands has 4 | Edge: Netherlands Antilles->Virgin Islands has 3
+Edge: Netherlands Antilles->Jamaica has 2 | Edge: Netherlands Antilles->Suriname has 1
+Edge: Netherlands Antilles->Puerto Rico has 3 | Edge: Netherlands Antilles->Dominica has 5
+Edge: Netherlands Antilles->Anguilla has 2 | Edge: Uzbekistan->Latvia has 2
+Edge: Uzbekistan->China has 4 | Edge: Uzbekistan->Japan has 1
+Edge: Uzbekistan->Italy has 2 | Edge: Uzbekistan->Germany has 1
+Edge: Uzbekistan->Iran has 1 | Edge: Uzbekistan->Turkey has 2
+Edge: Uzbekistan->France has 1 | Edge: Uzbekistan->Malaysia has 2
+Edge: Uzbekistan->Thailand has 1 | Edge: Uzbekistan->South Korea has 3
+Edge: Uzbekistan->Ukraine has 1 | Edge: Uzbekistan->India has 2
+Edge: Uzbekistan->Singapore has 2 | Edge: Uzbekistan->Israel has 1
+Edge: Uzbekistan->United Arab Emirates has 2 | Edge: Uzbekistan->Kyrgyzstan has 2
+Edge: Uzbekistan->Russia has 82 | Edge: Uzbekistan->Kazakhstan has 4
+Edge: Uzbekistan->Azerbaijan has 1 | Edge: Uzbekistan->Czech Republic has 2
+Edge: Uzbekistan->United Kingdom has 1 | Edge: Montenegro->Belgium has 2
+Edge: Montenegro->Italy has 2 | Edge: Montenegro->Germany has 2
+Edge: Montenegro->Turkey has 1 | Edge: Montenegro->France has 2
+Edge: Montenegro->Austria has 2 | Edge: Montenegro->Serbia has 4
+Edge: Montenegro->Slovenia has 2 | Edge: Montenegro->Russia has 7
+Edge: Montenegro->Switzerland has 1 | Edge: Montenegro->United Kingdom has 2
+Edge: Antigua and Barbuda->Trinidad and Tobago has 2 | Edge: Antigua and Barbuda->Germany has 1
+Edge: Antigua and Barbuda->United States has 7 | Edge: Antigua and Barbuda->Saint Lucia has 2
+Edge: Antigua and Barbuda->France has 2 | Edge: Antigua and Barbuda->Saint Kitts and Nevis has 4
+Edge: Antigua and Barbuda->Netherlands Antilles has 1 | Edge: Antigua and Barbuda->Guadeloupe has 2
+Edge: Antigua and Barbuda->Canada has 2 | Edge: Antigua and Barbuda->Dominican Republic has 3
+Edge: Antigua and Barbuda->Barbados has 2 | Edge: Antigua and Barbuda->Jamaica has 1
+Edge: Antigua and Barbuda->Puerto Rico has 1 | Edge: Antigua and Barbuda->Dominica has 1
+Edge: Antigua and Barbuda->Anguilla has 1 | Edge: Antigua and Barbuda->United Kingdom has 3
+Edge: Guadeloupe->Haiti has 2 | Edge: Guadeloupe->United States has 2
+Edge: Guadeloupe->France has 6 | Edge: Guadeloupe->Netherlands Antilles has 1
+Edge: Guadeloupe->Antigua and Barbuda has 2 | Edge: Guadeloupe->Martinique has 5
+Edge: Guadeloupe->Canada has 1 | Edge: Guadeloupe->Dominican Republic has 3
+Edge: Guadeloupe->Puerto Rico has 2 | Edge: Guadeloupe->Dominica has 3
+Edge: French Guiana->France has 3 | Edge: French Guiana->Brazil has 1
+Edge: French Guiana->Martinique has 2 | Edge: French Guiana->Suriname has 1
+Edge: Martinique->Cuba has 1 | Edge: Martinique->United States has 2
+Edge: Martinique->Saint Lucia has 4 | Edge: Martinique->France has 4
+Edge: Martinique->Guadeloupe has 4 | Edge: Martinique->Canada has 1
+Edge: Martinique->Dominican Republic has 2 | Edge: Martinique->Barbados has 1
+Edge: Martinique->French Guiana has 2 | Edge: Martinique->Puerto Rico has 2
+Edge: Dominican Republic->Argentina has 1 | Edge: Dominican Republic->Venezuela has 1
+Edge: Dominican Republic->Chile has 1 | Edge: Dominican Republic->Colombia has 3
+Edge: Dominican Republic->Haiti has 2 | Edge: Dominican Republic->Aruba has 2
+Edge: Dominican Republic->Italy has 3 | Edge: Dominican Republic->Cuba has 2
+Edge: Dominican Republic->Germany has 7 | Edge: Dominican Republic->Turks and Caicos Islands has 3
+Edge: Dominican Republic->United States has 61 | Edge: Dominican Republic->France has 10
+Edge: Dominican Republic->Peru has 2 | Edge: Dominican Republic->Brazil has 4
+Edge: Dominican Republic->Netherlands Antilles has 5 | Edge: Dominican Republic->Panama has 4
+Edge: Dominican Republic->Antigua and Barbuda has 4 | Edge: Dominican Republic->Guadeloupe has 3
+Edge: Dominican Republic->Canada has 17 | Edge: Dominican Republic->Netherlands has 1
+Edge: Dominican Republic->Spain has 5 | Edge: Dominican Republic->Costa Rica has 1
+Edge: Dominican Republic->Jamaica has 2 | Edge: Dominican Republic->Russia has 4
+Edge: Dominican Republic->Switzerland has 1 | Edge: Dominican Republic->Puerto Rico has 9
+Edge: Dominican Republic->United Kingdom has 1 | Edge: Dominica->Netherlands Antilles has 4
+Edge: Dominica->British Virgin Islands has 2 | Edge: Dominica->Antigua and Barbuda has 1
+Edge: Dominica->Guadeloupe has 3 | Edge: Dominica->Barbados has 1
+Edge: Dominica->Virgin Islands has 1 | Edge: Dominica->Saint Vincent and the Grenadines has 1
+Edge: Dominica->Puerto Rico has 4 | Edge: Saint Lucia->Trinidad and Tobago has 4
+Edge: Saint Lucia->Grenada has 3 | Edge: Saint Lucia->United States has 7
+Edge: Saint Lucia->Antigua and Barbuda has 2 | Edge: Saint Lucia->Martinique has 5
+Edge: Saint Lucia->Canada has 2 | Edge: Saint Lucia->Barbados has 2
+Edge: Saint Lucia->Saint Vincent and the Grenadines has 1 | Edge: Saint Lucia->Dominica has 1
+Edge: Saint Lucia->United Kingdom has 3 | Edge: Northern Mariana Islands->China has 3
+Edge: Northern Mariana Islands->Japan has 3 | Edge: Northern Mariana Islands->South Korea has 2
+Edge: Northern Mariana Islands->Guam has 2 | Edge: South Korea-> has 2
+Edge: South Korea->Northern Mariana Islands has 2 | Edge: South Korea->Hong Kong has 16
+Edge: South Korea->China has 151 | Edge: South Korea->Burma has 3
+Edge: South Korea->Macau has 6 | Edge: South Korea->Indonesia has 6
+Edge: South Korea->Laos has 2 | Edge: South Korea->Japan has 105
+Edge: South Korea->Italy has 2 | Edge: South Korea->Germany has 4
+Edge: South Korea->Nepal has 1 | Edge: South Korea->Palau has 2
+Edge: South Korea->Turkey has 3 | Edge: South Korea->Vietnam has 13
+Edge: South Korea->United States has 39 | Edge: South Korea->Mongolia has 2
+Edge: South Korea->France has 3 | Edge: South Korea->Qatar has 2
+Edge: South Korea->Austria has 1 | Edge: South Korea->Sri Lanka has 1
+Edge: South Korea->Fiji has 1 | Edge: South Korea->Malaysia has 8
+Edge: South Korea->Thailand has 21 | Edge: South Korea->India has 3
+Edge: South Korea->Singapore has 5 | Edge: South Korea->Canada has 4
+Edge: South Korea->Israel has 1 | Edge: South Korea->Netherlands has 2
+Edge: South Korea->Spain has 1 | Edge: South Korea->Taiwan has 18
+Edge: South Korea->Cambodia has 8 | Edge: South Korea->Kenya has 2
+Edge: South Korea->Saudi Arabia has 1 | Edge: South Korea->Guam has 4
+Edge: South Korea->United Arab Emirates has 5 | Edge: South Korea->Finland has 1
+Edge: South Korea->Uzbekistan has 3 | Edge: South Korea->New Zealand has 1
+Edge: South Korea->Russia has 14 | Edge: South Korea->Kazakhstan has 2
+Edge: South Korea->Czech Republic has 2 | Edge: South Korea->Philippines has 26
+Edge: South Korea->Australia has 5 | Edge: South Korea->United Kingdom has 3
+Edge: Canada-> has 3 | Edge: Canada->Bermuda has 2
+Edge: Canada->Trinidad and Tobago has 2 | Edge: Canada->Hong Kong has 4
+Edge: Canada->Belgium has 6 | Edge: Canada->Chile has 1
+Edge: Canada->China has 12 | Edge: Canada->Colombia has 2
+Edge: Canada->Ethiopia has 1 | Edge: Canada->Haiti has 1
+Edge: Canada->Ireland has 3 | Edge: Canada->Grenada has 2
+Edge: Canada->Aruba has 2 | Edge: Canada->Denmark has 3
+Edge: Canada->Japan has 10 | Edge: Canada->Italy has 8
+Edge: Canada->Cuba has 27 | Edge: Canada->Germany has 19
+Edge: Canada->Morocco has 1 | Edge: Canada->Pakistan has 3
+Edge: Canada->Turkey has 2 | Edge: Canada->Turks and Caicos Islands has 2
+Edge: Canada->United States has 363 | Edge: Canada->Saint Lucia has 2
+Edge: Canada->France has 19 | Edge: Canada->Peru has 1
+Edge: Canada->Qatar has 1 | Edge: Canada->Guyana has 2
+Edge: Canada->Austria has 3 | Edge: Canada->El Salvador has 1
+Edge: Canada->Greece has 2 | Edge: Canada->Brazil has 2
+Edge: Canada->South Korea has 4 | Edge: Canada->Netherlands Antilles has 1
+Edge: Canada->Bahamas has 4 | Edge: Canada->Panama has 1
+Edge: Canada->Cayman Islands has 2 | Edge: Canada->Jordan has 3
+Edge: Canada->Antigua and Barbuda has 2 | Edge: Canada->Martinique has 1
+Edge: Canada->Guadeloupe has 1 | Edge: Canada->Israel has 2
+Edge: Canada->Dominican Republic has 14 | Edge: Canada->Barbados has 2
+Edge: Canada->Netherlands has 10 | Edge: Canada->Spain has 4
+Edge: Canada->Taiwan has 3 | Edge: Canada->Costa Rica has 3
+Edge: Canada->Mexico has 27 | Edge: Canada->Egypt has 1
+Edge: Canada->Portugal has 9 | Edge: Canada->Saudi Arabia has 1
+Edge: Canada->Jamaica has 10 | Edge: Canada->United Arab Emirates has 3
+Edge: Canada->New Zealand has 2 | Edge: Canada->Russia has 2
+Edge: Canada->Saint Pierre and Miquelon has 3 | Edge: Canada->Switzerland has 8
+Edge: Canada->Puerto Rico has 1 | Edge: Canada->Tunisia has 1
+Edge: Canada->Poland has 2 | Edge: Canada->Iceland has 2
+Edge: Canada->Philippines has 1 | Edge: Canada->Australia has 1
+Edge: Canada->Algeria has 1 | Edge: Canada->United Kingdom has 41
+Edge: Israel->South Africa has 1 | Edge: Israel->Latvia has 1
+Edge: Israel->Hong Kong has 1 | Edge: Israel->Belgium has 2
+Edge: Israel->China has 2 | Edge: Israel->Sweden has 1
+Edge: Israel->Ethiopia has 1 | Edge: Israel->Georgia has 3
+Edge: Israel->Denmark has 2 | Edge: Israel->Italy has 9
+Edge: Israel->Germany has 12 | Edge: Israel->Turkey has 3
+Edge: Israel->United States has 7 | Edge: Israel->France has 10
+Edge: Israel->Bulgaria has 2 | Edge: Israel->Austria has 3
+Edge: Israel->Greece has 3 | Edge: Israel->Serbia has 1
+Edge: Israel->Thailand has 2 | Edge: Israel->South Korea has 1
+Edge: Israel->Hungary has 2 | Edge: Israel->Ukraine has 7
+Edge: Israel->India has 1 | Edge: Israel->Jordan has 2
+Edge: Israel->Romania has 5 | Edge: Israel->Canada has 3
+Edge: Israel->Netherlands has 4 | Edge: Israel->Spain has 6
+Edge: Israel->Egypt has 1 | Edge: Israel->Lithuania has 1
+Edge: Israel->Finland has 1 | Edge: Israel->Uzbekistan has 1
+Edge: Israel->Belarus has 1 | Edge: Israel->Russia has 10
+Edge: Israel->Azerbaijan has 1 | Edge: Israel->Switzerland has 5
+Edge: Israel->Poland has 4 | Edge: Israel->Czech Republic has 4
+Edge: Israel->Cyprus has 3 | Edge: Israel->United Kingdom has 6
+Edge: Bangladesh->Hong Kong has 3 | Edge: Bangladesh->China has 2
+Edge: Bangladesh->Burma has 1 | Edge: Bangladesh->Kuwait has 2
+Edge: Bangladesh->Italy has 1 | Edge: Bangladesh->Nepal has 4
+Edge: Bangladesh->Pakistan has 1 | Edge: Bangladesh->Turkey has 1
+Edge: Bangladesh->Qatar has 2 | Edge: Bangladesh->Sri Lanka has 2
+Edge: Bangladesh->Malaysia has 6 | Edge: Bangladesh->Thailand has 7
+Edge: Bangladesh->Bhutan has 1 | Edge: Bangladesh->India has 12
+Edge: Bangladesh->Singapore has 4 | Edge: Bangladesh->Saudi Arabia has 7
+Edge: Bangladesh->United Arab Emirates has 9 | Edge: Bangladesh->Oman has 5
+Edge: Bangladesh->United Kingdom has 1 | Edge: India->Turkmenistan has 2
+Edge: India->South Africa has 3 | Edge: India->Maldives has 5
+Edge: India-> has 1 | Edge: India->Hong Kong has 14
+Edge: India->Belgium has 5 | Edge: India->China has 6
+Edge: India->Burma has 1 | Edge: India->Ethiopia has 4
+Edge: India->Kuwait has 9 | Edge: India->Japan has 5
+Edge: India->Italy has 2 | Edge: India->Tajikistan has 1
+Edge: India->Germany has 12 | Edge: India->Iran has 2
+Edge: India->Nepal has 8 | Edge: India->Pakistan has 3
+Edge: India->Turkey has 4 | Edge: India->United States has 5
+Edge: India->France has 4 | Edge: India->Mauritius has 6
+Edge: India->Qatar has 17 | Edge: India->Reunion has 1
+Edge: India->Austria has 2 | Edge: India->Bahrain has 8
+Edge: India->Sri Lanka has 24 | Edge: India->Malaysia has 22
+Edge: India->Thailand has 18 | Edge: India->Bhutan has 3
+Edge: India->South Korea has 3 | Edge: India->Bangladesh has 12
+Edge: India->Jordan has 2 | Edge: India->Singapore has 37
+Edge: India->Israel has 1 | Edge: India->Netherlands has 3
+Edge: India->Taiwan has 2 | Edge: India->Afghanistan has 7
+Edge: India->Kenya has 3 | Edge: India->Egypt has 2
+Edge: India->Saudi Arabia has 39 | Edge: India->United Arab Emirates has 88
+Edge: India->Finland has 1 | Edge: India->Uzbekistan has 2
+Edge: India->Russia has 2 | Edge: India->Yemen has 2
+Edge: India->Kazakhstan has 1 | Edge: India->Switzerland has 4
+Edge: India->Oman has 23 | Edge: India->Australia has 2
+Edge: India->United Kingdom has 17 | Edge: Oman->Maldives has 1
+Edge: Oman->Tanzania has 1 | Edge: Oman->Ethiopia has 2
+Edge: Oman->Kuwait has 2 | Edge: Oman->Italy has 1
+Edge: Oman->Germany has 2 | Edge: Oman->Iran has 3
+Edge: Oman->Nepal has 1 | Edge: Oman->Pakistan has 14
+Edge: Oman->Turkey has 2 | Edge: Oman->France has 1
+Edge: Oman->Qatar has 6 | Edge: Oman->Bahrain has 3
+Edge: Oman->Sri Lanka has 3 | Edge: Oman->Malaysia has 2
+Edge: Oman->Thailand has 1 | Edge: Oman->Bangladesh has 4
+Edge: Oman->India has 24 | Edge: Oman->Jordan has 2
+Edge: Oman->Egypt has 2 | Edge: Oman->Saudi Arabia has 7
+Edge: Oman->United Arab Emirates has 20 | Edge: Oman->Switzerland has 2
+Edge: Oman->Lebanon has 1 | Edge: Oman->United Kingdom has 1
+Edge: Nepal->Hong Kong has 1 | Edge: Nepal->China has 4
+Edge: Nepal->Pakistan has 1 | Edge: Nepal->Turkey has 1
+Edge: Nepal->Qatar has 2 | Edge: Nepal->Malaysia has 3
+Edge: Nepal->Thailand has 2 | Edge: Nepal->Bhutan has 1
+Edge: Nepal->South Korea has 1 | Edge: Nepal->Bangladesh has 4
+Edge: Nepal->India has 8 | Edge: Nepal->Singapore has 2
+Edge: Nepal->United Arab Emirates has 4 | Edge: Nepal->Oman has 1
+Edge: Argentina->Venezuela has 2 | Edge: Argentina->Chile has 9
+Edge: Argentina->Colombia has 2 | Edge: Argentina->Italy has 2
+Edge: Argentina->Paraguay has 4 | Edge: Argentina->Cuba has 1
+Edge: Argentina->Germany has 1 | Edge: Argentina->United States has 10
+Edge: Argentina->Falkland Islands has 1 | Edge: Argentina->France has 2
+Edge: Argentina->Peru has 4 | Edge: Argentina->Brazil has 28
+Edge: Argentina->Ecuador has 1 | Edge: Argentina->Panama has 2
+Edge: Argentina->Bolivia has 2 | Edge: Argentina->Dominican Republic has 1
+Edge: Argentina->Netherlands has 1 | Edge: Argentina->Spain has 4
+Edge: Argentina->Mexico has 2 | Edge: Argentina->Uruguay has 9
+Edge: Argentina->United Kingdom has 1 | Edge: Mexico->Argentina has 2
+Edge: Mexico->Venezuela has 1 | Edge: Mexico->Chile has 3
+Edge: Mexico->China has 1 | Edge: Mexico->Colombia has 6
+Edge: Mexico->Honduras has 1 | Edge: Mexico->Belize has 2
+Edge: Mexico->Japan has 2 | Edge: Mexico->Italy has 3
+Edge: Mexico->Cuba has 5 | Edge: Mexico->Germany has 4
+Edge: Mexico->United States has 373 | Edge: Mexico->France has 4
+Edge: Mexico->Peru has 4 | Edge: Mexico->El Salvador has 3
+Edge: Mexico->Brazil has 2 | Edge: Mexico->Ecuador has 1
+Edge: Mexico->Panama has 8 | Edge: Mexico->Canada has 30
+Edge: Mexico->Netherlands has 2 | Edge: Mexico->Guatemala has 3
+Edge: Mexico->Spain has 8 | Edge: Mexico->Costa Rica has 3
+Edge: Mexico->Russia has 1 | Edge: Mexico->United Kingdom has 12
+Edge: Guatemala->Colombia has 1 | Edge: Guatemala->Honduras has 8
+Edge: Guatemala->Belize has 2 | Edge: Guatemala->United States has 17
+Edge: Guatemala->El Salvador has 3 | Edge: Guatemala->Panama has 1
+Edge: Guatemala->Costa Rica has 2 | Edge: Guatemala->Mexico has 3
+Edge: Guatemala->Nicaragua has 1 | Edge: Cuba->Argentina has 1
+Edge: Cuba->Venezuela has 3 | Edge: Cuba->Colombia has 3
+Edge: Cuba->Angola has 1 | Edge: Cuba->Italy has 5
+Edge: Cuba->Germany has 4 | Edge: Cuba->France has 2
+Edge: Cuba->Peru has 2 | Edge: Cuba->El Salvador has 1
+Edge: Cuba->Ecuador has 1 | Edge: Cuba->Bahamas has 2
+Edge: Cuba->Panama has 2 | Edge: Cuba->Cayman Islands has 1
+Edge: Cuba->Martinique has 1 | Edge: Cuba->Canada has 29
+Edge: Cuba->Dominican Republic has 2 | Edge: Cuba->Netherlands has 1
+Edge: Cuba->Spain has 2 | Edge: Cuba->Mexico has 8
+Edge: Cuba->Jamaica has 1 | Edge: Cuba->Russia has 3
+Edge: Cuba->Switzerland has 1 | Edge: Cuba->United Kingdom has 2
+Edge: Costa Rica-> has 4 | Edge: Costa Rica->Colombia has 1
+Edge: Costa Rica->Honduras has 5 | Edge: Costa Rica->United States has 36
+Edge: Costa Rica->Peru has 1 | Edge: Costa Rica->El Salvador has 2
+Edge: Costa Rica->Panama has 7 | Edge: Costa Rica->Canada has 3
+Edge: Costa Rica->Dominican Republic has 1 | Edge: Costa Rica->Guatemala has 4
+Edge: Costa Rica->Spain has 1 | Edge: Costa Rica->Mexico has 3
+Edge: Costa Rica->Nicaragua has 3 | Edge: Afghanistan->Kuwait has 1
+Edge: Afghanistan->Tajikistan has 1 | Edge: Afghanistan->Iran has 5
+Edge: Afghanistan->Pakistan has 4 | Edge: Afghanistan->Turkey has 3
+Edge: Afghanistan->India has 7 | Edge: Afghanistan->United Arab Emirates has 7
+Edge: Afghanistan->Azerbaijan has 1 | Edge: Pakistan->China has 4
+Edge: Pakistan->Kuwait has 6 | Edge: Pakistan->Denmark has 1
+Edge: Pakistan->Italy has 2 | Edge: Pakistan->Iran has 3
+Edge: Pakistan->Nepal has 1 | Edge: Pakistan->Turkey has 3
+Edge: Pakistan->France has 1 | Edge: Pakistan->Qatar has 6
+Edge: Pakistan->Bahrain has 6 | Edge: Pakistan->Sri Lanka has 2
+Edge: Pakistan->Malaysia has 3 | Edge: Pakistan->Thailand has 4
+Edge: Pakistan->Bangladesh has 1 | Edge: Pakistan->India has 3
+Edge: Pakistan->Norway has 1 | Edge: Pakistan->Canada has 3
+Edge: Pakistan->Spain has 2 | Edge: Pakistan->Afghanistan has 4
+Edge: Pakistan->Saudi Arabia has 39 | Edge: Pakistan->United Arab Emirates has 51
+Edge: Pakistan->Oman has 13 | Edge: Pakistan->United Kingdom has 7
+Edge: Serbia-> has 1 | Edge: Serbia->Bosnia and Herzegovina has 3
+Edge: Serbia->Belgium has 2 | Edge: Serbia->Sweden has 6
+Edge: Serbia->Denmark has 2 | Edge: Serbia->Italy has 6
+Edge: Serbia->Germany has 25 | Edge: Serbia->Turkey has 6
+Edge: Serbia->France has 4 | Edge: Serbia->Montenegro has 4
+Edge: Serbia->Bulgaria has 2 | Edge: Serbia->Austria has 3
+Edge: Serbia->Greece has 4 | Edge: Serbia->Hungary has 2
+Edge: Serbia->Romania has 2 | Edge: Serbia->Norway has 1
+Edge: Serbia->Israel has 1 | Edge: Serbia->Netherlands has 3
+Edge: Serbia->Sandefjord has 1 | Edge: Serbia->Croatia has 2
+Edge: Serbia->Macedonia has 1 | Edge: Serbia->Slovenia has 2
+Edge: Serbia->United Arab Emirates has 3 | Edge: Serbia->Russia has 2
+Edge: Serbia->Switzerland has 9 | Edge: Serbia->Tunisia has 1
+Edge: Serbia->Poland has 2 | Edge: Serbia->Czech Republic has 1
+Edge: Serbia->Cyprus has 2 | Edge: Serbia->United Kingdom has 4
+Edge: Macedonia-> has 1 | Edge: Macedonia->Belgium has 1
+Edge: Macedonia->Sweden has 3 | Edge: Macedonia->Italy has 3
+Edge: Macedonia->Germany has 5 | Edge: Macedonia->Turkey has 2
+Edge: Macedonia->Austria has 1 | Edge: Macedonia->Serbia has 1
+Edge: Macedonia->Netherlands has 1 | Edge: Macedonia->Croatia has 1
+Edge: Macedonia->Slovenia has 1 | Edge: Macedonia->United Arab Emirates has 1
+Edge: Macedonia->Switzerland has 2 | Edge: Macedonia->United Kingdom has 1
+Edge: Algeria-> has 5 | Edge: Algeria->Belgium has 1
+Edge: Algeria->Malta has 1 | Edge: Algeria->China has 1
+Edge: Algeria->Italy has 4 | Edge: Algeria->Germany has 3
+Edge: Algeria->Morocco has 3 | Edge: Algeria->Turkey has 6
+Edge: Algeria->Niger has 1 | Edge: Algeria->Mali has 1
+Edge: Algeria->France has 68 | Edge: Algeria->Qatar has 1
+Edge: Algeria->Cote d'Ivoire has 1 | Edge: Algeria->Austria has 1
+Edge: Algeria->Senegal has 1 | Edge: Algeria->Jordan has 2
+Edge: Algeria->Canada has 1 | Edge: Algeria->Spain has 14
+Edge: Algeria->Libya has 2 | Edge: Algeria->Egypt has 2
+Edge: Algeria->Portugal has 2 | Edge: Algeria->Saudi Arabia has 2
+Edge: Algeria->United Arab Emirates has 2 | Edge: Algeria->Russia has 1
+Edge: Algeria->Switzerland has 1 | Edge: Algeria->Tunisia has 3
+Edge: Algeria->Lebanon has 1 | Edge: Algeria->Burkina Faso has 1
+Edge: Algeria->United Kingdom has 3 | Edge: Greece->Latvia has 2
+Edge: Greece->Estonia has 1 | Edge: Greece->Belgium has 18
+Edge: Greece->Malta has 1 | Edge: Greece->Sweden has 10
+Edge: Greece->Ireland has 3 | Edge: Greece->Rygge has 5
+Edge: Greece->Georgia has 1 | Edge: Greece->Denmark has 7
+Edge: Greece->Italy has 24 | Edge: Greece->Germany has 166
+Edge: Greece->Turkey has 6 | Edge: Greece->United States has 3
+Edge: Greece->France has 30 | Edge: Greece->Qatar has 2
+Edge: Greece->Bulgaria has 4 | Edge: Greece->Austria has 36
+Edge: Greece->Serbia has 4 | Edge: Greece->Hungary has 2
+Edge: Greece->Ukraine has 5 | Edge: Greece->Jordan has 1
+Edge: Greece->Romania has 4 | Edge: Greece->Albania has 2
+Edge: Greece->Norway has 6 | Edge: Greece->Canada has 2
+Edge: Greece->Israel has 3 | Edge: Greece->Netherlands has 21
+Edge: Greece->Spain has 7 | Edge: Greece->Croatia has 2
+Edge: Greece->Armenia has 1 | Edge: Greece->Egypt has 4
+Edge: Greece->United Arab Emirates has 3 | Edge: Greece->Lithuania has 4
+Edge: Greece->Finland has 2 | Edge: Greece->Russia has 28
+Edge: Greece->Luxembourg has 4 | Edge: Greece->Switzerland has 9
+Edge: Greece->Poland has 7 | Edge: Greece->Czech Republic has 4
+Edge: Greece->Lebanon has 1 | Edge: Greece->Moldova has 1
+Edge: Greece->Cyprus has 11 | Edge: Greece->United Kingdom has 95
+Edge: Hungary->Latvia has 1 | Edge: Hungary->Belgium has 3
+Edge: Hungary->Malta has 2 | Edge: Hungary->Sweden has 4
+Edge: Hungary->Ireland has 2 | Edge: Hungary->Denmark has 3
+Edge: Hungary->Italy has 11 | Edge: Hungary->Germany has 12
+Edge: Hungary->Turkey has 2 | Edge: Hungary->France has 5
+Edge: Hungary->Qatar has 1 | Edge: Hungary->Austria has 1
+Edge: Hungary->Greece has 2 | Edge: Hungary->Serbia has 2
+Edge: Hungary->Ukraine has 1 | Edge: Hungary->Romania has 1
+Edge: Hungary->Norway has 1 | Edge: Hungary->Israel has 2
+Edge: Hungary->Netherlands has 4 | Edge: Hungary->Spain has 5
+Edge: Hungary->Croatia has 1 | Edge: Hungary->Egypt has 1
+Edge: Hungary->Portugal has 1 | Edge: Hungary->United Arab Emirates has 1
+Edge: Hungary->Finland has 3 | Edge: Hungary->Belarus has 1
+Edge: Hungary->Russia has 4 | Edge: Hungary->Azerbaijan has 1
+Edge: Hungary->Switzerland has 2 | Edge: Hungary->Poland has 2
+Edge: Hungary->Czech Republic has 2 | Edge: Hungary->Cyprus has 1
+Edge: Hungary->United Kingdom has 15 | Edge: Ireland->Latvia has 1
+Edge: Ireland->Belgium has 3 | Edge: Ireland->Malta has 1
+Edge: Ireland->Sweden has 2 | Edge: Ireland->Slovakia has 1
+Edge: Ireland->Rygge has 1 | Edge: Ireland->Denmark has 3
+Edge: Ireland->Italy has 16 | Edge: Ireland->Germany has 19
+Edge: Ireland->Morocco has 1 | Edge: Ireland->Turkey has 2
+Edge: Ireland->United States has 35 | Edge: Ireland->Isle of Man has 1
+Edge: Ireland->France has 23 | Edge: Ireland->Bulgaria has 1
+Edge: Ireland->Austria has 1 | Edge: Ireland->Greece has 3
+Edge: Ireland->Hungary has 2 | Edge: Ireland->Romania has 2
+Edge: Ireland->Norway has 2 | Edge: Ireland->Canada has 3
+Edge: Ireland->Jersey has 2 | Edge: Ireland->Netherlands has 4
+Edge: Ireland->Spain has 53 | Edge: Ireland->Croatia has 3
+Edge: Ireland->Portugal has 12 | Edge: Ireland->United Arab Emirates has 4
+Edge: Ireland->Lithuania has 4 | Edge: Ireland->Finland has 1
+Edge: Ireland->Luxembourg has 1 | Edge: Ireland->Switzerland has 3
+Edge: Ireland->Poland has 15 | Edge: Ireland->Czech Republic has 2
+Edge: Ireland->Moldova has 1 | Edge: Ireland->United Kingdom has 63
+Edge: Portugal->Sao Tome and Principe has 2 | Edge: Portugal->Venezuela has 3
+Edge: Portugal->Belgium has 18 | Edge: Portugal->Sweden has 4
+Edge: Portugal->Angola has 3 | Edge: Portugal->Ireland has 12
+Edge: Portugal->Denmark has 5 | Edge: Portugal->Italy has 18
+Edge: Portugal->Germany has 62 | Edge: Portugal->Morocco has 4
+Edge: Portugal-> Santiago Island has 2 | Edge: Portugal->Turkey has 2
+Edge: Portugal->United States has 14 | Edge: Portugal->Mali has 1
+Edge: Portugal->France has 51 | Edge: Portugal->Austria has 6
+Edge: Portugal->Brazil has 12 | Edge: Portugal->Mozambique has 1
+Edge: Portugal->Hungary has 1 | Edge: Portugal->Ukraine has 2
+Edge: Portugal->Senegal has 1 | Edge: Portugal->Cape Verde has 7
+Edge: Portugal->Romania has 1 | Edge: Portugal->Norway has 3
+Edge: Portugal->Canada has 8 | Edge: Portugal->Netherlands has 22
+Edge: Portugal->Spain has 43 | Edge: Portugal->Ghana has 1
+Edge: Portugal->United Arab Emirates has 2 | Edge: Portugal->Finland has 2
+Edge: Portugal->Russia has 2 | Edge: Portugal->Luxembourg has 7
+Edge: Portugal->Switzerland has 17 | Edge: Portugal->Tunisia has 1
+Edge: Portugal->Poland has 2 | Edge: Portugal->Czech Republic has 2
+Edge: Portugal->Moldova has 1 | Edge: Portugal->Algeria has 2
+Edge: Portugal->United Kingdom has 82 | Edge: Czech Republic->Latvia has 2
+Edge: Czech Republic->Belgium has 4 | Edge: Czech Republic->Malta has 2
+Edge: Czech Republic->Sweden has 5 | Edge: Czech Republic->Slovakia has 4
+Edge: Czech Republic->Ireland has 2 | Edge: Czech Republic->Denmark has 4
+Edge: Czech Republic->Italy has 19 | Edge: Czech Republic->Germany has 14
+Edge: Czech Republic->Turkey has 2 | Edge: Czech Republic->France has 16
+Edge: Czech Republic->Bulgaria has 2 | Edge: Czech Republic->Austria has 1
+Edge: Czech Republic->Greece has 5 | Edge: Czech Republic->Serbia has 1
+Edge: Czech Republic->South Korea has 2 | Edge: Czech Republic->Hungary has 2
+Edge: Czech Republic->Ukraine has 3 | Edge: Czech Republic->Romania has 5
+Edge: Czech Republic->Norway has 3 | Edge: Czech Republic->Israel has 4
+Edge: Czech Republic->Netherlands has 5 | Edge: Czech Republic->Spain has 16
+Edge: Czech Republic->Croatia has 1 | Edge: Czech Republic->Armenia has 2
+Edge: Czech Republic->Portugal has 2 | Edge: Czech Republic->Slovenia has 1
+Edge: Czech Republic->United Arab Emirates has 2 | Edge: Czech Republic->Lithuania has 1
+Edge: Czech Republic->Finland has 3 | Edge: Czech Republic->Uzbekistan has 1
+Edge: Czech Republic->Belarus has 2 | Edge: Czech Republic->Russia has 24
+Edge: Czech Republic->Kazakhstan has 1 | Edge: Czech Republic->Azerbaijan has 2
+Edge: Czech Republic->Switzerland has 4 | Edge: Czech Republic->Poland has 3
+Edge: Czech Republic->United Kingdom has 16 | Edge: Bosnia and Herzegovina-> has 1
+Edge: Bosnia and Herzegovina->Sweden has 3 | Edge: Bosnia and Herzegovina->Denmark has 1
+Edge: Bosnia and Herzegovina->Italy has 1 | Edge: Bosnia and Herzegovina->Germany has 4
+Edge: Bosnia and Herzegovina->Turkey has 4 | Edge: Bosnia and Herzegovina->Austria has 1
+Edge: Bosnia and Herzegovina->Serbia has 3 | Edge: Bosnia and Herzegovina->Croatia has 1
+Edge: Bosnia and Herzegovina->Slovenia has 1 | Edge: Bosnia and Herzegovina->Switzerland has 1
+Edge: Tunisia-> has 6 | Edge: Tunisia->Belgium has 4
+Edge: Tunisia->Malta has 1 | Edge: Tunisia->Kuwait has 1
+Edge: Tunisia->Italy has 8 | Edge: Tunisia->Germany has 32
+Edge: Tunisia->Morocco has 2 | Edge: Tunisia->Turkey has 2
+Edge: Tunisia->Mauritania has 1 | Edge: Tunisia->Mali has 1
+Edge: Tunisia->France has 44 | Edge: Tunisia->Qatar has 1
+Edge: Tunisia->Cote d'Ivoire has 1 | Edge: Tunisia->Austria has 1
+Edge: Tunisia->Serbia has 1 | Edge: Tunisia->Senegal has 1
+Edge: Tunisia->Jordan has 1 | Edge: Tunisia->Netherlands has 2
+Edge: Tunisia->Spain has 2 | Edge: Tunisia->Libya has 21
+Edge: Tunisia->Egypt has 2 | Edge: Tunisia->Portugal has 1
+Edge: Tunisia->Saudi Arabia has 3 | Edge: Tunisia->United Arab Emirates has 2
+Edge: Tunisia->Russia has 6 | Edge: Tunisia->Luxembourg has 2
+Edge: Tunisia->Switzerland has 6 | Edge: Tunisia->Lebanon has 2
+Edge: Tunisia->Burkina Faso has 1 | Edge: Tunisia->Algeria has 3
+Edge: Tunisia->United Kingdom has 22 | Edge: Poland->Latvia has 2
+Edge: Poland->Estonia has 1 | Edge: Poland->Belgium has 6
+Edge: Poland->Malta has 2 | Edge: Poland->China has 2
+Edge: Poland->Sweden has 13 | Edge: Poland->Ireland has 15
+Edge: Poland->Rygge has 6 | Edge: Poland->Georgia has 3
+Edge: Poland->Denmark has 8 | Edge: Poland->Italy has 29
+Edge: Poland->Germany has 44 | Edge: Poland->Turkey has 2
+Edge: Poland->United States has 2 | Edge: Poland->France has 15
+Edge: Poland->Qatar has 1 | Edge: Poland->Bulgaria has 2
+Edge: Poland->Austria has 4 | Edge: Poland->Greece has 7
+Edge: Poland->Serbia has 2 | Edge: Poland->Hungary has 2
+Edge: Poland->Ukraine has 6 | Edge: Poland->Romania has 2
+Edge: Poland->Norway has 18 | Edge: Poland->Canada has 2
+Edge: Poland->Israel has 4 | Edge: Poland-> Sheffield has 5
+Edge: Poland->Netherlands has 9 | Edge: Poland->Sandefjord has 7
+Edge: Poland->Spain has 22 | Edge: Poland->Croatia has 3
+Edge: Poland->Armenia has 1 | Edge: Poland->Portugal has 2
+Edge: Poland->Slovenia has 2 | Edge: Poland->United Arab Emirates has 2
+Edge: Poland->Lithuania has 1 | Edge: Poland->Finland has 5
+Edge: Poland->Belarus has 2 | Edge: Poland->Russia has 4
+Edge: Poland->Switzerland has 7 | Edge: Poland->Czech Republic has 3
+Edge: Poland->Cyprus has 2 | Edge: Poland->United Kingdom has 62
+Edge: Panama-> has 6 | Edge: Panama->Argentina has 2
+Edge: Panama->Trinidad and Tobago has 2 | Edge: Panama->Venezuela has 6
+Edge: Panama->Chile has 1 | Edge: Panama->Colombia has 10
+Edge: Panama->Haiti has 2 | Edge: Panama->Honduras has 2
+Edge: Panama->Aruba has 1 | Edge: Panama->Paraguay has 1
+Edge: Panama->Cuba has 2 | Edge: Panama->United States has 30
+Edge: Panama->France has 1 | Edge: Panama->Peru has 2
+Edge: Panama->El Salvador has 2 | Edge: Panama->Brazil has 7
+Edge: Panama->Ecuador has 3 | Edge: Panama->Netherlands Antilles has 2
+Edge: Panama->Bahamas has 1 | Edge: Panama->Bolivia has 1
+Edge: Panama->Canada has 1 | Edge: Panama->Dominican Republic has 4
+Edge: Panama->Netherlands has 2 | Edge: Panama->Guatemala has 1
+Edge: Panama->Spain has 1 | Edge: Panama->Costa Rica has 7
+Edge: Panama->Mexico has 8 | Edge: Panama->Nicaragua has 2
+Edge: Panama->Jamaica has 2 | Edge: Panama->Uruguay has 1
+Edge: Panama->Puerto Rico has 1 | Edge: Nicaragua->United States has 6
+Edge: Nicaragua->El Salvador has 2 | Edge: Nicaragua->Panama has 2
+Edge: Nicaragua->Guatemala has 1 | Edge: Nicaragua->Costa Rica has 4
+Edge: South Sudan->Rwanda has 1 | Edge: South Sudan->Ethiopia has 2
+Edge: South Sudan->Sudan has 2 | Edge: South Sudan->Uganda has 2
+Edge: South Sudan->Kenya has 2 | Edge: South Sudan->Egypt has 2
+Edge: South Sudan->United Arab Emirates has 1 | Edge: Tanzania->South Africa has 2
+Edge: Tanzania->Rwanda has 2 | Edge: Tanzania->Ethiopia has 4
+Edge: Tanzania->Germany has 1 | Edge: Tanzania->Turkey has 1
+Edge: Tanzania->Qatar has 1 | Edge: Tanzania->Zimbabwe has 1
+Edge: Tanzania->Uganda has 4 | Edge: Tanzania->Mozambique has 1
+Edge: Tanzania->Netherlands has 3 | Edge: Tanzania->Kenya has 16
+Edge: Tanzania->Egypt has 1 | Edge: Tanzania->Mayotte has 1
+Edge: Tanzania->United Arab Emirates has 1 | Edge: Tanzania->Comoros has 1
+Edge: Tanzania->Malawi has 1 | Edge: Tanzania->Oman has 1
+Edge: Brunei->Hong Kong has 2 | Edge: Brunei->China has 1
+Edge: Brunei->Indonesia has 4 | Edge: Brunei->Malaysia has 7
+Edge: Brunei->Thailand has 2 | Edge: Brunei->Singapore has 2
+Edge: Brunei->Saudi Arabia has 1 | Edge: Brunei->United Arab Emirates has 1
+Edge: Brunei->Philippines has 2 | Edge: Brunei->Australia has 1
+Edge: Indonesia-> has 4 | Edge: Indonesia->Ambon has 14
+Edge: Indonesia->Hong Kong has 10 | Edge: Indonesia->China has 13
+Edge: Indonesia->Japan has 13 | Edge: Indonesia->Brunei has 4
+Edge: Indonesia->Vietnam has 1 | Edge: Indonesia->Qatar has 1
+Edge: Indonesia->Sri Lanka has 2 | Edge: Indonesia->Malaysia has 46
+Edge: Indonesia->Thailand has 8 | Edge: Indonesia->South Korea has 6
+Edge: Indonesia->Singapore has 63 | Edge: Indonesia->Taiwan has 7
+Edge: Indonesia->Papua New Guinea has 1 | Edge: Indonesia->Egypt has 1
+Edge: Indonesia->Saudi Arabia has 7 | Edge: Indonesia->United Arab Emirates has 5
+Edge: Indonesia->East Timor has 1 | Edge: Indonesia->Philippines has 5
+Edge: Indonesia->Australia has 26 | Edge: Macau->China has 46
+Edge: Macau->Japan has 6 | Edge: Macau->Vietnam has 2
+Edge: Macau->Malaysia has 1 | Edge: Macau->Thailand has 4
+Edge: Macau->South Korea has 6 | Edge: Macau->Singapore has 1
+Edge: Macau->Taiwan has 8 | Edge: Macau->Philippines has 5
+Edge: Saint Kitts and Nevis->United States has 2 | Edge: Saint Kitts and Nevis->Netherlands Antilles has 3
+Edge: Saint Kitts and Nevis->Bahamas has 1 | Edge: Saint Kitts and Nevis->Antigua and Barbuda has 4
+Edge: Saint Kitts and Nevis->Virgin Islands has 1 | Edge: Saint Kitts and Nevis->Puerto Rico has 4
+Edge: Tromso->Sweden has 1 | Edge: Tromso->Norway has 20
+Edge: Tromso->Spain has 1 | Edge: Tromso->Russia has 1
+Edge: Tromso->Svalbard has 1 | Edge: Tromso->United Kingdom has 1
+Edge: Tromso->Harstad/Narvik has 1 | Edge: Uruguay->Argentina has 9
+Edge: Uruguay->Chile has 2 | Edge: Uruguay->Paraguay has 1
+Edge: Uruguay->United States has 2 | Edge: Uruguay->Peru has 1
+Edge: Uruguay->Brazil has 9 | Edge: Uruguay->Panama has 1
+Edge: Uruguay->Spain has 1 | Edge: Paraguay->Argentina has 4
+Edge: Paraguay->Chile has 2 | Edge: Paraguay->United States has 2
+Edge: Paraguay->Peru has 1 | Edge: Paraguay->Brazil has 5
+Edge: Paraguay->Panama has 1 | Edge: Paraguay->Bolivia has 2
+Edge: Paraguay->Uruguay has 1 | Edge: Brazil->South Africa has 2
+Edge: Brazil-> has 3 | Edge: Brazil->Argentina has 29
+Edge: Brazil->Venezuela has 3 | Edge: Brazil->Chile has 6
+Edge: Brazil->Colombia has 4 | Edge: Brazil->Angola has 2
+Edge: Brazil->Italy has 4 | Edge: Brazil->Paraguay has 5
+Edge: Brazil->Germany has 8 | Edge: Brazil->Morocco has 1
+Edge: Brazil-> Santiago Island has 1 | Edge: Brazil->Turkey has 1
+Edge: Brazil->United States has 58 | Edge: Brazil->France has 4
+Edge: Brazil->Peru has 10 | Edge: Brazil->Qatar has 1
+Edge: Brazil->Ecuador has 1 | Edge: Brazil->Panama has 7
+Edge: Brazil->Bolivia has 3 | Edge: Brazil->Canada has 2
+Edge: Brazil->Dominican Republic has 4 | Edge: Brazil->Barbados has 1
+Edge: Brazil->Netherlands has 2 | Edge: Brazil->Spain has 8
+Edge: Brazil->Mexico has 2 | Edge: Brazil->French Guiana has 1
+Edge: Brazil->Portugal has 12 | Edge: Brazil->Togo has 1
+Edge: Brazil->United Arab Emirates has 3 | Edge: Brazil->Suriname has 1
+Edge: Brazil->Uruguay has 9 | Edge: Brazil->Switzerland has 1
+Edge: Brazil->United Kingdom has 3 | Edge: Chile->Argentina has 10
+Edge: Chile->Venezuela has 1 | Edge: Chile->Colombia has 2
+Edge: Chile->Paraguay has 2 | Edge: Chile->United States has 10
+Edge: Chile->France has 2 | Edge: Chile->Peru has 7
+Edge: Chile->French Polynesia has 1 | Edge: Chile->Brazil has 6
+Edge: Chile->Ecuador has 2 | Edge: Chile->Panama has 1
+Edge: Chile->Bolivia has 3 | Edge: Chile->Canada has 1
+Edge: Chile->Dominican Republic has 1 | Edge: Chile->Spain has 2
+Edge: Chile->Mexico has 3 | Edge: Chile->New Zealand has 2
+Edge: Chile->Uruguay has 2 | Edge: Chile->Australia has 2
+Edge: Belize-> has 18 | Edge: Belize->Honduras has 2
+Edge: Belize->United States has 10 | Edge: Belize->El Salvador has 1
+Edge: Belize->Guatemala has 2 | Edge: Belize->Mexico has 2
+Edge: Honduras->Belize has 2 | Edge: Honduras->United States has 19
+Edge: Honduras->El Salvador has 3 | Edge: Honduras->Panama has 2
+Edge: Honduras->Cayman Islands has 2 | Edge: Honduras->Guatemala has 10
+Edge: Honduras->Costa Rica has 5 | Edge: Honduras->Mexico has 1
+Edge: South Africa-> has 1 | Edge: South Africa->Lesotho has 1
+Edge: South Africa->Gabon has 1 | Edge: South Africa->Hong Kong has 2
+Edge: South Africa->Rwanda has 2 | Edge: South Africa->Tanzania has 2
+Edge: South Africa->Congo (Kinshasa) has 3 | Edge: South Africa->Angola has 3
+Edge: South Africa->Ethiopia has 2 | Edge: South Africa->Germany has 6
+Edge: South Africa->Turkey has 1 | Edge: South Africa->United States has 5
+Edge: South Africa->Madagascar has 2 | Edge: South Africa->France has 2
+Edge: South Africa->Mauritius has 5 | Edge: South Africa->Qatar has 2
+Edge: South Africa->Reunion has 1 | Edge: South Africa->Zimbabwe has 9
+Edge: South Africa->Congo (Brazzaville) has 2 | Edge: South Africa->Brazil has 2
+Edge: South Africa->Uganda has 1 | Edge: South Africa->Thailand has 2
+Edge: South Africa->Mozambique has 15 | Edge: South Africa->Seychelles has 2
+Edge: South Africa->Senegal has 3 | Edge: South Africa->India has 3
+Edge: South Africa->Botswana has 9 | Edge: South Africa->Singapore has 4
+Edge: South Africa->Israel has 1 | Edge: South Africa->Netherlands has 3
+Edge: South Africa->Namibia has 9 | Edge: South Africa->Zambia has 7
+Edge: South Africa->Kenya has 2 | Edge: South Africa->Ghana has 1
+Edge: South Africa->Egypt has 2 | Edge: South Africa->Nigeria has 2
+Edge: South Africa->Saudi Arabia has 1 | Edge: South Africa->United Arab Emirates has 10
+Edge: South Africa->Switzerland has 2 | Edge: South Africa->Malawi has 3
+Edge: South Africa->Swaziland has 1 | Edge: South Africa->Australia has 4
+Edge: South Africa->United Kingdom has 9 | Edge: Georgia->Latvia has 2
+Edge: Georgia->China has 1 | Edge: Georgia->Italy has 1
+Edge: Georgia->Germany has 1 | Edge: Georgia->Iraq has 2
+Edge: Georgia->Turkey has 5 | Edge: Georgia->France has 2
+Edge: Georgia->Austria has 2 | Edge: Georgia->Greece has 1
+Edge: Georgia->Ukraine has 7 | Edge: Georgia->Israel has 3
+Edge: Georgia->Netherlands has 2 | Edge: Georgia->United Arab Emirates has 1
+Edge: Georgia->Lithuania has 1 | Edge: Georgia->Belarus has 3
+Edge: Georgia->Russia has 4 | Edge: Georgia->Kazakhstan has 2
+Edge: Georgia->Azerbaijan has 2 | Edge: Georgia->Poland has 3
+Edge: Armenia->Italy has 1 | Edge: Armenia->Iran has 1
+Edge: Armenia->France has 3 | Edge: Armenia->Austria has 3
+Edge: Armenia->Greece has 1 | Edge: Armenia->Ukraine has 2
+Edge: Armenia->United Arab Emirates has 2 | Edge: Armenia->Belarus has 1
+Edge: Armenia->Russia has 27 | Edge: Armenia->Kazakhstan has 1
+Edge: Armenia->Poland has 1 | Edge: Armenia->Czech Republic has 2
+Edge: Armenia->Lebanon has 1 | Edge: Latvia->Estonia has 1
+Edge: Latvia->Belgium has 2 | Edge: Latvia->Malta has 1
+Edge: Latvia->Sweden has 4 | Edge: Latvia->Ireland has 1
+Edge: Latvia->Rygge has 1 | Edge: Latvia->Georgia has 2
+Edge: Latvia->Denmark has 4 | Edge: Latvia->Italy has 9
+Edge: Latvia->Germany has 14 | Edge: Latvia->Turkey has 2
+Edge: Latvia->United States has 1 | Edge: Latvia->France has 3
+Edge: Latvia->Austria has 2 | Edge: Latvia->Greece has 2
+Edge: Latvia->Hungary has 1 | Edge: Latvia->Ukraine has 2
+Edge: Latvia->Norway has 8 | Edge: Latvia->Israel has 1
+Edge: Latvia->Netherlands has 3 | Edge: Latvia->Sandefjord has 1
+Edge: Latvia->Spain has 3 | Edge: Latvia->Lithuania has 2
+Edge: Latvia->Finland has 3 | Edge: Latvia->Uzbekistan has 2
+Edge: Latvia->Belarus has 2 | Edge: Latvia->Russia has 8
+Edge: Latvia->Azerbaijan has 2 | Edge: Latvia->Switzerland has 1
+Edge: Latvia->Poland has 2 | Edge: Latvia->Czech Republic has 2
+Edge: Latvia->Moldova has 1 | Edge: Latvia->Cyprus has 1
+Edge: Latvia->United Kingdom has 7 | Edge: Guam->Northern Mariana Islands has 2
+Edge: Guam->Hong Kong has 1 | Edge: Guam->Japan has 19
+Edge: Guam->Palau has 1 | Edge: Guam->United States has 1
+Edge: Guam->Micronesia has 2 | Edge: Guam->South Korea has 4
+Edge: Guam->Taiwan has 2 | Edge: Guam->Philippines has 2
+Edge: Guam->Australia has 1 | Edge: Jamaica->Trinidad and Tobago has 1
+Edge: Jamaica->Germany has 1 | Edge: Jamaica->Turks and Caicos Islands has 1
+Edge: Jamaica->United States has 41 | Edge: Jamaica->Guyana has 1
+Edge: Jamaica->Netherlands Antilles has 2 | Edge: Jamaica->Bahamas has 1
+Edge: Jamaica->Panama has 3 | Edge: Jamaica->Cayman Islands has 2
+Edge: Jamaica->Antigua and Barbuda has 1 | Edge: Jamaica->Canada has 12
+Edge: Jamaica->Dominican Republic has 1 | Edge: Jamaica->Barbados has 1
+Edge: Jamaica->Netherlands has 1 | Edge: Jamaica->United Kingdom has 3
+Edge: Suriname->Trinidad and Tobago has 3 | Edge: Suriname->Aruba has 1
+Edge: Suriname->Guyana has 1 | Edge: Suriname->Brazil has 1
+Edge: Suriname->Netherlands Antilles has 1 | Edge: Suriname->Netherlands has 2
+Edge: Suriname->French Guiana has 1 | Edge: Trinidad and Tobago->Venezuela has 2
+Edge: Trinidad and Tobago->Grenada has 3 | Edge: Trinidad and Tobago->United States has 11
+Edge: Trinidad and Tobago->Saint Lucia has 4 | Edge: Trinidad and Tobago->Guyana has 1
+Edge: Trinidad and Tobago->Netherlands Antilles has 3 | Edge: Trinidad and Tobago->Panama has 2
+Edge: Trinidad and Tobago->Antigua and Barbuda has 1 | Edge: Trinidad and Tobago->Canada has 2
+Edge: Trinidad and Tobago->Barbados has 2 | Edge: Trinidad and Tobago->Saint Vincent and the Grenadines has 1
+Edge: Trinidad and Tobago->Jamaica has 1 | Edge: Trinidad and Tobago->Suriname has 3
+Edge: Trinidad and Tobago->United Kingdom has 1 | Edge: Haiti->Turks and Caicos Islands has 3
+Edge: Haiti->United States has 13 | Edge: Haiti->Netherlands Antilles has 1
+Edge: Haiti->Panama has 2 | Edge: Haiti->Guadeloupe has 2
+Edge: Haiti->Canada has 1 | Edge: Haiti->Dominican Republic has 3
+Edge: Tajikistan->China has 4 | Edge: Tajikistan->Germany has 1
+Edge: Tajikistan->Iran has 3 | Edge: Tajikistan->Turkey has 3
+Edge: Tajikistan->India has 1 | Edge: Tajikistan->United Arab Emirates has 3
+Edge: Tajikistan->Kyrgyzstan has 2 | Edge: Tajikistan->Russia has 73
+Edge: Tajikistan->Kazakhstan has 6 | Edge: Kazakhstan-> has 1
+Edge: Kazakhstan->Hong Kong has 1 | Edge: Kazakhstan->China has 7
+Edge: Kazakhstan->Georgia has 2 | Edge: Kazakhstan->Tajikistan has 3
+Edge: Kazakhstan->Germany has 4 | Edge: Kazakhstan->Iran has 1
+Edge: Kazakhstan->Turkey has 7 | Edge: Kazakhstan->Vietnam has 1
+Edge: Kazakhstan->Austria has 2 | Edge: Kazakhstan->Malaysia has 1
+Edge: Kazakhstan->Thailand has 1 | Edge: Kazakhstan->South Korea has 2
+Edge: Kazakhstan->Ukraine has 4 | Edge: Kazakhstan->India has 1
+Edge: Kazakhstan->Netherlands has 2 | Edge: Kazakhstan->Armenia has 1
+Edge: Kazakhstan->United Arab Emirates has 7 | Edge: Kazakhstan->Uzbekistan has 4
+Edge: Kazakhstan->Belarus has 1 | Edge: Kazakhstan->Kyrgyzstan has 3
+Edge: Kazakhstan->Russia has 38 | Edge: Kazakhstan->Azerbaijan has 4
+Edge: Kazakhstan->Czech Republic has 1 | Edge: Kazakhstan->United Kingdom has 3
+Edge: Kyrgyzstan->China has 5 | Edge: Kyrgyzstan->Tajikistan has 2
+Edge: Kyrgyzstan->Turkey has 5 | Edge: Kyrgyzstan->Mongolia has 1
+Edge: Kyrgyzstan->United Arab Emirates has 1 | Edge: Kyrgyzstan->Uzbekistan has 2
+Edge: Kyrgyzstan->Russia has 51 | Edge: Kyrgyzstan->Kazakhstan has 3
+Edge: Iran-> has 6 | Edge: Iran->China has 4
+Edge: Iran->Sweden has 3 | Edge: Iran->Kuwait has 11
+Edge: Iran->Italy has 3 | Edge: Iran->Tajikistan has 3
+Edge: Iran->Germany has 5 | Edge: Iran->Iraq has 4
+Edge: Iran->Pakistan has 3 | Edge: Iran->Turkey has 14
+Edge: Iran->France has 1 | Edge: Iran->Qatar has 5
+Edge: Iran->Austria has 2 | Edge: Iran->Bahrain has 3
+Edge: Iran->Malaysia has 2 | Edge: Iran->Thailand has 1
+Edge: Iran->India has 2 | Edge: Iran->Netherlands has 1
+Edge: Iran->Afghanistan has 5 | Edge: Iran->Armenia has 1
+Edge: Iran->Saudi Arabia has 12 | Edge: Iran->United Arab Emirates has 23
+Edge: Iran->Uzbekistan has 1 | Edge: Iran->Belarus has 1
+Edge: Iran->Russia has 1 | Edge: Iran->Kazakhstan has 1
+Edge: Iran->Azerbaijan has 3 | Edge: Iran->Lebanon has 2
+Edge: Iran->Oman has 3 | Edge: Iran->United Kingdom has 1
+Edge: Ukraine->Latvia has 2 | Edge: Ukraine->Estonia has 1
+Edge: Ukraine->Belgium has 2 | Edge: Ukraine->Georgia has 7
+Edge: Ukraine->Italy has 10 | Edge: Ukraine->Germany has 12
+Edge: Ukraine->Turkey has 20 | Edge: Ukraine->United States has 1
+Edge: Ukraine->France has 3 | Edge: Ukraine->Austria has 10
+Edge: Ukraine->Greece has 5 | Edge: Ukraine->Thailand has 1
+Edge: Ukraine->Hungary has 1 | Edge: Ukraine->Jordan has 1
+Edge: Ukraine->Norway has 1 | Edge: Ukraine->Israel has 7
+Edge: Ukraine->Netherlands has 2 | Edge: Ukraine->Spain has 11
+Edge: Ukraine->Armenia has 2 | Edge: Ukraine->Portugal has 2
+Edge: Ukraine->United Arab Emirates has 10 | Edge: Ukraine->Lithuania has 2
+Edge: Ukraine->Finland has 1 | Edge: Ukraine->Uzbekistan has 1
+Edge: Ukraine->Belarus has 2 | Edge: Ukraine->Russia has 39
+Edge: Ukraine->Kazakhstan has 4 | Edge: Ukraine->Azerbaijan has 3
+Edge: Ukraine->Switzerland has 3 | Edge: Ukraine->Poland has 6
+Edge: Ukraine->Czech Republic has 3 | Edge: Ukraine->Moldova has 1
+Edge: Ukraine->Cyprus has 6 | Edge: Ukraine->United Kingdom has 3
+Edge: Jordan-> has 1 | Edge: Jordan->Kuwait has 3
+Edge: Jordan->Italy has 3 | Edge: Jordan->Germany has 7
+Edge: Jordan->Iraq has 8 | Edge: Jordan->Sudan has 1
+Edge: Jordan->Turkey has 3 | Edge: Jordan->United States has 6
+Edge: Jordan->France has 2 | Edge: Jordan->Qatar has 2
+Edge: Jordan->Austria has 3 | Edge: Jordan->Bahrain has 2
+Edge: Jordan->Greece has 1 | Edge: Jordan->Thailand has 2
+Edge: Jordan->Ukraine has 1 | Edge: Jordan->India has 2
+Edge: Jordan->Romania has 2 | Edge: Jordan->Canada has 3
+Edge: Jordan->Israel has 2 | Edge: Jordan->Netherlands has 1
+Edge: Jordan->Spain has 4 | Edge: Jordan->Libya has 6
+Edge: Jordan->Egypt has 5 | Edge: Jordan->Nigeria has 1
+Edge: Jordan->Saudi Arabia has 11 | Edge: Jordan->United Arab Emirates has 9
+Edge: Jordan->Russia has 2 | Edge: Jordan->Yemen has 5
+Edge: Jordan->Switzerland has 2 | Edge: Jordan->Tunisia has 1
+Edge: Jordan->Lebanon has 3 | Edge: Jordan->Cyprus has 1
+Edge: Jordan->Oman has 2 | Edge: Jordan->Algeria has 2
+Edge: Jordan->United Kingdom has 2 | Edge: Libya-> has 3
+Edge: Libya->Malta has 3 | Edge: Libya->Italy has 2
+Edge: Libya->Morocco has 5 | Edge: Libya->Turkey has 6
+Edge: Libya->Jordan has 6 | Edge: Libya->Spain has 1
+Edge: Libya->Egypt has 10 | Edge: Libya->Saudi Arabia has 2
+Edge: Libya->United Arab Emirates has 1 | Edge: Libya->Tunisia has 22
+Edge: Libya->Algeria has 2 | Edge: Libya->United Kingdom has 3
+Edge: Chad->Ethiopia has 1 | Edge: Chad->Turkey has 1
+Edge: Chad->Niger has 1 | Edge: Chad->France has 1
+Edge: Chad->Cameroon has 3 | Edge: Chad->Nigeria has 2
+Edge: Anguilla->Netherlands Antilles has 2 | Edge: Anguilla->Antigua and Barbuda has 1
+Edge: Anguilla->Virgin Islands has 1 | Edge: Anguilla->Puerto Rico has 2
+Edge: Puerto Rico->Venezuela has 1 | Edge: Puerto Rico->Colombia has 1
+Edge: Puerto Rico->Germany has 1 | Edge: Puerto Rico->Turks and Caicos Islands has 1
+Edge: Puerto Rico->United States has 53 | Edge: Puerto Rico->France has 1
+Edge: Puerto Rico->Saint Kitts and Nevis has 4 | Edge: Puerto Rico->Netherlands Antilles has 3
+Edge: Puerto Rico->Panama has 1 | Edge: Puerto Rico->British Virgin Islands has 7
+Edge: Puerto Rico->Antigua and Barbuda has 1 | Edge: Puerto Rico->Martinique has 2
+Edge: Puerto Rico->Guadeloupe has 2 | Edge: Puerto Rico->Canada has 1
+Edge: Puerto Rico->Dominican Republic has 9 | Edge: Puerto Rico->Virgin Islands has 8
+Edge: Puerto Rico->Dominica has 4 | Edge: Puerto Rico->Anguilla has 2
+Edge: British Virgin Islands->Saint Kitts and Nevis has 1 | Edge: British Virgin Islands->Netherlands Antilles has 4
+Edge: British Virgin Islands->Virgin Islands has 3 | Edge: British Virgin Islands->Puerto Rico has 6
+Edge: British Virgin Islands->Dominica has 2 | Edge: Virgin Islands-> has 1
+Edge: Virgin Islands->United States has 20 | Edge: Virgin Islands->France has 1
+Edge: Virgin Islands->Saint Kitts and Nevis has 1 | Edge: Virgin Islands->Netherlands Antilles has 3
+Edge: Virgin Islands->British Virgin Islands has 3 | Edge: Virgin Islands->Puerto Rico has 9
+Edge: Virgin Islands->Dominica has 1 | Edge: Virgin Islands->Anguilla has 1
+Edge: Moldova->Latvia has 1 | Edge: Moldova->Ireland has 1
+Edge: Moldova->Italy has 12 | Edge: Moldova->Germany has 2
+Edge: Moldova->Turkey has 2 | Edge: Moldova->France has 1
+Edge: Moldova->Austria has 1 | Edge: Moldova->Greece has 1
+Edge: Moldova->Ukraine has 1 | Edge: Moldova->Romania has 3
+Edge: Moldova->Portugal has 1 | Edge: Moldova->United Arab Emirates has 1
+Edge: Moldova->Russia has 5 | Edge: Moldova->Cyprus has 1
+Edge: Moldova->United Kingdom has 1 | Edge: Romania->Belgium has 4
+Edge: Romania->Ireland has 2 | Edge: Romania->Denmark has 1
+Edge: Romania->Italy has 34 | Edge: Romania->Germany has 16
+Edge: Romania->Turkey has 4 | Edge: Romania->France has 7
+Edge: Romania->Qatar has 1 | Edge: Romania->Bulgaria has 3
+Edge: Romania->Austria has 8 | Edge: Romania->Greece has 4
+Edge: Romania->Serbia has 2 | Edge: Romania->Hungary has 1
+Edge: Romania->Jordan has 2 | Edge: Romania->Israel has 5
+Edge: Romania->Netherlands has 4 | Edge: Romania->Sandefjord has 1
+Edge: Romania->Spain has 17 | Edge: Romania->Portugal has 1
+Edge: Romania->United Arab Emirates has 3 | Edge: Romania->Russia has 2
+Edge: Romania->Switzerland has 3 | Edge: Romania->Poland has 2
+Edge: Romania->Czech Republic has 5 | Edge: Romania->Lebanon has 2
+Edge: Romania->Moldova has 3 | Edge: Romania->Cyprus has 3
+Edge: Romania->United Kingdom has 11 | Edge: Kuwait->Ethiopia has 3
+Edge: Kuwait->Italy has 2 | Edge: Kuwait->Germany has 2
+Edge: Kuwait->Iraq has 2 | Edge: Kuwait->Iran has 11
+Edge: Kuwait->Pakistan has 6 | Edge: Kuwait->Turkey has 6
+Edge: Kuwait->United States has 2 | Edge: Kuwait->Qatar has 3
+Edge: Kuwait->Bahrain has 4 | Edge: Kuwait->Sri Lanka has 3
+Edge: Kuwait->Malaysia has 1 | Edge: Kuwait->Thailand has 1
+Edge: Kuwait->Bangladesh has 3 | Edge: Kuwait->India has 9
+Edge: Kuwait->Jordan has 3 | Edge: Kuwait->Netherlands has 3
+Edge: Kuwait->Afghanistan has 1 | Edge: Kuwait->Egypt has 16
+Edge: Kuwait->Saudi Arabia has 18 | Edge: Kuwait->United Arab Emirates has 11
+Edge: Kuwait->Yemen has 1 | Edge: Kuwait->Tunisia has 1
+Edge: Kuwait->Lebanon has 3 | Edge: Kuwait->Oman has 2
+Edge: Kuwait->United Kingdom has 3 | Edge: Bahrain->Ethiopia has 1
+Edge: Bahrain->Kuwait has 4 | Edge: Bahrain->Germany has 1
+Edge: Bahrain->Iraq has 2 | Edge: Bahrain->Iran has 3
+Edge: Bahrain->Pakistan has 6 | Edge: Bahrain->Sudan has 1
+Edge: Bahrain->Turkey has 2 | Edge: Bahrain->France has 1
+Edge: Bahrain->Qatar has 10 | Edge: Bahrain->Sri Lanka has 2
+Edge: Bahrain->Thailand has 3 | Edge: Bahrain->India has 7
+Edge: Bahrain->Jordan has 2 | Edge: Bahrain->Egypt has 2
+Edge: Bahrain->Saudi Arabia has 8 | Edge: Bahrain->United Arab Emirates has 16
+Edge: Bahrain->Yemen has 2 | Edge: Bahrain->Lebanon has 1
+Edge: Bahrain->Philippines has 2 | Edge: Bahrain->Cyprus has 1
+Edge: Bahrain->Oman has 3 | Edge: Bahrain->United Kingdom has 4
+Edge: Sri Lanka->Maldives has 11 | Edge: Sri Lanka-> has 1
+Edge: Sri Lanka->China has 5 | Edge: Sri Lanka->Indonesia has 2
+Edge: Sri Lanka->Kuwait has 3 | Edge: Sri Lanka->Japan has 1
+Edge: Sri Lanka->Italy has 3 | Edge: Sri Lanka->Germany has 1
+Edge: Sri Lanka->Pakistan has 2 | Edge: Sri Lanka->France has 1
+Edge: Sri Lanka->Qatar has 2 | Edge: Sri Lanka->Bahrain has 2
+Edge: Sri Lanka->Malaysia has 4 | Edge: Sri Lanka->Thailand has 4
+Edge: Sri Lanka->South Korea has 1 | Edge: Sri Lanka->Seychelles has 2
+Edge: Sri Lanka->Bangladesh has 2 | Edge: Sri Lanka->India has 22
+Edge: Sri Lanka->Singapore has 5 | Edge: Sri Lanka->Saudi Arabia has 11
+Edge: Sri Lanka->United Arab Emirates has 12 | Edge: Sri Lanka->Russia has 1
+Edge: Sri Lanka->Oman has 3 | Edge: Sri Lanka->United Kingdom has 1
+Edge: Qatar->South Africa has 1 | Edge: Qatar->Maldives has 1
+Edge: Qatar->Hong Kong has 2 | Edge: Qatar->Belgium has 1
+Edge: Qatar->Tanzania has 1 | Edge: Qatar->China has 6
+Edge: Qatar->Sweden has 1 | Edge: Qatar->Burma has 1
+Edge: Qatar->Ethiopia has 1 | Edge: Qatar->Indonesia has 1
+Edge: Qatar->Kuwait has 2 | Edge: Qatar->Denmark has 1
+Edge: Qatar->Japan has 6 | Edge: Qatar->Italy has 4
+Edge: Qatar->Germany has 9 | Edge: Qatar->Morocco has 1
+Edge: Qatar->Iraq has 5 | Edge: Qatar->Iran has 5
+Edge: Qatar->Nepal has 2 | Edge: Qatar->Pakistan has 5
+Edge: Qatar->Sudan has 2 | Edge: Qatar->Turkey has 4
+Edge: Qatar->Vietnam has 1 | Edge: Qatar->United States has 11
+Edge: Qatar->France has 1 | Edge: Qatar->Austria has 1
+Edge: Qatar->Bahrain has 12 | Edge: Qatar->Sri Lanka has 2
+Edge: Qatar->Greece has 2 | Edge: Qatar->Brazil has 1
+Edge: Qatar->Malaysia has 2 | Edge: Qatar->Uganda has 1
+Edge: Qatar->Thailand has 1 | Edge: Qatar->South Korea has 2
+Edge: Qatar->Bangladesh has 1 | Edge: Qatar->Hungary has 1
+Edge: Qatar->India has 17 | Edge: Qatar->Jordan has 2
+Edge: Qatar->Romania has 1 | Edge: Qatar->Singapore has 1
+Edge: Qatar->Norway has 1 | Edge: Qatar->Canada has 1
+Edge: Qatar->Netherlands has 3 | Edge: Qatar->Spain has 6
+Edge: Qatar->Kenya has 1 | Edge: Qatar->Egypt has 4
+Edge: Qatar->Nigeria has 1 | Edge: Qatar->Saudi Arabia has 9
+Edge: Qatar->United Arab Emirates has 11 | Edge: Qatar->Russia has 1
+Edge: Qatar->Yemen has 3 | Edge: Qatar->Azerbaijan has 2
+Edge: Qatar->Switzerland has 3 | Edge: Qatar->Tunisia has 1
+Edge: Qatar->Poland has 1 | Edge: Qatar->Lebanon has 2
+Edge: Qatar->Philippines has 3 | Edge: Qatar->Cyprus has 1
+Edge: Qatar->Oman has 6 | Edge: Qatar->Australia has 2
+Edge: Qatar->Algeria has 1 | Edge: Qatar->United Kingdom has 4
+Edge: Bulgaria->Belgium has 4 | Edge: Bulgaria->Ireland has 1
+Edge: Bulgaria->Denmark has 1 | Edge: Bulgaria->Italy has 7
+Edge: Bulgaria->Germany has 11 | Edge: Bulgaria->Turkey has 1
+Edge: Bulgaria->France has 3 | Edge: Bulgaria->Austria has 3
+Edge: Bulgaria->Greece has 4 | Edge: Bulgaria->Serbia has 2
+Edge: Bulgaria->Romania has 3 | Edge: Bulgaria->Norway has 1
+Edge: Bulgaria->Israel has 2 | Edge: Bulgaria->Netherlands has 2
+Edge: Bulgaria->Spain has 8 | Edge: Bulgaria->United Arab Emirates has 1
+Edge: Bulgaria->Finland has 1 | Edge: Bulgaria->Russia has 8
+Edge: Bulgaria->Luxembourg has 1 | Edge: Bulgaria->Switzerland has 1
+Edge: Bulgaria->Poland has 2 | Edge: Bulgaria->Czech Republic has 2
+Edge: Bulgaria->Cyprus has 4 | Edge: Bulgaria->United Kingdom has 10
+Edge: Albania->Italy has 27 | Edge: Albania->Germany has 2
+Edge: Albania->Turkey has 2 | Edge: Albania->Austria has 1
+Edge: Albania->Greece has 2 | Edge: Albania->Slovenia has 1
+Edge: Albania->United Kingdom has 1 | Edge: Denmark->Bosnia and Herzegovina has 1
+Edge: Denmark->Latvia has 4 | Edge: Denmark->Estonia has 2
+Edge: Denmark->Belgium has 5 | Edge: Denmark->Malta has 2
+Edge: Denmark->China has 3 | Edge: Denmark->Sweden has 9
+Edge: Denmark->Ireland has 3 | Edge: Denmark->Japan has 1
+Edge: Denmark->Italy has 21 | Edge: Denmark->Germany has 26
+Edge: Denmark->Morocco has 2 | Edge: Denmark->Pakistan has 1
+Edge: Denmark->Turkey has 10 | Edge: Denmark->Greenland has 1
+Edge: Denmark->United States has 7 | Edge: Denmark->France has 12
+Edge: Denmark->Faroe Islands has 2 | Edge: Denmark->Qatar has 1
+Edge: Denmark->Bulgaria has 1 | Edge: Denmark->Austria has 5
+Edge: Denmark->Greece has 7 | Edge: Denmark->Serbia has 2
+Edge: Denmark->Thailand has 2 | Edge: Denmark->Hungary has 3
+Edge: Denmark->Romania has 1 | Edge: Denmark->Singapore has 2
+Edge: Denmark->Norway has 28 | Edge: Denmark->Canada has 3
+Edge: Denmark->Israel has 2 | Edge: Denmark->Netherlands has 11
+Edge: Denmark->Sandefjord has 2 | Edge: Denmark->Spain has 31
+Edge: Denmark->Croatia has 6 | Edge: Denmark->Egypt has 2
+Edge: Denmark->Portugal has 5 | Edge: Denmark->Slovenia has 2
+Edge: Denmark->United Arab Emirates has 2 | Edge: Denmark->Lithuania has 3
+Edge: Denmark->Finland has 4 | Edge: Denmark->Russia has 3
+Edge: Denmark->Luxembourg has 2 | Edge: Denmark->Switzerland has 7
+Edge: Denmark->Poland has 7 | Edge: Denmark->Czech Republic has 4
+Edge: Denmark->Iceland has 4 | Edge: Denmark->United Kingdom has 22
+Edge: Uganda->South Africa has 1 | Edge: Uganda-> has 1
+Edge: Uganda->Rwanda has 5 | Edge: Uganda->Belgium has 4
+Edge: Uganda->Tanzania has 4 | Edge: Uganda->Ethiopia has 1
+Edge: Uganda->Eritrea has 1 | Edge: Uganda->Turkey has 1
+Edge: Uganda->South Sudan has 1 | Edge: Uganda->Qatar has 1
+Edge: Uganda->Burundi has 1 | Edge: Uganda->Somalia has 1
+Edge: Uganda->Netherlands has 3 | Edge: Uganda->Kenya has 3
+Edge: Uganda->Egypt has 1 | Edge: Uganda->United Arab Emirates has 1
+Edge: Uganda->United Kingdom has 2 | Edge: New Zealand->Hong Kong has 2
+Edge: New Zealand->Chile has 2 | Edge: New Zealand->China has 3
+Edge: New Zealand->Tonga has 2 | Edge: New Zealand->Japan has 3
+Edge: New Zealand->United States has 4 | Edge: New Zealand->French Polynesia has 4
+Edge: New Zealand->Fiji has 3 | Edge: New Zealand->Malaysia has 1
+Edge: New Zealand->Thailand has 2 | Edge: New Zealand->South Korea has 1
+Edge: New Zealand->Samoa has 2 | Edge: New Zealand->Singapore has 5
+Edge: New Zealand->Cook Islands has 2 | Edge: New Zealand->New Caledonia has 2
+Edge: New Zealand->Australia has 64 | Edge: New Zealand->Vanuatu has 2
+Edge: French Polynesia-> has 2 | Edge: French Polynesia->Chile has 1
+Edge: French Polynesia->Japan has 2 | Edge: French Polynesia->United States has 7
+Edge: French Polynesia->Cook Islands has 2 | Edge: French Polynesia->New Zealand has 4
+Edge: French Polynesia->New Caledonia has 1 | Edge: Bermuda->United States has 11
+Edge: Bermuda->Canada has 2 | Edge: Bermuda->United Kingdom has 2
+Edge: Barbados->Trinidad and Tobago has 1 | Edge: Barbados->Grenada has 1
+Edge: Barbados->Germany has 1 | Edge: Barbados->United States has 3
+Edge: Barbados->Saint Lucia has 1 | Edge: Barbados->Guyana has 1
+Edge: Barbados->Brazil has 1 | Edge: Barbados->Netherlands Antilles has 1
+Edge: Barbados->Antigua and Barbuda has 2 | Edge: Barbados->Martinique has 1
+Edge: Barbados->Canada has 2 | Edge: Barbados->Saint Vincent and the Grenadines has 1
+Edge: Barbados->Jamaica has 1 | Edge: Barbados->Dominica has 1
+Edge: Barbados->United Kingdom has 5 | Edge: Cayman Islands->Honduras has 2
+Edge: Cayman Islands->Cuba has 1 | Edge: Cayman Islands->United States has 16
+Edge: Cayman Islands->Bahamas has 1 | Edge: Cayman Islands->Canada has 2
+Edge: Cayman Islands->Jamaica has 1 | Edge: Turks and Caicos Islands->Haiti has 3
+Edge: Turks and Caicos Islands->United States has 14 | Edge: Turks and Caicos Islands->Bahamas has 3
+Edge: Turks and Caicos Islands->Canada has 3 | Edge: Turks and Caicos Islands->Dominican Republic has 3
+Edge: Turks and Caicos Islands->Jamaica has 1 | Edge: Turks and Caicos Islands->Puerto Rico has 1
+Edge: Peru->Argentina has 4 | Edge: Peru->Venezuela has 2
+Edge: Peru->Chile has 7 | Edge: Peru->Colombia has 4
+Edge: Peru->Paraguay has 1 | Edge: Peru->Cuba has 2
+Edge: Peru->United States has 21 | Edge: Peru->France has 2
+Edge: Peru->El Salvador has 1 | Edge: Peru->Brazil has 10
+Edge: Peru->Ecuador has 6 | Edge: Peru->Panama has 2
+Edge: Peru->Bolivia has 8 | Edge: Peru->Canada has 1
+Edge: Peru->Dominican Republic has 2 | Edge: Peru->Netherlands has 2
+Edge: Peru->Spain has 3 | Edge: Peru->Costa Rica has 1
+Edge: Peru->Mexico has 4 | Edge: Peru->Uruguay has 1
+Edge: El Salvador->Colombia has 3 | Edge: El Salvador->Honduras has 3
+Edge: El Salvador->Belize has 1 | Edge: El Salvador->Cuba has 1
+Edge: El Salvador->United States has 29 | Edge: El Salvador->Peru has 1
+Edge: El Salvador->Ecuador has 2 | Edge: El Salvador->Panama has 2
+Edge: El Salvador->Canada has 1 | Edge: El Salvador->Guatemala has 1
+Edge: El Salvador->Spain has 2 | Edge: El Salvador->Costa Rica has 2
+Edge: El Salvador->Mexico has 3 | Edge: El Salvador->Nicaragua has 2
+Edge: Gibraltar->United Kingdom has 6 | Edge: Grenada->Trinidad and Tobago has 3
+Edge: Grenada->Venezuela has 1 | Edge: Grenada->United States has 4
+Edge: Grenada->Saint Lucia has 2 | Edge: Grenada->Canada has 2
+Edge: Grenada->Barbados has 1 | Edge: Grenada->Saint Vincent and the Grenadines has 1
+Edge: Fiji->Hong Kong has 2 | Edge: Fiji->Tonga has 2
+Edge: Fiji->United States has 6 | Edge: Fiji->South Korea has 1
+Edge: Fiji->Samoa has 1 | Edge: Fiji->Wallis and Futuna has 1
+Edge: Fiji->Papua New Guinea has 1 | Edge: Fiji->New Zealand has 7
+Edge: Fiji->Tuvalu has 1 | Edge: Fiji->New Caledonia has 1
+Edge: Fiji->Solomon Islands has 2 | Edge: Fiji->Kiribati has 3
+Edge: Fiji->Australia has 11 | Edge: Fiji->Vanuatu has 2
+Edge: Luxembourg->Malta has 1 | Edge: Luxembourg->Sweden has 1
+Edge: Luxembourg->Ireland has 1 | Edge: Luxembourg->Denmark has 2
+Edge: Luxembourg->Italy has 8 | Edge: Luxembourg->Germany has 9
+Edge: Luxembourg->Morocco has 2 | Edge: Luxembourg->Turkey has 3
+Edge: Luxembourg->France has 7 | Edge: Luxembourg->Bulgaria has 1
+Edge: Luxembourg->Austria has 2 | Edge: Luxembourg->Greece has 4
+Edge: Luxembourg->Cape Verde has 1 | Edge: Luxembourg->Netherlands has 1
+Edge: Luxembourg->Spain has 12 | Edge: Luxembourg->Croatia has 1
+Edge: Luxembourg->Portugal has 7 | Edge: Luxembourg->Switzerland has 2
+Edge: Luxembourg->Tunisia has 1 | Edge: Luxembourg->United Kingdom has 4
+Edge: Bolivia->Argentina has 2 | Edge: Bolivia->Chile has 3
+Edge: Bolivia->Colombia has 1 | Edge: Bolivia->Paraguay has 2
+Edge: Bolivia->United States has 2 | Edge: Bolivia->Peru has 8
+Edge: Bolivia->Brazil has 2 | Edge: Bolivia->Panama has 1
+Edge: Bolivia->Spain has 2 | Edge: Guernsey->Germany has 1
+Edge: Guernsey->France has 1 | Edge: Guernsey->Jersey has 4
+Edge: Guernsey->Netherlands has 1 | Edge: Guernsey->United Kingdom has 11
+Edge: Jersey->Guernsey has 3 | Edge: Jersey->Ireland has 2
+Edge: Jersey->Germany has 4 | Edge: Jersey->France has 1
+Edge: Jersey-> Sheffield has 1 | Edge: Jersey->Netherlands has 1
+Edge: Jersey->Switzerland has 2 | Edge: Jersey->United Kingdom has 24
+Edge: Malta->Latvia has 1 | Edge: Malta->Belgium has 2
+Edge: Malta->Sweden has 3 | Edge: Malta->Ireland has 1
+Edge: Malta->Rygge has 1 | Edge: Malta->Denmark has 2
+Edge: Malta->Italy has 15 | Edge: Malta->Germany has 8
+Edge: Malta->Turkey has 4 | Edge: Malta->France has 11
+Edge: Malta->Austria has 4 | Edge: Malta->Greece has 1
+Edge: Malta->Hungary has 2 | Edge: Malta->Norway has 1
+Edge: Malta->Netherlands has 3 | Edge: Malta->Spain has 4
+Edge: Malta->Libya has 4 | Edge: Malta->Lithuania has 1
+Edge: Malta->Russia has 4 | Edge: Malta->Luxembourg has 1
+Edge: Malta->Switzerland has 3 | Edge: Malta->Tunisia has 2
+Edge: Malta->Poland has 2 | Edge: Malta->Czech Republic has 2
+Edge: Malta->Cyprus has 2 | Edge: Malta->Algeria has 1
+Edge: Malta->United Kingdom has 28 | Edge: Ethiopia->South Africa has 2
+Edge: Ethiopia-> has 3 | Edge: Ethiopia->Gabon has 1
+Edge: Ethiopia->Hong Kong has 1 | Edge: Ethiopia->Rwanda has 2
+Edge: Ethiopia->Equatorial Guinea has 2 | Edge: Ethiopia->Tanzania has 3
+Edge: Ethiopia->China has 6 | Edge: Ethiopia->Congo (Kinshasa) has 2
+Edge: Ethiopia->Angola has 2 | Edge: Ethiopia->Kuwait has 2
+Edge: Ethiopia->Italy has 1 | Edge: Ethiopia->Germany has 2
+Edge: Ethiopia->Djibouti has 5 | Edge: Ethiopia->Sudan has 2
+Edge: Ethiopia->Turkey has 1 | Edge: Ethiopia->Niger has 1
+Edge: Ethiopia->South Sudan has 2 | Edge: Ethiopia->Mali has 2
+Edge: Ethiopia->France has 1 | Edge: Ethiopia->Qatar has 1
+Edge: Ethiopia->Bahrain has 1 | Edge: Ethiopia->Zimbabwe has 4
+Edge: Ethiopia->Congo (Brazzaville) has 1 | Edge: Ethiopia->Uganda has 2
+Edge: Ethiopia->Thailand has 2 | Edge: Ethiopia->Mozambique has 1
+Edge: Ethiopia->Benin has 1 | Edge: Ethiopia->India has 4
+Edge: Ethiopia->Chad has 1 | Edge: Ethiopia->Cameroon has 2
+Edge: Ethiopia->Israel has 1 | Edge: Ethiopia->Somalia has 1
+Edge: Ethiopia->Zambia has 1 | Edge: Ethiopia->Kenya has 6
+Edge: Ethiopia->Ghana has 1 | Edge: Ethiopia->Egypt has 2
+Edge: Ethiopia->Nigeria has 3 | Edge: Ethiopia->Saudi Arabia has 9
+Edge: Ethiopia->Togo has 1 | Edge: Ethiopia->United Arab Emirates has 3
+Edge: Ethiopia->Yemen has 1 | Edge: Ethiopia->Malawi has 1
+Edge: Ethiopia->Lebanon has 1 | Edge: Ethiopia->Oman has 2
+Edge: Ethiopia->Burkina Faso has 1 | Edge: Ethiopia->United Kingdom has 1
+Edge: Burundi->Rwanda has 6 | Edge: Burundi->Uganda has 1
+Edge: Burundi->Kenya has 6 | Edge: Rwanda->South Africa has 2
+Edge: Rwanda->Gabon has 1 | Edge: Rwanda->Belgium has 1
+Edge: Rwanda->Tanzania has 2 | Edge: Rwanda->Ethiopia has 2
+Edge: Rwanda->Turkey has 1 | Edge: Rwanda->South Sudan has 1
+Edge: Rwanda->Burundi has 7 | Edge: Rwanda->Congo (Brazzaville) has 1
+Edge: Rwanda->Uganda has 11 | Edge: Rwanda->Kenya has 8
+Edge: Rwanda->Nigeria has 1 | Edge: Rwanda->United Arab Emirates has 1
+Edge: Angola->South Africa has 3 | Edge: Angola->Sao Tome and Principe has 1
+Edge: Angola->China has 1 | Edge: Angola->Congo (Kinshasa) has 4
+Edge: Angola->Ethiopia has 2 | Edge: Angola->Cuba has 1
+Edge: Angola->Germany has 1 | Edge: Angola->Morocco has 1
+Edge: Angola->France has 1 | Edge: Angola->Zimbabwe has 1
+Edge: Angola->Congo (Brazzaville) has 1 | Edge: Angola->Brazil has 2
+Edge: Angola->Mozambique has 1 | Edge: Angola->Netherlands has 1
+Edge: Angola->Spain has 1 | Edge: Angola->Namibia has 3
+Edge: Angola->Kenya has 1 | Edge: Angola->Portugal has 3
+Edge: Angola->United Arab Emirates has 2 | Edge: Angola->United Kingdom has 2
+Edge: Lithuania->Latvia has 2 | Edge: Lithuania->Estonia has 3
+Edge: Lithuania->Belgium has 5 | Edge: Lithuania->Malta has 1
+Edge: Lithuania->Sweden has 2 | Edge: Lithuania->Ireland has 4
+Edge: Lithuania->Rygge has 2 | Edge: Lithuania->Georgia has 1
+Edge: Lithuania->Denmark has 3 | Edge: Lithuania->Italy has 7
+Edge: Lithuania->Germany has 7 | Edge: Lithuania->Turkey has 1
+Edge: Lithuania->France has 3 | Edge: Lithuania->Austria has 1
+Edge: Lithuania->Greece has 4 | Edge: Lithuania->Ukraine has 2
+Edge: Lithuania->Norway has 5 | Edge: Lithuania->Israel has 1
+Edge: Lithuania-> Sheffield has 1 | Edge: Lithuania->Netherlands has 1
+Edge: Lithuania->Sandefjord has 1 | Edge: Lithuania->Spain has 4
+Edge: Lithuania->Finland has 2 | Edge: Lithuania->Belarus has 1
+Edge: Lithuania->Russia has 4 | Edge: Lithuania->Poland has 1
+Edge: Lithuania->Czech Republic has 1 | Edge: Lithuania->Cyprus has 1
+Edge: Lithuania->United Kingdom has 9 | Edge: Congo (Kinshasa)->South Africa has 3
+Edge: Congo (Kinshasa)->Gabon has 1 | Edge: Congo (Kinshasa)->Belgium has 4
+Edge: Congo (Kinshasa)->Turkey has 1 | Edge: Congo (Kinshasa)->France has 1
+Edge: Congo (Kinshasa)->Congo (Brazzaville) has 4 | Edge: Congo (Kinshasa)->Cameroon has 5
+Edge: Congo (Kinshasa)->Zambia has 3 | Edge: Congo (Kinshasa)->Kenya has 4
+Edge: Zimbabwe->South Africa has 9 | Edge: Zimbabwe->Tanzania has 1
+Edge: Zimbabwe->Ethiopia has 2 | Edge: Zimbabwe->Botswana has 2
+Edge: Zimbabwe->Namibia has 2 | Edge: Zimbabwe->Zambia has 11
+Edge: Zimbabwe->Kenya has 3 | Edge: Zimbabwe->Malawi has 1
+Edge: Lebanon->Belgium has 1 | Edge: Lebanon->Ethiopia has 1
+Edge: Lebanon->Kuwait has 3 | Edge: Lebanon->Italy has 4
+Edge: Lebanon->Germany has 3 | Edge: Lebanon->Morocco has 1
+Edge: Lebanon->Iraq has 5 | Edge: Lebanon->Iran has 2
+Edge: Lebanon->Turkey has 3 | Edge: Lebanon->France has 2
+Edge: Lebanon->Qatar has 2 | Edge: Lebanon->Bahrain has 1
+Edge: Lebanon->Greece has 1 | Edge: Lebanon->Jordan has 3
+Edge: Lebanon->Romania has 2 | Edge: Lebanon->Armenia has 1
+Edge: Lebanon->Ghana has 1 | Edge: Lebanon->Egypt has 3
+Edge: Lebanon->Nigeria has 2 | Edge: Lebanon->Saudi Arabia has 7
+Edge: Lebanon->United Arab Emirates has 6 | Edge: Lebanon->Belarus has 1
+Edge: Lebanon->Russia has 2 | Edge: Lebanon->Yemen has 1
+Edge: Lebanon->Switzerland has 1 | Edge: Lebanon->Tunisia has 2
+Edge: Lebanon->Cyprus has 2 | Edge: Lebanon->Oman has 1
+Edge: Lebanon->Algeria has 1 | Edge: Lebanon->United Kingdom has 2
+Edge: Central African Republic->Morocco has 1 | Edge: Central African Republic->Cameroon has 2
+Edge: Laos->China has 5 | Edge: Laos->Vietnam has 6
+Edge: Laos->Malaysia has 1 | Edge: Laos->Thailand has 10
+Edge: Laos->South Korea has 2 | Edge: Laos->Singapore has 1
+Edge: Laos->Cambodia has 5 | Edge: Congo (Brazzaville)->South Africa has 2
+Edge: Congo (Brazzaville)->Gabon has 6 | Edge: Congo (Brazzaville)->Rwanda has 1
+Edge: Congo (Brazzaville)->Congo (Kinshasa) has 3 | Edge: Congo (Brazzaville)->Angola has 1
+Edge: Congo (Brazzaville)->Ethiopia has 2 | Edge: Congo (Brazzaville)->Morocco has 2
+Edge: Congo (Brazzaville)->France has 4 | Edge: Congo (Brazzaville)->Benin has 7
+Edge: Congo (Brazzaville)->Cameroon has 4 | Edge: Congo (Brazzaville)->Kenya has 2
+Edge: Gabon->South Africa has 1 | Edge: Gabon->Rwanda has 1
+Edge: Gabon->Equatorial Guinea has 1 | Edge: Gabon->Congo (Kinshasa) has 1
+Edge: Gabon->Ethiopia has 1 | Edge: Gabon->Morocco has 1
+Edge: Gabon->Turkey has 1 | Edge: Gabon->France has 1
+Edge: Gabon->Cote d'Ivoire has 1 | Edge: Gabon->Congo (Brazzaville) has 6
+Edge: Gabon->Benin has 3 | Edge: Gabon->Cameroon has 4
+Edge: Gabon->Nigeria has 2 | Edge: Gabon->Togo has 1
+Edge: Slovenia->Bosnia and Herzegovina has 1 | Edge: Slovenia->Belgium has 3
+Edge: Slovenia->Denmark has 2 | Edge: Slovenia->Germany has 4
+Edge: Slovenia->Turkey has 2 | Edge: Slovenia->France has 2
+Edge: Slovenia->Montenegro has 2 | Edge: Slovenia->Austria has 2
+Edge: Slovenia->Serbia has 2 | Edge: Slovenia->Albania has 1
+Edge: Slovenia->Netherlands has 1 | Edge: Slovenia->Macedonia has 1
+Edge: Slovenia->Finland has 1 | Edge: Slovenia->Russia has 2
+Edge: Slovenia->Switzerland has 2 | Edge: Slovenia->Poland has 2
+Edge: Slovenia->Czech Republic has 1 | Edge: Slovenia->United Kingdom has 2
+Edge: Mauritius->South Africa has 5 | Edge: Mauritius->Hong Kong has 1
+Edge: Mauritius->China has 2 | Edge: Mauritius->Italy has 1
+Edge: Mauritius->Germany has 1 | Edge: Mauritius->Madagascar has 2
+Edge: Mauritius->France has 3 | Edge: Mauritius->Reunion has 7
+Edge: Mauritius->Malaysia has 2 | Edge: Mauritius->Seychelles has 1
+Edge: Mauritius->India has 6 | Edge: Mauritius->Kenya has 2
+Edge: Mauritius->United Arab Emirates has 2 | Edge: Mauritius->Russia has 1
+Edge: Mauritius->Australia has 1 | Edge: Mauritius->United Kingdom has 3
+Edge: Mauritania->Morocco has 3 | Edge: Mauritania->Mali has 1
+Edge: Mauritania->France has 1 | Edge: Mauritania->Guinea has 1
+Edge: Mauritania->Senegal has 3 | Edge: Mauritania->Spain has 3
+Edge: Mauritania->Tunisia has 1 | Edge: Madagascar->South Africa has 2
+Edge: Madagascar->France has 5 | Edge: Madagascar->Mauritius has 2
+Edge: Madagascar->Reunion has 7 | Edge: Madagascar->Thailand has 2
+Edge: Madagascar->Kenya has 1 | Edge: Madagascar->Mayotte has 5
+Edge: Madagascar->Comoros has 1 | Edge: Equatorial Guinea->Gabon has 2
+Edge: Equatorial Guinea->Ethiopia has 2 | Edge: Equatorial Guinea->Morocco has 1
+Edge: Equatorial Guinea->Benin has 2 | Edge: Equatorial Guinea->Cameroon has 5
+Edge: Equatorial Guinea->Spain has 1 | Edge: Equatorial Guinea->Nigeria has 1
+Edge: Mayotte->Tanzania has 1 | Edge: Mayotte->Madagascar has 7
+Edge: Mayotte->Reunion has 2 | Edge: Mayotte->Comoros has 5
+Edge: Comoros->Tanzania has 1 | Edge: Comoros->Djibouti has 1
+Edge: Comoros->Madagascar has 1 | Edge: Comoros->Reunion has 1
+Edge: Comoros->Kenya has 4 | Edge: Comoros->Mayotte has 2
+Edge: Zambia->South Africa has 7 | Edge: Zambia-> has 2
+Edge: Zambia->Congo (Kinshasa) has 2 | Edge: Zambia->Angola has 1
+Edge: Zambia->Ethiopia has 2 | Edge: Zambia->Zimbabwe has 10
+Edge: Zambia->Botswana has 1 | Edge: Zambia->Netherlands has 3
+Edge: Zambia->Namibia has 2 | Edge: Zambia->Kenya has 6
+Edge: Zambia->United Arab Emirates has 1 | Edge: Zambia->Malawi has 6
+Edge: Malawi->South Africa has 3 | Edge: Malawi->Tanzania has 1
+Edge: Malawi->Ethiopia has 1 | Edge: Malawi->Zimbabwe has 1
+Edge: Malawi->Zambia has 5 | Edge: Malawi->Kenya has 4
+Edge: Reunion->South Africa has 1 | Edge: Reunion->Madagascar has 6
+Edge: Reunion->France has 5 | Edge: Reunion->Mauritius has 7
+Edge: Reunion->India has 1 | Edge: Reunion->Mayotte has 1
+Edge: Reunion->Comoros has 1 | Edge: Palau->Japan has 3
+Edge: Palau->Micronesia has 1 | Edge: Palau->South Korea has 2
+Edge: Palau->Taiwan has 2 | Edge: Palau->Guam has 1
+Edge: Palau->Philippines has 1 | Edge: Maldives-> has 1
+Edge: Maldives->Hong Kong has 2 | Edge: Maldives->China has 4
+Edge: Maldives->Italy has 1 | Edge: Maldives->Germany has 1
+Edge: Maldives->Turkey has 1 | Edge: Maldives->Qatar has 1
+Edge: Maldives->Sri Lanka has 13 | Edge: Maldives->Malaysia has 1
+Edge: Maldives->Thailand has 1 | Edge: Maldives->India has 5
+Edge: Maldives->Singapore has 2 | Edge: Maldives->United Arab Emirates has 4
+Edge: Maldives->Russia has 2 | Edge: Maldives->Oman has 1
+Edge: Maldives->United Kingdom has 1 | Edge: Western Sahara->Morocco has 4
+Edge: Western Sahara->Spain has 3 | Edge:  Santiago Island->Sao Tome and Principe has 1
+Edge:  Santiago Island-> Fogo Island has 1 | Edge:  Santiago Island->Morocco has 1
+Edge:  Santiago Island->United States has 1 | Edge:  Santiago Island->France has 1
+Edge:  Santiago Island->Brazil has 1 | Edge:  Santiago Island->Senegal has 2
+Edge:  Santiago Island->Cape Verde has 4 | Edge:  Santiago Island->Spain has 1
+Edge:  Santiago Island->Portugal has 2 | Edge:  Santiago Island->Guinea-Bissau has 1
+Edge:  Santiago Island->Gambia has 1 | Edge: Iceland-> has 1
+Edge: Iceland->Belgium has 1 | Edge: Iceland->Sweden has 1
+Edge: Iceland->Denmark has 4 | Edge: Iceland->Germany has 4
+Edge: Iceland->Greenland has 2 | Edge: Iceland->United States has 7
+Edge: Iceland->France has 4 | Edge: Iceland->Norway has 5
+Edge: Iceland->Canada has 2 | Edge: Iceland->Netherlands has 1
+Edge: Iceland->Spain has 2 | Edge: Iceland->Finland has 2
+Edge: Iceland->Switzerland has 1 | Edge: Iceland->United Kingdom has 10
+Edge: Belarus->Turkmenistan has 1 | Edge: Belarus->Latvia has 2
+Edge: Belarus->Sweden has 1 | Edge: Belarus->Georgia has 3
+Edge: Belarus->Italy has 2 | Edge: Belarus->Germany has 4
+Edge: Belarus->Iran has 1 | Edge: Belarus->Turkey has 2
+Edge: Belarus->France has 2 | Edge: Belarus->Austria has 2
+Edge: Belarus->Hungary has 1 | Edge: Belarus->Ukraine has 2
+Edge: Belarus->Israel has 1 | Edge: Belarus->Netherlands has 1
+Edge: Belarus->Spain has 1 | Edge: Belarus->Armenia has 1
+Edge: Belarus->United Arab Emirates has 2 | Edge: Belarus->Lithuania has 1
+Edge: Belarus->Finland has 2 | Edge: Belarus->Russia has 12
+Edge: Belarus->Kazakhstan has 1 | Edge: Belarus->Azerbaijan has 1
+Edge: Belarus->Switzerland has 1 | Edge: Belarus->Poland has 2
+Edge: Belarus->Czech Republic has 2 | Edge: Belarus->Lebanon has 1
+Edge: Belarus->Cyprus has 1 | Edge: Belarus->United Kingdom has 1
+Edge: Estonia->Latvia has 1 | Edge: Estonia->Belgium has 2
+Edge: Estonia->Sweden has 4 | Edge: Estonia->Rygge has 1
+Edge: Estonia->Denmark has 2 | Edge: Estonia->Italy has 1
+Edge: Estonia->Germany has 2 | Edge: Estonia->Turkey has 1
+Edge: Estonia->France has 1 | Edge: Estonia->Greece has 1
+Edge: Estonia->Ukraine has 1 | Edge: Estonia->Norway has 5
+Edge: Estonia->Netherlands has 2 | Edge: Estonia->Spain has 1
+Edge: Estonia->Croatia has 1 | Edge: Estonia->Lithuania has 3
+Edge: Estonia->Finland has 3 | Edge: Estonia->Russia has 3
+Edge: Estonia->Poland has 1 | Edge: Estonia->United Kingdom has 3
+Edge: Sudan->Ethiopia has 2 | Edge: Sudan->Eritrea has 1
+Edge: Sudan->Turkey has 1 | Edge: Sudan->South Sudan has 2
+Edge: Sudan->Qatar has 2 | Edge: Sudan->Bahrain has 1
+Edge: Sudan->Jordan has 2 | Edge: Sudan->Chad has 1
+Edge: Sudan->Kenya has 1 | Edge: Sudan->Egypt has 3
+Edge: Sudan->Saudi Arabia has 8 | Edge: Sudan->United Arab Emirates has 10
+Edge: Sudan->Yemen has 1 | Edge: Seychelles->South Africa has 2
+Edge: Seychelles->Germany has 1 | Edge: Seychelles->Mauritius has 1
+Edge: Seychelles->Sri Lanka has 2 | Edge: Seychelles->Kenya has 1
+Edge: Seychelles->United Arab Emirates has 4 | Edge: Seychelles->Russia has 1
+Edge: Turkmenistan->China has 1 | Edge: Turkmenistan->Germany has 1
+Edge: Turkmenistan->Turkey has 2 | Edge: Turkmenistan->India has 2
+Edge: Turkmenistan->United Arab Emirates has 2 | Edge: Turkmenistan->Belarus has 1
+Edge: Turkmenistan->Russia has 2 | Edge: Turkmenistan->Azerbaijan has 2
+Edge: Turkmenistan->United Kingdom has 2 | Edge: Isle of Man->Ireland has 1
+Edge: Isle of Man->United Kingdom has 10 | Edge: Namibia->South Africa has 9
+Edge: Namibia->Angola has 3 | Edge: Namibia->Germany has 1
+Edge: Namibia->Zimbabwe has 2 | Edge: Namibia->Botswana has 1
+Edge: Namibia->Zambia has 2 | Edge: Namibia->Ghana has 1
+Edge:  Sheffield->Jersey has 1 | Edge:  Sheffield->Spain has 2
+Edge:  Sheffield->Lithuania has 1 | Edge:  Sheffield->Poland has 5
+Edge: Harstad/Narvik->Tromso has 1 | Edge: Harstad/Narvik->Norway has 7
+Edge: Harstad/Narvik->Spain has 1 | Edge: Botswana->South Africa has 9
+Edge: Botswana->Zimbabwe has 2 | Edge: Botswana->Namibia has 1
+Edge: Botswana->Zambia has 1 | Edge: Botswana->Kenya has 1
+Edge: Guyana->Trinidad and Tobago has 1 | Edge: Guyana->Venezuela has 1
+Edge: Guyana->United States has 2 | Edge: Guyana->Canada has 2
+Edge: Guyana->Barbados has 1 | Edge: Guyana->Jamaica has 1
+Edge: Guyana->Suriname has 1 | Edge: North Korea->China has 3
+Edge: North Korea->Malaysia has 1 | Edge: North Korea->Russia has 1
+Edge: Mongolia->Hong Kong has 2 | Edge: Mongolia->China has 4
+Edge: Mongolia->Japan has 1 | Edge: Mongolia->Thailand has 1
+Edge: Mongolia->South Korea has 2 | Edge: Mongolia->Kyrgyzstan has 1
+Edge: Mongolia->Russia has 2 | Edge: Papua New Guinea-> has 8
+Edge: Papua New Guinea->Hong Kong has 1 | Edge: Papua New Guinea->Indonesia has 1
+Edge: Papua New Guinea->Japan has 1 | Edge: Papua New Guinea->Fiji has 1
+Edge: Papua New Guinea->Singapore has 1 | Edge: Papua New Guinea->Solomon Islands has 1
+Edge: Papua New Guinea->Philippines has 2 | Edge: Papua New Guinea->Australia has 9
+Edge: Slovakia->Belgium has 1 | Edge: Slovakia->Ireland has 1
+Edge: Slovakia->Italy has 4 | Edge: Slovakia->France has 1
+Edge: Slovakia->Austria has 1 | Edge: Slovakia->Norway has 1
+Edge: Slovakia->Spain has 3 | Edge: Slovakia->Czech Republic has 5
+Edge: Slovakia->United Kingdom has 6 | Edge: Sao Tome and Principe->Angola has 1
+Edge: Sao Tome and Principe-> Santiago Island has 1 | Edge: Sao Tome and Principe->Portugal has 1
+Edge: Rygge->Latvia has 1 | Edge: Rygge->Estonia has 1
+Edge: Rygge->Belgium has 1 | Edge: Rygge->Malta has 1
+Edge: Rygge->Ireland has 1 | Edge: Rygge->Italy has 4
+Edge: Rygge->Germany has 1 | Edge: Rygge->France has 2
+Edge: Rygge->Greece has 5 | Edge: Rygge->Spain has 7
+Edge: Rygge->Croatia has 2 | Edge: Rygge->Lithuania has 2
+Edge: Rygge->Poland has 6 | Edge: Rygge->United Kingdom has 3
+Edge: Svalbard->Tromso has 1 | Edge: Svalbard->Norway has 2
+Edge: Iraq->Sweden has 7 | Edge: Iraq->Kuwait has 2
+Edge: Iraq->Georgia has 2 | Edge: Iraq->Germany has 5
+Edge: Iraq->Iran has 4 | Edge: Iraq->Turkey has 16
+Edge: Iraq->Qatar has 5 | Edge: Iraq->Austria has 1
+Edge: Iraq->Bahrain has 2 | Edge: Iraq->Jordan has 9
+Edge: Iraq->Netherlands has 1 | Edge: Iraq->Egypt has 2
+Edge: Iraq->United Arab Emirates has 15 | Edge: Iraq->Lebanon has 5
+Edge: Yemen->Ethiopia has 1 | Edge: Yemen->Kuwait has 3
+Edge: Yemen->Eritrea has 2 | Edge: Yemen->Djibouti has 2
+Edge: Yemen->Sudan has 1 | Edge: Yemen->Turkey has 1
+Edge: Yemen->Qatar has 2 | Edge: Yemen->Bahrain has 2
+Edge: Yemen->India has 1 | Edge: Yemen->Jordan has 5
+Edge: Yemen->Somalia has 2 | Edge: Yemen->Kenya has 1
+Edge: Yemen->Egypt has 6 | Edge: Yemen->Saudi Arabia has 16
+Edge: Yemen->United Arab Emirates has 12 | Edge: Yemen->Lebanon has 1
+Edge: Mozambique->South Africa has 15 | Edge: Mozambique->Tanzania has 1
+Edge: Mozambique->Angola has 1 | Edge: Mozambique->Ethiopia has 1
+Edge: Mozambique->Kenya has 4 | Edge: Mozambique->Portugal has 1
+Edge: Samoa->United States has 1 | Edge: Samoa->Fiji has 1
+Edge: Samoa->New Zealand has 3 | Edge: Kiribati->United States has 2
+Edge: Kiribati->Nauru has 1 | Edge: Kiribati->Fiji has 3
+Edge: Kiribati->Marshall Islands has 1 | Edge: Tuvalu->Fiji has 1
+Edge: Solomon Islands-> has 3 | Edge: Solomon Islands->Fiji has 2
+Edge: Solomon Islands->Papua New Guinea has 1 | Edge: Solomon Islands->Australia has 2
+Edge: Solomon Islands->Vanuatu has 3 | Edge: Vanuatu->Fiji has 2
+Edge: Vanuatu->New Zealand has 2 | Edge: Vanuatu->New Caledonia has 2
+Edge: Vanuatu->Solomon Islands has 3 | Edge: Vanuatu->Australia has 7
+Edge: Tonga->Fiji has 2 | Edge: Tonga->New Zealand has 2
+Edge: Tonga->Australia has 1 | Edge: Ambon->Indonesia has 14
+Edge: Greenland-> has 24 | Edge: Greenland->Denmark has 1
+Edge: Greenland->Iceland has 2 | Edge: Cook Islands->United States has 2
+Edge: Cook Islands->French Polynesia has 2 | Edge: Cook Islands->New Zealand has 3
+Edge: Cook Islands->Australia has 1 | Edge: American Samoa->United States has 1
+Edge: Cape Verde->Germany has 5 | Edge: Cape Verde-> Santiago Island has 4
+Edge: Cape Verde->France has 2 | Edge: Cape Verde->Netherlands has 2
+Edge: Cape Verde->Portugal has 6 | Edge: Cape Verde->Luxembourg has 1
+Edge: Cape Verde->United Kingdom has 9 | Edge: Eritrea->Sudan has 1
+Edge: Eritrea->South Sudan has 1 | Edge: Eritrea->Kenya has 1
+Edge: Eritrea->Egypt has 1 | Edge: Eritrea->Saudi Arabia has 1
+Edge: Eritrea->Yemen has 2 | Edge: Bhutan->Nepal has 1
+Edge: Bhutan->Bangladesh has 1 | Edge: Bhutan->India has 3
+Edge: Falkland Islands->Chile has 1 | Edge: Saint Vincent and the Grenadines->Trinidad and Tobago has 1
+Edge: Saint Vincent and the Grenadines->Grenada has 1 | Edge: Saint Vincent and the Grenadines->Saint Lucia has 1
+Edge: Saint Vincent and the Grenadines->Barbados has 1 | Edge: East Timor->Indonesia has 1
+Edge: East Timor->Singapore has 1 | Edge: East Timor->Australia has 2
+Edge: New Caledonia->Japan has 2 | Edge: New Caledonia->French Polynesia has 1
+Edge: New Caledonia->Fiji has 1 | Edge: New Caledonia->Wallis and Futuna has 1
+Edge: New Caledonia->New Zealand has 2 | Edge: New Caledonia->Australia has 4
+Edge: New Caledonia->Vanuatu has 2 | Edge: Norfolk Island->New Zealand has 1
+Edge: Norfolk Island->Australia has 2 | Edge: Niue->New Zealand has 1
+Edge: Nauru->Marshall Islands has 1 | Edge: Nauru->Kiribati has 1
+Edge: Nauru->Australia has 1 | Edge: Marshall Islands->United States has 1
+Edge: Marshall Islands->Micronesia has 2 | Edge: Marshall Islands->Nauru has 1
+Edge: Marshall Islands->Kiribati has 1 | Edge: Saint Pierre and Miquelon->Canada has 3
+Edge: Faroe Islands->Denmark has 2 | Edge: Faroe Islands->Norway has 2
+Edge: Lesotho->South Africa has 1 | Edge: Swaziland->South Africa has 1
+Edge: Wallis and Futuna->Fiji has 1 | Edge: Wallis and Futuna->New Caledonia has 1
+Edge: Micronesia->Palau has 1 | Edge: Micronesia->Marshall Islands has 2
+Edge: Micronesia->Guam has 2 | Edge: Cocos (Keeling) Islands->Christmas Island has 1
+Edge: Christmas Island->Cocos (Keeling) Islands has 1 | Edge: Christmas Island->Australia has 1
+Edge:  Fogo Island-> Santiago Island has 1 | Edge: Orsta-Volda->Norway has 4
+Edge: Vardø->Norway has 3 | Edge: Mo i Rana->Rørvik has 1
+Edge: Mo i Rana->Norway has 3 | Edge: Rørvik->Norway has 2
+Edge: Rørvik->Mo i Rana has 1 | 
