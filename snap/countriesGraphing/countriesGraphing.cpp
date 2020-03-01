@@ -121,13 +121,18 @@ vector<Route> getInput()
 
 int addRoute(TNodeEDatNet<TNodeData, TEdgeData> &graph, std::vector<Route> list)
 {
-	for (size_t i = 0; i < list.size(); i++)
+	for (size_t i = 0; i < 20 /*list.size()*/; i++)
 	{
     int idSource = hashFunction(list[i].sourceCountry);
     int idDestination = hashFunction(list[i].destinationCountry);
 		// Adds country to graph if they aren't already added
     TNodeData *source = new TNodeData(idSource, list[i].sourceCountry);
 		TNodeData *destination = new TNodeData(idDestination, list[i].destinationCountry);
+
+
+    cout << "Source: " << list[i].sourceCountry << "-" << list[i].sourceCountry.length() << "|";
+    cout << " Destination: " << list[i].destinationCountry << "-" << list[i].destinationCountry.length() << endl;
+
 
     if (!graph.IsNode(idSource)) {
       graph.AddNode(idSource, *source);
