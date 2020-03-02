@@ -50,16 +50,16 @@ TRF,Sandefjord,ARN,Sweden
 VXO,Sweden,OSL,Norway
 ADQ,United States,AOS,
 ADQ,United States,KKB,
-ADQ,United States,KOZ,
+ADQ,United States,KOZ,United States
 ADQ,United States,OLH,
 DWC,United Arab Emirates,MNL,Philippines
 MNL,Philippines,DWC,United Arab Emirates
-CGA,,KTN,United States
-HYL,,KTN,United States
-KTB,,KTN,United States
-KTN,United States,CGA,
-KTN,United States,HYL,
-KTN,United States,KTB,
+CGA,United States,KTN,United States
+HYL,United States,KTN,United States
+KTB,United States,KTN,United States
+KTN,United States,CGA,United States
+KTN,United States,HYL,United States
+KTN,United States,KTB,United States
 ACC,Ghana,DKR,Senegal
 ACC,Ghana,LOS,Nigeria
 ACC,Ghana,ROB,Liberia
@@ -260,13 +260,13 @@ SXM,Netherlands Antilles,PTP,Guadeloupe
 SXM,Netherlands Antilles,SDQ,Dominican Republic
 CAN,China,SPN,Northern Mariana Islands
 CKG,China,HKT,Thailand
-CKG,China,INC,
+CKG,China,INC,China
 CKG,China,SYD,Australia
 CKG,China,TSA,Taiwan
 CTU,China,HKG,Hong Kong
 CTU,China,HKT,Thailand
 CTU,China,ICN,South Korea
-CTU,China,INC,
+CTU,China,INC,China
 CTU,China,MEL,Australia
 CTU,China,TSA,Taiwan
 HKG,Hong Kong,CTU,China
@@ -274,17 +274,17 @@ HKG,Hong Kong,YIH,China
 HKG,Hong Kong,ZHA,China
 HKT,Thailand,CKG,China
 HKT,Thailand,CTU,China
-HRB,China,INC,
+HRB,China,INC,China
 ICN,South Korea,CTU,China
-INC,,CKG,China
-INC,,CTU,China
-INC,,HRB,China
-INC,,KWL,China
+INC,China,CKG,China
+INC,China,CTU,China
+INC,China,HRB,China
+INC,China,KWL,China
 KMG,China,TPE,Taiwan
-KWL,China,INC,
+KWL,China,INC,China
 MEL,Australia,CTU,China
 NNG,China,SGN,Vietnam
-NTG,,WUH,China
+NTG,China,WUH,China
 PVG,China,SPN,Northern Mariana Islands
 SGN,Vietnam,NNG,China
 SHE,China,YVR,Canada
@@ -294,16 +294,16 @@ SYD,Australia,CKG,China
 TPE,Taiwan,KMG,China
 TSA,Taiwan,CKG,China
 TSA,Taiwan,CTU,China
-TVS,,TYN,China
-TYN,China,TVS,
-WUH,China,NTG,
+TVS,China,TYN,China
+TYN,China,TVS,China
+WUH,China,NTG,China
 YIH,China,HKG,Hong Kong
 YVR,Canada,SHE,China
 ZHA,China,HKG,Hong Kong
 CAI,Egypt,TLV,Israel
 TLV,Israel,CAI,Egypt
-MCG,United States,TCT,
-TCT,,TLJ,United States
+MCG,United States,TCT,United States
+TCT,United States,TLJ,United States
 NCU,Uzbekistan,VKO,Russia
 VKO,Russia,NCU,Uzbekistan
 BKK,Thailand,DAC,Bangladesh
@@ -800,42 +800,42 @@ ZAG,Croatia,CGN,Germany
 ZAG,Croatia,STR,Germany
 ZRH,Switzerland,CGN,Germany
 ZRH,Switzerland,HAM,Germany
-BTT,United States,CXF,
-CXF,,AKP,United States
-FAI,United States,RMP,
-FAI,United States,SVS,
-FAI,United States,TAL,
-MLY,United States,MNT,
-MNT,,FAI,United States
-RMP,,FAI,United States
-SVS,,FAI,United States
-SVS,,WBQ,United States
-TAL,,FAI,United States
-WBQ,United States,SVS,
-AKI,United States,TLT,
-ATT,,KUK,United States
-BET,United States,ATT,
-BET,United States,GNU,
-BET,United States,WTL,
-GNU,,PTU,United States
-KKI,,AKI,United States
-KUK,United States,NUP,
-KWT,United States,KKI,
-MLL,United States,PQS,
-NUP,,BET,United States
-OOK,United States,TNK,
-PQS,,BET,United States
-TLT,,BET,United States
-WTL,,KKH,United States
-WWT,,BET,United States
+BTT,United States,CXF,United States
+CXF,United States,AKP,United States
+FAI,United States,RMP,United States
+FAI,United States,SVS,United States
+FAI,United States,TAL,United States
+MLY,United States,MNT,United States
+MNT,United States,FAI,United States
+RMP,United States,FAI,United States
+SVS,United States,FAI,United States
+SVS,United States,WBQ,United States
+TAL,United States,FAI,United States
+WBQ,United States,SVS,United States
+AKI,United States,TLT,United States
+ATT,United States,KUK,United States
+BET,United States,ATT,United States
+BET,United States,GNU,United States
+BET,United States,WTL,United States
+GNU,United States,PTU,United States
+KKI,United States,AKI,United States
+KUK,United States,NUP,United States
+KWT,United States,KKI,United States
+MLL,United States,PQS,United States
+NUP,United States,BET,United States
+OOK,United States,TNK,United States
+PQS,United States,BET,United States
+TLT,United States,BET,United States
+WTL,United States,KKH,United States
+WWT,United States,BET,United States
 BOC,Panama,SJO,Costa Rica
-LIR,Costa Rica,TNO,
+LIR,Costa Rica,TNO,Costa Rica
 MGA,Nicaragua,SJO,Costa Rica
 SJO,Costa Rica,BOC,Panama
 SJO,Costa Rica,MGA,Nicaragua
-SJO,Costa Rica,TNO,
-TNO,,LIR,Costa Rica
-TNO,,SJO,Costa Rica
+SJO,Costa Rica,TNO,Costa Rica
+TNO,Costa Rica,LIR,Costa Rica
+TNO,Costa Rica,SJO,Costa Rica
 JUB,South Sudan,NBO,Kenya
 MBA,Kenya,ZNZ,Tanzania
 NBO,Kenya,JUB,South Sudan
@@ -937,8 +937,8 @@ GUA,Guatemala,TGU,Honduras
 RTB,Honduras,GUA,Guatemala
 SAP,Honduras,GUA,Guatemala
 TGU,Honduras,GUA,Guatemala
-ELL,,JNB,South Africa
-JNB,South Africa,ELL,
+ELL,South Africa,JNB,South Africa
+JNB,South Africa,ELL,South Africa
 BKK,Thailand,CCU,India
 BKK,Thailand,DEL,India
 BOM,India,DXB,United Arab Emirates
@@ -1002,49 +1002,49 @@ NGO,Japan,ICN,South Korea
 NRT,Japan,ICN,South Korea
 PUS,South Korea,BKK,Thailand
 TAO,China,ICN,South Korea
-AKI,United States,KKI,
-AKI,United States,TLT,
-ANV,United States,KGX,
-ATT,,BET,United States
-AUK,United States,SXP,
-BET,United States,PQS,
-BET,United States,TLT,
-BET,United States,WTL,
-CHU,United States,CKD,
-CKD,,SLQ,United States
-KGX,,ANV,United States
-KGX,,SHX,United States
-KKI,,AKI,United States
-KKI,,KWT,United States
-KOT,United States,WBB,
-KSM,United States,SXP,
-KUK,United States,NUP,
-KWT,United States,KKI,
-MOU,United States,PQS,
-NME,United States,TNK,
-OME,United States,WBB,
-OOK,United States,TNK,
-OTZ,United States,PHO,
-PHO,,OTZ,United States
-PHO,,PIZ,United States
-PIZ,United States,PHO,
-PQS,,BET,United States
-PQS,,MOU,United States
-RDV,,SLQ,United States
-SHX,United States,KGX,
-SLQ,United States,SRV,
-SMK,United States,WBB,
-SRV,,ANI,United States
-SXP,,AUK,United States
-SXP,,KSM,United States
-TLT,,AKI,United States
-TLT,,BET,United States
-WBB,,KOT,United States
-WBB,,OME,United States
-WBB,,SMK,United States
-WBB,,UNK,United States
-WTL,,BET,United States
-WWT,,BET,United States
+AKI,United States,KKI,United States
+AKI,United States,TLT,United States
+ANV,United States,KGX,United States
+ATT,United States,BET,United States
+AUK,United States,SXP,United States
+BET,United States,PQS,United States
+BET,United States,TLT,United States
+BET,United States,WTL,United States
+CHU,United States,CKD,United States
+CKD,United States,SLQ,United States
+KGX,United States,ANV,United States
+KGX,United States,SHX,United States
+KKI,United States,AKI,United States
+KKI,United States,KWT,United States
+KOT,United States,WBB,United States
+KSM,United States,SXP,United States
+KUK,United States,NUP,United States
+KWT,United States,KKI,United States
+MOU,United States,PQS,United States
+NME,United States,TNK,United States
+OME,United States,WBB,United States
+OOK,United States,TNK,United States
+OTZ,United States,PHO,United States
+PHO,United States,OTZ,United States
+PHO,United States,PIZ,United States
+PIZ,United States,PHO,United States
+PQS,United States,BET,United States
+PQS,United States,MOU,United States
+RDV,United States,SLQ,United States
+SHX,United States,KGX,United States
+SLQ,United States,SRV,United States
+SMK,United States,WBB,United States
+SRV,United States,ANI,United States
+SXP,United States,AUK,United States
+SXP,United States,KSM,United States
+TLT,United States,AKI,United States
+TLT,United States,BET,United States
+WBB,United States,KOT,United States
+WBB,United States,OME,United States
+WBB,United States,SMK,United States
+WBB,United States,UNK,United States
+WTL,United States,BET,United States
+WWT,United States,BET,United States
 AUA,Aruba,CCS,Venezuela
 AUA,Aruba,CUR,Netherlands Antilles
 AUA,Aruba,LRM,Dominican Republic
@@ -1120,29 +1120,29 @@ SGC,Russia,LBD,Tajikistan
 SHJ,United Arab Emirates,DYU,Tajikistan
 SVX,Russia,DYU,Tajikistan
 URC,China,DYU,Tajikistan
-ACU,,PAC,Panama
-BFQ,,JQE,Panama
+SRV,Panama,PAC,Panama
+BFQ,Panama,JQE,Panama
 DAV,Panama,SJO,Costa Rica
-GHE,,PAC,Panama
-MPP,,PAC,Panama
-PAC,Panama,BFQ,
-PAC,Panama,OGM,
-PAC,Panama,OTD,
-PAC,Panama,PVE,
-PAC,Panama,PYC,
-PAC,Panama,SAX,
-SIC,,PAC,Panama
+GHE,Panama,PAC,Panama
+MPP,Panama,PAC,Panama
+PAC,Panama,BFQ,Panama
+PAC,Panama,OGM,Panama
+PAC,Panama,OTD,Panama
+PAC,Panama,PVE,Panama
+PAC,Panama,PYC,Panama
+PAC,Panama,SAX,Panama
+SIC,Panama,PAC,Panama
 SJO,Costa Rica,DAV,Panama
 AKX,Kazakhstan,DME,Russia
 DME,Russia,AKX,Kazakhstan
-DME,Russia,GRV,
+DME,Russia,GRV,Russia
 EVN,Armenia,VOG,Russia
-GRV,,DME,Russia
+GRV,Russia,DME,Russia
 MRV,Russia,SAW,Turkey
 SAW,Turkey,MRV,Russia
 VOG,Russia,EVN,Armenia
-ANV,United States,KGX,
-KGX,,SHX,United States
+ANV,United States,KGX,United States
+KGX,United States,SHX,United States
 BKK,Thailand,CKG,China
 BKK,Thailand,ICN,South Korea
 CKG,China,BKK,Thailand
@@ -1153,21 +1153,21 @@ HKT,Thailand,ICN,South Korea
 ICN,South Korea,BKK,Thailand
 ICN,South Korea,CNX,Thailand
 ICN,South Korea,HKT,Thailand
-ADQ,United States,KOZ,
-ADQ,United States,OLH,
-ADQ,United States,ORI,
-KOZ,,ADQ,United States
-OLH,,ADQ,United States
-ORI,,ADQ,United States
-KVL,United States,PHO,
-OME,United States,WBB,
-OTZ,United States,PHO,
-PHO,,LUR,United States
-PHO,,OTZ,United States
-SMK,United States,WBB,
-WBB,,OME,United States
-WBB,,SMK,United States
-WBB,,UNK,United States
+ADQ,United States,KOZ,United States
+ADQ,United States,OLH,United States
+ADQ,United States,ORI,United States
+KOZ,United States,ADQ,United States
+OLH,United States,ADQ,United States
+ORI,United States,ADQ,United States
+KVL,United States,PHO,United States
+OME,United States,WBB,United States
+OTZ,United States,PHO,United States
+PHO,United States,LUR,United States
+PHO,United States,OTZ,United States
+SMK,United States,WBB,United States
+WBB,United States,OME,United States
+WBB,United States,SMK,United States
+WBB,United States,UNK,United States
 AUA,Aruba,CCS,Venezuela
 AUA,Aruba,MIA,United States
 AUA,Aruba,VLN,Venezuela
@@ -1188,10 +1188,10 @@ RGN,Burma,KUL,Malaysia
 RGN,Burma,PNH,Cambodia
 RGN,Burma,SIN,Singapore
 SIN,Singapore,RGN,Burma
-YBL,Canada,ZEL,
-YZT,Canada,ZEL,
-ZEL,,YBL,Canada
-ZEL,,YZT,Canada
+YBL,Canada,ZEL,Canada
+YZT,Canada,ZEL,Canada
+ZEL,Canada,YBL,Canada
+ZEL,Canada,YZT,Canada
 AYT,Turkey,KZN,Russia
 AYT,Turkey,SVO,Russia
 CDG,France,IST,Turkey
@@ -1211,7 +1211,7 @@ BEN,Libya,CAI,Egypt
 BEN,Libya,CMN,Morocco
 BEN,Libya,IST,Turkey
 BEN,Libya,JED,Saudi Arabia
-BEN,Libya,MRA,
+BEN,Libya,MRA,Libya
 BEN,Libya,TUN,Tunisia
 CAI,Egypt,BEN,Libya
 CAI,Egypt,TIP,Libya
@@ -1221,15 +1221,15 @@ DXB,United Arab Emirates,TIP,Libya
 FCO,Italy,TIP,Libya
 HBE,Egypt,TIP,Libya
 IST,Turkey,BEN,Libya
-IST,Turkey,MRA,
+IST,Turkey,MRA,Libya
 IST,Turkey,TIP,Libya
 JED,Saudi Arabia,BEN,Libya
 JED,Saudi Arabia,TIP,Libya
-MRA,,BEN,Libya
-MRA,,IST,Turkey
-MRA,,SFA,Tunisia
-MRA,,TUN,Tunisia
-SFA,Tunisia,MRA,
+MRA,Libya,BEN,Libya
+MRA,Libya,IST,Turkey
+MRA,Libya,SFA,Tunisia
+MRA,Libya,TUN,Tunisia
+SFA,Tunisia,MRA,Libya
 SFA,Tunisia,TIP,Libya
 TIP,Libya,AMM,Jordan
 TIP,Libya,CAI,Egypt
@@ -1241,17 +1241,17 @@ TIP,Libya,JED,Saudi Arabia
 TIP,Libya,SFA,Tunisia
 TIP,Libya,TUN,Tunisia
 TUN,Tunisia,BEN,Libya
-TUN,Tunisia,MRA,
+TUN,Tunisia,MRA,Libya
 TUN,Tunisia,TIP,Libya
 FAI,United States,KBC,
-FAI,United States,TAL,
-HSL,United States,TAL,
-HUS,United States,TAL,
+FAI,United States,TAL,United States
+HSL,United States,TAL,United States
+HUS,United States,TAL,United States
 KBC,,FYU,United States
-RBY,United States,TAL,
-TAL,,FAI,United States
-TAL,,HSL,United States
-TAL,,RBY,United States
+RBY,United States,TAL,United States
+TAL,United States,FAI,United States
+TAL,United States,HSL,United States
+TAL,United States,RBY,United States
 BKI,Malaysia,PVG,China
 BKK,Thailand,PVG,China
 CJU,South Korea,PVG,China
@@ -7903,16 +7903,16 @@ CAN,China,ADD,Ethiopia
 CAN,China,CAI,Egypt
 CAN,China,IST,Turkey
 CAN,China,NRT,Japan
-CAN,China,NTG,
+CAN,China,NTG,China
 CDG,France,PEK,China
 CDG,France,PVG,China
 CGK,Indonesia,XMN,China
 CGO,China,MFM,Macau
-CGQ,China,INC,
+CGQ,China,INC,China
 CJJ,South Korea,PEK,China
 CKG,China,HKG,Hong Kong
 CKG,China,ICN,South Korea
-CKG,China,INC,
+CKG,China,INC,China
 CKG,China,MFM,Macau
 CKG,China,TPE,Taiwan
 CNX,Thailand,PEK,China
@@ -7925,7 +7925,7 @@ CTU,China,BOM,India
 CTU,China,FRA,Germany
 CTU,China,HKG,Hong Kong
 CTU,China,ICN,South Korea
-CTU,China,INC,
+CTU,China,INC,China
 CTU,China,KHI,Pakistan
 CTU,China,KTM,Nepal
 CTU,China,MFM,Macau
@@ -7940,7 +7940,7 @@ DLC,China,HKG,Hong Kong
 DLC,China,ICN,South Korea
 DLC,China,KIX,Japan
 DLC,China,NRT,Japan
-DLC,China,NTG,
+DLC,China,NTG,China
 DUS,Germany,PEK,China
 DXB,United Arab Emirates,PEK,China
 EWR,United States,PEK,China
@@ -7968,7 +7968,7 @@ HFE,China,ICN,South Korea
 HFE,China,MFM,Macau
 HGH,China,HKG,Hong Kong
 HGH,China,ICN,South Korea
-HGH,China,INC,
+HGH,China,INC,China
 HGH,China,KIX,Japan
 HGH,China,MFM,Macau
 HGH,China,NRT,Japan
@@ -8003,18 +8003,18 @@ ICN,South Korea,TNA,China
 ICN,South Korea,TSN,China
 ICN,South Korea,YNJ,China
 ICN,South Korea,YNT,China
-INC,,CGQ,China
-INC,,CKG,China
-INC,,CTU,China
-INC,,HGH,China
-INC,,PEK,China
-INC,,PVG,China
-INC,,SJW,China
-INC,,TNA,China
-INC,,URC,China
-INC,,WUH,China
-INC,,XIY,China
-INC,,XNN,China
+INC,China,CGQ,China
+INC,China,CKG,China
+INC,China,CTU,China
+INC,China,HGH,China
+INC,China,PEK,China
+INC,China,PVG,China
+INC,China,SJW,China
+INC,China,TNA,China
+INC,China,URC,China
+INC,China,WUH,China
+INC,China,XIY,China
+INC,China,XNN,China
 IST,Turkey,CAN,China
 IST,Turkey,PEK,China
 IST,Turkey,PVG,China
@@ -8076,13 +8076,13 @@ NRT,Japan,PVG,China
 NRT,Japan,SHE,China
 NRT,Japan,TAO,China
 NRT,Japan,XMN,China
-NTG,,CAN,China
-NTG,,DLC,China
-NTG,,PEK,China
-NTG,,SHE,China
-NTG,,SZX,China
-NTG,,TSN,China
-NTG,,XMN,China
+NTG,China,CAN,China
+NTG,China,DLC,China
+NTG,China,PEK,China
+NTG,China,SHE,China
+NTG,China,SZX,China
+NTG,China,TSN,China
+NTG,China,XMN,China
 OKA,Japan,PEK,China
 ORD,United States,PEK,China
 ORD,United States,PVG,China
@@ -8112,7 +8112,7 @@ PEK,China,HNL,United States
 PEK,China,IAD,United States
 PEK,China,IAH,United States
 PEK,China,ICN,South Korea
-PEK,China,INC,
+PEK,China,INC,China
 PEK,China,IST,Turkey
 PEK,China,JFK,United States
 PEK,China,JNB,South Africa
@@ -8128,7 +8128,7 @@ PEK,China,MWX,South Korea
 PEK,China,MXP,Italy
 PEK,China,NGO,Japan
 PEK,China,NRT,Japan
-PEK,China,NTG,
+PEK,China,NTG,China
 PEK,China,OKA,Japan
 PEK,China,ORD,United States
 PEK,China,PUS,South Korea
@@ -8155,7 +8155,7 @@ PVG,China,EWR,United States
 PVG,China,FRA,Germany
 PVG,China,FUK,Japan
 PVG,China,HEL,Finland
-PVG,China,INC,
+PVG,China,INC,China
 PVG,China,IST,Turkey
 PVG,China,KIX,Japan
 PVG,China,LAX,United States
@@ -8186,16 +8186,16 @@ SHA,China,TSA,Taiwan
 SHE,China,FRA,Germany
 SHE,China,MFM,Macau
 SHE,China,NRT,Japan
-SHE,China,NTG,
+SHE,China,NTG,China
 SIN,Singapore,CTU,China
 SIN,Singapore,PEK,China
 SIN,Singapore,SZX,China
-SJW,China,INC,
+SJW,China,INC,China
 SVO,Russia,PEK,China
 SYD,Australia,PEK,China
 SYD,Australia,PVG,China
 SZX,China,BKK,Thailand
-SZX,China,NTG,
+SZX,China,NTG,China
 SZX,China,SIN,Singapore
 TAE,South Korea,PEK,China
 TAO,China,ICN,South Korea
@@ -8204,7 +8204,7 @@ TAO,China,NRT,Japan
 TLV,Israel,PEK,China
 TMP,Finland,ARN,Sweden
 TNA,China,ICN,South Korea
-TNA,China,INC,
+TNA,China,INC,China
 TNA,China,KIX,Japan
 TPE,Taiwan,CKG,China
 TPE,Taiwan,CTU,China
@@ -8217,11 +8217,11 @@ TSA,Taiwan,SHA,China
 TSA,Taiwan,TSN,China
 TSN,China,HKG,Hong Kong
 TSN,China,ICN,South Korea
-TSN,China,NTG,
+TSN,China,NTG,China
 TSN,China,TSA,Taiwan
 TYN,China,MFM,Macau
 ULN,Mongolia,PEK,China
-URC,China,INC,
+URC,China,INC,China
 VAA,Finland,ARN,Sweden
 VIE,Austria,BCN,Spain
 VIE,Austria,PEK,China
@@ -8229,13 +8229,13 @@ WAW,Poland,PEK,China
 WNZ,China,TPE,Taiwan
 WUH,China,CNX,Thailand
 WUH,China,HKG,Hong Kong
-WUH,China,INC,
+WUH,China,INC,China
 WUH,China,MFM,Macau
-XIY,China,INC,
+XIY,China,INC,China
 XMN,China,CGK,Indonesia
 XMN,China,MFM,Macau
 XMN,China,NRT,Japan
-XMN,China,NTG,
+XMN,China,NTG,China
 YNJ,China,ICN,South Korea
 YNT,China,ICN,South Korea
 YVR,Canada,PEK,China
@@ -8575,8 +8575,8 @@ UIO,Ecuador,PTY,Panama
 VLN,Venezuela,PTY,Panama
 VVI,Bolivia,PTY,Panama
 YYZ,Canada,PTY,Panama
-INC,,PEK,China
-PEK,China,INC,
+INC,China,PEK,China
+PEK,China,INC,China
 BOG,Colombia,HAV,Cuba
 CCS,Venezuela,HAV,Cuba
 CMW,Cuba,YUL,Canada
@@ -8924,7 +8924,7 @@ CGO,China,BKK,Thailand
 CGO,China,CJU,South Korea
 CGO,China,HKG,Hong Kong
 CGO,China,ICN,South Korea
-CGO,China,INC,
+CGO,China,INC,China
 CGO,China,KHH,Taiwan
 CGO,China,TPE,Taiwan
 CGQ,China,CJU,South Korea
@@ -8942,7 +8942,7 @@ CNX,Thailand,CAN,China
 CSX,China,BKK,Thailand
 CSX,China,CJU,South Korea
 CSX,China,ICN,South Korea
-CSX,China,INC,
+CSX,China,INC,China
 CSX,China,TPE,Taiwan
 CTU,China,AMS,Netherlands
 DAC,Bangladesh,CAN,China
@@ -8974,7 +8974,7 @@ GMP,South Korea,PEK,China
 GYD,Azerbaijan,URC,China
 HAN,Vietnam,CAN,China
 HAN,Vietnam,PEK,China
-HET,China,INC,
+HET,China,INC,China
 HGH,China,AMS,Netherlands
 HGH,China,MFM,Macau
 HKG,Hong Kong,CAN,China
@@ -9006,16 +9006,16 @@ ICN,South Korea,SHE,China
 ICN,South Korea,WUH,China
 ICN,South Korea,YNJ,China
 IKA,Iran,URC,China
-INC,,CGO,China
-INC,,CSX,China
-INC,,HET,China
-INC,,NKG,China
-INC,,PEK,China
-INC,,TYN,China
-INC,,URC,China
-INC,,WUH,China
-INC,,XIY,China
-INC,,XUZ,China
+INC,China,CGO,China
+INC,China,CSX,China
+INC,China,HET,China
+INC,China,NKG,China
+INC,China,PEK,China
+INC,China,TYN,China
+INC,China,URC,China
+INC,China,WUH,China
+INC,China,XIY,China
+INC,China,XUZ,China
 ISB,Pakistan,PEK,China
 ISB,Pakistan,URC,China
 IST,Turkey,URC,China
@@ -9056,7 +9056,7 @@ NBO,Kenya,LUN,Zambia
 NGO,Japan,DLC,China
 NGO,Japan,PVG,China
 NGO,Japan,SHE,China
-NKG,China,INC,
+NKG,China,INC,China
 NNG,China,BKK,Thailand
 NNG,China,TPE,Taiwan
 NRT,Japan,CAN,China
@@ -9064,7 +9064,7 @@ NRT,Japan,CGQ,China
 NRT,Japan,DLC,China
 NRT,Japan,PEK,China
 NRT,Japan,SHE,China
-NTG,,CAN,China
+NTG,China,CAN,China
 OSS,Kyrgyzstan,URC,China
 OVB,Russia,URC,China
 PEK,China,AMS,Netherlands
@@ -9073,7 +9073,7 @@ PEK,China,GMP,South Korea
 PEK,China,HAN,Vietnam
 PEK,China,HKG,Hong Kong
 PEK,China,ICN,South Korea
-PEK,China,INC,
+PEK,China,INC,China
 PEK,China,ISB,Pakistan
 PEK,China,NRT,Japan
 PEK,China,SEA,United States
@@ -9134,14 +9134,14 @@ TPE,Taiwan,SZX,China
 TPE,Taiwan,URC,China
 TPE,Taiwan,WUH,China
 TSE,Kazakhstan,URC,China
-TYN,China,INC,
+TYN,China,INC,China
 URC,China,ALA,Kazakhstan
 URC,China,ASB,Turkmenistan
 URC,China,DYU,Tajikistan
 URC,China,FRU,Kyrgyzstan
 URC,China,GYD,Azerbaijan
 URC,China,IKA,Iran
-URC,China,INC,
+URC,China,INC,China
 URC,China,ISB,Pakistan
 URC,China,IST,Turkey
 URC,China,LBD,Tajikistan
@@ -9156,10 +9156,10 @@ WNH,,KMG,China
 WUH,China,BKK,Thailand
 WUH,China,HKG,Hong Kong
 WUH,China,ICN,South Korea
-WUH,China,INC,
+WUH,China,INC,China
 WUH,China,KHH,Taiwan
 WUH,China,TPE,Taiwan
-XIY,China,INC,
+XIY,China,INC,China
 XMN,China,AMS,Netherlands
 XMN,China,BKK,Thailand
 XMN,China,CGK,Indonesia
@@ -9168,9 +9168,9 @@ XMN,China,KUL,Malaysia
 XMN,China,MFM,Macau
 XMN,China,MNL,Philippines
 XMN,China,SIN,Singapore
-XUZ,China,INC,
+XUZ,China,INC,China
 YNJ,China,ICN,South Korea
-YNZ,China,NTG,
+YNZ,China,NTG,China
 YVR,Canada,CAN,China
 CEE,Russia,HEL,Finland
 HEL,Finland,CEE,Russia
@@ -12156,7 +12156,7 @@ WUH,China,DMK,Thailand
 XIY,China,DMK,Thailand
 CTU,China,KHH,Taiwan
 HFE,China,TPE,Taiwan
-INC,,TPE,Taiwan
+INC,China,TPE,Taiwan
 KHH,Taiwan,CTU,China
 KHH,Taiwan,NNG,China
 KWE,China,TPE,Taiwan
@@ -12164,7 +12164,7 @@ NNG,China,KHH,Taiwan
 NNG,China,TSA,Taiwan
 SJW,China,TPE,Taiwan
 TPE,Taiwan,HFE,China
-TPE,Taiwan,INC,
+TPE,Taiwan,INC,China
 TPE,Taiwan,KWE,China
 TPE,Taiwan,SJW,China
 TSA,Taiwan,NNG,China
@@ -12344,7 +12344,7 @@ HKG,Hong Kong,SHA,China
 HKT,Thailand,PVG,China
 HND,Japan,SHA,China
 ICN,South Korea,PVG,China
-INC,,PVG,China
+INC,China,PVG,China
 KIX,Japan,PVG,China
 MFM,Macau,PVG,China
 MFM,Macau,SHA,China
@@ -12356,13 +12356,13 @@ PVG,China,BKK,Thailand
 PVG,China,HKG,Hong Kong
 PVG,China,HKT,Thailand
 PVG,China,ICN,South Korea
-PVG,China,INC,
+PVG,China,INC,China
 PVG,China,KIX,Japan
 PVG,China,MFM,Macau
 PVG,China,PUS,South Korea
 PVG,China,TOY,Japan
 PVG,China,TSA,Taiwan
-PVG,China,TVS,
+PVG,China,TVS,China
 SHA,China,GMP,South Korea
 SHA,China,HKG,Hong Kong
 SHA,China,HND,Japan
@@ -12372,7 +12372,7 @@ TAO,China,PUS,South Korea
 TOY,Japan,PVG,China
 TSA,Taiwan,PVG,China
 TSA,Taiwan,SHA,China
-TVS,,PVG,China
+TVS,China,PVG,China
 ADE,Yemen,AHB,Saudi Arabia
 ADE,Yemen,DMM,Saudi Arabia
 ADE,Yemen,MGQ,Somalia
@@ -14832,14 +14832,14 @@ SDQ,Dominican Republic,GRU,Brazil
 SDQ,Dominican Republic,MCO,United States
 SDQ,Dominican Republic,MIA,United States
 VVI,Bolivia,GRU,Brazil
-CKG,China,INC,
-DLC,China,TVS,
-INC,,CKG,China
-INC,,JGN,China
-JGN,China,INC,
-SJW,China,TVS,
-TVS,,DLC,China
-TVS,,SJW,China
+CKG,China,INC,China
+DLC,China,TVS,China
+INC,China,CKG,China
+INC,China,JGN,China
+JGN,China,INC,China
+SJW,China,TVS,China
+TVS,China,DLC,China
+TVS,China,SJW,China
 AHB,Saudi Arabia,SHJ,United Arab Emirates
 ALA,Kazakhstan,SHJ,United Arab Emirates
 AMD,India,SHJ,United Arab Emirates
@@ -15299,21 +15299,21 @@ SOU,United Kingdom,ACI,Guernsey
 STN,United Kingdom,GCI,Guernsey
 STN,United Kingdom,JER,Jersey
 CJU,South Korea,TSN,China
-DSN,China,INC,
+DSN,China,INC,China
 ICN,South Korea,TSN,China
-INC,,DSN,China
-INC,,KWE,China
-INC,,LHW,China
-INC,,RLK,China
-INC,,TYN,China
-KWE,China,INC,
-LHW,China,INC,
+INC,China,DSN,China
+INC,China,KWE,China
+INC,China,LHW,China
+INC,China,RLK,China
+INC,China,TYN,China
+KWE,China,INC,China
+LHW,China,INC,China
 MWX,South Korea,TSN,China
-RLK,China,INC,
+RLK,China,INC,China
 TSN,China,CJU,South Korea
 TSN,China,ICN,South Korea
 TSN,China,MWX,South Korea
-TYN,China,INC,
+TYN,China,INC,China
 AKN,United States,KCG,
 AKN,United States,KLL,
 KCQ,,KPV,United States
@@ -15505,7 +15505,7 @@ CJU,South Korea,PVG,China
 CNX,Thailand,PVG,China
 HKG,Hong Kong,PVG,China
 HKT,Thailand,PVG,China
-INC,,PVG,China
+INC,China,PVG,China
 KHH,Taiwan,PVG,China
 KIX,Japan,PVG,China
 MFM,Macau,PVG,China
@@ -15515,14 +15515,14 @@ PVG,China,CJU,South Korea
 PVG,China,CNX,Thailand
 PVG,China,HKG,Hong Kong
 PVG,China,HKT,Thailand
-PVG,China,INC,
+PVG,China,INC,China
 PVG,China,KHH,Taiwan
 PVG,China,KIX,Japan
 PVG,China,MFM,Macau
 PVG,China,OKA,Japan
 PVG,China,TPE,Taiwan
 PVG,China,YNY,South Korea
-SHA,China,INC,
+SHA,China,INC,China
 TPE,Taiwan,PVG,China
 YNY,South Korea,PVG,China
 ADB,Turkey,CDG,France
@@ -15630,7 +15630,7 @@ BRU,Belgium,MXP,Italy
 BRU,Belgium,PEK,China
 BRU,Belgium,TXL,Germany
 CAN,China,TPE,Taiwan
-CAN,China,TVS,
+CAN,China,TVS,China
 CKG,China,HKG,Hong Kong
 CPH,Denmark,BRU,Belgium
 CPH,Denmark,TXL,Germany
@@ -15656,7 +15656,7 @@ HKG,Hong Kong,PEK,China
 HKT,Thailand,PEK,China
 HTA,Russia,NZH,China
 IKT,Russia,NZH,China
-INC,,XIY,China
+INC,China,XIY,China
 JNB,South Africa,AUH,United Arab Emirates
 KHV,Russia,PEK,China
 KJA,Russia,PEK,China
@@ -15683,7 +15683,7 @@ PEK,China,BKK,Thailand
 PEK,China,BRU,Belgium
 PEK,China,HKG,Hong Kong
 PEK,China,HKT,Thailand
-PEK,China,INC,
+PEK,China,INC,China
 PEK,China,KHV,Russia
 PEK,China,KJA,Russia
 PEK,China,LED,Russia
@@ -15709,7 +15709,7 @@ TPE,Taiwan,HAK,China
 TPE,Taiwan,LHW,China
 TPE,Taiwan,PEK,China
 TPE,Taiwan,XIY,China
-TVS,,CAN,China
+TVS,China,CAN,China
 TXL,Germany,ARN,Sweden
 TXL,Germany,BRU,Belgium
 TXL,Germany,CPH,Denmark
@@ -15720,7 +15720,7 @@ TXL,Germany,VIE,Austria
 TXL,Germany,ZRH,Switzerland
 URC,China,OVB,Russia
 VIE,Austria,TXL,Germany
-XIY,China,INC,
+XIY,China,INC,China
 XIY,China,TPE,Taiwan
 YYZ,Canada,PEK,China
 ZRH,Switzerland,TXL,Germany
@@ -17809,11 +17809,11 @@ ZAD,Croatia,WAW,Poland
 ZRH,Switzerland,GDN,Poland
 ZRH,Switzerland,KRK,Poland
 ZRH,Switzerland,WRO,Poland
-CGA,,KLW,United States
+CGA,United States,KLW,United States
 EDA,,KTN,United States
 KTN,United States,KCC,
 KTN,United States,KPB,
-KTN,United States,KTB,
+KTN,United States,KTB,United States
 PPV,,KTN,United States
 BKK,Thailand,PNH,Cambodia
 BKK,Thailand,REP,Cambodia
@@ -19063,8 +19063,8 @@ MIA,United States,CYB,Cayman Islands
 MIA,United States,GCM,Cayman Islands
 ORD,United States,GCM,Cayman Islands
 TPA,United States,GCM,Cayman Islands
-CKG,China,NTG,
-NTG,,CKG,China
+CKG,China,NTG,China
+NTG,China,CKG,China
 ABJ,Cote d'Ivoire,BKO,Mali
 ABJ,Cote d'Ivoire,COO,Benin
 BKO,Mali,ABJ,Cote d'Ivoire
@@ -20254,16 +20254,16 @@ BEN,Libya,CAI,Egypt
 BEN,Libya,CMN,Morocco
 BEN,Libya,HBE,Egypt
 BEN,Libya,IST,Turkey
-BEN,Libya,MRA,
+BEN,Libya,MRA,Libya
 BEN,Libya,SFA,Tunisia
 BEN,Libya,TUN,Tunisia
 CAI,Egypt,BEN,Libya
-CAI,Egypt,MRA,
+CAI,Egypt,MRA,Libya
 CAI,Egypt,TIP,Libya
 CMN,Morocco,BEN,Libya
 CMN,Morocco,TIP,Libya
 HBE,Egypt,BEN,Libya
-HBE,Egypt,MRA,
+HBE,Egypt,MRA,Libya
 HBE,Egypt,TIP,Libya
 HBE,Egypt,TOB,Libya
 IST,Turkey,BEN,Libya
@@ -20273,14 +20273,14 @@ LHR,United Kingdom,TIP,Libya
 MAD,Spain,TIP,Libya
 MAN,United Kingdom,TIP,Libya
 MLA,Malta,TIP,Libya
-MRA,,BEN,Libya
-MRA,,CAI,Egypt
-MRA,,HBE,Egypt
-MRA,,SFA,Tunisia
-MRA,,TUN,Tunisia
+MRA,Libya,BEN,Libya
+MRA,Libya,CAI,Egypt
+MRA,Libya,HBE,Egypt
+MRA,Libya,SFA,Tunisia
+MRA,Libya,TUN,Tunisia
 QUB,,TIP,Libya
 SFA,Tunisia,BEN,Libya
-SFA,Tunisia,MRA,
+SFA,Tunisia,MRA,Libya
 SFA,Tunisia,TIP,Libya
 SRX,Libya,TUN,Tunisia
 TIP,Libya,ALG,Algeria
@@ -20300,7 +20300,7 @@ TOB,Libya,HBE,Egypt
 TOB,Libya,TUN,Tunisia
 TUN,Tunisia,BEN,Libya
 TUN,Tunisia,LAQ,Libya
-TUN,Tunisia,MRA,
+TUN,Tunisia,MRA,Libya
 TUN,Tunisia,SRX,Libya
 TUN,Tunisia,TIP,Libya
 TUN,Tunisia,TOB,Libya
@@ -20414,8 +20414,8 @@ MGA,Nicaragua,SAL,El Salvador
 MGA,Nicaragua,SJO,Costa Rica
 SAL,El Salvador,MGA,Nicaragua
 SJO,Costa Rica,MGA,Nicaragua
-SJO,Costa Rica,TNO,
-TNO,,SJO,Costa Rica
+SJO,Costa Rica,TNO,Costa Rica
+TNO,Costa Rica,SJO,Costa Rica
 ACE,Spain,BFS,United Kingdom
 ACE,Spain,BLK,United Kingdom
 ACE,Spain,EMA,United Kingdom
@@ -21204,7 +21204,7 @@ BKK,Thailand,XMN,China
 CGK,Indonesia,FOC,China
 CGK,Indonesia,SIN,Singapore
 CGK,Indonesia,XMN,China
-CGO,China,INC,
+CGO,China,INC,China
 CJU,South Korea,FOC,China
 CJU,South Korea,XMN,China
 CSX,China,TPE,Taiwan
@@ -21223,9 +21223,9 @@ HKG,Hong Kong,JJN,China
 HKG,Hong Kong,WUS,China
 HKG,Hong Kong,XMN,China
 ICN,South Korea,XMN,China
-INC,,CGO,China
-INC,,WUH,China
-INC,,XIY,China
+INC,China,CGO,China
+INC,China,WUH,China
+INC,China,XIY,China
 JJN,China,HKG,Hong Kong
 JJN,China,MFM,Macau
 JJN,China,TPE,Taiwan
@@ -21247,9 +21247,9 @@ TPE,Taiwan,JJN,China
 TPE,Taiwan,XMN,China
 TSA,Taiwan,FOC,China
 TSA,Taiwan,XMN,China
-WUH,China,INC,
+WUH,China,INC,China
 WUS,China,HKG,Hong Kong
-XIY,China,INC,
+XIY,China,INC,China
 XMN,China,BKK,Thailand
 XMN,China,CGK,Indonesia
 XMN,China,CJU,South Korea
@@ -21870,7 +21870,7 @@ CDG,France,PEK,China
 CDG,France,PVG,China
 CEI,Thailand,KMG,China
 CGK,Indonesia,PVG,China
-CGO,China,INC,
+CGO,China,INC,China
 CHC,New Zealand,SYD,Australia
 CJJ,South Korea,HGH,China
 CJU,South Korea,NGB,China
@@ -21913,7 +21913,7 @@ HIJ,Japan,PVG,China
 HKG,Hong Kong,HFE,China
 HKG,Hong Kong,HGH,China
 HKG,Hong Kong,HIA,China
-HKG,Hong Kong,INC,
+HKG,Hong Kong,INC,China
 HKG,Hong Kong,KHN,China
 HKG,Hong Kong,KMG,China
 HKG,Hong Kong,LJG,China
@@ -21944,15 +21944,15 @@ ICN,South Korea,TAO,China
 ICN,South Korea,WUH,China
 ICN,South Korea,XIY,China
 ICN,South Korea,YNT,China
-INC,,CGO,China
-INC,,HKG,Hong Kong
-INC,,KMG,China
-INC,,NKG,China
-INC,,PEK,China
-INC,,PVG,China
-INC,,TPE,Taiwan
-INC,,URC,China
-INC,,XIY,China
+INC,China,CGO,China
+INC,China,HKG,Hong Kong
+INC,China,KMG,China
+INC,China,NKG,China
+INC,China,PEK,China
+INC,China,PVG,China
+INC,China,TPE,Taiwan
+INC,China,URC,China
+INC,China,XIY,China
 JFK,United States,PVG,China
 KHH,Taiwan,KHN,China
 KHH,Taiwan,NKG,China
@@ -21976,7 +21976,7 @@ KMG,China,DXB,United Arab Emirates
 KMG,China,HKG,Hong Kong
 KMG,China,HKT,Thailand
 KMG,China,ICN,South Korea
-KMG,China,INC,
+KMG,China,INC,China
 KMG,China,KTM,Nepal
 KMG,China,MDL,Burma
 KMG,China,MFM,Macau
@@ -22019,7 +22019,7 @@ NGO,Japan,TSN,China
 NGS,Japan,PVG,China
 NKG,China,HKG,Hong Kong
 NKG,China,ICN,South Korea
-NKG,China,INC,
+NKG,China,INC,China
 NKG,China,KHH,Taiwan
 NKG,China,KIX,Japan
 NKG,China,NRT,Japan
@@ -22043,7 +22043,7 @@ PEK,China,CDG,France
 PEK,China,CJU,South Korea
 PEK,China,DTW,United States
 PEK,China,HND,Japan
-PEK,China,INC,
+PEK,China,INC,China
 PEK,China,NRT,Japan
 PEK,China,SEA,United States
 PEK,China,SPN,Northern Mariana Islands
@@ -22072,7 +22072,7 @@ PVG,China,HKG,Hong Kong
 PVG,China,HKT,Thailand
 PVG,China,HNL,United States
 PVG,China,ICN,South Korea
-PVG,China,INC,
+PVG,China,INC,China
 PVG,China,JFK,United States
 PVG,China,KIJ,Japan
 PVG,China,KIX,Japan
@@ -22103,7 +22103,7 @@ PVG,China,SYD,Australia
 PVG,China,TAE,South Korea
 PVG,China,TOY,Japan
 PVG,China,TPE,Taiwan
-PVG,China,TVS,
+PVG,China,TVS,China
 PVG,China,YVR,Canada
 REP,Cambodia,KMG,China
 REP,Cambodia,PVG,China
@@ -22145,7 +22145,7 @@ TAO,China,TPE,Taiwan
 TNA,China,HKG,Hong Kong
 TOY,Japan,PVG,China
 TPE,Taiwan,HFE,China
-TPE,Taiwan,INC,
+TPE,Taiwan,INC,China
 TPE,Taiwan,KHN,China
 TPE,Taiwan,KMG,China
 TPE,Taiwan,NGB,China
@@ -22161,10 +22161,10 @@ TPE,Taiwan,XUZ,China
 TPE,Taiwan,YNZ,China
 TSA,Taiwan,SHA,China
 TSN,China,NGO,Japan
-TVS,,PVG,China
+TVS,China,PVG,China
 TYN,China,HKG,Hong Kong
 TYN,China,TPE,Taiwan
-URC,China,INC,
+URC,China,INC,China
 VTE,Laos,KMG,China
 VTE,Laos,NNG,China
 WLG,New Zealand,MEL,Australia
@@ -22181,7 +22181,7 @@ WUX,China,SIN,Singapore
 WUX,China,TPE,Taiwan
 XIY,China,HKG,Hong Kong
 XIY,China,ICN,South Korea
-XIY,China,INC,
+XIY,China,INC,China
 XIY,China,TPE,Taiwan
 XUZ,China,TPE,Taiwan
 YNT,China,HKG,Hong Kong
@@ -25050,7 +25050,7 @@ AMM,Jordan,LOS,Nigeria
 AMM,Jordan,MAD,Spain
 AMM,Jordan,MCT,Oman
 AMM,Jordan,MED,Saudi Arabia
-AMM,Jordan,MRA,
+AMM,Jordan,MRA,Libya
 AMM,Jordan,MUC,Germany
 AMM,Jordan,ORD,United States
 AMM,Jordan,OSM,Iraq
@@ -25106,7 +25106,7 @@ LOS,Nigeria,AMM,Jordan
 MAD,Spain,AMM,Jordan
 MCT,Oman,AMM,Jordan
 MED,Saudi Arabia,AMM,Jordan
-MRA,,AMM,Jordan
+MRA,Libya,AMM,Jordan
 MUC,Germany,AMM,Jordan
 MUC,Germany,VIE,Austria
 MXP,Italy,VIE,Austria
@@ -25233,8 +25233,8 @@ DAC,Bangladesh,KUL,Malaysia
 DAC,Bangladesh,SIN,Singapore
 KUL,Malaysia,DAC,Bangladesh
 SIN,Singapore,DAC,Bangladesh
-SJO,Costa Rica,TNO,
-TNO,,SJO,Costa Rica
+SJO,Costa Rica,TNO,Costa Rica
+TNO,Costa Rica,SJO,Costa Rica
 CCS,Venezuela,MIA,United States
 CCS,Venezuela,PTY,Panama
 CCS,Venezuela,TFN,Spain
@@ -25646,19 +25646,19 @@ HUN,Taiwan,TNA,China
 ICN,South Korea,TAO,China
 ICN,South Korea,TNA,China
 ICN,South Korea,YNT,China
-INC,,PEK,China
-INC,,SJW,China
-INC,,TNA,China
-INC,,URC,China
-INC,,WUH,China
-INC,,XNN,China
+INC,China,PEK,China
+INC,China,SJW,China
+INC,China,TNA,China
+INC,China,URC,China
+INC,China,WUH,China
+INC,China,XNN,China
 KIX,Japan,TAO,China
 KIX,Japan,TNA,China
 NRT,Japan,TAO,China
-PEK,China,INC,
+PEK,China,INC,China
 RMQ,Taiwan,TAO,China
 RMQ,Taiwan,TNA,China
-SJW,China,INC,
+SJW,China,INC,China
 TAO,China,BKK,Thailand
 TAO,China,ICN,South Korea
 TAO,China,KIX,Japan
@@ -25668,16 +25668,16 @@ TAO,China,TPE,Taiwan
 TNA,China,BKK,Thailand
 TNA,China,HUN,Taiwan
 TNA,China,ICN,South Korea
-TNA,China,INC,
+TNA,China,INC,China
 TNA,China,KIX,Japan
 TNA,China,RMQ,Taiwan
 TNA,China,TPE,Taiwan
 TPE,Taiwan,TAO,China
 TPE,Taiwan,TNA,China
 TPE,Taiwan,YNT,China
-URC,China,INC,
-WUH,China,INC,
-XNN,China,INC,
+URC,China,INC,China
+WUH,China,INC,China
+XNN,China,INC,China
 YNT,China,ICN,South Korea
 YNT,China,TPE,Taiwan
 ADD,Ethiopia,KRT,Sudan
@@ -27991,7 +27991,7 @@ IST,Turkey,MED,Saudi Arabia
 IST,Turkey,MHD,Iran
 IST,Turkey,MLA,Malta
 IST,Turkey,MLE,Maldives
-IST,Turkey,MRA,
+IST,Turkey,MRA,Libya
 IST,Turkey,MRS,France
 IST,Turkey,MSQ,Belarus
 IST,Turkey,MUC,Germany
@@ -28111,7 +28111,7 @@ MLA,Malta,IST,Turkey
 MLA,Malta,SAW,Turkey
 MLE,Maldives,CMB,Sri Lanka
 MLE,Maldives,IST,Turkey
-MRA,,IST,Turkey
+MRA,Libya,IST,Turkey
 MRS,France,IST,Turkey
 MSQ,Belarus,IST,Turkey
 MUC,Germany,IST,Turkey
@@ -29349,7 +29349,7 @@ MIR,Tunisia,LYS,France
 MIR,Tunisia,MRS,France
 MIR,Tunisia,NCE,France
 MIR,Tunisia,ORY,France
-MRA,,TUN,Tunisia
+MRA,Libya,TUN,Tunisia
 MRS,France,DJE,Tunisia
 MRS,France,MIR,Tunisia
 MRS,France,TUN,Tunisia
@@ -29413,7 +29413,7 @@ TUN,Tunisia,LIS,Portugal
 TUN,Tunisia,LYS,France
 TUN,Tunisia,MAD,Spain
 TUN,Tunisia,MED,Saudi Arabia
-TUN,Tunisia,MRA,
+TUN,Tunisia,MRA,Libya
 TUN,Tunisia,MRS,France
 TUN,Tunisia,MUC,Germany
 TUN,Tunisia,MXP,Italy
@@ -29436,10 +29436,10 @@ VIE,Austria,TUN,Tunisia
 ZRH,Switzerland,DJE,Tunisia
 ZRH,Switzerland,NBE,Tunisia
 ZRH,Switzerland,TUN,Tunisia
-INC,,LXA,China
-INC,,PEK,China
-LXA,China,INC,
-PEK,China,INC,
+INC,China,LXA,China
+INC,China,PEK,China
+LXA,China,INC,China
+PEK,China,INC,China
 BKK,Thailand,ICN,South Korea
 CTS,Japan,ICN,South Korea
 FUK,Japan,ICN,South Korea
@@ -35128,12 +35128,12 @@ MYY,Malaysia,MNL,Philippines
 PUS,South Korea,KLO,Philippines
 PVG,China,MNL,Philippines
 TPE,Taiwan,KLO,Philippines
-CGA,,KLW,United States
-CGA,,KTN,United States
-HYL,,KTN,United States
-KLW,United States,CGA,
-KTN,United States,CGA,
-KTN,United States,HYL,
+CGA,United States,KLW,United States
+CGA,United States,KTN,United States
+HYL,United States,KTN,United States
+KLW,United States,CGA,United States
+KTN,United States,CGA,United States
+KTN,United States,HYL,United States
 KTN,United States,KWF,
 KWF,,KTN,United States
 ADA,Turkey,EBL,Iraq
@@ -35404,23 +35404,23 @@ ADD,Ethiopia,CAN,China
 BKK,Thailand,SZX,China
 CAN,China,ADD,Ethiopia
 CAN,China,NRT,Japan
-CAN,China,NTG,
-CGQ,China,INC,
-CKG,China,INC,
-CKG,China,NTG,
-CTU,China,INC,
-DLC,China,NTG,
+CAN,China,NTG,China
+CGQ,China,INC,China
+CKG,China,INC,China
+CKG,China,NTG,China
+CTU,China,INC,China
+DLC,China,NTG,China
 FOC,China,KIX,Japan
-HGH,China,INC,
+HGH,China,INC,China
 HKG,Hong Kong,JJN,China
 ICN,South Korea,SZX,China
-INC,,CGQ,China
-INC,,CKG,China
-INC,,CTU,China
-INC,,HGH,China
-INC,,PEK,China
-INC,,PVG,China
-INC,,XIY,China
+INC,China,CGQ,China
+INC,China,CKG,China
+INC,China,CTU,China
+INC,China,HGH,China
+INC,China,PEK,China
+INC,China,PVG,China
+INC,China,XIY,China
 JJN,China,HKG,Hong Kong
 KIX,Japan,FOC,China
 KIX,Japan,WUX,China
@@ -35428,36 +35428,36 @@ MFM,Macau,WUX,China
 NNG,China,TPE,Taiwan
 NRT,Japan,CAN,China
 NRT,Japan,XMN,China
-NTG,,CAN,China
-NTG,,CKG,China
-NTG,,DLC,China
-NTG,,PEK,China
-NTG,,SHE,China
-NTG,,SZX,China
-NTG,,TSN,China
-NTG,,XMN,China
-PEK,China,INC,
-PEK,China,NTG,
-PVG,China,INC,
-SHE,China,NTG,
+NTG,China,CAN,China
+NTG,China,CKG,China
+NTG,China,DLC,China
+NTG,China,PEK,China
+NTG,China,SHE,China
+NTG,China,SZX,China
+NTG,China,TSN,China
+NTG,China,XMN,China
+PEK,China,INC,China
+PEK,China,NTG,China
+PVG,China,INC,China
+SHE,China,NTG,China
 SHE,China,TPE,Taiwan
 SIN,Singapore,SZX,China
 SZX,China,BKK,Thailand
 SZX,China,ICN,South Korea
-SZX,China,NTG,
+SZX,China,NTG,China
 SZX,China,SIN,Singapore
 SZX,China,TPE,Taiwan
 TPE,Taiwan,NNG,China
 TPE,Taiwan,SHE,China
 TPE,Taiwan,SZX,China
 TPE,Taiwan,WUX,China
-TSN,China,NTG,
+TSN,China,NTG,China
 WUX,China,KIX,Japan
 WUX,China,MFM,Macau
 WUX,China,TPE,Taiwan
-XIY,China,INC,
+XIY,China,INC,China
 XMN,China,NRT,Japan
-XMN,China,NTG,
+XMN,China,NTG,China
 AAE,Algeria,MRS,France
 AAE,Algeria,ORY,France
 ALG,Algeria,CDG,France
