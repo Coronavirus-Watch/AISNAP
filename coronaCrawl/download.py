@@ -72,7 +72,7 @@ def special_rows(row_elements):
         writer.writerow(row_elements)
 
 # Opens the csv file to write to
-with open('coronaCountries', 'w', newline='') as file:
+with open('coronaCountries.txt', 'w', newline='') as file:
     # Opens the writer
     writer = csv.writer(file)
     # Writes the title row
