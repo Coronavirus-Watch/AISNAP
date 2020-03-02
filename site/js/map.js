@@ -66,9 +66,13 @@ fetch('js/countries.txt')
 						id: 'route',
 						type: 'line',
 						source: 'route',
+						layout: {
+							'line-cap': 'square',
+						},
 						paint: {
-							'line-color': '#fff',
-							'line-width': 0.1
+							'line-color': '#aaa',
+							'line-width': 1,
+							'line-opacity': 0.1
 						}
 					});
 				});
@@ -109,9 +113,9 @@ function displayMap(countries) {
 		let array = [country[1].lon, country[1].lat];
 		let popup = new mapboxgl.Popup({ offset: 25 }).setText(country[0]);
 
-		let marker = new mapboxgl.Marker().setLngLat(array).setPopup(popup);
-		marker.className = "marker";
-		marker.addTo(map);
+		// let marker = new mapboxgl.Marker().setLngLat(array).setPopup(popup);
+		// marker.className = "marker";
+		// marker.addTo(map);
 	});
 
 	// Prevents map from looking stupid
