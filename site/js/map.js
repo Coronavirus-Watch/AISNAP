@@ -17,7 +17,7 @@ let map = new mapboxgl.Map({
 // Stores the countries
 let countries = {};
 // Fetches Location Data of Countries
-fetch('js/countries.txt')
+fetch('../data/countries.txt')
 	.then(res => res.text())
 	.then(res => {
 		// Parses the text
@@ -25,7 +25,7 @@ fetch('js/countries.txt')
 		// Displays the map
 		displayMap(countries);
 		map.on('load', function drawRoutes() {
-			fetch('js/parsedDomesticsOutput.txt')
+			fetch('../data/parsedDomesticsOutput.txt')
 				.then(res => res.text())
 				.then(res => {
 					const lines = res.split('\n');

@@ -47,7 +47,7 @@ class Country {
 
 function getCoronaStats() {
     // Fetches Location Data of Countries
-    fetch('../coronaCrawl/coronaCountries.txt')
+    fetch('../data/coronaCountries.txt')
         .then(res => res.text())
         .then(res => {
             // Parses the text
