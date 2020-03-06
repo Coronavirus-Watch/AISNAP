@@ -10,7 +10,7 @@ namespace AIParsing
     {
         static void Main(string[] args)
         {
-            parseFile();
+           // parseFile();
             clearDomestic();
             
         }
@@ -137,7 +137,7 @@ namespace AIParsing
     
         static void clearDomestic()
         {
-            string filepath = "../../../Resources/parsedOutput.txt";
+            string filepath = "../../../Resources/parsedDomesticsOutput.txt";
             var info = new System.IO.FileInfo(filepath);
             if (info.Length == 0)
             {
@@ -158,7 +158,7 @@ namespace AIParsing
                 int domestics = 0;
                 for (int i = 0; i < inputList.Count(); i++)
                 {
-                    if (string.Compare(inputList[i][1],inputList[i][3]) == 0)
+                    if (string.Compare(inputList[i][1],inputList[i][3]) == 0 || string.Compare(inputList[i][1],"") == 0 || string.Compare(inputList[i][3], "") == 0)
                     {
                         inputList.RemoveAt(i);
                         i--;
