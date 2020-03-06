@@ -1,0 +1,97 @@
+Country,Total Cases,New Cases,Total Deaths,New Deaths,Total Recovered,Serious
+China,80576,24,3042,0,23605,53929,5737
+S. Korea,6593,309,43,1,6415,135,52
+Iran,4747,1234,124,16,3710,913,0
+Italy,4636,778,197,49,3916,523,462
+Germany,670,125,0,0,653,17,8
+France,653,230,9,2,632,12,23
+Japan,1116,56,12,0,846,258,68
+Spain,400,118,8,5,389,3,9
+USA,309,88,15,3,279,15,8
+Switzerland,214,94,1,0,210,3,0
+UK,164,48,2,1,144,18,0
+Sweden,137,43,0,0,136,1,0
+Singapore,130,13,0,0,48,82,9
+Netherlands,128,46,1,1,127,0,1
+Norway,127,33,0,0,126,1,0
+Belgium,109,59,0,0,108,1,1
+Hong Kong,108,3,2,0,55,51,6
+Malaysia,83,28,0,0,60,23,0
+Austria,66,23,0,0,64,2,1
+Australia,63,3,2,0,39,22,1
+Bahrain,60,5,0,0,56,4,0
+Kuwait,58,0,0,0,57,1,0
+Canada,51,14,0,0,43,8,1
+Iraq,48,8,4,1,43,1,0
+Thailand,48,1,1,0,16,31,1
+Taiwan,45,1,1,0,29,15,0
+Greece,45,14,0,0,45,0,1
+UAE,45,17,0,0,40,5,2
+Iceland,43,8,0,0,43,0,0
+India,31,1,0,0,28,3,0
+San Marino,23,2,1,0,22,0,4
+Denmark,23,3,0,0,22,1,0
+Lebanon,22,6,0,0,22,0,1
+Israel,21,4,0,0,19,2,0
+Czechia,19,7,0,0,19,0,0
+Ireland,18,5,0,0,18,0,0
+Algeria,17,0,0,0,17,0,0
+Vietnam,17,1,0,0,1,16,0
+Oman,16,0,0,0,14,2,0
+Palestine,16,9,0,0,16,0,0
+Egypt,15,12,0,0,14,1,0
+Finland,15,3,0,0,14,1,0
+Brazil,13,5,0,0,13,0,0
+Ecuador,13,0,0,0,13,0,1
+Portugal,13,4,0,0,13,0,0
+Russia,13,6,0,0,11,2,0
+Croatia,11,1,0,0,11,0,0
+Qatar,11,3,0,0,11,0,0
+Macao,10,0,0,0,1,9,0
+Estonia,10,5,0,0,10,0,0
+Georgia,9,0,0,0,9,0,1
+Romania,9,3,0,0,6,3,0
+Argentina,8,6,0,0,8,0,0
+Slovenia,8,2,0,0,8,0,0
+Azerbaijan,6,0,0,0,6,0,0
+Belarus,6,0,0,0,6,0,0
+Mexico,6,0,0,0,5,1,0
+Pakistan,6,1,0,0,5,1,0
+Philippines,5,2,1,0,2,2,1
+Saudi Arabia,5,0,0,0,4,1,0
+Chile,5,1,0,0,5,0,0
+Poland,5,4,0,0,5,0,0
+Indonesia,4,2,0,0,4,0,0
+New Zealand,4,0,0,0,4,0,0
+Senegal,4,0,0,0,4,0,0
+Hungary,4,0,0,0,4,0,0
+Luxembourg,3,1,0,0,3,0,0
+North Macedonia,3,2,0,0,3,0,0
+Bosnia and Herzegovina,3,1,0,0,3,0,0
+Dominican Republic,2,1,0,0,2,0,0
+Morocco,2,0,0,0,2,0,1
+Afghanistan,1,0,0,0,1,0,0
+Andorra,1,0,0,0,1,0,0
+Armenia,1,0,0,0,1,0,0
+Cambodia,1,0,0,0,0,1,0
+Jordan,1,0,0,0,1,0,0
+Latvia,1,0,0,0,0,1,0
+Lithuania,1,0,0,0,1,0,0
+Monaco,1,0,0,0,1,0,0
+Nepal,1,0,0,0,0,1,0
+Nigeria,1,0,0,0,1,0,0
+Sri Lanka,1,0,0,0,0,1,0
+Tunisia,1,0,0,0,1,0,0
+Ukraine,1,0,0,0,1,0,0
+Bhutan,1,1,0,0,1,0,0
+Cameroon,1,1,0,0,1,0,0
+Colombia,1,1,0,0,1,0,0
+Costa Rica,1,0,0,0,1,0,0
+Gibraltar,1,0,0,0,1,0,1
+Vatican City,1,1,0,0,1,0,0
+Liechtenstein,1,0,0,0,1,0,0
+Peru,1,1,0,0,1,0,0
+Serbia,1,1,0,0,1,0,0
+Slovakia,1,1,0,0,1,0,0
+South Africa,1,0,0,0,1,0,0
+Togo,1,1,0,0,1,0,0
