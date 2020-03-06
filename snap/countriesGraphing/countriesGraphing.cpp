@@ -29,8 +29,9 @@ int plotGraph(TNodeEDatNet<TNodeData, TEdgeData> &G);
 int traverseNodes(TNodeEDatNet<TNodeData, TEdgeData> &G);
 int traverseEdges(TNodeEDatNet<TNodeData, TEdgeData> &G);
 int traverseGraph(TNodeEDatNet<TNodeData, TEdgeData> &G);
-PNGraph getNodes(PNGraph G,vector<Route> list);
-PNGraph getEdges(PNGraph G,vector<Route> list);
+int saveGraph(TNodeEDatNet<TNodeData, TEdgeData> &G);
+
+
 vector<Route> getInput();
 int addRoute(TNodeEDatNet<TNodeData, TEdgeData> &graph, std::vector<Route> list);
 int hashFunction(string str);
@@ -43,7 +44,12 @@ int main(int argc, char* argv[])
   vector<Route> list =  getInput();
   addRoute(variableGraph,list);
   plotGraph(variableGraph);
+
+  //  string i1 = "Rawr\n", i2 = "Rawr";
+  //   cout << "1st:" <<  i1 << " " << i1.length() << " & 2nd:" << i2 << " " << i2.length() << endl;
+
   traverseGraph(variableGraph);
+  saveGraph(variableGraph);
   
   
 
@@ -96,7 +102,7 @@ vector<Route> getInput()
             r1.destinationAirport = temp;
             // cout << temp +",";
             getline(s_stream, temp, ',');
-            r1.destinationCountry = temp;
+            r1.destinationCountry = temp.substr(0,temp.length()-1);
             // cout << temp << endl;
 
             inputList.push_back(r1);
@@ -128,6 +134,14 @@ int addRoute(TNodeEDatNet<TNodeData, TEdgeData> &graph, std::vector<Route> list)
 		// Adds country to graph if they aren't already added
     TNodeData *source = new TNodeData(idSource, list[i].sourceCountry);
 		TNodeData *destination = new TNodeData(idDestination, list[i].destinationCountry);
+
+
+
+
+   
+    // cout << "Source: " << list[i].sourceCountry << "-" << list[i].sourceCountry.length() << "|";
+    // cout << " Destination: " << list[i].destinationCountry << "-" << list[i].destinationCountry.length() << endl;
+
 
     if (!graph.IsNode(idSource)) {
       graph.AddNode(idSource, *source);
@@ -221,6 +235,12 @@ int traverseEdges(TNodeEDatNet<TNodeData, TEdgeData> &G)
 int saveGraph(TNodeEDatNet<TNodeData, TEdgeData> &G)
 {
   //  TSnap::SaveEdgeList(G, "graphTextOut.txt", "Tab-separated list of edges");
+  // TSnap::SaveEdgeListNet(G,"networkTextOut.txt","Reeee");
+  TFOut FOut("test.graph");
+  G.Save(FOut);
+  // TSnap::SaveEdgeList<TNodeEDatNet<TNodeData, TEdgeData> >(G,"networkTextOut.txt","Reeee");
+  
+  // TSnap::DrawGViz
    return 0;
 }
 
@@ -230,12 +250,23 @@ int plotGraph(TNodeEDatNet<TNodeData, TEdgeData> &G)
   int count = 0;
   for (TNodeEDatNet<TNodeData, TEdgeData>::TNodeI NI = G.BegNI(); NI <= G.EndNI(); NI++) 
   {
-    Name.AddDat(NI.GetId()) = NI.GetId();
+    // TStr A = NI.GetDat().country;
+    Name.AddDat(NI.GetId()) = "Gay";
+    
     count++;
   }
  
-  
 
+  // TNGraph graph2 = TSnap::GetKCore(G,3);
+
+  // for (size_t i = 0; i < count; i++)
+  // {
+  //   /* code */
+  // }
+
+  
+  
+  
   // TSnap::DrawGViz<TNodeEDatNet<TNodeData, TEdgeData> >(G, gvlCirco ,"gviz_plot.png", "", Name);
   cout << "Done" << endl;
   return 0;
