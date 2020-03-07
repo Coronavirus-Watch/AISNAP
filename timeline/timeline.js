@@ -6,10 +6,18 @@
 const fs = require('fs');
 const http = require('http');
 const request = require('request');
+const rimraf = require('rimraf');
 const tempPath = "../data/tmp";
-const source = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/";
+const source = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports";
 
+// NodeJS - Allows you to connect using http://localhost:8080
 http.createServer(function (req, res) {
+    // Updates and formats coronavirus dataset
+    sync();
+}).listen(8080); 
+
+// Updates and formats coronavirus dataset
+function sync() {
     // Make directory for source files if doesn't already exist
     if (!fs.existsSync(tempPath)) {
         fs.mkdirSync(tempPath);
@@ -21,22 +29,25 @@ http.createServer(function (req, res) {
     // Identify common countries and store each as an object, add each cell (confirmed, death, recovered) together
     // Utilise country dictionary to sort through problematic names
     // ^ This is enough to process one day's data
-    // Cleanup
 
-}).listen(8080); 
+    // // Deletes temporary files
+    // if (fs.existsSync(tempPath)) {
+    //     rimraf.sync(tempPath);
+    // }
+}
 
 // Identifies source files to download
 function download() {
     // Sets the first file to look at
-    const date = new Date("2020-01-22");
-    var today = new Date();
+    var date = new Date("2020-01-22");
+    const today = new Date();
     // Runs though all the files
-    while (date <= today) {
+    while (date < today) {
         // Returns the date formatted as used in the url for files
         var formatted = getDateFormatted(date);
-        //
-        downloadFile(source + "/" + formatted + ".csv", tempPath);
-        // 
+        // Downloads the file
+        downloadFile(source + "/" + formatted + ".csv", tempPath + "/" + formatted + ".csv", onDownloadFileDone);
+        // Sets next day
         date.setDate(date.getDate() + 1);
     }
 }
@@ -45,21 +56,29 @@ function download() {
 function getDateFormatted(date) {
     var day = ("0" + String(date.getDate())).slice(-2);
     var month = ("0" + String(date.getMonth() + 1)).slice(-2);
-    var year = date.getFullYear();
-    
-    var dateVar = String(month + "-" + day + "-" + year);
-    console.log("Date: " + dateVar);
+    var year = String(date.getFullYear());
+    var dateVar = month + "-" + day + "-" + year;
     return dateVar;
 }
 
 // Credits: https://stackoverflow.com/questions/11944932/how-to-download-a-file-with-node-js-without-using-third-party-libraries
 function downloadFile(url, dest, cb) {
+    console.log("URL: " + url + "\t" + "Destination: " + dest);
+
     const file = fs.createWriteStream(dest);
     const sendReq = request.get(url);
+    // const sendReq = request(url, { json: true }, (err, res, body) => {
+    //     if (err) {
+    //         return console.log(err);
+    //     }
+    //     console.log(body.url);
+    //     console.log(body.explanation);
+    // });
 
     // verify response code
     sendReq.on('response', (response) => {
         if (response.statusCode !== 200) {
+            fs.unlink(dest, cb);
             return cb('Response status was ' + response.statusCode);
         }
         sendReq.pipe(file);
@@ -69,15 +88,21 @@ function downloadFile(url, dest, cb) {
     file.on('finish', () => file.close(cb));
 
     // check for request errors
-    sendReq.on('error', (err) => {
-        fs.unlink(dest);
+    sendReq.on('err', (err) => {
+        fs.unlink(dest, cb);
         return cb(err.message);
     });
 
     // Handle errors
-    file.on('error', (err) => { 
+    file.on('err', (err) => { 
         // Delete the file async. (But we don't check the result)
-        fs.unlink(dest); 
+        fs.unlink(dest, cb); 
         return cb(err.message);
     });
+}
+
+function onDownloadFileDone(data) {
+    if (data) {
+        console.log(data);
+    }
 }
