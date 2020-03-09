@@ -17,7 +17,7 @@ let map = new mapboxgl.Map({
 // Stores the countries
 let countries = {};
 // Fetches Location Data of Countries
-fetch('../data/countries.txt')
+fetch('./data/countries.txt')
 	.then(res => res.text())
 	.then(res => {
 		// Parses the text
@@ -25,7 +25,7 @@ fetch('../data/countries.txt')
 		// Displays the map
 		displayMap(countries);
 		map.on('load', function drawRoutes() {
-			fetch('../data/parsedDomesticsOutput.txt')
+			fetch('./data/parsedDomesticsOutput.txt')
 				.then(res => res.text())
 				.then(res => {
 					const lines = res.split('\n');
@@ -44,12 +44,16 @@ fetch('../data/countries.txt')
 								parseFloat(countries[journey[3]].lon),
 								parseFloat(countries[journey[3]].lat)
 							];
-							const rand = '#'+Math.floor(Math.random()*16777215).toString(16);
+							const rand =
+								'#' +
+								Math.floor(Math.random() * 16777215).toString(
+									16
+								);
 							allFeatures.push({
 								type: 'Feature',
 								geometry: {
-									'type': 'LineString',
-									'coordinates': [fromCoord, toCoord]
+									type: 'LineString',
+									coordinates: [fromCoord, toCoord]
 								}
 							});
 						}
@@ -58,8 +62,8 @@ fetch('../data/countries.txt')
 					map.addSource('route', {
 						type: 'geojson',
 						data: {
-							'type': 'FeatureCollection',
-							'features': allFeatures
+							type: 'FeatureCollection',
+							features: allFeatures
 						}
 					});
 					map.addLayer({
@@ -67,7 +71,7 @@ fetch('../data/countries.txt')
 						type: 'line',
 						source: 'route',
 						layout: {
-							'line-cap': 'square',
+							'line-cap': 'square'
 						},
 						paint: {
 							'line-color': '#aaa',
