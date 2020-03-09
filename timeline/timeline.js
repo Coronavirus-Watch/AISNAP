@@ -201,35 +201,34 @@ function getDateFormatted(date) {
 	var year = String(date.getFullYear());
 	var dateVar = month + '-' + day + '-' + year;
 	return dateVar;
+}
+// Credits: https://stackoverflow.com/questions/11944932/how-to-download-a-file-with-node-js-without-using-third-party-libraries
+function download(url, dest, cb) {
+	console.log('URL: ' + url + '\t' + 'Destination: ' + dest);
+	const file = fs.createWriteStream(dest);
+	const sendReq = request.get(url);
 
-	// Credits: https://stackoverflow.com/questions/11944932/how-to-download-a-file-with-node-js-without-using-third-party-libraries
-	function downloadFile(url, dest, cb) {
-		console.log('URL: ' + url + '\t' + 'Destination: ' + dest);
-		const file = fs.createWriteStream(dest);
-		const sendReq = request.get(url);
-
-		// verify response code
-		sendReq.on('response', response => {
-			if (response.statusCode !== 200) {
-				fs.unlink(dest, cb);
-				return cb('Response status was ' + response.statusCode);
-			}
-			sendReq.pipe(file);
-		});
-
-		// close() is async, call cb after close completes
-		file.on('finish', () => file.close(cb));
-		// check for request errors
-		sendReq.on('err', err => {
+	// verify response code
+	sendReq.on('response', response => {
+		if (response.statusCode !== 200) {
 			fs.unlink(dest, cb);
-			return cb(err.message);
-		});
+			return cb('Response status was ' + response.statusCode);
+		}
+		sendReq.pipe(file);
+	});
 
-		// Handle errors
-		file.on('err', err => {
-			// Delete the file async. (But we don't check the result)
-			fs.unlink(dest, cb);
-			return cb(err.message);
-		});
-	}
+	// close() is async, call cb after close completes
+	file.on('finish', () => file.close(cb));
+	// check for request errors
+	sendReq.on('err', err => {
+		fs.unlink(dest, cb);
+		return cb(err.message);
+	});
+
+	// Handle errors
+	file.on('err', err => {
+		// Delete the file async. (But we don't check the result)
+		fs.unlink(dest, cb);
+		return cb(err.message);
+	});
 }
