@@ -15,22 +15,40 @@ const source = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master
 // Stores data for a day by country
 class Day {
     constructor() {
-        this.countries = [];
+        // Stores each individual country
+        this.countries = new Array();
     }
 
+    // Adds data from a region
     addData(cases, deaths, recovered, countryName, day) {
         this.day = day;
-        if (countries.includes(countryName)) {
-            countries[countryName].additionalData(cases, deaths, recovered);
+        // Checks if a country is on the array
+        if (this.searchForCountry(countryName)) {
+            this.countries[this.countries.length].additionalData(cases, deaths, recovered);
+            console.log("Country detected");
         }
         else {
-            countries[countryName] = new Country(cases, deaths, recovered, countryName);
+            this.countries[this.countries.length] = new Country(cases, deaths, recovered, countryName);
+            console.log("New country added");
         }
     }
 
+    // Checks if a country is on the array
+    searchForCountry(countryName) {
+        this.countries.forEach(element => {
+            // console.log(typeof countryName);
+            if (element.name === countryName) {
+                return true;
+            }
+        });
+        return false;
+    }
+
+    // Prints all data stored
     print() {
         console.log("Day: " + this.day);
-        countries.forEach(element => {
+        this.countries.forEach(element => {
+            // console.log("Country?");
             element.print();
         });
     }
@@ -38,21 +56,21 @@ class Day {
 
 // Stores country for a single day
 class Country {
-    constructor(cases = 0, deaths = 0, recovered = 0, name) {
-        this.cases = cases;
-        this.deaths = deaths;
-        this.recovered = recovered;
+    constructor(cases = "0", deaths = "0", recovered = "0", name) {
+        this.cases = parseInt(cases);
+        this.deaths = parseInt(deaths);
+        this.recovered = parseInt(recovered);
         this.name = name;
     }
 
-    additionalData(cases = 0, deaths = 0, recovered = 0) {
-        this.cases = this.cases + cases;
-        this.deaths = this.deaths + deaths;
-        this.recovered = this.recovered + recovered;
+    additionalData(cases = "0", deaths = "0", recovered = "0") {
+        this.cases = this.cases + parseInt(cases);
+        this.deaths = this.deaths + parseInt(deaths);
+        this.recovered = this.recovered + parseInt(recovered);
     }
 
     print() {
-        console.log("\t" + "Cases: " + this.cases + "\t" + "Deaths: " + this.deaths, "Recovered: " + this.recovered);
+        console.log("\t\t" + "Country: " + this.name + "\t" + "Cases: " + this.cases + "\t" + "Deaths: " + this.deaths + "\t", "Recovered: " + this.recovered);
     }
 }
 
@@ -100,7 +118,7 @@ function download() {
 }
 
 function objectification() {
-    var days = [];
+    var days = new Array();
     cb = onDownloadFileDone;
     // Credits: https://stackoverflow.com/questions/10049557/reading-all-files-in-a-directory-store-them-in-objects-and-send-the-object
     fs.readdir(tempPath, function (err, filenames) {
@@ -126,31 +144,30 @@ function processTempFile(filename, content) {
     // Seperating each lines
     const lines = content.split('\n');
     // Loops through each line
-    for (let i = 0; i < lines.length; i++) {
+    for (let i = 1; i < lines.length; i++) {
         // Extracts each line
-        const regionLine = lines[i].split(',');
-        const countryName = dictionary(regionLine[1].trim());
-        day.addData(countryName, regionLine[3].trim(), regionLine[4].trim(), regionLine[5].trim());
-        day.print();
+        const regionLine = lines[i].split(',', -1);
+        // Makes any elements that are blank 0
+        for (let index = 1; index < regionLine.length; index++) {
+            if (!regionLine[index] || regionLine[index].includes('\r')) {
+                regionLine[index] = "0";
+            }
+        }
+        // Prevents an error with undefined fields
+        if (typeof regionLine[1] !== 'undefined') {
+            // Extracts constants from the region line
+            const cases = regionLine[3].trim();
+            const deaths = regionLine[4].trim();
+            const recovered = regionLine[5].trim();
+            const countryName = dictionary(regionLine[1].trim());
+            // console.log("Country: " + countryName + "\t\t" + "Cases: " + cases + "\t\t" + "Deaths: " + deaths + "\t\t", "Recovered: " + recovered);
 
-        // if (countries.includes(countryName)) {
-        //     // Adds the region's statistics to the country total
-        //     countries[countryName] = {
-        //         cases: countries[countryName].cases + countryLine[3].trim(),
-        //         deaths: countries[countryName].deaths + countryLine[4].trim(),
-        //         recovered: countries[countryName].recovered + countryLine[5].trim()
-        //     }
-        // }
-        // else {
-        //     // Adds the country as a new item
-        //     countries[countryName] = {
-        //         cases: countryLine[3].trim(),
-        //         deaths: countryLine[4].trim(),
-        //         recovered: countryLine[5].trim()
-        //     };
-        // }
-
+            // Adds constants to the day object
+            day.addData(cases, deaths, recovered, countryName, filename);
+        }
     }
+    // Prints the stored data in the day we've produced
+    day.print();
     return day;
 }
 
