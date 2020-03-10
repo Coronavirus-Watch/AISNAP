@@ -5,123 +5,154 @@
 
 // Access Token for mapbox
 mapboxgl.accessToken =
-	'pk.eyJ1IjoibWF4d2lsbGtlbGx5IiwiYSI6ImNrNjhsOWdlZTA0M2Yza21mMG9icjBwdmIifQ.OTaUkNePX-6XE3Vgcy9v6A';
+  'pk.eyJ1IjoibWF4d2lsbGtlbGx5IiwiYSI6ImNrNjhsOWdlZTA0M2Yza21mMG9icjBwdmIifQ.OTaUkNePX-6XE3Vgcy9v6A';
 let map = new mapboxgl.Map({
-	container: 'map',
-	// Sets the map style
-	style: 'mapbox://styles/maxwillkelly/ck74w75df0dtf1imcwnew4m6b',
-	// Displays the world
-	zoom: 3,
-	center: [15, 50]
+  container: 'map',
+  // Sets the map style
+  style: 'mapbox://styles/maxwillkelly/ck74w75df0dtf1imcwnew4m6b',
+  // Displays the world
+  zoom: 3,
+  center: [15, 50]
 });
-// Stores the countries
-let countries = {};
+
+let toggledLayers = {
+  routesVisible: false,
+  markersVisible: false
+}
+
+let countryMarkers = {};
+let allFeatures = [];
+
+// GUI elements
+const routesCheck = document.querySelector('#routes');
+const markersCheck = document.querySelector('#markers');
+
+routesCheck.addEventListener('change', e => {
+  toggledLayers.routesVisible = e.target.checked;
+  updateMap(toggledLayers);
+});
+
+markersCheck.addEventListener('change', e => {
+  toggledLayers.markersVisible = e.target.checked;
+  updateMap(toggledLayers);
+});
+
+map.on('load', async () => {
+  const markers = await fetchMarkers();
+  const routes = await fetchRoutes(markers);
+  const layers = await addLayers(routes);
+  displayMap(toggledLayers);
+  updateMap(toggledLayers);
+});
+
 // Fetches Location Data of Countries
-fetch('../data/countries.txt')
-	.then(res => res.text())
-	.then(res => {
-		// Parses the text
-		countries = parse(res);
-		// Displays the map
-		displayMap(countries);
-		map.on('load', function drawRoutes() {
-			fetch('../data/parsedDomesticsOutput.txt')
-				.then(res => res.text())
-				.then(res => {
-					const lines = res.split('\n');
-					let allFeatures = [];
-					for (let i = 0; i < lines.length; i++) {
-						let journey = lines[i].split(',');
-						if (
-							countries[journey[1]] != undefined &&
-							countries[journey[3]] != undefined
-						) {
-							let fromCoord = [
-								parseFloat(countries[journey[1]].lon),
-								parseFloat(countries[journey[1]].lat)
-							];
-							let toCoord = [
-								parseFloat(countries[journey[3]].lon),
-								parseFloat(countries[journey[3]].lat)
-							];
-							const rand =
-								'#' +
-								Math.floor(Math.random() * 16777215).toString(
-									16
-								);
-							allFeatures.push({
-								type: 'Feature',
-								geometry: {
-									type: 'LineString',
-									coordinates: [fromCoord, toCoord]
-								}
-							});
-						}
-					}
-					console.log(allFeatures.length);
-					map.addSource('route', {
-						type: 'geojson',
-						data: {
-							type: 'FeatureCollection',
-							features: allFeatures
-						}
-					});
-					map.addLayer({
-						id: 'route',
-						type: 'line',
-						source: 'route',
-						layout: {
-							'line-cap': 'square'
-						},
-						paint: {
-							'line-color': '#aaa',
-							'line-width': 1,
-							'line-opacity': 0.1
-						}
-					});
-				});
-		});
-	});
+const fetchMarkers = async () => {
+  const response = await fetch('../data/countries.txt')
+  const data = await response.text();
+  const markers = parseMarkers(data);
+  return markers;
+}
 
-// 		// const fromPos = countries[journey[1]];
-// 		// const toPos = countries[journey[3]];
-// 		// const fromCoord = [fromPos.lon, fromPos.lat];
-// 		// const toCoord = [toPos.lon, toPos.lat];
-// 		// console.log(journey);
-// 	//
+function parseMarkers(text) {
+  const lines = text.split('\n');
+  // Loops through each line
+  for (let i = 0; i < lines.length; i++) {
+    // Extracts each line
+    const countryLine = lines[i].split(',');
+    // Adds the countries array
+    countryMarkers[countryLine[3].trim()] = {
+      lat: countryLine[1].trim(),
+      lon: countryLine[2].trim()
+    };
+  }
+  return countryMarkers;
 
-// Parses the text
-function parse(text) {
-	// Seperating each lines
-	const lines = text.split('\n');
-	// Loops through each line
-	for (let i = 0; i < lines.length; i++) {
-		// Extracts each line
-		const countryLine = lines[i].split(',');
-		// Adds the countries array
-		countries[countryLine[3].trim()] = {
-			lat: countryLine[1].trim(),
-			lon: countryLine[2].trim()
-		};
-	}
-	return countries;
+}
+
+// fetches routes from text file
+const fetchRoutes = async (data) => {
+  const res = await fetch('../data/parsedDomesticsOutput.txt');
+  const text = await res.text();
+  const routes = await parseRoutes(text);
+  return routes;
+};
+
+const parseRoutes = text => {
+  const lines = text.split('\n');
+  for (let i = 0; i < lines.length; i++) {
+    let journey = lines[i].split(',');
+    if (
+      countryMarkers[journey[1]] != undefined &&
+      countryMarkers[journey[3]] != undefined
+    ) {
+      let fromCoord = [
+        parseFloat(countryMarkers[journey[1]].lon),
+        parseFloat(countryMarkers[journey[1]].lat)
+      ];
+      let toCoord = [
+        parseFloat(countryMarkers[journey[3]].lon),
+        parseFloat(countryMarkers[journey[3]].lat)
+      ];
+      allFeatures.push({
+        type: 'Feature',
+        geometry: {
+          type: 'LineString',
+          coordinates: [fromCoord, toCoord]
+        }
+      });
+    }
+  }
+  return allFeatures;
+}
+
+// Adds Layers to Map
+function addLayers(featureList) {
+  map.addSource('route', {
+    type: 'geojson',
+    data: {
+      type: 'FeatureCollection',
+      features: featureList
+    }
+  });
+  map.addLayer({
+    id: 'route',
+    type: 'line',
+    source: 'route',
+    layout: {
+      'line-cap': 'square',
+      'visibility': 'none'
+    },
+    paint: {
+      'line-color': '#aaa',
+      'line-width': 1,
+      'line-opacity': 0.1
+    }
+  });
+  // Object.entries(countryMarkers).map(country => {
+  // 	let array = [country[1].lon, country[1].lat];
+  // 	let popup = new mapboxgl.Popup({
+  // 		offset: 25
+  // 	}).setText(country[0]);
+  //
+  // 	let marker = new mapboxgl.Marker().setLngLat(array).setPopup(popup);
+  // 	marker.className = 'marker';
+  // 	marker.addTo(map);
+  // });
 }
 
 // Displays the map
-function displayMap(countries) {
-	// Creates a map and sets basic properties
-	// Adds full screen control
-	map.addControl(new mapboxgl.FullscreenControl());
+function displayMap() {
+  // Adds full screen control
+  map.addControl(new mapboxgl.FullscreenControl());
 
-	Object.entries(countries).map(country => {
-		let array = [country[1].lon, country[1].lat];
-		let popup = new mapboxgl.Popup({ offset: 25 }).setText(country[0]);
+  // Prevents map from looking stupid
+  map.resize();
+}
 
-		// let marker = new mapboxgl.Marker().setLngLat(array).setPopup(popup);
-		// marker.className = "marker";
-		// marker.addTo(map);
-	});
-
-	// Prevents map from looking stupid
-	map.resize();
+function updateMap(toggledLayers) {
+  if (toggledLayers.routesVisible == true) {
+    map.setLayoutProperty("route", 'visibility', 'visible');
+  } else {
+    map.setLayoutProperty("route", 'visibility', 'none');
+  }
 }
