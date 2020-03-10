@@ -4,13 +4,19 @@
 // Data source: https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports
 
 // Loads NodeJS Modules
+// const csv = require('csv');
 const fs = require('fs');
 const http = require('http');
 const request = require('request');
 const rimraf = require('rimraf');
-const tempPath = "../data/tmp";
+const schedule = require('node-schedule');
+
 // Link to source data
 const source = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports";
+//
+const tempPath = "../data/tmp";
+//
+const exportPath = "../data/timeline.json";
 
 // Stores data for a day by country
 class Day {
@@ -22,26 +28,27 @@ class Day {
     // Adds data from a region
     addData(cases, deaths, recovered, countryName, day) {
         this.day = day;
+        let index = this.searchForCountry(countryName);
         // Checks if a country is on the array
-        if (this.searchForCountry(countryName)) {
-            this.countries[this.countries.length].additionalData(cases, deaths, recovered);
-            console.log("Country detected");
+        if (this.searchForCountry(countryName) != -1) {
+            this.countries[index].additionalData(cases, deaths, recovered);
+            // console.log("Country detected");
         }
         else {
             this.countries[this.countries.length] = new Country(cases, deaths, recovered, countryName);
-            console.log("New country added");
+            // console.log("New country added");
         }
     }
 
     // Checks if a country is on the array
     searchForCountry(countryName) {
-        this.countries.forEach(element => {
-            // console.log(typeof countryName);
+        for (let i = 0; i < this.countries.length; i++) {
+            const element = this.countries[i];
             if (element.name === countryName) {
-                return true;
+                return i;
             }
-        });
-        return false;
+        }
+        return -1;
     }
 
     // Prints all data stored
@@ -75,10 +82,10 @@ class Country {
 }
 
 // NodeJS - Allows you to connect using http://localhost:8080
-http.createServer(function (req, res) {
-    // Updates and formats coronavirus dataset
-    sync();
-}).listen(8080);
+// http.createServer(function (req, res) {
+// Updates and formats coronavirus dataset
+sync();
+// }).listen(8080);
 
 // Updates and formats coronavirus dataset
 function sync() {
@@ -91,9 +98,9 @@ function sync() {
     // Create temporary file to store export
 
     // Identify common countries and store each as an object, add each cell (confirmed, death, recovered) together
-    objectification();
-
-    // ^ This is enough to process one day's data
+    let days = objectification();
+    // Export class to json
+    exportJson(days, exportPath);
 
     // // Deletes temporary files
     // if (fs.existsSync(tempPath)) {
@@ -104,12 +111,12 @@ function sync() {
 // Identifies source files to download
 function download() {
     // Sets the first file to look at
-    var date = new Date("2020-01-22");
+    let date = new Date("2020-01-22");
     const today = new Date();
     // Runs though all the files
     while (date < today) {
         // Returns the date formatted as used in the url for files
-        var formatted = getDateFormatted(date);
+        const formatted = getDownloadDate(date);
         // Downloads the file
         downloadFile(source + "/" + formatted + ".csv", tempPath + "/" + formatted + ".csv", onDownloadFileDone);
         // Sets next day
@@ -117,8 +124,9 @@ function download() {
     }
 }
 
+// 
 function objectification() {
-    var days = new Array();
+    let days = new Array();
     cb = onDownloadFileDone;
     // Credits: https://stackoverflow.com/questions/10049557/reading-all-files-in-a-directory-store-them-in-objects-and-send-the-object
     fs.readdir(tempPath, function (err, filenames) {
@@ -132,6 +140,7 @@ function objectification() {
                     cb(err);
                     return;
                 }
+                // Process a file representing the coronavirus statistics by country for that day
                 days[filename] = processTempFile(filename, content);
             });
         });
@@ -139,8 +148,21 @@ function objectification() {
     return days;
 }
 
+// 
+function exportJson(days, exportPath) {
+    try {
+
+        fs.writeFileSync(exportPath, JSON.stringify(days));
+    } catch (error) {
+        console.error(err);
+    }
+}
+
+// Process a file representing the coronavirus statistics by country for that day
 function processTempFile(filename, content) {
-    var day = new Day();
+    let day = new Day();
+    // Prevents commas within quotes from messing up the seperation
+    content = dealsWithQuoteMarks(content);
     // Seperating each lines
     const lines = content.split('\n');
     // Loops through each line
@@ -160,10 +182,9 @@ function processTempFile(filename, content) {
             const deaths = regionLine[4].trim();
             const recovered = regionLine[5].trim();
             const countryName = dictionary(regionLine[1].trim());
-            // console.log("Country: " + countryName + "\t\t" + "Cases: " + cases + "\t\t" + "Deaths: " + deaths + "\t\t", "Recovered: " + recovered);
-
+            const date = getFormattedDate(filename);
             // Adds constants to the day object
-            day.addData(cases, deaths, recovered, countryName, filename);
+            day.addData(cases, deaths, recovered, countryName, date);
         }
     }
     // Prints the stored data in the day we've produced
@@ -171,12 +192,50 @@ function processTempFile(filename, content) {
     return day;
 }
 
+// Prevents commas within quotes in a csv file from messing up the seperation
+function dealsWithQuoteMarks(content) {
+    let inQuote = false;
+
+    for (let index = 0; index < content.length; index++) {
+        let element = content.charAt(index);
+        if (inQuote && element === ",") {
+            // Deletes element
+            content = content.slice(0, index - 1) + content.slice(index, content.length);
+        }
+        else if (element === "\"") {
+            // Deletes element
+            content = content.slice(0, index - 1) + content.slice(index, content.length);
+            if (inQuote) {
+                inQuote = false;
+            }
+            else {
+                inQuote = true;
+            }
+        }
+    }
+
+    return content;
+}
+
 // Returns the date formatted as used in the url for files
-function getDateFormatted(date) {
-    var day = ("0" + String(date.getDate())).slice(-2);
-    var month = ("0" + String(date.getMonth() + 1)).slice(-2);
-    var year = String(date.getFullYear());
-    var dateVar = month + "-" + day + "-" + year;
+function getDownloadDate(date) {
+    const day = ("0" + String(date.getDate())).slice(-2);
+    const month = ("0" + String(date.getMonth() + 1)).slice(-2);
+    const year = String(date.getFullYear());
+    const dateVar = month + "-" + day + "-" + year;
+    return dateVar;
+}
+
+function getFormattedDate(downloadDate) {
+    // Removes extension if necessary
+    if (downloadDate.endsWith(".csv")) {
+        downloadDate.replace(".csv", "");
+    }
+    const sections = downloadDate.split("-");
+    const day = sections[1];
+    const month = sections[0];
+    const year = sections[2];
+    const dateVar = day + "/" + month + "/" + year;
     return dateVar;
 }
 
@@ -212,16 +271,22 @@ function downloadFile(url, dest, cb) {
     });
 }
 
+// Prints download messages
 function onDownloadFileDone(data) {
     if (data) {
         console.log(data);
     }
 }
 
+// Changes country names to match other parts of the database
 function dictionary(countryName) {
     switch (countryName) {
         case "Mainland China":
             return "China";
+        case "US":
+            return "United States";
+        case "UK":
+            return "United Kingdom";
         default:
             return countryName;
     }

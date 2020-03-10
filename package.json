@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/maxwillkelly/AISNAP/issues"
   },
-  "homepage": "https://github.com/maxwillkelly/AISNAP#readme"
+  "homepage": "https://github.com/maxwillkelly/AISNAP#readme",
+  "dependencies": {
+    "node-schedule": "^1.3.2"
+  }
 }
