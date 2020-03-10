@@ -37,54 +37,79 @@ markersCheck.addEventListener('change', e => {
   updateMap(toggledLayers);
 });
 
+// when map first loads on webpage
 map.on('load', async () => {
+  // collects all markers in an array
   const markers = await fetchMarkers();
+  // collects all routes in an Object
   const routes = await fetchRoutes(markers);
-  const layers = await addLayers(routes);
+  addLayers(routes);
   displayMap(toggledLayers);
   updateMap(toggledLayers);
 });
 
 // Fetches Location Data of Countries
 const fetchMarkers = async () => {
+  // retrieves data from countries file
   const response = await fetch('../data/countries.txt')
+  // parses data into text
   const data = await response.text();
+  // parses the data into list of markers
   const markers = parseMarkers(data);
+
+  // returns an array of (MapBox) Markers
   return markers;
 }
 
+// Parses the marker text data
 function parseMarkers(text) {
+  // splits the text into lines in the file
   const lines = text.split('\n');
   // Loops through each line
   for (let i = 0; i < lines.length; i++) {
     // Extracts each line
     const countryLine = lines[i].split(',');
-    // Adds the countries array
+    // Adds to the markers Object with respective lat, lon based on the country
     countryMarkers[countryLine[3].trim()] = {
       lat: countryLine[1].trim(),
       lon: countryLine[2].trim()
     };
   }
+
+  // returns Object of markers
   return countryMarkers;
 
 }
 
 // fetches routes from text file
 const fetchRoutes = async (data) => {
+  // retrieves text data from file
   const res = await fetch('../data/parsedDomesticsOutput.txt');
+  // parses the response data into plain text
   const text = await res.text();
+  // parses the data into a routes Object
   const routes = await parseRoutes(text);
+
+  // returns Object of all routes
   return routes;
 };
 
+// Parses the routes text data
 const parseRoutes = text => {
+  // splits text up into lines in the file
   const lines = text.split('\n');
+
+  // goes through each route in the file
   for (let i = 0; i < lines.length; i++) {
+    // splits each route into a "journey"
     let journey = lines[i].split(',');
+
+    // checks if the the journey start and end location both exist
     if (
       countryMarkers[journey[1]] != undefined &&
       countryMarkers[journey[3]] != undefined
     ) {
+      // creates coordinate arrays for both start and end locations
       let fromCoord = [
         parseFloat(countryMarkers[journey[1]].lon),
         parseFloat(countryMarkers[journey[1]].lat)
@@ -93,6 +118,8 @@ const parseRoutes = text => {
         parseFloat(countryMarkers[journey[3]].lon),
         parseFloat(countryMarkers[journey[3]].lat)
       ];
+
+      // pushes a new (MapBox) "Feature" to the features array
       allFeatures.push({
         type: 'Feature',
         geometry: {
@@ -102,11 +129,13 @@ const parseRoutes = text => {
       });
     }
   }
+  // returns update features array
   return allFeatures;
 }
 
 // Adds Layers to Map
 function addLayers(featureList) {
+  // Adds new source for routes
   map.addSource('route', {
     type: 'geojson',
     data: {
@@ -114,6 +143,8 @@ function addLayers(featureList) {
       features: featureList
     }
   });
+
+  // Styles layer 'route'
   map.addLayer({
     id: 'route',
     type: 'line',
@@ -149,6 +180,7 @@ function displayMap() {
   map.resize();
 }
 
+// Updates the map with the correct visible layers
 function updateMap(toggledLayers) {
   if (toggledLayers.routesVisible == true) {
     map.setLayoutProperty("route", 'visibility', 'visible');
