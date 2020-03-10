@@ -15,11 +15,13 @@ let map = new mapboxgl.Map({
   center: [15, 50]
 });
 
+// sets default visibility of layers
 let toggledLayers = {
   routesVisible: false,
   markersVisible: false
 }
 
+// Default (MapBox) Markers and Features data structures
 let countryMarkers = {};
 let allFeatures = [];
 
@@ -27,6 +29,7 @@ let allFeatures = [];
 const routesCheck = document.querySelector('#routes');
 const markersCheck = document.querySelector('#markers');
 
+// Adds EventListeners to checkboxes for when their checked value changes
 routesCheck.addEventListener('change', e => {
   toggledLayers.routesVisible = e.target.checked;
   updateMap(toggledLayers);
@@ -41,10 +44,17 @@ markersCheck.addEventListener('change', e => {
 map.on('load', async () => {
   // collects all markers in an array
   const markers = await fetchMarkers();
+
   // collects all routes in an Object
   const routes = await fetchRoutes(markers);
+
+  // Adds routes to layers
   addLayers(routes);
+
+  // displays map
   displayMap(toggledLayers);
+
+  // updates the map with defaults
   updateMap(toggledLayers);
 });
 
