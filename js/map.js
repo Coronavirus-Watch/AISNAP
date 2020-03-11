@@ -22,8 +22,11 @@ let toggledLayers = {
 }
 
 // Default (MapBox) Markers and Features data structures
-let countryMarkers = {};
-let allFeatures = [];
+let sources = {
+  countries: {},
+  routes: [],
+  geoCountries: []
+}
 
 // GUI elements
 const routesCheck = document.querySelector('#routes');
@@ -49,8 +52,7 @@ map.on('load', async () => {
   const routes = await fetchRoutes(markers);
 
   // Adds routes to layers
-  addLayers(routes);
-
+  addLayers();
   // displays map
   displayMap(toggledLayers);
 
@@ -80,15 +82,21 @@ function parseMarkers(text) {
     // Extracts each line
     const countryLine = lines[i].split(',');
     // Adds to the markers Object with respective lat, lon based on the country
-    countryMarkers[countryLine[3].trim()] = {
+    sources.countries[countryLine[3].trim()] = {
       lat: countryLine[1].trim(),
       lon: countryLine[2].trim()
     };
+    let lon = parseFloat(countryLine[2].trim());
+    let lat = parseFloat(countryLine[1].trim());
+
+    sources['geoCountries'].push({
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [lon, lat],
+      }
+    })
   }
-
-  // returns Object of markers
-  return countryMarkers;
-
 }
 
 // fetches routes from text file
@@ -116,43 +124,53 @@ const parseRoutes = text => {
 
     // checks if the the journey start and end location both exist
     if (
-      countryMarkers[journey[1]] != undefined &&
-      countryMarkers[journey[3]] != undefined
+      sources.countries[journey[1]] != undefined &&
+      sources.countries[journey[3]] != undefined
     ) {
       // creates coordinate arrays for both start and end locations
       let fromCoord = [
-        parseFloat(countryMarkers[journey[1]].lon),
-        parseFloat(countryMarkers[journey[1]].lat)
+        parseFloat(sources.countries[journey[1]].lon),
+        parseFloat(sources.countries[journey[1]].lat)
       ];
       let toCoord = [
-        parseFloat(countryMarkers[journey[3]].lon),
-        parseFloat(countryMarkers[journey[3]].lat)
+        parseFloat(sources.countries[journey[3]].lon),
+        parseFloat(sources.countries[journey[3]].lat)
       ];
 
       // pushes a new (MapBox) "Feature" to the features array
-      allFeatures.push({
+      sources['routes'].push({
         type: 'Feature',
         geometry: {
           type: 'LineString',
           coordinates: [fromCoord, toCoord]
         }
       });
+
     }
   }
-  // returns update features array
-  return allFeatures;
 }
 
 // Adds Layers to Map
-function addLayers(featureList) {
+function addLayers() {
   // Adds new source for routes
   map.addSource('route', {
     type: 'geojson',
     data: {
       type: 'FeatureCollection',
-      features: featureList
+      features: sources.routes
     }
   });
+
+
+  map.addSource('country', {
+    type: 'geojson',
+    data: {
+      type: 'FeatureCollection',
+      features: sources.geoCountries
+    }
+  });
+  console.log(sources.geoCountries);
+
 
   // Styles layer 'route'
   map.addLayer({
@@ -169,6 +187,16 @@ function addLayers(featureList) {
       'line-opacity': 0.1
     }
   });
+
+  map.addLayer({
+    id: 'country',
+    type: 'symbol',
+    source: 'country',
+    layout: {
+      'visibility': 'none'
+    }
+  });
+
   // Object.entries(countryMarkers).map(country => {
   // 	let array = [country[1].lon, country[1].lat];
   // 	let popup = new mapboxgl.Popup({
