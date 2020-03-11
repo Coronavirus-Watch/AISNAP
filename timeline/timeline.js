@@ -51,6 +51,14 @@ class Day {
         return -1;
     }
 
+    // outputJson() {
+    //     let json;
+    //     this.countries.forEach(element => {
+    //         console.log(JSON.stringify(element.getJson()));
+    //     });
+    //     return json;
+    // }
+
     // Prints all data stored
     print() {
         console.log("Day: " + this.day);
@@ -76,6 +84,16 @@ class Country {
         this.recovered = this.recovered + parseInt(recovered);
     }
 
+    // getJson() {
+    //     let countryObj = {
+    //         name: this.name,
+    //         cases: this.cases,
+    //         deaths: this.deaths,
+    //         recovered: this.recovered
+    //     }
+    //     return countryObj;
+    // }
+
     print() {
         console.log("\t\t" + "Country: " + this.name + "\t" + "Cases: " + this.cases + "\t" + "Deaths: " + this.deaths + "\t", "Recovered: " + this.recovered);
     }
@@ -99,8 +117,10 @@ function sync() {
 
     // Identify common countries and store each as an object, add each cell (confirmed, death, recovered) together
     let days = objectification();
-    // Export class to json
-    exportJson(days, exportPath);
+    // 
+    // console.log(days);
+    // // Export class to json
+    // exportJson(days, exportPath);
 
     // // Deletes temporary files
     // if (fs.existsSync(tempPath)) {
@@ -126,7 +146,7 @@ function download() {
 
 // 
 function objectification() {
-    let days = new Array();
+    let days = [];
     cb = onDownloadFileDone;
     // Credits: https://stackoverflow.com/questions/10049557/reading-all-files-in-a-directory-store-them-in-objects-and-send-the-object
     fs.readdir(tempPath, function (err, filenames) {
@@ -134,25 +154,33 @@ function objectification() {
             cb(err);
             return;
         }
-        filenames.forEach(function (filename) {
+        filenames.forEach( function (filename) {
             fs.readFile(tempPath + "/" + filename, 'utf-8', function (err, content) {
                 if (err) {
                     cb(err);
                     return;
                 }
+                // console.log(days);
                 // Process a file representing the coronavirus statistics by country for that day
-                days[filename] = processTempFile(filename, content);
+                const day = processTempFile(filename, content);
+                days[days.length] = day; 
+                // console.log(days.length)
             });
         });
     });
+    console.log(days.length);
     return days;
 }
 
 // 
 function exportJson(days, exportPath) {
+    let json = [];
+    days.forEach(element => {
+        // json[json.length] = element.getJson();
+        // console.log(element);
+    });
     try {
-
-        fs.writeFileSync(exportPath, JSON.stringify(days));
+        fs.writeFileSync(exportPath, json);
     } catch (error) {
         console.error(err);
     }
@@ -187,15 +215,14 @@ function processTempFile(filename, content) {
             day.addData(cases, deaths, recovered, countryName, date);
         }
     }
-    // Prints the stored data in the day we've produced
-    day.print();
+    // // Prints the stored data in the day we've produced
+    // day.print
     return day;
 }
 
 // Prevents commas within quotes in a csv file from messing up the seperation
 function dealsWithQuoteMarks(content) {
     let inQuote = false;
-
     for (let index = 0; index < content.length; index++) {
         let element = content.charAt(index);
         if (inQuote && element === ",") {
@@ -213,7 +240,6 @@ function dealsWithQuoteMarks(content) {
             }
         }
     }
-
     return content;
 }
 
@@ -287,6 +313,8 @@ function dictionary(countryName) {
             return "United States";
         case "UK":
             return "United Kingdom";
+        case "Saint Barthelemy":
+            return "France";
         default:
             return countryName;
     }
