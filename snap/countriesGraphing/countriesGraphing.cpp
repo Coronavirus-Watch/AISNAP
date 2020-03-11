@@ -31,6 +31,7 @@ int traverseEdges(TNodeEDatNet<TNodeData, TEdgeData> &G);
 int traverseGraph(TNodeEDatNet<TNodeData, TEdgeData> &G);
 int saveGraph(TNodeEDatNet<TNodeData, TEdgeData> &G);
 
+// TNodeEDatNet<int,int> reee;
 
 vector<Route> getInput();
 int addRoute(TNodeEDatNet<TNodeData, TEdgeData> &graph, std::vector<Route> list);
@@ -49,7 +50,8 @@ int main(int argc, char* argv[])
   //   cout << "1st:" <<  i1 << " " << i1.length() << " & 2nd:" << i2 << " " << i2.length() << endl;
 
   traverseGraph(variableGraph);
-  saveGraph(variableGraph);
+  // saveGraph(variableGraph);
+  // TSnap::PrintInfo(variableGraph);
   
   
 
