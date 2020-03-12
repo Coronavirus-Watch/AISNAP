@@ -1,4 +1,4 @@
-﻿GYD,Azerbaijan,NBC,Russia
+GYD,Azerbaijan,NBC,Russia
 NBC,Russia,GYD,Azerbaijan
 ABJ,Cote d'Ivoire,BOY,Burkina Faso
 ABJ,Cote d'Ivoire,OUA,Burkina Faso
@@ -4986,7 +4986,7 @@ BEY,Lebanon,CMN,Morocco
 BGF,Central African Republic,CMN,Morocco
 BJL,Gambia,CMN,Morocco
 BJL,Gambia,OXB,Guinea-Bissau
-BJL,Gambia,RAI,Santiago Island
+BJL,Gambia,RAI, Santiago Island
 BKO,Mali,CMN,Morocco
 BLQ,Italy,CMN,Morocco
 BOD,France,CMN,Morocco
@@ -5051,7 +5051,7 @@ CMN,Morocco,ORY,France
 CMN,Morocco,OUA,Burkina Faso
 CMN,Morocco,OXB,Guinea-Bissau
 CMN,Morocco,PNR,Congo (Brazzaville)
-CMN,Morocco,RAI,Santiago Island
+CMN,Morocco,RAI, Santiago Island
 CMN,Morocco,ROB,Liberia
 CMN,Morocco,SSG,Equatorial Guinea
 CMN,Morocco,SVO,Russia
@@ -5134,12 +5134,12 @@ OUD,Morocco,BRU,Belgium
 OUD,Morocco,ORY,France
 OXB,Guinea-Bissau,BJL,Gambia
 OXB,Guinea-Bissau,CMN,Morocco
-OXB,Guinea-Bissau,RAI,Santiago Island
+OXB,Guinea-Bissau,RAI, Santiago Island
 OZZ,Morocco,ORY,France
 PNR,Congo (Brazzaville),CMN,Morocco
-RAI,Santiago Island,BJL,Gambia
-RAI,Santiago Island,CMN,Morocco
-RAI,Santiago Island,OXB,Guinea-Bissau
+RAI, Santiago Island,BJL,Gambia
+RAI, Santiago Island,CMN,Morocco
+RAI, Santiago Island,OXB,Guinea-Bissau
 RAK,Morocco,BOD,France
 RAK,Morocco,BRU,Belgium
 RAK,Morocco,LGW,United Kingdom
@@ -7079,7 +7079,7 @@ CFN,Ireland,GLA,United Kingdom
 CGN,Germany,BHX,United Kingdom
 CWL,United Kingdom,JER,Jersey
 DBV,Croatia,BHX,United Kingdom
-DSA,Sheffield,JER,Jersey
+DSA, Sheffield,JER,Jersey
 DUB,Ireland,EXT,United Kingdom
 DUB,Ireland,SOU,United Kingdom
 DUS,Germany,BHX,United Kingdom
@@ -7124,7 +7124,7 @@ IOM,Isle of Man,LPL,United Kingdom
 IOM,Isle of Man,MAN,United Kingdom
 JER,Jersey,BHX,United Kingdom
 JER,Jersey,CWL,United Kingdom
-JER,Jersey,DSA,Sheffield
+JER,Jersey,DSA, Sheffield
 JER,Jersey,EDI,United Kingdom
 JER,Jersey,EMA,United Kingdom
 JER,Jersey,EXT,United Kingdom
@@ -9954,7 +9954,7 @@ DKR,Senegal,CKY,Guinea
 DKR,Senegal,COO,Benin
 DKR,Senegal,NKC,Mauritania
 DKR,Senegal,OXB,Guinea-Bissau
-DKR,Senegal,RAI,Santiago Island
+DKR,Senegal,RAI, Santiago Island
 DLA,Cameroon,COO,Benin
 LBV,Gabon,COO,Benin
 NIM,Niger,OUA,Burkina Faso
@@ -9962,7 +9962,7 @@ NKC,Mauritania,DKR,Senegal
 OUA,Burkina Faso,BKO,Mali
 OUA,Burkina Faso,NIM,Niger
 OXB,Guinea-Bissau,DKR,Senegal
-RAI,Santiago Island,DKR,Senegal
+RAI, Santiago Island,DKR,Senegal
 BZV,Congo (Brazzaville),LAD,Angola
 CPT,South Africa,LAD,Angola
 DXB,United Arab Emirates,LAD,Angola
@@ -9988,10 +9988,10 @@ LIS,Portugal,LAD,Angola
 LUN,Zambia,LAD,Angola
 OPO,Portugal,LAD,Angola
 PEK,China,LAD,Angola
-RAI,Santiago Island,TMS,Sao Tome and Principe
+RAI, Santiago Island,TMS,Sao Tome and Principe
 SDD,Angola,WDH,Namibia
 TMS,Sao Tome and Principe,LAD,Angola
-TMS,Sao Tome and Principe,RAI,Santiago Island
+TMS,Sao Tome and Principe,RAI, Santiago Island
 WDH,Namibia,LAD,Angola
 WDH,Namibia,SDD,Angola
 AKX,Kazakhstan,DME,Russia
@@ -22137,9 +22137,9 @@ LPA,Spain,DKR,Senegal
 LPA,Spain,EUN,Western Sahara
 LPA,Spain,FNC,Portugal
 LPA,Spain,LIS,Portugal
-LPA,Spain,RAI,Santiago Island
+LPA,Spain,RAI, Santiago Island
 LPA,Spain,RAK,Morocco
-RAI,Santiago Island,LPA,Spain
+RAI, Santiago Island,LPA,Spain
 RAK,Morocco,LPA,Spain
 TFN,Spain,DKR,Senegal
 BKK,Thailand,MFM,Macau
@@ -27824,7 +27824,7 @@ DLM,Turkey,LTN,United Kingdom
 DLM,Turkey,MAN,United Kingdom
 DLM,Turkey,NCL,United Kingdom
 DLM,Turkey,STN,United Kingdom
-DSA,Sheffield,PMI,Spain
+DSA, Sheffield,PMI,Spain
 EDI,United Kingdom,PMI,Spain
 EDI,United Kingdom,TFS,Spain
 EMA,United Kingdom,ACE,Spain
@@ -28114,7 +28114,7 @@ PMI,Spain,BHX,United Kingdom
 PMI,Spain,BOH,United Kingdom
 PMI,Spain,BRS,United Kingdom
 PMI,Spain,CWL,United Kingdom
-PMI,Spain,DSA,Sheffield
+PMI,Spain,DSA, Sheffield
 PMI,Spain,EDI,United Kingdom
 PMI,Spain,EMA,United Kingdom
 PMI,Spain,EXT,United Kingdom
@@ -28229,7 +28229,7 @@ CWL,United Kingdom,TFS,Spain
 DLM,Turkey,BHX,United Kingdom
 DLM,Turkey,LGW,United Kingdom
 DLM,Turkey,MAN,United Kingdom
-DSA,Sheffield,PMI,Spain
+DSA, Sheffield,PMI,Spain
 EMA,United Kingdom,ACE,Spain
 EMA,United Kingdom,NBE,Tunisia
 EMA,United Kingdom,PFO,Cyprus
@@ -28307,7 +28307,7 @@ PFO,Cyprus,LGW,United Kingdom
 PFO,Cyprus,MAN,United Kingdom
 PMI,Spain,BHX,United Kingdom
 PMI,Spain,BRS,United Kingdom
-PMI,Spain,DSA,Sheffield
+PMI,Spain,DSA, Sheffield
 PMI,Spain,EMA,United Kingdom
 PMI,Spain,EXT,United Kingdom
 PMI,Spain,GLA,United Kingdom
@@ -28457,7 +28457,7 @@ LIS,Portugal,OTP,Romania
 LIS,Portugal,PHL,United States
 LIS,Portugal,POA,Brazil
 LIS,Portugal,PRG,Czech Republic
-LIS,Portugal,RAI,Santiago Island
+LIS,Portugal,RAI, Santiago Island
 LIS,Portugal,RAK,Morocco
 LIS,Portugal,REC,Brazil
 LIS,Portugal,SID,Cape Verde
@@ -28516,7 +28516,7 @@ PDL,Portugal,YYZ,Canada
 PHL,United States,LIS,Portugal
 POA,Brazil,LIS,Portugal
 PRG,Czech Republic,LIS,Portugal
-RAI,Santiago Island,LIS,Portugal
+RAI, Santiago Island,LIS,Portugal
 RAK,Morocco,LIS,Portugal
 REC,Brazil,LIS,Portugal
 SID,Cape Verde,LIS,Portugal
@@ -32470,35 +32470,35 @@ VTE,Laos,VII,Vietnam
 WNZ,China,DAD,Vietnam
 XMN,China,DAD,Vietnam
 AMS,Netherlands,VXE,Cape Verde
-BOS,United States,RAI,Santiago Island
+BOS,United States,RAI, Santiago Island
 BVC,Cape Verde,LIS,Portugal
-BVC,Cape Verde,RAI,Santiago Island
-CDG,France,RAI,Santiago Island
+BVC,Cape Verde,RAI, Santiago Island
+CDG,France,RAI, Santiago Island
 CDG,France,VXE,Cape Verde
-DKR,Senegal,RAI,Santiago Island
-FOR,Brazil,RAI,Santiago Island
+DKR,Senegal,RAI, Santiago Island
+FOR,Brazil,RAI, Santiago Island
 LIS,Portugal,BVC,Cape Verde
-LIS,Portugal,RAI,Santiago Island
+LIS,Portugal,RAI, Santiago Island
 LIS,Portugal,SID,Cape Verde
 LIS,Portugal,VXE,Cape Verde
-MMO,Cape Verde,RAI,Santiago Island
-RAI,Santiago Island,BOS,United States
-RAI,Santiago Island,BVC,Cape Verde
-RAI,Santiago Island,CDG,France
-RAI,Santiago Island,DKR,Senegal
-RAI,Santiago Island,FOR,Brazil
-RAI,Santiago Island,LIS,Portugal
-RAI,Santiago Island,MMO,Cape Verde
-RAI,Santiago Island,SFL,Fogo Island
-RAI,Santiago Island,SID,Cape Verde
-RAI,Santiago Island,VXE,Cape Verde
-SFL,Fogo Island,RAI,Santiago Island
+MMO,Cape Verde,RAI, Santiago Island
+RAI, Santiago Island,BOS,United States
+RAI, Santiago Island,BVC,Cape Verde
+RAI, Santiago Island,CDG,France
+RAI, Santiago Island,DKR,Senegal
+RAI, Santiago Island,FOR,Brazil
+RAI, Santiago Island,LIS,Portugal
+RAI, Santiago Island,MMO,Cape Verde
+RAI, Santiago Island,SFL, Fogo Island
+RAI, Santiago Island,SID,Cape Verde
+RAI, Santiago Island,VXE,Cape Verde
+SFL, Fogo Island,RAI, Santiago Island
 SID,Cape Verde,AMS,Netherlands
 SID,Cape Verde,CDG,France
 SID,Cape Verde,LIS,Portugal
-SID,Cape Verde,RAI,Santiago Island
+SID,Cape Verde,RAI, Santiago Island
 VXE,Cape Verde,LIS,Portugal
-VXE,Cape Verde,RAI,Santiago Island
+VXE,Cape Verde,RAI, Santiago Island
 ANU,Antigua and Barbuda,LGW,United Kingdom
 ANU,Antigua and Barbuda,UVF,Saint Lucia
 ATL,United States,CUN,Mexico
@@ -33099,12 +33099,12 @@ CTA,Italy,OTP,Romania
 CUF,Italy,OTP,Romania
 DEB,Hungary,EIN,Netherlands
 DEB,Hungary,LTN,United Kingdom
-DSA,Sheffield,GDN,Poland
-DSA,Sheffield,KTW,Poland
-DSA,Sheffield,POZ,Poland
-DSA,Sheffield,VNO,Lithuania
-DSA,Sheffield,WAW,Poland
-DSA,Sheffield,WRO,Poland
+DSA, Sheffield,GDN,Poland
+DSA, Sheffield,KTW,Poland
+DSA, Sheffield,POZ,Poland
+DSA, Sheffield,VNO,Lithuania
+DSA, Sheffield,WAW,Poland
+DSA, Sheffield,WRO,Poland
 DTM,Germany,BEG,Serbia
 DTM,Germany,BUD,Hungary
 DTM,Germany,CLJ,Romania
@@ -33144,7 +33144,7 @@ GDN,Poland,BGO,Norway
 GDN,Poland,BGY,Italy
 GDN,Poland,BVA,France
 GDN,Poland,CGN,Germany
-GDN,Poland,DSA,Sheffield
+GDN,Poland,DSA, Sheffield
 GDN,Poland,DTM,Germany
 GDN,Poland,EIN,Netherlands
 GDN,Poland,FCO,Italy
@@ -33189,7 +33189,7 @@ KTW,Poland,BGY,Italy
 KTW,Poland,BVA,France
 KTW,Poland,CGN,Germany
 KTW,Poland,CIA,Italy
-KTW,Poland,DSA,Sheffield
+KTW,Poland,DSA, Sheffield
 KTW,Poland,DTM,Germany
 KTW,Poland,EIN,Netherlands
 KTW,Poland,HHN,Germany
@@ -33295,7 +33295,7 @@ OTP,Romania,ZAZ,Spain
 PEG,Italy,OTP,Romania
 POZ,Poland,BCN,Spain
 POZ,Poland,BVA,France
-POZ,Poland,DSA,Sheffield
+POZ,Poland,DSA, Sheffield
 POZ,Poland,LTN,United Kingdom
 POZ,Poland,NYO,Sweden
 POZ,Poland,TRF,Sandefjord
@@ -33397,7 +33397,7 @@ VNO,Lithuania,BCN,Spain
 VNO,Lithuania,BGO,Norway
 VNO,Lithuania,BGY,Italy
 VNO,Lithuania,BVA,France
-VNO,Lithuania,DSA,Sheffield
+VNO,Lithuania,DSA, Sheffield
 VNO,Lithuania,DTM,Germany
 VNO,Lithuania,EIN,Netherlands
 VNO,Lithuania,FCO,Italy
@@ -33412,7 +33412,7 @@ WAW,Poland,BGY,Italy
 WAW,Poland,BUD,Hungary
 WAW,Poland,BVA,France
 WAW,Poland,CRL,Belgium
-WAW,Poland,DSA,Sheffield
+WAW,Poland,DSA, Sheffield
 WAW,Poland,EIN,Netherlands
 WAW,Poland,FCO,Italy
 WAW,Poland,GLA,United Kingdom
@@ -33426,7 +33426,7 @@ WAW,Poland,NYO,Sweden
 WAW,Poland,TLV,Israel
 WAW,Poland,TRF,Sandefjord
 WRO,Poland,BVA,France
-WRO,Poland,DSA,Sheffield
+WRO,Poland,DSA, Sheffield
 WRO,Poland,LTN,United Kingdom
 WRO,Poland,TRF,Sandefjord
 ZAZ,Spain,CLJ,Romania
