@@ -51,14 +51,6 @@ class Day {
         return -1;
     }
 
-    // outputJson() {
-    //     let json;
-    //     this.countries.forEach(element => {
-    //         console.log(JSON.stringify(element.getJson()));
-    //     });
-    //     return json;
-    // }
-
     // Prints all data stored
     print() {
         console.log("Day: " + this.day);
@@ -84,61 +76,49 @@ class Country {
         this.recovered = this.recovered + parseInt(recovered);
     }
 
-    // getJson() {
-    //     let countryObj = {
-    //         name: this.name,
-    //         cases: this.cases,
-    //         deaths: this.deaths,
-    //         recovered: this.recovered
-    //     }
-    //     return countryObj;
-    // }
-
     print() {
         console.log("\t\t" + "Country: " + this.name + "\t" + "Cases: " + this.cases + "\t" + "Deaths: " + this.deaths + "\t", "Recovered: " + this.recovered);
     }
 }
 
-// NodeJS - Allows you to connect using http://localhost:8080
-// http.createServer(function (req, res) {
 // Updates and formats coronavirus dataset
 sync();
-// }).listen(8080);
 
 // Updates and formats coronavirus dataset
 function sync() {
-	// Make directory for source files if doesn't already exist
-	if (!fs.existsSync(tempPath)) {
-		fs.mkdirSync(tempPath);
-	}
-	// // Identifies and downloads source files
-	// download();
-	// Create temporary file to store export
-
+    // Make directory for source files if doesn't already exist
+    if (!fs.existsSync(tempPath)) {
+        fs.mkdirSync(tempPath);
+    }
+    // Identifies and downloads source files
+    download();
     // Identify common countries and store each as an object, add each cell (confirmed, death, recovered) together
     let days = objectification();
     // 
-    // console.log(days);
-    // // Export class to json
-    // exportJson(days, exportPath);
+    console.log(days);
+    // Export class to json
+    exportJson(days, exportPath);
 
-    // // Deletes temporary files
-    // if (fs.existsSync(tempPath)) {
-    //     rimraf.sync(tempPath);
-    // }
+    // Deletes temporary files
+    if (fs.existsSync(tempPath)) {
+        rimraf.sync(tempPath);
+    }
 }
 
 // Identifies source files to download
 function download() {
     // Sets the first file to look at
     let date = new Date("2020-01-22");
-    const today = new Date();
+    const todayDate = new Date();
+    const today = new Date(todayDate.getFullYear(), todayDate.getMonth(), todayDate.getDate());
+    console.log(date.valueOf(), today.valueOf());
+    
     // Runs though all the files
-    while (date < today) {
+    while (date.valueOf() < today.valueOf()) {
         // Returns the date formatted as used in the url for files
         const formatted = getDownloadDate(date);
         // Downloads the file
-        downloadFile(source + "/" + formatted + ".csv", tempPath + "/" + formatted + ".csv", onDownloadFileDone);
+        requestFile(source + "/" + formatted + ".csv", tempPath + "/" + formatted + ".csv", onDownloadFileDone);
         // Sets next day
         date.setDate(date.getDate() + 1);
     }
@@ -147,44 +127,17 @@ function download() {
 // 
 function objectification() {
     let days = [];
-    cb = onDownloadFileDone;
-    // Credits: https://stackoverflow.com/questions/10049557/reading-all-files-in-a-directory-store-them-in-objects-and-send-the-object
-    fs.readdir(tempPath, function (err, filenames) {
-        if (err) {
-            cb(err);
-            return;
+    const filenames = fs.readdirSync(tempPath);
+    filenames.forEach(filename => {
+        try {
+            const currentDay = fs.readFileSync(tempPath + "/" + filename, 'utf-8');
+            days.push(processTempFile(filename, currentDay, onDownloadFileDone));
         }
-        filenames.forEach( function (filename) {
-            fs.readFile(tempPath + "/" + filename, 'utf-8', function (err, content) {
-                if (err) {
-                    cb(err);
-                    return;
-                }
-                // Process a file representing the coronavirus statistics by country for that day
-                const day = processTempFile(filename, content, onTempFile);
-                days[days.length] = day; 
-            });
-        });
+        catch {
+            onDownloadFileDone(err);
+        }
     });
-
-    // Waits until the above functions are done
-    setTimeout(function () {
-        return days;
-    }, 100);
-}
-
-// 
-function exportJson(days, exportPath) {
-    let json = [];
-    days.forEach(element => {
-        // json[json.length] = element.getJson();
-        // console.log(element);
-    });
-    try {
-        fs.writeFileSync(exportPath, json);
-    } catch (error) {
-        console.error(err);
-    }
+    return days;     
 }
 
 // Process a file representing the coronavirus statistics by country for that day
@@ -244,6 +197,18 @@ function dealsWithQuoteMarks(content) {
     return content;
 }
 
+
+// 
+function exportJson(days, exportPath) {
+    let json = [];
+    days.forEach(element => {
+        json[json.length] = JSON.stringify(element);
+    });
+    fs.writeFile(exportPath, JSON.stringify(days, null, 4), 'utf8', function (err) {
+        if (err) throw err;
+    });
+}
+
 // Returns the date formatted as used in the url for files
 function getDownloadDate(date) {
     const day = ("0" + String(date.getDate())).slice(-2);
@@ -267,34 +232,34 @@ function getFormattedDate(downloadDate) {
 }
 
 // Credits: https://stackoverflow.com/questions/11944932/how-to-download-a-file-with-node-js-without-using-third-party-libraries
-function download(url, dest, cb) {
-	console.log('URL: ' + url + '\t' + 'Destination: ' + dest);
-	const file = fs.createWriteStream(dest);
-	const sendReq = request.get(url);
+function requestFile(url, dest, cb) {
+    console.log('URL: ' + url + '\t' + 'Destination: ' + dest);
+    const file = fs.createWriteStream(dest);
+    const sendReq = request.get(url);
 
-	// verify response code
-	sendReq.on('response', response => {
-		if (response.statusCode !== 200) {
-			fs.unlink(dest, cb);
-			return cb('Response status was ' + response.statusCode);
-		}
-		sendReq.pipe(file);
-	});
+    // verify response code
+    sendReq.on('response', response => {
+        if (response.statusCode !== 200) {
+            fs.unlink(dest, cb);
+            return cb('Response status was ' + response.statusCode);
+        }
+        sendReq.pipe(file);
+    });
 
-	// close() is async, call cb after close completes
-	file.on('finish', () => file.close(cb));
-	// check for request errors
-	sendReq.on('err', err => {
-		fs.unlink(dest, cb);
-		return cb(err.message);
-	});
+    // close() is async, call cb after close completes
+    file.on('finish', () => file.close(cb));
+    // check for request errors
+    sendReq.on('err', err => {
+        fs.unlink(dest, cb);
+        return cb(err.message);
+    });
 
-	// Handle errors
-	file.on('err', err => {
-		// Delete the file async. (But we don't check the result)
-		fs.unlink(dest, cb);
-		return cb(err.message);
-	});
+    // Handle errors
+    file.on('err', err => {
+        // Delete the file async. (But we don't check the result)
+        fs.unlink(dest, cb);
+        return cb(err.message);
+    });
 }
 
 // Prints download messages
