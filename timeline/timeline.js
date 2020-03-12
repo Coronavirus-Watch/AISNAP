@@ -4,99 +4,23 @@
 // Data source: https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports
 
 // Loads NodeJS Modules
-// const csv = require('csv');
 const axios = require('axios');
 const fs = require('fs');
-const http = require('http');
 const rimraf = require('rimraf');
 const schedule = require('node-schedule');
 
 // Link to source data
 const source =
 	'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports';
-//
+
+// Temporary path to store the downloaded data
 const tempPath = '../data/tmp';
-//
+
+// Path to store the parsed and exported JSON
 const exportPath = '../data/timeline.json';
 
-// Stores data for a day by country
-class Day {
-	constructor() {
-		// Stores each individual country
-		this.countries = new Array();
-	}
-
-	// Adds data from a region
-	addData(cases, deaths, recovered, countryName, day) {
-		this.day = day;
-		let index = this.searchForCountry(countryName);
-		// Checks if a country is on the array
-		if (this.searchForCountry(countryName) != -1) {
-			this.countries[index].additionalData(cases, deaths, recovered);
-			// console.log("Country detected");
-		} else {
-			this.countries[this.countries.length] = new Country(
-				cases,
-				deaths,
-				recovered,
-				countryName
-			);
-			// console.log("New country added");
-		}
-	}
-
-	// Checks if a country is on the array
-	searchForCountry(countryName) {
-		for (let i = 0; i < this.countries.length; i++) {
-			const element = this.countries[i];
-			if (element.name === countryName) {
-				return i;
-			}
-		}
-		return -1;
-	}
-
-	// Prints all data stored
-	print() {
-		console.log('Day: ' + this.day);
-		this.countries.forEach(element => {
-			// console.log("Country?");
-			element.print();
-		});
-	}
-}
-
-// Stores country for a single day
-class Country {
-	constructor(cases = '0', deaths = '0', recovered = '0', name) {
-		this.cases = parseInt(cases);
-		this.deaths = parseInt(deaths);
-		this.recovered = parseInt(recovered);
-		this.name = name;
-	}
-
-	additionalData(cases = '0', deaths = '0', recovered = '0') {
-		this.cases = this.cases + parseInt(cases);
-		this.deaths = this.deaths + parseInt(deaths);
-		this.recovered = this.recovered + parseInt(recovered);
-	}
-
-	print() {
-		console.log(
-			'\t\t' +
-				'Country: ' +
-				this.name +
-				'\t' +
-				'Cases: ' +
-				this.cases +
-				'\t' +
-				'Deaths: ' +
-				this.deaths +
-				'\t',
-			'Recovered: ' + this.recovered
-		);
-	}
-}
+// Stores data for a Day
+const Day = require('./Day');
 
 // Updates and formats coronavirus dataset
 sync();
@@ -108,70 +32,78 @@ async function sync() {
 		fs.mkdirSync(tempPath);
 	}
 
+	// downloads files from source
 	let files = await download();
-	let days = await objectification(files);
+
+	// parses downloaded files into JSON
+	let days = await parseDownload(files);
+
+	// exports parsed date to file
 	exportJson(days, exportPath);
 
+	// removes folder containing downloaded files
 	if (fs.existsSync(tempPath)) {
 		rimraf.sync(tempPath);
 	}
 }
 
-// Identifies source files to download
+// Downloads files from source and returns a data structure containing
+// all files' content
 async function download() {
+	// initialises files data structure
 	let files = [];
+
 	// Sets the first file to look at
 	let date = new Date('2020-01-22');
+
+	// Calculates millisecond date for today to compare against other dates
 	const todayDate = new Date();
 	const today = new Date(
 		todayDate.getFullYear(),
 		todayDate.getMonth(),
 		todayDate.getDate()
 	);
-	// console.log(date.valueOf(), today.valueOf());
 
-	// Runs though all the files
+	// Runs though all the files until Today
 	while (date.valueOf() < today.valueOf()) {
 		// Returns the date formatted as used in the url for files
 		const formatted = getDownloadDate(date);
-		const filePath = tempPath + '/' + formatted + '.csv';
-		// Downloads the file
+
+		// Downloads the file content
 		const fileData = await requestFile(
 			source + '/' + formatted + '.csv',
-			tempPath + '/' + formatted + '.csv',
 			onDownloadFileDone
 		);
-		//
+		// Pushes content and path to data structure
 		files.push([formatted, fileData]);
-		// Sets next day
+
+		// Increments to next day
 		date.setDate(date.getDate() + 1);
 	}
+
+	// returns resulting file data structure
 	return files;
 }
 
-// Credits: https://stackoverflow.com/questions/11944932/how-to-download-a-file-with-node-js-without-using-third-party-libraries
-async function requestFile(link, dest, cb) {
-	let data = await axios({ url: link, responseType: 'blob', method: 'get' })
+// requests file content using link parameter
+async function requestFile(link, cb) {
+	// Sends an HTTP request to "link" and returns text content
+	let fileContents = await axios({
+		url: link,
+		responseType: 'blob',
+		method: 'get'
+	})
 		.then(response => {
-			// // console.log(link, dest, response.data);
-			// fs.writeFile(dest, response.data, function(err) {
-			// 	// console.log(fd);
-			// 	if (err) {
-			// 		console.log('requestFile(1)');
-			// 		throw err;
-			// 	}
-			// });
+			// returns response text to fileContents variable
 			return response.data;
 		})
-		.then(res => {
-			return res;
-		})
 		.catch(err => {
-			console.log('requestFile(2)');
+			// Callback for handling error
 			return cb(err.message);
 		});
-	// fs.closeSync(fd);
-	return data;
+
+	// returns data fetched from source
+	return fileContents;
 }
 
 // Prints download messages
@@ -181,26 +113,22 @@ function onDownloadFileDone(data) {
 	}
 }
 
-//
-function objectification(files) {
+// parses the downloaded files into an Array format
+function parseDownload(files) {
+	// creates an array to store all parsed data for each day contained in the files
 	let days = [];
-	// Actually this worked anyway so let's just leave it
-	// const filenames = fs.readdirSync(tempPath);
-	// filenames.forEach(filename => {
-	// Fair, let's push an array of "things" using the download method and then pass it into objectification <- name needs changed
-	// const data = fs.readFileSync(tempPath + '/' + filename, 'utf8');
-	// do we need to keep the filename
-	// We'll have to think of some way of dealing with that since that contains the date info
-	// we can use Objects or 2D arrays
-	files.forEach(data => {
-		days.push(processTempFile(data[0], data[1]));
+
+	// Loops through each file, creating a new Day instance and extra data parsing
+	files.forEach(day => {
+		days.push(processDay(day[0], day[1]));
 	});
 
+	// returning the resulting days array
 	return days;
 }
 
 // Process a file representing the coronavirus statistics by country for that day
-function processTempFile(filename, content) {
+function processDay(filename, content) {
 	let day = new Day();
 	// Prevents commas within quotes from messing up the seperation
 	content = dealsWithQuoteMarks(content);
@@ -243,8 +171,9 @@ function dealsWithQuoteMarks(content) {
 				content.slice(index, content.length);
 		} else if (element === '"') {
 			// Deletes element
-			// content =
-			content.slice(0, index - 1) + content.slice(index, content.length);
+			content =
+				content.slice(0, index - 1) +
+				content.slice(index, content.length);
 			if (inQuote) {
 				inQuote = false;
 			} else {
@@ -255,19 +184,26 @@ function dealsWithQuoteMarks(content) {
 	return content;
 }
 
-//
+// exports JSON to exportPath given
 function exportJson(days, exportPath) {
+	// intiailises JSON data structure
 	let json = [];
+	// Loops through each day, appending to the JSON object
 	days.forEach(element => {
 		json[json.length] = JSON.stringify(element);
 	});
+
+	// Creating a file descriptor to open the file for writing
 	const fd = fs.openSync(exportPath, 'w+');
+
+	// writes entire JSON to file
 	fs.writeFile(exportPath, JSON.stringify(days, null, 4), err => {
 		if (err) {
-			console.log('exportJson()');
 			console.log(err);
 		}
 	});
+
+	// closes file using file descriptor value
 	fs.closeSync(fd);
 }
 
@@ -280,16 +216,21 @@ function getDownloadDate(date) {
 	return dateVar;
 }
 
+// calculates formatted date using the downloaded filename
+// returns formatted date
 function getFormattedDate(downloadDate) {
 	// Removes extension if necessary
 	if (downloadDate.endsWith('.csv')) {
 		downloadDate.replace('.csv', '');
 	}
+	// parses all date sections
 	const sections = downloadDate.split('-');
 	const day = sections[1];
 	const month = sections[0];
 	const year = sections[2];
 	const dateVar = day + '/' + month + '/' + year;
+
+	// returns formatted date
 	return dateVar;
 }
 
