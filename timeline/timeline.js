@@ -5,9 +5,9 @@
 
 // Loads NodeJS Modules
 // const csv = require('csv');
+const axios = require('axios');
 const fs = require('fs');
 const http = require('http');
-const request = require('request');
 const rimraf = require('rimraf');
 const schedule = require('node-schedule');
 
@@ -235,31 +235,19 @@ function getFormattedDate(downloadDate) {
 function requestFile(url, dest, cb) {
     console.log('URL: ' + url + '\t' + 'Destination: ' + dest);
     const file = fs.createWriteStream(dest);
-    const sendReq = request.get(url);
-
-    // verify response code
-    sendReq.on('response', response => {
+    axios.get(url).then(response => {
         if (response.statusCode !== 200) {
             fs.unlink(dest, cb);
             return cb('Response status was ' + response.statusCode);
         }
-        sendReq.pipe(file);
+        response.data.pipe(file);
+    }).catch(err => {
+        fs.unlink(dest, cb);
+        return cb(err.message);
     });
 
     // close() is async, call cb after close completes
     file.on('finish', () => file.close(cb));
-    // check for request errors
-    sendReq.on('err', err => {
-        fs.unlink(dest, cb);
-        return cb(err.message);
-    });
-
-    // Handle errors
-    file.on('err', err => {
-        // Delete the file async. (But we don't check the result)
-        fs.unlink(dest, cb);
-        return cb(err.message);
-    });
 }
 
 // Prints download messages
