@@ -142,7 +142,7 @@ async function download() {
 			onDownloadFileDone
 		);
 		//
-		files.push([filePath, fileData]);
+		files.push([formatted, fileData]);
 		// Sets next day
 		date.setDate(date.getDate() + 1);
 	}
@@ -153,14 +153,14 @@ async function download() {
 async function requestFile(link, dest, cb) {
 	let data = await axios({ url: link, responseType: 'blob', method: 'get' })
 		.then(response => {
-			// console.log(link, dest, response.data);
-			fs.writeFile(dest, response.data, function(err) {
-				// console.log(fd);
-				if (err) {
-					console.log('requestFile(1)');
-					throw err;
-				}
-			});
+			// // console.log(link, dest, response.data);
+			// fs.writeFile(dest, response.data, function(err) {
+			// 	// console.log(fd);
+			// 	if (err) {
+			// 		console.log('requestFile(1)');
+			// 		throw err;
+			// 	}
+			// });
 			return response.data;
 		})
 		.then(res => {
@@ -205,7 +205,6 @@ function processTempFile(filename, content) {
 	// Prevents commas within quotes from messing up the seperation
 	content = dealsWithQuoteMarks(content);
 	// Seperating each lines
-	console.log(content, typeof content);
 	const lines = content.split('\n');
 	// Loops through each line
 	for (let i = 1; i < lines.length; i++) {
