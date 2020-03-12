@@ -1243,15 +1243,6 @@ TIP,Libya,TUN,Tunisia
 TUN,Tunisia,BEN,Libya
 TUN,Tunisia,MRA,Libya
 TUN,Tunisia,TIP,Libya
-FAI,United States,KBC,
-FAI,United States,TAL,United States
-HSL,United States,TAL,United States
-HUS,United States,TAL,United States
-KBC,,FYU,United States
-RBY,United States,TAL,United States
-TAL,United States,FAI,United States
-TAL,United States,HSL,United States
-TAL,United States,RBY,United States
 BKI,Malaysia,PVG,China
 BKK,Thailand,PVG,China
 CJU,South Korea,PVG,China
@@ -1658,11 +1649,11 @@ LYS,France,BRU,Belgium
 LYS,France,FCO,Italy
 LYS,France,FLR,Italy
 LYS,France,GOT,Sweden
-LYS,France,MLH,
+LYS,France,MLH,Switzerland
 LYS,France,MXP,Italy
 LYS,France,PRG,Czech Republic
 LYS,France,VCE,Italy
-MLH,,LYS,France
+MLH,Switzerland,LYS,France
 MXP,Italy,LYS,France
 MXP,Italy,NTE,France
 NTE,France,BRU,Belgium
@@ -4217,7 +4208,7 @@ MLA,Malta,CDG,France
 MLA,Malta,LYS,France
 MLA,Malta,ORY,France
 MLA,Malta,TLS,France
-MLH,,ORY,France
+MLH,Switzerland,ORY,France
 MNL,Philippines,TPE,Taiwan
 MPL,France,FCO,Italy
 MRS,France,ALG,Algeria
@@ -4285,7 +4276,7 @@ ORY,France,LCY,United Kingdom
 ORY,France,LIN,Italy
 ORY,France,MAD,Spain
 ORY,France,MLA,Malta
-ORY,France,MLH,
+ORY,France,MLH,Switzerland
 ORY,France,PMI,Spain
 ORY,France,PTP,Guadeloupe
 ORY,France,RUN,Reunion
@@ -4472,7 +4463,7 @@ CMN,Morocco,ORN,Algeria
 CZL,Algeria,CDG,France
 CZL,Algeria,IST,Turkey
 CZL,Algeria,LYS,France
-CZL,Algeria,MLH,
+CZL,Algeria,MLH,Switzerland
 CZL,Algeria,MRS,France
 CZL,Algeria,NCE,France
 CZL,Algeria,ORY,France
@@ -4500,7 +4491,7 @@ LYS,France,ORN,Algeria
 LYS,France,QSF,Algeria
 LYS,France,TLM,Algeria
 MAD,Spain,ALG,Algeria
-MLH,,CZL,Algeria
+MLH,Switzerland,CZL,Algeria
 MRS,France,AAE,Algeria
 MRS,France,ALG,Algeria
 MRS,France,BJA,Algeria
@@ -7456,7 +7447,7 @@ CDG,France,TUN,Tunisia
 DJE,Tunisia,CDG,France
 DJE,Tunisia,LIL,France
 DJE,Tunisia,LYS,France
-DJE,Tunisia,MLH,
+DJE,Tunisia,MLH,Switzerland
 DJE,Tunisia,MRS,France
 DJE,Tunisia,MUC,Germany
 DJE,Tunisia,NTE,France
@@ -27393,9 +27384,9 @@ FRA,Germany,ASB,Turkmenistan
 IST,Turkey,ASB,Turkmenistan
 LHR,United Kingdom,ASB,Turkmenistan
 GVA,Switzerland,MRS,France
-MLH,,MRS,France
+MLH,Switzerland,MRS,France
 MRS,France,GVA,Switzerland
-MRS,France,MLH,
+MRS,France,MLH,Switzerland
 MRS,France,MXP,Italy
 MXP,Italy,MRS,France
 MXP,Italy,TLS,France
@@ -33560,7 +33551,7 @@ BEG,Serbia,FMM,Germany
 BEG,Serbia,GSE,Sweden
 BEG,Serbia,LCA,Cyprus
 BEG,Serbia,LTN,United Kingdom
-BEG,Serbia,MLH,
+BEG,Serbia,MLH,Switzerland
 BEG,Serbia,MMX,Sweden
 BEG,Serbia,NYO,Sweden
 BEG,Serbia,TRF,Sandefjord
@@ -33809,9 +33800,9 @@ MAD,Spain,OTP,Romania
 MAD,Spain,SOF,Bulgaria
 MAD,Spain,TSR,Romania
 MLA,Malta,BUD,Hungary
-MLH,,BEG,Serbia
-MLH,,SKP,Macedonia
-MLH,,TZL,Bosnia and Herzegovina
+MLH,Switzerland,BEG,Serbia
+MLH,Switzerland,SKP,Macedonia
+MLH,Switzerland,TZL,Bosnia and Herzegovina
 MMX,Sweden,BEG,Serbia
 MMX,Sweden,BUD,Hungary
 MMX,Sweden,GDN,Poland
@@ -33889,7 +33880,7 @@ SKP,Macedonia,FMM,Germany
 SKP,Macedonia,GSE,Sweden
 SKP,Macedonia,HHN,Germany
 SKP,Macedonia,LTN,United Kingdom
-SKP,Macedonia,MLH,
+SKP,Macedonia,MLH,Switzerland
 SKP,Macedonia,MMX,Sweden
 SKP,Macedonia,NYO,Sweden
 SKP,Macedonia,TSF,Italy
@@ -33953,7 +33944,7 @@ TSR,Romania,MAD,Spain
 TSR,Romania,TSF,Italy
 TSR,Romania,VLC,Spain
 TZL,Bosnia and Herzegovina,GSE,Sweden
-TZL,Bosnia and Herzegovina,MLH,
+TZL,Bosnia and Herzegovina,MLH,Switzerland
 TZL,Bosnia and Herzegovina,MMX,Sweden
 VAR,Bulgaria,LTN,United Kingdom
 VKO,Russia,BUD,Hungary
@@ -35128,14 +35119,6 @@ MYY,Malaysia,MNL,Philippines
 PUS,South Korea,KLO,Philippines
 PVG,China,MNL,Philippines
 TPE,Taiwan,KLO,Philippines
-CGA,United States,KLW,United States
-CGA,United States,KTN,United States
-HYL,United States,KTN,United States
-KLW,United States,CGA,United States
-KTN,United States,CGA,United States
-KTN,United States,HYL,United States
-KTN,United States,KWF,
-KWF,,KTN,United States
 ADA,Turkey,EBL,Iraq
 AMM,Jordan,EBL,Iraq
 ARN,Sweden,EBL,Iraq
@@ -35463,7 +35446,7 @@ AAE,Algeria,ORY,France
 ALG,Algeria,CDG,France
 ALG,Algeria,LIL,France
 ALG,Algeria,LYS,France
-ALG,Algeria,MLH,
+ALG,Algeria,MLH,Switzerland
 ALG,Algeria,MRS,France
 ALG,Algeria,ORY,France
 ALG,Algeria,TLS,France
@@ -35475,7 +35458,7 @@ CDG,France,ALG,Algeria
 CDG,France,FAO,Portugal
 CDG,France,ORN,Algeria
 CZL,Algeria,LYS,France
-CZL,Algeria,MLH,
+CZL,Algeria,MLH,Switzerland
 CZL,Algeria,MRS,France
 CZL,Algeria,ORY,France
 DJE,Tunisia,ORY,France
@@ -35488,10 +35471,10 @@ LYS,France,ALG,Algeria
 LYS,France,CZL,Algeria
 LYS,France,ORN,Algeria
 LYS,France,QSF,Algeria
-MLH,,ALG,Algeria
-MLH,,CZL,Algeria
-MLH,,ORN,Algeria
-MLH,,QSF,Algeria
+MLH,Switzerland,ALG,Algeria
+MLH,Switzerland,CZL,Algeria
+MLH,Switzerland,ORN,Algeria
+MLH,Switzerland,QSF,Algeria
 MRS,France,AAE,Algeria
 MRS,France,ALG,Algeria
 MRS,France,BJA,Algeria
@@ -35503,7 +35486,7 @@ OPO,Portugal,ORY,France
 ORN,Algeria,CDG,France
 ORN,Algeria,LIL,France
 ORN,Algeria,LYS,France
-ORN,Algeria,MLH,
+ORN,Algeria,MLH,Switzerland
 ORN,Algeria,MRS,France
 ORN,Algeria,ORY,France
 ORN,Algeria,TLS,France
@@ -35522,7 +35505,7 @@ ORY,France,QSF,Algeria
 ORY,France,TLM,Algeria
 ORY,France,VKO,Russia
 QSF,Algeria,LYS,France
-QSF,Algeria,MLH,
+QSF,Algeria,MLH,Switzerland
 QSF,Algeria,MRS,France
 QSF,Algeria,ORY,France
 TLM,Algeria,MRS,France
@@ -35531,12 +35514,5 @@ TLS,France,ALG,Algeria
 TLS,France,ORN,Algeria
 VKO,Russia,ORY,France
 DEN,United States,EAR,
-EAR,,DEN,United States
-IGM,,LAX,United States
-IGM,,PGA,United States
-LAX,United States,IGM,
-PGA,United States,IGM,
-PHX,United States,SVC,
-SVC,,PHX,United States
 DME,Russia,FRU,Kyrgyzstan
 FRU,Kyrgyzstan,DME,Russia
