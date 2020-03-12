@@ -1,4 +1,4 @@
-GYD,Azerbaijan,NBC,Russia
+﻿GYD,Azerbaijan,NBC,Russia
 NBC,Russia,GYD,Azerbaijan
 ABJ,Cote d'Ivoire,BOY,Burkina Faso
 ABJ,Cote d'Ivoire,OUA,Burkina Faso
