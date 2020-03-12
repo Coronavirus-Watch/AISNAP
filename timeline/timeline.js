@@ -160,16 +160,17 @@ function objectification() {
                     cb(err);
                     return;
                 }
-                // console.log(days);
                 // Process a file representing the coronavirus statistics by country for that day
-                const day = processTempFile(filename, content);
+                const day = processTempFile(filename, content, onTempFile);
                 days[days.length] = day; 
-                // console.log(days.length)
             });
         });
     });
-    console.log(days.length);
-    return days;
+
+    // Waits until the above functions are done
+    setTimeout(function () {
+        return days;
+    }, 100);
 }
 
 // 
@@ -267,9 +268,9 @@ function getFormattedDate(downloadDate) {
 
 // Credits: https://stackoverflow.com/questions/11944932/how-to-download-a-file-with-node-js-without-using-third-party-libraries
 function downloadFile(url, dest, cb) {
-    console.log("URL: " + url + "\t" + "Destination: " + dest);
-    const file = fs.createWriteStream(dest);
-    const sendReq = request.get(url);
+	console.log('URL: ' + url + '\t' + 'Destination: ' + dest);
+	const file = fs.createWriteStream(dest);
+	const sendReq = request.get(url);
 
     // verify response code
     sendReq.on('response', (response) => {
