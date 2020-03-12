@@ -1,8 +1,13 @@
 {
   "name": "aisnap",
   "version": "1.0.0",
-  "description": "Project for Algortihms and Artificial Intelligence Module for Year 2, Sememster 2 at Univeristy of Dundee",
+  "description": "Project for Algorithms and Artificial Intelligence Module for Year 2, Semester 2 at University of Dundee.",
   "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "node-schedule": "^1.3.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,9 +20,5 @@
   "bugs": {
     "url": "https://github.com/maxwillkelly/AISNAP/issues"
   },
-  "homepage": "https://github.com/maxwillkelly/AISNAP#readme",
-  "dependencies": {
-    "node-schedule": "^1.3.2"
-    "request": "^2.88.2"
-  }
+  "homepage": "https://github.com/maxwillkelly/AISNAP#readme"
 }

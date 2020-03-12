@@ -5,9 +5,9 @@
 
 // Loads NodeJS Modules
 // const csv = require('csv');
+const axios = require('axios');
 const fs = require('fs');
 const http = require('http');
-const request = require('request');
 const rimraf = require('rimraf');
 const schedule = require('node-schedule');
 
@@ -51,14 +51,6 @@ class Day {
         return -1;
     }
 
-    // outputJson() {
-    //     let json;
-    //     this.countries.forEach(element => {
-    //         console.log(JSON.stringify(element.getJson()));
-    //     });
-    //     return json;
-    // }
-
     // Prints all data stored
     print() {
         console.log("Day: " + this.day);
@@ -84,109 +76,107 @@ class Country {
         this.recovered = this.recovered + parseInt(recovered);
     }
 
-    // getJson() {
-    //     let countryObj = {
-    //         name: this.name,
-    //         cases: this.cases,
-    //         deaths: this.deaths,
-    //         recovered: this.recovered
-    //     }
-    //     return countryObj;
-    // }
-
     print() {
         console.log("\t\t" + "Country: " + this.name + "\t" + "Cases: " + this.cases + "\t" + "Deaths: " + this.deaths + "\t", "Recovered: " + this.recovered);
     }
 }
 
-// NodeJS - Allows you to connect using http://localhost:8080
-// http.createServer(function (req, res) {
 // Updates and formats coronavirus dataset
 sync();
-// }).listen(8080);
 
 // Updates and formats coronavirus dataset
-function sync() {
-	// Make directory for source files if doesn't already exist
-	if (!fs.existsSync(tempPath)) {
-		fs.mkdirSync(tempPath);
-	}
-	// // Identifies and downloads source files
-	// download();
-	// Create temporary file to store export
-
-    // Identify common countries and store each as an object, add each cell (confirmed, death, recovered) together
-    let days = objectification();
-    // 
+async function sync() {
+    // Make directory for source files if doesn't already exist
+    if (!fs.existsSync(tempPath)) {
+        fs.mkdirSync(tempPath);
+    }
+    // // Identifies and downloads source files
+    // download().then(objectification()).then(days => {
+    //     console.log(days);
+    //     exportJson(days, exportPath)}
+    // ).catch(err => {
+    //     console.log('fucking shit', err);
+    // });
+    // download().then(res => {
+    //     console.log("This is the result ?= ", res);
+    // }).then((days) => {
+    //     console.log(days);
+    //     
+    // }).catch(err => {
+    //     console.log(err);
+    // });
+    // // Identify common countries and store each as an object, add each cell (confirmed, death, recovered) together
+    // let days = await ;
+    // // 
+    download();
+    let days = await objectification(true);
     // console.log(days);
-    // // Export class to json
-    // exportJson(days, exportPath);
-
+    exportJson(days, exportPath);
+    
+    // Export class to json
     // // Deletes temporary files
     // if (fs.existsSync(tempPath)) {
     //     rimraf.sync(tempPath);
-    // }
+    // }s
 }
 
 // Identifies source files to download
 function download() {
     // Sets the first file to look at
     let date = new Date("2020-01-22");
-    const today = new Date();
+    const todayDate = new Date();
+    const today = new Date(todayDate.getFullYear(), todayDate.getMonth(), todayDate.getDate());
+    // console.log(date.valueOf(), today.valueOf());
+
     // Runs though all the files
-    while (date < today) {
+    while (date.valueOf() < today.valueOf()) {
         // Returns the date formatted as used in the url for files
         const formatted = getDownloadDate(date);
+
         // Downloads the file
-        downloadFile(source + "/" + formatted + ".csv", tempPath + "/" + formatted + ".csv", onDownloadFileDone);
+        requestFile(source + "/" + formatted + ".csv", tempPath + "/" + formatted + ".csv", onDownloadFileDone);
         // Sets next day
         date.setDate(date.getDate() + 1);
     }
 }
-const tempPath = '../data/tmp';
-const source =
-	'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/';
 
-// 
-function objectification() {
-    let days = [];
-    cb = onDownloadFileDone;
-    // Credits: https://stackoverflow.com/questions/10049557/reading-all-files-in-a-directory-store-them-in-objects-and-send-the-object
-    fs.readdir(tempPath, function (err, filenames) {
-        if (err) {
-            cb(err);
-            return;
-        }
-        filenames.forEach( function (filename) {
-            fs.readFile(tempPath + "/" + filename, 'utf-8', function (err, content) {
-                if (err) {
-                    cb(err);
-                    return;
-                }
-                // console.log(days);
-                // Process a file representing the coronavirus statistics by country for that day
-                const day = processTempFile(filename, content);
-                days[days.length] = day; 
-                // console.log(days.length)
-            });
+// Credits: https://stackoverflow.com/questions/11944932/how-to-download-a-file-with-node-js-without-using-third-party-libraries
+function requestFile(link, dest, cb) {
+    // console.log('URL: ' + link + '\t' + 'Destination: ' + dest);
+    const file = fs.createWriteStream(dest);
+    axios({ url: link, responseType: 'blob', method: 'get' }).then(response => {
+        fs.writeFile(dest, response.data, (err) => {
+            if (err) {
+                throw new Error();
+            }
         });
+    }).catch(err => {
+        return cb(err.message);
     });
-    console.log(days.length);
-    return days;
+
+    return "This is the best";
+}
+
+// Prints download messages
+function onDownloadFileDone(data) {
+    if (data) {
+        console.log(data);
+    }
 }
 
 // 
-function exportJson(days, exportPath) {
-    let json = [];
-    days.forEach(element => {
-        // json[json.length] = element.getJson();
-        // console.log(element);
-    });
-    try {
-        fs.writeFileSync(exportPath, json);
-    } catch (error) {
-        console.error(err);
+function objectification(done) {
+    if (!done) {
+        console.log("shit");
+        return;
     }
+    let days = [];
+    const filenames = fs.readdirSync(tempPath);
+    filenames.forEach(filename => {
+        const data = fs.readFileSync(tempPath + "/" + filename, 'utf8')
+        days.push(processTempFile(filename, data));
+    });
+    return days;
 }
 
 // Process a file representing the coronavirus statistics by country for that day
@@ -218,8 +208,6 @@ function processTempFile(filename, content) {
             day.addData(cases, deaths, recovered, countryName, date);
         }
     }
-    // // Prints the stored data in the day we've produced
-    // day.print
     return day;
 }
 
@@ -246,6 +234,17 @@ function dealsWithQuoteMarks(content) {
     return content;
 }
 
+// 
+function exportJson(days, exportPath) {
+    let json = [];
+    days.forEach(element => {
+        json[json.length] = JSON.stringify(element);
+    });
+    fs.writeFile(exportPath, JSON.stringify(days, null, 4), 'utf8', function (err) {
+        if (err) throw err;
+    });
+}
+
 // Returns the date formatted as used in the url for files
 function getDownloadDate(date) {
     const day = ("0" + String(date.getDate())).slice(-2);
@@ -266,44 +265,6 @@ function getFormattedDate(downloadDate) {
     const year = sections[2];
     const dateVar = day + "/" + month + "/" + year;
     return dateVar;
-}
-
-// Credits: https://stackoverflow.com/questions/11944932/how-to-download-a-file-with-node-js-without-using-third-party-libraries
-function download(url, dest, cb) {
-	console.log('URL: ' + url + '\t' + 'Destination: ' + dest);
-	const file = fs.createWriteStream(dest);
-	const sendReq = request.get(url);
-
-	// verify response code
-	sendReq.on('response', response => {
-		if (response.statusCode !== 200) {
-			fs.unlink(dest, cb);
-			return cb('Response status was ' + response.statusCode);
-		}
-		sendReq.pipe(file);
-	});
-
-	// close() is async, call cb after close completes
-	file.on('finish', () => file.close(cb));
-	// check for request errors
-	sendReq.on('err', err => {
-		fs.unlink(dest, cb);
-		return cb(err.message);
-	});
-
-	// Handle errors
-	file.on('err', err => {
-		// Delete the file async. (But we don't check the result)
-		fs.unlink(dest, cb);
-		return cb(err.message);
-	});
-}
-
-// Prints download messages
-function onDownloadFileDone(data) {
-    if (data) {
-        console.log(data);
-    }
 }
 
 // Changes country names to match other parts of the database
