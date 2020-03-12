@@ -107,13 +107,13 @@ sync();
 
 // Updates and formats coronavirus dataset
 function sync() {
-    // Make directory for source files if doesn't already exist
-    if (!fs.existsSync(tempPath)) {
-        fs.mkdirSync(tempPath);
-    }
-    // // Identifies and downloads source files
-    // download();
-    // Create temporary file to store export
+	// Make directory for source files if doesn't already exist
+	if (!fs.existsSync(tempPath)) {
+		fs.mkdirSync(tempPath);
+	}
+	// // Identifies and downloads source files
+	// download();
+	// Create temporary file to store export
 
     // Identify common countries and store each as an object, add each cell (confirmed, death, recovered) together
     let days = objectification();
@@ -143,6 +143,9 @@ function download() {
         date.setDate(date.getDate() + 1);
     }
 }
+const tempPath = '../data/tmp';
+const source =
+	'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/';
 
 // 
 function objectification() {
@@ -267,35 +270,34 @@ function getFormattedDate(downloadDate) {
 }
 
 // Credits: https://stackoverflow.com/questions/11944932/how-to-download-a-file-with-node-js-without-using-third-party-libraries
-function downloadFile(url, dest, cb) {
+function download(url, dest, cb) {
 	console.log('URL: ' + url + '\t' + 'Destination: ' + dest);
 	const file = fs.createWriteStream(dest);
 	const sendReq = request.get(url);
 
-    // verify response code
-    sendReq.on('response', (response) => {
-        if (response.statusCode !== 200) {
-            fs.unlink(dest, cb);
-            return cb('Response status was ' + response.statusCode);
-        }
-        sendReq.pipe(file);
-    });
+	// verify response code
+	sendReq.on('response', response => {
+		if (response.statusCode !== 200) {
+			fs.unlink(dest, cb);
+			return cb('Response status was ' + response.statusCode);
+		}
+		sendReq.pipe(file);
+	});
 
-    // close() is async, call cb after close completes
-    file.on('finish', () => file.close(cb));
+	// close() is async, call cb after close completes
+	file.on('finish', () => file.close(cb));
+	// check for request errors
+	sendReq.on('err', err => {
+		fs.unlink(dest, cb);
+		return cb(err.message);
+	});
 
-    // check for request errors
-    sendReq.on('err', (err) => {
-        fs.unlink(dest, cb);
-        return cb(err.message);
-    });
-
-    // Handle errors
-    file.on('err', (err) => {
-        // Delete the file async. (But we don't check the result)
-        fs.unlink(dest, cb);
-        return cb(err.message);
-    });
+	// Handle errors
+	file.on('err', err => {
+		// Delete the file async. (But we don't check the result)
+		fs.unlink(dest, cb);
+		return cb(err.message);
+	});
 }
 
 // Prints download messages
