@@ -4,11 +4,11 @@
 }
 
 .navbar {
-	min-height: 10vh;
+	min-height: 5vh;
 }
 /* Map Size */
 #map {
-	height: 70vh;
+	height: 76vh;
 	width: 100%;
 }
 .controller {
@@ -25,6 +25,20 @@
 	flex-direction: column;
 	justify-content: space-between;
 	width: 6rem;
+}
+
+.controller .sliderWrap input {
+	min-width: 100%;
+	/* background-color: blue; */
+}
+
+.controller .sliderWrap .attributes {
+	display: flex;
+	width: 50%;
+	margin: 0 auto;
+	align-content: center;
+	line-height: 25px;
+	justify-content: space-around;
 }
 
 .featureGroup {

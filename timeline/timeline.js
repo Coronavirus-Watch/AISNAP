@@ -17,7 +17,7 @@ const source =
 const tempPath = '../data/tmp';
 
 // Path to store the parsed and exported JSON
-const exportPath = '../data/timeline.json';
+const exportPath = '../data/timeline';
 
 // Stores data for a Day
 const Day = require('./Day');
@@ -39,7 +39,9 @@ async function sync() {
 	let days = await parseDownload(files);
 
 	// exports parsed date to file
-	exportJson(days, exportPath);
+	exportJson(days, exportPath, '.json');
+
+	exportCsv(days, exportPath, '.csv');
 
 	// removes folder containing downloaded files
 	if (fs.existsSync(tempPath)) {
@@ -185,7 +187,7 @@ function dealsWithQuoteMarks(content) {
 }
 
 // exports JSON to exportPath given
-function exportJson(days, exportPath) {
+function exportJson(days, exportPath, extension) {
 	// intiailises JSON data structure
 	let json = [];
 	// Loops through each day, appending to the JSON object
@@ -194,10 +196,45 @@ function exportJson(days, exportPath) {
 	});
 
 	// Creating a file descriptor to open the file for writing
-	const fd = fs.openSync(exportPath, 'w+');
+	const fd = fs.openSync(exportPath + extension, 'w+');
 
 	// writes entire JSON to file
-	fs.writeFile(exportPath, JSON.stringify(days, null, 4), err => {
+	fs.writeFile(exportPath + extension, JSON.stringify(days, null, 4), err => {
+		if (err) {
+			console.log(err);
+		}
+	});
+
+	// closes file using file descriptor value
+	fs.closeSync(fd);
+}
+
+// exports CSV to exportPath given
+function exportCsv(days, exportPath, extension) {
+	// intiailises CSV string
+	let output = '';
+	// Loops through each day, appending to the output variable
+	for (let i = 0; i < days.length; i++) {
+		for (let j = 0; j < days[i].countries.length; j++) {
+			output +=
+				days[i].countries[j].name +
+				',' +
+				days[i].countries[j].cases +
+				',' +
+				days[i].countries[j].deaths +
+				',' +
+				days[i].countries[j].recovered +
+				',' +
+				days[i].day +
+				'\n';
+		}
+	}
+
+	// Creating a file descriptor to open the file for writing
+	const fd = fs.openSync(exportPath + extension, 'w+');
+
+	// writes entire JSON to file
+	fs.writeFile(exportPath + extension, output, err => {
 		if (err) {
 			console.log(err);
 		}
@@ -245,6 +282,10 @@ function dictionary(countryName) {
 			return 'United Kingdom';
 		case 'Saint Barthelemy':
 			return 'France';
+		case 'occupied Palestinian territory':
+		case 'Palestine':
+		case 'Israel':
+			return 'Israel and Palestine';
 		default:
 			return countryName;
 	}

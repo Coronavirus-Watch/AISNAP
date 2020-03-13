@@ -1,3 +1,5 @@
+import { Routes } from './Routes.js';
+
 /* Useful resources:
   https://dev.to/wuz/building-a-country-highlighting-tool-with-mapbox-2kbh
   https://bl.ocks.org/danswick/fc56f37c10d40be62e4feac5984250d2
@@ -5,196 +7,158 @@
 
 // Access Token for mapbox
 mapboxgl.accessToken =
-  'pk.eyJ1IjoibWF4d2lsbGtlbGx5IiwiYSI6ImNrNjhsOWdlZTA0M2Yza21mMG9icjBwdmIifQ.OTaUkNePX-6XE3Vgcy9v6A';
+	'pk.eyJ1IjoibWF4d2lsbGtlbGx5IiwiYSI6ImNrNjhsOWdlZTA0M2Yza21mMG9icjBwdmIifQ.OTaUkNePX-6XE3Vgcy9v6A';
 let map = new mapboxgl.Map({
-  container: 'map',
-  // Sets the map style
-  style: 'mapbox://styles/maxwillkelly/ck74w75df0dtf1imcwnew4m6b',
-  // Displays the world
-  zoom: 3,
-  center: [15, 50]
+	container: 'map',
+	// Sets the map style
+	style: 'mapbox://styles/maxwillkelly/ck74w75df0dtf1imcwnew4m6b',
+	// Displays the world
+	zoom: 3,
+	center: [15, 50]
 });
 
 // sets default visibility of layers
 let toggledLayers = {
-  routesVisible: false,
-  markersVisible: false
-}
-
-// Default (MapBox) Markers and Features data structures
-let countryMarkers = {};
-let allFeatures = [];
+	routesVisible: false,
+	markersVisible: false,
+	checkedRadio: 'cases'
+};
 
 // GUI elements
 const routesCheck = document.querySelector('#routes');
 const markersCheck = document.querySelector('#markers');
+const radioBtns = document.querySelectorAll('input[type=radio]');
+const dateSlider = document.getElementById('dateSlider');
+const dateDisplayed = document.getElementById('dateDisplayed');
+dateSlider.max = 100;
 
 // Adds EventListeners to checkboxes for when their checked value changes
 routesCheck.addEventListener('change', e => {
-  toggledLayers.routesVisible = e.target.checked;
-  updateMap(toggledLayers);
+	toggledLayers.routesVisible = e.target.checked;
+	updateMap(toggledLayers);
 });
 
 markersCheck.addEventListener('change', e => {
-  toggledLayers.markersVisible = e.target.checked;
-  updateMap(toggledLayers);
+	toggledLayers.markersVisible = e.target.checked;
+	updateMap(toggledLayers);
 });
 
+radioBtns.forEach(btn => {
+	btn.addEventListener('change', e => {
+		toggledLayers.checkedRadio = e.target.value;
+		updateMap(toggledLayers);
+	});
+});
 // when map first loads on webpage
+let routes = new Routes();
 map.on('load', async () => {
-  // collects all markers in an array
-  const markers = await fetchMarkers();
+	// collects all markers in an array
+	// const markers = await fetchMarkers();
 
-  // collects all routes in an Object
-  const routes = await fetchRoutes(markers);
+	await routes.init();
+	await routes.parseGeoJSON();
+	// collects all routes in an Object
+	// const routes = await fetchRoutes(markers);
+	// Adds routes to layers
+	addLayers();
+	// displays map
+	displayMap(toggledLayers);
 
-  // Adds routes to layers
-  addLayers(routes);
-
-  // displays map
-  displayMap(toggledLayers);
-
-  // updates the map with defaults
-  updateMap(toggledLayers);
+	// updates the map with defaults
+	updateMap(toggledLayers);
 });
-
-// Fetches Location Data of Countries
-const fetchMarkers = async () => {
-  // retrieves data from countries file
-  const response = await fetch('../data/countries.txt')
-  // parses data into text
-  const data = await response.text();
-  // parses the data into list of markers
-  const markers = parseMarkers(data);
-
-  // returns an array of (MapBox) Markers
-  return markers;
-}
-
-// Parses the marker text data
-function parseMarkers(text) {
-  // splits the text into lines in the file
-  const lines = text.split('\n');
-  // Loops through each line
-  for (let i = 0; i < lines.length; i++) {
-    // Extracts each line
-    const countryLine = lines[i].split(',');
-    // Adds to the markers Object with respective lat, lon based on the country
-    countryMarkers[countryLine[3].trim()] = {
-      lat: countryLine[1].trim(),
-      lon: countryLine[2].trim()
-    };
-  }
-
-  // returns Object of markers
-  return countryMarkers;
-
-}
-
-// fetches routes from text file
-const fetchRoutes = async (data) => {
-  // retrieves text data from file
-  const res = await fetch('../data/parsedDomesticsOutput.txt');
-  // parses the response data into plain text
-  const text = await res.text();
-  // parses the data into a routes Object
-  const routes = await parseRoutes(text);
-
-  // returns Object of all routes
-  return routes;
-};
-
-// Parses the routes text data
-const parseRoutes = text => {
-  // splits text up into lines in the file
-  const lines = text.split('\n');
-
-  // goes through each route in the file
-  for (let i = 0; i < lines.length; i++) {
-    // splits each route into a "journey"
-    let journey = lines[i].split(',');
-
-    // checks if the the journey start and end location both exist
-    if (
-      countryMarkers[journey[1]] != undefined &&
-      countryMarkers[journey[3]] != undefined
-    ) {
-      // creates coordinate arrays for both start and end locations
-      let fromCoord = [
-        parseFloat(countryMarkers[journey[1]].lon),
-        parseFloat(countryMarkers[journey[1]].lat)
-      ];
-      let toCoord = [
-        parseFloat(countryMarkers[journey[3]].lon),
-        parseFloat(countryMarkers[journey[3]].lat)
-      ];
-
-      // pushes a new (MapBox) "Feature" to the features array
-      allFeatures.push({
-        type: 'Feature',
-        geometry: {
-          type: 'LineString',
-          coordinates: [fromCoord, toCoord]
-        }
-      });
-    }
-  }
-  // returns update features array
-  return allFeatures;
-}
 
 // Adds Layers to Map
-function addLayers(featureList) {
-  // Adds new source for routes
-  map.addSource('route', {
-    type: 'geojson',
-    data: {
-      type: 'FeatureCollection',
-      features: featureList
-    }
-  });
+function addLayers() {
+	// Adds new source for routes
+	if (routes.geojson.length == 0) {
+		console.log('sugar me timbers');
+	}
+	map.addSource('route', {
+		type: 'geojson',
+		data: {
+			type: 'FeatureCollection',
+			features: routes.geojson
+		}
+	});
+	map.addSource('country', {
+		type: 'geojson',
+		data: {
+			type: 'FeatureCollection',
+			features: routes.allCountries.geojson
+		}
+	});
 
-  // Styles layer 'route'
-  map.addLayer({
-    id: 'route',
-    type: 'line',
-    source: 'route',
-    layout: {
-      'line-cap': 'square',
-      'visibility': 'none'
-    },
-    paint: {
-      'line-color': '#aaa',
-      'line-width': 1,
-      'line-opacity': 0.1
-    }
-  });
-  // Object.entries(countryMarkers).map(country => {
-  // 	let array = [country[1].lon, country[1].lat];
-  // 	let popup = new mapboxgl.Popup({
-  // 		offset: 25
-  // 	}).setText(country[0]);
-  //
-  // 	let marker = new mapboxgl.Marker().setLngLat(array).setPopup(popup);
-  // 	marker.className = 'marker';
-  // 	marker.addTo(map);
-  // });
+	// Styles layer 'route'
+	map.addLayer({
+		id: 'route',
+		type: 'line',
+		source: 'route',
+		layout: {
+			'line-cap': 'square',
+			visibility: 'none'
+		},
+		paint: {
+			'line-color': '#777',
+			'line-width': 1,
+			'line-opacity': 0.05
+		}
+	});
+
+	map.addLayer({
+		id: 'country',
+		type: 'symbol',
+		source: 'country',
+		layout: {
+			'icon-image': ['concat', ['get', 'icon'], '-15'],
+			'text-field': ['get', 'title'],
+			'text-font': ['Open Sans Semibold'],
+			'text-offset': [0, 0.6],
+			'text-anchor': 'top',
+			visibility: 'none'
+		},
+		paint: {
+			'text-color': 'white'
+		}
+	});
 }
 
 // Displays the map
 function displayMap() {
-  // Adds full screen control
-  map.addControl(new mapboxgl.FullscreenControl());
+	// Adds full screen control
+	map.addControl(new mapboxgl.FullscreenControl());
 
-  // Prevents map from looking stupid
-  map.resize();
+	// Prevents map from looking stupid
+	map.resize();
 }
 
 // Updates the map with the correct visible layers
 function updateMap(toggledLayers) {
-  if (toggledLayers.routesVisible == true) {
-    map.setLayoutProperty("route", 'visibility', 'visible');
-  } else {
-    map.setLayoutProperty("route", 'visibility', 'none');
-  }
+	if (toggledLayers.routesVisible == true) {
+		map.setLayoutProperty('route', 'visibility', 'visible');
+	} else {
+		map.setLayoutProperty('route', 'visibility', 'none');
+	}
+	if (toggledLayers.markersVisible == true) {
+		map.setLayoutProperty('country', 'visibility', 'visible');
+	} else {
+		map.setLayoutProperty('country', 'visibility', 'none');
+	}
+}
+
+dateSlider.addEventListener('input', function(e) {
+	let date = new Date(2020, 0, 22);
+	var day = 60 * 60 * 24 * 1000;
+
+	date = new Date(date.getTime() + this.value * day);
+	dateDisplayed.innerHTML = formatDate(date);
+});
+
+// Returns the date formatted as used in the url for files
+function formatDate(date) {
+	const day = ('0' + String(date.getDate())).slice(-2);
+	const month = ('0' + String(date.getMonth() + 1)).slice(-2);
+	const year = String(date.getFullYear());
+	const dateVar = 'Date: ' + day + '/' + month + '/' + year;
+	return dateVar;
 }
