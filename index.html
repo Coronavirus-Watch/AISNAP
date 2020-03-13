@@ -88,6 +88,47 @@
 		<!-- Displays map -->
 		<div id="map"></div>
 		<div class="controller">
+			<div class="sliderWrap">
+				<h4 id="dateDisplayed">Date: 22/01/2020</h4>
+				<input
+					type="range"
+					min="0"
+					max="70"
+					step="1"
+					value="0"
+					id="dateSlider"
+				/>
+				<div class="attributes">
+					<fieldset>
+						<label>Cases</label>
+						<input
+							type="radio"
+							name="attribute"
+							id="cases"
+							value="cases"
+							checked
+						/>
+					</fieldset>
+					<fieldset>
+						<label>Deaths</label>
+						<input
+							type="radio"
+							name="attribute"
+							id="deaths"
+							value="deaths"
+						/>
+					</fieldset>
+					<fieldset>
+						<label>Recovered</label>
+						<input
+							type="radio"
+							name="attribute"
+							id="recovered"
+							value="recovered"
+						/>
+					</fieldset>
+				</div>
+			</div>
 			<div class="features">
 				<div class="featureGroup">
 					<label>Routes</label>
@@ -95,14 +136,12 @@
 				</div>
 				<div class="featureGroup">
 					<label>Countries</label>
-					<input
-						type="checkbox"
-						name="markers"
-						id="markers"
-					/>
+					<input type="checkbox" name="markers" id="markers" />
 				</div>
 			</div>
 		</div>
-		<script src="js/map.js"></script>
+		<script type="module" src="js/Routes.js"></script>
+		<script type="module" src="js/Country.js"></script>
+		<script type="module" src="js/map.js"></script>
 	</body>
 </html>
