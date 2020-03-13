@@ -1,4 +1,5 @@
 import { Routes } from './Routes.js';
+import { Timeline } from './Timeline.js';
 
 /* Useful resources:
   https://dev.to/wuz/building-a-country-highlighting-tool-with-mapbox-2kbh
@@ -51,12 +52,15 @@ radioBtns.forEach(btn => {
 });
 // when map first loads on webpage
 let routes = new Routes();
+let timeline = new Timeline();
 map.on('load', async () => {
 	// collects all markers in an array
 	// const markers = await fetchMarkers();
 
 	await routes.init();
 	await routes.parseGeoJSON();
+	await timeline.init();
+	dateSlider.max = await timeline.getRange();
 	// collects all routes in an Object
 	// const routes = await fetchRoutes(markers);
 	// Adds routes to layers
@@ -88,6 +92,15 @@ function addLayers() {
 			features: routes.allCountries.geojson
 		}
 	});
+	console.log(routes.geojson);
+
+	// map.addSource('timeline', {
+	// 	type: 'geojson',
+	// 	data: {
+	// 		type: 'FeatureCollection',
+	// 		features: timeline.geojson
+	// 	}
+	// })
 
 	// Styles layer 'route'
 	map.addLayer({
