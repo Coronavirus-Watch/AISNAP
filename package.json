@@ -1,8 +1,14 @@
 {
   "name": "aisnap",
   "version": "1.0.0",
-  "description": "Project for Algortihms and Artificial Intelligence Module for Year 2, Sememster 2 at Univeristy of Dundee",
+  "description": "Project for Algorithms and Artificial Intelligence Module for Year 2, Semester 2 at University of Dundee.",
   "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "node-schedule": "^1.3.2",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

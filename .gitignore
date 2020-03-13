@@ -356,3 +356,6 @@ MigrationBackup/
 # Mac C# Compiler
 AIParsing/.vscode/launch.json
 AIParsing/.vscode/tasks.json
+
+# TMP files
+*.csv
