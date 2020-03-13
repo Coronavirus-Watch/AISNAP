@@ -158,7 +158,7 @@ namespace AIParsing
                 int domestics = 0;
                 for (int i = 0; i < inputList.Count(); i++)
                 {
-                    if (string.Compare(inputList[i][1],inputList[i][3]) == 0 || string.Compare(inputList[i][1],"") == 0 || string.Compare(inputList[i][3], "") == 0)
+                    if (string.Compare(inputList[i][1],inputList[i][3]) == 0 || string.Compare(inputList[i][1],"") == 0 || string.Compare(inputList[i][3], "") == 0 || string.Compare(inputList[i][4],"") == 0)
                     {
                         inputList.RemoveAt(i);
                         i--;
