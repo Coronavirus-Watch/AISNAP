@@ -60,6 +60,7 @@ map.on('load', async () => {
 	await routes.init();
 	await routes.parseGeoJSON();
 	await timeline.init();
+	await timeline.addCoordinates(routes);
 	dateSlider.max = await timeline.getRange();
 	// collects all routes in an Object
 	// const routes = await fetchRoutes(markers);

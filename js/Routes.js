@@ -1,4 +1,5 @@
 import { Countries } from './Countries.js';
+
 export class Routes {
 	constructor() {
 		this.allCountries = new Countries();
@@ -84,6 +85,10 @@ export class Routes {
 			});
 		});
 		this.geojson = tempArray;
+	}
+
+	getCountryCoordinates(countryName) {
+		this.allCountries.getCountryCoordinates(countryName);
 	}
 }
 

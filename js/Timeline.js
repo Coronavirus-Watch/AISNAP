@@ -1,6 +1,7 @@
 export class Timeline {
 	constructor() {
 		this.timeline = [];
+		this.geojson = [];
 	}
 	async init() {
 		await this.fetchTimeline();
@@ -30,15 +31,26 @@ export class Timeline {
 					geometry: {
 						type: 'Point',
 						coordinates: [0, 0]
+						// coordinates: this.routes.getCountryCoordinates(country.name)
 					},
 					properties: {
 						title: country.name,
 						icon: 'basketball'
+					},
+					stats: {
+						cases: country.cases,
+						deaths: country.deaths,
+						recovered: country.recovered,
+						name: country.name
 					}
 				});
 			});
 		});
 	}
 
-	async addCoordinates(countries) {}
+	async addCoordinates(routes) {
+		this.geojson.forEach( element => {
+			element.coordinates = routes.getCountryCoordinates(element.stats.name);
+		});
+	}
 }

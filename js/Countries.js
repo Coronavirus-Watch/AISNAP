@@ -58,6 +58,14 @@ export class Countries {
 		}
 		this.geojson = tempArray;
 	}
+
+	getCountryCoordinates(countryName) {
+		if (this.countries[countryName]) {
+			return this.countries[countryName].coordinates;
+		}
+		console.log("Country Not Found: " + countryName);
+		return [0,0];
+	}
 }
 class Country {
 	constructor(name, newCoordinates, cases = 0, deaths = 0, recovered = 0) {
