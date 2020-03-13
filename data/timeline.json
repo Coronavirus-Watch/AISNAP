@@ -4685,7 +4685,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 1,
@@ -4882,7 +4882,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 1,
@@ -5079,7 +5079,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 1,
@@ -5312,7 +5312,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 1,
@@ -5569,7 +5569,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 1,
@@ -5790,7 +5790,7 @@
                 "cases": 2,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 2,
@@ -6095,7 +6095,7 @@
                 "cases": 3,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 3,
@@ -6406,7 +6406,7 @@
                 "cases": 4,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 4,
@@ -6771,7 +6771,7 @@
                 "cases": 7,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 6,
@@ -7136,7 +7136,7 @@
                 "cases": 10,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 10,
@@ -7561,7 +7561,7 @@
                 "cases": 10,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 10,
@@ -8028,7 +8028,7 @@
                 "cases": 12,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 12,
@@ -8519,7 +8519,7 @@
                 "cases": 15,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 15,
@@ -9031,10 +9031,10 @@
                 "name": "San Marino"
             },
             {
-                "cases": 16,
+                "cases": 20,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 16,
@@ -9173,12 +9173,6 @@
                 "deaths": 0,
                 "recovered": 0,
                 "name": "Georgia"
-            },
-            {
-                "cases": 4,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Palestine"
             },
             {
                 "cases": 4,
@@ -9582,10 +9576,10 @@
                 "name": "Canada"
             },
             {
-                "cases": 21,
+                "cases": 37,
                 "deaths": 0,
                 "recovered": 2,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 21,
@@ -9616,12 +9610,6 @@
                 "deaths": 0,
                 "recovered": 2,
                 "name": "Oman"
-            },
-            {
-                "cases": 16,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Palestine"
             },
             {
                 "cases": 16,
@@ -10175,22 +10163,16 @@
                 "name": "Lebanon"
             },
             {
-                "cases": 22,
+                "cases": 43,
                 "deaths": 0,
-                "recovered": 0,
-                "name": "Palestine"
+                "recovered": 2,
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 21,
                 "deaths": 0,
                 "recovered": 4,
                 "name": "Canada"
-            },
-            {
-                "cases": 21,
-                "deaths": 0,
-                "recovered": 2,
-                "name": "Israel"
             },
             {
                 "cases": 20,
@@ -10768,10 +10750,10 @@
                 "name": "India"
             },
             {
-                "cases": 39,
+                "cases": 61,
                 "deaths": 0,
                 "recovered": 2,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 76,
@@ -10826,12 +10808,6 @@
                 "deaths": 0,
                 "recovered": 1,
                 "name": "Finland"
-            },
-            {
-                "cases": 22,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Palestine"
             },
             {
                 "cases": 21,
@@ -11427,10 +11403,10 @@
                 "name": "India"
             },
             {
-                "cases": 39,
+                "cases": 61,
                 "deaths": 0,
                 "recovered": 2,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 36,
@@ -11479,12 +11455,6 @@
                 "deaths": 0,
                 "recovered": 0,
                 "name": "Brazil"
-            },
-            {
-                "cases": 22,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Palestine"
             },
             {
                 "cases": 21,
@@ -12068,10 +12038,10 @@
                 "name": "Egypt"
             },
             {
-                "cases": 58,
+                "cases": 83,
                 "deaths": 0,
                 "recovered": 4,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 56,
@@ -12174,12 +12144,6 @@
                 "deaths": 0,
                 "recovered": 3,
                 "name": "Romania"
-            },
-            {
-                "cases": 25,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "occupied Palestinian territory"
             },
             {
                 "cases": 24,
@@ -12724,7 +12688,7 @@
                 "cases": 109,
                 "deaths": 0,
                 "recovered": 4,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 99,
@@ -13271,12 +13235,6 @@
                 "deaths": 0,
                 "recovered": 0,
                 "name": "Ukraine"
-            },
-            {
-                "cases": 0,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "occupied Palestinian territory"
             }
         ],
         "day": "11/03/2020"
@@ -13419,7 +13377,7 @@
                 "cases": 131,
                 "deaths": 0,
                 "recovered": 4,
-                "name": "Israel"
+                "name": "Israel and Palestine"
             },
             {
                 "cases": 103,
@@ -13978,12 +13936,6 @@
                 "deaths": 0,
                 "recovered": 0,
                 "name": "Ukraine"
-            },
-            {
-                "cases": 0,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "occupied Palestinian territory"
             }
         ],
         "day": "12/03/2020"

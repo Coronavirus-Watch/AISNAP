@@ -27,26 +27,14 @@ sync();
 
 // Updates and formats coronavirus dataset
 async function sync() {
-	// Make directory for source files if doesn't already exist
-	if (!fs.existsSync(tempPath)) {
-		fs.mkdirSync(tempPath);
-	}
-
 	// downloads files from source
 	let files = await download();
-
 	// parses downloaded files into JSON
 	let days = await parseDownload(files);
-
-	// exports parsed date to file
+	// exports parsed data to json file
 	exportJson(days, exportPath, '.json');
-
+	// exports parsed data to csv file
 	exportCsv(days, exportPath, '.csv');
-
-	// removes folder containing downloaded files
-	if (fs.existsSync(tempPath)) {
-		rimraf.sync(tempPath);
-	}
 }
 
 // Downloads files from source and returns a data structure containing
