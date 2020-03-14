@@ -1,32 +1,27 @@
-import { Countries } from './Countries.js';
-
 export class Routes {
 	constructor() {
-		this.allCountries = new Countries();
 		this.routes = [];
 		this.geojson = [];
 	}
 
-	async init() {
-		await this.allCountries.init();
-		await this.fetchRoutes();
-		await this.allCountries.parseGeoJSON();
+	async init(countries) {
+		await this.fetchRoutes(countries);
 	}
 
 	// fetches routes from text file
-	async fetchRoutes() {
+	async fetchRoutes(countries) {
 		// retrieves text data from file
 		const res = await fetch('../data/parsedDomesticsOutput.txt');
 		// parses the response data into plain text
 		const text = await res.text();
 		// parses the data into a routes Object
-		const routes = await this.parseRoutes(text);
+		const routes = await this.parseRoutes(countries, text);
 		// returns Object of all routes
 		this.routes = routes;
 	}
 
 	// Parses the routes text data
-	async parseRoutes(text) {
+	async parseRoutes(countries, text) {
 		// splits text up into lines in the file
 		const lines = text.split('\n');
 
@@ -35,24 +30,16 @@ export class Routes {
 			// splits each route into a "journey"
 			const journey = lines[i].split(',');
 			if (
-				this.allCountries.countries[journey[3]] !== undefined &&
-				this.allCountries.countries[journey[1]] !== undefined
+				countries[journey[3]] !== undefined &&
+				countries[journey[1]] !== undefined
 			) {
 				const fromCoord = [
-					parseFloat(
-						this.allCountries.countries[journey[1]].coordinates[0]
-					),
-					parseFloat(
-						this.allCountries.countries[journey[1]].coordinates[1]
-					)
+					parseFloat(countries[journey[1]].coordinates[0]),
+					parseFloat(countries[journey[1]].coordinates[1])
 				];
 				const toCoord = [
-					parseFloat(
-						this.allCountries.countries[journey[3]].coordinates[0]
-					),
-					parseFloat(
-						this.allCountries.countries[journey[3]].coordinates[1]
-					)
+					parseFloat(countries[journey[3]].coordinates[0]),
+					parseFloat(countries[journey[3]].coordinates[1])
 				];
 
 				const origin = {
@@ -85,10 +72,6 @@ export class Routes {
 			});
 		});
 		this.geojson = tempArray;
-	}
-
-	getCountryCoordinates(countryName) {
-		this.allCountries.getCountryCoordinates(countryName);
 	}
 }
 

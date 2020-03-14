@@ -1,5 +1,6 @@
 import { Routes } from './Routes.js';
 import { Timeline } from './Timeline.js';
+import { Countries } from './Countries.js';
 
 /* Useful resources:
   https://dev.to/wuz/building-a-country-highlighting-tool-with-mapbox-2kbh
@@ -14,16 +15,9 @@ let map = new mapboxgl.Map({
 	// Sets the map style
 	style: 'mapbox://styles/maxwillkelly/ck74w75df0dtf1imcwnew4m6b',
 	// Displays the world
-	zoom: 3,
+	zoom: 2,
 	center: [15, 50]
 });
-
-// sets default visibility of layers
-let toggledLayers = {
-	routesVisible: false,
-	markersVisible: false,
-	checkedRadio: 'cases'
-};
 
 // GUI elements
 const routesCheck = document.querySelector('#routes');
@@ -32,6 +26,18 @@ const radioBtns = document.querySelectorAll('input[type=radio]');
 const dateSlider = document.getElementById('dateSlider');
 const dateDisplayed = document.getElementById('dateDisplayed');
 dateSlider.max = 100;
+
+// sets default visibility of layers
+let toggledLayers = {
+	routesVisible: false,
+	markersVisible: false,
+	checkedRadio: 'cases'
+};
+
+// Instances of Classes
+let countries = new Countries();
+let routes = new Routes();
+let timeline = new Timeline();
 
 // Adds EventListeners to checkboxes for when their checked value changes
 routesCheck.addEventListener('change', e => {
@@ -51,16 +57,16 @@ radioBtns.forEach(btn => {
 	});
 });
 // when map first loads on webpage
-let routes = new Routes();
-let timeline = new Timeline();
+
 map.on('load', async () => {
 	// collects all markers in an array
 	// const markers = await fetchMarkers();
 
-	await routes.init();
-	await routes.parseGeoJSON();
+	// await routes.init();
+	// await routes.parseGeoJSON();
 	await timeline.init();
-	await timeline.addCoordinates(routes);
+	await timeline.parseTimeline();
+	// await timeline.addCoordinates(routes);
 	dateSlider.max = await timeline.getRange();
 	// collects all routes in an Object
 	// const routes = await fetchRoutes(markers);
@@ -68,40 +74,79 @@ map.on('load', async () => {
 	addLayers();
 	// displays map
 	displayMap(toggledLayers);
-
 	// updates the map with defaults
 	updateMap(toggledLayers);
+
+	// plays the timeline
+	// play();
 });
 
 // Adds Layers to Map
 function addLayers() {
 	// Adds new source for routes
-	if (routes.geojson.length == 0) {
-		console.log('sugar me timbers');
-	}
 	map.addSource('route', {
 		type: 'geojson',
 		data: {
 			type: 'FeatureCollection',
-			features: routes.geojson
+			features: timeline.routes.geojson
 		}
 	});
 	map.addSource('country', {
 		type: 'geojson',
 		data: {
 			type: 'FeatureCollection',
-			features: routes.allCountries.geojson
+			features: timeline.countriesInstance.geojson
 		}
 	});
-	console.log(routes.geojson);
 
-	// map.addSource('timeline', {
-	// 	type: 'geojson',
-	// 	data: {
-	// 		type: 'FeatureCollection',
-	// 		features: timeline.geojson
-	// 	}
-	// })
+	map.addSource('timeline', {
+		type: 'geojson',
+		data: {
+			type: 'FeatureCollection',
+			features: timeline.currentDay
+		}
+	});
+
+	map.addLayer({
+		id: 'cases',
+		type: 'circle',
+		source: 'timeline',
+		paint: {
+			'circle-radius': ['*', ['log10', ['number', ['get', 'cases']]], 20],
+			'circle-opacity': 0.4,
+			'circle-color': 'orange'
+		}
+	});
+
+	map.addLayer({
+		id: 'deaths',
+		type: 'circle',
+		source: 'timeline',
+		paint: {
+			'circle-radius': [
+				'*',
+				['log10', ['number', ['get', 'deaths']]],
+				20
+			],
+			'circle-opacity': 0.4,
+			'circle-color': 'red'
+		}
+	});
+
+	map.addLayer({
+		id: 'recovered',
+		type: 'circle',
+		source: 'timeline',
+		paint: {
+			'circle-radius': [
+				'*',
+				['log10', ['number', ['get', 'recovered']]],
+				20
+			],
+			'circle-opacity': 0.4,
+			'circle-color': 'green'
+		}
+	});
 
 	// Styles layer 'route'
 	map.addLayer({
@@ -146,6 +191,18 @@ function displayMap() {
 	map.resize();
 }
 
+async function play() {
+	const max = await timeline.getMax();
+	let counter = 0;
+	setInterval(() => {
+		dateSlider.stepUp();
+		dateSlider.dispatchEvent(new Event('input'));
+		if (counter == max) {
+			return;
+		}
+	}, 200);
+}
+
 // Updates the map with the correct visible layers
 function updateMap(toggledLayers) {
 	if (toggledLayers.routesVisible == true) {
@@ -158,14 +215,41 @@ function updateMap(toggledLayers) {
 	} else {
 		map.setLayoutProperty('country', 'visibility', 'none');
 	}
+	switch (toggledLayers.checkedRadio) {
+		case 'cases':
+			map.setLayoutProperty('cases', 'visibility', 'visible');
+			map.setLayoutProperty('deaths', 'visibility', 'none');
+			map.setLayoutProperty('recovered', 'visibility', 'none');
+			break;
+		case 'deaths':
+			map.setLayoutProperty('cases', 'visibility', 'none');
+			map.setLayoutProperty('deaths', 'visibility', 'visible');
+			map.setLayoutProperty('recovered', 'visibility', 'none');
+			break;
+		case 'recovered':
+			map.setLayoutProperty('cases', 'visibility', 'none');
+			map.setLayoutProperty('deaths', 'visibility', 'none');
+			map.setLayoutProperty('recovered', 'visibility', 'visible');
+	}
 }
-
-dateSlider.addEventListener('input', function(e) {
+// it bloody worked, kinda
+// Well it works for one day anyway
+// i reckon we use timeline.retrieveDay() to update the geojson
+// Excellent we need a listner
+dateSlider.addEventListener('input', async function(e) {
 	let date = new Date(2020, 0, 22);
 	var day = 60 * 60 * 24 * 1000;
 
 	date = new Date(date.getTime() + this.value * day);
 	dateDisplayed.innerHTML = formatDate(date);
+
+	timeline.currentDay = await timeline.retrieveDay(e.target.value);
+	map.getSource('timeline').setData({
+		type: 'FeatureCollection',
+		features: timeline.currentDay
+	});
+
+	updateMap(toggledLayers);
 });
 
 // Returns the date formatted as used in the url for files
