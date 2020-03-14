@@ -27,26 +27,14 @@ sync();
 
 // Updates and formats coronavirus dataset
 async function sync() {
-	// Make directory for source files if doesn't already exist
-	if (!fs.existsSync(tempPath)) {
-		fs.mkdirSync(tempPath);
-	}
-
 	// downloads files from source
 	let files = await download();
-
 	// parses downloaded files into JSON
 	let days = await parseDownload(files);
-
-	// exports parsed date to file
+	// exports parsed data to json file
 	exportJson(days, exportPath, '.json');
-
+	// exports parsed data to csv file
 	exportCsv(days, exportPath, '.csv');
-
-	// removes folder containing downloaded files
-	if (fs.existsSync(tempPath)) {
-		rimraf.sync(tempPath);
-	}
 }
 
 // Downloads files from source and returns a data structure containing
@@ -116,13 +104,18 @@ function onDownloadFileDone(data) {
 }
 
 // parses the downloaded files into an Array format
-function parseDownload(files) {
+async function parseDownload(files) {
 	// creates an array to store all parsed data for each day contained in the files
 	let days = [];
+	// stores the previous day we've processed used to smooth out days without information
+	let previousDay = new Day();
 
 	// Loops through each file, creating a new Day instance and extra data parsing
-	files.forEach(day => {
-		days.push(processDay(day[0], day[1]));
+	files.forEach(async function(day) {
+		const process = await processDay(day[0], day[1]);
+		// await checkConcurrency(process, previousDay);
+		days.push(process);
+		previousDay = process;
 	});
 
 	// returning the resulting days array
@@ -154,11 +147,28 @@ function processDay(filename, content) {
 			const recovered = regionLine[5].trim();
 			const countryName = dictionary(regionLine[1].trim());
 			const date = getFormattedDate(filename);
-			// Adds constants to the day object
-			day.addData(cases, deaths, recovered, countryName, date);
+			// Checks if the entry is blank
+			if (cases > 0) {
+				day.addData(cases, deaths, recovered, countryName, date);
+			}
 		}
 	}
 	return day;
+}
+
+// Checks if a country is present in a previous day but not the current day
+// And adds it to the current day if not
+async function checkConcurrency(day, previousDay) {
+	previousDay.countries.forEach(async function(country) {
+		if (day.searchForCountry(country.name) === -1) {
+			day.addData(
+				country.cases,
+				country.deaths,
+				country.recovered,
+				country.name
+			);
+		}
+	});
 }
 
 // Prevents commas within quotes in a csv file from messing up the seperation

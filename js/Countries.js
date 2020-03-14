@@ -26,8 +26,8 @@ export class Countries {
 				this.countries[
 					countryLine[3].trim()
 				] = new Country(countryLine[3], [
-					countryLine[2],
-					countryLine[1]
+					parseFloat(countryLine[2]),
+					parseFloat(countryLine[1])
 				]);
 			}
 		}
@@ -46,7 +46,10 @@ export class Countries {
 						},
 						properties: {
 							title: this.countries[country].name,
-							icon: 'basketball'
+							icon: 'basketball',
+							cases: this.countries[country].cases,
+							deaths: this.countries[country].deaths,
+							recovered: this.countries[country].recovered
 						}
 					});
 				} catch (e) {
@@ -58,6 +61,22 @@ export class Countries {
 		}
 		this.geojson = tempArray;
 	}
+
+	addVirus(countryObj) {
+		if (this.countries[countryObj.name]) {
+			this.countries[countryObj.name].cases = countryObj.cases;
+			this.countries[countryObj.name].deaths = countryObj.deaths;
+			this.countries[countryObj.name].recovered = countryObj.recovered;
+		}
+	}
+
+	getCountryCoordinates(country) {
+		if (this.countries[country.name]) {
+			return this.countries[country.name].coordinates;
+		}
+		// console.log('Country Not Found: ' + country.name);
+		return [0, 0];
+	}
 }
 class Country {
 	constructor(name, newCoordinates, cases = 0, deaths = 0, recovered = 0) {
@@ -66,25 +85,5 @@ class Country {
 		this.recovered = parseInt(recovered);
 		this.name = name.trim();
 		this.coordinates = newCoordinates;
-	}
-
-	getName() {
-		return this.name;
-	}
-
-	print() {
-		console.log(
-			'\t\t' +
-				'Country: ' +
-				this.name +
-				'\t' +
-				'Cases: ' +
-				this.cases +
-				'\t' +
-				'Deaths: ' +
-				this.deaths +
-				'\t',
-			'Recovered: ' + this.recovered
-		);
 	}
 }
