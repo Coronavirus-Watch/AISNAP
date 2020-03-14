@@ -3,7 +3,7 @@ Reeee
 *****/
 
 digraph G {
-  graph [splines=true overlap=scale]
+  graph [splines=true overlap=false]
   node  [shape=ellipse, width=0.3, height=0.3, label=""]
   1498028028 [style=filled, fillcolor="#e0ecf4", label="Azerbaijan"];
   1375445708 [style=filled, fillcolor="#8c96c6", label="Russia"];

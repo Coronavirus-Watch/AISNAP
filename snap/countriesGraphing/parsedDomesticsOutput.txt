@@ -278,8 +278,8 @@ TSA,Taiwan,CTU,China
 YIH,China,HKG,Hong Kong
 YVR,Canada,SHE,China
 ZHA,China,HKG,Hong Kong
-CAI,Egypt,TLV,Israel
-TLV,Israel,CAI,Egypt
+CAI,Egypt,TLV,Israel and Palestine
+TLV,Israel and Palestine,CAI,Egypt
 NCU,Uzbekistan,VKO,Russia
 VKO,Russia,NCU,Uzbekistan
 BKK,Thailand,DAC,Bangladesh
@@ -455,7 +455,7 @@ CGN,Germany,SPU,Croatia
 CGN,Germany,STN,United Kingdom
 CGN,Germany,SUF,Italy
 CGN,Germany,SZG,Austria
-CGN,Germany,TLV,Israel
+CGN,Germany,TLV,Israel and Palestine
 CGN,Germany,TUN,Tunisia
 CGN,Germany,VCE,Italy
 CGN,Germany,VIE,Austria
@@ -726,7 +726,7 @@ SUF,Italy,HAJ,Germany
 SUF,Italy,STR,Germany
 SZG,Austria,CGN,Germany
 TLS,France,HAM,Germany
-TLV,Israel,CGN,Germany
+TLV,Israel and Palestine,CGN,Germany
 TRN,Italy,DUS,Germany
 TUN,Tunisia,CGN,Germany
 TXL,Germany,AGP,Spain
@@ -903,14 +903,14 @@ MAA,India,SIN,Singapore
 MCT,Oman,BOM,India
 SIN,Singapore,MAA,India
 TRV,India,DXB,United Arab Emirates
-FCO,Italy,TLV,Israel
-NCE,France,TLV,Israel
-SXF,Germany,TLV,Israel
-TBS,Georgia,TLV,Israel
-TLV,Israel,FCO,Italy
-TLV,Israel,NCE,France
-TLV,Israel,SXF,Germany
-TLV,Israel,TBS,Georgia
+FCO,Italy,TLV,Israel and Palestine
+NCE,France,TLV,Israel and Palestine
+SXF,Germany,TLV,Israel and Palestine
+TBS,Georgia,TLV,Israel and Palestine
+TLV,Israel and Palestine,FCO,Italy
+TLV,Israel and Palestine,NCE,France
+TLV,Israel and Palestine,SXF,Germany
+TLV,Israel and Palestine,TBS,Georgia
 EVN,Armenia,RTW,Russia
 PRG,Czech Republic,RTW,Russia
 RTW,Russia,EVN,Armenia
@@ -1352,7 +1352,7 @@ ATH,Greece,PRG,Czech Republic
 ATH,Greece,SOF,Bulgaria
 ATH,Greece,TBS,Georgia
 ATH,Greece,TIA,Albania
-ATH,Greece,TLV,Israel
+ATH,Greece,TLV,Israel and Palestine
 ATH,Greece,TXL,Germany
 ATH,Greece,VIE,Austria
 ATH,Greece,WAW,Poland
@@ -1397,7 +1397,7 @@ HER,Greece,FRA,Germany
 HER,Greece,LED,Russia
 HER,Greece,MRS,France
 HER,Greece,MUC,Germany
-HER,Greece,TLV,Israel
+HER,Greece,TLV,Israel and Palestine
 HER,Greece,TXL,Germany
 HER,Greece,VIE,Austria
 IEV,Ukraine,ATH,Greece
@@ -1448,8 +1448,8 @@ SOF,Bulgaria,ATH,Greece
 STR,Germany,SKG,Greece
 TBS,Georgia,ATH,Greece
 TIA,Albania,ATH,Greece
-TLV,Israel,ATH,Greece
-TLV,Israel,HER,Greece
+TLV,Israel and Palestine,ATH,Greece
+TLV,Israel and Palestine,HER,Greece
 TXL,Germany,ATH,Greece
 TXL,Germany,HER,Greece
 VIE,Austria,ATH,Greece
@@ -1496,10 +1496,10 @@ RIX,Latvia,TBS,Georgia
 TBS,Georgia,AMS,Netherlands
 TBS,Georgia,CDG,France
 TBS,Georgia,RIX,Latvia
-TBS,Georgia,TLV,Israel
+TBS,Georgia,TLV,Israel and Palestine
 TBS,Georgia,VIE,Austria
 TBS,Georgia,VKO,Russia
-TLV,Israel,TBS,Georgia
+TLV,Israel and Palestine,TBS,Georgia
 VIE,Austria,TBS,Georgia
 VKO,Russia,KUT,Georgia
 VKO,Russia,TBS,Georgia
@@ -2176,7 +2176,7 @@ PHL,United States,SDQ,Dominican Republic
 PHL,United States,SJU,Puerto Rico
 PHL,United States,STT,Virgin Islands
 PHL,United States,SXM,Netherlands Antilles
-PHL,United States,TLV,Israel
+PHL,United States,TLV,Israel and Palestine
 PHL,United States,VCE,Italy
 PHL,United States,YHZ,Canada
 PHL,United States,YOW,Canada
@@ -2296,7 +2296,7 @@ SYD,Australia,HNL,United States
 SYD,Australia,LAX,United States
 TGU,Honduras,MIA,United States
 TLS,France,LHR,United Kingdom
-TLV,Israel,PHL,United States
+TLV,Israel and Palestine,PHL,United States
 TPA,United States,LGW,United Kingdom
 TPE,Taiwan,NRT,Japan
 TRC,Mexico,DFW,United States
@@ -2554,7 +2554,7 @@ DUS,Germany,SPC,Spain
 DUS,Germany,STN,United Kingdom
 DUS,Germany,SZG,Austria
 DUS,Germany,TFS,Spain
-DUS,Germany,TLV,Israel
+DUS,Germany,TLV,Israel and Palestine
 DUS,Germany,VCE,Italy
 DUS,Germany,VIE,Austria
 DUS,Germany,VRA,Cuba
@@ -2798,7 +2798,7 @@ MUC,Germany,SAW,Turkey
 MUC,Germany,SKG,Greece
 MUC,Germany,SMI,Greece
 MUC,Germany,TFS,Spain
-MUC,Germany,TLV,Israel
+MUC,Germany,TLV,Israel and Palestine
 MUC,Germany,VIE,Austria
 MUC,Germany,ZTH,Greece
 MXP,Italy,DUS,Germany
@@ -2966,9 +2966,9 @@ TFS,Spain,SZG,Austria
 TFS,Spain,TXL,Germany
 TFS,Spain,VIE,Austria
 TFS,Spain,ZRH,Switzerland
-TLV,Israel,DUS,Germany
-TLV,Israel,MUC,Germany
-TLV,Israel,TXL,Germany
+TLV,Israel and Palestine,DUS,Germany
+TLV,Israel and Palestine,MUC,Germany
+TLV,Israel and Palestine,TXL,Germany
 TXL,Germany,ACE,Spain
 TXL,Germany,AGP,Spain
 TXL,Germany,ALC,Spain
@@ -3022,7 +3022,7 @@ TXL,Germany,SMI,Greece
 TXL,Germany,SOF,Bulgaria
 TXL,Germany,SZG,Austria
 TXL,Germany,TFS,Spain
-TXL,Germany,TLV,Israel
+TXL,Germany,TLV,Israel and Palestine
 TXL,Germany,VCE,Italy
 TXL,Germany,VIE,Austria
 TXL,Germany,WAW,Poland
@@ -3334,8 +3334,8 @@ SNU,Cuba,YYZ,Canada
 STL,United States,YYZ,Canada
 SYD,Australia,YVR,Canada
 SYR,United States,YYZ,Canada
-TLV,Israel,YUL,Canada
-TLV,Israel,YYZ,Canada
+TLV,Israel and Palestine,YUL,Canada
+TLV,Israel and Palestine,YYZ,Canada
 TPA,United States,YYZ,Canada
 TRD,Norway,CPH,Denmark
 UVF,Saint Lucia,YYZ,Canada
@@ -3528,7 +3528,7 @@ YYZ,Canada,SJO,Costa Rica
 YYZ,Canada,SNU,Cuba
 YYZ,Canada,STL,United States
 YYZ,Canada,SYR,United States
-YYZ,Canada,TLV,Israel
+YYZ,Canada,TLV,Israel and Palestine
 YYZ,Canada,TPA,United States
 YYZ,Canada,UVF,Saint Lucia
 YYZ,Canada,VIE,Austria
@@ -3818,7 +3818,7 @@ CDG,France,SVG,Norway
 CDG,France,SVO,Russia
 CDG,France,SXM,Netherlands Antilles
 CDG,France,TBS,Georgia
-CDG,France,TLV,Israel
+CDG,France,TLV,Israel and Palestine
 CDG,France,TNR,Madagascar
 CDG,France,TRN,Italy
 CDG,France,TUN,Tunisia
@@ -4042,7 +4042,7 @@ MRS,France,MXP,Italy
 MRS,France,PRG,Czech Republic
 MRS,France,RAK,Morocco
 MRS,France,SVO,Russia
-MRS,France,TLV,Israel
+MRS,France,TLV,Israel and Palestine
 MRS,France,TUN,Tunisia
 MRS,France,TXL,Germany
 MRS,France,VCE,Italy
@@ -4071,7 +4071,7 @@ NCE,France,AMS,Netherlands
 NCE,France,FCO,Italy
 NCE,France,JFK,United States
 NCE,France,SOU,United Kingdom
-NCE,France,TLV,Israel
+NCE,France,TLV,Israel and Palestine
 NCE,France,VCE,Italy
 NCL,United Kingdom,CDG,France
 NDJ,Chad,CDG,France
@@ -4183,9 +4183,9 @@ TLS,France,MLA,Malta
 TLS,France,RAK,Morocco
 TLS,France,SVQ,Spain
 TLS,France,VCE,Italy
-TLV,Israel,CDG,France
-TLV,Israel,MRS,France
-TLV,Israel,NCE,France
+TLV,Israel and Palestine,CDG,France
+TLV,Israel and Palestine,MRS,France
+TLV,Israel and Palestine,NCE,France
 TNR,Madagascar,CDG,France
 TPE,Taiwan,AMS,Netherlands
 TPE,Taiwan,MNL,Philippines
@@ -5498,7 +5498,7 @@ HEL,Finland,SVO,Russia
 HEL,Finland,SVX,Russia
 HEL,Finland,TAY,Estonia
 HEL,Finland,TLL,Estonia
-HEL,Finland,TLV,Israel
+HEL,Finland,TLV,Israel and Palestine
 HEL,Finland,TXL,Germany
 HEL,Finland,VIE,Austria
 HEL,Finland,VNO,Lithuania
@@ -5632,7 +5632,7 @@ SZG,Austria,HAM,Germany
 SZG,Austria,TXL,Germany
 TAY,Estonia,HEL,Finland
 TLL,Estonia,HEL,Finland
-TLV,Israel,HEL,Finland
+TLV,Israel and Palestine,HEL,Finland
 TPA,United States,LGW,United Kingdom
 TXL,Germany,ARN,Sweden
 TXL,Germany,CPH,Denmark
@@ -5944,7 +5944,7 @@ FCO,Italy,TGD,Montenegro
 FCO,Italy,TIA,Albania
 FCO,Italy,TIP,Libya
 FCO,Italy,TLS,France
-FCO,Italy,TLV,Israel
+FCO,Italy,TLV,Israel and Palestine
 FCO,Italy,TUN,Tunisia
 FCO,Italy,VIE,Austria
 FCO,Italy,VLC,Spain
@@ -6180,7 +6180,7 @@ TIA,Albania,VRN,Italy
 TIP,Libya,FCO,Italy
 TLS,France,FCO,Italy
 TLS,France,VCE,Italy
-TLV,Israel,FCO,Italy
+TLV,Israel and Palestine,FCO,Italy
 TPE,Taiwan,DEL,India
 TRD,Norway,AMS,Netherlands
 TRF,Sandefjord,AMS,Netherlands
@@ -6289,7 +6289,7 @@ MSQ,Belarus,RIX,Latvia
 MSQ,Belarus,SVX,Russia
 MSQ,Belarus,SXF,Germany
 MSQ,Belarus,TBS,Georgia
-MSQ,Belarus,TLV,Israel
+MSQ,Belarus,TLV,Israel and Palestine
 MSQ,Belarus,TSE,Kazakhstan
 MSQ,Belarus,VIE,Austria
 MSQ,Belarus,VNO,Lithuania
@@ -6301,7 +6301,7 @@ RIX,Latvia,MSQ,Belarus
 SVX,Russia,MSQ,Belarus
 SXF,Germany,MSQ,Belarus
 TBS,Georgia,MSQ,Belarus
-TLV,Israel,MSQ,Belarus
+TLV,Israel and Palestine,MSQ,Belarus
 TSE,Kazakhstan,MSQ,Belarus
 VIE,Austria,MSQ,Belarus
 VNO,Lithuania,MSQ,Belarus
@@ -6867,7 +6867,7 @@ LHR,United Kingdom,STR,Germany
 LHR,United Kingdom,SVG,Norway
 LHR,United Kingdom,TIP,Libya
 LHR,United Kingdom,TLS,France
-LHR,United Kingdom,TLV,Israel
+LHR,United Kingdom,TLV,Israel and Palestine
 LHR,United Kingdom,TXL,Germany
 LHR,United Kingdom,VCE,Italy
 LHR,United Kingdom,VIE,Austria
@@ -6989,7 +6989,7 @@ TFS,Spain,LGW,United Kingdom
 TIA,Albania,LGW,United Kingdom
 TIP,Libya,LHR,United Kingdom
 TLS,France,LHR,United Kingdom
-TLV,Israel,LHR,United Kingdom
+TLV,Israel and Palestine,LHR,United Kingdom
 TPA,United States,LGW,United Kingdom
 TRN,Italy,LGW,United Kingdom
 TXL,Germany,LHR,United Kingdom
@@ -7537,7 +7537,7 @@ RIX,Latvia,TAS,Uzbekistan
 RIX,Latvia,TBS,Georgia
 RIX,Latvia,TKU,Finland
 RIX,Latvia,TLL,Estonia
-RIX,Latvia,TLV,Israel
+RIX,Latvia,TLV,Israel and Palestine
 RIX,Latvia,TXL,Germany
 RIX,Latvia,VCE,Italy
 RIX,Latvia,VIE,Austria
@@ -7552,7 +7552,7 @@ TAS,Uzbekistan,RIX,Latvia
 TBS,Georgia,RIX,Latvia
 TKU,Finland,RIX,Latvia
 TLL,Estonia,RIX,Latvia
-TLV,Israel,RIX,Latvia
+TLV,Israel and Palestine,RIX,Latvia
 TXL,Germany,RIX,Latvia
 VCE,Italy,RIX,Latvia
 VIE,Austria,RIX,Latvia
@@ -7916,7 +7916,7 @@ PEK,China,SIN,Singapore
 PEK,China,SVO,Russia
 PEK,China,SYD,Australia
 PEK,China,TAE,South Korea
-PEK,China,TLV,Israel
+PEK,China,TLV,Israel and Palestine
 PEK,China,TPE,Taiwan
 PEK,China,ULN,Mongolia
 PEK,China,VIE,Austria
@@ -7973,7 +7973,7 @@ TAE,South Korea,PEK,China
 TAO,China,ICN,South Korea
 TAO,China,KIX,Japan
 TAO,China,NRT,Japan
-TLV,Israel,PEK,China
+TLV,Israel and Palestine,PEK,China
 TMP,Finland,ARN,Sweden
 TNA,China,ICN,South Korea
 TNA,China,KIX,Japan
@@ -8602,7 +8602,7 @@ LCA,Cyprus,OTP,Romania
 LCA,Cyprus,SKG,Greece
 LCA,Cyprus,SOF,Bulgaria
 LCA,Cyprus,SVO,Russia
-LCA,Cyprus,TLV,Israel
+LCA,Cyprus,TLV,Israel and Palestine
 LCA,Cyprus,ZRH,Switzerland
 LHR,United Kingdom,LCA,Cyprus
 MUC,Germany,LCA,Cyprus
@@ -8610,7 +8610,7 @@ OTP,Romania,LCA,Cyprus
 SKG,Greece,LCA,Cyprus
 SOF,Bulgaria,LCA,Cyprus
 SVO,Russia,LCA,Cyprus
-TLV,Israel,LCA,Cyprus
+TLV,Israel and Palestine,LCA,Cyprus
 ZRH,Switzerland,LCA,Cyprus
 AKL,New Zealand,CAN,China
 ALA,Kazakhstan,URC,China
@@ -9619,7 +9619,7 @@ JFK,United States,STI,Dominican Republic
 JFK,United States,STT,Virgin Islands
 JFK,United States,SVO,Russia
 JFK,United States,SXM,Netherlands Antilles
-JFK,United States,TLV,Israel
+JFK,United States,TLV,Israel and Palestine
 JFK,United States,VCE,Italy
 JFK,United States,YUL,Canada
 JFK,United States,YYC,Canada
@@ -9885,7 +9885,7 @@ SXM,Netherlands Antilles,ATL,United States
 SXM,Netherlands Antilles,JFK,United States
 SYD,Australia,LAX,United States
 TGU,Honduras,ATL,United States
-TLV,Israel,JFK,United States
+TLV,Israel and Palestine,JFK,United States
 TPE,Taiwan,LAX,United States
 TPE,Taiwan,NRT,Japan
 TPE,Taiwan,SFO,United States
@@ -10111,7 +10111,7 @@ ARN,Sweden,RIX,Latvia
 ARN,Sweden,SJJ,Bosnia and Herzegovina
 ARN,Sweden,SPU,Croatia
 ARN,Sweden,SXF,Germany
-ARN,Sweden,TLV,Israel
+ARN,Sweden,TLV,Israel and Palestine
 ARN,Sweden,VAA,Finland
 ARN,Sweden,VCE,Italy
 ARN,Sweden,VNO,Lithuania
@@ -10216,7 +10216,7 @@ CPH,Denmark,RAK,Morocco
 CPH,Denmark,RIX,Latvia
 CPH,Denmark,SPU,Croatia
 CPH,Denmark,SXF,Germany
-CPH,Denmark,TLV,Israel
+CPH,Denmark,TLV,Israel and Palestine
 CPH,Denmark,TRD,Norway
 CPH,Denmark,VCE,Italy
 CPH,Denmark,ZAG,Croatia
@@ -10506,8 +10506,8 @@ TFS,Spain,OSL,Norway
 TFS,Spain,SXF,Germany
 TKU,Finland,ALC,Spain
 TLL,Estonia,OSL,Norway
-TLV,Israel,ARN,Sweden
-TLV,Israel,CPH,Denmark
+TLV,Israel and Palestine,ARN,Sweden
+TLV,Israel and Palestine,CPH,Denmark
 TOS,Tromso,ALC,Spain
 TOS,Tromso,ALF,Norway
 TOS,Tromso,LGW,United Kingdom
@@ -11265,7 +11265,7 @@ ADD,Ethiopia,PNR,Congo (Brazzaville)
 ADD,Ethiopia,PVG,China
 ADD,Ethiopia,RUH,Saudi Arabia
 ADD,Ethiopia,SSG,Equatorial Guinea
-ADD,Ethiopia,TLV,Israel
+ADD,Ethiopia,TLV,Israel and Palestine
 ADL,Australia,SIN,Singapore
 AKL,New Zealand,SIN,Singapore
 AMS,Netherlands,FRA,Germany
@@ -11478,7 +11478,7 @@ SSG,Equatorial Guinea,ADD,Ethiopia
 SSG,Equatorial Guinea,DLA,Cameroon
 SYD,Australia,SIN,Singapore
 TLS,France,FRA,Germany
-TLV,Israel,ADD,Ethiopia
+TLV,Israel and Palestine,ADD,Ethiopia
 VIE,Austria,FRA,Germany
 WAW,Poland,FRA,Germany
 WDH,Namibia,JNB,South Africa
@@ -11800,7 +11800,7 @@ SOF,Bulgaria,PFO,Cyprus
 SOF,Bulgaria,PMI,Spain
 SOF,Bulgaria,PRG,Czech Republic
 SOF,Bulgaria,SVO,Russia
-SOF,Bulgaria,TLV,Israel
+SOF,Bulgaria,TLV,Israel and Palestine
 SOF,Bulgaria,TXL,Germany
 SOF,Bulgaria,VIE,Austria
 SOF,Bulgaria,WAW,Poland
@@ -11808,7 +11808,7 @@ SOF,Bulgaria,ZRH,Switzerland
 SVO,Russia,BOJ,Bulgaria
 SVO,Russia,SOF,Bulgaria
 SVO,Russia,VAR,Bulgaria
-TLV,Israel,SOF,Bulgaria
+TLV,Israel and Palestine,SOF,Bulgaria
 TXL,Germany,SOF,Bulgaria
 VAR,Bulgaria,SVO,Russia
 VIE,Austria,SOF,Bulgaria
@@ -15082,7 +15082,7 @@ SZG,Austria,TFS,Spain
 TFS,Spain,GRZ,Austria
 TFS,Spain,SZG,Austria
 TFS,Spain,VIE,Austria
-TLV,Israel,VIE,Austria
+TLV,Israel and Palestine,VIE,Austria
 VIE,Austria,ACE,Spain
 VIE,Austria,AGP,Spain
 VIE,Austria,ARN,Sweden
@@ -15116,7 +15116,7 @@ VIE,Austria,RHO,Greece
 VIE,Austria,RMF,Egypt
 VIE,Austria,SKG,Greece
 VIE,Austria,TFS,Spain
-VIE,Austria,TLV,Israel
+VIE,Austria,TLV,Israel and Palestine
 VIE,Austria,VLC,Spain
 VIE,Austria,VOL,Greece
 VIE,Austria,ZRH,Switzerland
@@ -15413,7 +15413,7 @@ AMS,Netherlands,SPC,Spain
 AMS,Netherlands,SUF,Italy
 AMS,Netherlands,SVQ,Spain
 AMS,Netherlands,TFS,Spain
-AMS,Netherlands,TLV,Israel
+AMS,Netherlands,TLV,Israel and Palestine
 AMS,Netherlands,TRN,Italy
 AMS,Netherlands,VCE,Italy
 AMS,Netherlands,VLC,Spain
@@ -15557,7 +15557,7 @@ SPU,Croatia,RTM,Netherlands
 SVQ,Spain,AMS,Netherlands
 TFS,Spain,AMS,Netherlands
 TLN,France,RTM,Netherlands
-TLV,Israel,AMS,Netherlands
+TLV,Israel and Palestine,AMS,Netherlands
 TRN,Italy,AMS,Netherlands
 TXL,Germany,EIN,Netherlands
 VCE,Italy,AMS,Netherlands
@@ -15732,13 +15732,13 @@ TAS,Uzbekistan,SHJ,United Arab Emirates
 TAS,Uzbekistan,SIN,Singapore
 TAS,Uzbekistan,SVX,Russia
 TAS,Uzbekistan,TJM,Russia
-TAS,Uzbekistan,TLV,Israel
+TAS,Uzbekistan,TLV,Israel and Palestine
 TAS,Uzbekistan,TSE,Kazakhstan
 TAS,Uzbekistan,UFA,Russia
 TAS,Uzbekistan,URC,China
 TAS,Uzbekistan,VOG,Russia
 TJM,Russia,TAS,Uzbekistan
-TLV,Israel,TAS,Uzbekistan
+TLV,Israel and Palestine,TAS,Uzbekistan
 TMJ,Uzbekistan,DME,Russia
 TSE,Kazakhstan,TAS,Uzbekistan
 UFA,Russia,TAS,Uzbekistan
@@ -15880,7 +15880,7 @@ BCN,Spain,RNS,France
 BCN,Spain,STR,Germany
 BCN,Spain,SVG,Norway
 BCN,Spain,TLS,France
-BCN,Spain,TLV,Israel
+BCN,Spain,TLV,Israel and Palestine
 BCN,Spain,TNG,Morocco
 BCN,Spain,TRN,Italy
 BCN,Spain,TXL,Germany
@@ -16176,7 +16176,7 @@ MAD,Spain,SOF,Bulgaria
 MAD,Spain,SSG,Equatorial Guinea
 MAD,Spain,SXB,France
 MAD,Spain,TLS,France
-MAD,Spain,TLV,Israel
+MAD,Spain,TLV,Israel and Palestine
 MAD,Spain,TNG,Morocco
 MAD,Spain,TRN,Italy
 MAD,Spain,TXL,Germany
@@ -16317,8 +16317,8 @@ TLS,France,BCN,Spain
 TLS,France,MAD,Spain
 TLS,France,PMI,Spain
 TLS,France,SVQ,Spain
-TLV,Israel,BCN,Spain
-TLV,Israel,MAD,Spain
+TLV,Israel and Palestine,BCN,Spain
+TLV,Israel and Palestine,MAD,Spain
 TNG,Morocco,BCN,Spain
 TNG,Morocco,MAD,Spain
 TPA,United States,LGW,United Kingdom
@@ -16431,7 +16431,7 @@ MXP,Italy,MRU,Mauritius
 MXP,Italy,SSH,Egypt
 MXP,Italy,TFS,Spain
 MXP,Italy,TIA,Albania
-MXP,Italy,TLV,Israel
+MXP,Italy,TLV,Israel and Palestine
 MXP,Italy,TXL,Germany
 MXP,Italy,VIE,Austria
 NAP,Italy,DUS,Germany
@@ -16439,7 +16439,7 @@ NAP,Italy,KBP,Ukraine
 NAP,Italy,LGW,United Kingdom
 NAP,Italy,MUC,Germany
 NAP,Italy,STR,Germany
-NAP,Italy,TLV,Israel
+NAP,Italy,TLV,Israel and Palestine
 NAP,Italy,TXL,Germany
 NAP,Italy,ZRH,Switzerland
 NUE,Germany,OLB,Italy
@@ -16466,8 +16466,8 @@ TFS,Spain,FCO,Italy
 TFS,Spain,MXP,Italy
 TIA,Albania,MXP,Italy
 TIA,Albania,VRN,Italy
-TLV,Israel,MXP,Italy
-TLV,Israel,NAP,Italy
+TLV,Israel and Palestine,MXP,Italy
+TLV,Israel and Palestine,NAP,Italy
 TXL,Germany,BRI,Italy
 TXL,Germany,CTA,Italy
 TXL,Germany,FCO,Italy
@@ -16721,18 +16721,18 @@ SAH,Yemen,RUH,Saudi Arabia
 TAI,Yemen,CAI,Egypt
 TAI,Yemen,JED,Saudi Arabia
 TAI,Yemen,RUH,Saudi Arabia
-AMM,Jordan,TLV,Israel
-AMS,Netherlands,TLV,Israel
-BCN,Spain,TLV,Israel
-CDG,France,TLV,Israel
-LCA,Cyprus,TLV,Israel
-TBS,Georgia,TLV,Israel
-TLV,Israel,AMM,Jordan
-TLV,Israel,AMS,Netherlands
-TLV,Israel,BCN,Spain
-TLV,Israel,CDG,France
-TLV,Israel,LCA,Cyprus
-TLV,Israel,TBS,Georgia
+AMM,Jordan,TLV,Israel and Palestine
+AMS,Netherlands,TLV,Israel and Palestine
+BCN,Spain,TLV,Israel and Palestine
+CDG,France,TLV,Israel and Palestine
+LCA,Cyprus,TLV,Israel and Palestine
+TBS,Georgia,TLV,Israel and Palestine
+TLV,Israel and Palestine,AMM,Jordan
+TLV,Israel and Palestine,AMS,Netherlands
+TLV,Israel and Palestine,BCN,Spain
+TLV,Israel and Palestine,CDG,France
+TLV,Israel and Palestine,LCA,Cyprus
+TLV,Israel and Palestine,TBS,Georgia
 CDG,France,GYD,Azerbaijan
 DME,Russia,GYD,Azerbaijan
 DOH,Qatar,GYD,Azerbaijan
@@ -16763,7 +16763,7 @@ GYD,Azerbaijan,SCO,Kazakhstan
 GYD,Azerbaijan,SVX,Russia
 GYD,Azerbaijan,TBS,Georgia
 GYD,Azerbaijan,TBZ,Iran
-GYD,Azerbaijan,TLV,Israel
+GYD,Azerbaijan,TLV,Israel and Palestine
 GYD,Azerbaijan,VIE,Austria
 IKA,Iran,GYD,Azerbaijan
 IST,Turkey,GYD,Azerbaijan
@@ -16783,7 +16783,7 @@ SCO,Kazakhstan,GYD,Azerbaijan
 SVX,Russia,GYD,Azerbaijan
 TBS,Georgia,GYD,Azerbaijan
 TBZ,Iran,GYD,Azerbaijan
-TLV,Israel,GYD,Azerbaijan
+TLV,Israel and Palestine,GYD,Azerbaijan
 VIE,Austria,GYD,Azerbaijan
 RDN,Malaysia,SIN,Singapore
 SIN,Singapore,RDN,Malaysia
@@ -17310,7 +17310,7 @@ BEG,Serbia,STR,Germany
 BEG,Serbia,SVO,Russia
 BEG,Serbia,TGD,Montenegro
 BEG,Serbia,TIV,Montenegro
-BEG,Serbia,TLV,Israel
+BEG,Serbia,TLV,Israel and Palestine
 BEG,Serbia,TXL,Germany
 BEG,Serbia,VAR,Bulgaria
 BEG,Serbia,VIE,Austria
@@ -17343,7 +17343,7 @@ STR,Germany,BEG,Serbia
 SVO,Russia,BEG,Serbia
 TGD,Montenegro,BEG,Serbia
 TIV,Montenegro,BEG,Serbia
-TLV,Israel,BEG,Serbia
+TLV,Israel and Palestine,BEG,Serbia
 TXL,Germany,BEG,Serbia
 VAR,Bulgaria,BEG,Serbia
 VIE,Austria,BEG,Serbia
@@ -17755,7 +17755,7 @@ ICN,South Korea,SYD,Australia
 ICN,South Korea,SZX,China
 ICN,South Korea,TAO,China
 ICN,South Korea,TAS,Uzbekistan
-ICN,South Korea,TLV,Israel
+ICN,South Korea,TLV,Israel and Palestine
 ICN,South Korea,TNA,China
 ICN,South Korea,TPE,Taiwan
 ICN,South Korea,TSN,China
@@ -17854,7 +17854,7 @@ TAO,China,ICN,South Korea
 TAO,China,PUS,South Korea
 TAS,Uzbekistan,ICN,South Korea
 TIJ,Mexico,NRT,Japan
-TLV,Israel,ICN,South Korea
+TLV,Israel and Palestine,ICN,South Korea
 TNA,China,ICN,South Korea
 TPE,Taiwan,ICN,South Korea
 TSN,China,ICN,South Korea
@@ -18024,7 +18024,7 @@ AMS,Netherlands,SXM,Netherlands Antilles
 AMS,Netherlands,TBS,Georgia
 AMS,Netherlands,TLL,Estonia
 AMS,Netherlands,TLS,France
-AMS,Netherlands,TLV,Israel
+AMS,Netherlands,TLV,Israel and Palestine
 AMS,Netherlands,TPE,Taiwan
 AMS,Netherlands,TRD,Norway
 AMS,Netherlands,TRF,Sandefjord
@@ -18308,7 +18308,7 @@ TBS,Georgia,KBP,Ukraine
 TGU,Honduras,SJO,Costa Rica
 TLL,Estonia,AMS,Netherlands
 TLS,France,AMS,Netherlands
-TLV,Israel,AMS,Netherlands
+TLV,Israel and Palestine,AMS,Netherlands
 TPE,Taiwan,AMS,Netherlands
 TPE,Taiwan,BKK,Thailand
 TPE,Taiwan,MNL,Philippines
@@ -19286,7 +19286,7 @@ FRA,Germany,SVG,Norway
 FRA,Germany,SZG,Austria
 FRA,Germany,TLL,Estonia
 FRA,Germany,TLS,France
-FRA,Germany,TLV,Israel
+FRA,Germany,TLV,Israel and Palestine
 FRA,Germany,TRN,Italy
 FRA,Germany,TSE,Kazakhstan
 FRA,Germany,TUN,Tunisia
@@ -19551,7 +19551,7 @@ MUC,Germany,SUF,Italy
 MUC,Germany,TBS,Georgia
 MUC,Germany,TIA,Albania
 MUC,Germany,TLS,France
-MUC,Germany,TLV,Israel
+MUC,Germany,TLV,Israel and Palestine
 MUC,Germany,TRN,Italy
 MUC,Germany,TRS,Italy
 MUC,Germany,TSR,Romania
@@ -19661,9 +19661,9 @@ TIA,Albania,MUC,Germany
 TLL,Estonia,FRA,Germany
 TLS,France,FRA,Germany
 TLS,France,MUC,Germany
-TLV,Israel,FRA,Germany
-TLV,Israel,MUC,Germany
-TLV,Israel,TXL,Germany
+TLV,Israel and Palestine,FRA,Germany
+TLV,Israel and Palestine,MUC,Germany
+TLV,Israel and Palestine,TXL,Germany
 TOS,Tromso,ALF,Norway
 TRN,Italy,FRA,Germany
 TRN,Italy,MUC,Germany
@@ -19679,7 +19679,7 @@ TXL,Germany,CDG,France
 TXL,Germany,CPH,Denmark
 TXL,Germany,EWR,United States
 TXL,Germany,LUX,Luxembourg
-TXL,Germany,TLV,Israel
+TXL,Germany,TLV,Israel and Palestine
 TXL,Germany,VIE,Austria
 TXL,Germany,VKO,Russia
 TXL,Germany,ZAG,Croatia
@@ -19935,7 +19935,7 @@ SOF,Bulgaria,WAW,Poland
 SVO,Russia,WAW,Poland
 TBS,Georgia,WAW,Poland
 TLL,Estonia,WAW,Poland
-TLV,Israel,WAW,Poland
+TLV,Israel and Palestine,WAW,Poland
 VIE,Austria,KRK,Poland
 VIE,Austria,WAW,Poland
 VNO,Lithuania,WAW,Poland
@@ -19977,7 +19977,7 @@ WAW,Poland,SOF,Bulgaria
 WAW,Poland,SVO,Russia
 WAW,Poland,TBS,Georgia
 WAW,Poland,TLL,Estonia
-WAW,Poland,TLV,Israel
+WAW,Poland,TLV,Israel and Palestine
 WAW,Poland,VIE,Austria
 WAW,Poland,VNO,Lithuania
 WAW,Poland,YYZ,Canada
@@ -20406,7 +20406,7 @@ GVA,Switzerland,PMI,Spain
 GVA,Switzerland,PRG,Czech Republic
 GVA,Switzerland,PRN,Serbia
 GVA,Switzerland,RAK,Morocco
-GVA,Switzerland,TLV,Israel
+GVA,Switzerland,TLV,Israel and Palestine
 GVA,Switzerland,VIE,Austria
 GVA,Switzerland,WAW,Poland
 GVA,Switzerland,YUL,Canada
@@ -20483,8 +20483,8 @@ SKP,Macedonia,ZRH,Switzerland
 SPU,Croatia,ZRH,Switzerland
 STR,Germany,ZRH,Switzerland
 TFS,Spain,ZRH,Switzerland
-TLV,Israel,GVA,Switzerland
-TLV,Israel,ZRH,Switzerland
+TLV,Israel and Palestine,GVA,Switzerland
+TLV,Israel and Palestine,ZRH,Switzerland
 TPA,United States,ZRH,Switzerland
 TXL,Germany,ZRH,Switzerland
 VCE,Italy,ZRH,Switzerland
@@ -20580,7 +20580,7 @@ ZRH,Switzerland,SKP,Macedonia
 ZRH,Switzerland,SPU,Croatia
 ZRH,Switzerland,STR,Germany
 ZRH,Switzerland,TFS,Spain
-ZRH,Switzerland,TLV,Israel
+ZRH,Switzerland,TLV,Israel and Palestine
 ZRH,Switzerland,TPA,United States
 ZRH,Switzerland,TXL,Germany
 ZRH,Switzerland,VCE,Italy
@@ -20590,79 +20590,79 @@ ZRH,Switzerland,WAW,Poland
 ZRH,Switzerland,YUL,Canada
 ZRH,Switzerland,YYZ,Canada
 ZRH,Switzerland,ZAG,Croatia
-AMS,Netherlands,TLV,Israel
-ATH,Greece,TLV,Israel
-BCN,Spain,TLV,Israel
-BKK,Thailand,TLV,Israel
-BOM,India,TLV,Israel
-BRU,Belgium,TLV,Israel
-BUD,Hungary,TLV,Israel
-CDG,France,TLV,Israel
-DME,Russia,TLV,Israel
-EWR,United States,TLV,Israel
-FCO,Italy,TLV,Israel
-FRA,Germany,TLV,Israel
-GVA,Switzerland,TLV,Israel
-HKG,Hong Kong,TLV,Israel
-JFK,United States,TLV,Israel
-JNB,South Africa,TLV,Israel
-KBP,Ukraine,TLV,Israel
-LAX,United States,TLV,Israel
-LCA,Cyprus,TLV,Israel
-LED,Russia,TLV,Israel
-LHR,United Kingdom,TLV,Israel
-LTN,United Kingdom,TLV,Israel
-MAD,Spain,TLV,Israel
-MRS,France,TLV,Israel
+AMS,Netherlands,TLV,Israel and Palestine
+ATH,Greece,TLV,Israel and Palestine
+BCN,Spain,TLV,Israel and Palestine
+BKK,Thailand,TLV,Israel and Palestine
+BOM,India,TLV,Israel and Palestine
+BRU,Belgium,TLV,Israel and Palestine
+BUD,Hungary,TLV,Israel and Palestine
+CDG,France,TLV,Israel and Palestine
+DME,Russia,TLV,Israel and Palestine
+EWR,United States,TLV,Israel and Palestine
+FCO,Italy,TLV,Israel and Palestine
+FRA,Germany,TLV,Israel and Palestine
+GVA,Switzerland,TLV,Israel and Palestine
+HKG,Hong Kong,TLV,Israel and Palestine
+JFK,United States,TLV,Israel and Palestine
+JNB,South Africa,TLV,Israel and Palestine
+KBP,Ukraine,TLV,Israel and Palestine
+LAX,United States,TLV,Israel and Palestine
+LCA,Cyprus,TLV,Israel and Palestine
+LED,Russia,TLV,Israel and Palestine
+LHR,United Kingdom,TLV,Israel and Palestine
+LTN,United Kingdom,TLV,Israel and Palestine
+MAD,Spain,TLV,Israel and Palestine
+MRS,France,TLV,Israel and Palestine
 MUC,Germany,MAD,Spain
-MUC,Germany,TLV,Israel
-MXP,Italy,TLV,Israel
-OTP,Romania,TLV,Israel
-PEK,China,TLV,Israel
-PRG,Czech Republic,TLV,Israel
-SOF,Bulgaria,TLV,Israel
-SXF,Germany,TLV,Israel
-TLV,Israel,AMS,Netherlands
-TLV,Israel,ATH,Greece
-TLV,Israel,BCN,Spain
-TLV,Israel,BKK,Thailand
-TLV,Israel,BOM,India
-TLV,Israel,BRU,Belgium
-TLV,Israel,BUD,Hungary
-TLV,Israel,CDG,France
-TLV,Israel,DME,Russia
-TLV,Israel,EWR,United States
-TLV,Israel,FCO,Italy
-TLV,Israel,FRA,Germany
-TLV,Israel,GVA,Switzerland
-TLV,Israel,HKG,Hong Kong
-TLV,Israel,JFK,United States
-TLV,Israel,JNB,South Africa
-TLV,Israel,KBP,Ukraine
-TLV,Israel,LAX,United States
-TLV,Israel,LCA,Cyprus
-TLV,Israel,LED,Russia
-TLV,Israel,LHR,United Kingdom
-TLV,Israel,LTN,United Kingdom
-TLV,Israel,MAD,Spain
-TLV,Israel,MRS,France
-TLV,Israel,MUC,Germany
-TLV,Israel,MXP,Italy
-TLV,Israel,OTP,Romania
-TLV,Israel,PEK,China
-TLV,Israel,PRG,Czech Republic
-TLV,Israel,SOF,Bulgaria
-TLV,Israel,SXF,Germany
-TLV,Israel,VCE,Italy
-TLV,Israel,VIE,Austria
-TLV,Israel,WAW,Poland
-TLV,Israel,YYZ,Canada
-TLV,Israel,ZRH,Switzerland
-VCE,Italy,TLV,Israel
-VIE,Austria,TLV,Israel
-WAW,Poland,TLV,Israel
-YYZ,Canada,TLV,Israel
-ZRH,Switzerland,TLV,Israel
+MUC,Germany,TLV,Israel and Palestine
+MXP,Italy,TLV,Israel and Palestine
+OTP,Romania,TLV,Israel and Palestine
+PEK,China,TLV,Israel and Palestine
+PRG,Czech Republic,TLV,Israel and Palestine
+SOF,Bulgaria,TLV,Israel and Palestine
+SXF,Germany,TLV,Israel and Palestine
+TLV,Israel and Palestine,AMS,Netherlands
+TLV,Israel and Palestine,ATH,Greece
+TLV,Israel and Palestine,BCN,Spain
+TLV,Israel and Palestine,BKK,Thailand
+TLV,Israel and Palestine,BOM,India
+TLV,Israel and Palestine,BRU,Belgium
+TLV,Israel and Palestine,BUD,Hungary
+TLV,Israel and Palestine,CDG,France
+TLV,Israel and Palestine,DME,Russia
+TLV,Israel and Palestine,EWR,United States
+TLV,Israel and Palestine,FCO,Italy
+TLV,Israel and Palestine,FRA,Germany
+TLV,Israel and Palestine,GVA,Switzerland
+TLV,Israel and Palestine,HKG,Hong Kong
+TLV,Israel and Palestine,JFK,United States
+TLV,Israel and Palestine,JNB,South Africa
+TLV,Israel and Palestine,KBP,Ukraine
+TLV,Israel and Palestine,LAX,United States
+TLV,Israel and Palestine,LCA,Cyprus
+TLV,Israel and Palestine,LED,Russia
+TLV,Israel and Palestine,LHR,United Kingdom
+TLV,Israel and Palestine,LTN,United Kingdom
+TLV,Israel and Palestine,MAD,Spain
+TLV,Israel and Palestine,MRS,France
+TLV,Israel and Palestine,MUC,Germany
+TLV,Israel and Palestine,MXP,Italy
+TLV,Israel and Palestine,OTP,Romania
+TLV,Israel and Palestine,PEK,China
+TLV,Israel and Palestine,PRG,Czech Republic
+TLV,Israel and Palestine,SOF,Bulgaria
+TLV,Israel and Palestine,SXF,Germany
+TLV,Israel and Palestine,VCE,Italy
+TLV,Israel and Palestine,VIE,Austria
+TLV,Israel and Palestine,WAW,Poland
+TLV,Israel and Palestine,YYZ,Canada
+TLV,Israel and Palestine,ZRH,Switzerland
+VCE,Italy,TLV,Israel and Palestine
+VIE,Austria,TLV,Israel and Palestine
+WAW,Poland,TLV,Israel and Palestine
+YYZ,Canada,TLV,Israel and Palestine
+ZRH,Switzerland,TLV,Israel and Palestine
 AAL,Denmark,OSL,Norway
 OSL,Norway,AAL,Denmark
 HMB,Egypt,JED,Saudi Arabia
@@ -22439,7 +22439,7 @@ PRG,Czech Republic,SVO,Russia
 PRG,Czech Republic,SVX,Russia
 PRG,Czech Republic,SXB,France
 PRG,Czech Republic,TAS,Uzbekistan
-PRG,Czech Republic,TLV,Israel
+PRG,Czech Republic,TLV,Israel and Palestine
 PRG,Czech Republic,TXL,Germany
 PRG,Czech Republic,UFA,Russia
 PRG,Czech Republic,VLC,Spain
@@ -22455,7 +22455,7 @@ SVO,Russia,PRG,Czech Republic
 SVX,Russia,PRG,Czech Republic
 SXB,France,PRG,Czech Republic
 TAS,Uzbekistan,PRG,Czech Republic
-TLV,Israel,PRG,Czech Republic
+TLV,Israel and Palestine,PRG,Czech Republic
 TXL,Germany,PRG,Czech Republic
 UFA,Russia,PRG,Czech Republic
 VLC,Spain,PRG,Czech Republic
@@ -22616,7 +22616,7 @@ TBS,Georgia,VIE,Austria
 TFS,Spain,VIE,Austria
 TGD,Montenegro,VIE,Austria
 TIA,Albania,VIE,Austria
-TLV,Israel,VIE,Austria
+TLV,Israel and Palestine,VIE,Austria
 TSE,Kazakhstan,VIE,Austria
 TXL,Germany,KLU,Austria
 TXL,Germany,VIE,Austria
@@ -22714,7 +22714,7 @@ VIE,Austria,TBS,Georgia
 VIE,Austria,TFS,Spain
 VIE,Austria,TGD,Montenegro
 VIE,Austria,TIA,Albania
-VIE,Austria,TLV,Israel
+VIE,Austria,TLV,Israel and Palestine
 VIE,Austria,TSE,Kazakhstan
 VIE,Austria,TXL,Germany
 VIE,Austria,VAR,Bulgaria
@@ -23213,7 +23213,7 @@ SAW,Turkey,STR,Germany
 SAW,Turkey,SXF,Germany
 SAW,Turkey,TBS,Georgia
 SAW,Turkey,TIA,Albania
-SAW,Turkey,TLV,Israel
+SAW,Turkey,TLV,Israel and Palestine
 SAW,Turkey,VIE,Austria
 SAW,Turkey,ZRH,Switzerland
 SJJ,Bosnia and Herzegovina,SAW,Turkey
@@ -23226,7 +23226,7 @@ STR,Germany,SAW,Turkey
 SXF,Germany,SAW,Turkey
 TBS,Georgia,SAW,Turkey
 TIA,Albania,SAW,Turkey
-TLV,Israel,SAW,Turkey
+TLV,Israel and Palestine,SAW,Turkey
 TZX,Turkey,AER,Russia
 VIE,Austria,AYT,Turkey
 VIE,Austria,ESB,Turkey
@@ -23557,10 +23557,10 @@ CDG,France,KBP,Ukraine
 DME,Russia,KBP,Ukraine
 DME,Russia,ODS,Ukraine
 DNK,Ukraine,IST,Turkey
-DNK,Ukraine,TLV,Israel
+DNK,Ukraine,TLV,Israel and Palestine
 DOK,Ukraine,IST,Turkey
 DOK,Ukraine,LCA,Cyprus
-DOK,Ukraine,TLV,Israel
+DOK,Ukraine,TLV,Israel and Palestine
 DXB,United Arab Emirates,KBP,Ukraine
 EVN,Armenia,KBP,Ukraine
 FCO,Italy,KBP,Ukraine
@@ -23613,7 +23613,7 @@ KBP,Ukraine,SAW,Turkey
 KBP,Ukraine,SVX,Russia
 KBP,Ukraine,TBS,Georgia
 KBP,Ukraine,TFS,Spain
-KBP,Ukraine,TLV,Israel
+KBP,Ukraine,TLV,Israel and Palestine
 KBP,Ukraine,TSE,Kazakhstan
 KBP,Ukraine,TXL,Germany
 KBP,Ukraine,VIE,Austria
@@ -23638,7 +23638,7 @@ NCE,France,KBP,Ukraine
 ODS,Ukraine,DME,Russia
 ODS,Ukraine,IST,Turkey
 ODS,Ukraine,LCA,Cyprus
-ODS,Ukraine,TLV,Israel
+ODS,Ukraine,TLV,Israel and Palestine
 ODS,Ukraine,VIE,Austria
 OVB,Russia,KBP,Ukraine
 PRG,Czech Republic,KBP,Ukraine
@@ -23649,10 +23649,10 @@ SAW,Turkey,KBP,Ukraine
 SVX,Russia,KBP,Ukraine
 TBS,Georgia,KBP,Ukraine
 TFS,Spain,KBP,Ukraine
-TLV,Israel,DNK,Ukraine
-TLV,Israel,DOK,Ukraine
-TLV,Israel,KBP,Ukraine
-TLV,Israel,ODS,Ukraine
+TLV,Israel and Palestine,DNK,Ukraine
+TLV,Israel and Palestine,DOK,Ukraine
+TLV,Israel and Palestine,KBP,Ukraine
+TLV,Israel and Palestine,ODS,Ukraine
 TSE,Kazakhstan,KBP,Ukraine
 TXL,Germany,KBP,Ukraine
 VIE,Austria,HRK,Ukraine
@@ -24345,7 +24345,7 @@ PRG,Czech Republic,RHO,Greece
 PRG,Czech Republic,SPU,Croatia
 PRG,Czech Republic,SXB,France
 PRG,Czech Republic,TFS,Spain
-PRG,Czech Republic,TLV,Israel
+PRG,Czech Republic,TLV,Israel and Palestine
 PRG,Czech Republic,TXL,Germany
 PRG,Czech Republic,VLC,Spain
 PRG,Czech Republic,WAW,Poland
@@ -24354,7 +24354,7 @@ RHO,Greece,PRG,Czech Republic
 SPU,Croatia,PRG,Czech Republic
 SXB,France,PRG,Czech Republic
 TFS,Spain,PRG,Czech Republic
-TLV,Israel,PRG,Czech Republic
+TLV,Israel and Palestine,PRG,Czech Republic
 TXL,Germany,PRG,Czech Republic
 VLC,Spain,PRG,Czech Republic
 WAW,Poland,PRG,Czech Republic
@@ -24451,16 +24451,16 @@ KRR,Russia,LCA,Cyprus
 KRR,Russia,PRG,Czech Republic
 KRR,Russia,RMI,Italy
 KRR,Russia,TAS,Uzbekistan
-KRR,Russia,TLV,Israel
+KRR,Russia,TLV,Israel and Palestine
 LCA,Cyprus,KRR,Russia
-MRV,Russia,TLV,Israel
+MRV,Russia,TLV,Israel and Palestine
 PEK,China,YKS,Russia
 PRG,Czech Republic,KRR,Russia
 RMI,Italy,KRR,Russia
 TAS,Uzbekistan,IKT,Russia
 TAS,Uzbekistan,KRR,Russia
-TLV,Israel,KRR,Russia
-TLV,Israel,MRV,Russia
+TLV,Israel and Palestine,KRR,Russia
+TLV,Israel and Palestine,MRV,Russia
 YKS,Russia,HRB,China
 YKS,Russia,PEK,China
 AUA,Aruba,CCS,Venezuela
@@ -24536,7 +24536,7 @@ AMM,Jordan,RUH,Saudi Arabia
 AMM,Jordan,SAH,Yemen
 AMM,Jordan,SSH,Egypt
 AMM,Jordan,TIP,Libya
-AMM,Jordan,TLV,Israel
+AMM,Jordan,TLV,Israel and Palestine
 AMM,Jordan,TUN,Tunisia
 AMM,Jordan,TXL,Germany
 AMM,Jordan,VIE,Austria
@@ -24593,7 +24593,7 @@ RUH,Saudi Arabia,AMM,Jordan
 SAH,Yemen,AMM,Jordan
 SSH,Egypt,AMM,Jordan
 TIP,Libya,AMM,Jordan
-TLV,Israel,AMM,Jordan
+TLV,Israel and Palestine,AMM,Jordan
 TUN,Tunisia,AMM,Jordan
 TXL,Germany,AMM,Jordan
 VIE,Austria,AMM,Jordan
@@ -24635,7 +24635,7 @@ GVA,Switzerland,OTP,Romania
 IAS,Romania,BLQ,Italy
 IAS,Romania,FCO,Italy
 IAS,Romania,LTN,United Kingdom
-IAS,Romania,TLV,Israel
+IAS,Romania,TLV,Israel and Palestine
 IAS,Romania,TRN,Italy
 IAS,Romania,VIE,Austria
 IST,Turkey,OTP,Romania
@@ -24674,7 +24674,7 @@ OTP,Romania,PRG,Czech Republic
 OTP,Romania,SKG,Greece
 OTP,Romania,SOF,Bulgaria
 OTP,Romania,SVO,Russia
-OTP,Romania,TLV,Israel
+OTP,Romania,TLV,Israel and Palestine
 OTP,Romania,VIE,Austria
 OTP,Romania,WAW,Poland
 PRG,Czech Republic,CLJ,Romania
@@ -24684,8 +24684,8 @@ SBZ,Romania,VIE,Austria
 SKG,Greece,OTP,Romania
 SOF,Bulgaria,OTP,Romania
 SVO,Russia,OTP,Romania
-TLV,Israel,IAS,Romania
-TLV,Israel,OTP,Romania
+TLV,Israel and Palestine,IAS,Romania
+TLV,Israel and Palestine,OTP,Romania
 TRN,Italy,IAS,Romania
 VIE,Austria,CLJ,Romania
 VIE,Austria,IAS,Romania
@@ -25423,7 +25423,7 @@ CPH,Denmark,SVG,Norway
 CPH,Denmark,SVO,Russia
 CPH,Denmark,TKU,Finland
 CPH,Denmark,TLL,Estonia
-CPH,Denmark,TLV,Israel
+CPH,Denmark,TLV,Israel and Palestine
 CPH,Denmark,TRD,Norway
 CPH,Denmark,TRF,Sandefjord
 CPH,Denmark,TXL,Germany
@@ -25630,7 +25630,7 @@ TLL,Estonia,ARN,Sweden
 TLL,Estonia,CPH,Denmark
 TLL,Estonia,OSL,Norway
 TLL,Estonia,TRD,Norway
-TLV,Israel,CPH,Denmark
+TLV,Israel and Palestine,CPH,Denmark
 TMP,Finland,ARN,Sweden
 TOS,Tromso,ALF,Norway
 TOS,Tromso,ARN,Sweden
@@ -25753,7 +25753,7 @@ BRU,Belgium,SVQ,Spain
 BRU,Belgium,SXB,France
 BRU,Belgium,TLL,Estonia
 BRU,Belgium,TLS,France
-BRU,Belgium,TLV,Israel
+BRU,Belgium,TLV,Israel and Palestine
 BRU,Belgium,TRN,Italy
 BRU,Belgium,TXL,Germany
 BRU,Belgium,VCE,Italy
@@ -25836,7 +25836,7 @@ SVQ,Spain,BRU,Belgium
 SXB,France,BRU,Belgium
 TLL,Estonia,BRU,Belgium
 TLS,France,BRU,Belgium
-TLV,Israel,BRU,Belgium
+TLV,Israel and Palestine,BRU,Belgium
 TRN,Italy,BRU,Belgium
 TXL,Germany,BRU,Belgium
 VCE,Italy,BRU,Belgium
@@ -26300,7 +26300,7 @@ LED,Russia,SKD,Uzbekistan
 LED,Russia,SXF,Germany
 LED,Russia,TAS,Uzbekistan
 LED,Russia,TFS,Spain
-LED,Russia,TLV,Israel
+LED,Russia,TLV,Israel and Palestine
 LED,Russia,TSE,Kazakhstan
 LED,Russia,UGC,Uzbekistan
 LED,Russia,VIE,Austria
@@ -26342,7 +26342,7 @@ ROV,Russia,IST,Turkey
 ROV,Russia,LBD,Tajikistan
 ROV,Russia,SIP,Ukraine
 ROV,Russia,TAS,Uzbekistan
-ROV,Russia,TLV,Israel
+ROV,Russia,TLV,Israel and Palestine
 SGN,Vietnam,SVO,Russia
 SIP,Ukraine,LED,Russia
 SIP,Ukraine,ROV,Russia
@@ -26427,7 +26427,7 @@ SVO,Russia,SXF,Germany
 SVO,Russia,TAS,Uzbekistan
 SVO,Russia,TFS,Spain
 SVO,Russia,TLL,Estonia
-SVO,Russia,TLV,Israel
+SVO,Russia,TLV,Israel and Palestine
 SVO,Russia,TXL,Germany
 SVO,Russia,ULN,Mongolia
 SVO,Russia,URC,China
@@ -26448,9 +26448,9 @@ TAS,Uzbekistan,SVO,Russia
 TFS,Spain,LED,Russia
 TFS,Spain,SVO,Russia
 TLL,Estonia,SVO,Russia
-TLV,Israel,LED,Russia
-TLV,Israel,ROV,Russia
-TLV,Israel,SVO,Russia
+TLV,Israel and Palestine,LED,Russia
+TLV,Israel and Palestine,ROV,Russia
+TLV,Israel and Palestine,SVO,Russia
 TSE,Kazakhstan,LED,Russia
 TXL,Germany,SVO,Russia
 UGC,Uzbekistan,LED,Russia
@@ -26995,7 +26995,7 @@ TFS,Spain,GLA,United Kingdom
 TFS,Spain,LGW,United Kingdom
 TFS,Spain,MAN,United Kingdom
 TFS,Spain,NCL,United Kingdom
-VDA,Israel,CDG,France
+VDA,Israel and Palestine,CDG,France
 EVN,Armenia,PRG,Czech Republic
 EVN,Armenia,VIE,Austria
 PRG,Czech Republic,EVN,Armenia
@@ -27079,7 +27079,7 @@ BKK,Thailand,RGN,Burma
 BKK,Thailand,SGN,Vietnam
 BKK,Thailand,SIN,Singapore
 BKK,Thailand,SYD,Australia
-BKK,Thailand,TLV,Israel
+BKK,Thailand,TLV,Israel and Palestine
 BKK,Thailand,TNR,Madagascar
 BKK,Thailand,TPE,Taiwan
 BKK,Thailand,VIE,Austria
@@ -27168,7 +27168,7 @@ SGN,Vietnam,BKK,Thailand
 SIN,Singapore,BKK,Thailand
 SYD,Australia,BKK,Thailand
 TKU,Finland,ARN,Sweden
-TLV,Israel,BKK,Thailand
+TLV,Israel and Palestine,BKK,Thailand
 TMP,Finland,ARN,Sweden
 TNR,Madagascar,BKK,Thailand
 TPE,Taiwan,BKK,Thailand
@@ -27498,7 +27498,7 @@ IST,Turkey,TIF,Saudi Arabia
 IST,Turkey,TIP,Libya
 IST,Turkey,TLL,Estonia
 IST,Turkey,TLS,France
-IST,Turkey,TLV,Israel
+IST,Turkey,TLV,Israel and Palestine
 IST,Turkey,TRN,Italy
 IST,Turkey,TSE,Kazakhstan
 IST,Turkey,TUN,Tunisia
@@ -27619,7 +27619,7 @@ SAW,Turkey,MXP,Italy
 SAW,Turkey,SJJ,Bosnia and Herzegovina
 SAW,Turkey,STW,Russia
 SAW,Turkey,TBS,Georgia
-SAW,Turkey,TLV,Israel
+SAW,Turkey,TLV,Israel and Palestine
 SAW,Turkey,VIE,Austria
 SGN,Vietnam,BKK,Thailand
 SIN,Singapore,CGK,Indonesia
@@ -27651,8 +27651,8 @@ TIP,Libya,TUN,Tunisia
 TLL,Estonia,IST,Turkey
 TLL,Estonia,VNO,Lithuania
 TLS,France,IST,Turkey
-TLV,Israel,IST,Turkey
-TLV,Israel,SAW,Turkey
+TLV,Israel and Palestine,IST,Turkey
+TLV,Israel and Palestine,SAW,Turkey
 TRN,Italy,IST,Turkey
 TSE,Kazakhstan,IST,Turkey
 TUN,Tunisia,IST,Turkey
@@ -28096,7 +28096,7 @@ ORY,France,PSA,Italy
 ORY,France,RAK,Morocco
 ORY,France,SAW,Turkey
 ORY,France,SVQ,Spain
-ORY,France,TLV,Israel
+ORY,France,TLV,Israel and Palestine
 ORY,France,TUN,Tunisia
 ORY,France,VCE,Italy
 OUD,Morocco,LIL,France
@@ -28185,7 +28185,7 @@ TFS,Spain,LTN,United Kingdom
 TFS,Spain,MAN,United Kingdom
 TFS,Spain,NCL,United Kingdom
 TFS,Spain,STN,United Kingdom
-TLV,Israel,ORY,France
+TLV,Israel and Palestine,ORY,France
 TUN,Tunisia,LYS,France
 TUN,Tunisia,ORY,France
 TXL,Germany,NTE,France
@@ -29148,7 +29148,7 @@ BSL,France,SPU,Croatia
 BSL,France,SVQ,Spain
 BSL,France,SXF,Germany
 BSL,France,TFS,Spain
-BSL,France,TLV,Israel
+BSL,France,TLV,Israel and Palestine
 BSL,France,VCE,Italy
 BUD,Hungary,BSL,France
 BUD,Hungary,CDG,France
@@ -29283,7 +29283,7 @@ FCO,Italy,PRG,Czech Republic
 FCO,Italy,SKG,Greece
 FCO,Italy,SXF,Germany
 FCO,Italy,TLS,France
-FCO,Italy,TLV,Israel
+FCO,Italy,TLV,Israel and Palestine
 FNC,Portugal,BRS,United Kingdom
 FNC,Portugal,LGW,United Kingdom
 FUE,Spain,BRS,United Kingdom
@@ -29349,7 +29349,7 @@ GVA,Switzerland,SVQ,Spain
 GVA,Switzerland,SXF,Germany
 GVA,Switzerland,TFS,Spain
 GVA,Switzerland,TLS,France
-GVA,Switzerland,TLV,Israel
+GVA,Switzerland,TLV,Israel and Palestine
 GVA,Switzerland,VCE,Italy
 HAM,Germany,ATH,Greece
 HAM,Germany,BSL,France
@@ -29503,7 +29503,7 @@ LGW,United Kingdom,SXF,Germany
 LGW,United Kingdom,TFS,Spain
 LGW,United Kingdom,TLL,Estonia
 LGW,United Kingdom,TLS,France
-LGW,United Kingdom,TLV,Israel
+LGW,United Kingdom,TLV,Israel and Palestine
 LGW,United Kingdom,VCE,Italy
 LGW,United Kingdom,VIE,Austria
 LGW,United Kingdom,VLC,Spain
@@ -29581,7 +29581,7 @@ LTN,United Kingdom,PMI,Spain
 LTN,United Kingdom,PSA,Italy
 LTN,United Kingdom,SSH,Egypt
 LTN,United Kingdom,SXF,Germany
-LTN,United Kingdom,TLV,Israel
+LTN,United Kingdom,TLV,Israel and Palestine
 LTN,United Kingdom,VCE,Italy
 LTN,United Kingdom,ZRH,Switzerland
 LUX,Luxembourg,LGW,United Kingdom
@@ -29643,7 +29643,7 @@ MAN,United Kingdom,SOF,Bulgaria
 MAN,United Kingdom,SSH,Egypt
 MAN,United Kingdom,SXF,Germany
 MAN,United Kingdom,TFS,Spain
-MAN,United Kingdom,TLV,Israel
+MAN,United Kingdom,TLV,Israel and Palestine
 MAN,United Kingdom,VCE,Italy
 MJV,Spain,BRS,United Kingdom
 MJV,Spain,LGW,United Kingdom
@@ -29684,7 +29684,7 @@ MXP,Italy,PRG,Czech Republic
 MXP,Italy,RAK,Morocco
 MXP,Italy,SSH,Egypt
 MXP,Italy,SXF,Germany
-MXP,Italy,TLV,Israel
+MXP,Italy,TLV,Israel and Palestine
 NAP,Italy,BRU,Belgium
 NAP,Italy,BSL,France
 NAP,Italy,CDG,France
@@ -29896,7 +29896,7 @@ SXF,Germany,SKG,Greece
 SXF,Germany,SOF,Bulgaria
 SXF,Germany,SZG,Austria
 SXF,Germany,TFS,Spain
-SXF,Germany,TLV,Israel
+SXF,Germany,TLV,Israel and Palestine
 SXF,Germany,VCE,Italy
 SZG,Austria,SXF,Germany
 TFS,Spain,BRS,United Kingdom
@@ -29914,14 +29914,14 @@ TLS,France,FCO,Italy
 TLS,France,GVA,Switzerland
 TLS,France,LGW,United Kingdom
 TLS,France,RAK,Morocco
-TLV,Israel,BSL,France
-TLV,Israel,FCO,Italy
-TLV,Israel,GVA,Switzerland
-TLV,Israel,LGW,United Kingdom
-TLV,Israel,LTN,United Kingdom
-TLV,Israel,MAN,United Kingdom
-TLV,Israel,MXP,Italy
-TLV,Israel,SXF,Germany
+TLV,Israel and Palestine,BSL,France
+TLV,Israel and Palestine,FCO,Italy
+TLV,Israel and Palestine,GVA,Switzerland
+TLV,Israel and Palestine,LGW,United Kingdom
+TLV,Israel and Palestine,LTN,United Kingdom
+TLV,Israel and Palestine,MAN,United Kingdom
+TLV,Israel and Palestine,MXP,Italy
+TLV,Israel and Palestine,SXF,Germany
 VCE,Italy,BSL,France
 VCE,Italy,CDG,France
 VCE,Italy,GVA,Switzerland
@@ -30099,7 +30099,7 @@ SVX,Russia,OSS,Kyrgyzstan
 SVX,Russia,PEK,China
 SVX,Russia,PRG,Czech Republic
 SVX,Russia,TAS,Uzbekistan
-SVX,Russia,TLV,Israel
+SVX,Russia,TLV,Israel and Palestine
 TAS,Uzbekistan,CEK,Russia
 TAS,Uzbekistan,GOJ,Russia
 TAS,Uzbekistan,KGD,Russia
@@ -30112,7 +30112,7 @@ TIV,Montenegro,LED,Russia
 TJU,Tajikistan,DME,Russia
 TJU,Tajikistan,LED,Russia
 TJU,Tajikistan,SVX,Russia
-TLV,Israel,SVX,Russia
+TLV,Israel and Palestine,SVX,Russia
 UFA,Russia,DYU,Tajikistan
 UFA,Russia,LBD,Tajikistan
 VOG,Russia,DYU,Tajikistan
@@ -30348,7 +30348,7 @@ EWR,United States,SNN,Ireland
 EWR,United States,STR,Germany
 EWR,United States,STT,Virgin Islands
 EWR,United States,SXM,Netherlands Antilles
-EWR,United States,TLV,Israel
+EWR,United States,TLV,Israel and Palestine
 EWR,United States,TXL,Germany
 EWR,United States,UVF,Saint Lucia
 EWR,United States,YEG,Canada
@@ -30884,7 +30884,7 @@ TAM,Mexico,IAH,United States
 TCB,Bahamas,FLL,United States
 TGU,Honduras,IAH,United States
 TKK,Micronesia,GUM,Guam
-TLV,Israel,EWR,United States
+TLV,Israel and Palestine,EWR,United States
 TPE,Taiwan,SFO,United States
 TRC,Mexico,IAH,United States
 TRN,Italy,BRU,Belgium
@@ -31173,7 +31173,7 @@ DME,Russia,SIP,Ukraine
 DME,Russia,SSH,Egypt
 DME,Russia,SYX,China
 DME,Russia,TFS,Spain
-DME,Russia,TLV,Israel
+DME,Russia,TLV,Israel and Palestine
 DME,Russia,TSE,Kazakhstan
 DME,Russia,TXL,Germany
 DME,Russia,VIE,Austria
@@ -31291,8 +31291,8 @@ SVX,Russia,SSH,Egypt
 SYX,China,DME,Russia
 TAS,Uzbekistan,VKO,Russia
 TFS,Spain,DME,Russia
-TLV,Israel,DME,Russia
-TLV,Israel,VKO,Russia
+TLV,Israel and Palestine,DME,Russia
+TLV,Israel and Palestine,VKO,Russia
 TPE,Taiwan,BKK,Thailand
 TSE,Kazakhstan,DME,Russia
 TSE,Kazakhstan,VKO,Russia
@@ -31334,7 +31334,7 @@ VKO,Russia,SCO,Kazakhstan
 VKO,Russia,SEZ,Seychelles
 VKO,Russia,SSH,Egypt
 VKO,Russia,TAS,Uzbekistan
-VKO,Russia,TLV,Israel
+VKO,Russia,TLV,Israel and Palestine
 VKO,Russia,TSE,Kazakhstan
 VKO,Russia,VCE,Italy
 VKO,Russia,VIE,Austria
@@ -31866,7 +31866,7 @@ PHL,United States,SDQ,Dominican Republic
 PHL,United States,SJU,Puerto Rico
 PHL,United States,STT,Virgin Islands
 PHL,United States,SXM,Netherlands Antilles
-PHL,United States,TLV,Israel
+PHL,United States,TLV,Israel and Palestine
 PHL,United States,VCE,Italy
 PHL,United States,YHZ,Canada
 PHL,United States,YOW,Canada
@@ -31968,7 +31968,7 @@ SXM,Netherlands Antilles,MIA,United States
 SXM,Netherlands Antilles,PHL,United States
 SYD,Australia,AKL,New Zealand
 TGU,Honduras,MIA,United States
-TLV,Israel,PHL,United States
+TLV,Israel and Palestine,PHL,United States
 TPE,Taiwan,LAX,United States
 TPE,Taiwan,SEA,United States
 TPE,Taiwan,SFO,United States
@@ -32706,7 +32706,7 @@ BCN,Spain,RNS,France
 BCN,Spain,STR,Germany
 BCN,Spain,SVG,Norway
 BCN,Spain,TLS,France
-BCN,Spain,TLV,Israel
+BCN,Spain,TLV,Israel and Palestine
 BCN,Spain,TNG,Morocco
 BCN,Spain,TRN,Italy
 BCN,Spain,TXL,Germany
@@ -32872,7 +32872,7 @@ SVQ,Spain,ORY,France
 TLS,France,AGP,Spain
 TLS,France,BCN,Spain
 TLS,France,PMI,Spain
-TLV,Israel,BCN,Spain
+TLV,Israel and Palestine,BCN,Spain
 TNG,Morocco,BCN,Spain
 TRN,Italy,BCN,Spain
 TXL,Germany,BCN,Spain
@@ -32918,9 +32918,9 @@ TFS,Spain,RIX,Latvia
 TLL,Estonia,HER,Greece
 TLL,Estonia,PJA,Sweden
 TLL,Estonia,TYF,Sweden
-TLV,Israel,VIN,Ukraine
+TLV,Israel and Palestine,VIN,Ukraine
 TYF,Sweden,TLL,Estonia
-VIN,Ukraine,TLV,Israel
+VIN,Ukraine,TLV,Israel and Palestine
 VNO,Lithuania,HER,Greece
 ZRH,Switzerland,BRE,Germany
 ZRH,Switzerland,FMO,Germany
@@ -33047,7 +33047,7 @@ BUD,Hungary,NAP,Italy
 BUD,Hungary,NYO,Sweden
 BUD,Hungary,SAW,Turkey
 BUD,Hungary,SKG,Greece
-BUD,Hungary,TLV,Israel
+BUD,Hungary,TLV,Israel and Palestine
 BUD,Hungary,VKO,Russia
 BUD,Hungary,WAW,Poland
 BVA,France,BEG,Serbia
@@ -33080,7 +33080,7 @@ CLJ,Romania,DTM,Germany
 CLJ,Romania,EIN,Netherlands
 CLJ,Romania,LTN,United Kingdom
 CLJ,Romania,MAD,Spain
-CLJ,Romania,TLV,Israel
+CLJ,Romania,TLV,Israel and Palestine
 CLJ,Romania,TSF,Italy
 CLJ,Romania,VLC,Spain
 CLJ,Romania,ZAZ,Spain
@@ -33199,7 +33199,7 @@ KTW,Poland,MMX,Sweden
 KTW,Poland,NAP,Italy
 KTW,Poland,NYO,Sweden
 KTW,Poland,SVG,Norway
-KTW,Poland,TLV,Israel
+KTW,Poland,TLV,Israel and Palestine
 KTW,Poland,TRF,Sandefjord
 KUT,Georgia,KTW,Poland
 KUT,Georgia,VNO,Lithuania
@@ -33286,7 +33286,7 @@ OTP,Romania,MXP,Italy
 OTP,Romania,NAP,Italy
 OTP,Romania,PEG,Italy
 OTP,Romania,PSA,Italy
-OTP,Romania,TLV,Israel
+OTP,Romania,TLV,Israel and Palestine
 OTP,Romania,TRF,Sandefjord
 OTP,Romania,TSF,Italy
 OTP,Romania,VLC,Spain
@@ -33304,7 +33304,7 @@ PRG,Czech Republic,BRI,Italy
 PRG,Czech Republic,FCO,Italy
 PRG,Czech Republic,LTN,United Kingdom
 PRG,Czech Republic,NAP,Italy
-PRG,Czech Republic,TLV,Israel
+PRG,Czech Republic,TLV,Israel and Palestine
 PRG,Czech Republic,TSF,Italy
 PSA,Italy,OTP,Romania
 RIX,Latvia,BGO,Norway
@@ -33349,13 +33349,13 @@ TGM,Romania,BVA,France
 TGM,Romania,DTM,Germany
 TGM,Romania,LTN,United Kingdom
 TKU,Finland,GDN,Poland
-TLV,Israel,BUD,Hungary
-TLV,Israel,CLJ,Romania
-TLV,Israel,KTW,Poland
-TLV,Israel,OTP,Romania
-TLV,Israel,PRG,Czech Republic
-TLV,Israel,VNO,Lithuania
-TLV,Israel,WAW,Poland
+TLV,Israel and Palestine,BUD,Hungary
+TLV,Israel and Palestine,CLJ,Romania
+TLV,Israel and Palestine,KTW,Poland
+TLV,Israel and Palestine,OTP,Romania
+TLV,Israel and Palestine,PRG,Czech Republic
+TLV,Israel and Palestine,VNO,Lithuania
+TLV,Israel and Palestine,WAW,Poland
 TRD,Norway,GDN,Poland
 TRF,Sandefjord,BEG,Serbia
 TRF,Sandefjord,GDN,Poland
@@ -33404,7 +33404,7 @@ VNO,Lithuania,FCO,Italy
 VNO,Lithuania,KUT,Georgia
 VNO,Lithuania,LTN,United Kingdom
 VNO,Lithuania,SVG,Norway
-VNO,Lithuania,TLV,Israel
+VNO,Lithuania,TLV,Israel and Palestine
 VNO,Lithuania,TRF,Sandefjord
 VRN,Italy,OTP,Romania
 WAW,Poland,BCN,Spain
@@ -33423,7 +33423,7 @@ WAW,Poland,LPL,United Kingdom
 WAW,Poland,LTN,United Kingdom
 WAW,Poland,MMX,Sweden
 WAW,Poland,NYO,Sweden
-WAW,Poland,TLV,Israel
+WAW,Poland,TLV,Israel and Palestine
 WAW,Poland,TRF,Sandefjord
 WRO,Poland,BVA,France
 WRO,Poland,DSA, Sheffield
@@ -33803,11 +33803,11 @@ LWO,Ukraine,DTM,Germany
 LWO,Ukraine,FCO,Italy
 LWO,Ukraine,GRO,Spain
 LWO,Ukraine,NAP,Italy
-LWO,Ukraine,TLV,Israel
+LWO,Ukraine,TLV,Israel and Palestine
 LWO,Ukraine,TSF,Italy
 LWO,Ukraine,VLC,Spain
 NAP,Italy,LWO,Ukraine
-TLV,Israel,LWO,Ukraine
+TLV,Israel and Palestine,LWO,Ukraine
 TSF,Italy,IEV,Ukraine
 TSF,Italy,LWO,Ukraine
 VLC,Spain,IEV,Ukraine
