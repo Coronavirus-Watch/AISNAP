@@ -108,7 +108,7 @@ function addLayers() {
 	});
 
 	map.addLayer({
-		id: 'cases',
+		id: 'cases-circles',
 		type: 'circle',
 		source: 'timeline',
 		paint: {
@@ -119,7 +119,7 @@ function addLayers() {
 	});
 
 	map.addLayer({
-		id: 'deaths',
+		id: 'deaths-circles',
 		type: 'circle',
 		source: 'timeline',
 		paint: {
@@ -134,7 +134,7 @@ function addLayers() {
 	});
 
 	map.addLayer({
-		id: 'recovered',
+		id: 'recovered-circles',
 		type: 'circle',
 		source: 'timeline',
 		paint: {
@@ -145,6 +145,45 @@ function addLayers() {
 			],
 			'circle-opacity': 0.4,
 			'circle-color': 'green'
+		}
+	});
+	map.addLayer({
+		id: 'recovered-labels',
+		type: 'symbol',
+		source: 'timeline',
+		paint: {
+			'text-color': 'white'
+		},
+		layout: {
+			'text-field': ['to-string', ['get', 'recovered']],
+			'text-size': 12,
+			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
+		}
+	});
+	map.addLayer({
+		id: 'cases-labels',
+		type: 'symbol',
+		source: 'timeline',
+		paint: {
+			'text-color': 'white'
+		},
+		layout: {
+			'text-field': ['to-string', ['get', 'cases']],
+			'text-size': 12,
+			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
+		}
+	});
+	map.addLayer({
+		id: 'deaths-labels',
+		type: 'symbol',
+		source: 'timeline',
+		paint: {
+			'text-color': 'white'
+		},
+		layout: {
+			'text-field': ['to-string', ['get', 'deaths']],
+			'text-size': 12,
+			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
 		}
 	});
 
@@ -217,19 +256,28 @@ function updateMap(toggledLayers) {
 	}
 	switch (toggledLayers.checkedRadio) {
 		case 'cases':
-			map.setLayoutProperty('cases', 'visibility', 'visible');
-			map.setLayoutProperty('deaths', 'visibility', 'none');
-			map.setLayoutProperty('recovered', 'visibility', 'none');
+			map.setLayoutProperty('cases-labels', 'visibility', 'visible');
+			map.setLayoutProperty('cases-circles', 'visibility', 'visible');
+			map.setLayoutProperty('deaths-labels', 'visibility', 'none');
+			map.setLayoutProperty('deaths-circles', 'visibility', 'none');
+			map.setLayoutProperty('recovered-labels', 'visibility', 'none');
+			map.setLayoutProperty('recovered-circles', 'visibility', 'none');
 			break;
 		case 'deaths':
-			map.setLayoutProperty('cases', 'visibility', 'none');
-			map.setLayoutProperty('deaths', 'visibility', 'visible');
-			map.setLayoutProperty('recovered', 'visibility', 'none');
+			map.setLayoutProperty('cases-labels', 'visibility', 'none');
+			map.setLayoutProperty('cases-circles', 'visibility', 'none');
+			map.setLayoutProperty('deaths-labels', 'visibility', 'visible');
+			map.setLayoutProperty('deaths-circles', 'visibility', 'visible');
+			map.setLayoutProperty('recovered-labels', 'visibility', 'none');
+			map.setLayoutProperty('recovered-circles', 'visibility', 'none');
 			break;
 		case 'recovered':
-			map.setLayoutProperty('cases', 'visibility', 'none');
-			map.setLayoutProperty('deaths', 'visibility', 'none');
-			map.setLayoutProperty('recovered', 'visibility', 'visible');
+			map.setLayoutProperty('cases-labels', 'visibility', 'none');
+			map.setLayoutProperty('cases-circles', 'visibility', 'none');
+			map.setLayoutProperty('deaths-labels', 'visibility', 'none');
+			map.setLayoutProperty('deaths-circles', 'visibility', 'none');
+			map.setLayoutProperty('recovered-labels', 'visibility', 'visible');
+			map.setLayoutProperty('recovered-circles', 'visibility', 'visible');
 	}
 }
 // it bloody worked, kinda
