@@ -280,6 +280,18 @@ function getFormattedDate(downloadDate) {
 	// returns formatted date
 	return dateVar;
 }
+// i was thinking...
+// i think sometimes the countries can disappear because they haven't got an update for that day
+// implying we might need to store the most recent stats for a country
+// other thing... i don't think json can store special characters like
+// countries['Côte dIvoire'].cases 
+// yeah it works, i'll see if i can see any existing countries with the "special chars"
+// Don't think there is any actually in the country list
+// yeh the ivory coast is there with "Côte dIvoire"... please tell me i got that translation right
+// how come the us minor outlying islands has so many?
+// is it just a large area?
+// Hmm, don't know how that problem would be fixed, I assume json can via unicode
+// however 
 
 // Changes country names to match other parts of the database
 function dictionary(countryName) {
@@ -323,6 +335,7 @@ function dictionary(countryName) {
 		case 'Reunion':
 			return 'France';
 		case 'Republic of Korea':
+		case 'Sout\"':
 			return 'South Korea';
 		case 'St. Martin':
 		case 'Saint Martin':
@@ -334,7 +347,10 @@ function dictionary(countryName) {
 		case 'Channel Islands':
 			return 'United Kingdom';
 		case 'Congo (Kinshasa)':
-			return 'Congo[DRC]';
+			return 'Congo [DRC]';
+		case 'Cruise Ship':
+		case 'Others':
+			return 'Japan';
 		default:
 			return countryName;
 	}

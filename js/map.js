@@ -27,6 +27,18 @@ const dateSlider = document.getElementById('dateSlider');
 const dateDisplayed = document.getElementById('dateDisplayed');
 dateSlider.max = 100;
 
+// // i call that a pass
+// const testJson = [
+// 	{
+// 		"countries": [{
+// 			'Côte dIvoire': {
+// 				name: "Some shit"
+// 			}
+// 		}]
+// 	}
+// ]
+// console.log(testJson[0].countries[0]);
+
 // sets default visibility of layers
 let toggledLayers = {
 	routesVisible: false,
