@@ -225,7 +225,6 @@ function addLayers() {
 function displayMap() {
 	// Adds full screen control
 	map.addControl(new mapboxgl.FullscreenControl());
-
 	// Prevents map from looking stupid
 	map.resize();
 }

@@ -74,7 +74,7 @@ export class Countries {
 		if (this.countries[country.name]) {
 			return this.countries[country.name].coordinates;
 		}
-		// console.log('Country Not Found: ' + country.name);
+		console.log('Country Not Found: ' + country.name);
 		return [0, 0];
 	}
 }

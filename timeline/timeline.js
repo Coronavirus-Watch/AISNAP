@@ -294,8 +294,47 @@ function dictionary(countryName) {
 			return 'France';
 		case 'occupied Palestinian territory':
 		case 'Palestine':
-		case 'Israel':
-			return 'Israel and Palestine';
+			return 'Palestinian Territories';
+		case 'North Macedonia':
+			return 'Macedonia [FYROM]';
+		case 'Iran (Islamic Republic of)':
+			return 'Iran';
+		case 'Hong Kong SAR':
+			return 'Hong Kong';
+		case 'Viet Nam':
+			return 'Vietnam'
+		case 'Macao SAR':
+			return 'Macau';
+		case 'Russian Federation':
+			return 'Russia';
+		case 'Ivory Coast':
+		case 'Cote d\'Ivoire':
+			return "Côte dIvoire";
+		case 'Taiwan*':
+			return 'Taiwan';
+		case 'North Ireland':
+			return 'United Kingdom';
+		case 'Republic of Ireland':
+			return 'Ireland'
+		case 'Holy See':
+			return 'Vatican City'
+		case 'Czechia':
+			return 'Czech Republic'		
+		case 'Reunion':
+			return 'France';
+		case 'Republic of Korea':
+			return 'South Korea';
+		case 'St. Martin':
+		case 'Saint Martin':
+			return 'France';
+		case 'Republic of Moldova':
+			return 'Moldova';
+		case 'Taipei and environs':
+			return 'Taiwan';
+		case 'Channel Islands':
+			return 'United Kingdom';
+		case 'Congo (Kinshasa)':
+			return 'Congo[DRC]';
 		default:
 			return countryName;
 	}
