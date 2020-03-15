@@ -8,25 +8,56 @@ const axios = require('axios');
 const fs = require('fs');
 const rimraf = require('rimraf');
 const schedule = require('node-schedule');
+const express = require('express');
+const port = process.env.PORT || 3000;
+// Classes
+const Timeline = require('./components/Timeline');
+const Routes = require('./components/Routes');
+
+const app = express();
+
+app.listen(3000, () => console.log('listening at 3000'));
+app.use(express.static('public'));
 
 // Link to source data
 const source =
 	'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports';
 
 // Temporary path to store the downloaded data
-const tempPath = '../data/tmp';
+const tempPath = './data/tmp';
 
 // Path to store the parsed and exported JSON
-const exportPath = '../data/timeline';
+const exportPath = './data/timeline';
 
 // Stores data for a Day
-const Day = require('./Day');
+const Day = require('./components/Day');
 
 // Updates and formats coronavirus dataset every day at 01:00
 let scheduler = schedule.scheduleJob('* 1 * * *', function(date) {
 	sync(date);
 });
+const timeline = new Timeline();
+
+async function initTimeline() {
+	await timeline.init();
+}
+
+initTimeline();
+
 // sync();
+
+// Class Dependencies
+// Routes: [Route]
+// Route: []
+// Day: [Country]
+// Map: [Timeline]
+// Timeline: [Day]
+
+// API Endpoint for certain Day in Timeline
+app.get('/:day', async (req, res) => {
+	// console.log(await timeline.retrieveDay(req.params.day));
+	res.send(await timeline.retrieveDay(req.params.day));
+});
 
 // Updates and formats coronavirus dataset
 async function sync(date) {
@@ -36,6 +67,7 @@ async function sync(date) {
 	// parses downloaded files into JSON
 	let days = await parseDownload(files);
 	// exports parsed data to json file
+	return await days;
 	exportJson(days, exportPath, '.json');
 	// exports parsed data to csv file
 	exportCsv(days, exportPath, '.csv');

@@ -1,6 +1,4 @@
-import { Routes } from './Routes.js';
-import { Timeline } from './Timeline.js';
-import { Countries } from './Countries.js';
+// import { Timeline } from './Timeline.js';
 
 /* Useful resources:
   https://dev.to/wuz/building-a-country-highlighting-tool-with-mapbox-2kbh
@@ -24,7 +22,7 @@ const routesCheck = document.querySelector('#routes');
 const markersCheck = document.querySelector('#markers');
 const radioBtns = document.querySelectorAll('input[type=radio]');
 const dateSlider = document.getElementById('dateSlider');
-const controller = document.querySelector(".controller");
+const controller = document.querySelector('.controller');
 const dateDisplayed = document.getElementById('dateDisplayed');
 dateSlider.max = 100;
 
@@ -35,10 +33,7 @@ let toggledLayers = {
 	checkedRadio: 'cases'
 };
 
-// Instances of Classes
-let countries = new Countries();
-let routes = new Routes();
-let timeline = new Timeline();
+let currentDay = {};
 
 // Adds EventListeners to checkboxes for when their checked value changes
 routesCheck.addEventListener('change', e => {
@@ -60,12 +55,11 @@ radioBtns.forEach(btn => {
 
 // when map first loads on webpage
 map.on('load', async () => {
-
-	await timeline.init();
-	await timeline.parseTimeline();
+	await fetchDay(0);
 
 	// sets slider range
-	dateSlider.max = await timeline.getRange();
+	// const rangeRes = await fetch('/range').then(res => res.text);
+	// console.log(rangeRes);
 
 	// Adds routes to layers
 	addLayers();
@@ -73,8 +67,20 @@ map.on('load', async () => {
 	displayMap(toggledLayers);
 	// updates the map with defaults
 	updateMap(toggledLayers);
-	controller.style.display = "block";
+	controller.style.display = 'block';
 });
+
+async function fetchDay(day) {
+	// fetches timeline
+	await fetch(`/${day}`)
+		.then(res => {
+			return res.json();
+		})
+		.then(res => {
+			console.log(res);
+			currentDay = res;
+		});
+}
 
 // Adds Layers to Map
 function addLayers() {
@@ -102,14 +108,14 @@ function addLayers() {
 		}
 	});
 
-// Defines new layers for map
+	// Defines new layers for map
 
 	map.addLayer({
 		id: 'cases-circles',
 		type: 'circle',
 		source: 'timeline',
 		paint: {
-		'circle-radius': ['*', ['log10', ['number', ['get', 'cases']]], 20],
+			'circle-radius': ['*', ['log10', ['number', ['get', 'cases']]], 20],
 			'circle-opacity': 0.4,
 			'circle-color': 'orange'
 		}
@@ -120,7 +126,11 @@ function addLayers() {
 		type: 'circle',
 		source: 'timeline',
 		paint: {
-			'circle-radius': ['*', ['log10', ['number', ['get', 'deaths']]], 20],
+			'circle-radius': [
+				'*',
+				['log10', ['number', ['get', 'deaths']]],
+				20
+			],
 			'circle-opacity': 0.4,
 			'circle-color': 'red'
 		}
@@ -131,13 +141,17 @@ function addLayers() {
 		type: 'circle',
 		source: 'timeline',
 		paint: {
-			'circle-radius': ['*', ['log10', ['number', ['get', 'recovered']]], 20],
+			'circle-radius': [
+				'*',
+				['log10', ['number', ['get', 'recovered']]],
+				20
+			],
 			'circle-opacity': 0.4,
 			'circle-color': 'green'
 		}
 	});
 
-// Will only display labels if the value of statistic is greater than 0
+	// Will only display labels if the value of statistic is greater than 0
 	map.addLayer({
 		id: 'recovered-labels',
 		type: 'symbol',
@@ -147,7 +161,7 @@ function addLayers() {
 		},
 		layout: {
 			'text-field': ['to-string', ['get', 'recovered']],
-			'text-size': ["case", ['>', ['get', 'recovered'],0], 12, 0],
+			'text-size': ['case', ['>', ['get', 'recovered'], 0], 12, 0],
 			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
 		}
 	});
@@ -160,7 +174,7 @@ function addLayers() {
 		},
 		layout: {
 			'text-field': ['to-string', ['get', 'cases']],
-			'text-size': ["case", ['>', ['get', 'cases'],0], 12, 0],
+			'text-size': ['case', ['>', ['get', 'cases'], 0], 12, 0],
 			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
 		}
 	});
@@ -173,7 +187,7 @@ function addLayers() {
 		},
 		layout: {
 			'text-field': ['to-string', ['get', 'deaths']],
-			'text-size': ["case", ['>', ['get', 'deaths'],0], 12, 0],
+			'text-size': ['case', ['>', ['get', 'deaths'], 0], 12, 0],
 			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
 		}
 	});
@@ -273,13 +287,13 @@ dateSlider.addEventListener('input', async function(e) {
 	let date = new Date(2020, 0, 22);
 	var day = 60 * 60 * 24 * 1000;
 
-	// updates GUI date, showing the current day 
+	// updates GUI date, showing the current day
 	date = new Date(date.getTime() + this.value * day);
 	dateDisplayed.innerHTML = formatDate(date);
 
 	// updates currentDay array from timeline instance with slider value passed in
 	timeline.currentDay = await timeline.retrieveDay(e.target.value);
-	
+
 	// updates the geoJSON for the selected day in slider
 	map.getSource('timeline').setData({
 		type: 'FeatureCollection',
