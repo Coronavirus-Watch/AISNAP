@@ -59,9 +59,8 @@ class Day {
 						coordinates
 					);
 				} catch (e) {
-					// console.error();
 					// These are countries without any cases so its fine
-					// countryLine[3].trim() + " apparently doesn't exist
+					// console.log(countryLine[3].trim() + " apparently doesn't exist");
 				}
 			}
 		}

@@ -67,10 +67,10 @@ async function sync(date) {
 	// parses downloaded files into JSON
 	let days = await parseDownload(files);
 	// exports parsed data to json file
-	return await days;
 	exportJson(days, exportPath, '.json');
 	// exports parsed data to csv file
 	exportCsv(days, exportPath, '.csv');
+	return await days;
 }
 
 // Downloads files from source and returns a data structure containing

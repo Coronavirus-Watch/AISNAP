@@ -33,6 +33,7 @@ class Timeline {
 
 	async retrieveDay(index) {
 		// console.log('Geojson' + JSON.stringify(this.geojson[index], null, 2));
+		console.log(await this.days[index].geojson);
 		return await this.days[index].geojson;
 	}
 
