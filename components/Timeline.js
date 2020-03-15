@@ -11,23 +11,13 @@ class Timeline {
 		await this.fetchJson();
 	}
 
-	async getRange() {
-		return this.json.length - 1;
-	}
-
 	async fetchJson() {
 		const res = await fs.readFileSync('./data/timeline.json', 'utf8');
 
 		// parses the response data into json format
 		const json = await JSON.parse(res);
 
-		console.log(res.data);
-		// im going to go get some dinner and work on this after
-		// can i commit to github and then let you know when i get back?
-		// Ok, that's fine I'll work locally then, great, enjoy
-
 		// sets the JSON data to the retrieved file content
-		this.json = await json;
 		await this.parseJson(json);
 	}
 
@@ -46,12 +36,9 @@ class Timeline {
 		return await this.days[index].geojson;
 	}
 
-	async parseJson() {
-		// console.log(this.json[0][0]);
-		// this ^ isn't working
-
+	async parseJson(json) {
 		// loops through json per day
-		this.json.forEach(async day => {
+		json.forEach(async day => {
 			// creates a new instance of a Day
 			let newDay = new Day(day.day);
 			// loops through each country that day
@@ -61,7 +48,7 @@ class Timeline {
 					country.cases,
 					country.deaths,
 					country.recovered,
-					country.name
+					country.name,
 				);
 			});
 
@@ -69,9 +56,9 @@ class Timeline {
 			await newDay.parseGeoJSON();
 			// pushes new day to array or something
 			this.days.push(newDay);
-
-			console.log(newDay.countries['China']);
+			// newDay.print();
 		});
+		
 	}
 }
 

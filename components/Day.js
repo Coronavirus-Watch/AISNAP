@@ -3,9 +3,9 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 
 class Day {
-	constructor(day) {
+	constructor(date) {
 		// Stores the date
-		this.day = day;
+		this.date = date;
 		// Stores each individual country
 		this.countries = [];
 		// Stores geojson
@@ -20,14 +20,13 @@ class Day {
 	// That's fine, you can work on that
 
 	// Adds data from a region
-	addData(cases, deaths, recovered, countryName, day) {
-		this.day = day;
+	addData(cases, deaths, recovered, countryName) {
 		let index = this.searchForCountry(countryName);
 		// Checks if a country is in the array
 		if (index > -1) {
 			this.countries[index].additionalData(cases, deaths, recovered);
 		} else {
-			this.countries[countryName] = new Country(
+			this.countries[this.countries.length] = new Country(
 				cases,
 				deaths,
 				recovered,
@@ -116,7 +115,7 @@ class Day {
 
 	// Prints all data stored
 	print() {
-		console.log('Day: ' + this.day);
+		console.log('Day: ' + this.date);
 		this.countries.forEach(element => {
 			element.print();
 		});
