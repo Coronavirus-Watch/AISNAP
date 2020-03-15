@@ -22,11 +22,15 @@ const exportPath = '../data/timeline';
 // Stores data for a Day
 const Day = require('./Day');
 
-// Updates and formats coronavirus dataset
-sync();
+// Updates and formats coronavirus dataset every day at 01:00
+let scheduler = schedule.scheduleJob('* 1 * * *', function(date) {
+	sync(date);
+});
+// sync();
 
 // Updates and formats coronavirus dataset
-async function sync() {
+async function sync(date) {
+	console.log('syncing', date);
 	// downloads files from source
 	let files = await download();
 	// parses downloaded files into JSON
@@ -217,6 +221,7 @@ function exportJson(days, exportPath, extension) {
 
 	// closes file using file descriptor value
 	fs.closeSync(fd);
+	console.log('exported to json');
 }
 
 // exports CSV to exportPath given
@@ -302,28 +307,28 @@ function dictionary(countryName) {
 		case 'Hong Kong SAR':
 			return 'Hong Kong';
 		case 'Viet Nam':
-			return 'Vietnam'
+			return 'Vietnam';
 		case 'Macao SAR':
 			return 'Macau';
 		case 'Russian Federation':
 			return 'Russia';
 		case 'Ivory Coast':
-		case 'Cote d\'Ivoire':
-			return "Côte dIvoire";
+		case "Cote d'Ivoire":
+			return 'Côte dIvoire';
 		case 'Taiwan*':
 			return 'Taiwan';
 		case 'North Ireland':
 			return 'United Kingdom';
 		case 'Republic of Ireland':
-			return 'Ireland'
+			return 'Ireland';
 		case 'Holy See':
-			return 'Vatican City'
+			return 'Vatican City';
 		case 'Czechia':
-			return 'Czech Republic'		
+			return 'Czech Republic';
 		case 'Reunion':
 			return 'France';
 		case 'Republic of Korea':
-		case 'Sout\"':
+		case 'Sout"':
 			return 'South Korea';
 		case 'St. Martin':
 		case 'Saint Martin':
