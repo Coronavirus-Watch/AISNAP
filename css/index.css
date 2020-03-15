@@ -3,18 +3,22 @@
 	font-family: 'Quicksand', sans-serif;
 }
 
+body {
+	background-color: rgb(49, 54, 58);
+}
 .navbar {
 	min-height: 5vh;
 }
 /* Map Size */
 #map {
-	height: 76vh;
+	height: 80vh;
 	width: 100%;
 }
 .controller {
-	min-height: 20vh;
+	min-height: 15vh;
 	background-color: rgb(49, 54, 58);
 	padding: 1rem;
+	display: none;
 }
 .controller {
 	color: #eee;

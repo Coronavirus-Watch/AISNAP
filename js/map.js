@@ -24,6 +24,7 @@ const routesCheck = document.querySelector('#routes');
 const markersCheck = document.querySelector('#markers');
 const radioBtns = document.querySelectorAll('input[type=radio]');
 const dateSlider = document.getElementById('dateSlider');
+const controller = document.querySelector(".controller");
 const dateDisplayed = document.getElementById('dateDisplayed');
 dateSlider.max = 100;
 
@@ -56,34 +57,28 @@ radioBtns.forEach(btn => {
 		updateMap(toggledLayers);
 	});
 });
+
 // when map first loads on webpage
-
 map.on('load', async () => {
-	// collects all markers in an array
-	// const markers = await fetchMarkers();
 
-	// await routes.init();
-	// await routes.parseGeoJSON();
 	await timeline.init();
 	await timeline.parseTimeline();
-	// await timeline.addCoordinates(routes);
+
+	// sets slider range
 	dateSlider.max = await timeline.getRange();
-	// collects all routes in an Object
-	// const routes = await fetchRoutes(markers);
+
 	// Adds routes to layers
 	addLayers();
 	// displays map
 	displayMap(toggledLayers);
 	// updates the map with defaults
 	updateMap(toggledLayers);
-
-	// plays the timeline
-	// play();
+	controller.style.display = "block";
 });
 
 // Adds Layers to Map
 function addLayers() {
-	// Adds new source for routes
+	// Adds new sources for routes, countries and timeline
 	map.addSource('route', {
 		type: 'geojson',
 		data: {
@@ -107,12 +102,14 @@ function addLayers() {
 		}
 	});
 
+// Defines new layers for map
+
 	map.addLayer({
 		id: 'cases-circles',
 		type: 'circle',
 		source: 'timeline',
 		paint: {
-			'circle-radius': ['*', ['log10', ['number', ['get', 'cases']]], 20],
+		'circle-radius': ['*', ['log10', ['number', ['get', 'cases']]], 20],
 			'circle-opacity': 0.4,
 			'circle-color': 'orange'
 		}
@@ -123,11 +120,7 @@ function addLayers() {
 		type: 'circle',
 		source: 'timeline',
 		paint: {
-			'circle-radius': [
-				'*',
-				['log10', ['number', ['get', 'deaths']]],
-				20
-			],
+			'circle-radius': ['*', ['log10', ['number', ['get', 'deaths']]], 20],
 			'circle-opacity': 0.4,
 			'circle-color': 'red'
 		}
@@ -138,15 +131,13 @@ function addLayers() {
 		type: 'circle',
 		source: 'timeline',
 		paint: {
-			'circle-radius': [
-				'*',
-				['log10', ['number', ['get', 'recovered']]],
-				20
-			],
+			'circle-radius': ['*', ['log10', ['number', ['get', 'recovered']]], 20],
 			'circle-opacity': 0.4,
 			'circle-color': 'green'
 		}
 	});
+
+// Will only display labels if the value of statistic is greater than 0
 	map.addLayer({
 		id: 'recovered-labels',
 		type: 'symbol',
@@ -156,7 +147,7 @@ function addLayers() {
 		},
 		layout: {
 			'text-field': ['to-string', ['get', 'recovered']],
-			'text-size': 12,
+			'text-size': ["case", ['>', ['get', 'recovered'],0], 12, 0],
 			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
 		}
 	});
@@ -169,7 +160,7 @@ function addLayers() {
 		},
 		layout: {
 			'text-field': ['to-string', ['get', 'cases']],
-			'text-size': 12,
+			'text-size': ["case", ['>', ['get', 'cases'],0], 12, 0],
 			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
 		}
 	});
@@ -182,12 +173,11 @@ function addLayers() {
 		},
 		layout: {
 			'text-field': ['to-string', ['get', 'deaths']],
-			'text-size': 12,
+			'text-size': ["case", ['>', ['get', 'deaths'],0], 12, 0],
 			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
 		}
 	});
 
-	// Styles layer 'route'
 	map.addLayer({
 		id: 'route',
 		type: 'line',
@@ -225,25 +215,20 @@ function addLayers() {
 function displayMap() {
 	// Adds full screen control
 	map.addControl(new mapboxgl.FullscreenControl());
-
 	// Prevents map from looking stupid
 	map.resize();
 }
 
-async function play() {
-	const max = await timeline.getMax();
-	let counter = 0;
-	setInterval(() => {
-		dateSlider.stepUp();
-		dateSlider.dispatchEvent(new Event('input'));
-		if (counter == max) {
-			return;
-		}
-	}, 200);
+// Play function for automatically sliding dateSlider
+function play() {
+	// const max = timeline.getMax();
+	dateSlider.stepUp();
+	dateSlider.dispatchEvent(new Event('input'));
 }
 
 // Updates the map with the correct visible layers
 function updateMap(toggledLayers) {
+	// updates map with selected layers
 	if (toggledLayers.routesVisible == true) {
 		map.setLayoutProperty('route', 'visibility', 'visible');
 	} else {
@@ -254,6 +239,8 @@ function updateMap(toggledLayers) {
 	} else {
 		map.setLayoutProperty('country', 'visibility', 'none');
 	}
+
+	// updates layout properties depending on the checked radio
 	switch (toggledLayers.checkedRadio) {
 		case 'cases':
 			map.setLayoutProperty('cases-labels', 'visibility', 'visible');
@@ -280,23 +267,26 @@ function updateMap(toggledLayers) {
 			map.setLayoutProperty('recovered-circles', 'visibility', 'visible');
 	}
 }
-// it bloody worked, kinda
-// Well it works for one day anyway
-// i reckon we use timeline.retrieveDay() to update the geojson
-// Excellent we need a listner
+
+// Creates event listener for dateSlider on whenever value is changed
 dateSlider.addEventListener('input', async function(e) {
 	let date = new Date(2020, 0, 22);
 	var day = 60 * 60 * 24 * 1000;
 
+	// updates GUI date, showing the current day 
 	date = new Date(date.getTime() + this.value * day);
 	dateDisplayed.innerHTML = formatDate(date);
 
+	// updates currentDay array from timeline instance with slider value passed in
 	timeline.currentDay = await timeline.retrieveDay(e.target.value);
+	
+	// updates the geoJSON for the selected day in slider
 	map.getSource('timeline').setData({
 		type: 'FeatureCollection',
 		features: timeline.currentDay
 	});
 
+	// update map accordingly
 	updateMap(toggledLayers);
 });
 

@@ -468,7 +468,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Ivory Coast"
+                "name": "Côte dIvoire"
             },
             {
                 "cases": 5,
@@ -2008,10 +2008,10 @@
                 "name": "China"
             },
             {
-                "cases": 61,
+                "cases": 86,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Others"
+                "name": "Japan"
             },
             {
                 "cases": 30,
@@ -2024,12 +2024,6 @@
                 "deaths": 1,
                 "recovered": 0,
                 "name": "Hong Kong"
-            },
-            {
-                "cases": 25,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Japan"
             },
             {
                 "cases": 25,
@@ -2181,10 +2175,10 @@
                 "name": "China"
             },
             {
-                "cases": 61,
+                "cases": 86,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Others"
+                "name": "Japan"
             },
             {
                 "cases": 33,
@@ -2203,12 +2197,6 @@
                 "deaths": 1,
                 "recovered": 0,
                 "name": "Hong Kong"
-            },
-            {
-                "cases": 25,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Japan"
             },
             {
                 "cases": 24,
@@ -2354,10 +2342,10 @@
                 "name": "China"
             },
             {
-                "cases": 64,
+                "cases": 90,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Others"
+                "name": "Japan"
             },
             {
                 "cases": 40,
@@ -2376,12 +2364,6 @@
                 "deaths": 1,
                 "recovered": 0,
                 "name": "Hong Kong"
-            },
-            {
-                "cases": 26,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Japan"
             },
             {
                 "cases": 25,
@@ -2527,10 +2509,10 @@
                 "name": "China"
             },
             {
-                "cases": 135,
+                "cases": 161,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Others"
+                "name": "Japan"
             },
             {
                 "cases": 45,
@@ -2555,12 +2537,6 @@
                 "deaths": 0,
                 "recovered": 0,
                 "name": "South Korea"
-            },
-            {
-                "cases": 26,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Japan"
             },
             {
                 "cases": 18,
@@ -2700,10 +2676,10 @@
                 "name": "China"
             },
             {
-                "cases": 135,
+                "cases": 161,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Others"
+                "name": "Japan"
             },
             {
                 "cases": 49,
@@ -2728,12 +2704,6 @@
                 "deaths": 0,
                 "recovered": 0,
                 "name": "South Korea"
-            },
-            {
-                "cases": 26,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Japan"
             },
             {
                 "cases": 18,
@@ -2873,10 +2843,10 @@
                 "name": "China"
             },
             {
-                "cases": 175,
+                "cases": 203,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Others"
+                "name": "Japan"
             },
             {
                 "cases": 50,
@@ -2895,12 +2865,6 @@
                 "deaths": 0,
                 "recovered": 0,
                 "name": "Thailand"
-            },
-            {
-                "cases": 28,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Japan"
             },
             {
                 "cases": 28,
@@ -3046,10 +3010,10 @@
                 "name": "China"
             },
             {
-                "cases": 175,
-                "deaths": 0,
+                "cases": 203,
+                "deaths": 1,
                 "recovered": 0,
-                "name": "Others"
+                "name": "Japan"
             },
             {
                 "cases": 58,
@@ -3068,12 +3032,6 @@
                 "deaths": 0,
                 "recovered": 0,
                 "name": "Thailand"
-            },
-            {
-                "cases": 28,
-                "deaths": 1,
-                "recovered": 0,
-                "name": "Japan"
             },
             {
                 "cases": 28,
@@ -3219,10 +3177,10 @@
                 "name": "China"
             },
             {
-                "cases": 218,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Others"
+                "cases": 247,
+                "deaths": 1,
+                "recovered": 9,
+                "name": "Japan"
             },
             {
                 "cases": 67,
@@ -3241,12 +3199,6 @@
                 "deaths": 0,
                 "recovered": 12,
                 "name": "Thailand"
-            },
-            {
-                "cases": 29,
-                "deaths": 1,
-                "recovered": 9,
-                "name": "Japan"
             },
             {
                 "cases": 28,
@@ -3398,10 +3350,10 @@
                 "name": "China"
             },
             {
-                "cases": 285,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Others"
+                "cases": 328,
+                "deaths": 1,
+                "recovered": 12,
+                "name": "Japan"
             },
             {
                 "cases": 72,
@@ -3414,12 +3366,6 @@
                 "deaths": 1,
                 "recovered": 1,
                 "name": "Hong Kong"
-            },
-            {
-                "cases": 43,
-                "deaths": 1,
-                "recovered": 12,
-                "name": "Japan"
             },
             {
                 "cases": 33,
@@ -3577,22 +3523,16 @@
                 "name": "China"
             },
             {
-                "cases": 355,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Others"
+                "cases": 414,
+                "deaths": 1,
+                "recovered": 12,
+                "name": "Japan"
             },
             {
                 "cases": 75,
                 "deaths": 0,
                 "recovered": 18,
                 "name": "Singapore"
-            },
-            {
-                "cases": 59,
-                "deaths": 1,
-                "recovered": 12,
-                "name": "Japan"
             },
             {
                 "cases": 57,
@@ -3756,22 +3696,16 @@
                 "name": "China"
             },
             {
-                "cases": 454,
-                "deaths": 0,
+                "cases": 520,
+                "deaths": 1,
                 "recovered": 0,
-                "name": "Others"
+                "name": "Japan"
             },
             {
                 "cases": 77,
                 "deaths": 0,
                 "recovered": 0,
                 "name": "Singapore"
-            },
-            {
-                "cases": 66,
-                "deaths": 1,
-                "recovered": 0,
-                "name": "Japan"
             },
             {
                 "cases": 60,
@@ -3935,22 +3869,16 @@
                 "name": "China"
             },
             {
-                "cases": 542,
-                "deaths": 0,
+                "cases": 616,
+                "deaths": 1,
                 "recovered": 0,
-                "name": "Others"
+                "name": "Japan"
             },
             {
                 "cases": 81,
                 "deaths": 0,
                 "recovered": 0,
                 "name": "Singapore"
-            },
-            {
-                "cases": 74,
-                "deaths": 1,
-                "recovered": 0,
-                "name": "Japan"
             },
             {
                 "cases": 62,
@@ -4114,15 +4042,9 @@
                 "name": "China"
             },
             {
-                "cases": 621,
-                "deaths": 0,
-                "recovered": 1,
-                "name": "Others"
-            },
-            {
-                "cases": 84,
+                "cases": 705,
                 "deaths": 1,
-                "recovered": 18,
+                "recovered": 19,
                 "name": "Japan"
             },
             {
@@ -4299,22 +4221,16 @@
                 "name": "China"
             },
             {
-                "cases": 634,
-                "deaths": 2,
-                "recovered": 1,
-                "name": "Others"
+                "cases": 728,
+                "deaths": 3,
+                "recovered": 19,
+                "name": "Japan"
             },
             {
                 "cases": 104,
                 "deaths": 1,
                 "recovered": 16,
                 "name": "South Korea"
-            },
-            {
-                "cases": 94,
-                "deaths": 1,
-                "recovered": 18,
-                "name": "Japan"
             },
             {
                 "cases": 84,
@@ -4484,22 +4400,16 @@
                 "name": "China"
             },
             {
-                "cases": 634,
-                "deaths": 2,
-                "recovered": 1,
-                "name": "Others"
+                "cases": 739,
+                "deaths": 3,
+                "recovered": 23,
+                "name": "Japan"
             },
             {
                 "cases": 204,
                 "deaths": 2,
                 "recovered": 16,
                 "name": "South Korea"
-            },
-            {
-                "cases": 105,
-                "deaths": 1,
-                "recovered": 22,
-                "name": "Japan"
             },
             {
                 "cases": 85,
@@ -4643,7 +4553,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 1,
@@ -4681,22 +4591,16 @@
                 "name": "China"
             },
             {
-                "cases": 634,
-                "deaths": 2,
-                "recovered": 1,
-                "name": "Others"
+                "cases": 756,
+                "deaths": 3,
+                "recovered": 23,
+                "name": "Japan"
             },
             {
                 "cases": 433,
                 "deaths": 2,
                 "recovered": 16,
                 "name": "South Korea"
-            },
-            {
-                "cases": 122,
-                "deaths": 1,
-                "recovered": 22,
-                "name": "Japan"
             },
             {
                 "cases": 85,
@@ -4840,7 +4744,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 1,
@@ -4878,10 +4782,10 @@
                 "name": "China"
             },
             {
-                "cases": 691,
-                "deaths": 3,
-                "recovered": 0,
-                "name": "Others"
+                "cases": 838,
+                "deaths": 4,
+                "recovered": 22,
+                "name": "Japan"
             },
             {
                 "cases": 602,
@@ -4894,12 +4798,6 @@
                 "deaths": 3,
                 "recovered": 2,
                 "name": "Italy"
-            },
-            {
-                "cases": 147,
-                "deaths": 1,
-                "recovered": 22,
-                "name": "Japan"
             },
             {
                 "cases": 89,
@@ -5037,7 +4935,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 1,
@@ -5081,22 +4979,16 @@
                 "name": "South Korea"
             },
             {
-                "cases": 691,
-                "deaths": 3,
-                "recovered": 0,
-                "name": "Others"
+                "cases": 850,
+                "deaths": 4,
+                "recovered": 22,
+                "name": "Japan"
             },
             {
                 "cases": 229,
                 "deaths": 7,
                 "recovered": 1,
                 "name": "Italy"
-            },
-            {
-                "cases": 159,
-                "deaths": 1,
-                "recovered": 22,
-                "name": "Japan"
             },
             {
                 "cases": 89,
@@ -5264,7 +5156,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 1,
@@ -5314,22 +5206,16 @@
                 "name": "South Korea"
             },
             {
-                "cases": 691,
-                "deaths": 3,
-                "recovered": 0,
-                "name": "Others"
+                "cases": 861,
+                "deaths": 4,
+                "recovered": 22,
+                "name": "Japan"
             },
             {
                 "cases": 322,
                 "deaths": 10,
                 "recovered": 1,
                 "name": "Italy"
-            },
-            {
-                "cases": 170,
-                "deaths": 1,
-                "recovered": 22,
-                "name": "Japan"
             },
             {
                 "cases": 95,
@@ -5521,7 +5407,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 1,
@@ -5571,22 +5457,16 @@
                 "name": "South Korea"
             },
             {
-                "cases": 705,
-                "deaths": 4,
-                "recovered": 10,
-                "name": "Others"
+                "cases": 894,
+                "deaths": 6,
+                "recovered": 32,
+                "name": "Japan"
             },
             {
                 "cases": 453,
                 "deaths": 12,
                 "recovered": 3,
                 "name": "Italy"
-            },
-            {
-                "cases": 189,
-                "deaths": 2,
-                "recovered": 22,
-                "name": "Japan"
             },
             {
                 "cases": 139,
@@ -5742,7 +5622,7 @@
                 "cases": 2,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 2,
@@ -5826,7 +5706,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 1,
@@ -5870,10 +5750,10 @@
                 "name": "South Korea"
             },
             {
-                "cases": 705,
-                "deaths": 4,
-                "recovered": 10,
-                "name": "Others"
+                "cases": 919,
+                "deaths": 8,
+                "recovered": 32,
+                "name": "Japan"
             },
             {
                 "cases": 655,
@@ -5886,12 +5766,6 @@
                 "deaths": 26,
                 "recovered": 49,
                 "name": "Iran"
-            },
-            {
-                "cases": 214,
-                "deaths": 4,
-                "recovered": 22,
-                "name": "Japan"
             },
             {
                 "cases": 93,
@@ -6047,7 +5921,7 @@
                 "cases": 3,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 3,
@@ -6149,7 +6023,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 1,
@@ -6199,22 +6073,16 @@
                 "name": "Italy"
             },
             {
-                "cases": 705,
-                "deaths": 6,
-                "recovered": 10,
-                "name": "Others"
+                "cases": 933,
+                "deaths": 10,
+                "recovered": 32,
+                "name": "Japan"
             },
             {
                 "cases": 388,
                 "deaths": 34,
                 "recovered": 73,
                 "name": "Iran"
-            },
-            {
-                "cases": 228,
-                "deaths": 4,
-                "recovered": 22,
-                "name": "Japan"
             },
             {
                 "cases": 94,
@@ -6283,7 +6151,7 @@
                 "name": "Malaysia"
             },
             {
-                "cases": 20,
+                "cases": 21,
                 "deaths": 0,
                 "recovered": 8,
                 "name": "United Kingdom"
@@ -6358,7 +6226,7 @@
                 "cases": 4,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 4,
@@ -6526,13 +6394,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "North Ireland"
-            },
-            {
-                "cases": 1,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 1,
@@ -6570,22 +6432,16 @@
                 "name": "Italy"
             },
             {
-                "cases": 705,
-                "deaths": 6,
-                "recovered": 10,
-                "name": "Others"
+                "cases": 946,
+                "deaths": 11,
+                "recovered": 42,
+                "name": "Japan"
             },
             {
                 "cases": 593,
                 "deaths": 43,
                 "recovered": 123,
                 "name": "Iran"
-            },
-            {
-                "cases": 241,
-                "deaths": 5,
-                "recovered": 32,
-                "name": "Japan"
             },
             {
                 "cases": 102,
@@ -6723,7 +6579,7 @@
                 "cases": 7,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 6,
@@ -6909,7 +6765,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 1,
@@ -6959,15 +6815,9 @@
                 "name": "Iran"
             },
             {
-                "cases": 705,
-                "deaths": 6,
-                "recovered": 10,
-                "name": "Others"
-            },
-            {
-                "cases": 256,
-                "deaths": 6,
-                "recovered": 32,
+                "cases": 961,
+                "deaths": 12,
+                "recovered": 42,
                 "name": "Japan"
             },
             {
@@ -7088,7 +6938,7 @@
                 "cases": 10,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 10,
@@ -7328,7 +7178,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 1,
@@ -7372,15 +7222,9 @@
                 "name": "Iran"
             },
             {
-                "cases": 705,
-                "deaths": 6,
-                "recovered": 10,
-                "name": "Others"
-            },
-            {
-                "cases": 274,
-                "deaths": 6,
-                "recovered": 32,
+                "cases": 979,
+                "deaths": 12,
+                "recovered": 42,
                 "name": "Japan"
             },
             {
@@ -7513,7 +7357,7 @@
                 "cases": 10,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 10,
@@ -7777,7 +7621,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 1,
@@ -7827,15 +7671,9 @@
                 "name": "Iran"
             },
             {
-                "cases": 706,
-                "deaths": 6,
-                "recovered": 10,
-                "name": "Others"
-            },
-            {
-                "cases": 293,
-                "deaths": 6,
-                "recovered": 43,
+                "cases": 999,
+                "deaths": 12,
+                "recovered": 53,
                 "name": "Japan"
             },
             {
@@ -7980,7 +7818,7 @@
                 "cases": 12,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 12,
@@ -8256,7 +8094,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 1,
@@ -8306,15 +8144,9 @@
                 "name": "Iran"
             },
             {
-                "cases": 706,
-                "deaths": 6,
-                "recovered": 10,
-                "name": "Others"
-            },
-            {
-                "cases": 331,
-                "deaths": 6,
-                "recovered": 43,
+                "cases": 1037,
+                "deaths": 12,
+                "recovered": 53,
                 "name": "Japan"
             },
             {
@@ -8471,7 +8303,7 @@
                 "cases": 15,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 15,
@@ -8759,7 +8591,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 1,
@@ -8821,10 +8653,10 @@
                 "name": "Iran"
             },
             {
-                "cases": 706,
-                "deaths": 6,
-                "recovered": 10,
-                "name": "Others"
+                "cases": 1066,
+                "deaths": 12,
+                "recovered": 53,
+                "name": "Japan"
             },
             {
                 "cases": 482,
@@ -8837,12 +8669,6 @@
                 "deaths": 6,
                 "recovered": 12,
                 "name": "France"
-            },
-            {
-                "cases": 360,
-                "deaths": 6,
-                "recovered": 43,
-                "name": "Japan"
             },
             {
                 "cases": 259,
@@ -8983,10 +8809,10 @@
                 "name": "San Marino"
             },
             {
-                "cases": 20,
+                "cases": 16,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 16,
@@ -9125,6 +8951,12 @@
                 "deaths": 0,
                 "recovered": 0,
                 "name": "Georgia"
+            },
+            {
+                "cases": 4,
+                "deaths": 0,
+                "recovered": 0,
+                "name": "Palestinian Territories"
             },
             {
                 "cases": 4,
@@ -9292,7 +9124,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 1,
@@ -9354,10 +9186,10 @@
                 "name": "Italy"
             },
             {
-                "cases": 696,
-                "deaths": 6,
-                "recovered": 40,
-                "name": "Others"
+                "cases": 1116,
+                "deaths": 12,
+                "recovered": 86,
+                "name": "Japan"
             },
             {
                 "cases": 670,
@@ -9370,12 +9202,6 @@
                 "deaths": 9,
                 "recovered": 12,
                 "name": "France"
-            },
-            {
-                "cases": 420,
-                "deaths": 6,
-                "recovered": 46,
-                "name": "Japan"
             },
             {
                 "cases": 400,
@@ -9528,10 +9354,10 @@
                 "name": "Canada"
             },
             {
-                "cases": 37,
+                "cases": 21,
                 "deaths": 0,
                 "recovered": 2,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 21,
@@ -9562,6 +9388,12 @@
                 "deaths": 0,
                 "recovered": 2,
                 "name": "Oman"
+            },
+            {
+                "cases": 16,
+                "deaths": 0,
+                "recovered": 0,
+                "name": "Palestinian Territories"
             },
             {
                 "cases": 16,
@@ -9717,7 +9549,7 @@
                 "cases": 3,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 2,
@@ -9953,22 +9785,16 @@
                 "name": "Germany"
             },
             {
-                "cases": 696,
-                "deaths": 6,
-                "recovered": 40,
-                "name": "Others"
+                "cases": 1157,
+                "deaths": 12,
+                "recovered": 116,
+                "name": "Japan"
             },
             {
                 "cases": 500,
                 "deaths": 10,
                 "recovered": 30,
                 "name": "Spain"
-            },
-            {
-                "cases": 461,
-                "deaths": 6,
-                "recovered": 76,
-                "name": "Japan"
             },
             {
                 "cases": 268,
@@ -10115,16 +9941,22 @@
                 "name": "Lebanon"
             },
             {
-                "cases": 43,
+                "cases": 22,
                 "deaths": 0,
-                "recovered": 2,
-                "name": "Israel and Palestine"
+                "recovered": 0,
+                "name": "Palestinian Territories"
             },
             {
                 "cases": 21,
                 "deaths": 0,
                 "recovered": 4,
                 "name": "Canada"
+            },
+            {
+                "cases": 21,
+                "deaths": 0,
+                "recovered": 2,
+                "name": "Israel"
             },
             {
                 "cases": 20,
@@ -10334,7 +10166,7 @@
                 "cases": 3,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 2,
@@ -10558,22 +10390,16 @@
                 "name": "Germany"
             },
             {
-                "cases": 696,
-                "deaths": 6,
-                "recovered": 40,
-                "name": "Others"
+                "cases": 1198,
+                "deaths": 12,
+                "recovered": 116,
+                "name": "Japan"
             },
             {
                 "cases": 673,
                 "deaths": 17,
                 "recovered": 30,
                 "name": "Spain"
-            },
-            {
-                "cases": 502,
-                "deaths": 6,
-                "recovered": 76,
-                "name": "Japan"
             },
             {
                 "cases": 337,
@@ -10702,10 +10528,10 @@
                 "name": "India"
             },
             {
-                "cases": 61,
+                "cases": 39,
                 "deaths": 0,
                 "recovered": 2,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 76,
@@ -10762,10 +10588,16 @@
                 "name": "Finland"
             },
             {
-                "cases": 21,
+                "cases": 22,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Republic of Ireland"
+                "name": "Palestinian Territories"
+            },
+            {
+                "cases": 40,
+                "deaths": 0,
+                "recovered": 0,
+                "name": "Ireland"
             },
             {
                 "cases": 20,
@@ -10778,12 +10610,6 @@
                 "deaths": 0,
                 "recovered": 0,
                 "name": "Algeria"
-            },
-            {
-                "cases": 19,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Ireland"
             },
             {
                 "cases": 17,
@@ -10993,7 +10819,7 @@
                 "cases": 3,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 3,
@@ -11187,7 +11013,7 @@
                 "name": "Iran"
             },
             {
-                "cases": 1210,
+                "cases": 1212,
                 "deaths": 19,
                 "recovered": 12,
                 "name": "France"
@@ -11205,15 +11031,9 @@
                 "name": "Spain"
             },
             {
-                "cases": 696,
-                "deaths": 6,
-                "recovered": 40,
-                "name": "Others"
-            },
-            {
-                "cases": 511,
-                "deaths": 17,
-                "recovered": 76,
+                "cases": 1207,
+                "deaths": 23,
+                "recovered": 116,
                 "name": "Japan"
             },
             {
@@ -11355,10 +11175,10 @@
                 "name": "India"
             },
             {
-                "cases": 61,
+                "cases": 39,
                 "deaths": 0,
                 "recovered": 2,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 36,
@@ -11407,6 +11227,12 @@
                 "deaths": 0,
                 "recovered": 0,
                 "name": "Brazil"
+            },
+            {
+                "cases": 22,
+                "deaths": 0,
+                "recovered": 0,
+                "name": "Palestinian Territories"
             },
             {
                 "cases": 21,
@@ -11634,7 +11460,7 @@
                 "cases": 3,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 3,
@@ -11695,12 +11521,6 @@
                 "deaths": 0,
                 "recovered": 0,
                 "name": "Nigeria"
-            },
-            {
-                "cases": 2,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "St. Martin"
             },
             {
                 "cases": 2,
@@ -11837,16 +11657,16 @@
                 "cases": 8042,
                 "deaths": 291,
                 "recovered": 2731,
-                "name": "Iran (Islamic Republic of)"
+                "name": "Iran"
             },
             {
                 "cases": 7513,
                 "deaths": 54,
                 "recovered": 247,
-                "name": "Republic of Korea"
+                "name": "South Korea"
             },
             {
-                "cases": 1785,
+                "cases": 1787,
                 "deaths": 33,
                 "recovered": 12,
                 "name": "France"
@@ -11864,15 +11684,9 @@
                 "name": "Germany"
             },
             {
-                "cases": 696,
-                "deaths": 6,
-                "recovered": 40,
-                "name": "Others"
-            },
-            {
-                "cases": 581,
-                "deaths": 10,
-                "recovered": 101,
+                "cases": 1277,
+                "deaths": 16,
+                "recovered": 141,
                 "name": "Japan"
             },
             {
@@ -11894,7 +11708,7 @@
                 "name": "Netherlands"
             },
             {
-                "cases": 382,
+                "cases": 383,
                 "deaths": 6,
                 "recovered": 18,
                 "name": "United Kingdom"
@@ -11945,7 +11759,7 @@
                 "cases": 120,
                 "deaths": 3,
                 "recovered": 65,
-                "name": "Hong Kong SAR"
+                "name": "Hong Kong"
             },
             {
                 "cases": 110,
@@ -11990,10 +11804,10 @@
                 "name": "Egypt"
             },
             {
-                "cases": 83,
+                "cases": 58,
                 "deaths": 0,
                 "recovered": 4,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 56,
@@ -12023,7 +11837,7 @@
                 "cases": 47,
                 "deaths": 1,
                 "recovered": 17,
-                "name": "Taipei and environs"
+                "name": "Taiwan"
             },
             {
                 "cases": 41,
@@ -12083,7 +11897,7 @@
                 "cases": 31,
                 "deaths": 0,
                 "recovered": 16,
-                "name": "Viet Nam"
+                "name": "Vietnam"
             },
             {
                 "cases": 27,
@@ -12096,6 +11910,12 @@
                 "deaths": 0,
                 "recovered": 3,
                 "name": "Romania"
+            },
+            {
+                "cases": 25,
+                "deaths": 0,
+                "recovered": 0,
+                "name": "Palestinian Territories"
             },
             {
                 "cases": 24,
@@ -12191,13 +12011,13 @@
                 "cases": 10,
                 "deaths": 0,
                 "recovered": 10,
-                "name": "Macao SAR"
+                "name": "Macau"
             },
             {
                 "cases": 10,
                 "deaths": 0,
                 "recovered": 3,
-                "name": "Russian Federation"
+                "name": "Russia"
             },
             {
                 "cases": 9,
@@ -12233,7 +12053,7 @@
                 "cases": 7,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 7,
@@ -12347,7 +12167,7 @@
                 "cases": 3,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Republic of Moldova"
+                "name": "Moldova"
             },
             {
                 "cases": 2,
@@ -12378,12 +12198,6 @@
                 "deaths": 0,
                 "recovered": 0,
                 "name": "Nigeria"
-            },
-            {
-                "cases": 2,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Saint Martin"
             },
             {
                 "cases": 1,
@@ -12418,12 +12232,6 @@
             {
                 "cases": 1,
                 "deaths": 0,
-                "recovered": 0,
-                "name": "Channel Islands"
-            },
-            {
-                "cases": 1,
-                "deaths": 0,
                 "recovered": 1,
                 "name": "Gibraltar"
             },
@@ -12431,7 +12239,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Holy See"
+                "name": "Vatican City"
             },
             {
                 "cases": 1,
@@ -12526,10 +12334,10 @@
                 "cases": 7755,
                 "deaths": 60,
                 "recovered": 288,
-                "name": "Sout\""
+                "name": "South Korea"
             },
             {
-                "cases": 2284,
+                "cases": 2285,
                 "deaths": 48,
                 "recovered": 12,
                 "name": "France"
@@ -12547,22 +12355,16 @@
                 "name": "Germany"
             },
             {
-                "cases": 696,
-                "deaths": 7,
-                "recovered": 325,
-                "name": "Cruise Ship"
+                "cases": 1335,
+                "deaths": 22,
+                "recovered": 443,
+                "name": "Japan"
             },
             {
                 "cases": 652,
                 "deaths": 4,
                 "recovered": 4,
                 "name": "Switzerland"
-            },
-            {
-                "cases": 639,
-                "deaths": 15,
-                "recovered": 118,
-                "name": "Japan"
             },
             {
                 "cases": 598,
@@ -12640,7 +12442,7 @@
                 "cases": 109,
                 "deaths": 0,
                 "recovered": 4,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 99,
@@ -12652,7 +12454,7 @@
                 "cases": 91,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Czechia"
+                "name": "Czech Republic"
             },
             {
                 "cases": 85,
@@ -12742,7 +12544,7 @@
                 "cases": 48,
                 "deaths": 1,
                 "recovered": 17,
-                "name": "Taiwan*"
+                "name": "Taiwan"
             },
             {
                 "cases": 45,
@@ -12970,7 +12772,7 @@
                 "cases": 7,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 7,
@@ -13114,19 +12916,19 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Congo (Kinshasa)"
+                "name": "Congo [DRC]"
             },
             {
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Cote d'Ivoire"
+                "name": "Côte dIvoire"
             },
             {
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Holy See"
+                "name": "Vatican City"
             },
             {
                 "cases": 1,
@@ -13163,12 +12965,6 @@
                 "deaths": 0,
                 "recovered": 1,
                 "name": "Nepal"
-            },
-            {
-                "cases": 1,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Reunion"
             },
             {
                 "cases": 1,
@@ -13215,10 +13011,10 @@
                 "cases": 7869,
                 "deaths": 66,
                 "recovered": 333,
-                "name": "Sout\""
+                "name": "South Korea"
             },
             {
-                "cases": 2284,
+                "cases": 2285,
                 "deaths": 48,
                 "recovered": 12,
                 "name": "France"
@@ -13242,22 +13038,16 @@
                 "name": "Norway"
             },
             {
-                "cases": 696,
-                "deaths": 7,
-                "recovered": 325,
-                "name": "Cruise Ship"
+                "cases": 1335,
+                "deaths": 23,
+                "recovered": 443,
+                "name": "Japan"
             },
             {
                 "cases": 652,
                 "deaths": 4,
                 "recovered": 4,
                 "name": "Switzerland"
-            },
-            {
-                "cases": 639,
-                "deaths": 16,
-                "recovered": 118,
-                "name": "Japan"
             },
             {
                 "cases": 617,
@@ -13329,7 +13119,7 @@
                 "cases": 131,
                 "deaths": 0,
                 "recovered": 4,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 103,
@@ -13347,7 +13137,7 @@
                 "cases": 94,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Czechia"
+                "name": "Czech Republic"
             },
             {
                 "cases": 89,
@@ -13449,7 +13239,7 @@
                 "cases": 49,
                 "deaths": 1,
                 "recovered": 20,
-                "name": "Taiwan*"
+                "name": "Taiwan"
             },
             {
                 "cases": 117,
@@ -13659,7 +13449,7 @@
                 "cases": 7,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 7,
@@ -13821,13 +13611,13 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Congo (Kinshasa)"
+                "name": "Congo [DRC]"
             },
             {
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Cote d'Ivoire"
+                "name": "Côte dIvoire"
             },
             {
                 "cases": 1,
@@ -13839,7 +13629,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Holy See"
+                "name": "Vatican City"
             },
             {
                 "cases": 1,
@@ -13864,12 +13654,6 @@
                 "deaths": 0,
                 "recovered": 1,
                 "name": "Nepal"
-            },
-            {
-                "cases": 1,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Reunion"
             },
             {
                 "cases": 1,
@@ -13994,7 +13778,7 @@
                 "cases": 2,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Congo (Kinshasa)"
+                "name": "Congo [DRC]"
             },
             {
                 "cases": 2,
@@ -14015,10 +13799,10 @@
                 "name": "Algeria"
             },
             {
-                "cases": 5,
-                "deaths": 0,
-                "recovered": 0,
-                "name": "Reunion"
+                "cases": 3672,
+                "deaths": 79,
+                "recovered": 12,
+                "name": "France"
             },
             {
                 "cases": 19,
@@ -14027,10 +13811,10 @@
                 "name": "Oman"
             },
             {
-                "cases": 696,
-                "deaths": 7,
-                "recovered": 325,
-                "name": "Cruise Ship"
+                "cases": 1397,
+                "deaths": 26,
+                "recovered": 443,
+                "name": "Japan"
             },
             {
                 "cases": 17660,
@@ -14096,7 +13880,7 @@
                 "cases": 14,
                 "deaths": 0,
                 "recovered": 1,
-                "name": "North Macedonia"
+                "name": "Macedonia [FYROM]"
             },
             {
                 "cases": 151,
@@ -14127,12 +13911,6 @@
                 "deaths": 0,
                 "recovered": 1,
                 "name": "Norway"
-            },
-            {
-                "cases": 3667,
-                "deaths": 79,
-                "recovered": 12,
-                "name": "France"
             },
             {
                 "cases": 5,
@@ -14234,7 +14012,7 @@
                 "cases": 161,
                 "deaths": 0,
                 "recovered": 4,
-                "name": "Israel and Palestine"
+                "name": "Israel"
             },
             {
                 "cases": 1,
@@ -14243,16 +14021,10 @@
                 "name": "Cayman Islands"
             },
             {
-                "cases": 701,
-                "deaths": 19,
-                "recovered": 118,
-                "name": "Japan"
-            },
-            {
                 "cases": 141,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Czechia"
+                "name": "Czech Republic"
             },
             {
                 "cases": 320,
@@ -14300,7 +14072,7 @@
                 "cases": 7979,
                 "deaths": 66,
                 "recovered": 510,
-                "name": "Sout\""
+                "name": "South Korea"
             },
             {
                 "cases": 17,
@@ -14450,7 +14222,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Cote d'Ivoire"
+                "name": "Côte dIvoire"
             },
             {
                 "cases": 34,
@@ -14486,7 +14258,7 @@
                 "cases": 1,
                 "deaths": 0,
                 "recovered": 0,
-                "name": "Holy See"
+                "name": "Vatican City"
             },
             {
                 "cases": 35,
@@ -14642,7 +14414,7 @@
                 "cases": 50,
                 "deaths": 1,
                 "recovered": 20,
-                "name": "Taiwan*"
+                "name": "Taiwan"
             }
         ],
         "day": "13/03/2020"
