@@ -57,7 +57,6 @@ export class Countries {
 				}
 			}
 		} else {
-			console.log('Countries is undefined');
 		}
 		this.geojson = tempArray;
 	}
