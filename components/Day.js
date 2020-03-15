@@ -3,13 +3,21 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 
 class Day {
-	constructor() {
+	constructor(day) {
+		// Stores the date
+		this.day = day;
 		// Stores each individual country
 		this.countries = [];
 		// Stores geojson
 		this.geojson = [];
 		this.fetchCoordinates();
 	}
+
+	// Basically its putting every days stats into every Day
+	// would it not be better to do the fetching/parsing in Timeline
+	// Do you mean for the coordinates which is probably the case
+	// yeah we fetch the countries.txt in the timeline class
+	// That's fine, you can work on that
 
 	// Adds data from a region
 	addData(cases, deaths, recovered, countryName, day) {
@@ -19,20 +27,12 @@ class Day {
 		if (index > -1) {
 			this.countries[index].additionalData(cases, deaths, recovered);
 		} else {
-			this.countries[this.countries.length] = new Country(
+			this.countries[countryName] = new Country(
 				cases,
 				deaths,
 				recovered,
 				countryName
 			);
-		}
-	}
-
-	addVirus(countryObj) {
-		if (this.countries[countryObj.name]) {
-			this.countries[countryObj.name].cases = countryObj.cases;
-			this.countries[countryObj.name].deaths = countryObj.deaths;
-			this.countries[countryObj.name].recovered = countryObj.recovered;
 		}
 	}
 
@@ -49,21 +49,26 @@ class Day {
 			// Extracts each line
 			const countryLine = lines[i].split(',');
 			// Adds to the markers Object with respective lat, lon based on the country
-			console.log(countryLine);
+			// console.log(countryLine);
 			if (countryLine[1] != undefined && countryLine[2] != undefined) {
 				const coordinates = [
 					parseFloat(countryLine[2]),
 					parseFloat(countryLine[1])
 				];
-				this.countries[countryLine[3].trim()].addCoordinates(
-					coordinates
-				);
+				try {
+					this.countries[countryLine[3].trim()].addCoordinates(
+						coordinates
+					);
+				} catch (e) {
+					// console.error();
+					// These are countries without any cases so its fine
+					// countryLine[3].trim() + " apparently doesn't exist
+				}
 			}
 		}
 	}
 
 	parseGeoJSON() {
-		// console.log(this.countries);
 		let tempArray = [];
 		if (this.countries) {
 			for (let country in this.countries) {

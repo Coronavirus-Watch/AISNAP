@@ -19,7 +19,7 @@ class Country {
 		this.recovered = this.recovered + parseInt(recovered);
 	}
 
-	addCoordinates(coordinates = [0, 0]) {
+	addCoordinates(coordinates) {
 		this.coordinates = coordinates;
 	}
 
