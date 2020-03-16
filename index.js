@@ -15,7 +15,7 @@ const Timeline = require('./components/Timeline');
 
 const app = express();
 
-app.listen(3000, () => console.log('listening at 3000'));
+app.listen(port, () => console.log('listening at 3000'));
 app.use(express.static('public'));
 
 // Link to source data

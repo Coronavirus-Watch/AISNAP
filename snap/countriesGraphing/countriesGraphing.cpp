@@ -1,22 +1,16 @@
 #include "DrawGViz.hpp"
 #include "stdafx.h"
-#include "data.hpp"
 #include <iostream>
 #include <list>
 #include <string>
 #include <tr1/functional>
 #include <fstream>
-// #include <map>
 #include <sstream>
 #include <network.h>
 #include <vector>
-// #include <hash.h>
-
 
 using namespace std;
 
-
-typedef TInt TEdgeData;
 
 typedef struct route
 {
@@ -26,62 +20,115 @@ typedef struct route
   string destinationCountry;
 } Route;
 
-PNGraph genRandomGraph(PNGraph G, int nodes, int edges);
-int plotGraph(TNodeEDatNet<TNodeData, TEdgeData> &G);
-int plotGraph(PNEANet G);
-int traverseNodes(TNodeEDatNet<TNodeData, TEdgeData> &G);
-int traverseEdges(TNodeEDatNet<TNodeData, TEdgeData> &G);
-int traverseGraph(TNodeEDatNet<TNodeData, TEdgeData> &G);
+typedef struct Country
+{
+  string name;
+  int cases;
+  int deaths;
+  int recovered;
+  string date;
+} Country;
+
+typedef struct Day {
+  string date;
+  vector<Country> countries;
+} Day;
+
+vector<Day> days;
+
+typedef struct CoronaGraph {
+  PNEANet network;
+  string date;
+} CoronaGraph;
+
+
+
+PNEANet initNetwork();
+
+int plotGraph(PNEANet G,TStr fileName);
+
+// Basic traversal
 int traverseGraph(PNEANet G);
 int traverseNodes(PNEANet G);
 int traverseEdges(PNEANet G);
-int saveGraph(TNodeEDatNet<TNodeData, TEdgeData> &G);
-int getCentrality(PNEANet G);
 
-// TNodeEDatNet<int,int> reee;
 
+
+
+// Creating a visual matrix, mathematical display
 vector< vector<int> > initializeVector();
 vector< vector<int> > ChangeArry(PNEANet p,vector<vector<int> > owo);
 void Print(vector<vector<int> > uwu);
 
 
+// Getting routes data
 vector<Route> getInput();
-int addRoute(TNodeEDatNet<TNodeData, TEdgeData> &graph, std::vector<Route> list);
 int addRoute(PNEANet graph, std::vector<Route> list);
 int hashFunction(string str);
 
+
+// Getting virus data
+vector<Day> addVirus();
+int printVirus(vector<Day> virus);
+void graphVirus(Day day,PNEANet G);
+bool printGraph = true;
+
+
+int quarantineNodes(PNEANet G);
+int nodeRemoval(PNEANet G , TNEANet::TNodeI C);
+
+
 int main(int argc, char* argv[]) 
 {
-  
-  // PNGraph loadedGraph = TSnap::LoadEdgeList<PNGraph>("input.txt", 0, 1);
-  TNodeEDatNet<TNodeData, TEdgeData> variableGraph;
   vector<Route> list =  getInput();
-  // addRoute(variableGraph,list);
-  
+  PNEANet networkG = initNetwork();
 
-  PNEANet networkG = PNEANet::New();
-
-  networkG->AddStrAttrN("CountryName","country");
-  networkG->AddIntAttrE("Flights",0);
 
   addRoute(networkG,list);
-
-  //  string i1 = "Rawr\n", i2 = "Rawr";
-  //   cout << "1st:" <<  i1 << " " << i1.length() << " & 2nd:" << i2 << " " << i2.length() << endl;
-
-  traverseGraph(networkG);
-  plotGraph(networkG);
-  // saveGraph(variableGraph);
-  // TSnap::PrintInfo(variableGraph);
   
-  // vector <vector<int> > matrix;
-  // matrix = initializeVector();
-  // matrix = ChangeArry(networkG,matrix);
-  // Print(matrix);
+
+  vector<Day> days;
+  days = addVirus();
+  vector<CoronaGraph> timeline;
+  CoronaGraph   fixedGraph;
+
+
+
+  for (int i = 0; i < days.size(); i++)
+  {
+    fixedGraph.network = networkG;
+    fixedGraph.date = days.at(i).date;
+    graphVirus(days.at(i),fixedGraph.network);
+    timeline.push_back(fixedGraph);
+  }
+  
+
+  
+  // plotGraph(timeline.at(51).network,"Fragmented");
+  // printVirus(days);
+  // graphVirus(days.at(40),networkG);
+  cout << "This is the end" << endl;
+  
+  
+    // vector <vector<int> > matrix;
+    // matrix = initializeVector();
+    // matrix = ChangeArry(networkG,matrix);
 
 }
 
+PNEANet initNetwork()
+{
+  PNEANet net = PNEANet::New();
 
+  net->AddStrAttrN("CountryName","country");
+  net->AddIntAttrN("Cases",0);
+  net->AddIntAttrE("Flights",0);
+
+  return net;
+}
+
+
+//Flights
 vector<Route> getInput()
 {
     //Opening filestream
@@ -104,8 +151,6 @@ vector<Route> getInput()
         {
           cout << "Fyall doesn't exists" << endl;
         }
-        
-        
         
         // Validates if it is a file
         if (FyallStream.is_open())
@@ -151,50 +196,11 @@ vector<Route> getInput()
         }
 }
 
-int addRoute(TNodeEDatNet<TNodeData, TEdgeData> &graph, std::vector<Route> list)
-{
-	for (size_t i = 0; i < list.size(); i++)
-	{
-    int idSource = hashFunction(list[i].sourceCountry);
-    int idDestination = hashFunction(list[i].destinationCountry);
-		// Adds country to graph if they aren't already added
-    TNodeData *source = new TNodeData(idSource, list[i].sourceCountry);
-		TNodeData *destination = new TNodeData(idDestination, list[i].destinationCountry);
-
-
-
-
-   
-    // cout << "Source: " << list[i].sourceCountry << "-" << list[i].sourceCountry.length() << "|";
-    // cout << " Destination: " << list[i].destinationCountry << "-" << list[i].destinationCountry.length() << endl;
-
-
-    if (!graph.IsNode(idSource)) {
-      graph.AddNode(idSource, *source);
-    }
-    if (!graph.IsNode(idDestination)) {
-      graph.AddNode(idDestination, *destination);
-    }
-  
-		// Checks if the edge we are adding exists
-		if (graph.IsEdge(idSource,idDestination))
-		{
-			// Increment edge number
-			TEdgeData flight = graph.GetEDat(idSource,idDestination);
-      // flight.incrementFlights();
-      flight++;
-			graph.SetEDat(idSource,idDestination, flight);
-		}
-		else
-		{
-			// Adds edge to graph
-      TEdgeData flight = 1;
-			graph.AddEdge(idSource,idDestination, flight);
-		}
-	}
-	return 0;
+int hashFunction(string str) {
+  tr1::hash<string> hashObj;
+  // cout << (int)hashObj(str) <<endl;
+  return (int) hashObj(str);
 }
-
 
 int addRoute(PNEANet graph, std::vector<Route> list)
 {
@@ -207,21 +213,15 @@ int addRoute(PNEANet graph, std::vector<Route> list)
   
     char temp[(list[i].sourceCountry).length()+1];
     strcpy(temp,list[i].sourceCountry.c_str());
-    cout << temp << " is here ae bro" << endl;
+    // cout << temp << " is here ae bro" << endl;
     TStr source = temp;
 
     char temp2[list[i].destinationCountry.length()];
     strcpy(temp2,list[i].destinationCountry.c_str());
     TStr dest = temp2;
 
-  
-  
-  
-
-   
     // cout << "Source: " << list[i].sourceCountry << "-" << list[i].sourceCountry.length() << "|";
     // cout << " Destination: " << list[i].destinationCountry << "-" << list[i].destinationCountry.length() << endl;
-
 
     if (!graph->IsNode(idSource)) {
       graph->AddNode(idSource);
@@ -236,13 +236,11 @@ int addRoute(PNEANet graph, std::vector<Route> list)
 		if (graph->IsEdge(idSource,idDestination))
 		{
 			// Increment edge number
-		
 			graph->AddIntAttrDatE(graph->GetEI(idSource,idDestination),graph->GetIntAttrDatE(graph->GetEI(idSource,idDestination),"Flights")+1,"Flights");
 		}
 		else
 		{
 			// Adds edge to graph
-      
 			graph->AddEdge(idSource,idDestination);
       graph->AddIntAttrDatE(graph->GetEI(idSource,idDestination),1,"Flights");
 		}
@@ -251,32 +249,204 @@ int addRoute(PNEANet graph, std::vector<Route> list)
 }
 
 
-int hashFunction(string str) {
-  tr1::hash<string> hashObj;
-  // cout << (int)hashObj(str) <<endl;
-  return (int) hashObj(str);
+
+// Corona
+void graphVirus(Day day,PNEANet G)
+{
+  
+  for (int i = 0; i <day.countries.size() ; i++)
+  {
+    int hash = hashFunction(day.countries.at(i).name);
+    
+    if (G->IsNode(hash))
+    {
+      G->AddIntAttrDatN(hash,day.countries.at(i).cases,"Cases");
+    }
+    
+  }
+ 
+ if (printGraph == true)
+ {
+  TStr temp = day.date.c_str();
+  plotGraph(G,temp);
+  quarantineNodes(G);
+  temp += "_Fragmented";
+  plotGraph(G,temp);
+ }
+ 
+  
 }
 
-
-PNGraph genRandomGraph(PNGraph G, int nodes, int edges)
+vector<Day> addVirus()
 {
-  G = TSnap::GenRndGnm<PNGraph>(nodes, edges);
-  cout << "Generated" << endl;
-  return G;
+   ifstream FyallStream;
+
+        vector<Day> inputList;
+        //Opening file using filename
+        FyallStream.open("timeline.csv");
+
+        if (FyallStream.peek() == std::ifstream::traits_type::eof())
+        {
+          cout << "Weak file" << endl;
+        }
+
+        if (FyallStream.good())
+        {
+          cout << "Fyall exists" << endl;
+        }
+        else
+        {
+          cout << "Fyall doesn't exists" << endl;
+        }
+        
+        // Validates if it is a file
+        if (FyallStream.is_open())
+        {
+          Day currDay;
+          Country r1;
+          string currdate = "";
+          int count = 0;
+          cout << "Come in, its open" << endl;
+          string currLine;
+          while (getline(FyallStream, currLine))
+          {
+            // cout << "This is the currLine: " << currLine << endl;
+            string temp;
+            stringstream s_stream(currLine);
+            getline(s_stream, temp, ',');
+            r1.name = temp;
+            // cout << temp +",";
+            getline(s_stream, temp, ',');
+            r1.cases = stoi(temp);
+            // cout << temp +",";
+            getline(s_stream, temp, ',');
+            r1.deaths = stoi(temp);
+            // cout << temp +",";
+            getline(s_stream, temp, ',');
+            r1.recovered = stoi(temp);
+             // cout << temp << endl;
+            getline(s_stream, temp, ',');
+            r1.date = temp;
+            // cout << temp << endl;
+
+            if(currdate.compare("") == 0)
+            {
+              cout << "Gaysssssss" << endl;
+              currDay.countries.push_back(r1);
+              currDay.date = r1.date;
+              currDay.date[2] = '_';
+              currDay.date[5] = '_';
+              currdate = r1.date;
+              count++;
+            }
+            else if (r1.date.compare(currdate) != 0)
+            {
+              inputList.push_back(currDay);
+              currdate = r1.date;
+              currDay.countries.clear();
+              currDay.countries.push_back(r1);
+              currDay.date = r1.date;
+              currDay.date[2] = '_';
+              currDay.date[5] = '_';
+              count++;
+            }
+            else
+            {
+              currDay.countries.push_back(r1);
+              currDay.date = r1.date;
+              currDay.date[2] = '_';
+              currDay.date[5] = '_';
+            }
+            
+          }
+
+         
+          cout << "Gays" << endl;
+            // Closes the fyallStream
+            FyallStream.close();
+            cout << "Size = " << count << endl;
+
+            return inputList;
+        }
+        else
+        {
+            //Closes the fyallStream
+            cout << "Fuck off nosey" << endl;
+            FyallStream.close();
+            return inputList;
+        }
 }
 
-
-int traverseGraph(TNodeEDatNet<TNodeData, TEdgeData> &G)
+int printVirus(vector<Day> virus)
 {
-  cout << "Nodes" << endl;
-  cout << "_____________" << endl;
-  traverseNodes(G);
-  cout << "-------------" << endl << endl;
-  cout << "Edges" << endl;
-  cout << "_____________" << endl;
-  traverseEdges(G);
+  int len = virus.size();
+  
+  cout << "This is the size now: " << len << endl;
+  for (int i = 0; i < len; i++)
+  {
+    cout << "Date: " << virus.at(i).date << endl;
+    for (int j = 0; j < virus.at(i).countries.size(); j++)
+    {
+      cout << virus.at(i).countries.at(j).name << "," <<virus.at(i).countries.at(j).cases << "," << virus.at(i).countries.at(j).deaths << "," << virus.at(i).countries.at(j).recovered << endl;
+    }
+    cout << "-------------------------------------------------------------------------------------" << endl;
+    
+  }
+  return 0;
+  
+}
+
+int quarantineNodes(PNEANet G)
+{
+  for (TNEANet::TNodeI NI = G->BegNI(); NI < G->EndNI(); NI++)
+  {
+    if (G->GetIntAttrDatN(NI,"Cases") >0)
+      {
+          TNEANet::TNodeI currNode;
+          for (int i = 0;  i < NI.GetInDeg(); i++)
+        {
+          currNode = G->GetNI(NI.GetOutNId(i));
+          printf("The degrees of this node are %d|%d\n", currNode.GetInDeg(),currNode.GetOutDeg());
+          //  std::cout << " The current node is: " <<currNode.GetId() << endl;
+          nodeRemoval(G,currNode);
+        }
+      }
+  }
   return 0;
 }
+
+int nodeRemoval(PNEANet G , TNEANet::TNodeI C)
+{
+  std::cout << "The current node is: " <<C.GetId() << "(";
+  printf("%s)\n",G->GetStrAttrDatN(C.GetId(),"CountryName").CStr());
+  TNEANet::TNodeI checkNode;
+  for (int i = 0;  i < C.GetInDeg(); i++)
+       {
+         if(G->GetIntAttrDatN(C.GetInNId(i),"Cases")==0)
+         {
+           checkNode = G->GetNI(C.GetInNId(i));
+          std::cout << "\tThe Extention node is: " <<checkNode.GetId();
+          printf("(%s)\n",G->GetStrAttrDatN(checkNode.GetId(),"CountryName").CStr());
+            if (G->IsEdge(checkNode.GetId(),C.GetId()))
+            {
+              G->DelEdge(checkNode.GetId(),C.GetId());
+            }
+            if (G->IsEdge(C.GetId(),checkNode.GetId()))
+            {
+              G->DelEdge(C.GetId(),checkNode.GetId());
+            }
+            
+            
+            
+         }
+       }
+  return 0;
+}
+
+
+
+
+
 
 int traverseGraph(PNEANet G)
 {
@@ -290,17 +460,6 @@ int traverseGraph(PNEANet G)
   return 0;
 }
 
-//From http://snap.stanford.edu/snap/quick.html#input
-int traverseNodes(TNodeEDatNet<TNodeData, TEdgeData> &G)
-{
-  int counter =0;
-  for (TNodeEDatNet<TNodeData, TEdgeData>::TNodeI NI = G.BegNI(); NI < G.EndNI(); NI++) 
-    {
-      cout << "Node id: " << NI.GetId() << " Name: " << NI.GetDat().country << " In: " << NI.GetInDeg() << " Out: " << NI.GetOutDeg() << endl;
-    }
-    cout << endl;
-    return 0;
-}
 int traverseNodes(PNEANet G)
 {
   int counter =0;
@@ -312,28 +471,6 @@ int traverseNodes(PNEANet G)
     {
       printf("Node id: %d | Name: %s | In: %d | Out: %d\n",NI.GetId(),G->GetStrAttrDatN(NI,"CountryName").CStr(),NI.GetInDeg(),NI.GetOutDeg());
       // cout << "Node id: " << NI.GetId() << " Name: " << NI.GetStrAttrNames() << " In: " << NI.GetInDeg() << " Out: " << NI.GetOutDeg() << endl;
-    }
-    cout << endl;
-    return 0;
-}
-
-//From http://snap.stanford.edu/snap/quick.html#input
-int traverseEdges(TNodeEDatNet<TNodeData, TEdgeData> &G)
-{
-  int counter = 0;
-   for (TNodeEDatNet<TNodeData, TEdgeData>::TEdgeI EI = G.BegEI(); EI < G.EndEI(); EI++) 
-    {
-      cout << "Edge: " << EI.GetSrcNDat().country << "->" << EI.GetDstNDat().country << " has " << EI.GetDat();
-      if (counter < 1)
-      {
-        cout << " | ";
-        counter++;
-      }
-      else
-      {
-        cout << endl;
-        counter = 0;
-      }
     }
     cout << endl;
     return 0;
@@ -361,25 +498,13 @@ int traverseEdges(PNEANet G)
     return 0;
 }
 
-int saveGraph(TNodeEDatNet<TNodeData, TEdgeData> &G)
-{
-  //  TSnap::SaveEdgeList(G, "graphTextOut.txt", "Tab-separated list of edges");
-  // TSnap::SaveEdgeListNet(G,"networkTextOut.txt","Reeee");
-  TFOut FOut("test.graph");
-  G.Save(FOut);
-  // TSnap::SaveEdgeList<TNodeEDatNet<TNodeData, TEdgeData> >(G,"networkTextOut.txt","Reeee");
-  
-  // TSnap::DrawGViz
-   return 0;
-}
-
-int plotGraph(PNEANet G)
+int plotGraph(PNEANet G, TStr fileName)
 {
   TIntStrH Name;
   int count = 0;
   for (TNEANet::TNodeI NI = G->BegNI(); NI < G->EndNI(); NI++) 
   {
-    TStr curr = G->GetStrAttrDatN(NI,"CountryName");
+    TStr curr = G->GetStrAttrDatN(NI,"CountryName") + ":" + G->GetIntAttrDatN(NI,"Cases").GetStr();
     Name.AddDat(NI.GetId()) = curr;
     cout << count << " of " << G->GetNodes() << endl;
     count++;
@@ -392,53 +517,69 @@ int plotGraph(PNEANet G)
   
   
   TInt highest = 0;
-  for (TNEANet::TNodeI NI = G->BegNI()++; NI < G->EndNI(); NI++)
-  {
-    if (NI.GetDeg() > highest)
-    {
-      highest = NI.GetDeg();
-    }
-  }
+  // for (TNEANet::TNodeI NI = G->BegNI()++; NI < G->EndNI(); NI++)
+  // {
+  //   if (NI.GetDeg() > highest)
+  //   {
+  //     highest = NI.GetDeg();
+  //   }
+  // }
 
   TIntStrH Colors;
   for (TNEANet::TNodeI NI = G->BegNI(); NI < G->EndNI(); NI++)
   {
-   if (NI.GetDeg() < (highest/8))
-   {
-    Colors.AddDat(NI.GetId()) = "#f7fcfd";
-   }
-   else if (NI.GetDeg() < (highest/8)*2)
-   {
-     Colors.AddDat(NI.GetId()) = "#e0ecf4";
-   }
-    else if (NI.GetDeg() < (highest/8)*3)
-   {
-     Colors.AddDat(NI.GetId()) = "#bfd3e6";
-   }
-    else if (NI.GetDeg() < (highest/8)*4)
-   {
-     Colors.AddDat(NI.GetId()) = "#9ebcda";
-   }
-   else if (NI.GetDeg() < (highest/8)*5)
-   {
-     Colors.AddDat(NI.GetId()) = "#8c96c6";
-   }
-   else if (NI.GetDeg() < (highest/8)*6)
-   {
-     Colors.AddDat(NI.GetId()) = "#8c6bb1";
-   }
-   else if (NI.GetDeg() < (highest/8)*7)
-   {
-     Colors.AddDat(NI.GetId()) = "#88419d";
-   }
-   else
-   {
-     Colors.AddDat(NI.GetId()) = "#6e016b";
-   }   
+
+    if (G->GetIntAttrDatN(NI,"cases")>0)
+    {
+      Colors.AddDat(NI.GetId()) ="#FF0000";
+    }
+    else
+    {
+      Colors.AddDat(NI.GetId()) = "#008000";
+    }
+    
+    
+  //  if (NI.GetDeg() < (highest/8))
+  //  {
+  //   Colors.AddDat(NI.GetId()) = "#f7fcfd";
+  //  }
+  //  else if (NI.GetDeg() < (highest/8)*2)
+  //  {
+  //    Colors.AddDat(NI.GetId()) = "#e0ecf4";
+  //  }
+  //   else if (NI.GetDeg() < (highest/8)*3)
+  //  {
+  //    Colors.AddDat(NI.GetId()) = "#bfd3e6";
+  //  }
+  //   else if (NI.GetDeg() < (highest/8)*4)
+  //  {
+  //    Colors.AddDat(NI.GetId()) = "#9ebcda";
+  //  }
+  //  else if (NI.GetDeg() < (highest/8)*5)
+  //  {
+  //    Colors.AddDat(NI.GetId()) = "#8c96c6";
+  //  }
+  //  else if (NI.GetDeg() < (highest/8)*6)
+  //  {
+  //    Colors.AddDat(NI.GetId()) = "#8c6bb1";
+  //  }
+  //  else if (NI.GetDeg() < (highest/8)*7)
+  //  {
+  //    Colors.AddDat(NI.GetId()) = "#88419d";
+  //  }
+  //  else
+  //  {
+  //    Colors.AddDat(NI.GetId()) = "#6e016b";
+  //  }   
   }
   cout << "Colours set" << endl;
-  // G, gvlNeato ,"gviz_plot.png", "Reeee", Name
-  TSnap::DrawGViz<PNEANet>(G, gvlNeato ,"coloured.png", "Reeee",false,Colors,Name);
+
+  string temp = ".png";
+  TStr path = "Graphs/";
+  path+= fileName.CStr();
+  path += temp.c_str();
+  printf("%s \n",path.CStr());
+  TSnap::DrawGViz<PNEANet>(G, gvlNeato ,path.CStr(), fileName,false,Colors,Name);
   
   cout << "Done" << endl;
   return 0;
@@ -446,6 +587,9 @@ int plotGraph(PNEANet G)
 
 
 
+
+
+// Matrix
 vector< vector<int> > initializeVector()
 {
 	vector<vector<int> > rawr;
@@ -565,7 +709,4 @@ void Print(vector<vector<int> > uwu)
   } 
 }
 
-int getCentrality(PNEANet G)
-{
-  
-}
+

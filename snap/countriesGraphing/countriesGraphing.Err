@@ -8,3 +8,78 @@ Execution stopped: !IsNode(NId) [Reason:'NodeId 1375445708 already exists'], fil
 Sat Feb 29 23:29:21 2020
 Execution stopped: IsNode(SrcNId) && IsNode(DstNId) [Reason:'1498028028 or 1375445708 not a node.'], file ../../snap-core/network.h, line 820
 --------
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Mon Mar 16 02:10:25 2020
+Execution stopped: Edge, file network.cpp, line 723
+--------
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Mon Mar 16 11:48:57 2020
+Execution stopped: Edge, file network.cpp, line 723
+--------
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Mon Mar 16 11:59:21 2020
+Execution stopped: Edge, file network.cpp, line 723
+--------
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Mon Mar 16 12:02:58 2020
+Execution stopped: Edge, file network.cpp, line 723
+--------
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Mon Mar 16 12:04:34 2020
+Execution stopped: Edge, file network.cpp, line 723
+--------
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Mon Mar 16 12:05:13 2020
+Execution stopped: Edge, file network.cpp, line 723
+--------
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Mon Mar 16 12:05:58 2020
+Execution stopped: Edge, file network.cpp, line 723
+--------
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Mon Mar 16 12:06:22 2020
+Execution stopped: Edge, file network.cpp, line 723
+--------
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Mon Mar 16 12:07:09 2020
+Execution stopped: Edge, file network.cpp, line 723
+--------
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Mon Mar 16 12:08:22 2020
+Execution stopped: Edge, file network.cpp, line 723
+--------
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Mon Mar 16 12:23:44 2020
+Execution stopped: Edge, file network.cpp, line 723
+--------
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Mon Mar 16 12:25:06 2020
+Execution stopped: Edge, file network.cpp, line 723
+--------
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Mon Mar 16 12:28:14 2020
+Execution stopped: Edge, file network.cpp, line 723
+--------
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Mon Mar 16 12:28:49 2020
+Execution stopped: Edge, file network.cpp, line 723
+--------
+--------
+/home/brandon/Snap-5.0/examples/countriesGraphing/countriesGraphing.Err
+Mon Mar 16 12:30:47 2020
+Execution stopped: Edge, file network.cpp, line 723
+--------
