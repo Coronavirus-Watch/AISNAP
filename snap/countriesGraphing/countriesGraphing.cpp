@@ -1,7 +1,5 @@
 #include "DrawGViz.hpp"
 #include "stdafx.h"
-#include "data.hpp"
-// #include "parseJson.cpp"
 #include <iostream>
 #include <list>
 #include <string>
@@ -13,7 +11,6 @@
 
 using namespace std;
 
-typedef TInt TEdgeData;
 
 typedef struct route
 {
@@ -39,60 +36,99 @@ typedef struct Day {
 
 vector<Day> days;
 
+typedef struct CoronaGraph {
+  PNEANet network;
+  string date;
+} CoronaGraph;
 
-vector<Day> addVirus();
-int printVirus(vector<Day> virus);
-void graphVirus(Day day,PNEANet G);
 
-PNGraph genRandomGraph(PNGraph G, int nodes, int edges);
+
+PNEANet initNetwork();
+
 int plotGraph(PNEANet G,TStr fileName);
+
+// Basic traversal
 int traverseGraph(PNEANet G);
 int traverseNodes(PNEANet G);
 int traverseEdges(PNEANet G);
-int getCentrality(PNEANet G);
 
-// TNodeEDatNet<int,int> reee;
 
+
+
+// Creating a visual matrix, mathematical display
 vector< vector<int> > initializeVector();
 vector< vector<int> > ChangeArry(PNEANet p,vector<vector<int> > owo);
 void Print(vector<vector<int> > uwu);
 
 
+// Getting routes data
 vector<Route> getInput();
 int addRoute(PNEANet graph, std::vector<Route> list);
 int hashFunction(string str);
 
+
+// Getting virus data
+vector<Day> addVirus();
+int printVirus(vector<Day> virus);
+void graphVirus(Day day,PNEANet G);
+bool printGraph = true;
+
+
+int quarantineNodes(PNEANet G);
+int nodeRemoval(PNEANet G , TNEANet::TNodeI C);
+
+
 int main(int argc, char* argv[]) 
 {
   vector<Route> list =  getInput();
-  PNEANet networkG = PNEANet::New();
+  PNEANet networkG = initNetwork();
 
-  networkG->AddStrAttrN("CountryName","country");
-  networkG->AddIntAttrN("Cases",0);
-  networkG->AddIntAttrE("Flights",0);
 
   addRoute(networkG,list);
-  //
+  
+
   vector<Day> days;
-  // int fileReturn = importFiles(days);
-  // cout << "File error (0 indicates success): " << fileReturn << endl;
+  days = addVirus();
+  vector<CoronaGraph> timeline;
+  CoronaGraph   fixedGraph;
 
 
 
-days = addVirus();
-cout << "Reeee" << endl;
-// printVirus(days);
-graphVirus(days.at(40),networkG);
-cout << "This is the end" << endl;
-  // traverseGraph(networkG);
-  // plotGraph(networkG);
-  // vector <vector<int> > matrix;
-  // matrix = initializeVector();
-  // matrix = ChangeArry(networkG,matrix);
+  for (int i = 0; i < days.size(); i++)
+  {
+    fixedGraph.network = networkG;
+    fixedGraph.date = days.at(i).date;
+    graphVirus(days.at(i),fixedGraph.network);
+    timeline.push_back(fixedGraph);
+  }
+  
+
+  
+  // plotGraph(timeline.at(51).network,"Fragmented");
+  // printVirus(days);
+  // graphVirus(days.at(40),networkG);
+  cout << "This is the end" << endl;
+  
+  
+    // vector <vector<int> > matrix;
+    // matrix = initializeVector();
+    // matrix = ChangeArry(networkG,matrix);
 
 }
 
+PNEANet initNetwork()
+{
+  PNEANet net = PNEANet::New();
 
+  net->AddStrAttrN("CountryName","country");
+  net->AddIntAttrN("Cases",0);
+  net->AddIntAttrE("Flights",0);
+
+  return net;
+}
+
+
+//Flights
 vector<Route> getInput()
 {
     //Opening filestream
@@ -160,6 +196,12 @@ vector<Route> getInput()
         }
 }
 
+int hashFunction(string str) {
+  tr1::hash<string> hashObj;
+  // cout << (int)hashObj(str) <<endl;
+  return (int) hashObj(str);
+}
+
 int addRoute(PNEANet graph, std::vector<Route> list)
 {
 	for (int i = 0; i < list.size(); i++)
@@ -207,6 +249,8 @@ int addRoute(PNEANet graph, std::vector<Route> list)
 }
 
 
+
+// Corona
 void graphVirus(Day day,PNEANet G)
 {
   
@@ -220,10 +264,16 @@ void graphVirus(Day day,PNEANet G)
     }
     
   }
-
  
-  plotGraph(G,(day.date).c_str());
-
+ if (printGraph == true)
+ {
+  TStr temp = day.date.c_str();
+  plotGraph(G,temp);
+  quarantineNodes(G);
+  temp += "_Fragmented";
+  plotGraph(G,temp);
+ }
+ 
   
 }
 
@@ -284,6 +334,8 @@ vector<Day> addVirus()
               cout << "Gaysssssss" << endl;
               currDay.countries.push_back(r1);
               currDay.date = r1.date;
+              currDay.date[2] = '_';
+              currDay.date[5] = '_';
               currdate = r1.date;
               count++;
             }
@@ -294,12 +346,16 @@ vector<Day> addVirus()
               currDay.countries.clear();
               currDay.countries.push_back(r1);
               currDay.date = r1.date;
+              currDay.date[2] = '_';
+              currDay.date[5] = '_';
               count++;
             }
             else
             {
               currDay.countries.push_back(r1);
               currDay.date = r1.date;
+              currDay.date[2] = '_';
+              currDay.date[5] = '_';
             }
             
           }
@@ -324,34 +380,73 @@ vector<Day> addVirus()
 int printVirus(vector<Day> virus)
 {
   int len = virus.size();
-  len-=2;
+  
   cout << "This is the size now: " << len << endl;
-  for (int i = 0; i < len-10; i++)
+  for (int i = 0; i < len; i++)
   {
     cout << "Date: " << virus.at(i).date << endl;
-    // for (int j = 0; j < virus.at(i).countries.size(); j++)
-    // {
-    //   cout << virus.at(i).countries.at(j).name << "," <<virus.at(i).countries.at(j).cases << "," << virus.at(i).countries.at(j).deaths << "," << virus.at(i).countries.at(j).recovered << endl;
-    // }
+    for (int j = 0; j < virus.at(i).countries.size(); j++)
+    {
+      cout << virus.at(i).countries.at(j).name << "," <<virus.at(i).countries.at(j).cases << "," << virus.at(i).countries.at(j).deaths << "," << virus.at(i).countries.at(j).recovered << endl;
+    }
     cout << "-------------------------------------------------------------------------------------" << endl;
     
   }
+  return 0;
   
 }
 
-int hashFunction(string str) {
-  tr1::hash<string> hashObj;
-  // cout << (int)hashObj(str) <<endl;
-  return (int) hashObj(str);
-}
-
-
-PNGraph genRandomGraph(PNGraph G, int nodes, int edges)
+int quarantineNodes(PNEANet G)
 {
-  G = TSnap::GenRndGnm<PNGraph>(nodes, edges);
-  cout << "Generated" << endl;
-  return G;
+  for (TNEANet::TNodeI NI = G->BegNI(); NI < G->EndNI(); NI++)
+  {
+    if (G->GetIntAttrDatN(NI,"Cases") >0)
+      {
+          TNEANet::TNodeI currNode;
+          for (int i = 0;  i < NI.GetInDeg(); i++)
+        {
+          currNode = G->GetNI(NI.GetOutNId(i));
+          printf("The degrees of this node are %d|%d\n", currNode.GetInDeg(),currNode.GetOutDeg());
+          //  std::cout << " The current node is: " <<currNode.GetId() << endl;
+          nodeRemoval(G,currNode);
+        }
+      }
+  }
+  return 0;
 }
+
+int nodeRemoval(PNEANet G , TNEANet::TNodeI C)
+{
+  std::cout << "The current node is: " <<C.GetId() << "(";
+  printf("%s)\n",G->GetStrAttrDatN(C.GetId(),"CountryName").CStr());
+  TNEANet::TNodeI checkNode;
+  for (int i = 0;  i < C.GetInDeg(); i++)
+       {
+         if(G->GetIntAttrDatN(C.GetInNId(i),"Cases")==0)
+         {
+           checkNode = G->GetNI(C.GetInNId(i));
+          std::cout << "\tThe Extention node is: " <<checkNode.GetId();
+          printf("(%s)\n",G->GetStrAttrDatN(checkNode.GetId(),"CountryName").CStr());
+            if (G->IsEdge(checkNode.GetId(),C.GetId()))
+            {
+              G->DelEdge(checkNode.GetId(),C.GetId());
+            }
+            if (G->IsEdge(C.GetId(),checkNode.GetId()))
+            {
+              G->DelEdge(C.GetId(),checkNode.GetId());
+            }
+            
+            
+            
+         }
+       }
+  return 0;
+}
+
+
+
+
+
 
 int traverseGraph(PNEANet G)
 {
@@ -364,7 +459,6 @@ int traverseGraph(PNEANet G)
   traverseEdges(G);
   return 0;
 }
-
 
 int traverseNodes(PNEANet G)
 {
@@ -479,10 +573,13 @@ int plotGraph(PNEANet G, TStr fileName)
   //  }   
   }
   cout << "Colours set" << endl;
-  // G, gvlNeato ,"gviz_plot.png", "Reeee", Name
+
   string temp = ".png";
-  // TStr path = fileName.CStr() + temp.c_str();
-  TSnap::DrawGViz<PNEANet>(G, gvlNeato ,"output.png", fileName,false,Colors,Name);
+  TStr path = "Graphs/";
+  path+= fileName.CStr();
+  path += temp.c_str();
+  printf("%s \n",path.CStr());
+  TSnap::DrawGViz<PNEANet>(G, gvlNeato ,path.CStr(), fileName,false,Colors,Name);
   
   cout << "Done" << endl;
   return 0;
@@ -490,6 +587,9 @@ int plotGraph(PNEANet G, TStr fileName)
 
 
 
+
+
+// Matrix
 vector< vector<int> > initializeVector()
 {
 	vector<vector<int> > rawr;
