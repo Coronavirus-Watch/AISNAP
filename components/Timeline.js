@@ -33,7 +33,7 @@ class Timeline {
 
 	async retrieveDay(index) {
 		// console.log('Geojson' + JSON.stringify(this.geojson[index], null, 2));
-		console.log(await this.days[index].geojson);
+		// console.log('\n\n\n\n' + index + '\n\n\n\n\n');
 		return await this.days[index].geojson;
 	}
 
@@ -49,7 +49,7 @@ class Timeline {
 					country.cases,
 					country.deaths,
 					country.recovered,
-					country.name,
+					country.name
 				);
 			});
 
@@ -59,7 +59,6 @@ class Timeline {
 			this.days.push(newDay);
 			// newDay.print();
 		});
-		
 	}
 }
 

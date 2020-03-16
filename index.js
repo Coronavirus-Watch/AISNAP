@@ -12,7 +12,6 @@ const express = require('express');
 const port = process.env.PORT || 3000;
 // Classes
 const Timeline = require('./components/Timeline');
-const Routes = require('./components/Routes');
 
 const app = express();
 
@@ -36,6 +35,7 @@ const Day = require('./components/Day');
 let scheduler = schedule.scheduleJob('* 1 * * *', function(date) {
 	sync(date);
 });
+// sync(new Date());
 const timeline = new Timeline();
 
 async function initTimeline() {
@@ -54,9 +54,15 @@ initTimeline();
 // Timeline: [Day]
 
 // API Endpoint for certain Day in Timeline
-app.get('/:day', async (req, res) => {
+app.get('/day/:day', async (req, res) => {
 	// console.log(await timeline.retrieveDay(req.params.day));
 	res.send(await timeline.retrieveDay(req.params.day));
+});
+
+// API Endpoint for range in Timeline
+app.get('/range', (req, res) => {
+	// console.log(await timeline.retrieveDay(req.params.day));
+	res.send({ range: timeline.days.length });
 });
 
 // Updates and formats coronavirus dataset
@@ -67,8 +73,10 @@ async function sync(date) {
 	// parses downloaded files into JSON
 	let days = await parseDownload(files);
 	// exports parsed data to json file
+	console.log('exporting to json');
 	exportJson(days, exportPath, '.json');
 	// exports parsed data to csv file
+	console.log('exporting to csv');
 	exportCsv(days, exportPath, '.csv');
 	return await days;
 }
