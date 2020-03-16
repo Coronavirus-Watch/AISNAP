@@ -36,6 +36,7 @@ int traverseGraph(PNEANet G);
 int traverseNodes(PNEANet G);
 int traverseEdges(PNEANet G);
 int saveGraph(TNodeEDatNet<TNodeData, TEdgeData> &G);
+int getCentrality(PNEANet G);
 
 // TNodeEDatNet<int,int> reee;
 
@@ -69,13 +70,13 @@ int main(int argc, char* argv[])
   //   cout << "1st:" <<  i1 << " " << i1.length() << " & 2nd:" << i2 << " " << i2.length() << endl;
 
   traverseGraph(networkG);
-  // plotGraph(networkG);
+  plotGraph(networkG);
   // saveGraph(variableGraph);
   // TSnap::PrintInfo(variableGraph);
   
-  vector <vector<int> > matrix;
-  matrix = initializeVector();
-  matrix = ChangeArry(networkG,matrix);
+  // vector <vector<int> > matrix;
+  // matrix = initializeVector();
+  // matrix = ChangeArry(networkG,matrix);
   // Print(matrix);
 
 }
@@ -127,7 +128,7 @@ vector<Route> getInput()
             r1.destinationAirport = temp;
             // cout << temp +",";
             getline(s_stream, temp, ',');
-            r1.destinationCountry = temp.substr(0,temp.length()-1);
+            r1.destinationCountry = temp;
             // cout << temp << endl;
 
             inputList.push_back(r1);
@@ -400,7 +401,7 @@ int plotGraph(PNEANet G)
   }
 
   TIntStrH Colors;
-  for (TNEANet::TNodeI NI = G->BegNI()++; NI < G->EndNI(); NI++)
+  for (TNEANet::TNodeI NI = G->BegNI(); NI < G->EndNI(); NI++)
   {
    if (NI.GetDeg() < (highest/8))
    {
@@ -564,3 +565,7 @@ void Print(vector<vector<int> > uwu)
   } 
 }
 
+int getCentrality(PNEANet G)
+{
+  
+}

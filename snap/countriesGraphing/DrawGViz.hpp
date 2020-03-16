@@ -21,7 +21,7 @@ void SaveGViz(const PGraph& Graph, const TStr& OutFNm, const TStr& Desc, const b
   FILE *F = fopen(OutFNm.CStr(), "wt");
   if (! Desc.Empty()) fprintf(F, "/*****\n%s\n*****/\n\n", Desc.CStr());
   if (IsDir) { fprintf(F, "digraph G {\n"); } else { fprintf(F, "graph G {\n"); }
-  fprintf(F, "  graph [splines=false overlap=false]\n"); //size=\"12,10\" ratio=fill
+  fprintf(F, "  graph [splines=true overlap=false]\n"); //size=\"12,10\" ratio=fill
   // node  [width=0.3, height=0.3, label=\"\", style=filled, color=black]
   // node  [shape=box, width=0.3, height=0.3, label=\"\", style=filled, fillcolor=red]
   fprintf(F, "  node  [shape=ellipse, width=0.3, height=0.3%s]\n", NodeLabels?"":", label=\"\"");
