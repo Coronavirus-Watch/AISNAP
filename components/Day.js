@@ -1,27 +1,18 @@
 const Country = require('./Country');
-const fetch = require('node-fetch');
-const fs = require('fs');
 
 class Day {
-	constructor(date) {
-		// Stores the date
-		this.date = date;
+	constructor() {
 		// Stores each individual country
 		this.countries = [];
 		// Stores geojson
 		this.geojson = [];
-		this.fetchCoordinates();
+		// this.fetchCoordinates();
 	}
 
-	// Basically its putting every days stats into every Day
-	// would it not be better to do the fetching/parsing in Timeline
-	// Do you mean for the coordinates which is probably the case
-	// yeah we fetch the countries.txt in the timeline class
-	// That's fine, you can work on that
-
 	// Adds data from a region
-	addData(cases, deaths, recovered, countryName) {
+	addData(cases, deaths, recovered, countryName, date, population, coordinates, continent) {
 		let index = this.searchForCountry(countryName);
+		this.date = date;
 		// Checks if a country is in the array
 		if (index > -1) {
 			this.countries[index].additionalData(cases, deaths, recovered);
@@ -30,42 +21,14 @@ class Day {
 				cases,
 				deaths,
 				recovered,
-				countryName
+				countryName,
+				population, 
+				[coordinates[1], coordinates[0]],
+				continent
 			);
 		}
 	}
-
-	async fetchCoordinates() {
-		// retrieves data from countries file
-		const response = await fs.readFileSync('./data/countries.txt', 'utf8');
-		await this.parseCoordinates(await response);
-	}
-
-	async parseCoordinates(text) {
-		// splits the text into lines in the file
-		const lines = text.split('\n');
-		for (let i = 0; i < lines.length; i++) {
-			// Extracts each line
-			const countryLine = lines[i].split(',');
-			// Adds to the markers Object with respective lat, lon based on the country
-			// console.log(countryLine);
-			if (countryLine[1] != undefined && countryLine[2] != undefined) {
-				const coordinates = [
-					parseFloat(countryLine[2]),
-					parseFloat(countryLine[1])
-				];
-				try {
-					this.countries[countryLine[3].trim()].addCoordinates(
-						coordinates
-					);
-				} catch (e) {
-					// These are countries without any cases so its fine
-					// console.log(countryLine[3].trim() + " apparently doesn't exist");
-				}
-			}
-		}
-	}
-
+	
 	parseGeoJSON() {
 		let tempArray = [];
 		if (this.countries) {
@@ -103,6 +66,7 @@ class Day {
 
 	// Checks if a country is on the array
 	searchForCountry(countryName) {
+		console.log(this.countries.length);
 		for (let i = 0; i < this.countries.length; i++) {
 			const element = this.countries[i];
 			if (element.name === countryName) {
