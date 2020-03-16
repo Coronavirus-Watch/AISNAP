@@ -1,7 +1,3 @@
-import { Routes } from './Routes.js';
-import { Timeline } from './Timeline.js';
-import { Countries } from './Countries.js';
-
 /* Useful resources:
   https://dev.to/wuz/building-a-country-highlighting-tool-with-mapbox-2kbh
   https://bl.ocks.org/danswick/fc56f37c10d40be62e4feac5984250d2
@@ -24,7 +20,7 @@ const routesCheck = document.querySelector('#routes');
 const markersCheck = document.querySelector('#markers');
 const radioBtns = document.querySelectorAll('input[type=radio]');
 const dateSlider = document.getElementById('dateSlider');
-const controller = document.querySelector(".controller");
+const controller = document.querySelector('.controller');
 const dateDisplayed = document.getElementById('dateDisplayed');
 dateSlider.max = 100;
 
@@ -35,10 +31,7 @@ let toggledLayers = {
 	checkedRadio: 'cases'
 };
 
-// Instances of Classes
-let countries = new Countries();
-let routes = new Routes();
-let timeline = new Timeline();
+let currentDay = {};
 
 // Adds EventListeners to checkboxes for when their checked value changes
 routesCheck.addEventListener('change', e => {
@@ -60,56 +53,78 @@ radioBtns.forEach(btn => {
 
 // when map first loads on webpage
 map.on('load', async () => {
-
-	await timeline.init();
-	await timeline.parseTimeline();
+	fetchRange();
+	await fetchDay(0);
 
 	// sets slider range
-	dateSlider.max = await timeline.getRange();
-
+	// const rangeRes = await fetch('/range').then(res => res.text);
+	// console.log(rangeRes);
 	// Adds routes to layers
 	addLayers();
 	// displays map
 	displayMap(toggledLayers);
 	// updates the map with defaults
 	updateMap(toggledLayers);
-	controller.style.display = "block";
+	controller.style.display = 'block';
 });
+
+function setMax(newMax) {
+	document.querySelector('#dateSlider').max = newMax.range - 1;
+}
+
+async function fetchDay(day) {
+	// fetches timeline
+	await fetch(`/day/${day}`)
+		.then(res => {
+			return res.json();
+		})
+		.then(res => {
+			currentDay = res;
+		});
+}
+
+async function fetchRange() {
+	await fetch('/range')
+		.then(res => {
+			return res.json();
+		})
+		.then(setMax);
+}
 
 // Adds Layers to Map
 function addLayers() {
 	// Adds new sources for routes, countries and timeline
-	map.addSource('route', {
-		type: 'geojson',
-		data: {
-			type: 'FeatureCollection',
-			features: timeline.routes.geojson
-		}
-	});
-	map.addSource('country', {
-		type: 'geojson',
-		data: {
-			type: 'FeatureCollection',
-			features: timeline.countriesInstance.geojson
-		}
-	});
-
+	// map.addSource('route', {
+	// 	type: 'geojson',
+	// 	data: {
+	// 		type: 'FeatureCollection',
+	// 		features: timeline.routes.geojson
+	// 	}
+	// });
+	// map.addSource('country', {
+	// 	type: 'geojson',
+	// 	data: {
+	// 		type: 'FeatureCollection',
+	// 		features: timeline.countriesInstance.geojson
+	// 	}
+	// });
+	// console.log('currentDay', currentDay);
 	map.addSource('timeline', {
 		type: 'geojson',
 		data: {
 			type: 'FeatureCollection',
-			features: timeline.currentDay
+			features: currentDay
 		}
 	});
 
-// Defines new layers for map
+	// Defines new layers for map
 
 	map.addLayer({
 		id: 'cases-circles',
 		type: 'circle',
 		source: 'timeline',
 		paint: {
-		'circle-radius': ['*', ['log10', ['number', ['get', 'cases']]], 20],
+			'circle-radius': ['*', ['log10', ['number', ['get', 'cases']]], 20],
 			'circle-opacity': 0.4,
 			'circle-color': 'orange'
 		}
@@ -120,7 +135,11 @@ function addLayers() {
 		type: 'circle',
 		source: 'timeline',
 		paint: {
-			'circle-radius': ['*', ['log10', ['number', ['get', 'deaths']]], 20],
+			'circle-radius': [
+				'*',
+				['log10', ['number', ['get', 'deaths']]],
+				20
+			],
 			'circle-opacity': 0.4,
 			'circle-color': 'red'
 		}
@@ -131,13 +150,17 @@ function addLayers() {
 		type: 'circle',
 		source: 'timeline',
 		paint: {
-			'circle-radius': ['*', ['log10', ['number', ['get', 'recovered']]], 20],
+			'circle-radius': [
+				'*',
+				['log10', ['number', ['get', 'recovered']]],
+				20
+			],
 			'circle-opacity': 0.4,
 			'circle-color': 'green'
 		}
 	});
 
-// Will only display labels if the value of statistic is greater than 0
+	// Will only display labels if the value of statistic is greater than 0
 	map.addLayer({
 		id: 'recovered-labels',
 		type: 'symbol',
@@ -147,7 +170,7 @@ function addLayers() {
 		},
 		layout: {
 			'text-field': ['to-string', ['get', 'recovered']],
-			'text-size': ["case", ['>', ['get', 'recovered'],0], 12, 0],
+			'text-size': ['case', ['>', ['get', 'recovered'], 0], 12, 0],
 			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
 		}
 	});
@@ -160,7 +183,7 @@ function addLayers() {
 		},
 		layout: {
 			'text-field': ['to-string', ['get', 'cases']],
-			'text-size': ["case", ['>', ['get', 'cases'],0], 12, 0],
+			'text-size': ['case', ['>', ['get', 'cases'], 0], 12, 0],
 			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
 		}
 	});
@@ -173,42 +196,42 @@ function addLayers() {
 		},
 		layout: {
 			'text-field': ['to-string', ['get', 'deaths']],
-			'text-size': ["case", ['>', ['get', 'deaths'],0], 12, 0],
+			'text-size': ['case', ['>', ['get', 'deaths'], 0], 12, 0],
 			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
 		}
 	});
 
-	map.addLayer({
-		id: 'route',
-		type: 'line',
-		source: 'route',
-		layout: {
-			'line-cap': 'square',
-			visibility: 'none'
-		},
-		paint: {
-			'line-color': '#777',
-			'line-width': 1,
-			'line-opacity': 0.05
-		}
-	});
+	// map.addLayer({
+	// 	id: 'route',
+	// 	type: 'line',
+	// 	source: 'route',
+	// 	layout: {
+	// 		'line-cap': 'square',
+	// 		visibility: 'none'
+	// 	},
+	// 	paint: {
+	// 		'line-color': '#777',
+	// 		'line-width': 1,
+	// 		'line-opacity': 0.05
+	// 	}
+	// });
 
-	map.addLayer({
-		id: 'country',
-		type: 'symbol',
-		source: 'country',
-		layout: {
-			'icon-image': ['concat', ['get', 'icon'], '-15'],
-			'text-field': ['get', 'title'],
-			'text-font': ['Open Sans Semibold'],
-			'text-offset': [0, 0.6],
-			'text-anchor': 'top',
-			visibility: 'none'
-		},
-		paint: {
-			'text-color': 'white'
-		}
-	});
+	// map.addLayer({
+	// 	id: 'country',
+	// 	type: 'symbol',
+	// 	source: 'country',
+	// 	layout: {
+	// 		'icon-image': ['concat', ['get', 'icon'], '-15'],
+	// 		'text-field': ['get', 'title'],
+	// 		'text-font': ['Open Sans Semibold'],
+	// 		'text-offset': [0, 0.6],
+	// 		'text-anchor': 'top',
+	// 		visibility: 'none'
+	// 	},
+	// 	paint: {
+	// 		'text-color': 'white'
+	// 	}
+	// });
 }
 
 // Displays the map
@@ -229,16 +252,16 @@ function play() {
 // Updates the map with the correct visible layers
 function updateMap(toggledLayers) {
 	// updates map with selected layers
-	if (toggledLayers.routesVisible == true) {
-		map.setLayoutProperty('route', 'visibility', 'visible');
-	} else {
-		map.setLayoutProperty('route', 'visibility', 'none');
-	}
-	if (toggledLayers.markersVisible == true) {
-		map.setLayoutProperty('country', 'visibility', 'visible');
-	} else {
-		map.setLayoutProperty('country', 'visibility', 'none');
-	}
+	// if (toggledLayers.routesVisible == true) {
+	// 	map.setLayoutProperty('route', 'visibility', 'visible');
+	// } else {
+	// 	map.setLayoutProperty('route', 'visibility', 'none');
+	// }
+	// if (toggledLayers.markersVisible == true) {
+	// 	map.setLayoutProperty('country', 'visibility', 'visible');
+	// } else {
+	// 	map.setLayoutProperty('country', 'visibility', 'none');
+	// }
 
 	// updates layout properties depending on the checked radio
 	switch (toggledLayers.checkedRadio) {
@@ -273,17 +296,18 @@ dateSlider.addEventListener('input', async function(e) {
 	let date = new Date(2020, 0, 22);
 	var day = 60 * 60 * 24 * 1000;
 
-	// updates GUI date, showing the current day 
+	// updates GUI date, showing the current day
 	date = new Date(date.getTime() + this.value * day);
 	dateDisplayed.innerHTML = formatDate(date);
 
 	// updates currentDay array from timeline instance with slider value passed in
-	timeline.currentDay = await timeline.retrieveDay(e.target.value);
-	
+	// const currentDay = await fetchDay(e.target.value);
+	await fetchDay(e.target.value);
+
 	// updates the geoJSON for the selected day in slider
 	map.getSource('timeline').setData({
 		type: 'FeatureCollection',
-		features: timeline.currentDay
+		features: currentDay
 	});
 
 	// update map accordingly
