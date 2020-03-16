@@ -66,7 +66,6 @@ class Day {
 
 	// Checks if a country is on the array
 	searchForCountry(countryName) {
-		console.log(this.countries.length);
 		for (let i = 0; i < this.countries.length; i++) {
 			const element = this.countries[i];
 			if (element.name === countryName) {
