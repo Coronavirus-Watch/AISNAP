@@ -1,12 +1,13 @@
 const Country = require('./Country');
 
 class Day {
-	constructor() {
+	constructor(precition = false) {
 		// Stores each individual country
 		this.countries = [];
 		// Stores geojson
 		this.geojson = [];
 		// this.fetchCoordinates();
+		this.prediction = prediction;
 	}
 
 	// Adds data from a region
