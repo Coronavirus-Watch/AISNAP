@@ -1,6 +1,12 @@
-// Recommend you join our Discord call and I'll explain what's going on here
-
 const axios = require('axios');
+
+// Constants used to estimate case numbers
+// Credits to: Tomas Pueyo
+// Source: https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca
+const ASSUMED_DEATH_RATE = 0.874;
+const TRAVEL_RATE = 0.001;
+const DOUBLING_TIME = 6.18;
+const DEATH_TIME = 17.33;
 
 class Country {
 	constructor(
@@ -25,6 +31,21 @@ class Country {
 		this.cases = this.cases + parseInt(cases);
 		this.deaths = this.deaths + parseInt(deaths);
 		this.recovered = this.recovered + parseInt(recovered);
+	}
+
+	calculate(yesterdayActive) {
+		// Active confirmed cases
+		this.active = this.cases - this.deaths - this.recovered;
+		// Case fatality ratio
+		this.cfr = this.deaths / this.cases;
+		// Confirmed cases per 1 million people
+		this.cpm = this.cases / this.population * 1000000;
+		// Deaths per 1 million people
+		this.dpm = this.deaths / this.population * 1000000;
+		// Daily Reproductive Rate
+		this.drr = this.active / yesterdayActive;
+		// Estimated Cases
+		this.estimated = this.cfr / ASSUMED_DEATH_RATE * this.active;
 	}
 
 	print() {
