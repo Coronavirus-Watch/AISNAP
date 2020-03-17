@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"dependencies": {
 		"axios": "^0.19.2",
+		"cors": "^2.8.5",
 		"express": "^4.17.1",
 		"netlify-lambda": "^1.6.3",
 		"node-fetch": "^2.6.0",
@@ -15,7 +16,8 @@
 	},
 	"devDependencies": {},
 	"scripts": {
-		"serve": "node index.js"
+		"start": "./node_modules/.bin/netlify-lambda serve src",
+		"build": "./node_modules/.bin/netlify-lambda build src"
 	},
 	"repository": {
 		"type": "git",

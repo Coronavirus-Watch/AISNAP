@@ -358,3 +358,8 @@ AIParsing/.vscode/launch.json
 AIParsing/.vscode/tasks.json
 
 # TMP files
+
+# Local Netlify folder
+.netlify
+
+functions/

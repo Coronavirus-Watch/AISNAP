@@ -9,15 +9,17 @@ const fs = require('fs');
 const rimraf = require('rimraf');
 const schedule = require('node-schedule');
 const express = require('express');
+const serverless = require('serverless-http');
+const path = require('path');
+// https://ai-coronavirus/.netlify/functions/api/range
+// https://ai-coronavirus/.netlify/functions/api/day/0
+
 const port = process.env.PORT || 3000;
 // Classes
-const Timeline = require('./components/Timeline');
+const Timeline = require('../components/Timeline');
 
 const app = express();
-
-app.listen(port, () => console.log('listening at 3000'));
-app.use(express.static('public'));
-
+const router = express.Router();
 // Link to source data
 const source =
 	'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports';
@@ -29,27 +31,34 @@ const tempPath = './data/tmp';
 const exportPath = './data/';
 
 // Stores data for a Day
-const Day = require('./components/Day');
+const Day = require('../components/Day');
 
 // Updates and formats coronavirus dataset every day at 01:00
 let scheduler = schedule.scheduleJob('* 1 * * *', function(date) {
 	sync(date);
 });
-sync(new Date());
 
 const timeline = new Timeline();
 
 // API Endpoint for certain Day in Timeline
-app.get('/day/:day', async (req, res) => {
-	// console.log(await timeline.retrieveDay(req.params.day));
+
+router.get('/day/:day', async (req, res) => {
 	res.send(await timeline.retrieveDay(req.params.day));
 });
 
 // API Endpoint for range in Timeline
-app.get('/range', (req, res) => {
+router.get('/range', (req, res) => {
 	// console.log(await timeline.retrieveDay(req.params.day));
 	res.send({ range: timeline.days.length });
 });
+// There's definetly something wrong with how we are using countries.csv
+// I think it keeps appending to the file instead of replacing it
+// hmm, maybe the writing method or whatever you call it
+// w+ might not be overwritting but appending instead
+// I'll try and fix that on my local machine
+// okay, sure
+app.use(cors());
+app.use('/.netlify/functions/api', router);
 
 // Updates and formats coronavirus dataset
 async function sync(date) {
@@ -64,10 +73,10 @@ async function sync(date) {
 	exportJson(days, exportPath, 'timeline.json');
 	// exports parsed data to csv file
 	console.log('exporting to csv');
-	exportCsv(days, exportPath, 'timeline.csv');
+	// exportCsv(days, exportPath, 'timeline.csv');
 	// exports parsed data to countries csv file
 	console.log('exporting to countries csv');
-	exportCountryCsv(days, exportPath, 'countries.csv');
+	// exportCountryCsv(days, exportPath, 'countries.csv');
 	return await days;
 }
 
@@ -214,7 +223,7 @@ function exportCountryCsv(days, exportPath, extension) {
 	}
 
 	// Creating a file descriptor to open the file for writing
-	const fd = fs.openSync(exportPath + extension, 'w');
+	const fd = fs.openSync(exportPath + extension, 'w+');
 
 	// writes entire JSON to file
 	fs.writeFile(exportPath + extension, output, err => {
@@ -236,3 +245,4 @@ function getDownloadDate(date) {
 	return dateVar;
 }
 
+module.exports.handler = serverless(app);
