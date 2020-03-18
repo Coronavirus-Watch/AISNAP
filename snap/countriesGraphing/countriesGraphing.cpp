@@ -9,8 +9,8 @@
 #include <network.h>
 #include <vector>
 
-using namespace std;
 
+using namespace std;
 
 typedef struct route
 {
@@ -76,6 +76,8 @@ bool printGraph = false;
 
 int quarantineNodes(PNEANet G);
 int nodeRemoval(PNEANet G , TNEANet::TNodeI C);
+int nodeRemoval2(PNEANet G , TNEANet::TNodeI C);
+
 
 
 int main(int argc, char* argv[]) 
@@ -106,7 +108,6 @@ int main(int argc, char* argv[])
   
   // plotGraph(timeline.at(51).network,"Un-Fragmented");
     quarantineNodes(timeline.at(51).network);
-    quarantineNodes(timeline.at(51).network);
    plotGraph(timeline.at(51).network,"Fragmented");
   // printVirus(days);
   // graphVirus(days.at(40),networkG);
@@ -122,7 +123,7 @@ int main(int argc, char* argv[])
 PNEANet initNetwork()
 {
   PNEANet net = PNEANet::New();
-
+  
   net->AddStrAttrN("CountryName","country");
   net->AddIntAttrN("Cases",0);
   net->AddIntAttrN("Quarantined",0);
@@ -413,6 +414,8 @@ int quarantineNodes(PNEANet G)
           printf("The degrees of this node are %d|%d\n", currNode.GetInDeg(),currNode.GetOutDeg());
           //  std::cout << " The current node is: " <<currNode.GetId() << endl;
           nodeRemoval(G,currNode);
+          // nodeRemoval(G,currNode);
+          nodeRemoval2(G,currNode);
         }
       }
   }
@@ -460,7 +463,47 @@ int nodeRemoval(PNEANet G , TNEANet::TNodeI C)
        }
   return 0;
 }
-
+int nodeRemoval2(PNEANet G , TNEANet::TNodeI C)
+{
+  std::cout << "The current node is: " <<C.GetId() << "(";
+  printf("%s)\n",G->GetStrAttrDatN(C.GetId(),"CountryName").CStr());
+  TNEANet::TNodeI checkNode;
+  for (int i = 0;  i < C.GetOutDeg(); i++)
+       {
+         if(G->GetIntAttrDatN(C.GetOutNId(i),"Cases")==0)
+         {
+           checkNode = G->GetNI(C.GetOutNId(i));
+           if(G->GetIntAttrDatN(checkNode.GetId(),"Quarantined") == 0)
+           {
+             G->AddIntAttrDatN(checkNode.GetId(),2,"Quarantined");
+           }
+          std::cout << "\tThe Extention node is: " <<checkNode.GetId();
+          printf("(%s)\n",G->GetStrAttrDatN(checkNode.GetId(),"CountryName").CStr());
+            if (G->IsEdge(checkNode.GetId(),C.GetId()))
+            {
+              G->DelEdge(checkNode.GetId(),C.GetId());
+              if(G->GetIntAttrDatN(C.GetId(),"Quarantined") == 0)
+              {
+                G->AddIntAttrDatN(C.GetId(),1,"Quarantined");
+              }
+            }
+            if (G->IsEdge(C.GetId(),checkNode.GetId()))
+            {
+              G->DelEdge(C.GetId(),checkNode.GetId());
+              if(G->GetIntAttrDatN(C.GetId(),"Quarantined") == 0)
+              {
+                
+                G->AddIntAttrDatN(C.GetId(),1,"Quarantined");
+              }
+              
+            }
+            
+            
+            
+         }
+       }
+  return 0;
+}
 
 
 
