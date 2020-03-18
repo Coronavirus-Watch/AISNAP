@@ -16,7 +16,6 @@ let map = new mapboxgl.Map({
 });
 
 // GUI elements
-const routesCheck = document.querySelector('#routes');
 const markersCheck = document.querySelector('#markers');
 const radioBtns = document.querySelectorAll('input[type=radio]');
 const dateSlider = document.getElementById('dateSlider');
@@ -34,11 +33,6 @@ let toggledLayers = {
 let currentDay = {};
 
 // Adds EventListeners to checkboxes for when their checked value changes
-routesCheck.addEventListener('change', e => {
-	toggledLayers.routesVisible = e.target.checked;
-	updateMap(toggledLayers);
-});
-
 markersCheck.addEventListener('change', e => {
 	toggledLayers.markersVisible = e.target.checked;
 	updateMap(toggledLayers);
@@ -55,10 +49,6 @@ radioBtns.forEach(btn => {
 map.on('load', async () => {
 	fetchRange();
 	await fetchDay(0);
-
-	// sets slider range
-	// const rangeRes = await fetch('/range').then(res => res.text);
-	// console.log(rangeRes);
 	// Adds routes to layers
 	addLayers();
 	// displays map
@@ -67,6 +57,48 @@ map.on('load', async () => {
 	updateMap(toggledLayers);
 	controller.style.display = 'block';
 });
+// stores popups
+let popups = [];
+function addPopup(e) {
+	const popup = new mapboxgl.Popup({closeOnMove: true}).setLngLat(e.lngLat)
+	.setHTML(`
+			<h6>${e.features[0].properties.title}</h6>
+			<p>Cases: <strong>${e.features[0].properties.cases}</strong></p>
+			<p>Deaths: <strong>${e.features[0].properties.deaths}</strong></p>
+			<p>Recovered: <strong>${e.features[0].properties.recovered}</strong></p>
+	`)
+	.addTo(map);
+	popups.push(popup);
+};
+
+map.on("click", "cases-labels", addPopup);
+map.on("click", "deaths-labels", addPopup);
+map.on("click", "recovered-labels", addPopup);
+	
+
+map.on("update", (e) => {
+	// closes all popups that are open when update
+	popups.forEach(popup => {
+		popup.remove();
+	})
+	popups = [];
+})
+
+function mapMouseEnter() {
+	map.getCanvas().style.cursor = 'pointer';
+}
+function mapMouseLeave() {
+	map.getCanvas().style.cursor = '';
+}
+
+// Event Listeners on hover of circles
+map.on('mouseenter', 'cases-labels', mapMouseEnter);
+map.on('mouseleave', 'cases-labels', mapMouseLeave);
+map.on('mouseenter', 'deaths-labels', mapMouseEnter);
+map.on('mouseleave', 'deaths-labels', mapMouseLeave);
+map.on('mouseenter', 'recovered-labels', mapMouseEnter);
+map.on('mouseleave', 'recovered-labels', mapMouseLeave);
+
 
 function setMax(newMax) {
 	document.querySelector('#dateSlider').max = newMax.range - 1;
@@ -101,13 +133,13 @@ function addLayers() {
 	// 		features: timeline.routes.geojson
 	// 	}
 	// });
-	// map.addSource('country', {
-	// 	type: 'geojson',
-	// 	data: {
-	// 		type: 'FeatureCollection',
-	// 		features: timeline.countriesInstance.geojson
-	// 	}
-	// });
+	map.addSource('country', {
+		type: 'geojson',
+		data: {
+			type: 'FeatureCollection',
+			features: currentDay
+		}
+	});
 	// console.log('currentDay', currentDay);
 	map.addSource('timeline', {
 		type: 'geojson',
@@ -169,7 +201,7 @@ function addLayers() {
 			'text-color': 'white'
 		},
 		layout: {
-			'text-field': ['to-string', ['get', 'recovered']],
+			'text-field': ["concat", ['get', 'title'], " [", ['to-string', ['get', 'recovered']], "] "],
 			'text-size': ['case', ['>', ['get', 'recovered'], 0], 12, 0],
 			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
 		}
@@ -182,7 +214,7 @@ function addLayers() {
 			'text-color': 'white'
 		},
 		layout: {
-			'text-field': ['to-string', ['get', 'cases']],
+			'text-field': ["concat", ['get', 'title'], " [", ['to-string', ['get', 'cases']], "] "],
 			'text-size': ['case', ['>', ['get', 'cases'], 0], 12, 0],
 			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
 		}
@@ -195,43 +227,11 @@ function addLayers() {
 			'text-color': 'white'
 		},
 		layout: {
-			'text-field': ['to-string', ['get', 'deaths']],
+			'text-field': ["concat", ['get', 'title'], " [", ['to-string', ['get', 'deaths']], "] "],
 			'text-size': ['case', ['>', ['get', 'deaths'], 0], 12, 0],
 			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
 		}
 	});
-
-	// map.addLayer({
-	// 	id: 'route',
-	// 	type: 'line',
-	// 	source: 'route',
-	// 	layout: {
-	// 		'line-cap': 'square',
-	// 		visibility: 'none'
-	// 	},
-	// 	paint: {
-	// 		'line-color': '#777',
-	// 		'line-width': 1,
-	// 		'line-opacity': 0.05
-	// 	}
-	// });
-
-	// map.addLayer({
-	// 	id: 'country',
-	// 	type: 'symbol',
-	// 	source: 'country',
-	// 	layout: {
-	// 		'icon-image': ['concat', ['get', 'icon'], '-15'],
-	// 		'text-field': ['get', 'title'],
-	// 		'text-font': ['Open Sans Semibold'],
-	// 		'text-offset': [0, 0.6],
-	// 		'text-anchor': 'top',
-	// 		visibility: 'none'
-	// 	},
-	// 	paint: {
-	// 		'text-color': 'white'
-	// 	}
-	// });
 }
 
 // Displays the map
@@ -251,17 +251,15 @@ function play() {
 
 // Updates the map with the correct visible layers
 function updateMap(toggledLayers) {
-	// updates map with selected layers
-	// if (toggledLayers.routesVisible == true) {
-	// 	map.setLayoutProperty('route', 'visibility', 'visible');
-	// } else {
-	// 	map.setLayoutProperty('route', 'visibility', 'none');
-	// }
-	// if (toggledLayers.markersVisible == true) {
-	// 	map.setLayoutProperty('country', 'visibility', 'visible');
-	// } else {
-	// 	map.setLayoutProperty('country', 'visibility', 'none');
-	// }
+	if (toggledLayers.markersVisible == true) {
+		map.setLayoutProperty('cases-labels', 'text-field', ["concat", ['get', 'title'], " [", ['to-string', ['get', 'cases']], "]"]);
+		map.setLayoutProperty('deaths-labels', 'text-field', ["concat", ['get', 'title'], " [", ['to-string', ['get', 'deaths']], "]"]);
+		map.setLayoutProperty('recovered-labels', 'text-field', ["concat", ['get', 'title'], " [", ['to-string', ['get', 'recovered']], "]"]);
+	} else {
+		map.setLayoutProperty('cases-labels', 'text-field', ['to-string', ['get', 'cases']]);
+		map.setLayoutProperty('deaths-labels', 'text-field', ['to-string', ['get', 'deaths']]);
+		map.setLayoutProperty('recovered-labels', 'text-field', ['to-string', ['get', 'recovered']]);
+	}
 
 	// updates layout properties depending on the checked radio
 	switch (toggledLayers.checkedRadio) {
@@ -289,6 +287,7 @@ function updateMap(toggledLayers) {
 			map.setLayoutProperty('recovered-labels', 'visibility', 'visible');
 			map.setLayoutProperty('recovered-circles', 'visibility', 'visible');
 	}
+	map.fire("update");
 }
 
 // Creates event listener for dateSlider on whenever value is changed
@@ -300,9 +299,11 @@ dateSlider.addEventListener('input', async function(e) {
 	date = new Date(date.getTime() + this.value * day);
 	dateDisplayed.innerHTML = formatDate(date);
 
-	// updates currentDay array from timeline instance with slider value passed in
 	// const currentDay = await fetchDay(e.target.value);
 	await fetchDay(e.target.value);
+
+	map.fire("update");
+
 
 	// updates the geoJSON for the selected day in slider
 	map.getSource('timeline').setData({
