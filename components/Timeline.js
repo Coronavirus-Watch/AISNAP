@@ -268,6 +268,10 @@ class Timeline {
 				return countryName;
 		}
 	}
+
+	generateFuture() {
+		
+	}
 }
 
 
