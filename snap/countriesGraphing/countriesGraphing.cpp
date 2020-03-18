@@ -71,7 +71,7 @@ int hashFunction(string str);
 vector<Day> addVirus();
 int printVirus(vector<Day> virus);
 void graphVirus(Day day,PNEANet G);
-bool printGraph = true;
+bool printGraph = false;
 
 
 int quarantineNodes(PNEANet G);
@@ -104,7 +104,10 @@ int main(int argc, char* argv[])
   
 
   
-  // plotGraph(timeline.at(51).network,"Fragmented");
+  // plotGraph(timeline.at(51).network,"Un-Fragmented");
+    quarantineNodes(timeline.at(51).network);
+    quarantineNodes(timeline.at(51).network);
+   plotGraph(timeline.at(51).network,"Fragmented");
   // printVirus(days);
   // graphVirus(days.at(40),networkG);
   cout << "This is the end" << endl;
@@ -122,6 +125,7 @@ PNEANet initNetwork()
 
   net->AddStrAttrN("CountryName","country");
   net->AddIntAttrN("Cases",0);
+  net->AddIntAttrN("Quarantined",0);
   net->AddIntAttrE("Flights",0);
 
   return net;
@@ -271,7 +275,7 @@ void graphVirus(Day day,PNEANet G)
   plotGraph(G,temp);
   quarantineNodes(G);
   temp += "_Fragmented";
-  plotGraph(G,temp);
+  // plotGraph(G,temp);
  }
  
   
@@ -425,15 +429,29 @@ int nodeRemoval(PNEANet G , TNEANet::TNodeI C)
          if(G->GetIntAttrDatN(C.GetInNId(i),"Cases")==0)
          {
            checkNode = G->GetNI(C.GetInNId(i));
+           if(G->GetIntAttrDatN(checkNode.GetId(),"Quarantined") == 0)
+           {
+             G->AddIntAttrDatN(checkNode.GetId(),2,"Quarantined");
+           }
           std::cout << "\tThe Extention node is: " <<checkNode.GetId();
           printf("(%s)\n",G->GetStrAttrDatN(checkNode.GetId(),"CountryName").CStr());
             if (G->IsEdge(checkNode.GetId(),C.GetId()))
             {
               G->DelEdge(checkNode.GetId(),C.GetId());
+              if(G->GetIntAttrDatN(C.GetId(),"Quarantined") == 0)
+              {
+                G->AddIntAttrDatN(C.GetId(),1,"Quarantined");
+              }
             }
             if (G->IsEdge(C.GetId(),checkNode.GetId()))
             {
               G->DelEdge(C.GetId(),checkNode.GetId());
+              if(G->GetIntAttrDatN(C.GetId(),"Quarantined") == 0)
+              {
+                
+                G->AddIntAttrDatN(C.GetId(),1,"Quarantined");
+              }
+              
             }
             
             
@@ -533,10 +551,19 @@ int plotGraph(PNEANet G, TStr fileName)
     {
       Colors.AddDat(NI.GetId()) ="#FF0000";
     }
+    else if(G->GetIntAttrDatN(NI.GetId(),"Quarantined")==1)
+    {
+       Colors.AddDat(NI.GetId()) = "#0000ff";
+    }
+    else if(G->GetIntAttrDatN(NI.GetId(),"Quarantined")==2)
+    {
+      Colors.AddDat(NI.GetId()) = "#FFA500";
+    }
     else
     {
       Colors.AddDat(NI.GetId()) = "#008000";
     }
+    
     
     
   //  if (NI.GetDeg() < (highest/8))
