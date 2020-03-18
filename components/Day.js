@@ -43,10 +43,12 @@ class Day {
             },
             properties: {
               title: this.countries[country].name,
-              icon: 'basketball',
+              icon: 'marker',
               cases: this.countries[country].cases,
               deaths: this.countries[country].deaths,
-              recovered: this.countries[country].recovered
+              recovered: this.countries[country].recovered,
+              population: this.countries[country].population,
+              continent: this.countries[country].continent
             }
           });
         } catch (e) {
@@ -79,8 +81,8 @@ class Day {
   // Prints all data stored
   print() {
     console.log('Day: ' + this.date);
-    this.countries.forEach(element => {
-      element.print();
+    this.countries.forEach(country => {
+      country.print();
     });
   }
 }

@@ -7,15 +7,19 @@ body {
 	background-color: rgb(49, 54, 58);
 }
 .navbar {
-	min-height: 5vh;
+	min-height: 4vh;
 }
 /* Map Size */
 #map {
-	height: 80vh;
+	height: 70vh;
 	width: 100%;
 }
+
+.mapboxgl-popup-content p{
+	margin: 0;
+}
 .controller {
-	min-height: 15vh;
+	min-height: 10vh;
 	background-color: rgb(49, 54, 58);
 	padding: 1rem;
 	display: none;

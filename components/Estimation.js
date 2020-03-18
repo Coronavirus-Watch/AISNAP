@@ -1,11 +1,12 @@
 const fs = require("fs");
 
-const CONTAGION_PATH = "../data/contagion.csv";
+const CONTAGION_PATH = __dirname + "/../data/contagion.csv";
 
 class Estimation {
   constructor() {
     this.spread = [];
     this.processContagion();
+    return this;
   }
   processContagion() {
     const file = fs.readFileSync(CONTAGION_PATH, "utf8");
@@ -36,7 +37,7 @@ class Estimation {
       return 0.01;
     }
     if (cases <= 100) {
-      return spread[cases - 1].shareCommunity;
+      return this.spread[cases - 1].shareCommunity;
     }
     return 0.11 + 0.0007 * cases - 0.000006 * cases * cases;
   }
@@ -46,5 +47,4 @@ class Estimation {
   }
 }
 
-let obj = new Estimation();
-obj.print();
+module.exports = Estimation;
