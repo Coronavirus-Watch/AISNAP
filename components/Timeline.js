@@ -43,13 +43,14 @@ class Timeline {
     files.forEach(async day => {
       await this.processDay(day[0], day[1]);
     });
+    console.log("processFiles()");
     return;
   }
 
   // Process a file representing the coronavirus statistics by country for that
   // day
   processDay(filename, content) {
-    let day = new Day(false);
+    let day = new Day();
     // Prevents commas within quotes from messing up the seperation
     content = this.dealsWithQuoteMarks(content);
     // Seperating each lines
@@ -87,7 +88,7 @@ class Timeline {
               date,
               population,
               latlng,
-              continent
+              continent,
             );
           } catch (error) {
             console.log(error);
@@ -131,7 +132,8 @@ class Timeline {
           country.cases,
           country.deaths,
           country.recovered,
-          country.name
+          country.name,
+          false
         );
       }
     });
@@ -288,7 +290,7 @@ class Timeline {
     today.setHours(0, 0, 0, 0);
     for (let c = 0; c < FUTURE_DAYS; c++) {
       let lastDay = this.days[this.days.length - 1];
-      let futureDay = new Day(true);
+      let futureDay = new Day();
       lastDay.countries.forEach(country => {
         const {cases, deaths, recovered, name, population, coordinates, continent} = country;
         const date = this.getStorageDate(today);
@@ -301,14 +303,11 @@ class Timeline {
           date,
           population,
           [coordinates[1], coordinates[0]],
-          continent
+          continent,
         );
-        // i want to create another API endpoint to send a country object with the relative stats
-        // should i send the last day's stats of the country?
-        // umm... probably easier to send the timeline as a whole
-        // otherwise you'd have to create an algorithm to look through each country in each day
       });
       
+      futureDay.setIsEstimation(true);
       this.days.push(futureDay);
       today.setDate(today.getDate() + 1);
     }

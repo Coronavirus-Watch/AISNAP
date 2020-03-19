@@ -1,20 +1,27 @@
 const Country = require('./Country');
 
 class Day {
-  constructor(prediction = false) {
+  constructor() {
+    this.isEstimation = false;
     // Stores each individual country
     this.countries = [];
     // Stores geojson
     this.geojson = [];
     // this.fetchCoordinates();
-    this.prediction = prediction;
   }
 
   // Adds data from a region
-  addData(cases, deaths, recovered, countryName, date, population, coordinates, continent) {
+  addData(
+    cases,
+    deaths,
+    recovered,
+    countryName,
+    date,
+    population,
+    coordinates,
+    continent
+  ) {
     let index = this.searchForCountry(countryName);
-    this.date = date;
-    // Checks if a country is in the array
     if (index > -1) {
       this.countries[index].additionalData(cases, deaths, recovered);
     } else {
@@ -25,9 +32,19 @@ class Day {
         countryName,
         population,
         [coordinates[1], coordinates[0]],
-        continent
+        continent,
+        this.getIsEstimation()
       );
     }
+    this.date = date;
+  }
+
+  setIsEstimation(val) {
+    this.isEstimation = val;
+  }
+
+  getIsEstimation() {
+    return this.isEstimation;
   }
 
   parseGeoJSON() {
@@ -36,19 +53,17 @@ class Day {
       for (let country in this.countries) {
         try {
           tempArray.push({
-            type: 'Feature',
+            type: "Feature",
             geometry: {
-              type: 'Point',
+              type: "Point",
               coordinates: this.countries[country].coordinates
             },
             properties: {
               title: this.countries[country].name,
-              icon: 'marker',
+              icon: "basketball",
               cases: this.countries[country].cases,
               deaths: this.countries[country].deaths,
-              recovered: this.countries[country].recovered,
-              population: this.countries[country].population,
-              continent: this.countries[country].continent
+              recovered: this.countries[country].recovered
             }
           });
         } catch (e) {
@@ -63,26 +78,20 @@ class Day {
     if (this.countries[country.name]) {
       return this.countries[country.name].coordinates;
     }
-    console.log('Country Not Found: ' + country.name);
+    console.log("Country Not Found: " + country.name);
     return [0, 0];
   }
 
   // Checks if a country is on the array
   searchForCountry(countryName) {
-    for (let i = 0; i < this.countries.length; i++) {
-      const element = this.countries[i];
-      if (element.name === countryName) {
-        return i;
-      }
-    }
-    return -1;
-  }
-
+    return this.countries.findIndex(country => country.name == countryName);
+	}
+	
   // Prints all data stored
   print() {
-    console.log('Day: ' + this.date);
-    this.countries.forEach(country => {
-      country.print();
+    console.log("Day: " + this.date);
+    this.countries.forEach(element => {
+      element.print();
     });
   }
 }
