@@ -54,17 +54,17 @@
 }
 
 .cases {
-	color: orange;
+	color: rgb(255, 165, 0);
 	font-weight: bold;
 }
 
 .deaths {
-	color: coral;
+	color: rgb(255, 127, 80);
 	font-weight: bold;
 }
 
 .recovered {
-	color: lightgreen;
+	color: rgb(144, 238, 144);
 	font-weight: bold;
 }
 
@@ -113,4 +113,8 @@
 	background: rgb(45, 44, 53);
 	border: 3px solid rgb(81, 81, 97);
 	text-align: center;
+}
+
+#propsChart {
+	padding: 0 4rem;
 }

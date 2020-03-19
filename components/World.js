@@ -1,0 +1,1 @@
+const Territory = require("./Territory")

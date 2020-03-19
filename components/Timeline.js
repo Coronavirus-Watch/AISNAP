@@ -21,15 +21,14 @@ class Timeline {
 
 	async fetchCountryDetails() {
 		return axios({
-			method: 'GET',
-			url: 'https://restcountries-v1.p.rapidapi.com/all',
-			headers: {
-				'content-type': 'application/octet-stream',
-				'x-rapidapi-host': 'restcountries-v1.p.rapidapi.com',
-				'x-rapidapi-key':
-					'42752e8809msh0edf75d88c1b7e7p177e3djsn05d91367a12a'
-			}
-		})
+				method: 'GET',
+				url: 'https://restcountries-v1.p.rapidapi.com/all',
+				headers: {
+					'content-type': 'application/octet-stream',
+					'x-rapidapi-host': 'restcountries-v1.p.rapidapi.com',
+					'x-rapidapi-key': '42752e8809msh0edf75d88c1b7e7p177e3djsn05d91367a12a'
+				}
+			})
 			.then(async response => {
 				return response.data;
 			})
@@ -44,7 +43,6 @@ class Timeline {
 		files.forEach(async day => {
 			await this.processDay(day[0], day[1]);
 		});
-		console.log('processFiles()');
 		return;
 	}
 
@@ -87,7 +85,8 @@ class Timeline {
 						const {
 							population,
 							latlng,
-							region: continent
+							region: continent,
+							altSpellings,
 						} = countryDetails;
 						day.addData(
 							cases,
@@ -97,9 +96,11 @@ class Timeline {
 							date,
 							population,
 							latlng,
-							continent
+							continent,
+							altSpellings
 						);
 					} catch (error) {
+						console.log("Error finding country details for: " + searchName);
 						console.log(error);
 					}
 				}
@@ -137,7 +138,7 @@ class Timeline {
 	// Checks if a country is present in a previous day but not the current day
 	// And adds it to the current day if not
 	async checkConcurrency(day, previousDay) {
-		previousDay.countries.forEach(async function(country) {
+		previousDay.countries.forEach(async function (country) {
 			if (day.searchForCountry(country.name) === -1) {
 				day.addData(
 					country.cases,
@@ -148,6 +149,28 @@ class Timeline {
 				);
 			}
 		});
+	}
+
+	//
+	createTotalCountry() {
+		const WORLD_POPULATION = 7713468100;
+		let cases = 0;
+		let recovered = 0;
+		let deaths = 0;
+		let worldDays = [];
+		this.days.forEach(day => {
+			day.countries.forEach(country => {
+				cases += country.cases;
+				recovered += country.recovered;
+				deaths += country.deaths;
+			})
+			newDay = new Day();
+			newDay.addData(cases, deaths, recovered, "Total", day.date, WORLD_POPULATION, NaN, NaN);
+		});
+	}
+
+	createContinents() {
+
 	}
 
 	searchCountryDetails(name) {
@@ -277,6 +300,8 @@ class Timeline {
 				return 'United Kingdom';
 			case 'Congo (Kinshasa)':
 				return 'Congo [DRC]';
+			case 'Th\"':
+				return "The Gambia"
 			case 'Cruise Ship':
 			case 'Others':
 				return 'Japan';

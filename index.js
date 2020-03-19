@@ -6,7 +6,6 @@
 // Loads NodeJS Modules
 const axios = require('axios');
 const fs = require('fs');
-// are we live?
 const schedule = require('node-schedule');
 const express = require('express');
 
@@ -51,12 +50,31 @@ app.get('/range', (req, res) => res.send({range: timeline.days.length}));
 app.get('/country/:country', (req, res) => {
   let countryTimeline = [];
   timeline.days.forEach(day => {
-    let exists = day.countries.findIndex(country => country.name.toLowerCase() === req.params.country.toLowerCase());
+    let exists = day.countries.findIndex(country => {
+      if (country.name.toLowerCase() === req.params.country.toLowerCase()) {
+        return country;
+      }
+
+      let altSpellings = [];
+      for (let i = 0; i < country.altSpellings.length; i++) {
+        if (country.altSpellings[i].toLowerCase() === req.params.country.toLowerCase()) {
+          altSpellings.push(i);
+        }
+      }
+      if (altSpellings.length > 0) {
+        return country;
+      }
+  });
+      
     if (exists > -1) {
       countryTimeline.push([day.countries[exists], day.date])
     }
   });
   res.send({timeline: countryTimeline, search: req.params.country})
+});
+
+app.get("/totals", (req, res) => {
+  res.send({totals: "hello"});
 });
 
 // Updates and formats coronavirus dataset
