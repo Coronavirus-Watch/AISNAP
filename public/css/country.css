@@ -1,0 +1,59 @@
+@import url("all.css");
+
+.container {
+  color: white;
+  padding: 1.5rem 0;
+}
+
+.officialTitle {
+
+}
+
+#countryName {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.cases {
+  color: orange;
+  font-weight: bold;
+}
+
+.deaths {
+  color: coral;
+  font-weight: bold;
+}
+
+.recovered {
+  color: lightgreen;
+  font-weight: bold;
+}
+
+.number {
+  font-size: 140%;
+}
+
+.estimated {
+  opacity: 0.5;
+}
+
+.diff {
+  font-size: 65%;
+  font-style: italic;
+}
+
+.countryForm {
+  padding: 5rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.timeline-day {
+  padding: 2rem;
+  margin: 10px 0;
+  background: rgb(45, 44, 53);
+  border: 3px solid rgb(81, 81, 97);
+  text-align: center;
+}

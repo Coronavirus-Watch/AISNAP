@@ -22,6 +22,7 @@ const dateSlider = document.getElementById('dateSlider');
 const controller = document.querySelector('.controller');
 const dateDisplayed = document.getElementById('dateDisplayed');
 dateSlider.max = 100;
+dateSlider.value = 0;
 
 // sets default visibility of layers
 let toggledLayers = {
@@ -62,7 +63,7 @@ let popups = [];
 function addPopup(e) {
 	const popup = new mapboxgl.Popup({closeOnMove: true}).setLngLat(e.lngLat)
 	.setHTML(`
-			<h6>${e.features[0].properties.title}</h6>
+			<h6><a href="http://localhost:3000/country.html?search=${e.features[0].properties.title}">${e.features[0].properties.title}</a></h6>
 			<p>Cases: <strong>${e.features[0].properties.cases}</strong></p>
 			<p>Deaths: <strong>${e.features[0].properties.deaths}</strong></p>
 			<p>Recovered: <strong>${e.features[0].properties.recovered}</strong></p>
@@ -125,22 +126,6 @@ async function fetchRange() {
 
 // Adds Layers to Map
 function addLayers() {
-	// Adds new sources for routes, countries and timeline
-	// map.addSource('route', {
-	// 	type: 'geojson',
-	// 	data: {
-	// 		type: 'FeatureCollection',
-	// 		features: timeline.routes.geojson
-	// 	}
-	// });
-	map.addSource('country', {
-		type: 'geojson',
-		data: {
-			type: 'FeatureCollection',
-			features: currentDay
-		}
-	});
-	// console.log('currentDay', currentDay);
 	map.addSource('timeline', {
 		type: 'geojson',
 		data: {
@@ -156,7 +141,7 @@ function addLayers() {
 		type: 'circle',
 		source: 'timeline',
 		paint: {
-			'circle-radius': ['*', ['log10', ['number', ['get', 'cases']]], 20],
+			'circle-radius': ['*', ['log10', ['number', ['get', 'cases']]], 10],
 			'circle-opacity': 0.4,
 			'circle-color': 'orange'
 		}
@@ -170,7 +155,7 @@ function addLayers() {
 			'circle-radius': [
 				'*',
 				['log10', ['number', ['get', 'deaths']]],
-				20
+				10
 			],
 			'circle-opacity': 0.4,
 			'circle-color': 'red'
@@ -185,7 +170,7 @@ function addLayers() {
 			'circle-radius': [
 				'*',
 				['log10', ['number', ['get', 'recovered']]],
-				20
+				10
 			],
 			'circle-opacity': 0.4,
 			'circle-color': 'green'

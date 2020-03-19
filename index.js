@@ -48,7 +48,16 @@ app.get('/day/:day', async (req, res) => res.send(await timeline.retrieveDay(req
 app.get('/range', (req, res) => res.send({range: timeline.days.length}));
 
 // API Eendpoint for country statistics
-app.get('/country/:country', (req, res) => res.send({country: timeline.days[timeline.days.length-1].countries, search: req.params.country}));
+app.get('/country/:country', (req, res) => {
+  let countryTimeline = [];
+  timeline.days.forEach(day => {
+    let exists = day.countries.findIndex(country => country.name.toLowerCase() === req.params.country.toLowerCase());
+    if (exists > -1) {
+      countryTimeline.push([day.countries[exists], day.date])
+    }
+  });
+  res.send({timeline: countryTimeline, search: req.params.country})
+});
 
 // Updates and formats coronavirus dataset
 async function sync(date) {

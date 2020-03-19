@@ -25,6 +25,7 @@ class Country {
     this.population = population;
     this.coordinates = coordinates;
     this.continent = continent;
+    this.estimatedDay = false
     this.calculate();
   }
 
