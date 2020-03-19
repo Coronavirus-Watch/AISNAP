@@ -5,6 +5,10 @@ class Day {
 		this.isEstimation = false;
 		// Stores each individual country
 		this.countries = [];
+		// Stores statistics from individual countries spanning across a continent
+		this.continents = [];
+		// Stores statistics from individual countries spanning across the world
+		this.world;
 		// Stores geojson
 		this.geojson = [];
 		// this.fetchCoordinates();
@@ -19,10 +23,12 @@ class Day {
 		date,
 		population,
 		coordinates,
-		continent
+		continent,
+		altSpellings
 	) {
 		let index = this.searchForCountry(countryName);
 		if (index > -1) {
+			// TODO: Delete previous data from contienent and world
 			this.countries[index].additionalData(cases, deaths, recovered);
 		} else {
 			const newCountry = new Country(
@@ -32,12 +38,38 @@ class Day {
 				countryName,
 				population,
 				[coordinates[1], coordinates[0]],
-				continent
+				continent,
+				altSpellings
 			);
-			newCountry.estimatedDay = this.isEstimation;
-			this.countries[this.countries.length] = newCountry;
+			const i = this.countries.length;
+			this.countries[i] = newCountry;
+			// TODO: Process continent and world info
+			this.processContinent(newCountry, i, true);
 		}
 		this.date = date;
+	}
+
+	processContinent(countryIndex, isNewCountry) {
+		// Checks if continent exists on array
+		const contienentIndex = searchContinent(this.continents[index].continent);
+		if (contienentIndex > -1) {
+			if (isNewCountry) {
+				addToContinent(countryIndex, contienentIndex);
+			}
+		}
+		else {
+
+		}
+	}
+
+	searchContinent(name) {
+		return this.continents.findIndex(continent => continent.name == countryName);
+	}
+
+	addToContinent(countryIndex, contienentIndex) {
+		let country = this.countries[countryIndex];
+		let contienent = this.contienent[contienentIndex];
+		continent
 	}
 
 	setIsEstimation(val) {
