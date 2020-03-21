@@ -342,6 +342,18 @@
         "geojson": []
     },
     {
+        "isEstimation": false,
+        "countries": [],
+        "continents": [],
+        "geojson": []
+    },
+    {
+        "isEstimation": false,
+        "countries": [],
+        "continents": [],
+        "geojson": []
+    },
+    {
         "isEstimation": true,
         "countries": [],
         "continents": [],
