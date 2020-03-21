@@ -51,7 +51,7 @@ class Day {
 
 	processContinent(countryIndex, isNewCountry) {
 		// Checks if continent exists on array
-		const contienentIndex = searchContinent(this.continents[index].continent);
+		const contienentIndex = this.searchContinent(this.continents[index].continent);
 		if (contienentIndex > -1) {
 			if (isNewCountry) {
 				addToContinent(countryIndex, contienentIndex);
@@ -70,14 +70,6 @@ class Day {
 		let country = this.countries[countryIndex];
 		let contienent = this.contienent[contienentIndex];
 		continent
-	}
-
-	setIsEstimation(val) {
-		this.isEstimation = val;
-	}
-
-	getIsEstimation() {
-		return this.isEstimation;
 	}
 
 	parseGeoJSON() {

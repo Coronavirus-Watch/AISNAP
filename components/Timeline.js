@@ -327,7 +327,7 @@ class Timeline {
 		for (let c = 0; c < FUTURE_DAYS; c++) {
 			let lastDay = this.days[this.days.length - 1];
 			let futureDay = new Day();
-			futureDay.setIsEstimation(true);
+			futureDay.isEstimation = true;
 			lastDay.countries.forEach(country => {
 				const {
 					cases,
