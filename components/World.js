@@ -1,15 +1,18 @@
-const Territory = require("./Territory")
+const Territory = require('./Territory');
 
 class World extends Territory {
+	constructor() {
+		super(0, 0, 0, 0);
+	}
 
-    constructor(cases = 0, deaths = 0, recovered = 0, population = 0) {
-        super(cases, deaths, recovered, population);
-    }
+	additionalData(cases, deaths, recovered) {
+		super.additionalData(cases, deaths, recovered);
+	}
 
-    print() {
-        console.log("Global:", "\n\t");
-        super.print();
-    }
+	print() {
+		console.log('Global:', '\n\t');
+		super.print();
+	}
 }
 
 module.exports = World;

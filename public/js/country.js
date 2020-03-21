@@ -3,7 +3,7 @@ const submitBtn = document.querySelector('#submitBtn');
 
 const countryName = document.querySelector('#countryName');
 const timelineDiv = document.querySelector('.timeline');
-const graphs = document.querySelector("#graphs");
+const graphs = document.querySelector('#graphs');
 
 searchBox.value = '';
 
@@ -36,8 +36,9 @@ async function fetchCountry(search) {
 				let dateText = document.createElement('H5');
 				let dateArray = res.timeline[index][1].split('/');
 				let dateVal = new Date();
+				console.log(dateArray);
 				dateVal.setDate(dateArray[0]);
-				dateVal.setMonth(dateArray[1]);
+				dateVal.setMonth(dateArray[1] - 1);
 				let dayVal = dateVal.getDate().toString();
 				switch (dayVal.charAt(dayVal.length - 1)) {
 					case '1':
@@ -95,13 +96,16 @@ async function fetchCountry(search) {
 				dayDiv.appendChild(dateText);
 				dayDiv.appendChild(attributes);
 				dayDiv.classList.add('day');
-				
+
 				timelineDiv.appendChild(dayDiv);
 			});
 
 			searchBox.value = '';
-createGraphs(res.timeline, "cases,deaths,recovered", "orange,coral,lightgreen");
-
+			createGraphs(
+				res.timeline,
+				'cases,deaths,recovered',
+				'orange,coral,lightgreen'
+			);
 		})
 		.catch(e => {
 			console.log(e);
@@ -116,13 +120,13 @@ function searchCountry(e) {
 
 	fetchCountry(searchBox.value);
 }
-	
-let chart = document.createElement("CANVAS");
-chart.setAttribute("id", `propsChart`);
+
 function createGraphs(timeline, propsList, color) {
+	let chart = document.createElement('CANVAS');
+	chart.setAttribute('id', `propsChart`);
 	const labels = timeline.map(el => el[1]);
-	let props = propsList.split(",");
-	let colors = color.split(",");
+	let props = propsList.split(',');
+	let colors = color.split(',');
 	let dataSets = [];
 	props.forEach((prop, index) => {
 		dataSets.push({
@@ -139,7 +143,7 @@ function createGraphs(timeline, propsList, color) {
 		// dataSets.push({
 		// 	label: `# of Estimated ${prop.charAt(0).toUpperCase() + prop.slice(1)}`,
 		// 	data: timeline.map(el => {
-		// 		if (el[0].estimatedDay) return el[0][prop] 
+		// 		if (el[0].estimatedDay) return el[0][prop]
 		// 	}),
 		// 	backgroundColor: [colors[index]],
 		// 	borderColor: [colors[index]],
@@ -152,35 +156,51 @@ function createGraphs(timeline, propsList, color) {
 	});
 
 	let ctx = chart.getContext('2d');
-var myChart = new Chart(ctx, {
-	type: 'line',
-	data: {
+	var myChart = new Chart(ctx, {
+		type: 'line',
+		data: {
 			labels: labels,
 			datasets: dataSets
-	},
-	options: {
+		},
+		options: {
+			responsive: true,
+			tooltips: {
+				mode: 'nearest',
+				intersect: false
+			},
+			hover: {
+				mode: 'nearest',
+				intersect: true
+			},
 			scales: {
-					yAxes: [{
-							ticks: {
-									beginAtZero: false,
-									display: false,
-							},
-							gridLines: [{
-								display: false
-							}]
-					}],
-					xAxes: [{
+				yAxes: [
+					{
 						ticks: {
-								display: false,
-						},
-						gridLines: [{
+							beginAtZero: false,
 							display: false
-						}]
-				}]
+						},
+						gridLines: [
+							{
+								display: false
+							}
+						]
+					}
+				],
+				xAxes: [
+					{
+						ticks: {
+							display: false
+						},
+						gridLines: [
+							{
+								display: false
+							}
+						]
+					}
+				]
 			}
-	}
-});
-
-graphs.appendChild(chart);
-
+		}
+	});
+	graphs.innerHTML = '';
+	graphs.appendChild(chart);
 }

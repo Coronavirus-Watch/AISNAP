@@ -61,29 +61,31 @@ map.on('load', async () => {
 // stores popups
 let popups = [];
 function addPopup(e) {
-	const popup = new mapboxgl.Popup({closeOnMove: true}).setLngLat(e.lngLat)
-	.setHTML(`
-			<h6><a href="http://localhost:3000/country.html?search=${e.features[0].properties.title}">${e.features[0].properties.title}</a></h6>
+	const popup = new mapboxgl.Popup({ closeOnMove: true })
+		.setLngLat(e.lngLat)
+		.setHTML(
+			`
+			<h6><a href="/country.html?search=${e.features[0].properties.title}">${e.features[0].properties.title}</a></h6>
 			<p>Cases: <strong>${e.features[0].properties.cases}</strong></p>
 			<p>Deaths: <strong>${e.features[0].properties.deaths}</strong></p>
 			<p>Recovered: <strong>${e.features[0].properties.recovered}</strong></p>
-	`)
-	.addTo(map);
+	`
+		)
+		.addTo(map);
 	popups.push(popup);
-};
+}
 
-map.on("click", "cases-labels", addPopup);
-map.on("click", "deaths-labels", addPopup);
-map.on("click", "recovered-labels", addPopup);
-	
+map.on('click', 'cases-labels', addPopup);
+map.on('click', 'deaths-labels', addPopup);
+map.on('click', 'recovered-labels', addPopup);
 
-map.on("update", (e) => {
+map.on('update', e => {
 	// closes all popups that are open when update
 	popups.forEach(popup => {
 		popup.remove();
-	})
+	});
 	popups = [];
-})
+});
 
 function mapMouseEnter() {
 	map.getCanvas().style.cursor = 'pointer';
@@ -99,7 +101,6 @@ map.on('mouseenter', 'deaths-labels', mapMouseEnter);
 map.on('mouseleave', 'deaths-labels', mapMouseLeave);
 map.on('mouseenter', 'recovered-labels', mapMouseEnter);
 map.on('mouseleave', 'recovered-labels', mapMouseLeave);
-
 
 function setMax(newMax) {
 	document.querySelector('#dateSlider').max = newMax.range - 1;
@@ -186,7 +187,13 @@ function addLayers() {
 			'text-color': 'white'
 		},
 		layout: {
-			'text-field': ["concat", ['get', 'title'], " [", ['to-string', ['get', 'recovered']], "] "],
+			'text-field': [
+				'concat',
+				['get', 'title'],
+				' [',
+				['to-string', ['get', 'recovered']],
+				'] '
+			],
 			'text-size': ['case', ['>', ['get', 'recovered'], 0], 12, 0],
 			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
 		}
@@ -199,7 +206,13 @@ function addLayers() {
 			'text-color': 'white'
 		},
 		layout: {
-			'text-field': ["concat", ['get', 'title'], " [", ['to-string', ['get', 'cases']], "] "],
+			'text-field': [
+				'concat',
+				['get', 'title'],
+				' [',
+				['to-string', ['get', 'cases']],
+				'] '
+			],
 			'text-size': ['case', ['>', ['get', 'cases'], 0], 12, 0],
 			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
 		}
@@ -212,7 +225,13 @@ function addLayers() {
 			'text-color': 'white'
 		},
 		layout: {
-			'text-field': ["concat", ['get', 'title'], " [", ['to-string', ['get', 'deaths']], "] "],
+			'text-field': [
+				'concat',
+				['get', 'title'],
+				' [',
+				['to-string', ['get', 'deaths']],
+				'] '
+			],
 			'text-size': ['case', ['>', ['get', 'deaths'], 0], 12, 0],
 			'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold']
 		}
@@ -237,13 +256,40 @@ function play() {
 // Updates the map with the correct visible layers
 function updateMap(toggledLayers) {
 	if (toggledLayers.markersVisible == true) {
-		map.setLayoutProperty('cases-labels', 'text-field', ["concat", ['get', 'title'], " [", ['to-string', ['get', 'cases']], "]"]);
-		map.setLayoutProperty('deaths-labels', 'text-field', ["concat", ['get', 'title'], " [", ['to-string', ['get', 'deaths']], "]"]);
-		map.setLayoutProperty('recovered-labels', 'text-field', ["concat", ['get', 'title'], " [", ['to-string', ['get', 'recovered']], "]"]);
+		map.setLayoutProperty('cases-labels', 'text-field', [
+			'concat',
+			['get', 'title'],
+			' [',
+			['to-string', ['get', 'cases']],
+			']'
+		]);
+		map.setLayoutProperty('deaths-labels', 'text-field', [
+			'concat',
+			['get', 'title'],
+			' [',
+			['to-string', ['get', 'deaths']],
+			']'
+		]);
+		map.setLayoutProperty('recovered-labels', 'text-field', [
+			'concat',
+			['get', 'title'],
+			' [',
+			['to-string', ['get', 'recovered']],
+			']'
+		]);
 	} else {
-		map.setLayoutProperty('cases-labels', 'text-field', ['to-string', ['get', 'cases']]);
-		map.setLayoutProperty('deaths-labels', 'text-field', ['to-string', ['get', 'deaths']]);
-		map.setLayoutProperty('recovered-labels', 'text-field', ['to-string', ['get', 'recovered']]);
+		map.setLayoutProperty('cases-labels', 'text-field', [
+			'to-string',
+			['get', 'cases']
+		]);
+		map.setLayoutProperty('deaths-labels', 'text-field', [
+			'to-string',
+			['get', 'deaths']
+		]);
+		map.setLayoutProperty('recovered-labels', 'text-field', [
+			'to-string',
+			['get', 'recovered']
+		]);
 	}
 
 	// updates layout properties depending on the checked radio
@@ -272,7 +318,7 @@ function updateMap(toggledLayers) {
 			map.setLayoutProperty('recovered-labels', 'visibility', 'visible');
 			map.setLayoutProperty('recovered-circles', 'visibility', 'visible');
 	}
-	map.fire("update");
+	map.fire('update');
 }
 
 // Creates event listener for dateSlider on whenever value is changed
@@ -287,8 +333,7 @@ dateSlider.addEventListener('input', async function(e) {
 	// const currentDay = await fetchDay(e.target.value);
 	await fetchDay(e.target.value);
 
-	map.fire("update");
-
+	map.fire('update');
 
 	// updates the geoJSON for the selected day in slider
 	map.getSource('timeline').setData({
