@@ -11,8 +11,9 @@ class Country extends Territory {
 		continent = '',
 		altSpellings = []
 	) {
-		super(cases, deaths, recovered, population);
+		super(cases, deaths, recovered);
 		this.name = name;
+		this.population = parseInt(population);
 		this.coordinates = coordinates;
 		this.continent = continent;
 		this.altSpellings = altSpellings;

@@ -1,7 +1,5 @@
 const axios = require('axios');
 const Day = require('./Day');
-const Estimation = require('./Estimation');
-const fs = require('fs');
 
 const FUTURE_DAYS = 7;
 
@@ -245,7 +243,7 @@ class Timeline {
 				} = country;
 				const date = this.getStorageDate(today);
 				const increases = this.calculateIncrease();
-				console.log(increases);
+				// console.log(increases);
 				futureDay.addData(
 					cases * 1.33,
 					deaths * 1.33,
@@ -277,7 +275,6 @@ class Timeline {
 		) {
 			const day = this.days[i];
 			tiActive += day.active;
-			console.log(day.active);
 			tiCases += day.cases;
 			tiDeaths += day.deaths;
 			tiRecovered += day.recovered;
