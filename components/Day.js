@@ -1,132 +1,126 @@
-const Country = require('./Country');
+const Continent = require("./Continent");
+const Country = require("./Country");
+const World = require("./World");
 
 class Day {
-	constructor() {
-		this.isEstimation = false;
-		// Stores each individual country
-		this.countries = [];
-		// Stores statistics from individual countries spanning across a continent
-		this.continents = [];
-		// Stores statistics from individual countries spanning across the world
-		this.world;
-		// Stores geojson
-		this.geojson = [];
-		// this.fetchCoordinates();
-	}
+  constructor() {
+    // Stores whether this is an estimated day not based on official figures
+    this.isEstimation = false;
+    // Stores each individual country
+    this.countries = [];
+    // Stores statistics from individual countries spanning across a continent
+    this.continents = [];
+    // Stores statistics from individual countries spanning across the world
+    this.world = new World();
+    // Stores geojson
+    this.geojson = [];
+  }
 
-	// Adds data from a region
-	addData(
-		cases,
-		deaths,
-		recovered,
-		countryName,
-		date,
-		population,
-		coordinates,
-		continent,
-		altSpellings
-	) {
-		let index = this.searchForCountry(countryName);
-		if (index > -1) {
-			// TODO: Delete previous data from contienent and world
-			this.countries[index].additionalData(cases, deaths, recovered);
-		} else {
-			const newCountry = new Country(
-				cases,
-				deaths,
-				recovered,
-				countryName,
-				population,
-				[coordinates[1], coordinates[0]],
-				continent,
-				altSpellings
-			);
-			const i = this.countries.length;
-			this.countries[i] = newCountry;
-			// TODO: Process continent and world info
-			this.processContinent(newCountry, i, true);
-		}
-		this.date = date;
-	}
+  // Adds data from a region
+  addData(
+    cases,
+    deaths,
+    recovered,
+    countryName,
+    date,
+    population,
+    coordinates,
+    continent,
+    altSpellings
+  ) {
+    let index = this.searchForCountry(countryName);
+    let country;
+    if (index > -1) {
+      country = this.countries[index];
+      country.additionalData(cases, deaths, recovered);
+    } else {
+      country = new Country(
+        cases,
+        deaths,
+        recovered,
+        countryName,
+        population,
+        [coordinates[1], coordinates[0]],
+        continent,
+        altSpellings
+      );
+      index = this.countries.length;
+      this.countries[index] = country;
+    }
+    // TODO: Process continent and world info
+    this.world.additionalData(cases, deaths, recovered);
+    this.processContinent(continent, cases, deaths, recovered);
+    this.date = date;
+    return country;
+  }
 
-	processContinent(countryIndex, isNewCountry) {
-		// Checks if continent exists on array
-		const contienentIndex = searchContinent(this.continents[index].continent);
-		if (contienentIndex > -1) {
-			if (isNewCountry) {
-				addToContinent(countryIndex, contienentIndex);
-			}
-		}
-		else {
+  processContinent(name, cases, deaths, recovered) {
+    // Checks if continent exists on array
+    const contienentIndex = this.searchContinent(name);
 
-		}
-	}
+    if (contienentIndex > -1) {
+      // Adds additional data to appropriate continent
+      let contienent = this.continents[contienentIndex];
+      contienent.additionalData(cases, deaths, recovered);
+    } else {
+      // Adds new continenet
+      let continent = new Continent(name, cases, deaths, recovered);
+      this.continents[this.continents.length] = continent;
+    }
+  }
 
-	searchContinent(name) {
-		return this.continents.findIndex(continent => continent.name == countryName);
-	}
+  // Returns the index of a chosen continent on the continents array
+  searchContinent(name) {
+    return this.continents.findIndex(continent => continent.name == name);
+  }
 
-	addToContinent(countryIndex, contienentIndex) {
-		let country = this.countries[countryIndex];
-		let contienent = this.contienent[contienentIndex];
-		continent
-	}
+  parseGeoJSON() {
+    let tempArray = [];
+    if (this.countries) {
+      for (let country in this.countries) {
+        try {
+          tempArray.push({
+            type: "Feature",
+            geometry: {
+              type: "Point",
+              coordinates: this.countries[country].coordinates
+            },
+            properties: {
+              title: this.countries[country].name,
+              icon: "basketball",
+              cases: this.countries[country].cases,
+              deaths: this.countries[country].deaths,
+              recovered: this.countries[country].recovered
+            }
+          });
+        } catch (e) {
+          console.log(e);
+        }
+      }
+    }
+    this.geojson = tempArray;
+  }
 
-	setIsEstimation(val) {
-		this.isEstimation = val;
-	}
+  getCountryCoordinates(country) {
+    if (this.countries[country.name]) {
+      return this.countries[country.name].coordinates;
+    }
+    console.log("Country Not Found: " + country.name);
+    return [0, 0];
+  }
 
-	getIsEstimation() {
-		return this.isEstimation;
-	}
+  // Checks if a country is on the array
+  searchForCountry(countryName) {
+    return this.countries.findIndex(country => country.name == countryName);
+  }
 
-	parseGeoJSON() {
-		let tempArray = [];
-		if (this.countries) {
-			for (let country in this.countries) {
-				try {
-					tempArray.push({
-						type: 'Feature',
-						geometry: {
-							type: 'Point',
-							coordinates: this.countries[country].coordinates
-						},
-						properties: {
-							title: this.countries[country].name,
-							icon: 'basketball',
-							cases: this.countries[country].cases,
-							deaths: this.countries[country].deaths,
-							recovered: this.countries[country].recovered
-						}
-					});
-				} catch (e) {
-					console.log(e);
-				}
-			}
-		}
-		this.geojson = tempArray;
-	}
-
-	getCountryCoordinates(country) {
-		if (this.countries[country.name]) {
-			return this.countries[country.name].coordinates;
-		}
-		console.log('Country Not Found: ' + country.name);
-		return [0, 0];
-	}
-
-	// Checks if a country is on the array
-	searchForCountry(countryName) {
-		return this.countries.findIndex(country => country.name == countryName);
-	}
-
-	// Prints all data stored
-	print() {
-		console.log('Day: ' + this.date);
-		this.countries.forEach(element => {
-			element.print();
-		});
-	}
+  // Prints all data stored
+  print() {
+    console.log("Day: " + this.date);
+    this.countries.forEach(element => {
+      element.print();
+    });
+  }
 }
 
 module.exports = Day;
