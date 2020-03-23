@@ -18,7 +18,7 @@ The website found at https://rsewell.tech is to visualise the up and coming days
 
 ## Instructions
 1. Open a Command Line Shell
-2. Run "node index.js"
+2. Run "node server.js"
 3. Open browser at http://localhost:3000/
 
 ## Authors
