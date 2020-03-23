@@ -1,5 +1,5 @@
-const axios = require('axios');
-const Day = require('./Day');
+const axios = require("axios");
+const Day = require("./Day");
 
 const FUTURE_DAYS = 7;
 
@@ -19,13 +19,12 @@ class Timeline {
 
 	async fetchCountryDetails() {
 		return axios({
-			method: 'GET',
-			url: 'https://restcountries-v1.p.rapidapi.com/all',
+			method: "GET",
+			url: "https://restcountries-v1.p.rapidapi.com/all",
 			headers: {
-				'content-type': 'application/octet-stream',
-				'x-rapidapi-host': 'restcountries-v1.p.rapidapi.com',
-				'x-rapidapi-key':
-					'42752e8809msh0edf75d88c1b7e7p177e3djsn05d91367a12a'
+				"content-type": "application/octet-stream",
+				"x-rapidapi-host": "restcountries-v1.p.rapidapi.com",
+				"x-rapidapi-key": "42752e8809msh0edf75d88c1b7e7p177e3djsn05d91367a12a"
 			}
 		})
 			.then(async response => {
@@ -52,18 +51,18 @@ class Timeline {
 		// Prevents commas within quotes from messing up the seperation
 		content = this.dealsWithQuoteMarks(content);
 		// Seperating each lines
-		const lines = content.split('\n');
+		const lines = content.split("\n");
 		for (let i = 1; i < lines.length; i++) {
 			// Segments each line
-			const regionLine = lines[i].split(',', -1);
+			const regionLine = lines[i].split(",", -1);
 			// Makes any elements that are blank 0
 			for (let index = 1; index < regionLine.length; index++) {
-				if (!regionLine[index] || regionLine[index].includes('\r')) {
-					regionLine[index] = '0';
+				if (!regionLine[index] || regionLine[index].includes("\r")) {
+					regionLine[index] = "0";
 				}
 			}
 			// Prevents an error with undefined fields
-			if (typeof regionLine[1] !== 'undefined') {
+			if (typeof regionLine[1] !== "undefined") {
 				// Extracts data from the line and adds it to the appropriate day
 				this.extractData(day, filename, regionLine);
 			}
@@ -94,6 +93,9 @@ class Timeline {
 		try {
 			// Looks up other information from country details array
 			const countryDetails = this.searchCountryDetails(searchName);
+			if (countryDetails === "undefined")
+				throw "Error finding country details for: " + searchName;
+
 			const {
 				population,
 				latlng,
@@ -115,12 +117,20 @@ class Timeline {
 			);
 
 			// Extracts data from yesterdays result
-			varsArray = this.days[this.days.length - 1].getVarsArray();
+			const countryYesterday = this.days[this.days.length - 1].searchForCountry(
+				countryName
+			);
+			let varsArray;
+			if (countryYesterday === "undefined") {
+				varsArray = [0, 0, 0, 0];
+			} else {
+				varsArray = countryYesterday.getVarsArray();
+			}
 			// Compares data from this day and the previous to calculate increases
 			day.comparison(varsArray);
 		} catch (error) {
-			console.log('Error finding country details for: ' + searchName);
-			// console.error(error);
+			// console.log('Error finding country details for: ' + searchName);
+			console.error(error);
 		}
 	}
 
@@ -129,16 +139,14 @@ class Timeline {
 		let inQuote = false;
 		for (let index = 0; index < content.length; index++) {
 			let element = content.charAt(index);
-			if (inQuote && element === ',') {
+			if (inQuote && element === ",") {
 				// Deletes element
 				content =
-					content.slice(0, index - 1) +
-					content.slice(index, content.length);
+					content.slice(0, index - 1) + content.slice(index, content.length);
 			} else if (element === '"') {
 				// Deletes element
 				content =
-					content.slice(0, index - 1) +
-					content.slice(index, content.length);
+					content.slice(0, index - 1) + content.slice(index, content.length);
 				if (inQuote) {
 					inQuote = false;
 				} else {
@@ -199,24 +207,24 @@ class Timeline {
 	// Calculates formatted date using the downloaded filename
 	getFormattedDate(downloadDate) {
 		// Removes extension if necessary
-		if (downloadDate.endsWith('.csv')) {
-			downloadDate.replace('.csv', '');
+		if (downloadDate.endsWith(".csv")) {
+			downloadDate.replace(".csv", "");
 		}
 		// Parses all date sections
-		const sections = downloadDate.split('-');
+		const sections = downloadDate.split("-");
 		const day = sections[1];
 		const month = sections[0];
 		const year = sections[2];
-		const dateVar = day + '/' + month + '/' + year;
+		const dateVar = day + "/" + month + "/" + year;
 		return dateVar;
 	}
 
 	// Returns the date formatted as used in the url for files
 	getStorageDate(date) {
-		const day = ('0' + date.getDate()).slice(-2);
-		const month = ('0' + (date.getMonth() + 1)).slice(-2);
+		const day = ("0" + date.getDate()).slice(-2);
+		const month = ("0" + (date.getMonth() + 1)).slice(-2);
 		const year = date.getFullYear();
-		const dateVar = day + '/' + month + '/' + year;
+		const dateVar = day + "/" + month + "/" + year;
 		return dateVar;
 	}
 
@@ -285,63 +293,63 @@ class Timeline {
 	// Changes country names from downloaded files into ones that are used to store countries
 	dictStore(countryName) {
 		switch (countryName) {
-			case 'Mainland China':
-				return 'China';
-			case 'US':
-				return 'United States';
-			case 'UK':
-				return 'United Kingdom';
-			case 'Saint Barthelemy':
-				return 'France';
-			case 'occupied Palestinian territory':
-			case 'Palestine':
-				return 'Palestinian Territories';
-			case 'North Macedonia':
-				return 'Macedonia [FYROM]';
-			case 'Iran (Islamic Republic of)':
-				return 'Iran';
-			case 'Hong Kong SAR':
-				return 'Hong Kong';
-			case 'Viet Nam':
-				return 'Vietnam';
-			case 'Macao SAR':
-				return 'Macau';
-			case 'Russian Federation':
-				return 'Russia';
-			case 'Ivory Coast':
+			case "Mainland China":
+				return "China";
+			case "US":
+				return "United States";
+			case "UK":
+				return "United Kingdom";
+			case "Saint Barthelemy":
+				return "France";
+			case "occupied Palestinian territory":
+			case "Palestine":
+				return "Palestinian Territories";
+			case "North Macedonia":
+				return "Macedonia [FYROM]";
+			case "Iran (Islamic Republic of)":
+				return "Iran";
+			case "Hong Kong SAR":
+				return "Hong Kong";
+			case "Viet Nam":
+				return "Vietnam";
+			case "Macao SAR":
+				return "Macau";
+			case "Russian Federation":
+				return "Russia";
+			case "Ivory Coast":
 			case "Cote d'Ivoire":
-				return 'Côte dIvoire';
-			case 'Taiwan*':
-				return 'Taiwan';
-			case 'North Ireland':
-				return 'United Kingdom';
-			case 'Republic of Ireland':
-				return 'Ireland';
-			case 'Holy See':
-				return 'Vatican City';
-			case 'Czechia':
-				return 'Czech Republic';
-			case 'Reunion':
-				return 'France';
-			case 'Republic of Korea':
+				return "Côte dIvoire";
+			case "Taiwan*":
+				return "Taiwan";
+			case "North Ireland":
+				return "United Kingdom";
+			case "Republic of Ireland":
+				return "Ireland";
+			case "Holy See":
+				return "Vatican City";
+			case "Czechia":
+				return "Czech Republic";
+			case "Reunion":
+				return "France";
+			case "Republic of Korea":
 			case 'Sout"':
-				return 'South Korea';
-			case 'St. Martin':
-			case 'Saint Martin':
-				return 'France';
-			case 'Republic of Moldova':
-				return 'Moldova';
-			case 'Taipei and environs':
-				return 'Taiwan';
-			case 'Channel Islands':
-				return 'United Kingdom';
-			case 'Congo (Kinshasa)':
-				return 'Congo [DRC]';
+				return "South Korea";
+			case "St. Martin":
+			case "Saint Martin":
+				return "France";
+			case "Republic of Moldova":
+				return "Moldova";
+			case "Taipei and environs":
+				return "Taiwan";
+			case "Channel Islands":
+				return "United Kingdom";
+			case "Congo (Kinshasa)":
+				return "Congo [DRC]";
 			case 'Th"':
-				return 'The Gambia';
-			case 'Cruise Ship':
-			case 'Others':
-				return 'Japan';
+				return "The Gambia";
+			case "Cruise Ship":
+			case "Others":
+				return "Japan";
 			default:
 				return countryName;
 		}
@@ -350,26 +358,26 @@ class Timeline {
 	// Changes country names from the ones stored to lookup data in the Rest countries API
 	dictRest(name) {
 		switch (name) {
-			case 'Ireland':
-				return 'IE';
-			case 'Macedonia [FYROM]':
-				return 'MK';
-			case 'Vatican City':
-				return 'Vatican';
-			case 'Eswatini':
-				return 'SZ';
-			case 'Côte dIvoire':
-				return 'Ivory Coast';
-			case 'Congo [DRC]':
-				return 'DRC';
-			case 'Congo (Brazzaville)':
-				return 'Congo-Brazzaville';
-			case 'Kosovo':
-				return 'Republic of Kosovo';
-			case 'Palestinian Territories':
-				return 'Palestine';
-			case 'Cabo Verde':
-				return 'Cape Verde';
+			case "Ireland":
+				return "IE";
+			case "Macedonia [FYROM]":
+				return "MK";
+			case "Vatican City":
+				return "Vatican";
+			case "Eswatini":
+				return "SZ";
+			case "Côte dIvoire":
+				return "Ivory Coast";
+			case "Congo [DRC]":
+				return "DRC";
+			case "Congo (Brazzaville)":
+				return "Congo-Brazzaville";
+			case "Kosovo":
+				return "Republic of Kosovo";
+			case "Palestinian Territories":
+				return "Palestine";
+			case "Cabo Verde":
+				return "Cape Verde";
 			default:
 				return name;
 		}
