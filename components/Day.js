@@ -29,10 +29,12 @@ class Day {
     altSpellings
   ) {
     let index = this.searchForCountry(countryName);
+    let country;
     if (index > -1) {
-      this.countries[index].additionalData(cases, deaths, recovered);
+      country = this.countries[index];
+      country.additionalData(cases, deaths, recovered);
     } else {
-      const newCountry = new Country(
+      country = new Country(
         cases,
         deaths,
         recovered,
@@ -43,12 +45,13 @@ class Day {
         altSpellings
       );
       index = this.countries.length;
-      this.countries[index] = newCountry;
+      this.countries[index] = country;
     }
     // TODO: Process continent and world info
     this.world.additionalData(cases, deaths, recovered);
     this.processContinent(continent, cases, deaths, recovered);
     this.date = date;
+    return country;
   }
 
   processContinent(name, cases, deaths, recovered) {

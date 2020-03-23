@@ -43,10 +43,10 @@ class Territory {
 
 	// Compares data from this day and the previous to calculate increases
 	comparison(varsArray) {
-		lastActive = varsArray[0];
-		lastCases = varsArray[1];
-		lastDeaths = varsArray[2];
-		lastRecovered = varsArray[3];
+		const lastActive = varsArray[0];
+		const lastCases = varsArray[1];
+		const lastDeaths = varsArray[2];
+		const lastRecovered = varsArray[3];
 		// Daily Increase in Active Cases
 		this.dia = ((this.active - lastActive) / lastActive) * 100;
 		// Daily Increase in Confirmed Cases

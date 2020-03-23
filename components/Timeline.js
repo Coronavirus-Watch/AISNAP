@@ -93,9 +93,8 @@ class Timeline {
 		try {
 			// Looks up other information from country details array
 			const countryDetails = this.searchCountryDetails(searchName);
-			if (countryDetails === "undefined")
+			if (typeof countryDetails === "undefined")
 				throw "Error finding country details for: " + searchName;
-
 			const {
 				population,
 				latlng,
@@ -104,7 +103,7 @@ class Timeline {
 			} = countryDetails;
 
 			// Adds data to the day
-			day.addData(
+			let country = day.addData(
 				cases,
 				deaths,
 				recovered,
@@ -117,19 +116,23 @@ class Timeline {
 			);
 
 			// Extracts data from yesterdays result
-			const countryYesterday = this.days[this.days.length - 1].searchForCountry(
-				countryName
-			);
-			let varsArray;
-			if (countryYesterday === "undefined") {
-				varsArray = [0, 0, 0, 0];
-			} else {
+			let varsArray = [0, 0, 0, 0];
+			let yesterday;
+			let index = -1;
+			if (this.days.length !== 0) {
+				yesterday = this.days[this.days.length - 1];
+				index = yesterday.searchForCountry(
+					countryName
+				);
+			}
+			if (index !== -1) {
+				let countryYesterday = yesterday.countries[index];
 				varsArray = countryYesterday.getVarsArray();
 			}
 			// Compares data from this day and the previous to calculate increases
-			day.comparison(varsArray);
+			country.comparison(varsArray);
 		} catch (error) {
-			// console.log('Error finding country details for: ' + searchName);
+			// console.log('General Error for: ' + searchName);
 			console.error(error);
 		}
 	}
@@ -378,6 +381,8 @@ class Timeline {
 				return "Palestine";
 			case "Cabo Verde":
 				return "Cape Verde";
+			case "Timor-Leste":
+				return "East Timor";
 			default:
 				return name;
 		}
