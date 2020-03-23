@@ -1,0 +1,86 @@
+int quarantineNodes(PNEANet G)
+{
+
+  //Finding "In Danger Nodes"
+  for (TNEANet::TNodeI NI = G->BegNI(); NI < G->EndNI(); NI++)
+  {
+    if (G->GetIntAttrDatN(NI.GetId(),"Cases")>0)
+    {
+      for (int i = 0; i < NI.GetOutDeg(); i++)
+      {
+        if (G->GetIntAttrDatN(NI.GetOutNId(i),"Cases") == 0 && G->GetIntAttrDatN(NI.GetOutNId(i),"Quarantined") != 1)
+        {
+          G->AddIntAttrDatN(NI.GetOutNId(i),1,"Quarantined");
+        }
+      }
+      for (int i = 0; i < NI.GetInDeg(); i++)
+      {
+        if (G->GetIntAttrDatN(NI.GetInNId(i),"Cases") == 0 && G->GetIntAttrDatN(NI.GetInNId(i),"Quarantined") != 1)
+        {
+          G->AddIntAttrDatN(NI.GetInNId(i),1,"Quarantined");
+        }
+      }
+    }
+  }
+
+  // Deleting edges
+  for(TNEANet::TNodeI NI1 = G->BegNI(); NI1<G->EndNI(); NI1++)
+  {
+    if (!G->IsNode(NI1.GetId()))
+    {
+      continue;
+    }
+    
+    if (G->GetIntAttrDatN(NI1.GetId(),"Quarantined") == 1)
+    {
+      nodeRemoval(G,NI1);
+      nodeRemoval2(G,NI1);
+    }
+    
+  }
+
+  return 0; 
+}
+int nodeRemoval(PNEANet G , TNEANet::TNodeI C)
+{
+  cout << "Inwards node removal" << endl;
+  if (C.GetInDeg()>0)
+  {  
+    for (int i = 0; i < C.GetInDeg(); i++)
+    {
+      if (!G->IsEdge(C.GetInNId(i),C.GetId()))
+      {
+        continue;
+      }
+      
+      if (G->GetIntAttrDatN(C.GetInNId(i),"cases") == 0 && G->GetIntAttrDatN(C.GetInNId(i),"Quarantined") != 1)
+      {
+        G->AddIntAttrDatN(C.GetInNId(i),2,"Quarantined");
+        G->DelEdge(C.GetInNId(i),C.GetId());
+      }
+    }
+  }
+  return 0;
+}
+  
+int nodeRemoval2(PNEANet G , TNEANet::TNodeI C)
+{
+  cout << "Outwards node removal" << endl;
+  if (C.GetOutDeg()>0)
+  {  
+    for (int i = 0; i < C.GetOutDeg(); i++)
+    {
+      if (!G->IsEdge(C.GetId(),C.GetOutNId(i)))
+      {
+        continue;
+      }
+      
+      if (G->GetIntAttrDatN(C.GetOutNId(i),"cases") == 0 && G->GetIntAttrDatN(C.GetOutNId(i),"Quarantined") != 1)
+      {
+        G->AddIntAttrDatN(C.GetOutNId(i),2,"Quarantined");
+        G->DelEdge(C.GetOutNId(i),C.GetId());
+      }
+    }
+  }
+  return 0;
+}

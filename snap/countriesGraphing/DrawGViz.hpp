@@ -5,14 +5,15 @@ namespace TSnap{
 template<class PGraph>
 void SaveGViz(const PGraph& Graph, const TStr& OutFNm, const TStr& Desc, const bool& NodeLabels, const TIntStrH& NIdColorH, const TIntStrH& NIdLabelH);
 
-
- template<class PGraph>
-void DrawGViz(const PGraph& Graph, const TGVizLayout& Layout, const TStr& PltFNm, const TStr& Desc, const bool& NodeLabels, const TIntStrH& NIdColorH, const TIntStrH& NIdLabelH) {
-  const TStr Ext = PltFNm.GetFExt();
-  const TStr GraphFNm = PltFNm.GetSubStr(0, PltFNm.Len()-Ext.Len()) + "dot";
-  SaveGViz(Graph, GraphFNm, Desc, NodeLabels, NIdColorH, NIdLabelH);
-  TSnap::TSnapDetail::GVizDoLayout(GraphFNm, PltFNm, Layout);
-}
+  
+  template<class PGraph>
+  void DrawGViz(const PGraph& Graph, const TGVizLayout& Layout, const TStr& PltFNm, const TStr& Desc, const bool& NodeLabels, const TIntStrH& NIdColorH, const TIntStrH& NIdLabelH) 
+  {
+    const TStr Ext = PltFNm.GetFExt();
+    const TStr GraphFNm = PltFNm.GetSubStr(0, PltFNm.Len()-Ext.Len()) + "dot";
+    SaveGViz(Graph, GraphFNm, Desc, NodeLabels, NIdColorH, NIdLabelH/*,NIdShapeH*/);
+    TSnap::TSnapDetail::GVizDoLayout(GraphFNm, PltFNm, Layout);
+  }
 
 
 template<class PGraph>
@@ -20,16 +21,21 @@ void SaveGViz(const PGraph& Graph, const TStr& OutFNm, const TStr& Desc, const b
   const bool IsDir = HasGraphFlag(typename PGraph::TObj, gfDirected);
   FILE *F = fopen(OutFNm.CStr(), "wt");
   if (! Desc.Empty()) fprintf(F, "/*****\n%s\n*****/\n\n", Desc.CStr());
-  if (IsDir) { fprintf(F, "digraph G {\n"); } else { fprintf(F, "graph G {\n"); }
+  if (IsDir) { 
+    fprintf(F, "digraph G {\n");
+    } else { 
+    fprintf(F, "graph G {\n");
+    }
   fprintf(F, "  graph [splines=true overlap=false]\n"); //size=\"12,10\" ratio=fill
   // node  [width=0.3, height=0.3, label=\"\", style=filled, color=black]
   // node  [shape=box, width=0.3, height=0.3, label=\"\", style=filled, fillcolor=red]
-  fprintf(F, "  node  [shape=ellipse, width=0.3, height=0.3%s]\n", NodeLabels?"":", label=\"\"");
+  fprintf(F, "  node  [shape = ellipse, width=0.3, height=0.3%s]\n", NodeLabels?"":", label=\"\"");
   // node colors
   //for (int i = 0; i < NIdColorH.Len(); i++) {
   for (typename PGraph::TObj::TNodeI NI = Graph->BegNI(); NI < Graph->EndNI(); NI++) {
     if (NIdColorH.IsKey(NI.GetId())) {
-      fprintf(F, "  %d [style=filled, fillcolor=\"%s\", label=\"%s\"];\n", NI.GetId(), NIdColorH.GetDat(NI.GetId()).CStr(), NIdLabelH.GetDat(NI.GetId()).CStr()); }
+      fprintf(F, "  %d [style=filled, fillcolor=\"%s\", label=\"%s\" ];\n", NI.GetId(), NIdColorH.GetDat(NI.GetId()).CStr(), NIdLabelH.GetDat(NI.GetId()).CStr()); 
+    }
     else {
       fprintf(F, "  %d ;\n", NI.GetId());
     }

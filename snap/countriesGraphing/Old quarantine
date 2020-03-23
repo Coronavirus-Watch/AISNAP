@@ -1,0 +1,98 @@
+int quarantineNodes(PNEANet G)
+{
+  for (TNEANet::TNodeI NI = G->BegNI(); NI < G->EndNI(); NI++)
+  {
+    if (G->GetIntAttrDatN(NI,"Cases") >0)
+      {
+          TNEANet::TNodeI currNode;
+          for (int i = 0;  i < NI.GetInDeg(); i++)
+        {
+          currNode = G->GetNI(NI.GetOutNId(i));
+          // nodeRemoval(G,currNode);
+          nodeRemoval1(G,currNode);
+          nodeRemoval2(G,currNode);
+        }
+      }
+  }
+  return 0;
+}
+
+int nodeRemoval(PNEANet G , TNEANet::TNodeI C)
+{
+   TNEANet::TNodeI checkNode;
+  for (int i = 0;  i < C.GetInDeg(); i++)
+       {
+         if(G->GetIntAttrDatN(C.GetInNId(i),"Cases")==0)
+         {
+           checkNode = G->GetNI(C.GetInNId(i));
+           if(G->GetIntAttrDatN(checkNode.GetId(),"Quarantined") == 0)
+           {
+             G->AddIntAttrDatN(checkNode.GetId(),2,"Quarantined");
+           }
+           if (G->IsEdge(checkNode.GetId(),C.GetId()))
+            {
+              G->DelEdge(checkNode.GetId(),C.GetId());
+              if(G->GetIntAttrDatN(C.GetId(),"Quarantined") == 0 || G->GetIntAttrDatN(C.GetId(),"Quarantined") == 2)
+              {
+                G->AddIntAttrDatN(C.GetId(),1,"Quarantined");
+              }
+            }
+            if (G->IsEdge(C.GetId(),checkNode.GetId()))
+            {
+              G->DelEdge(C.GetId(),checkNode.GetId());
+              if(G->GetIntAttrDatN(C.GetId(),"Quarantined") == 0 || G->GetIntAttrDatN(C.GetId(),"Quarantined") == 2)
+              {
+                
+                G->AddIntAttrDatN(C.GetId(),1,"Quarantined");
+              }
+              
+            }
+         }
+       }
+  return 0;
+}
+
+int nodeRemoval1(PNEANet G , TNEANet::TNodeI C)
+{
+  cout << "Node removal 1" << endl;
+  TNEANet::TNodeI checkNode;
+  for (int i = 0;  i < C.GetInDeg(); i++)
+       {
+        checkNode = G->GetNI(C.GetInNId(i));
+         if (G->GetIntAttrDatN(C.GetInNId(i),"Cases")==0 )
+         {
+           if (G->IsEdge(checkNode.GetId(),C.GetId()))
+            {
+              G->DelEdge(checkNode.GetId(),C.GetId());
+              if(G->GetIntAttrDatN(C.GetId(),"Quarantined") == 0 || G->GetIntAttrDatN(C.GetId(),"Quarantined") == 2)
+              {
+                G->AddIntAttrDatN(C.GetId(),1,"Quarantined");
+              }
+            }
+         }
+       }
+       return 0;
+}
+int nodeRemoval2(PNEANet G , TNEANet::TNodeI C)
+{
+  cout << "Node removal 2" << endl;
+  TNEANet::TNodeI checkNode;
+  for (int i = 0;  i < C.GetDeg(); i++)
+  {
+    checkNode = G->GetNI(C.GetOutNId(i));
+    if (G->GetIntAttrDatN(C.GetOutNId(i),"Cases")==0)
+    {
+      if (G->IsEdge(C.GetId(),checkNode.GetId()))
+      {
+        G->DelEdge(C.GetId(),checkNode.GetId()); 
+
+        if(G->GetIntAttrDatN(C.GetId(),"Quarantined") == 0 || G->GetIntAttrDatN(C.GetId(),"Quarantined") == 2)
+        {
+          G->AddIntAttrDatN(C.GetId(),1,"Quarantined");
+        }
+      }
+    }
+    
+  }
+  return 0;
+}
