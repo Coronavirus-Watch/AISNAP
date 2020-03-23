@@ -253,12 +253,12 @@ class Timeline {
 					continent
 				} = country;
 				const date = this.getStorageDate(today);
-				const increases = this.calculateIncrease();
-				// console.log(increases);
+				const increases = this.calculateIncrease(country.name);
+				console.log("Day:", date, "Country:", country.name, increases);
 				futureDay.addData(
-					cases * 1.33,
-					deaths * 1.33,
-					recovered * 1.33,
+					cases + (cases * increases[0]),
+					deaths + (deaths * increases[1]),
+					recovered + (recovered * increases[2]),
 					name,
 					date,
 					population,
@@ -272,25 +272,33 @@ class Timeline {
 		}
 	}
 
-	calculateIncrease() {
-		const ESTIMATED_INCREASE_DAYS = 7;
-		// Stores total increases in x
-		let tiActive = 0;
-		let tiCases = 0;
-		let tiDeaths = 0;
-		let tiRecovered = 0;
-		for (
-			let i = this.days.length - ESTIMATED_INCREASE_DAYS;
-			i < this.days.length;
-			i++
-		) {
-			const day = this.days[i];
-			tiActive += day.active;
-			tiCases += day.cases;
-			tiDeaths += day.deaths;
-			tiRecovered += day.recovered;
+	calculateIncrease(countryName) {
+		const ESTIMATED_INCREASE_DAYS = 3;
+
+		const startIndex = this.days.length - ESTIMATED_INCREASE_DAYS;
+		const lastIndex = this.days.length - 1;
+		try {
+			if (startIndex < 0 || lastIndex < 0) throw "Negative day index";
+			let startDay = this.days[startIndex];
+			let lastDay = this.days[lastIndex];
+			const startCountryIndex = startDay.searchForCountry(countryName);
+			const lastCountryIndex = lastDay.searchForCountry(countryName);
+			if (startCountryIndex < 0 || lastCountryIndex < 0) throw "Negative country index";
+			let startCountry = startDay.countries[startCountryIndex];
+			let lastCountry = lastDay.countries[lastCountryIndex];
+			// Average increases in cases
+			let aiCases = (lastCountry.cases - startCountry.cases) / startCountry.cases / ESTIMATED_INCREASE_DAYS;
+			if (isNaN(aiCases)) aiCases = 0;
+			let aiDeaths = (lastCountry.deaths - startCountry.deaths) / startCountry.deaths / ESTIMATED_INCREASE_DAYS;
+			if (isNaN(aiDeaths)) aiDeaths = 0;
+			let aiRecovered = (lastCountry.recovered - startCountry.recovered) / startCountry.recovered / ESTIMATED_INCREASE_DAYS;
+			if (isNaN(aiRecovered)) aiRecovered = 0;
+			return [aiCases, aiDeaths, aiRecovered];
 		}
-		return [parseInt(tiActive), tiCases, tiDeaths, tiRecovered];
+		catch(e) {
+			console.log(e);
+			return [0, 0, 0];
+		}
 	}
 
 	// Changes country names from downloaded files into ones that are used to store countries
