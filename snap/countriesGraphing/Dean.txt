@@ -1,6 +1,930 @@
 File exists
 File exists
 Reeee
+----------------------------------------------------------------
+Azerbaijan
+	Russia | France | Italy | Belarus | United Kingdom | Latvia | China | Kazakhstan | Afghanistan | United Arab Emirates | Uzbekistan | Iran | Qatar | Turkey | Germany | Ukraine | Czech Republic | Georgia | Israel and Palestine | Austria | Turkmenistan | Hungary | 
+Adding "Israel and Palestine" ae bro
+Adding "Turkmenistan" ae bro
+----------------------------------------------------------------
+Russia
+	Azerbaijan | Uzbekistan | Montenegro | Tromso | Armenia | Czech Republic | Tajikistan | Kazakhstan | Turkey | Moldova | Greece | Georgia | Germany | France | Algeria | Italy | Morocco | Finland | Kyrgyzstan | Belarus | United Kingdom | Tunisia | Latvia | China | Thailand | Cuba | Hong Kong | Cyprus | United States | Norway | United Arab Emirates | Bulgaria | Austria | Japan | Spain | Iran | Slovenia | North Korea | Serbia | South Korea | Netherlands | Malta | Poland | Switzerland | Israel and Palestine | Ukraine | Lebanon | Egypt | Mongolia | Estonia | Qatar | Jordan | Romania | Turkmenistan | Portugal | Croatia | Sweden | Denmark | Belgium | Singapore | Hungary | India | Vietnam | Maldives | Dominican Republic | Lithuania | Canada | Sri Lanka | Mexico | Mauritius | Seychelles | 
+Adding "Tromso" ae bro
+Adding "Tajikistan" ae bro
+Adding "Kyrgyzstan" ae bro
+Adding "North Korea" ae bro
+Found "Israel and Palestine" already ae bro
+Found "Turkmenistan" already ae bro
+Adding "Mauritius" ae bro
+----------------------------------------------------------------
+Burkina Faso
+	Cote d'Ivoire | Ghana | Mali | Benin | Senegal | Togo | Niger | Belgium | France | Algeria | Morocco | Ethiopia | Turkey | Tunisia | 
+Adding "Cote d'Ivoire" ae bro
+Adding "Mali" ae bro
+Adding "Niger" ae bro
+----------------------------------------------------------------
+Ghana
+	Burkina Faso | Senegal | Nigeria | Liberia | United Kingdom | Morocco | Italy | United States | Cote d'Ivoire | Sierra Leone | United Arab Emirates | Ethiopia | Togo | Benin | Spain | Netherlands | Kenya | Germany | Lebanon | Egypt | South Africa | Namibia | Turkey | Portugal | 
+Found "Cote d'Ivoire" already ae bro
+Adding "Sierra Leone" ae bro
+----------------------------------------------------------------
+Senegal
+	Mali | Burkina Faso | Ghana | Gambia | Cameroon | Sierra Leone | Nigeria | Guinea-Bissau | Spain | Belgium | Guinea | France | Algeria | Morocco | United States | Cote d'Ivoire | Benin | Mauritania |  Santiago Island | United Arab Emirates | Italy | South Africa | Turkey | Portugal | Tunisia | 
+Found "Mali" already ae bro
+Adding "Gambia" ae bro
+Found "Sierra Leone" already ae bro
+Adding "Guinea-Bissau" ae bro
+Found "Cote d'Ivoire" already ae bro
+Adding " Santiago Island" ae bro
+----------------------------------------------------------------
+Benin
+	Togo | Burkina Faso | Cote d'Ivoire | France | Nigeria | Equatorial Guinea | Mali | Gabon | Senegal | Cameroon | Ethiopia | Niger | Ghana | Kenya | Congo (Brazzaville) | 
+Found "Cote d'Ivoire" already ae bro
+Found "Mali" already ae bro
+Found "Niger" already ae bro
+----------------------------------------------------------------
+Togo
+	Burkina Faso | France | Ghana | Cote d'Ivoire | Nigeria | Ethiopia | Mali | Guinea | Benin | Cameroon | Brazil | Gabon | Belgium | 
+Found "Cote d'Ivoire" already ae bro
+Found "Mali" already ae bro
+----------------------------------------------------------------
+Colombia
+	Ecuador | Mexico | Netherlands Antilles | United States | Canada | France | Argentina | Aruba | Spain | Venezuela | Germany | Brazil | Guatemala | Cuba | Peru | Bolivia | Panama | Dominican Republic | El Salvador | Chile | Costa Rica | Puerto Rico | 
+Adding "Netherlands Antilles" ae bro
+Adding "El Salvador" ae bro
+----------------------------------------------------------------
+Ecuador
+	Colombia | United States | Netherlands | Mexico | Peru | El Salvador | Panama | Brazil | Cuba | Spain | Venezuela | Argentina | Chile | 
+Found "El Salvador" already ae bro
+----------------------------------------------------------------
+Italy
+	Switzerland | Germany | Morocco | Israel and Palestine | Libya | Moldova | Greece | France | United Kingdom | United States | Austria | Canada | Algeria | Albania | Netherlands | Russia | Czech Republic | Denmark | Argentina | Finland | Romania | Portugal | Spain | Jordan | United Arab Emirates | Serbia | Lebanon | Belgium | Hungary | Egypt | Venezuela | Sri Lanka | India | Armenia | Brazil | Azerbaijan | South Korea | Iran | Turkey | Saudi Arabia | Ukraine | Japan | Kuwait | Nigeria | Luxembourg | Malta | China | Latvia | Macedonia | Bulgaria | Georgia | Montenegro | Tunisia | Poland | Belarus | Bangladesh | Cuba | Dominican Republic | Mexico | Hong Kong | Qatar | Sweden | Norway | Ireland | Ethiopia | Slovakia | Sandefjord | Rygge | Estonia | Lithuania | Uzbekistan | Bosnia and Herzegovina | Senegal | Mauritius | Croatia | Pakistan | Singapore | Thailand | Cyprus | Oman | 
+Found "Israel and Palestine" already ae bro
+Adding "Libya" ae bro
+Adding "Macedonia" ae bro
+Adding "Sandefjord" ae bro
+Adding "Rygge" ae bro
+Found "Mauritius" already ae bro
+----------------------------------------------------------------
+Switzerland
+	Spain | Italy | France | United Kingdom | Cyprus | Egypt | Germany | Austria | Turkey | Serbia | Macedonia | Greece | Portugal | United States | Finland | Canada | Algeria | India | Morocco | Belarus | Denmark | Latvia | Sweden | China | Qatar | Norway | Ireland | United Arab Emirates | Bulgaria | Iceland | Belgium | Bosnia and Herzegovina | Slovenia | Poland | South Korea | Netherlands | Malta | Luxembourg | Kenya | Russia | Czech Republic | Israel and Palestine | Thailand | Hungary | Croatia | Brazil | Cuba | Hong Kong | South Africa | Ukraine | Japan | Romania | Dominican Republic | Singapore | Lebanon | Jordan | Jersey | Saudi Arabia | Tunisia | Oman | Montenegro | 
+Found "Macedonia" already ae bro
+Found "Israel and Palestine" already ae bro
+----------------------------------------------------------------
+France
+	Switzerland | Morocco | Guadeloupe | Egypt | Germany | Israel and Palestine | Turkey | Moldova | Greece | Italy | Netherlands | Belgium | Sweden | Czech Republic | Georgia | United Kingdom | United States | Malaysia | Spain | Austria | Canada | Cote d'Ivoire | Nigeria | Algeria | Jordan | United Arab Emirates | Serbia | Lebanon | Central African Republic | Thailand | Mali | Denmark | India | Colombia | Brazil | Hungary | Congo (Brazzaville) | China | Venezuela | Guinea | Benin | Senegal | Cameroon | Ireland | Armenia | Argentina | Congo (Kinshasa) | Azerbaijan | Vietnam | Cuba | Finland | Hong Kong | Japan | South Korea | Saudi Arabia | Djibouti | South Africa | Ukraine | Angola | Gabon | Cyprus | Russia | Togo | Peru | Portugal | Slovenia | Luxembourg | Mexico | Malta | Mauritius | Kenya | Chad | Niger | Mauritania | Norway | Romania | Burkina Faso | Panama | Dominican Republic | Latvia | Liberia | Chile | Singapore | Bulgaria | Netherlands Antilles | Madagascar | Tunisia | Poland | Croatia | French Guiana | Martinique | Reunion | Belarus | Taiwan | Sandefjord | Ethiopia | Iceland | Slovakia | Rygge | Lithuania | Bahrain | Guernsey | Uzbekistan | Iran | Estonia | Pakistan | Antigua and Barbuda | Qatar | Cape Verde | Mayotte | Jersey | Puerto Rico | Virgin Islands | Haiti | Sri Lanka |  Santiago Island | Oman | Montenegro | 
+Found "Israel and Palestine" already ae bro
+Found "Cote d'Ivoire" already ae bro
+Found "Mali" already ae bro
+Adding "Congo (Kinshasa)" ae bro
+Adding "Djibouti" ae bro
+Adding "Angola" ae bro
+Found "Mauritius" already ae bro
+Adding "Chad" ae bro
+Found "Niger" already ae bro
+Found "Netherlands Antilles" already ae bro
+Adding "Madagascar" ae bro
+Adding "Reunion" ae bro
+Found "Sandefjord" already ae bro
+Found "Rygge" already ae bro
+Adding "Cape Verde" ae bro
+Adding "Virgin Islands" ae bro
+Adding "Haiti" ae bro
+Found " Santiago Island" already ae bro
+----------------------------------------------------------------
+United Kingdom
+	Switzerland | Sierra Leone | Morocco | Germany | Moldova | India | Greece | United States | Ghana | Spain | Netherlands | Sweden | United Arab Emirates | Bahrain | Norway | Italy | Belgium | France | Hungary | Denmark | South Africa | Ireland | Uganda | Gibraltar | Finland | Turkey | Malaysia | Kuwait | Cyprus | Portugal | Luxembourg | Kenya | Romania | Czech Republic | Bulgaria | Austria | Poland | Canada | Croatia | Jersey | Algeria | Mexico | Belarus | Isle of Man | Antigua and Barbuda | Bermuda | Barbados | Jamaica | Malta | Maldives | Mauritius | Albania | Saint Lucia | Nigeria | Kazakhstan | Jordan | Lebanon | Thailand | Egypt | China | Russia | Argentina | Brazil | Azerbaijan | Hong Kong | Japan | South Korea | Saudi Arabia | Ukraine | Angola | Bahamas | Singapore | Libya | Israel and Palestine | Guernsey | Bangladesh | Latvia | Trinidad and Tobago | Tromso | Sandefjord | Ethiopia | Iceland | Slovakia | Lithuania | Rygge | Estonia | Montenegro | Uzbekistan | Iran | Serbia | Pakistan | Philippines | Qatar | Turkmenistan | Tunisia | Cuba | Cape Verde | Dominican Republic | Slovenia | Sri Lanka | Macedonia | Oman | 
+Found "Sierra Leone" already ae bro
+Adding "Uganda" ae bro
+Adding "Isle of Man" ae bro
+Adding "Bermuda" ae bro
+Found "Mauritius" already ae bro
+Found "Angola" already ae bro
+Adding "Bahamas" ae bro
+Found "Libya" already ae bro
+Found "Israel and Palestine" already ae bro
+Found "Tromso" already ae bro
+Found "Sandefjord" already ae bro
+Found "Rygge" already ae bro
+Found "Turkmenistan" already ae bro
+Found "Cape Verde" already ae bro
+Found "Macedonia" already ae bro
+----------------------------------------------------------------
+Spain
+	Switzerland | Gambia | Morocco | Germany | Latvia | Greece | United Kingdom | United States | Austria | France | Denmark | Portugal | Canada | Algeria | Belgium | Mexico | Argentina | Colombia | Finland | Italy | Belarus | Brazil | China | Cuba | Qatar | Sweden | Norway | Rygge | Sandefjord | Poland | Harstad/Narvik | Tromso | Dominican Republic | Ireland | United Arab Emirates | Bulgaria | Netherlands | Slovakia | Lithuania | Hungary | Malta | Estonia | Russia | Jordan | Croatia | Senegal | Ukraine | Luxembourg | Romania | Czech Republic | Israel and Palestine | Mauritania | Ghana | Venezuela | Guatemala | Ecuador | Angola | Peru | Nigeria | Panama | Chile | Costa Rica | Equatorial Guinea | South Korea | Libya | Egypt | Western Sahara |  Santiago Island | Bolivia | Turkey | Pakistan | Singapore | Saudi Arabia | Thailand |  Sheffield | Tunisia | Uruguay | Iceland | 
+Found "Gambia" already ae bro
+Found "Rygge" already ae bro
+Found "Sandefjord" already ae bro
+Adding "Harstad/Narvik" ae bro
+Found "Tromso" already ae bro
+Found "Israel and Palestine" already ae bro
+Found "Angola" already ae bro
+Found "Libya" already ae bro
+Adding "Western Sahara" ae bro
+Found " Santiago Island" already ae bro
+Adding " Sheffield" ae bro
+----------------------------------------------------------------
+Cyprus
+	Switzerland | Turkey | Moldova | Greece | United Kingdom | Austria | Germany | France | Belarus | Latvia | Netherlands | United Arab Emirates | Lebanon | Romania | Bulgaria | Russia | Israel and Palestine | Sweden | Norway | Malta | Egypt | Belgium | Poland | Lithuania | Bahrain | Serbia | Ukraine | Qatar | Jordan | Italy | Hungary | 
+Found "Israel and Palestine" already ae bro
+----------------------------------------------------------------
+Egypt
+	Switzerland | Israel and Palestine | France | Libya | Greece | Germany | Algeria | India | Morocco | Saudi Arabia | Italy | United Kingdom | China | Jordan | Kuwait | United Arab Emirates | Ethiopia | Cyprus | Bahrain | Austria | Yemen | Netherlands | Lebanon | Thailand | Nigeria | Ghana | Eritrea | Spain | Iraq | Belgium | Hungary | Indonesia | Denmark | Tanzania | Russia | Qatar | Uganda | Turkey | United States | South Africa | South Sudan | Sudan | Oman | Kenya | Tunisia | Canada | 
+Found "Israel and Palestine" already ae bro
+Found "Libya" already ae bro
+Adding "Yemen" ae bro
+Adding "Eritrea" ae bro
+Found "Uganda" already ae bro
+Adding "South Sudan" ae bro
+----------------------------------------------------------------
+Sweden
+	Finland | Sandefjord | Norway | Germany | Greece | France | United Kingdom | Austria | Morocco | Netherlands | Belarus | Denmark | Latvia | Switzerland | China | Spain | Serbia | Thailand | Hungary | Italy | Croatia | Portugal | United States | Poland | Cyprus | Czech Republic | Bosnia and Herzegovina | Israel and Palestine | Lithuania | Ireland | United Arab Emirates | Iran | Ethiopia | Iceland | Malta | Belgium | Luxembourg | Estonia | Turkey | Qatar | Russia | Tromso | Iraq | Macedonia | 
+Found "Sandefjord" already ae bro
+Found "Israel and Palestine" already ae bro
+Found "Tromso" already ae bro
+Found "Macedonia" already ae bro
+----------------------------------------------------------------
+Finland
+	Sweden | Germany | United States | United Kingdom | Austria | Switzerland | France | Spain | Netherlands | Turkey | Thailand | Belgium | Hungary | China | Denmark | Croatia | India | Russia | Italy | Hong Kong | South Korea | Iceland | Japan | Poland | Portugal | Slovenia | Belarus | Norway | Czech Republic | Latvia | Singapore | Estonia | Israel and Palestine | Lithuania | Greece | Bulgaria | Ireland | Ukraine | 
+Found "Israel and Palestine" already ae bro
+----------------------------------------------------------------
+Norway
+	Sweden | Germany | Greece | United Kingdom | Denmark | France | Finland | Netherlands | Harstad/Narvik | Latvia | Spain | Tromso | Turkey | Croatia | Italy | United States | Iceland | Poland | Czech Republic | Sandefjord | Serbia | Thailand | Bulgaria | Slovakia | Hungary | Ireland | Portugal | Switzerland | Ukraine | Cyprus | Russia | Svalbard | Malta | Lithuania | Morocco | Estonia | Austria | Pakistan | Qatar | Faroe Islands | Belgium | Orsta-Volda | Vardø | Mo i Rana | Rørvik | 
+Found "Harstad/Narvik" already ae bro
+Found "Tromso" already ae bro
+Found "Sandefjord" already ae bro
+Adding "Svalbard" ae bro
+Adding "Orsta-Volda" ae bro
+Adding "Vardø" ae bro
+Adding "Mo i Rana" ae bro
+Adding "Rørvik" ae bro
+----------------------------------------------------------------
+United Arab Emirates
+	Philippines | Bangladesh | Afghanistan | India | Tajikistan | Libya | Saudi Arabia | Kuwait | Greece | Sri Lanka | Germany | United States | Pakistan | United Kingdom | Oman | Bahrain | Thailand | China | Singapore | Canada | Netherlands | France | Algeria | Morocco | Indonesia | Italy | South Africa | Sudan | Malaysia | Australia | Maldives | Kenya | Seychelles | Belarus | Brunei | Belgium | Hong Kong | Cyprus | Somalia | Angola | Ireland | Ghana | Ethiopia | Jordan | Sweden | Spain | Lebanon | Iraq | Egypt | Denmark | Tanzania | Senegal | Russia | Qatar | Uganda | Brazil | Switzerland | Japan | South Korea | Iran | Turkey | Ukraine | Portugal | Nigeria | Zambia | Malta | Mauritius | Czech Republic | Yemen | Vietnam | Taiwan | Tunisia | Austria | Poland | Kazakhstan | Serbia | Nepal | Moldova | Turkmenistan | Armenia | Kyrgyzstan | Azerbaijan | Djibouti | South Sudan | Romania | Macedonia | Georgia | Uzbekistan | Hungary | Bulgaria | Rwanda | 
+Found "Tajikistan" already ae bro
+Found "Libya" already ae bro
+Found "Angola" already ae bro
+Found "Uganda" already ae bro
+Adding "Zambia" ae bro
+Found "Mauritius" already ae bro
+Found "Yemen" already ae bro
+Found "Turkmenistan" already ae bro
+Found "Kyrgyzstan" already ae bro
+Found "Djibouti" already ae bro
+Found "South Sudan" already ae bro
+Found "Macedonia" already ae bro
+----------------------------------------------------------------
+Philippines
+	United Arab Emirates | Japan | Singapore | Hong Kong | South Korea | Macau | Malaysia | Thailand | Brunei | China | Indonesia | Vietnam | Cambodia | Taiwan | Bahrain | Saudi Arabia | Qatar | Australia | Guam | United States | United Kingdom | Canada | Papua New Guinea | Palau | 
+Adding "Papua New Guinea" ae bro
+Adding "Palau" ae bro
+----------------------------------------------------------------
+Nigeria
+	Ghana | Senegal | Cameroon | Liberia | France | Morocco | United Kingdom | Mali | Equatorial Guinea | United States | United Arab Emirates | Ethiopia | Benin | Togo | Chad | Niger | Cote d'Ivoire | Gabon | Spain | Netherlands | Kenya | Germany | Lebanon | Egypt | Qatar | Jordan | South Africa | Sudan | Saudi Arabia | Turkey | Sierra Leone | Rwanda | 
+Found "Mali" already ae bro
+Found "Chad" already ae bro
+Found "Niger" already ae bro
+Found "Cote d'Ivoire" already ae bro
+Found "Sierra Leone" already ae bro
+----------------------------------------------------------------
+Liberia
+	Ghana | Sierra Leone | Nigeria | Morocco | Cote d'Ivoire | Belgium | 
+Found "Sierra Leone" already ae bro
+Found "Cote d'Ivoire" already ae bro
+----------------------------------------------------------------
+Guinea
+	Guinea-Bissau | Senegal | France | Mauritania | Morocco | Mali | Cote d'Ivoire | Togo | 
+Found "Guinea-Bissau" already ae bro
+Found "Mali" already ae bro
+Found "Cote d'Ivoire" already ae bro
+----------------------------------------------------------------
+Cameroon
+	Senegal | Nigeria | Belgium | Congo (Kinshasa) | France | Equatorial Guinea | Central African Republic | Morocco | Benin | Ethiopia | Congo (Brazzaville) | Togo | Chad | Gabon | Cote d'Ivoire | Kenya | Turkey | 
+Found "Congo (Kinshasa)" already ae bro
+Found "Chad" already ae bro
+Found "Cote d'Ivoire" already ae bro
+----------------------------------------------------------------
+Saudi Arabia
+	Bangladesh | Libya | Chad | United Arab Emirates | India | Ethiopia | Germany | Turkey | Netherlands | Kuwait | France | Morocco | Egypt | Italy | United Kingdom | Brunei | Hong Kong | Malaysia | Yemen | Indonesia | Bahrain | Iran | South Korea | Kenya | Lebanon | Qatar | Sri Lanka | Pakistan | Philippines | Jordan | Sudan | Singapore | Algeria | China | Switzerland | United States | South Africa | Nigeria | Spain | Oman | Tunisia | Canada | Eritrea | 
+Found "Libya" already ae bro
+Found "Chad" already ae bro
+Found "Yemen" already ae bro
+Found "Eritrea" already ae bro
+----------------------------------------------------------------
+Somalia
+	Kenya | Djibouti | Ethiopia | Uganda | Yemen | United Arab Emirates | 
+Found "Djibouti" already ae bro
+Found "Uganda" already ae bro
+Found "Yemen" already ae bro
+----------------------------------------------------------------
+Kenya
+	Somalia | Tanzania | South Sudan | India | United Kingdom | Belgium | France | Mayotte | Zimbabwe | Rwanda | Malawi | Zambia | Netherlands | United Arab Emirates | Comoros | Thailand | China | Germany | Ethiopia | Yemen | South Korea | Burundi | Congo (Brazzaville) | Congo (Kinshasa) | Djibouti | Cote d'Ivoire | Ghana | Mozambique | Mali | Cameroon | Uganda | Botswana | Saudi Arabia | South Africa | Sudan | Angola | Nigeria | Mauritius | Seychelles | Madagascar | Switzerland | Egypt | Turkey | Qatar | Eritrea | 
+Found "South Sudan" already ae bro
+Adding "Zimbabwe" ae bro
+Adding "Malawi" ae bro
+Found "Zambia" already ae bro
+Adding "Comoros" ae bro
+Found "Yemen" already ae bro
+Adding "Burundi" ae bro
+Found "Congo (Kinshasa)" already ae bro
+Found "Djibouti" already ae bro
+Found "Cote d'Ivoire" already ae bro
+Adding "Mozambique" ae bro
+Found "Mali" already ae bro
+Found "Uganda" already ae bro
+Adding "Botswana" ae bro
+Found "Angola" already ae bro
+Found "Mauritius" already ae bro
+Found "Madagascar" already ae bro
+Found "Eritrea" already ae bro
+----------------------------------------------------------------
+Thailand
+	Singapore | China | Bangladesh | Philippines | India | South Korea | Burma | Malaysia | Japan | United Arab Emirates | France | Laos | Finland | United Kingdom | Brunei | Netherlands | Taiwan | Austria | Russia | Sri Lanka | Hong Kong | Pakistan | Kenya | Sweden | Norway | Australia | Ethiopia | Macau | Indonesia | Vietnam | Cambodia | Bahrain | Uzbekistan | Kazakhstan | Kuwait | Germany | Switzerland | Israel and Palestine | Madagascar | Jordan | Egypt | Mongolia | Maldives | Ukraine | Qatar | Nepal | South Africa | Denmark | Belgium | New Zealand | Italy | Turkey | Spain | Iran | Oman | 
+Adding "Burma" ae bro
+Adding "Laos" ae bro
+Found "Israel and Palestine" already ae bro
+Found "Madagascar" already ae bro
+----------------------------------------------------------------
+Singapore
+	Thailand | Australia | China | Hong Kong | Malaysia | Philippines | Cambodia | Burma | Vietnam | Taiwan | India | Japan | United Arab Emirates | France | South Korea | Finland | United Kingdom | Bangladesh | Brunei | Indonesia | Sri Lanka | New Zealand | Turkey | Uzbekistan | Netherlands | Germany | Switzerland | East Timor | Nepal | South Africa | Papua New Guinea | Qatar | Laos | Denmark | Spain | Russia | Italy | Maldives | Saudi Arabia | Macau | 
+Found "Burma" already ae bro
+Adding "East Timor" ae bro
+Found "Papua New Guinea" already ae bro
+Found "Laos" already ae bro
+----------------------------------------------------------------
+Australia
+	Singapore | China | New Zealand | United States | Canada | India | Hong Kong | United Arab Emirates | Brunei | Taiwan | Papua New Guinea | Malaysia | Thailand | Indonesia | Fiji | Solomon Islands | Japan | South Korea | Chile | Mauritius | Vanuatu | Norfolk Island | Cook Islands | Nauru | Philippines | New Caledonia | East Timor | Vietnam | South Africa | Qatar | Guam | Samoa | Christmas Island | Tonga | 
+Found "Papua New Guinea" already ae bro
+Adding "Fiji" ae bro
+Adding "Solomon Islands" ae bro
+Found "Mauritius" already ae bro
+Adding "Vanuatu" ae bro
+Adding "Norfolk Island" ae bro
+Adding "Cook Islands" ae bro
+Adding "Nauru" ae bro
+Adding "New Caledonia" ae bro
+Found "East Timor" already ae bro
+Adding "Samoa" ae bro
+Adding "Christmas Island" ae bro
+Adding "Tonga" ae bro
+----------------------------------------------------------------
+China
+	Singapore | Northern Mariana Islands | Thailand | Australia | Taiwan | Hong Kong | South Korea | Vietnam | Canada | Philippines | Tajikistan | Burma | Malaysia | Japan | Macau | Cambodia | United States | Germany | France | Algeria | India | Mexico | Finland | United Arab Emirates | Italy | United Kingdom | Brunei | Ethiopia | Egypt | Turkey | Pakistan | Nepal | Russia | Sweden | Denmark | North Korea | Switzerland | South Africa | Spain | Israel and Palestine | Mongolia | Austria | Poland | New Zealand | Indonesia | Netherlands | Bangladesh | Maldives | Kenya | Uzbekistan | Kazakhstan | Turkmenistan | Kyrgyzstan | Azerbaijan | Iran | Georgia | Angola | Belgium | Mauritius | Sri Lanka | Laos | Qatar | Saudi Arabia | 
+Adding "Northern Mariana Islands" ae bro
+Found "Tajikistan" already ae bro
+Found "Burma" already ae bro
+Found "North Korea" already ae bro
+Found "Israel and Palestine" already ae bro
+Found "Turkmenistan" already ae bro
+Found "Kyrgyzstan" already ae bro
+Found "Angola" already ae bro
+Found "Mauritius" already ae bro
+Found "Laos" already ae bro
+----------------------------------------------------------------
+Hong Kong
+	Singapore | China | Philippines | South Korea | India | United States | Japan | Canada | Taiwan | France | Malaysia | Australia | Finland | United Kingdom | Bangladesh | Brunei | Indonesia | New Zealand | Netherlands | United Arab Emirates | Thailand | Vietnam | Russia | Qatar | Italy | Germany | South Africa | Maldives | Fiji | Saudi Arabia | Ethiopia | Cambodia | Burma | Kazakhstan | Switzerland | Israel and Palestine | Mauritius | Mongolia | Papua New Guinea | Nepal | Turkey | Guam | 
+Found "Fiji" already ae bro
+Found "Burma" already ae bro
+Found "Israel and Palestine" already ae bro
+Found "Mauritius" already ae bro
+Found "Papua New Guinea" already ae bro
+----------------------------------------------------------------
+Japan
+	Philippines | Taiwan | South Korea | China | India | United States | Thailand | Vietnam | Hong Kong | Malaysia | Singapore | Canada | France | Northern Mariana Islands | Mexico | Finland | Italy | United Kingdom | Guam | Palau | United Arab Emirates | Indonesia | Uzbekistan | Russia | Australia | Qatar | Germany | French Polynesia | Netherlands | Switzerland | Turkey | Macau | New Zealand | Burma | Austria | Mongolia | Papua New Guinea | New Caledonia | Denmark | Sri Lanka | 
+Found "Northern Mariana Islands" already ae bro
+Found "Palau" already ae bro
+Adding "French Polynesia" ae bro
+Found "Burma" already ae bro
+Found "Papua New Guinea" already ae bro
+Found "New Caledonia" already ae bro
+----------------------------------------------------------------
+Taiwan
+	Japan | Singapore | China | Philippines | South Korea | Vietnam | Hong Kong | Netherlands | Malaysia | India | Macau | Thailand | Australia | France | Indonesia | Guam | United States | Cambodia | Canada | Germany | Burma | Palau | Austria | United Arab Emirates | 
+Found "Burma" already ae bro
+Found "Palau" already ae bro
+----------------------------------------------------------------
+Malaysia
+	Singapore | Bangladesh | Philippines | Burma | China | India | Thailand | France | Germany | United Kingdom | Japan | Netherlands | Indonesia | Hong Kong | Taiwan | Brunei | Vietnam | Macau | Cambodia | Laos | United Arab Emirates | Australia | Sri Lanka | South Korea | Saudi Arabia | Nepal | Uzbekistan | Iran | North Korea | Kazakhstan | Kuwait | New Zealand | Qatar | Turkey | Oman | Maldives | Mauritius | Pakistan | 
+Found "Burma" already ae bro
+Found "Laos" already ae bro
+Found "North Korea" already ae bro
+Found "Mauritius" already ae bro
+----------------------------------------------------------------
+Cambodia
+	Singapore | Philippines | Burma | China | Vietnam | Malaysia | Taiwan | South Korea | Thailand | Hong Kong | Laos | 
+Found "Burma" already ae bro
+Found "Laos" already ae bro
+----------------------------------------------------------------
+Vietnam
+	Singapore | China | Philippines | Japan | Taiwan | France | Cambodia | Malaysia | Germany | Hong Kong | United Arab Emirates | Thailand | Kazakhstan | South Korea | Macau | Australia | Qatar | Laos | Russia | Burma | Indonesia | 
+Found "Laos" already ae bro
+Found "Burma" already ae bro
+----------------------------------------------------------------
+Germany
+	Switzerland | Italy | Croatia | Morocco | Algeria | Sweden | Greece | Turkey | Spain | France | Hungary | Ireland | United Kingdom | Portugal | Austria | Czech Republic | Bosnia and Herzegovina | Israel and Palestine | Tunisia | Poland | Serbia | Netherlands | Norway | Belgium | Finland | Moldova | United Arab Emirates | United States | Malaysia | Egypt | Denmark | Mexico | Netherlands Antilles | Russia | Guernsey | Jersey | Dominican Republic | Latvia | Cuba | Jordan | Romania | China | Bulgaria | Qatar | Saudi Arabia | Cyprus | Lithuania | Canada | India | Colombia | Vietnam | Belarus | Taiwan | Hong Kong | Kenya | Jamaica | Maldives | Mauritius | Brazil | Seychelles | Puerto Rico | Trinidad and Tobago | Ethiopia | Iceland | Estonia | Rygge | Bahrain | Luxembourg | Uzbekistan | Iran | Azerbaijan | Japan | Slovenia | Albania | Kazakhstan | South Korea | Malta | Kuwait | Nigeria | Ghana | Lebanon | Thailand | Venezuela | Iraq | Argentina | South Africa | Ukraine | Angola | Singapore | Georgia | Macedonia | Namibia | Tajikistan | Turkmenistan | Sri Lanka | Oman | Cape Verde | Montenegro | 
+Found "Israel and Palestine" already ae bro
+Found "Netherlands Antilles" already ae bro
+Found "Mauritius" already ae bro
+Found "Rygge" already ae bro
+Found "Angola" already ae bro
+Found "Macedonia" already ae bro
+Found "Tajikistan" already ae bro
+Found "Turkmenistan" already ae bro
+Found "Cape Verde" already ae bro
+----------------------------------------------------------------
+Croatia
+	Germany | United Kingdom | France | Finland | Sweden | Norway | Sandefjord | Denmark | Ireland | Belgium | Rygge | Netherlands | Spain | Poland | Luxembourg | Switzerland | Czech Republic | Austria | Greece | Italy | Serbia | Turkey | Bosnia and Herzegovina | Macedonia | Estonia | Hungary | Russia | 
+Found "Sandefjord" already ae bro
+Found "Rygge" already ae bro
+Found "Macedonia" already ae bro
+----------------------------------------------------------------
+Austria
+	Switzerland | Germany | Greece | Georgia | United Kingdom | Spain | France | Jordan | Sweden | Denmark | Italy | Portugal | Finland | Cyprus | Malta | Canada | Algeria | India | Belarus | Thailand | Latvia | China | Taiwan | Norway | Ireland | United Arab Emirates | Bulgaria | Turkey | Egypt | Russia | Israel and Palestine | Netherlands | Iran | Azerbaijan | Slovenia | Serbia | Kazakhstan | Luxembourg | Poland | Japan | Belgium | Hungary | Romania | Croatia | Ukraine | Iraq | Armenia | United States | Moldova | Slovakia | Czech Republic | Bosnia and Herzegovina | Macedonia | Montenegro | Albania | Lithuania | Qatar | Tunisia | 
+Found "Israel and Palestine" already ae bro
+Found "Macedonia" already ae bro
+----------------------------------------------------------------
+United States
+	Bahamas | Argentina | Dominican Republic | Mexico | Netherlands Antilles | Aruba | Venezuela | Belgium | Greece | United Kingdom | Spain | Japan | Antigua and Barbuda | Belize | France | Ireland | Italy | Germany | Cayman Islands | Brazil | Costa Rica | Jamaica | Turks and Caicos Islands | Puerto Rico | Virgin Islands | Saint Lucia | Canada | Australia | Colombia | Guatemala | South Korea | Peru | Panama | Honduras | El Salvador | Chile | Hong Kong | Haiti | United Arab Emirates | Qatar | Jordan | Bermuda | Ecuador | Finland | Switzerland | Fiji | French Polynesia | China | Paraguay | Barbados | Martinique | Grenada | Bolivia | Nicaragua | Uruguay | Trinidad and Tobago | Guadeloupe | Saint Kitts and Nevis | Netherlands | Portugal | Israel and Palestine | India | Morocco | South Africa | Taiwan | Guyana | Nigeria | Russia | Ghana | Senegal | Sweden | Denmark | Norway | Ethiopia | Iceland | Samoa | Kiribati | New Zealand | American Samoa | Latvia | Kuwait | Poland | Egypt | Cook Islands | Austria | Pakistan | Philippines | Ukraine | Saudi Arabia | Turkey | Guam | Marshall Islands |  Santiago Island | 
+Found "Bahamas" already ae bro
+Found "Netherlands Antilles" already ae bro
+Adding "Belize" ae bro
+Adding "Turks and Caicos Islands" ae bro
+Found "Virgin Islands" already ae bro
+Found "El Salvador" already ae bro
+Found "Haiti" already ae bro
+Found "Bermuda" already ae bro
+Found "Fiji" already ae bro
+Found "French Polynesia" already ae bro
+Adding "Grenada" ae bro
+Adding "Nicaragua" ae bro
+Adding "Saint Kitts and Nevis" ae bro
+Found "Israel and Palestine" already ae bro
+Found "Samoa" already ae bro
+Adding "Kiribati" ae bro
+Adding "American Samoa" ae bro
+Found "Cook Islands" already ae bro
+Adding "Marshall Islands" ae bro
+Found " Santiago Island" already ae bro
+----------------------------------------------------------------
+Netherlands
+	Morocco | Germany | France | Georgia | United Kingdom | United States | Denmark | United Arab Emirates | Saudi Arabia | Qatar | Zimbabwe | Tanzania | Rwanda | Malaysia | Kuwait | Taiwan | Ecuador | Italy | Finland | Portugal | Norway | Sweden | South Africa | Peru | Kenya | Panama | Sandefjord | Belarus | Thailand | Latvia | Hong Kong | Cyprus | China | India | Canada | Ireland | Serbia | Bulgaria | Iceland | Spain | Greece | Poland | Malta | Turkey | Iraq | Austria | Israel and Palestine | Hungary | Czech Republic | Croatia | Iran | Slovenia | Kazakhstan | South Korea | Ghana | Aruba | Belgium | Egypt | Netherlands Antilles | Argentina | Japan | Brazil | Switzerland | Cuba | Ukraine | Angola | Russia | Nigeria | Luxembourg | Mexico | Romania | Suriname | Singapore | Estonia | Dominican Republic | Jordan | Guernsey | Jersey | Tunisia | Cape Verde | Macedonia | Lithuania | 
+Found "Zimbabwe" already ae bro
+Found "Sandefjord" already ae bro
+Found "Israel and Palestine" already ae bro
+Found "Netherlands Antilles" already ae bro
+Found "Angola" already ae bro
+Found "Cape Verde" already ae bro
+Found "Macedonia" already ae bro
+----------------------------------------------------------------
+Morocco
+	Spain | Italy | Belgium | United Kingdom | France | Turkey | Netherlands | Germany | Libya | Algeria | Western Sahara | Cote d'Ivoire | Sweden | United Arab Emirates | Lebanon | Gambia | Mali | Congo (Brazzaville) | Egypt | Guinea | Benin | Senegal | Cameroon | Congo (Kinshasa) | Sierra Leone | Brazil | Switzerland | Saudi Arabia | United States | Angola | Gabon | Togo | Portugal | Niger | Mauritania | Burkina Faso | Guinea-Bissau |  Santiago Island | Liberia | Equatorial Guinea | Russia | Tunisia | Canada | Denmark | Norway | Ireland | Luxembourg | Qatar | 
+Found "Libya" already ae bro
+Found "Western Sahara" already ae bro
+Found "Cote d'Ivoire" already ae bro
+Found "Gambia" already ae bro
+Found "Mali" already ae bro
+Found "Congo (Kinshasa)" already ae bro
+Found "Sierra Leone" already ae bro
+Found "Angola" already ae bro
+Found "Niger" already ae bro
+Found "Guinea-Bissau" already ae bro
+Found " Santiago Island" already ae bro
+----------------------------------------------------------------
+Belgium
+	Morocco | Germany | India | United States | Canada | Greece | France | United Kingdom | Burundi | Benin | Senegal | Cameroon | Rwanda | Angola | Burkina Faso | Algeria | Spain | Finland | Portugal | Italy | Denmark | United Arab Emirates | Latvia | Lithuania | Ireland | Bulgaria | Iceland | Slovakia | Hungary | Poland | Sweden | Cyprus | Croatia | Rygge | Montenegro | Turkey | Tunisia | Switzerland | China | Slovenia | Serbia | Netherlands | Malta | Cote d'Ivoire | Sierra Leone | Israel and Palestine | Lebanon | Egypt | Czech Republic | Austria | Estonia | Ukraine | Qatar | Romania | Norway | Thailand | Russia | Congo (Kinshasa) | Macedonia | 
+Found "Burundi" already ae bro
+Found "Angola" already ae bro
+Found "Rygge" already ae bro
+Found "Cote d'Ivoire" already ae bro
+Found "Sierra Leone" already ae bro
+Found "Israel and Palestine" already ae bro
+Found "Congo (Kinshasa)" already ae bro
+Found "Macedonia" already ae bro
+----------------------------------------------------------------
+Turkey
+	Morocco | Switzerland | Germany | Tajikistan | Russia | France | Cyprus | Ukraine | Libya | Moldova | Greece | United Kingdom | Canada | Algeria | India | Finland | Italy | Belarus | Latvia | China | Norway | Sandefjord | Ireland | United Arab Emirates | Iran | Singapore | Bahrain | Austria | Belgium | Netherlands | Uzbekistan | Azerbaijan | Kuwait | Bosnia and Herzegovina | Slovenia | Serbia | Kazakhstan | South Korea | Iraq | Georgia | Malta | Luxembourg | Poland | Lebanon | Malaysia | Egypt | Japan | Croatia | Kenya | Denmark | Sweden | Spain | Qatar | Kyrgyzstan | Romania | Macedonia | Albania | Israel and Palestine | Czech Republic | Jordan | Saudi Arabia | Turkmenistan | Thailand | Ghana | Ethiopia | Hungary | Bangladesh | Tanzania | Cameroon | Congo (Kinshasa) | Brazil | Hong Kong | United States | Pakistan | Djibouti | South Africa | Nigeria | Afghanistan | Rwanda | Sudan | Nepal | Portugal | Oman | Maldives | Niger | Yemen | Bulgaria | Montenegro | Estonia | Tunisia | Lithuania | 
+Found "Tajikistan" already ae bro
+Found "Libya" already ae bro
+Found "Sandefjord" already ae bro
+Found "Kyrgyzstan" already ae bro
+Found "Macedonia" already ae bro
+Found "Israel and Palestine" already ae bro
+Found "Turkmenistan" already ae bro
+Found "Congo (Kinshasa)" already ae bro
+Found "Djibouti" already ae bro
+Found "Niger" already ae bro
+Found "Yemen" already ae bro
+----------------------------------------------------------------
+Aruba
+	Venezuela | Netherlands Antilles | Dominican Republic | United States | Canada | Colombia | Panama | Netherlands | Suriname | 
+Found "Netherlands Antilles" already ae bro
+----------------------------------------------------------------
+Venezuela
+	Aruba | Netherlands Antilles | United States | Panama | Puerto Rico | France | Mexico | Argentina | Colombia | Peru | Italy | Trinidad and Tobago | Cuba | Brazil | Dominican Republic | Spain | Ecuador | Chile | Germany | Portugal | Grenada | Guyana | 
+Found "Netherlands Antilles" already ae bro
+Found "Grenada" already ae bro
+----------------------------------------------------------------
+Uzbekistan
+	Russia | Latvia | China | Kazakhstan | India | Thailand | France | United Arab Emirates | Italy | Germany | Kyrgyzstan | Azerbaijan | South Korea | Turkey | Ukraine | Malaysia | United Kingdom | Japan | Czech Republic | Singapore | Israel and Palestine | Iran | 
+Found "Kyrgyzstan" already ae bro
+Found "Israel and Palestine" already ae bro
+----------------------------------------------------------------
+Montenegro
+	Russia | Italy | Belgium | United Kingdom | Slovenia | Serbia | Austria | Turkey | France | Germany | Switzerland | 
+----------------------------------------------------------------
+Antigua and Barbuda
+	Guadeloupe | Saint Kitts and Nevis | United States | Canada | United Kingdom | Dominican Republic | Trinidad and Tobago | Barbados | Jamaica | Germany | Anguilla | Dominica | Puerto Rico | Saint Lucia | Netherlands Antilles | France | 
+Found "Saint Kitts and Nevis" already ae bro
+Adding "Anguilla" ae bro
+Adding "Dominica" ae bro
+Found "Netherlands Antilles" already ae bro
+----------------------------------------------------------------
+Guadeloupe
+	Antigua and Barbuda | Dominica | Martinique | France | Dominican Republic | Netherlands Antilles | United States | Puerto Rico | Canada | Haiti | 
+Found "Dominica" already ae bro
+Found "Netherlands Antilles" already ae bro
+Found "Haiti" already ae bro
+----------------------------------------------------------------
+French Guiana
+	Martinique | France | Brazil | Suriname | 
+----------------------------------------------------------------
+Martinique
+	French Guiana | Guadeloupe | Dominican Republic | Saint Lucia | United States | Puerto Rico | Canada | France | Cuba | Barbados | 
+----------------------------------------------------------------
+Dominican Republic
+	Guadeloupe | Netherlands Antilles | Argentina | United States | Aruba | Germany | Canada | France | Colombia | Peru | Puerto Rico | Antigua and Barbuda | Italy | Panama | Cuba | Costa Rica | Brazil | Spain | Venezuela | Turks and Caicos Islands | Jamaica | Chile | Switzerland | Haiti | Netherlands | Russia | United Kingdom | 
+Found "Netherlands Antilles" already ae bro
+Found "Turks and Caicos Islands" already ae bro
+Found "Haiti" already ae bro
+----------------------------------------------------------------
+Saint Lucia
+	Martinique | United States | Canada | Grenada | United Kingdom | Trinidad and Tobago | Barbados | Antigua and Barbuda | Dominica | Saint Vincent and the Grenadines | 
+Found "Grenada" already ae bro
+Found "Dominica" already ae bro
+----------------------------------------------------------------
+South Korea
+	China | Philippines | Japan | Thailand | Guam | Hong Kong | Burma | United States | Canada | Taiwan | France | India | Singapore | Finland | Italy | United Kingdom | Macau | Cambodia | Malaysia | United Arab Emirates | Indonesia | Uzbekistan | Russia | Kazakhstan | New Zealand | Netherlands | Australia | Sri Lanka | Vietnam | Germany | Turkey | Nepal | Spain | Fiji | Kenya | Czech Republic | Palau | Saudi Arabia | Israel and Palestine | Mongolia | Austria | Laos | Qatar | Northern Mariana Islands | 
+Found "Burma" already ae bro
+Found "Fiji" already ae bro
+Found "Palau" already ae bro
+Found "Israel and Palestine" already ae bro
+Found "Laos" already ae bro
+Found "Northern Mariana Islands" already ae bro
+----------------------------------------------------------------
+Canada
+	China | Belgium | United States | Jordan | United Kingdom | Japan | Germany | Dominican Republic | Cuba | France | Mexico | Martinique | Switzerland | Jamaica | Haiti | Guadeloupe | Bahamas | New Zealand | Hong Kong | South Korea | Australia | Antigua and Barbuda | Aruba | United Arab Emirates | Spain | Bermuda | Barbados | Colombia | Denmark | Ireland | Italy | Cayman Islands | Grenada | Brazil | Turkey | Peru | Costa Rica | Turks and Caicos Islands | Chile | Israel and Palestine | Saint Lucia | Austria | Poland | Algeria | Morocco | El Salvador | Taiwan | Guyana | Trinidad and Tobago | Panama | Netherlands | Ethiopia | Iceland | Tunisia | Egypt | Saint Pierre and Miquelon | Pakistan | Philippines | Qatar | Portugal | Russia | Saudi Arabia | Greece | Puerto Rico | Netherlands Antilles | 
+Found "Haiti" already ae bro
+Found "Bahamas" already ae bro
+Found "Bermuda" already ae bro
+Found "Grenada" already ae bro
+Found "Turks and Caicos Islands" already ae bro
+Found "Israel and Palestine" already ae bro
+Found "El Salvador" already ae bro
+Adding "Saint Pierre and Miquelon" ae bro
+Found "Netherlands Antilles" already ae bro
+----------------------------------------------------------------
+Bangladesh
+	India | Oman | Thailand | United Arab Emirates | Saudi Arabia | Nepal | Malaysia | Qatar | Italy | Hong Kong | Kuwait | United Kingdom | Burma | Singapore | China | Bhutan | Sri Lanka | Pakistan | Turkey | 
+Found "Burma" already ae bro
+----------------------------------------------------------------
+India
+	Bangladesh | Afghanistan | United Arab Emirates | Oman | Thailand | Nepal | Singapore | Tajikistan | Malaysia | Bahrain | Belgium | Sri Lanka | Saudi Arabia | Qatar | Hong Kong | South Africa | Kuwait | United Kingdom | Kenya | Japan | France | Germany | Ethiopia | Egypt | United States | Turkey | Mauritius | Switzerland | Burma | South Korea | Australia | China | Austria | Maldives | Finland | Italy | Taiwan | Netherlands | Uzbekistan | Iran | Yemen | Bhutan | Kazakhstan | Israel and Palestine | Pakistan | Jordan | Russia | Turkmenistan | Reunion | 
+Found "Tajikistan" already ae bro
+Found "Mauritius" already ae bro
+Found "Burma" already ae bro
+Found "Yemen" already ae bro
+Found "Israel and Palestine" already ae bro
+Found "Turkmenistan" already ae bro
+Found "Reunion" already ae bro
+----------------------------------------------------------------
+Oman
+	Bangladesh | India | United Arab Emirates | Qatar | Iran | Ethiopia | Bahrain | Kuwait | Malaysia | Sri Lanka | Egypt | Pakistan | Jordan | Saudi Arabia | Turkey | Switzerland | Lebanon | Thailand | France | Germany | Nepal | United Kingdom | Maldives | Italy | Tanzania | 
+----------------------------------------------------------------
+Nepal
+	Bangladesh | India | China | Malaysia | United Arab Emirates | Bhutan | South Korea | Singapore | Pakistan | Qatar | Thailand | Hong Kong | Turkey | Oman | 
+----------------------------------------------------------------
+Argentina
+	United States | Dominican Republic | Uruguay | Chile | France | Mexico | Paraguay | Brazil | Spain | Colombia | Venezuela | Italy | Peru | Bolivia | United Kingdom | Panama | Cuba | Netherlands | Ecuador | Falkland Islands | Germany | 
+Adding "Falkland Islands" ae bro
+----------------------------------------------------------------
+Mexico
+	United States | Colombia | Guatemala | Cuba | Costa Rica | Belize | Germany | Canada | France | Spain | Panama | Venezuela | Argentina | Brazil | United Kingdom | Peru | El Salvador | Honduras | Chile | Ecuador | Japan | China | Italy | Netherlands | Russia | 
+Found "Belize" already ae bro
+Found "El Salvador" already ae bro
+----------------------------------------------------------------
+Guatemala
+	Mexico | Belize | Honduras | United States | Colombia | El Salvador | Costa Rica | Nicaragua | Panama | 
+Found "Belize" already ae bro
+Found "El Salvador" already ae bro
+Found "Nicaragua" already ae bro
+----------------------------------------------------------------
+Cuba
+	Mexico | Germany | Canada | France | Colombia | Italy | Panama | Venezuela | Argentina | Martinique | Spain | Bahamas | Dominican Republic | Russia | Jamaica | Angola | Ecuador | Netherlands | Cayman Islands | Peru | Switzerland | El Salvador | United Kingdom | 
+Found "Bahamas" already ae bro
+Found "Angola" already ae bro
+Found "El Salvador" already ae bro
+----------------------------------------------------------------
+Costa Rica
+	Mexico | Panama | Nicaragua | United States | Canada | El Salvador | Colombia | Guatemala | Peru | Honduras | Dominican Republic | Spain | 
+Found "Nicaragua" already ae bro
+Found "El Salvador" already ae bro
+----------------------------------------------------------------
+Afghanistan
+	India | Pakistan | United Arab Emirates | Iran | Turkey | Azerbaijan | Kuwait | Tajikistan | 
+Found "Tajikistan" already ae bro
+----------------------------------------------------------------
+Pakistan
+	Afghanistan | United Arab Emirates | China | Thailand | Bahrain | Iran | Kuwait | Sri Lanka | Saudi Arabia | Oman | Spain | United Kingdom | France | Denmark | Italy | Canada | India | Bangladesh | Nepal | Malaysia | Qatar | Norway | Turkey | 
+----------------------------------------------------------------
+Serbia
+	Switzerland | Germany | Greece | France | Italy | Hungary | Sweden | Norway | Netherlands | United Arab Emirates | United Kingdom | Bosnia and Herzegovina | Slovenia | Belgium | Denmark | Cyprus | Romania | Czech Republic | Turkey | Macedonia | Bulgaria | Russia | Montenegro | Israel and Palestine | Austria | Poland | Croatia | Tunisia | Sandefjord | 
+Found "Macedonia" already ae bro
+Found "Israel and Palestine" already ae bro
+Found "Sandefjord" already ae bro
+----------------------------------------------------------------
+Algeria
+	Germany | France | Turkey | Cote d'Ivoire | Spain | Jordan | Lebanon | Mali | Belgium | Egypt | Morocco | Senegal | United Arab Emirates | Italy | Switzerland | United Kingdom | Portugal | Niger | Burkina Faso | China | Russia | Libya | Tunisia | Austria | Canada | Malta | Qatar | Saudi Arabia | 
+Found "Cote d'Ivoire" already ae bro
+Found "Mali" already ae bro
+Found "Niger" already ae bro
+Found "Libya" already ae bro
+----------------------------------------------------------------
+Greece
+	Germany | Moldova | United Arab Emirates | Spain | Serbia | Belgium | Hungary | Egypt | France | Russia | Italy | Switzerland | Ukraine | Turkey | Cyprus | United Kingdom | Norway | Romania | United States | Czech Republic | Bulgaria | Georgia | Albania | Israel and Palestine | Austria | Poland | Sweden | Denmark | Latvia | Qatar | Finland | Ireland | Netherlands | Rygge | Lithuania | Malta | Luxembourg | Lebanon | Croatia | Armenia | Jordan | Canada | Estonia | 
+Found "Israel and Palestine" already ae bro
+Found "Rygge" already ae bro
+----------------------------------------------------------------
+Hungary
+	Germany | Greece | United Kingdom | France | Finland | Italy | Serbia | Belarus | Latvia | Sweden | Denmark | Norway | Ireland | Spain | Belgium | Netherlands | Malta | Poland | Switzerland | Israel and Palestine | Egypt | Czech Republic | Austria | Qatar | Croatia | Romania | Russia | Turkey | Portugal | United Arab Emirates | Azerbaijan | Ukraine | Cyprus | 
+Found "Israel and Palestine" already ae bro
+----------------------------------------------------------------
+Ireland
+	Germany | Moldova | United States | United Kingdom | Canada | France | Denmark | Finland | Norway | Spain | Turkey | Netherlands | Sweden | Greece | United Arab Emirates | Italy | Bulgaria | Belgium | Hungary | Croatia | Portugal | Switzerland | Isle of Man | Jersey | Czech Republic | Austria | Poland | Slovakia | Lithuania | Malta | Romania | Morocco | Latvia | Rygge | Luxembourg | 
+Found "Isle of Man" already ae bro
+Found "Rygge" already ae bro
+----------------------------------------------------------------
+Portugal
+	Germany | Moldova | United Kingdom | United States | Spain | Austria | Switzerland | France | Algeria | Morocco | Netherlands | Belgium | Finland | Italy | Angola | Sweden | Denmark | Norway | Ireland | United Arab Emirates | Cape Verde | Luxembourg | Poland | Ukraine | Czech Republic | Canada | Russia | Turkey | Venezuela | Ghana | Mali | Brazil | Hungary | Senegal | Mozambique | Romania |  Santiago Island | Sao Tome and Principe | Tunisia | 
+Found "Angola" already ae bro
+Found "Cape Verde" already ae bro
+Found "Mali" already ae bro
+Found "Mozambique" already ae bro
+Found " Santiago Island" already ae bro
+Adding "Sao Tome and Principe" ae bro
+----------------------------------------------------------------
+Czech Republic
+	Germany | Russia | Greece | France | United Kingdom | Italy | Finland | Belarus | Latvia | Sweden | Norway | Denmark | Ireland | United Arab Emirates | Bulgaria | Netherlands | Spain | Azerbaijan | Slovenia | Serbia | South Korea | Malta | Poland | Lithuania | Switzerland | Israel and Palestine | Kazakhstan | Belgium | Slovakia | Hungary | Romania | Armenia | Ukraine | Uzbekistan | Austria | Turkey | Portugal | Croatia | 
+Found "Israel and Palestine" already ae bro
+----------------------------------------------------------------
+Bosnia and Herzegovina
+	Germany | Sweden | Italy | Switzerland | Serbia | Denmark | Turkey | Slovenia | Austria | Croatia | 
+----------------------------------------------------------------
+Tunisia
+	Germany | Libya | France | Algeria | Morocco | Italy | Russia | United Arab Emirates | Belgium | Netherlands | Luxembourg | Lebanon | Egypt | Qatar | Jordan | Saudi Arabia | United Kingdom | Turkey | Switzerland | Cote d'Ivoire | Spain | Serbia | Mali | Senegal | Kuwait | Portugal | Mauritania | Burkina Faso | Austria | Malta | 
+Found "Libya" already ae bro
+Found "Cote d'Ivoire" already ae bro
+Found "Mali" already ae bro
+----------------------------------------------------------------
+Poland
+	Germany | Greece | United Kingdom | Denmark | Canada | France | Finland | Italy | Belarus | Latvia | China | Norway | Sweden | Spain | Ireland | United Arab Emirates | Bulgaria | Rygge | Belgium | Netherlands | Malta | Cyprus | Slovenia | Serbia | Switzerland | Croatia | Austria | Hungary | Armenia | Turkey | United States | Ukraine | Russia | Portugal | Romania | Czech Republic | Georgia | Estonia | Israel and Palestine | Lithuania | Qatar |  Sheffield | Sandefjord | 
+Found "Rygge" already ae bro
+Found "Israel and Palestine" already ae bro
+Found " Sheffield" already ae bro
+Found "Sandefjord" already ae bro
+----------------------------------------------------------------
+Panama
+	Costa Rica | Venezuela | United States | France | Mexico | Haiti | Trinidad and Tobago | Colombia | El Salvador | Netherlands | Paraguay | Aruba | Brazil | Argentina | Netherlands Antilles | Guatemala | Ecuador | Cuba | Peru | Jamaica | Nicaragua | Uruguay | Bahamas | Dominican Republic | Honduras | Chile | Puerto Rico | Bolivia | Canada | Spain | 
+Found "Haiti" already ae bro
+Found "El Salvador" already ae bro
+Found "Netherlands Antilles" already ae bro
+Found "Nicaragua" already ae bro
+Found "Bahamas" already ae bro
+----------------------------------------------------------------
+Tanzania
+	Kenya | Netherlands | Germany | United Arab Emirates | Ethiopia | Malawi | South Africa | Egypt | Zimbabwe | Uganda | Comoros | Qatar | Turkey | Mozambique | Rwanda | Oman | Mayotte | 
+Found "Malawi" already ae bro
+Found "Zimbabwe" already ae bro
+Found "Uganda" already ae bro
+Found "Comoros" already ae bro
+Found "Mozambique" already ae bro
+----------------------------------------------------------------
+Brunei
+	Philippines | Malaysia | Thailand | Indonesia | United Arab Emirates | Hong Kong | Saudi Arabia | Australia | China | Singapore | 
+----------------------------------------------------------------
+Indonesia
+	Philippines | Malaysia | United Arab Emirates | Brunei | Taiwan | China | Hong Kong | Singapore | Australia | Thailand | Ambon | Japan | South Korea | Saudi Arabia | Sri Lanka | Egypt | Papua New Guinea | Qatar | East Timor | Vietnam | 
+Adding "Ambon" ae bro
+Found "Papua New Guinea" already ae bro
+Found "East Timor" already ae bro
+----------------------------------------------------------------
+Macau
+	Philippines | China | Malaysia | Taiwan | South Korea | Thailand | Japan | Vietnam | Singapore | 
+----------------------------------------------------------------
+Uruguay
+	Argentina | Paraguay | Brazil | Chile | United States | Peru | Panama | Spain | 
+----------------------------------------------------------------
+Paraguay
+	Uruguay | United States | Argentina | Peru | Panama | Brazil | Chile | Bolivia | 
+----------------------------------------------------------------
+Brazil
+	Uruguay | United States | Canada | France | Mexico | Argentina | Morocco | Colombia | Peru | Italy | United Kingdom | Spain | Panama | Germany | Dominican Republic | Angola | United Arab Emirates | Ecuador | Togo | Paraguay | Barbados | Venezuela | Bolivia | Chile | South Africa | Netherlands | Switzerland | French Guiana | Suriname | Qatar | Turkey | Portugal |  Santiago Island | 
+Found "Angola" already ae bro
+Found " Santiago Island" already ae bro
+----------------------------------------------------------------
+Chile
+	Uruguay | United States | Peru | Argentina | Canada | France | Mexico | Colombia | Panama | Bolivia | Brazil | Spain | French Polynesia | New Zealand | Paraguay | Venezuela | Ecuador | Dominican Republic | Australia | 
+Found "French Polynesia" already ae bro
+----------------------------------------------------------------
+Honduras
+	Guatemala | Belize | United States | Mexico | El Salvador | Costa Rica | Panama | Cayman Islands | 
+Found "Belize" already ae bro
+Found "El Salvador" already ae bro
+----------------------------------------------------------------
+Georgia
+	Israel and Palestine | Greece | Russia | Netherlands | France | Latvia | Austria | Italy | Belarus | China | Kazakhstan | United Arab Emirates | Azerbaijan | Turkey | Ukraine | Germany | Poland | Iraq | Lithuania | 
+Found "Israel and Palestine" already ae bro
+----------------------------------------------------------------
+Armenia
+	Russia | France | Italy | Belarus | Kazakhstan | Iran | United Arab Emirates | Poland | Lebanon | Czech Republic | Austria | Ukraine | Greece | 
+----------------------------------------------------------------
+Latvia
+	Spain | Georgia | Germany | France | Finland | Italy | Belarus | United Kingdom | Norway | Netherlands | Sweden | Greece | Denmark | Belgium | Hungary | Russia | Azerbaijan | Ukraine | Moldova | Cyprus | Malta | Lithuania | Czech Republic | Turkey | Uzbekistan | Estonia | Israel and Palestine | Austria | Poland | Switzerland | Ireland | Rygge | United States | Sandefjord | 
+Found "Israel and Palestine" already ae bro
+Found "Rygge" already ae bro
+Found "Sandefjord" already ae bro
+----------------------------------------------------------------
+Guam
+	South Korea | Taiwan | Japan | Philippines | Australia | Hong Kong | United States | Northern Mariana Islands | Palau | Micronesia | 
+Found "Northern Mariana Islands" already ae bro
+Found "Palau" already ae bro
+Adding "Micronesia" ae bro
+----------------------------------------------------------------
+Jamaica
+	Netherlands Antilles | United States | Canada | United Kingdom | Antigua and Barbuda | Barbados | Bahamas | Trinidad and Tobago | Panama | Germany | Turks and Caicos Islands | Dominican Republic | Cayman Islands | Guyana | Netherlands | 
+Found "Netherlands Antilles" already ae bro
+Found "Bahamas" already ae bro
+Found "Turks and Caicos Islands" already ae bro
+----------------------------------------------------------------
+Suriname
+	Netherlands Antilles | Trinidad and Tobago | Netherlands | Aruba | Brazil | French Guiana | Guyana | 
+Found "Netherlands Antilles" already ae bro
+----------------------------------------------------------------
+Trinidad and Tobago
+	Netherlands Antilles | Suriname | United States | Panama | Saint Lucia | Antigua and Barbuda | Barbados | Venezuela | Guyana | Grenada | Jamaica | United Kingdom | Canada | Saint Vincent and the Grenadines | 
+Found "Netherlands Antilles" already ae bro
+Found "Grenada" already ae bro
+----------------------------------------------------------------
+Kazakhstan
+	Tajikistan | Russia | Belarus | United Kingdom | China | Armenia | Azerbaijan | Georgia | United Arab Emirates | Uzbekistan | Thailand | India | Kyrgyzstan | Hong Kong | South Korea | Turkey | Ukraine | Malaysia | Vietnam | Netherlands | Germany | Austria | Czech Republic | Iran | 
+Found "Tajikistan" already ae bro
+Found "Kyrgyzstan" already ae bro
+----------------------------------------------------------------
+Iran
+	Tajikistan | Italy | Belarus | China | United Arab Emirates | Kuwait | Sweden | Armenia | Turkey | Iraq | Afghanistan | Oman | Bahrain | Netherlands | Lebanon | India | Germany | Azerbaijan | Pakistan | Malaysia | United Kingdom | France | Uzbekistan | Austria | Qatar | Saudi Arabia | Russia | Kazakhstan | Thailand | 
+Found "Tajikistan" already ae bro
+----------------------------------------------------------------
+Ukraine
+	Turkey | Moldova | Greece | France | Italy | Belarus | United Kingdom | Latvia | Norway | United Arab Emirates | Uzbekistan | Spain | Azerbaijan | Kazakhstan | Netherlands | Georgia | Germany | Poland | Switzerland | Israel and Palestine | Russia | Czech Republic | Austria | Estonia | Cyprus | Thailand | Belgium | Armenia | Finland | United States | Portugal | Lithuania | Jordan | Hungary | 
+Found "Israel and Palestine" already ae bro
+----------------------------------------------------------------
+Jordan
+	Libya | United States | Canada | Germany | Austria | France | Algeria | Italy | United Kingdom | Egypt | United Arab Emirates | Bahrain | Spain | Yemen | Lebanon | Israel and Palestine | Kuwait | Thailand | Qatar | Netherlands | Greece | Iraq | India | Russia | Saudi Arabia | Switzerland | Turkey | Ukraine | Sudan | Cyprus | Nigeria | Oman | Romania | Tunisia | 
+Found "Libya" already ae bro
+Found "Yemen" already ae bro
+Found "Israel and Palestine" already ae bro
+----------------------------------------------------------------
+Puerto Rico
+	Anguilla | British Virgin Islands | Saint Kitts and Nevis | Virgin Islands | Venezuela | United States | Dominica | Martinique | Guadeloupe | Colombia | Dominican Republic | Netherlands Antilles | Panama | Germany | Turks and Caicos Islands | Antigua and Barbuda | France | Canada | 
+Found "Anguilla" already ae bro
+Adding "British Virgin Islands" ae bro
+Found "Saint Kitts and Nevis" already ae bro
+Found "Virgin Islands" already ae bro
+Found "Dominica" already ae bro
+Found "Netherlands Antilles" already ae bro
+Found "Turks and Caicos Islands" already ae bro
+----------------------------------------------------------------
+Moldova
+	Russia | Greece | Italy | France | Ireland | Germany | Turkey | Ukraine | Cyprus | Portugal | Romania | United Kingdom | Latvia | United Arab Emirates | Austria | 
+----------------------------------------------------------------
+Romania
+	Moldova | Greece | United Kingdom | Germany | France | Italy | Cyprus | Bulgaria | Ireland | United Arab Emirates | Spain | Serbia | Netherlands | Poland | Switzerland | Israel and Palestine | Lebanon | Czech Republic | Austria | Turkey | Qatar | Jordan | Belgium | Hungary | Russia | Denmark | Portugal | Sandefjord | 
+Found "Israel and Palestine" already ae bro
+Found "Sandefjord" already ae bro
+----------------------------------------------------------------
+Kuwait
+	United Arab Emirates | India | United Kingdom | Netherlands | Saudi Arabia | Italy | Bangladesh | Egypt | Iran | Ethiopia | Afghanistan | Bahrain | Qatar | Yemen | Jordan | Lebanon | Iraq | Turkey | Thailand | Sri Lanka | Germany | Pakistan | United States | Malaysia | Oman | Tunisia | 
+Found "Yemen" already ae bro
+----------------------------------------------------------------
+Bahrain
+	India | Qatar | United Kingdom | United Arab Emirates | Ethiopia | Jordan | Lebanon | Iraq | Thailand | Egypt | France | Saudi Arabia | Germany | Iran | Pakistan | Turkey | Sudan | Kuwait | Cyprus | Oman | Philippines | Yemen | Sri Lanka | 
+Found "Yemen" already ae bro
+----------------------------------------------------------------
+Sri Lanka
+	India | United Arab Emirates | Italy | Maldives | Thailand | Singapore | Malaysia | South Korea | Kuwait | Pakistan | Bahrain | Indonesia | Bangladesh | Saudi Arabia | Oman | Seychelles | China | Qatar | France | Russia | Germany | United Kingdom | Japan | 
+----------------------------------------------------------------
+Qatar
+	India | Bahrain | United States | Germany | Netherlands | Oman | United Arab Emirates | Greece | Spain | Switzerland | Hong Kong | Italy | Iran | Yemen | Azerbaijan | Japan | Kuwait | Lebanon | Malaysia | Saudi Arabia | Egypt | South Korea | Turkey | Pakistan | Philippines | Ethiopia | Algeria | Jordan | Sweden | Iraq | Thailand | Belgium | Hungary | China | France | Indonesia | Sri Lanka | Morocco | Denmark | Bangladesh | Tanzania | Russia | Uganda | Brazil | South Africa | Sudan | Nepal | Cyprus | United Kingdom | Nigeria | Australia | Maldives | Kenya | Norway | Romania | Burma | Vietnam | Singapore | Tunisia | Austria | Poland | Canada | 
+Found "Yemen" already ae bro
+Found "Uganda" already ae bro
+Found "Burma" already ae bro
+----------------------------------------------------------------
+South Africa
+	India | United Kingdom | France | Netherlands | United Arab Emirates | United States | Zimbabwe | Zambia | Mauritius | Namibia | Botswana | Congo (Kinshasa) | Hong Kong | Angola | Ethiopia | Malawi | Seychelles | Tanzania | Brazil | Kenya | Germany | Switzerland | Israel and Palestine | Madagascar | Egypt | Singapore | Australia | Qatar | Mozambique | Ghana | Thailand | Congo (Brazzaville) | Senegal | Uganda | Rwanda | Gabon | Nigeria | Lesotho | Swaziland | Saudi Arabia | Turkey | Reunion | 
+Found "Zimbabwe" already ae bro
+Found "Zambia" already ae bro
+Found "Mauritius" already ae bro
+Found "Botswana" already ae bro
+Found "Congo (Kinshasa)" already ae bro
+Found "Angola" already ae bro
+Found "Malawi" already ae bro
+Found "Israel and Palestine" already ae bro
+Found "Madagascar" already ae bro
+Found "Mozambique" already ae bro
+Found "Uganda" already ae bro
+Adding "Lesotho" ae bro
+Adding "Swaziland" ae bro
+Found "Reunion" already ae bro
+----------------------------------------------------------------
+Bulgaria
+	Greece | United Kingdom | Germany | France | Italy | Cyprus | Denmark | Finland | Norway | Ireland | Russia | Spain | Netherlands | Belgium | Romania | Czech Republic | Israel and Palestine | Austria | Poland | Switzerland | Serbia | Luxembourg | Turkey | United Arab Emirates | 
+Found "Israel and Palestine" already ae bro
+----------------------------------------------------------------
+Albania
+	Greece | Italy | United Kingdom | Germany | Slovenia | Austria | Turkey | 
+----------------------------------------------------------------
+Denmark
+	Greece | United Kingdom | Germany | Spain | Austria | Netherlands | Norway | Lithuania | Poland | Canada | France | Italy | Morocco | Finland | Sweden | Belgium | Switzerland | Latvia | China | Bulgaria | Hungary | Ireland | Portugal | United States | Malta | Czech Republic | Croatia | Israel and Palestine | United Arab Emirates | Iceland | Greenland | Bosnia and Herzegovina | Slovenia | Serbia | Luxembourg | Egypt | Estonia | Turkey | Pakistan | Qatar | Faroe Islands | Thailand | Russia | Japan | Romania | Singapore | Sandefjord | 
+Found "Israel and Palestine" already ae bro
+Found "Sandefjord" already ae bro
+----------------------------------------------------------------
+New Zealand
+	Australia | French Polynesia | China | Hong Kong | Singapore | Fiji | South Korea | Chile | Malaysia | Vanuatu | Japan | Samoa | United States | New Caledonia | Cook Islands | Tonga | Thailand | 
+Found "French Polynesia" already ae bro
+Found "Fiji" already ae bro
+Found "Vanuatu" already ae bro
+Found "Samoa" already ae bro
+Found "New Caledonia" already ae bro
+Found "Cook Islands" already ae bro
+Found "Tonga" already ae bro
+----------------------------------------------------------------
+Barbados
+	United States | Canada | United Kingdom | Antigua and Barbuda | Jamaica | Trinidad and Tobago | Netherlands Antilles | Germany | Brazil | Dominica | Martinique | Grenada | Guyana | Saint Lucia | Saint Vincent and the Grenadines | 
+Found "Netherlands Antilles" already ae bro
+Found "Dominica" already ae bro
+Found "Grenada" already ae bro
+----------------------------------------------------------------
+Cayman Islands
+	United States | Canada | Bahamas | Cuba | Jamaica | Honduras | 
+Found "Bahamas" already ae bro
+----------------------------------------------------------------
+Peru
+	United States | Chile | Canada | France | Bolivia | Mexico | Argentina | Paraguay | Colombia | Venezuela | Brazil | Ecuador | Uruguay | El Salvador | Dominican Republic | Costa Rica | Netherlands | Panama | Spain | Cuba | 
+Found "El Salvador" already ae bro
+----------------------------------------------------------------
+Gibraltar
+	United Kingdom | 
+----------------------------------------------------------------
+Luxembourg
+	United Kingdom | France | Italy | Germany | Spain | Netherlands | Turkey | Morocco | Sweden | Cape Verde | Greece | Denmark | Croatia | Tunisia | Ireland | Portugal | Switzerland | Malta | Bulgaria | Austria | 
+Found "Cape Verde" already ae bro
+----------------------------------------------------------------
+Bolivia
+	United States | Peru | Argentina | Colombia | Panama | Brazil | Chile | Spain | Paraguay | 
+----------------------------------------------------------------
+Guernsey
+	Germany | Jersey | United Kingdom | France | Netherlands | 
+----------------------------------------------------------------
+Jersey
+	Germany | United Kingdom |  Sheffield | Guernsey | Ireland | Netherlands | France | Switzerland | 
+Found " Sheffield" already ae bro
+----------------------------------------------------------------
+Malta
+	Austria | France | Italy | United Kingdom | Latvia | Denmark | Norway | Cyprus | Libya | Ireland | Netherlands | Spain | Sweden | Poland | Lithuania | Rygge | Tunisia | Algeria | Greece | Belgium | Hungary | Russia | Germany | Switzerland | Turkey | Czech Republic | Luxembourg | 
+Found "Libya" already ae bro
+Found "Rygge" already ae bro
+----------------------------------------------------------------
+Ethiopia
+	Saudi Arabia | India | China | United Arab Emirates | Nigeria | Ghana | Lebanon | Thailand | Mali | Egypt | France | Benin | Tanzania | Cameroon | Uganda | Congo (Kinshasa) | Italy | Germany | Somalia | Hong Kong | Zimbabwe | Djibouti | South Africa | South Sudan | Rwanda | Sudan | Kuwait | Angola | Gabon | Togo | United Kingdom | Malawi | Zambia | Kenya | Oman | Mozambique | Chad | Niger | Burkina Faso | Congo (Brazzaville) | Equatorial Guinea | Israel and Palestine | Bahrain | Yemen | Qatar | Turkey | 
+Found "Mali" already ae bro
+Found "Uganda" already ae bro
+Found "Congo (Kinshasa)" already ae bro
+Found "Zimbabwe" already ae bro
+Found "Djibouti" already ae bro
+Found "South Sudan" already ae bro
+Found "Angola" already ae bro
+Found "Malawi" already ae bro
+Found "Zambia" already ae bro
+Found "Mozambique" already ae bro
+Found "Chad" already ae bro
+Found "Niger" already ae bro
+Found "Israel and Palestine" already ae bro
+Found "Yemen" already ae bro
+----------------------------------------------------------------
+Rwanda
+	Uganda | Kenya | Burundi | Ethiopia | South Africa | Belgium | Congo (Brazzaville) | Tanzania | United Arab Emirates | Turkey | South Sudan | Gabon | Nigeria | 
+Found "Uganda" already ae bro
+Found "Burundi" already ae bro
+Found "South Sudan" already ae bro
+----------------------------------------------------------------
+Lithuania
+	Denmark | Germany | Finland | Belarus | Latvia | Belgium | Norway | Sweden | Spain | United Kingdom | Italy | Ireland | Greece | Malta | Cyprus | Rygge | France | Poland | Czech Republic | Estonia | Austria | Ukraine | Russia | Turkey |  Sheffield | Netherlands | Georgia | Israel and Palestine | Sandefjord | 
+Found "Rygge" already ae bro
+Found " Sheffield" already ae bro
+Found "Israel and Palestine" already ae bro
+Found "Sandefjord" already ae bro
+----------------------------------------------------------------
+Lebanon
+	France | Algeria | Morocco | Italy | Belarus | United Kingdom | Cyprus | United Arab Emirates | Ethiopia | Bahrain | Iran | Jordan | Yemen | Kuwait | Germany | Ghana | Greece | Iraq | Belgium | Egypt | Saudi Arabia | Qatar | Armenia | Switzerland | Turkey | Nigeria | Romania | Russia | Tunisia | Oman | 
+Found "Yemen" already ae bro
+----------------------------------------------------------------
+Central African Republic
+	Cameroon | Morocco | 
+----------------------------------------------------------------
+Congo (Brazzaville)
+	France | Morocco | Angola | Gabon | Ethiopia | Cameroon | Congo (Kinshasa) | Kenya | Benin | South Africa | Rwanda | 
+Found "Angola" already ae bro
+Found "Congo (Kinshasa)" already ae bro
+----------------------------------------------------------------
+Gabon
+	France | Morocco | Equatorial Guinea | Benin | Nigeria | Congo (Brazzaville) | Ethiopia | Congo (Kinshasa) | Togo | Cameroon | Cote d'Ivoire | South Africa | Turkey | Rwanda | 
+Found "Congo (Kinshasa)" already ae bro
+Found "Cote d'Ivoire" already ae bro
+----------------------------------------------------------------
+Slovenia
+	France | Finland | Netherlands | Belgium | Denmark | Germany | Turkey | Czech Republic | Serbia | Bosnia and Herzegovina | Macedonia | Russia | Montenegro | Albania | Austria | Poland | Switzerland | United Kingdom | 
+Found "Macedonia" already ae bro
+----------------------------------------------------------------
+Mauritania
+	France | Guinea | Morocco | Senegal | Spain | Mali | Tunisia | 
+Found "Mali" already ae bro
+----------------------------------------------------------------
+Equatorial Guinea
+	Cameroon | Morocco | Gabon | Benin | Ethiopia | Spain | Nigeria | 
+----------------------------------------------------------------
+Mayotte
+	Comoros | Madagascar | Reunion | Tanzania | 
+Found "Comoros" already ae bro
+Found "Madagascar" already ae bro
+Found "Reunion" already ae bro
+----------------------------------------------------------------
+Maldives
+	India | United Arab Emirates | Sri Lanka | United Kingdom | Hong Kong | China | Germany | Italy | Malaysia | Thailand | Qatar | Singapore | Russia | Turkey | Oman | 
+----------------------------------------------------------------
+Iceland
+	Finland | Norway | Netherlands | Sweden | Denmark | United States | Belgium | France | Germany | United Kingdom | Canada | Switzerland | Greenland | Spain | 
+----------------------------------------------------------------
+Belarus
+	Finland | Russia | Netherlands | Sweden | Turkmenistan | United Arab Emirates | Spain | Lebanon | Hungary | Georgia | France | Armenia | Italy | Germany | Switzerland | Azerbaijan | Iran | Turkey | Ukraine | Cyprus | United Kingdom | Czech Republic | Latvia | Israel and Palestine | Kazakhstan | Austria | Lithuania | Poland | 
+Found "Turkmenistan" already ae bro
+Found "Israel and Palestine" already ae bro
+----------------------------------------------------------------
+Estonia
+	Finland | Latvia | Norway | Italy | Germany | Spain | United Kingdom | Rygge | Netherlands | Poland | Lithuania | Sweden | Belgium | Denmark | Ukraine | Russia | France | Croatia | Turkey | Greece | 
+Found "Rygge" already ae bro
+----------------------------------------------------------------
+Sudan
+	United Arab Emirates | Ethiopia | Bahrain | Yemen | Kenya | Egypt | Qatar | Jordan | Saudi Arabia | South Sudan | Chad | Turkey | Eritrea | 
+Found "Yemen" already ae bro
+Found "South Sudan" already ae bro
+Found "Chad" already ae bro
+Found "Eritrea" already ae bro
+----------------------------------------------------------------
+Seychelles
+	United Arab Emirates | Germany | South Africa | Mauritius | Kenya | Sri Lanka | Russia | 
+Found "Mauritius" already ae bro
+----------------------------------------------------------------
+Namibia
+	South Africa | Angola | Zambia | Ghana | Germany | Zimbabwe | Botswana | 
+Found "Angola" already ae bro
+Found "Zambia" already ae bro
+Found "Zimbabwe" already ae bro
+Found "Botswana" already ae bro
+----------------------------------------------------------------
+Guyana
+	United States | Trinidad and Tobago | Canada | Barbados | Jamaica | Suriname | Venezuela | 
+----------------------------------------------------------------
+Mongolia
+	China | South Korea | Thailand | Hong Kong | Japan | Russia | Kyrgyzstan | 
+Found "Kyrgyzstan" already ae bro
+----------------------------------------------------------------
+Slovakia
+	Czech Republic | Norway | Spain | Italy | United Kingdom | France | Belgium | Ireland | Austria | 
+----------------------------------------------------------------
+Iraq
+	United Arab Emirates | Iran | Bahrain | Netherlands | Kuwait | Turkey | Germany | Lebanon | Egypt | Austria | Qatar | Jordan | Sweden | Georgia | 
+----------------------------------------------------------------
+Greenland
+	Iceland | Denmark | 
+----------------------------------------------------------------
+Bhutan
+	India | Bangladesh | Nepal | 
+----------------------------------------------------------------
+Saint Vincent and the Grenadines
+	Barbados | Grenada | Trinidad and Tobago | Saint Lucia | 
+Found "Grenada" already ae bro
+----------------------------------------------------------------
+Faroe Islands
+	Norway | Denmark | 
 Gays
 Israel and Palestine  : 13136.208984
 Turkmenistan  : 267.757019
@@ -8,481 +932,84 @@ Tromso  : 6057.434570
 Tajikistan  : 1068.327881
 Kyrgyzstan  : 355.269135
 North Korea  : 200.008331
-Israel and Palestine  : 7.778578
-Turkmenistan  : 1.555716
 Mauritius  : 1256.713257
 Cote d'Ivoire  : 701.961182
 Mali  : 293.607666
 Niger  : 357.777405
-Cote d'Ivoire  : 2.070769
 Sierra Leone  : 399.346466
-Mali  : 9.623417
 Gambia  : 1020.727905
-Sierra Leone  : 3.849367
 Guinea-Bissau  : 5.177388
-Cote d'Ivoire  : 5.774050
  Santiago Island  : 482.072998
-Cote d'Ivoire  : 0.775551
-Mali  : 0.290832
-Niger  : 0.096944
-Cote d'Ivoire  : 0.273785
-Mali  : 0.136893
 Netherlands Antilles  : 2167.484375
 El Salvador  : 647.538269
-El Salvador  : 7.237561
-Israel and Palestine  : 4667.264160
 Libya  : 1854.021362
 Macedonia  : 3711.115479
 Sandefjord  : 5505.553711
 Rygge  : 4972.681152
-Mauritius  : 518.584900
-Macedonia  : 654.069763
-Israel and Palestine  : 1635.174438
-Israel and Palestine  : 1045.961426
-Cote d'Ivoire  : 348.653809
-Mali  : 232.435867
 Congo (Kinshasa)  : 235.166656
 Djibouti  : 128.303711
 Angola  : 1277.768433
-Mauritius  : 232.435867
 Chad  : 123.042397
-Niger  : 348.653809
-Netherlands Antilles  : 929.743469
 Madagascar  : 389.331421
 Reunion  : 591.734497
-Sandefjord  : 116.217934
-Rygge  : 232.435867
 Cape Verde  : 1843.632812
 Virgin Islands  : 502.278595
 Haiti  : 518.922729
- Santiago Island  : 116.217934
-Sierra Leone  : 60.493828
 Uganda  : 288.891815
 Isle of Man  : 337.433075
 Bermuda  : 306.828400
-Mauritius  : 120.987656
-Angola  : 30.246914
 Bahamas  : 1561.872803
-Libya  : 90.740746
-Israel and Palestine  : 181.481491
-Tromso  : 30.246914
-Sandefjord  : 90.740746
-Rygge  : 90.740746
-Turkmenistan  : 60.493828
-Cape Verde  : 272.222229
-Macedonia  : 30.246914
-Gambia  : 1011.889282
-Rygge  : 1770.806274
-Sandefjord  : 1770.806274
 Harstad/Narvik  : 2231.145752
-Tromso  : 252.972321
-Israel and Palestine  : 1517.833984
-Angola  : 252.972321
-Libya  : 252.972321
 Western Sahara  : 763.476440
- Santiago Island  : 252.972321
  Sheffield  : 565.686951
-Israel and Palestine  : 160.839157
-Israel and Palestine  : 2.193974
-Libya  : 21.939741
 Yemen  : 1261.800049
 Eritrea  : 7.710021
-Uganda  : 2.193974
 South Sudan  : 16.005016
-Sandefjord  : 121.513237
-Israel and Palestine  : 121.513237
-Tromso  : 121.513237
-Macedonia  : 364.539703
-Israel and Palestine  : 58.520954
-Harstad/Narvik  : 1978.173462
-Tromso  : 5651.924316
-Sandefjord  : 1695.577271
 Svalbard  : 565.192444
 Orsta-Volda  : 1130.384888
 Vardø  : 847.788635
 Mo i Rana  : 1130.384888
 Rørvik  : 565.192444
-Tajikistan  : 32.106586
-Libya  : 10.702195
-Angola  : 21.404390
-Uganda  : 10.702195
 Zambia  : 20.994968
-Mauritius  : 21.404390
-Yemen  : 117.724144
-Turkmenistan  : 21.404390
-Kyrgyzstan  : 10.702195
-Djibouti  : 10.702195
-South Sudan  : 10.702195
-Macedonia  : 10.702195
 Papua New Guinea  : 252.254486
 Palau  : 375.470184
-Mali  : 0.016465
-Chad  : 0.032930
-Niger  : 0.016465
-Cote d'Ivoire  : 0.065861
-Sierra Leone  : 0.016465
-Sierra Leone  : 1.554519
-Cote d'Ivoire  : 0.222074
-Guinea-Bissau  : 0.188165
-Mali  : 0.188165
-Cote d'Ivoire  : 0.188165
-Congo (Kinshasa)  : 1.713502
-Chad  : 1.285127
-Cote d'Ivoire  : 0.428376
-Libya  : 10.849766
-Chad  : 5.424883
-Yemen  : 81.373245
-Eritrea  : 5.424883
-Djibouti  : 0.370817
-Uganda  : 0.092704
-Yemen  : 0.092704
-South Sudan  : 0.130293
 Zimbabwe  : 315.251953
 Malawi  : 3.719267
-Zambia  : 0.586319
 Comoros  : 23.597216
-Yemen  : 0.065147
 Burundi  : 446.502167
-Congo (Kinshasa)  : 0.260586
-Djibouti  : 0.130293
-Cote d'Ivoire  : 0.065147
 Mozambique  : 60.438610
-Mali  : 0.065147
-Uganda  : 0.195440
 Botswana  : 11.095481
-Angola  : 0.065147
-Mauritius  : 0.130293
-Madagascar  : 0.065147
-Eritrea  : 0.065147
 Burma  : 1591.103271
 Laos  : 731.701050
-Israel and Palestine  : 5.437454
-Madagascar  : 5.437454
-Burma  : 291.789307
 East Timor  : 87.178551
-Papua New Guinea  : 48.631550
-Laos  : 48.631550
-Papua New Guinea  : 170.431686
 Fiji  : 530.492615
 Solomon Islands  : 37.873711
-Mauritius  : 18.936855
 Vanuatu  : 137.764694
 Norfolk Island  : 37.873711
 Cook Islands  : 64.069565
 Nauru  : 18.936855
 New Caledonia  : 105.767906
-East Timor  : 37.873711
 Samoa  : 63.043419
 Christmas Island  : 18.936855
 Tonga  : 24.143562
 Northern Mariana Islands  : 575.597473
-Tajikistan  : 236.391342
-Burma  : 472.782684
-North Korea  : 177.293503
-Israel and Palestine  : 118.195671
-Turkmenistan  : 59.097836
-Kyrgyzstan  : 295.489166
-Angola  : 59.097836
-Mauritius  : 118.195671
-Laos  : 295.489166
-Fiji  : 32.883018
-Burma  : 16.441509
-Israel and Palestine  : 16.441509
-Mauritius  : 16.441509
-Papua New Guinea  : 16.441509
-Northern Mariana Islands  : 37.220669
-Palau  : 24.813778
 French Polynesia  : 186.130890
-Burma  : 12.406889
-Papua New Guinea  : 12.406889
-New Caledonia  : 24.813778
-Burma  : 3.281944
-Palau  : 6.563887
-Burma  : 65.810913
-Laos  : 21.936972
-North Korea  : 21.936972
-Mauritius  : 43.873943
-Burma  : 2.142140
-Laos  : 10.710698
-Laos  : 4.313162
-Burma  : 1.437721
-Israel and Palestine  : 1369.993408
-Netherlands Antilles  : 114.166122
-Mauritius  : 114.166122
-Rygge  : 114.166122
-Angola  : 114.166122
-Macedonia  : 570.830627
-Tajikistan  : 114.166122
-Turkmenistan  : 114.166122
-Cape Verde  : 570.830627
-Sandefjord  : 15.305642
-Rygge  : 30.611284
-Macedonia  : 15.305642
-Israel and Palestine  : 464.537079
-Macedonia  : 154.845688
-Bahamas  : 1437.336182
-Netherlands Antilles  : 479.112061
 Belize  : 203.552795
 Turks and Caicos Islands  : 317.468140
-Virgin Islands  : 379.297058
-El Salvador  : 558.964111
-Haiti  : 259.519043
-Bermuda  : 219.593033
-Fiji  : 119.778015
-French Polynesia  : 139.741028
 Grenada  : 167.402298
 Nicaragua  : 182.579681
 Saint Kitts and Nevis  : 109.623436
-Israel and Palestine  : 139.741028
-Samoa  : 19.963003
 Kiribati  : 39.926006
 American Samoa  : 19.963003
-Cook Islands  : 39.926006
 Marshall Islands  : 19.963003
- Santiago Island  : 19.963003
-Zimbabwe  : 302.908478
-Sandefjord  : 201.938995
-Israel and Palestine  : 403.877991
-Netherlands Antilles  : 403.877991
-Angola  : 100.969498
-Cape Verde  : 100.969498
-Macedonia  : 100.969498
-Libya  : 5.699283
-Western Sahara  : 4.559426
-Cote d'Ivoire  : 1.139857
-Gambia  : 1.139857
-Mali  : 1.139857
-Congo (Kinshasa)  : 1.139857
-Sierra Leone  : 1.139857
-Angola  : 1.139857
-Niger  : 1.139857
-Guinea-Bissau  : 1.139857
- Santiago Island  : 1.139857
-Burundi  : 442.021179
-Angola  : 442.021179
-Rygge  : 110.505295
-Cote d'Ivoire  : 331.515869
-Sierra Leone  : 331.515869
-Israel and Palestine  : 221.010590
-Congo (Kinshasa)  : 110.505295
-Macedonia  : 110.505295
-Tajikistan  : 1.814767
-Libya  : 3.629535
-Sandefjord  : 0.604922
-Kyrgyzstan  : 3.024612
-Macedonia  : 1.209845
-Israel and Palestine  : 1.814767
-Turkmenistan  : 1.209845
-Congo (Kinshasa)  : 0.604922
-Djibouti  : 0.604922
-Niger  : 0.604922
-Yemen  : 0.604922
-Netherlands Antilles  : 83.803566
-Netherlands Antilles  : 6.466277
-Grenada  : 1.077713
-Kyrgyzstan  : 0.644693
-Israel and Palestine  : 0.322347
-Saint Kitts and Nevis  : 46.352627
 Anguilla  : 13.279061
 Dominica  : 166.544449
-Netherlands Antilles  : 11.588157
-Dominica  : 133.746140
-Netherlands Antilles  : 44.582043
-Haiti  : 89.164085
-Netherlands Antilles  : 9.973404
-Turks and Caicos Islands  : 5.984043
-Haiti  : 3.989362
-Grenada  : 32.432430
-Dominica  : 10.810811
-Burma  : 485.148315
-Fiji  : 161.716110
-Palau  : 323.432220
-Israel and Palestine  : 161.716110
-Laos  : 323.432220
-Northern Mariana Islands  : 323.432220
-Haiti  : 13.370779
-Bahamas  : 53.483116
-Bermuda  : 26.741558
-Grenada  : 26.741558
-Turks and Caicos Islands  : 26.741558
-Israel and Palestine  : 26.741558
-El Salvador  : 13.370779
 Saint Pierre and Miquelon  : 40.112335
-Netherlands Antilles  : 13.370779
-Burma  : 0.062943
-Tajikistan  : 0.111299
-Mauritius  : 0.667795
-Burma  : 0.111299
-Yemen  : 0.222598
-Israel and Palestine  : 0.111299
-Turkmenistan  : 0.222598
-Reunion  : 0.111299
 Falkland Islands  : 1.576557
-Belize  : 1.347133
-El Salvador  : 2.020700
-Belize  : 0.741834
-El Salvador  : 1.112751
-Nicaragua  : 0.370917
-Bahamas  : 0.889813
-Angola  : 0.444906
-El Salvador  : 0.444906
-Nicaragua  : 25.769255
-El Salvador  : 17.179504
-Tajikistan  : 0.845403
-Macedonia  : 9.136408
-Israel and Palestine  : 9.136408
-Sandefjord  : 9.136408
-Cote d'Ivoire  : 1.518987
-Mali  : 1.518987
-Niger  : 1.518987
-Libya  : 3.037975
-Israel and Palestine  : 107.034416
-Rygge  : 178.390686
-Israel and Palestine  : 10.153316
-Isle of Man  : 34.963936
-Rygge  : 34.963936
-Angola  : 129.544388
-Cape Verde  : 302.270233
-Mali  : 43.181461
-Mozambique  : 43.181461
- Santiago Island  : 86.362923
 Sao Tome and Principe  : 86.362923
-Israel and Palestine  : 150.315750
-Libya  : 45.890129
-Cote d'Ivoire  : 2.185244
-Mali  : 2.185244
-Rygge  : 37.106331
-Israel and Palestine  : 24.737555
- Sheffield  : 30.921942
-Sandefjord  : 43.290718
-Haiti  : 36.661507
-El Salvador  : 36.661507
-Netherlands Antilles  : 36.661507
-Nicaragua  : 36.661507
-Bahamas  : 18.330753
-Malawi  : 0.018702
-Zimbabwe  : 0.018702
-Uganda  : 0.074808
-Comoros  : 0.018702
-Mozambique  : 0.018702
 Ambon  : 9.426070
-Papua New Guinea  : 0.673291
-East Timor  : 0.673291
-Angola  : 3.135194
- Santiago Island  : 1.567597
-French Polynesia  : 11.162692
-Belize  : 1.833788
-El Salvador  : 2.750681
-Israel and Palestine  : 27.349512
-Israel and Palestine  : 24.738729
-Rygge  : 24.738729
-Sandefjord  : 24.738729
-Northern Mariana Islands  : 37.651077
-Palau  : 18.825539
 Micronesia  : 37.651077
-Netherlands Antilles  : 8.830051
-Bahamas  : 4.415026
-Turks and Caicos Islands  : 4.415026
-Netherlands Antilles  : 1.871997
-Netherlands Antilles  : 11.189379
-Grenada  : 11.189379
-Tajikistan  : 5.643856
-Kyrgyzstan  : 5.643856
-Tajikistan  : 617.353455
-Israel and Palestine  : 2.287746
-Libya  : 30.143627
-Yemen  : 25.119688
-Israel and Palestine  : 10.047875
-Anguilla  : 1.690904
 British Virgin Islands  : 5.918165
-Saint Kitts and Nevis  : 3.381809
-Virgin Islands  : 6.763618
-Dominica  : 3.381809
-Netherlands Antilles  : 2.536356
-Turks and Caicos Islands  : 0.845452
-Israel and Palestine  : 46.132305
-Sandefjord  : 9.226460
-Yemen  : 39.774437
-Yemen  : 335.343445
-Yemen  : 621.188599
-Uganda  : 207.062866
-Burma  : 207.062866
-Zimbabwe  : 10.153411
-Zambia  : 7.897098
-Mauritius  : 5.640784
-Botswana  : 10.153411
-Congo (Kinshasa)  : 3.384470
-Angola  : 3.384470
-Malawi  : 3.384470
-Israel and Palestine  : 1.128157
-Madagascar  : 2.256314
-Mozambique  : 16.922352
-Uganda  : 1.128157
 Lesotho  : 1.128157
 Swaziland  : 1.128157
-Reunion  : 1.128157
-Israel and Palestine  : 18.605431
-Israel and Palestine  : 360.668274
-Sandefjord  : 360.668274
-French Polynesia  : 10.413412
-Fiji  : 7.810059
-Vanuatu  : 5.206706
-Samoa  : 5.206706
-New Caledonia  : 5.206706
-Cook Islands  : 5.206706
-Tonga  : 5.206706
-Netherlands Antilles  : 7.017544
-Dominica  : 7.017544
-Grenada  : 7.017544
-Bahamas  : 17.170919
-El Salvador  : 3.755821
-Cape Verde  : 248.686417
- Sheffield  : 20.202021
-Libya  : 341.246368
-Rygge  : 85.311592
-Mali  : 0.111017
-Uganda  : 0.111017
-Congo (Kinshasa)  : 0.111017
-Zimbabwe  : 0.222035
-Djibouti  : 0.277543
-South Sudan  : 0.111017
-Angola  : 0.111017
-Malawi  : 0.055509
-Zambia  : 0.055509
-Mozambique  : 0.055509
-Chad  : 0.055509
-Niger  : 0.055509
-Israel and Palestine  : 0.055509
-Yemen  : 0.055509
-Uganda  : 6.836809
-Burundi  : 4.350697
-South Sudan  : 0.621528
-Rygge  : 17.236702
- Sheffield  : 8.618351
-Israel and Palestine  : 8.618351
-Sandefjord  : 8.618351
-Yemen  : 29.239765
-Angola  : 0.216450
-Congo (Kinshasa)  : 0.649351
-Congo (Kinshasa)  : 0.579710
-Cote d'Ivoire  : 0.579710
-Macedonia  : 132.999100
-Mali  : 0.275347
-Comoros  : 23.513367
-Madagascar  : 32.918713
-Reunion  : 9.405347
-Turkmenistan  : 3.795346
-Israel and Palestine  : 3.795346
-Rygge  : 171.327942
-Yemen  : 0.026018
-South Sudan  : 0.052036
-Chad  : 0.026018
-Eritrea  : 0.026018
-Mauritius  : 44.469646
-Angola  : 2.630771
-Zambia  : 1.753847
-Zimbabwe  : 1.753847
-Botswana  : 0.876924
-Kyrgyzstan  : 1.649567
-Grenada  : 9.091653
 This is the end

@@ -118,21 +118,21 @@ int main(int argc, char* argv[])
     timeline.push_back(fixedGraph);
   }
   
-// std::cout << "Reeee" << endl;
-//   vector<Predicted> pred = getPredictions(networkG);
-// std::cout << "Gays" << endl;
+std::cout << "Reeee" << endl;
+vector<Predicted> pred = getPredictions(networkG);
+std::cout << "Gays" << endl;
 
-//   for (int i = 0; i < pred.size(); i++)
-//   {
-//     printf("%s  : %f\n",pred.at(i).country.c_str(),pred.at(i).rate);
-//   }
+  for (int i = 0; i < pred.size(); i++)
+  {
+    printf("%s  : %f\n",pred.at(i).country.c_str(),pred.at(i).rate);
+  }
   
 
 
 
   // plotGraph(timeline.at(51).network,"Un-Fragmented");
-    quarantineNodes(timeline.at(51).network);
-    plotGraph(timeline.at(51).network,"Fragmented");
+    // quarantineNodes(timeline.at(51).network);
+    // plotGraph(timeline.at(51).network,"Fragmented");
  
   std::cout << "This is the end" << endl;
   
@@ -366,7 +366,7 @@ vector<Day> addVirus()
             r1.cases = stoi(temp);
 
             // Sets number of deaths to third delimited value
-            getline(s_stream, temp, ',');
+            getline(s_stream,temp , ',');
             r1.deaths = stoi(temp);
 
             // Sets number of recovered to fourth delimited value
@@ -563,25 +563,36 @@ vector<Predicted> getPredictions(PNEANet G)
   {
     if (G->GetIntAttrDatN(NI.GetId(),"Cases") > 0)
     {
+      printf("----------------------------------------------------------------\n");
+      printf("%s\n",G->GetStrAttrDatN(NI.GetId(),"Country").CStr());
+        printf("\t");
+        for (int i = 0; i < NI.GetOutDeg(); i++)
+        {
+          printf("%s | ",G->GetStrAttrDatN(NI.GetOutNId(i),"Country").CStr());
+        }
+        printf("\n");
       for (int i = 0; i < NI.GetOutDeg(); i++)
       {
+        found = false;
+        
+        {
+          /* code */
+        }
+        
         if (G->GetIntAttrDatN(NI.GetOutNId(i),"Cases") == 0)
         {
-          found = false;
+          
           // printf("This is the current country - %s\n",G->GetStrAttrDatN(NI.GetOutNId(i),"Country").CStr());
           for (int j = 0; j < tempList.size(); j++)
           {
             if (tempList.at(j).country.compare(string(G->GetStrAttrDatN(NI.GetOutNId(i),"Country").CStr())) == 0)
             {
-              std::cout << "Found it already, ae bro" << endl;
+              // std::cout << "Found it already, ae bro at " << j << endl;
+              printf("Found \"%s\" already ae bro\n",G->GetStrAttrDatN(NI.GetOutNId(i),"Country").CStr());
               float tempChance = tempList.at(j).rate;
-              // printf("Cases per million: %f\n", G->GetFltAttrDatN(NI.GetOutNId(i),"casesPerMillion"));
-              // printf("FLights: %d\n",G->GetIntAttrDatE((G->GetEId(NI.GetId(),NI.GetOutNId(i))),"flights"));
               tempChance += (G->GetFltAttrDatN(NI.GetId(),"casesPerMillion") * float(G->GetIntAttrDatE((G->GetEId(NI.GetId(),NI.GetOutNId(i))),"flights")));     
-          
-              // std::cout << "THis is tempchance: " << tempChance << endl;
               tempList.at(j).rate = tempChance;
-              found == true;
+              found = true;
               break;
             }
           }
@@ -590,13 +601,14 @@ vector<Predicted> getPredictions(PNEANet G)
           {
             if (G->GetIntAttrDatN(NI.GetOutNId(i),"Cases") == 0)
             {
-            // std::cout << "Adding it ae bro" << endl;
+            printf("Adding \"%s\" ae bro\n",G->GetStrAttrDatN(NI.GetOutNId(i),"Country").CStr());
             float tempChance = 0;
             tempChance = (G->GetFltAttrDatN(NI.GetId(),"casesPerMillion") * float(G->GetIntAttrDatE((G->GetEId(NI.GetId(),NI.GetOutNId(i))),"flights")));
             Predicted tempPredicted;
             tempPredicted.country = G->GetStrAttrDatN(NI.GetOutNId(i),"Country").CStr();
             tempPredicted.rate = tempChance;
             tempList.push_back(tempPredicted);
+            found = false;
             }
           }
         }
@@ -606,6 +618,7 @@ vector<Predicted> getPredictions(PNEANet G)
     }
     
   }
+  // sorting st
   return tempList;
 }
 
@@ -701,7 +714,7 @@ int plotGraph(PNEANet G, TStr fileName)
   std::cout << "Colours set" << endl;
  
   
-  string temp = ".png";
+  string  temp = ".png";
   TStr path = "Graphs/";
   path+= fileName.CStr();
   path += temp.c_str();
