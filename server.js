@@ -79,8 +79,8 @@ app.get('/country/:country', (req, res) => {
 	res.send({ timeline: countryTimeline, search: req.params.country });
 });
 
-app.get('/totals', (req, res) => {
-	res.send({ totals: 'hello' });
+app.get('/alldays', (req, res) => {
+	res.send({theTimeline: timeline.days});
 });
 
 // Updates and formats coronavirus dataset
