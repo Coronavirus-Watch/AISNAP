@@ -76,52 +76,83 @@ class Timeline {
 		const cutOff = new Date(2020, 3, 22);
 		// Calculates formatted date using the downloaded filename
 		const date = this.getFormattedDate(filename);
+		let countryStats;
+		// Determines which country statistics extractor to use
 		if (dateObj < cutOff) {
-			this.extractDataV1(day, date, regionLine);
+			countryStats = this.getCountryStatsV1(regionLine);
 		}
 		else {
-			this.extractDataV2(day, date, regionLine);
+			countryStats = this.getCountryStatsV2(regionLine);
 		}
+		// Blank entry was detected
+		if (countryStats === -1) {
+			return;
+		}
+		// Looks up other information from country details array
+		const countryDetails = this.searchCountryDetails(countryStats.searchName);
+		// 
+		this.mergeData(day, date, countryStats, countryDetails);
 	}
 
-	convertToDateObj(dateString) {
-		// Removes extension if necessary
-		if (dateString.endsWith(".csv")) {
-			dateString.replace(".csv", "");
-		}
-		// Parses all date sections
-		const sections = dateString.split("-");
-		const day = sections[1];
-		const month = sections[0];
-		const year = sections[2];
-		let dateVar = new Date(year, month, day);
-		// https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_daily_reports/03-23-2020.csv
-		// Old formatting: https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_daily_reports/03-21-2020.csv
-		return dateVar;
-	}
-
-	// Extracts data from the line and adds it to the appropriate day
-	extractDataV1(day, date, regionLine) {
+	getCountryStatsV1(regionLine) {
 		// Extracts cases from the region line
 		const cases = regionLine[3].trim();
 		// Checks if the entry is blank
 		if (cases <= 0) {
-			return;
+			return -1;
 		}
-
-		// Extracts more constants from the region line
-		const deaths = regionLine[4].trim();
-		const recovered = regionLine[5].trim();
 		// Changes country names from downloaded files into ones that are used to store countries
 		const countryName = this.dictStore(regionLine[1].trim());
-		// Changes country nams from the ones stored to lookup data in the Rest countries API
-		const searchName = this.dictRest(countryName);
 
+		const countryStats = {
+			cases: cases,
+			countryName: countryName,
+			// Extracts more constants from the region line
+			deaths: regionLine[4].trim(),
+			recovered: regionLine[5].trim(),
+			// Changes country nams from the ones stored to lookup data in the Rest countries API
+			searchName: this.dictRest(countryName)
+		}
+		return countryStats;
+	}
+
+	getCountryStatsV2(regionLine) {
+		// Extracts cases from the region line
+		const cases = regionLine[7].trim();
+		// Checks if the entry is blank
+		if (cases <= 0) {
+			return -1;
+		}
+		// Changes country names from downloaded files into ones that are used to store countries
+		const countryName = this.dictStore(regionLine[3].trim());
+
+		const countryStats = {
+			cases: cases,
+			countryName: countryName,
+			// Extracts more constants from the region line
+			deaths: regionLine[8].trim(),
+			recovered: regionLine[9].trim(),
+			// Changes country nams from the ones stored to lookup data in the Rest countries API
+			searchName: this.dictRest(countryName)
+		}
+		return countryStats;
+	}
+
+	// Extracts data from the line and adds it to the appropriate day
+	mergeData(day, date, countryStats, countryDetails) {
 		try {
-			// Looks up other information from country details array
-			const countryDetails = this.searchCountryDetails(searchName);
+			const {
+				cases,
+				deaths,
+				recovered,
+				countryName,
+				searchName
+			} = countryStats;
+
+			// Checks for country details lookup error 
 			if (typeof countryDetails === "undefined")
 				throw "Error finding country details for: " + searchName;
+
 			const {
 				population,
 				latlng,
@@ -141,104 +172,34 @@ class Timeline {
 				continent,
 				altSpellings
 			);
-
-			// Extracts data from yesterdays result
-			let varsArray = [0, 0, 0, 0];
-			let yesterday;
-			let index = -1;
-			if (this.days.length !== 0) {
-				yesterday = this.days[this.days.length - 1];
-				index = yesterday.searchForCountry(
-					countryName
-				);
-			}
-			if (index !== -1) {
-				let countryYesterday = yesterday.countries[index];
-				varsArray = countryYesterday.getVarsArray();
-			}
-			// Compares data from this day and the previous to calculate increases
-			country.comparison(varsArray);
+			// 
+			this.compareData(country, countryName);
+			
 		} catch (error) {
 			// console.log('General Error for: ' + searchName);
 			console.error(error);
 		}
 	}
 
-	// It's weird that it screws up on the very last file
-	// which date? 25/03/2020
-	// is it all countries on the 25th or is it just finding
-	// errors on the 25th?
-	// Given it's not an async function, it seems to be just multiple countries or so on the 25th
-	// But probably not all
-
-	// Extracts data from the line and adds it to the appropriate day
-	extractDataV2(day, date, regionLine) {
-		// if (date === "25/03/2020") {
-		// 	// console.log(regionLine);
-		// }
-		try {
-			// Extracts cases from the region line
-			const cases = regionLine[7].trim();
-			// Checks if the entry is blank
-			if (cases <= 0) {
-				return;
-			}
-			// Extracts more constants from the region line
-			const deaths = regionLine[8].trim();
-			const recovered = regionLine[9].trim();
-			// Changes country names from downloaded files into ones that are used to store countries
-			const countryName = this.dictStore(regionLine[3].trim());
-			// Changes country nams from the ones stored to lookup data in the Rest countries API
-			const searchName = this.dictRest(countryName);
-
-			// Looks up other information from country details array
-			const countryDetails = this.searchCountryDetails(searchName);
-			if (typeof countryDetails === "undefined")
-				// This always ran because the variables would be undefined when they were in a try catch
-				throw "Error finding country details for: " + searchName;
-			const {
-				population,
-				latlng,
-				region: continent,
-				altSpellings
-			} = countryDetails;
-
-			// Adds data to the day
-			let country = day.addData(
-				cases,
-				deaths,
-				recovered,
-				countryName,
-				date,
-				population,
-				latlng,
-				continent,
-				altSpellings
+	// 
+	compareData(country, countryName) {
+		// Extracts data from yesterdays result
+		let varsArray = [0, 0, 0, 0];
+		let yesterday;
+		let index = -1;
+		if (this.days.length !== 0) {
+			yesterday = this.days[this.days.length - 1];
+			index = yesterday.searchForCountry(
+				countryName
 			);
-
-			// Extracts data from yesterdays result
-			let varsArray = [0, 0, 0, 0];
-			let yesterday;
-			let index = -1;
-			if (this.days.length !== 0) {
-				yesterday = this.days[this.days.length - 1];
-				index = yesterday.searchForCountry(
-					countryName
-				);
-			}
-			if (index !== -1) {
-				let countryYesterday = yesterday.countries[index];
-				varsArray = countryYesterday.getVarsArray();
-			}
-			// Compares data from this day and the previous to calculate increases
-			country.comparison(varsArray);
-		} catch (error) {
-			// console.log(regionLine);
-			// console.log('General Error for: ', date, searchName);
-			// console.error(error);
 		}
+		if (index !== -1) {
+			let countryYesterday = yesterday.countries[index];
+			varsArray = countryYesterday.getVarsArray();
+		}
+		// Compares data from this day and the previous to calculate increases
+		country.comparison(varsArray);
 	}
-
 
 	// Prevents commas within quotes in a csv file from messing up the seperation
 	dealsWithQuoteMarks(content) {
@@ -262,22 +223,6 @@ class Timeline {
 		}
 		return content;
 	}
-
-	// // Checks if a country is present in a previous day but not the current day
-	// // And adds it to the current day if not
-	// async checkConcurrency(day, previousDay) {
-	// 	previousDay.countries.forEach(async function(country) {
-	// 		if (day.searchForCountry(country.name) === -1) {
-	// 			day.addData(
-	// 				country.cases,
-	// 				country.deaths,
-	// 				country.recovered,
-	// 				country.name,
-	// 				false
-	// 			);
-	// 		}
-	// 	});
-	// }
 
 	// Looks up information about a country from the country details array
 	searchCountryDetails(name) {
@@ -308,30 +253,6 @@ class Timeline {
 		this.days.forEach(day => {
 			day.parseGeoJSON();
 		});
-	}
-
-	// Calculates formatted date using the downloaded filename
-	getFormattedDate(downloadDate) {
-		// Removes extension if necessary
-		if (downloadDate.endsWith(".csv")) {
-			downloadDate.replace(".csv", "");
-		}
-		// Parses all date sections
-		const sections = downloadDate.split("-");
-		const day = sections[1];
-		const month = sections[0];
-		const year = sections[2];
-		const dateVar = day + "/" + month + "/" + year;
-		return dateVar;
-	}
-
-	// Returns the date formatted as used in the url for files
-	getStorageDate(date) {
-		const day = ("0" + date.getDate()).slice(-2);
-		const month = ("0" + (date.getMonth() + 1)).slice(-2);
-		const year = date.getFullYear();
-		const dateVar = day + "/" + month + "/" + year;
-		return dateVar;
 	}
 
 	// Creates the days in the future that are predictions
@@ -404,6 +325,44 @@ class Timeline {
 		}
 	}
 
+	// Calculates formatted date using the downloaded filename
+	getFormattedDate(downloadDate) {
+		// Removes extension if necessary
+		if (downloadDate.endsWith(".csv")) {
+			downloadDate.replace(".csv", "");
+		}
+		// Parses all date sections
+		const sections = downloadDate.split("-");
+		const day = sections[1];
+		const month = sections[0];
+		const year = sections[2];
+		const dateVar = day + "/" + month + "/" + year;
+		return dateVar;
+	}
+
+	// Returns the date formatted as used in the url for files
+	getStorageDate(date) {
+		const day = ("0" + date.getDate()).slice(-2);
+		const month = ("0" + (date.getMonth() + 1)).slice(-2);
+		const year = date.getFullYear();
+		const dateVar = day + "/" + month + "/" + year;
+		return dateVar;
+	}
+
+	convertToDateObj(dateString) {
+		// Removes extension if necessary
+		if (dateString.endsWith(".csv")) {
+			dateString.replace(".csv", "");
+		}
+		// Parses all date sections
+		const sections = dateString.split("-");
+		const day = sections[1];
+		const month = sections[0];
+		const year = sections[2];
+		let dateVar = new Date(year, month, day);
+		return dateVar;
+	}
+
 	// Changes country names from downloaded files into ones that are used to store countries
 	dictStore(countryName) {
 		switch (countryName) {
@@ -460,8 +419,12 @@ class Timeline {
 			case "Congo (Kinshasa)":
 				return "Congo [DRC]";
 			case 'Th"':
+			case 'Gambia':
 				return "The Gambia";
+			case 'Bahamas':
+				return "The Bahamas";
 			case "Cruise Ship":
+			case 'Diamond Princess':
 			case "Others":
 				return "Japan";
 			default:
