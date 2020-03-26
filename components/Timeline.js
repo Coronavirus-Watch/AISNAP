@@ -71,8 +71,37 @@ class Timeline {
 		return;
 	}
 
-	// Extracts data from the line and adds it to the appropriate day
 	extractData(day, filename, regionLine) {
+		const dateObj = this.convertToDateObj(filename);
+		const cutOff = new Date(2020, 3, 22);
+		// Calculates formatted date using the downloaded filename
+		const date = this.getFormattedDate(filename);
+		if (dateObj < cutOff) {
+			this.extractDataV1(day, date, regionLine);
+		}
+		else {
+			this.extractDataV2(day, date, regionLine);
+		}
+	}
+
+	convertToDateObj(dateString) {
+		// Removes extension if necessary
+		if (dateString.endsWith(".csv")) {
+			dateString.replace(".csv", "");
+		}
+		// Parses all date sections
+		const sections = dateString.split("-");
+		const day = sections[1];
+		const month = sections[0];
+		const year = sections[2];
+		let dateVar = new Date(year, month, day);
+		// https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_daily_reports/03-23-2020.csv
+		// Old formatting: https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_daily_reports/03-21-2020.csv
+		return dateVar;
+	}
+
+	// Extracts data from the line and adds it to the appropriate day
+	extractDataV1(day, date, regionLine) {
 		// Extracts cases from the region line
 		const cases = regionLine[3].trim();
 		// Checks if the entry is blank
@@ -85,8 +114,6 @@ class Timeline {
 		const recovered = regionLine[5].trim();
 		// Changes country names from downloaded files into ones that are used to store countries
 		const countryName = this.dictStore(regionLine[1].trim());
-		// Calculates formatted date using the downloaded filename
-		const date = this.getFormattedDate(filename);
 		// Changes country nams from the ones stored to lookup data in the Rest countries API
 		const searchName = this.dictRest(countryName);
 
@@ -136,6 +163,82 @@ class Timeline {
 			console.error(error);
 		}
 	}
+
+	// It's weird that it screws up on the very last file
+	// which date? 25/03/2020
+	// is it all countries on the 25th or is it just finding
+	// errors on the 25th?
+	// Given it's not an async function, it seems to be just multiple countries or so on the 25th
+	// But probably not all
+
+	// Extracts data from the line and adds it to the appropriate day
+	extractDataV2(day, date, regionLine) {
+		// if (date === "25/03/2020") {
+		// 	// console.log(regionLine);
+		// }
+		try {
+			// Extracts cases from the region line
+			const cases = regionLine[7].trim();
+			// Checks if the entry is blank
+			if (cases <= 0) {
+				return;
+			}
+			// Extracts more constants from the region line
+			const deaths = regionLine[8].trim();
+			const recovered = regionLine[9].trim();
+			// Changes country names from downloaded files into ones that are used to store countries
+			const countryName = this.dictStore(regionLine[3].trim());
+			// Changes country nams from the ones stored to lookup data in the Rest countries API
+			const searchName = this.dictRest(countryName);
+
+			// Looks up other information from country details array
+			const countryDetails = this.searchCountryDetails(searchName);
+			if (typeof countryDetails === "undefined")
+				// This always ran because the variables would be undefined when they were in a try catch
+				throw "Error finding country details for: " + searchName;
+			const {
+				population,
+				latlng,
+				region: continent,
+				altSpellings
+			} = countryDetails;
+
+			// Adds data to the day
+			let country = day.addData(
+				cases,
+				deaths,
+				recovered,
+				countryName,
+				date,
+				population,
+				latlng,
+				continent,
+				altSpellings
+			);
+
+			// Extracts data from yesterdays result
+			let varsArray = [0, 0, 0, 0];
+			let yesterday;
+			let index = -1;
+			if (this.days.length !== 0) {
+				yesterday = this.days[this.days.length - 1];
+				index = yesterday.searchForCountry(
+					countryName
+				);
+			}
+			if (index !== -1) {
+				let countryYesterday = yesterday.countries[index];
+				varsArray = countryYesterday.getVarsArray();
+			}
+			// Compares data from this day and the previous to calculate increases
+			country.comparison(varsArray);
+		} catch (error) {
+			// console.log(regionLine);
+			// console.log('General Error for: ', date, searchName);
+			// console.error(error);
+		}
+	}
+
 
 	// Prevents commas within quotes in a csv file from messing up the seperation
 	dealsWithQuoteMarks(content) {
@@ -254,7 +357,7 @@ class Timeline {
 				} = country;
 				const date = this.getStorageDate(today);
 				const increases = this.calculateIncrease(country.name);
-				console.log("Day:", date, "Country:", country.name, increases);
+				// console.log("Day:", date, "Country:", country.name, increases);
 				futureDay.addData(
 					cases + (cases * increases[0]),
 					deaths + (deaths * increases[1]),
@@ -295,7 +398,7 @@ class Timeline {
 			if (isNaN(aiRecovered)) aiRecovered = 0;
 			return [aiCases, aiDeaths, aiRecovered];
 		}
-		catch(e) {
+		catch (e) {
 			console.log(e);
 			return [0, 0, 0];
 		}
