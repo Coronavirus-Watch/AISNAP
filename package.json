@@ -4,7 +4,7 @@
   "description": "Project for Algorithms and Artificial Intelligence Module for Year 2, Semester 2 at University of Dundee.",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "is-ci": "^2.0.0",
     "node-fetch": "^2.6.1",
